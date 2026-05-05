@@ -30,31 +30,31 @@
             </div>
             
             <div class="cards">
-                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=darshana-tab]').click()">
+                <div class="card" style="cursor:pointer" onclick="openDarshana('yoga')">
                     <h3>Yoga Sūtras</h3>
                     <p>Patañjali · 196 sūtras · samādhi, practice, powers, and liberation.</p>
                 </div>
-                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=darshana-tab]').click()">
+                <div class="card" style="cursor:pointer" onclick="openDarshana('samkhya')">
                     <h3>Sāṃkhyakārikā</h3>
                     <p>Īśvarakṛṣṇa · 72 kārikās · dualism of Puruṣa and Prakṛti.</p>
                 </div>
-                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=darshana-tab]').click()">
+                <div class="card" style="cursor:pointer" onclick="openDarshana('nyaya')">
                     <h3>Nyāya Sūtras</h3>
                     <p>Gautama · logic and epistemology · five classical commentaries.</p>
                 </div>
-                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=darshana-tab]').click()">
+                <div class="card" style="cursor:pointer" onclick="openDarshana('vaisheshika')">
                     <h3>Vaiśeṣika Sūtras</h3>
                     <p>Kaṇāda · atomism · six padārthas · Praśastapāda &amp; Udayana.</p>
                 </div>
-                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=darshana-tab]').click()">
+                <div class="card" style="cursor:pointer" onclick="openDarshana('mimamsa')">
                     <h3>Pūrva Mīmāṃsā</h3>
                     <p>Jaimini · Vedic exegesis · Śabara, Kumārila &amp; Prabhākara.</p>
                 </div>
-                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=darshana-tab]').click()">
+                <div class="card" style="cursor:pointer" onclick="openDarshana('vedanta')">
                     <h3>Vedānta &amp; Upaniṣads</h3>
                     <p>Bādarāyaṇa · Śaṅkara, Rāmānuja, Madhva, Nimbārka &amp; Vallabha.</p>
                 </div>
-                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=darshana-tab]').click()">
+                <div class="card" style="cursor:pointer" onclick="openDarshana('vedas')">
                     <h3>Vedas</h3>
                     <p>Ṛgveda · Sāmaveda · Yajurveda · Atharvaveda · hymns &amp; cosmology.</p>
                 </div>
@@ -63,7 +63,7 @@
 
         <!-- Darshana Tab Content -->
         <div id="darshana-tab" class="tab-content">
-            <iframe src="Temp/darshana_3.html" title="Ṣaḍdarśana — Six Orthodox Systems"></iframe>
+            <iframe id="darshana-iframe" src="Temp/darshana_3.html" title="Ṣaḍdarśana — Six Orthodox Systems"></iframe>
         </div>
 
 

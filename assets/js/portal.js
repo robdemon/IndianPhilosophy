@@ -13,3 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         });
+
+function openDarshana(system) {
+    const iframe = document.getElementById('darshana-iframe');
+    const iwin   = iframe.contentWindow;
+    // If darshana_3.html is already loaded, call showSystem directly
+    if (iwin && typeof iwin.showSystem === 'function') {
+        iwin.showSystem(system);
+    } else {
+        // Not yet loaded — set src with hash so it auto-selects on load
+        iframe.src = 'Temp/darshana_3.html#' + system;
+    }
+    document.querySelector('[data-target="darshana-tab"]').click();
+}
