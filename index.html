@@ -237,6 +237,10 @@
             <button class="tab-btn" data-target="yoga-sutras-tab">Yoga Sūtras</button>
             <button class="tab-btn" data-target="samkhya-tab">Sāṃkhya</button>
             <button class="tab-btn" data-target="nyaya-sutras-tab">Nyāya Sūtras</button>
+            <button class="tab-btn" data-target="vaisheshika-tab">Vaiśeṣika</button>
+            <button class="tab-btn" data-target="mimamsa-tab">Pūrva Mīmāṃsā</button>
+            <button class="tab-btn" data-target="vedanta-tab">Vedānta</button>
+            <button class="tab-btn" data-target="vedas-tab">Vedas</button>
         </div>
         <div style="width: 140px;"></div> <!-- Spacer -->
     </nav>
@@ -253,19 +257,35 @@
             <div class="cards">
                 <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=darshana-tab]').click()">
                     <h3>Ṣaḍdarśana</h3>
-                    <p>All six orthodox systems — Yoga, Sāṃkhya, Nyāya, Vaiśeṣika, Mīmāṃsā, Vedānta — alongside the Vedas, with 25 classical commentators.</p>
+                    <p>All six orthodox systems alongside the Vedas — full reference with 25 classical commentators.</p>
                 </div>
                 <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=yoga-sutras-tab]').click()">
                     <h3>Yoga Sūtras</h3>
-                    <p>Patañjali's foundational text exploring the nature of samādhi, practice, powers, and ultimate liberation. 196 sūtras · complete map.</p>
+                    <p>Patañjali's foundational text on samādhi, practice, and liberation. 196 sūtras · complete map.</p>
                 </div>
                 <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=samkhya-tab]').click()">
                     <h3>Sāṃkhyakārikā</h3>
-                    <p>The oldest surviving text of the Sāṃkhya school, detailing the dualism of Puruṣa and Prakṛti. 72 kārikās · complete map.</p>
+                    <p>Īśvarakṛṣṇa's dualism of Puruṣa and Prakṛti. 72 kārikās · complete map.</p>
                 </div>
                 <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=nyaya-sutras-tab]').click()">
                     <h3>Nyāya Sūtras</h3>
-                    <p>Gautama's foundational text of the Nyāya school, outlining the rules of logic and epistemology. Five books · five commentaries.</p>
+                    <p>Gautama's school of logic and epistemology. Five books · five commentaries.</p>
+                </div>
+                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=vaisheshika-tab]').click()">
+                    <h3>Vaiśeṣika Sūtras</h3>
+                    <p>Kaṇāda's atomistic philosophy of categories. Ten padārthas · Praśastapāda's Bhāṣya.</p>
+                </div>
+                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=mimamsa-tab]').click()">
+                    <h3>Pūrva Mīmāṃsā</h3>
+                    <p>Jaimini's exegesis of Vedic ritual and dharma. Śabara, Kumārila, and Prabhākara commentaries.</p>
+                </div>
+                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=vedanta-tab]').click()">
+                    <h3>Vedānta Upaniṣads</h3>
+                    <p>The principal Upaniṣads with Śaṅkara, Rāmānuja, Madhva, Nimbārka, and Vallabha commentaries.</p>
+                </div>
+                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=vedas-tab]').click()">
+                    <h3>Vedas</h3>
+                    <p>Ṛgveda, Sāmaveda, Yajurveda, and Atharvaveda — hymns, cosmology, and Upaniṣadic seeds.</p>
                 </div>
             </div>
         </div>
@@ -288,6 +308,26 @@
         <!-- Nyaya Sutras Tab Content -->
         <div id="nyaya-sutras-tab" class="tab-content">
             <iframe src="Temp/nyaya_sutras_map.html" title="Nyaya Sutras Map"></iframe>
+        </div>
+
+        <!-- Vaisheshika Tab Content -->
+        <div id="vaisheshika-tab" class="tab-content">
+            <iframe src="Temp/darshana_3.html#vaisheshika" title="Vaiśeṣika Sūtras"></iframe>
+        </div>
+
+        <!-- Purva Mimamsa Tab Content -->
+        <div id="mimamsa-tab" class="tab-content">
+            <iframe src="Temp/darshana_3.html#mimamsa" title="Pūrva Mīmāṃsā"></iframe>
+        </div>
+
+        <!-- Vedanta Tab Content -->
+        <div id="vedanta-tab" class="tab-content">
+            <iframe src="Temp/darshana_3.html#vedanta" title="Vedānta Upaniṣads"></iframe>
+        </div>
+
+        <!-- Vedas Tab Content -->
+        <div id="vedas-tab" class="tab-content">
+            <iframe src="Temp/darshana_3.html#vedas" title="Vedas"></iframe>
         </div>
     </main>
 

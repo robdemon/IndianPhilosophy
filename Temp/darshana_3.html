@@ -1780,7 +1780,9 @@ gp:"Gauḍapāda's Kārikā (the foundational Advaita text): the analysis of the
 buildSubNav(secs,'vedas',renderSection);
 };
 // ─── INIT ────────────────────────────────────────────────────────────────────
-showSystem('yoga');
+const _valid=['yoga','samkhya','nyaya','vaisheshika','mimamsa','vedanta','vedas'];
+const _hash=location.hash.slice(1);
+showSystem(_valid.includes(_hash)?_hash:'yoga');
 </script>
 </body>
 </html>
