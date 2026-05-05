@@ -233,9 +233,10 @@
         <div class="logo">Indian Philosophy</div>
         <div class="tabs">
             <button class="tab-btn active" data-target="home-tab">Home</button>
-            <button class="tab-btn" data-target="samkhya-tab">Samkhya</button>
-            <button class="tab-btn" data-target="yoga-sutras-tab">Yoga Sutras</button>
-            <button class="tab-btn" data-target="nyaya-sutras-tab">Nyaya Sutra</button>
+            <button class="tab-btn" data-target="darshana-tab">Ṣaḍdarśana</button>
+            <button class="tab-btn" data-target="yoga-sutras-tab">Yoga Sūtras</button>
+            <button class="tab-btn" data-target="samkhya-tab">Sāṃkhya</button>
+            <button class="tab-btn" data-target="nyaya-sutras-tab">Nyāya Sūtras</button>
         </div>
         <div style="width: 140px;"></div> <!-- Spacer -->
     </nav>
@@ -250,29 +251,38 @@
             </div>
             
             <div class="cards">
-                <div class="card">
-                    <h3>Samkhya Karika</h3>
-                    <p>The oldest surviving text of the Samkhya school, detailing the dualism of Puruṣa and Prakṛti.</p>
+                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=darshana-tab]').click()">
+                    <h3>Ṣaḍdarśana</h3>
+                    <p>All six orthodox systems — Yoga, Sāṃkhya, Nyāya, Vaiśeṣika, Mīmāṃsā, Vedānta — alongside the Vedas, with 25 classical commentators.</p>
                 </div>
-                <div class="card">
+                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=yoga-sutras-tab]').click()">
                     <h3>Yoga Sūtras</h3>
-                    <p>Patañjali's foundational text exploring the nature of samādhi, practice, powers, and ultimate liberation.</p>
+                    <p>Patañjali's foundational text exploring the nature of samādhi, practice, powers, and ultimate liberation. 196 sūtras · complete map.</p>
                 </div>
-                <div class="card">
-                    <h3>Nyaya Sūtras</h3>
-                    <p>Gautama's foundational text of the Nyaya school, outlining the rules of logic and epistemology.</p>
+                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=samkhya-tab]').click()">
+                    <h3>Sāṃkhyakārikā</h3>
+                    <p>The oldest surviving text of the Sāṃkhya school, detailing the dualism of Puruṣa and Prakṛti. 72 kārikās · complete map.</p>
+                </div>
+                <div class="card" style="cursor:pointer" onclick="document.querySelector('[data-target=nyaya-sutras-tab]').click()">
+                    <h3>Nyāya Sūtras</h3>
+                    <p>Gautama's foundational text of the Nyāya school, outlining the rules of logic and epistemology. Five books · five commentaries.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Samkhya Tab Content -->
-        <div id="samkhya-tab" class="tab-content">
-            <iframe src="Temp/samkhya_map.html" title="Samkhya Map"></iframe>
+        <!-- Darshana Tab Content -->
+        <div id="darshana-tab" class="tab-content">
+            <iframe src="Temp/darshana_3.html" title="Ṣaḍdarśana — Six Orthodox Systems"></iframe>
         </div>
 
         <!-- Yoga Sutras Tab Content -->
         <div id="yoga-sutras-tab" class="tab-content">
             <iframe src="Temp/patanjali_yoga_sutras_complete_map_2.html" title="Yoga Sutras Complete Map"></iframe>
+        </div>
+
+        <!-- Samkhya Tab Content -->
+        <div id="samkhya-tab" class="tab-content">
+            <iframe src="Temp/samkhya_map.html" title="Samkhya Map"></iframe>
         </div>
 
         <!-- Nyaya Sutras Tab Content -->
