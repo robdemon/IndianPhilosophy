@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samkhya Karika — Map</title>
+<title>Sāṃkhyakārikā — Complete Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inconsolata:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
@@ -423,9 +423,9 @@ body {
 <body>
 <div id="app-shell">
   <header class="site-header">
-    <div class="eyebrow">Classical Indian Philosophy</div>
-    <h1>Samkhya Karika — Map</h1>
-    <div class="subtitle">Overview of Samkhya Philosophy</div>
+    <div class="eyebrow">Īśvarakṛṣṇa · c. 350 CE</div>
+    <h1>Sāṃkhyakārikā — Complete Map</h1>
+    <div class="subtitle">72 Kārikās · Four Sections · Gaudapāda, Vācaspati Miśra &amp; Hariharānanda Āraṇya</div>
   </header>
   <div id="app"></div>
 </div>
@@ -444,26 +444,301 @@ const C={
 };
 
 const data=[
-{pada:"Samkhya Karika",sub:"Sample · First 3 Verses",ref:"SK 1-3",
-intro:"Īśvarakṛṣṇa's Sāṃkhyakārikā is the oldest surviving text of the Samkhya school. It outlines the dualistic philosophy of Puruṣa (consciousness) and Prakṛti (matter). This is a representative sample showing the structure.",
+{pada:"Prayojana Pramāṇas",sub:"SK 1–9 · Purpose and Instruments of Knowledge",ref:"SK 1–9",
+intro:"The Sāṃkhyakārikā opens by establishing why philosophy is necessary and by what means valid knowledge is possible. Īśvarakṛṣṇa first demonstrates that visible remedies and Vedic ritual means both fail to end suffering permanently. Discriminative knowledge (vijñāna) of the three realities — manifest (vyakta), unmanifest (avyakta), and the knower (jña/Puruṣa) — is the only final cure. He then establishes the three pramāṇas and uses inference to prove the existence of Prakṛti.",
 branches:[
-{name:"Introduction & Purpose",ref:"SK 1-3",color:C.purple,children:[
-{n:"Duḥkha-traya-abhighātāt",d:"From the torment of the threefold suffering...",r:"SK 1",
+{name:"Purpose of Inquiry",ref:"SK 1–3",color:C.purple,children:[
+{n:"Duḥkha-traya-abhighātāt",d:"Due to the torment of the threefold suffering, inquiry into its means of cessation arises",r:"SK 1",
 det:{
-c:"Due to the torment of the threefold suffering (internal, external, and divine/celestial), an inquiry into the means of terminating it arises. If it is said that this inquiry is superfluous since visible means exist, we say no, because visible means are not absolute or final.",
-ex:"Worldly remedies (medicine, wealth) cure suffering temporarily, but it always returns. Samkhya promises a final, irrevocable end to suffering through knowledge.",
-v:"Vyāsa (Yoga Bhasya): Suffering is the starting point of all philosophy.",
-vb:"Hariharananda Aranya: The threefold suffering is adhyatmika (bodily/mental), adhibhautika (from other beings), and adhidaivika (from planetary/supernatural forces)."
+c:"Three kinds of suffering drive the philosophical quest: <em>ādhyātmika</em> (internal — bodily illness and mental anguish), <em>ādhibhautika</em> (from other beings — enemies, insects, animals), and <em>ādhidaivika</em> (from supernatural forces — storms, fate, planetary influence). If visible remedies (medicine, wealth, force) already suffice, why inquire? Because they are not absolute or final — suffering always returns through a different door. Only discriminative knowledge of the Self gives permanent cessation.",
+g:"Gaudapāda: The word <em>abhighāta</em> (torment, assault) is exact — suffering does not merely accompany life, it coerces inquiry. The three-fold division is exhaustive: no suffering exists that does not fall under one of these heads.",
+vm:"Vācaspati Miśra: Even those already in worldly comfort remain in potential bondage. The wise, perceiving this structural feature of existence, do not wait for actual assault; they inquire in advance.",
+vb:"Hariharānanda Āraṇya: The opening verse does not condemn the world but simply marks the logical starting-point. All Indian philosophy is soteriological: it begins with diagnosis (suffering), traces its cause (ignorance of the Puruṣa-Prakṛti distinction), and prescribes the cure (discriminative knowledge)."
 }},
-{n:"Dṛṣṭavad ānuśravikaḥ",d:"The revealed (Vedic) means are like the visible ones...",r:"SK 2",
+{n:"Dṛṣṭavad ānuśravikaḥ",d:"Vedic means are like visible means — both involve impurity, decay, and excess; discriminative knowledge is superior",r:"SK 2",
 det:{
-c:"The means revealed in the Vedas are like the visible means: they are linked with impurity, decay, and excess. A superior method is different from both: it is the discriminative knowledge of the Manifest (Vyakta), the Unmanifest (Avyakta), and the Knower (Jña/Puruṣa).",
-ex:"Vedic rituals involve animal sacrifice (impurity) and yield temporary heavens (decay). Only pure philosophical discrimination provides eternal liberation."
+c:"Visible remedies are impermanent: medicine heals only to have another ailment follow. Vedic ritual means are similarly flawed — they require animal sacrifice (<em>aviśuddhi</em>, impurity), yield only temporary heavens (<em>kṣaya</em>, decay), and are inaccessible to all (<em>atiśaya</em>, excess). The truly superior path is <em>vyakta-avyakta-jña-vijñāna</em> — discriminative knowledge of the manifest, unmanifest, and the knower (Puruṣa).",
+ex:"Heaven gained by sacrifice is lost when the merit runs out (cf. Bhagavad Gītā 9.20-21). Only knowledge that dissolves the root of bondage — the confusion of Puruṣa with Prakṛti — is truly final.",
+g:"Gaudapāda: Īśvarakṛṣṇa is not anti-Vedic; he respects ritual means while pointing beyond them. The Vedas themselves, in their jñānakāṇḍa, ultimately teach this same discrimination.",
+vm:"Vācaspati: <em>Atiśaya</em> means partiality — Vedic rites give results disproportionate to effort and exclude certain persons; Sāṃkhya knowledge, being internal, is universally accessible to any qualified inquirer.",
+vb:"Hariharānanda: The critique of Vedic means is pragmatics, not nihilism. The Gītā's teaching in chapters 2–3 rests precisely on this: action yields only action's fruits; knowledge alone yields liberation."
 }},
-{n:"Mūlaprakṛtir avikṛtiḥ",d:"Root Prakṛti is not a modification...",r:"SK 3",
+{n:"Mūlaprakṛtir avikṛtiḥ",d:"Root Prakṛti is not a modification; the seven are both; the sixteen are modifications only; Puruṣa is neither",r:"SK 3",
 det:{
-c:"Root Prakṛti (mūlaprakṛti) is not a product. The seven principles beginning with Mahat are both products and producers. The sixteen (senses, mind, elements) are only products. Puruṣa is neither a product nor a producer.",
-ex:"This verse establishes the entire 25-principle ontology of Samkhya in one sweep."
+c:"In one verse Īśvarakṛṣṇa maps the entire Sāṃkhya ontology. <em>Mūlaprakṛti</em> (root Prakṛti) is the uncaused cause. The <em>seven</em> that are both products and producers: Mahat, Ahaṃkāra, and the five Tanmātras (subtle essences of sound, touch, form, taste, smell). The <em>sixteen</em> that are only products: Manas (mind), five cognitive organs, five conative organs, five gross elements. <em>Puruṣa</em> is entirely other — pure consciousness, neither derived nor productive.",
+ex:"Prakṛti is like original clay — shapeless source of all forms. The seven middle principles are clay partially shaped — themselves made of clay and capable of further modification. The sixteen finished forms are products only. Puruṣa is like the potter's consciousness — present throughout but not made of clay at all.",
+g:"Gaudapāda: This classification should be memorized as the key to the entire system. All misidentification (bondage) arises from confusing Puruṣa with any of the other twenty-four; liberation is the recognition of their absolute distinction.",
+vm:"Vācaspati: The word <em>mūla</em> (root) is significant — Prakṛti is not just a cause but the root cause, the causal substratum underlying all manifest existence. No further cause for Prakṛti is needed or possible.",
+vb:"Hariharānanda: Unlike Vedānta's Brahman, Sāṃkhya's Puruṣa has no causal relation to the world at all. The world is entirely Prakṛti's domain; Puruṣa is the untouched witness."
+}}
+]},
+{name:"Three Pramāṇas",ref:"SK 4–7",color:C.purple,children:[
+{n:"Dṛṣṭam anumānam āptavacanaṃ ca",d:"Perception, inference, and reliable testimony are the three pramāṇas — all valid means are included in these three",r:"SK 4",
+det:{
+c:"Sāṃkhya accepts exactly three pramāṇas, unlike Nyāya's four. This three-fold scheme is complete: perception covers the directly cognized; inference covers what reason can reach from perception; testimony covers what is inaccessible to both. Everything knowable falls into one of these three.",
+g:"Gaudapāda: The restriction to three is deliberate. Upamāna (comparison) reduces to testimony; arthāpatti (presumption) and anupalabdhi (non-perception) reduce to inference. Sāṃkhya achieves parsimony without incompleteness.",
+vm:"Vācaspati: Each higher pramāṇa covers objects inaccessible to the lower. Perception covers gross objects; inference covers hidden causes; testimony covers supersensory realities like Puruṣa and liberation.",
+vb:"Hariharānanda: The purpose of listing pramāṇas early is methodological: before claiming Puruṣa and Prakṛti exist, we must establish by which means we know them. Answer: by inference and testimony."
+}},
+{n:"Prativisayādhyavasāyo dṛṣṭam",d:"Perception is the determinative cognition of each particular sense-object; inference is threefold; testimony is from a reliable source",r:"SK 5",
+det:{
+c:"<em>Pratyakṣa</em> (perception) is the <em>adhyavasāya</em> — definite, determinate cognition — that apprehends each object through its particular sense. <em>Anumāna</em> (inference) is threefold: <em>pūrvavat</em> (from cause to effect, e.g., dark clouds → rain), <em>śeṣavat</em> (from effect to cause, e.g., flooded river → past rain), and <em>sāmānyato-dṛṣṭa</em> (from general observed association — the key method for inferring Puruṣa and Prakṛti). <em>Āptavacana</em> is the statement of a trustworthy, directly-knowing person.",
+g:"Gaudapāda: <em>Sāmānyato-dṛṣṭa</em> inference is particularly important for Sāṃkhya: the existence of Prakṛti and Puruṣa is established by this third type — from general observations about the world we infer their existence as necessary conditions.",
+vm:"Vācaspati: <em>Āpta</em> (reliable person) means one who has direct knowledge of the matter and lacks any motive to deceive. For transcendent objects, the āpta is the realized teacher or the śāstra conveying his knowledge.",
+vb:"Hariharānanda: The three-fold division of inference anticipates the logic of later Nyāya. What Sāṃkhya is most interested in is the third type — since that is how Prakṛti and Puruṣa are established."
+}},
+{n:"Sāmānyatas tu dṛṣṭāt atīndriyāṇām",d:"For what is beyond the senses, knowledge comes by general inference from similar seen instances",r:"SK 6",
+det:{
+c:"When objects are beyond direct perception — too subtle, too distant, or belonging to a different order of reality — knowledge comes by <em>sāmānyato-dṛṣṭa</em>: inference from general observed relations. For example: all manifest things share the marks of being composed of guṇas — therefore their ultimate source must also be guṇātmaka. This is how Prakṛti's existence is proven.",
+g:"Gaudapāda: This is the epistemological key to the entire Sāṃkhya project. What we see (pleasure, pain, delusion; activity, weight, illumination) are the signature of the three guṇas everywhere — so their source must also be guṇātmaka.",
+vm:"Vācaspati: Even Puruṣa, though pure consciousness, is inferred from the fact that the entire world must have a witness — Prakṛti is unconscious and cannot be its own witness.",
+vb:"Hariharānanda: This karikā justifies the inference-based methodology of Sāṃkhya. The school does not merely appeal to scripture; it builds a rigorous inferential case for its two ultimate principles."
+}},
+{n:"Atyantaparokṣam āptāgamaḥ",d:"Testimony establishes what is absolutely beyond perception and inference",r:"SK 7",
+det:{
+c:"There are objects so completely beyond perception and natural inference that only reliable testimony (<em>āptāgama</em>) can establish them — such as the detailed structure of liberation, the precise causal sequence of cosmic evolution, or the exact nature of Puruṣa's relationship to Prakṛti. For these, Sāṃkhya relies on the authority of enlightened teachers and scriptures conveying their direct realizations.",
+g:"Gaudapāda: The Sāṃkhya teaching itself, transmitted through the teacher-student lineage, is exactly this kind of āptāgama — reliable testimony from those who have realized the Puruṣa-Prakṛti distinction directly.",
+vm:"Vācaspati: This karikā implicitly refers to the Sāṃkhya system as śāstric testimony. The mechanics of bondage and liberation and the nature of the subtle body are known from āgama rather than perception.",
+vb:"Hariharānanda: Scripture is ranked third — not because it is least reliable, but because most of what we need can be established by perception and inference. Scripture confirms and extends what reason can partly reach."
+}}
+]},
+{name:"Satkāryavāda — Effect in Cause",ref:"SK 8–9",color:C.amber,children:[
+{n:"Saukṣmyāt tadanupalabdhiḥ na asambhavāt",d:"Prakṛti is not perceived due to its subtlety — not because it does not exist; its manifest effects are the evidence",r:"SK 8",
+det:{
+c:"Non-perception can mean one of two things: the object is absent, or it is too subtle for our instruments. We cannot directly perceive atoms or causal forces — yet we accept them from their effects. Prakṛti's absence from perception is due to extreme subtlety (<em>saukṣmya</em>), not non-existence. The entire manifest world — its orderliness and its guṇic character — is the evidence for the unmanifest Prakṛti.",
+ex:"We cannot see the seed inside a sealed fruit, yet we know it exists because a tree grew from it. Prakṛti is similarly inferred from the world's ordered complexity.",
+g:"Gaudapāda: This is the fundamental Sāṃkhya epistemological point against any view that denies unperceived entities. Non-existence requires its own positive proof; mere non-perception does not suffice.",
+vm:"Vācaspati: The same logic applies to Puruṣa — though we cannot perceive pure consciousness as an object, we infer its existence as the necessary witness of all experienced phenomena.",
+vb:"Hariharānanda: The distinction between 'unperceived because absent' and 'unperceived because subtle' is standard in Indian philosophy; Sāṃkhya uses it to defend its most important ontological claims."
+}},
+{n:"Asadakaraṇāt upādānagrāhāt",d:"Five reasons for satkāryavāda: the effect pre-exists in the cause before production",r:"SK 9",
+det:{
+c:"Satkāryavāda — the effect exists in the cause prior to manifestation — is established by five arguments: (1) <em>asadakaraṇāt</em> — the non-existent cannot be produced (nothing from nothing); (2) <em>upādānagrāhāt</em> — a specific material cause is required for each effect (oil from sesame, not from sand); (3) <em>sarvambhavābhāvāt</em> — not everything can arise from everything; (4) <em>śaktasya śakyakaraṇāt</em> — only what is within a capacity's range can arise from it; (5) <em>kāraṇabhāvāt</em> — the effect is essentially non-different from the cause.",
+ex:"Curd pre-exists in milk, not in water. Gold ornaments pre-exist in gold ore. The universe pre-exists in Prakṛti as its latent configuration of guṇas. Production is not creation from nothing but manifestation of what was implicit.",
+g:"Gaudapāda: This refutes the Buddhist doctrine that production creates what was entirely absent. The Sāṃkhya position parallels Vedāntic pariṇāmavāda — real transformation of a real cause.",
+vm:"Vācaspati: The five arguments are cumulative and interdependent: each closes a different loophole. Together they make the case irrefutable within the logic of cause and effect.",
+vb:"Hariharānanda: This doctrine has a practical implication: liberation is not the creation of something new but the recognition of what Puruṣa always already was — pure consciousness free from Prakṛti's entanglement."
+}}
+]}
+]},
+{pada:"Prakṛti Puruṣa",sub:"SK 10–21 · Nature of the Two Ultimate Principles",ref:"SK 10–21",
+intro:"Having established the pramāṇas and the reality of Prakṛti, Īśvarakṛṣṇa now describes the intrinsic characteristics of both ultimate principles. The manifest world displays eight marks that also characterize the unmanifest Prakṛti. Both manifest and unmanifest share five marks that sharply distinguish them from Puruṣa. The three guṇas (sattva, rajas, tamas) are examined in their natures and mutual relations. Five inferential arguments establish Prakṛti's existence. Finally, Puruṣa's nature and the reason for the conjunction of the two principles are explored.",
+branches:[
+{name:"Characteristics of Manifest & Unmanifest",ref:"SK 10–11",color:C.amber,children:[
+{n:"Hetumad anityam avyāpi",d:"The manifest is caused, finite, non-pervasive, active, multiple, supported, dependent, and composed of parts",r:"SK 10",
+det:{
+c:"The manifest (vyakta) possesses eight characteristics: <em>hetumad</em> (caused — it has an antecedent cause), <em>anitya</em> (finite, non-eternal), <em>avyāpin</em> (non-pervasive — occupies delimited space), <em>sakriya</em> (active — changes and moves), <em>aneka</em> (multiple — many things exist), <em>āśrita</em> (supported — dependent on Prakṛti), <em>linga</em> (marked — bearing the guṇa-marks), <em>sāvayava</em> (composite — made of parts). The unmanifest Prakṛti is the reverse: uncaused, eternal, all-pervasive, and so on.",
+g:"Gaudapāda: These eight marks apply equally to all manifest things — a perception, a thought, a tree, a cosmos. They are the signature of anything that has emerged from Prakṛti.",
+vm:"Vācaspati: The key mark is <em>hetumad</em> — having a cause. The unmanifest Prakṛti is <em>a-hetumad</em>: it has no external cause, being the ultimate cause itself.",
+vb:"Hariharānanda: By listing marks rather than substances, Sāṃkhya takes an epistemological approach: we know Prakṛti by the signature her products display everywhere we look."
+}},
+{n:"Triguṇam aviveki viṣayaḥ",d:"Both manifest and unmanifest are trigunated, undiscriminating, objective, universal, unintelligent, and productive — Puruṣa is their opposite on all counts",r:"SK 11",
+det:{
+c:"Five marks shared by both manifest and unmanifest, distinguishing them from Puruṣa: (1) <em>triguṇa</em> — composed of the three guṇas; (2) <em>aviveki</em> — lacking discrimination; (3) <em>viṣaya</em> — an object of experience; (4) <em>sāmānya</em> — common, universal; (5) <em>acetana</em> — unintelligent, non-conscious; (6) <em>prasavadharmin</em> — productive. Puruṣa is opposite: beyond guṇas, discriminating, not an object, singular (isolated), conscious, non-productive.",
+g:"Gaudapāda: The most important distinction is <em>acetana</em> vs. <em>cetana</em>. All of Prakṛti — from gross elements to the subtlest buddhi — is unconscious. Consciousness belongs solely to Puruṣa. The entire error of bondage is the confusion of the unconscious with the conscious.",
+vm:"Vācaspati: <em>Aviveki</em> (undiscriminating) is crucial: Prakṛti cannot distinguish herself from Puruṣa because she has no consciousness to do so. Only Puruṣa, through the instrument of buddhi, can achieve the viveka that liberates.",
+vb:"Hariharānanda: This karikā is the philosophical heart of Sāṃkhya: the entire 25-tattva system is organized around the single axis of consciousness (Puruṣa) vs. non-consciousness (Prakṛti in all her forms)."
+}}
+]},
+{name:"The Three Guṇas",ref:"SK 12–14",color:C.teal,children:[
+{n:"Prīty-aprīti-viṣādātmakāḥ",d:"Sattva has the nature of pleasure; rajas, of pain; tamas, of confusion — they mutually oppose, support, produce, and coexist",r:"SK 12–13",
+det:{
+c:"The three guṇas are not substances but dynamic qualities constituting all of Prakṛti. <em>Sattva</em> is luminous, light, pleasant, illuminating — the principle of awareness and clarity. <em>Rajas</em> is stimulating, active, mobile, painful — the principle of movement and desire. <em>Tamas</em> is heavy, obstructing, enveloping, deluding — the principle of inertia and ignorance. They are always present together, constantly interacting: opposing, supporting, and producing one another. No manifest thing consists of only one guṇa; all are blends, with one predominating.",
+ex:"A calm meditator: sattva predominates. An angry person: rajas predominates. A sleepy, dull person: tamas predominates. A lamp: sattva (light), rajas (burning energy), tamas (wick and oil as inertia).",
+g:"Gaudapāda: The three guṇas explain the entire range of experience. Pleasure (sattva), pain (rajas), and delusion (tamas) are not accidents but the constitutive texture of Prakṛtic existence.",
+vm:"Vācaspati: The mutual interaction of guṇas is not conflict but cooperation. Like three strands of a rope, they work together. Each supports the others: tamas provides the field, rajas provides energy, sattva provides direction.",
+vb:"Hariharānanda: A key implication: liberation cannot be achieved by multiplying sattva alone. Even pure sattva, being guṇātmaka, is still Prakṛti. Liberation requires going beyond all three."
+}},
+{n:"Parasparābhibhavāśraya",d:"The guṇas work together like a lamp — they mutually dominate, support, and generate each other for Puruṣa's experience and liberation",r:"SK 14",
+det:{
+c:"The guṇas serve Puruṣa not by being conscious of him but by natural teleological orientation — like a lamp that illuminates without knowing it illuminates. Their conjunction serves two ends: <em>bhoga</em> (Puruṣa's experience of the world) and <em>apavarga</em> (Puruṣa's liberation from that experience). This double purpose makes sense of why the world exists: Prakṛti's unconscious service to Puruṣa.",
+g:"Gaudapāda: The lamp analogy is perfect: a lamp serves the purpose of its user without any volition. The entire cosmos, as Prakṛti's play, serves Puruṣa's experience without Prakṛti ever being aware of the service.",
+vm:"Vācaspati: The word <em>apavarga</em> (liberation) here is significant: the world is not only a place of bondage but the very instrument by which liberation becomes possible. Without contact with Prakṛti, discrimination would never arise.",
+vb:"Hariharānanda: This teleological framing is Sāṃkhya's answer to theodicy: suffering exists because experience — including the experience of suffering — is necessary for Puruṣa to eventually discriminate itself from Prakṛti."
+}},
+{n:"Pañcabhiḥ sthāpyate",d:"Five arguments establish the existence of Prakṛti: aggregation for another, opposition to guṇas, need for an activator, cosmic purposiveness, and desire for liberation",r:"SK 15–16",
+det:{
+c:"Five inferential proofs for the unmanifest Prakṛti: (1) <em>Saṃghāta-parārthatvāt</em> — all composite things serve a purpose beyond themselves (there must be a non-composite subject, Puruṣa, and an originating cause, Prakṛti). (2) <em>Triguṇādi-viparyayāt</em> — there must be a principle opposite to the guṇic manifest. (3) <em>Adhiṣṭhānāt</em> — there must be something that presides over and activates the composite. (4) <em>Bhoktṛ-bhāvāt</em> — there must be an experiencer and a thing-experienced. (5) <em>Kaivalyārthāt</em> — the desire for liberation presupposes liberation is possible, requiring Prakṛti as the cause of bondage that can be removed.",
+g:"Gaudapāda: These five arguments form a closed logical structure. The existence of a world that serves no apparent purpose argues for an underlying teleology; that teleology can only be explained by positing Puruṣa as the ultimate beneficiary and Prakṛti as the ultimate servant.",
+vm:"Vācaspati: The first argument (aggregation for another's purpose) is particularly powerful: a chariot assembled from parts serves a rider who is not a part. The world assembled from guṇas must serve a non-guṇa consciousness — Puruṣa.",
+vb:"Hariharānanda: This group of arguments later influenced the Nyāya-Vaiśeṣika teleological proof for God, adapting the same structure with different conclusions."
+}}
+]},
+{name:"Nature of Puruṣa",ref:"SK 17–21",color:C.blue,children:[
+{n:"Saṃghāta-parārthatvāt",d:"Puruṣa exists: aggregations serve another's purpose, the uncomposed is needed, and there must be an experiencer",r:"SK 17",
+det:{
+c:"Three-fold proof of Puruṣa's existence: (1) All composite things serve a purpose beyond themselves — the non-composite Puruṣa. (2) Since all manifest things are guṇātmaka, the ultimate subject must be a-guṇa. (3) There must be a conscious witness who presides over, experiences, and gives purpose to the composite. The world is unintelligent; it does not contemplate itself. There must be a conscious witness — that is Puruṣa.",
+g:"Gaudapāda: The argument from purposiveness is most compelling: when a bed is made, it is for a sleeper; when a house is built, it is for a resident. The cosmos, with its extraordinary complexity, must be for someone — and that someone is Puruṣa.",
+vm:"Vācaspati: The third argument (adhiṣṭhānāt — presiding) is subtle: Prakṛti, being unconscious, cannot preside over her own evolution. The orderliness of cosmic evolution requires a conscious witness whose presence orientates the process.",
+vb:"Hariharānanda: Note that Puruṣa is not a creator but a witness. Prakṛti creates; Puruṣa merely witnesses. Yet Puruṣa's presence as witness is what makes the creation purposive rather than random."
+}},
+{n:"Janma-maraṇa-karaṇānāṃ",d:"Puruṣa is many: births, deaths, and varying capacities prove the plurality of individual witnesses",r:"SK 18",
+det:{
+c:"Unlike Advaita Vedānta, Sāṃkhya holds that Puruṣas are many — a plurality of individual witnesses. Evidence: (1) births and deaths are distinct for each individual; (2) different capacities and talents are person-specific; (3) if there were only one Puruṣa, when one were liberated all would be liberated simultaneously — which manifestly does not occur. Each Puruṣa is eternally pure and conscious, but distinct.",
+g:"Gaudapāda: This is the sharpest doctrinal divergence from Advaita. Sāṃkhya maintains plurality out of strict fidelity to experience: the fact that my liberation does not liberate you proves the witnesses are distinct.",
+vm:"Vācaspati: The plurality of Puruṣas is consistent with their all being equally pure consciousness. They differ not in quality but in the particularity of their apparent association with different Prakṛtic configurations.",
+vb:"Hariharānanda: This pluralism makes Sāṃkhya soteriology more pragmatic: each individual must achieve their own viveka; there is no vicarious liberation."
+}},
+{n:"Tasmāt tatsaṃyogāt",d:"The conjunction of Puruṣa and Prakṛti is for mutual purpose: Puruṣa's experience and liberation, Prakṛti's manifestation",r:"SK 20–21",
+det:{
+c:"Puruṣa and Prakṛti are both eternal and real, but their apparent conjunction (<em>saṃyoga</em>) is the root of bondage and the occasion for liberation. Puruṣa, though purely a witness, appears to be involved in Prakṛti's activities. Prakṛti, though unconscious, appears to be guided by Puruṣa — like a dancer performing for an audience. This conjunction is without beginning, yet it has an end: when Puruṣa achieves discrimination (<em>viveka</em>), the conjunction dissolves and Prakṛti ceases to evolve for that Puruṣa.",
+g:"Gaudapāda: The conjunction is mysterious: how can pure consciousness be 'near' pure unconscious matter? Sāṃkhya answers: the proximity is not spatial but constituted by non-discrimination (aviveka) — when discrimination arises, proximity dissolves.",
+vm:"Vācaspati: The double purpose is essential: Prakṛti serves both Puruṣa's experience and liberation. This means the world's purpose is exhausted the moment discrimination occurs.",
+vb:"Hariharānanda: The conjunction doctrine is Sāṃkhya's alternative to Vedānta's māyā. Instead of a cosmic illusion, Sāṃkhya posits a real but purposive entanglement — real in its effects, temporary in its ultimate resolution."
+}}
+]}
+]},
+{pada:"Tattva Prakriyā",sub:"SK 22–38 · The Unfolding of the 25 Principles",ref:"SK 22–38",
+intro:"The central section of the Sāṃkhyakārikā traces the sequential evolution of the twenty-five tattvas from Prakṛti. Each tattva has a defined nature, characteristic function, and role in the scheme of experience and liberation. The first evolute — Mahat or Buddhi — is most important for liberation, since discrimination (viveka) occurs within it. The subtle body (sūkṣma śarīra) carries these evolutes across lives until liberation is attained.",
+branches:[
+{name:"Buddhi / Mahat — First Evolute",ref:"SK 22–25",color:C.amber,children:[
+{n:"Adhyavasāyo buddhiḥ",d:"Buddhi is defined by adhyavasāya — determinative cognition; its sāttvika forms are dharma, jñāna, vairāgya, aiśvarya",r:"SK 23",
+det:{
+c:"<em>Buddhi</em> (intellect) is the first and most important evolute of Prakṛti. Its defining function is <em>adhyavasāya</em> — the definitive determination that precedes action: 'this is so,' 'I will do this.' Its eight forms split on the sattva-tamas axis. Sāttvika forms: dharma (moral order), jñāna (knowledge), vairāgya (dispassion), aiśvarya (sovereignty). Their tāmasika counterparts: adharma, ajñāna, avairāgya, anaiśvarya.",
+g:"Gaudapāda: The cosmic dimension of buddhi as <em>Mahat</em> (the Great) is the first expression of the latent intelligence within Prakṛti. Individual buddhi is its particular manifestation for each Puruṣa. All experience, karma, and discrimination occurs within buddhi.",
+vm:"Vācaspati: <em>Adhyavasāya</em> is not mere judgment but the full act of resolution — evaluation, commitment, and identification. 'This is a snake' is adhyavasāya — the act through which the self appears to identify with a particular cognition.",
+vb:"Hariharānanda: The liberation-relevant point is that <em>viveka</em> — the discriminative knowledge that frees — is itself a form of adhyavasāya within buddhi. Liberation is the transformation of buddhi's final cognition into perfect clarity about Puruṣa's independence."
+}},
+{n:"Sāttvikaḥ ekaādaśakaḥ",d:"From sāttvika ahaṃkāra the eleven arise; from tāmasika, the five tanmātras; taijasa energizes both",r:"SK 25",
+det:{
+c:"Buddhi presents the entire manifest world to Puruṣa. The fourteen inner and outer instruments collect impressions; buddhi synthesizes and presents them. The entire apparatus of experience is organized around buddhi's presentational function — like a minister presenting petitions to a king.",
+g:"Gaudapāda: This presentational relationship is not actual contact between Puruṣa and material buddhi. By proximity (sannidhi), Puruṣa's consciousness illuminates buddhi's contents, and Puruṣa appears to experience what buddhi presents.",
+vm:"Vācaspati: The implication for sādhana: the practitioner must work on buddhi — purifying it by dharma and jñāna — rather than seeking Puruṣa directly. Puruṣa never does anything; only buddhi can change.",
+vb:"Hariharānanda: This is the yogic explanation for sense-restraint: by withdrawing outer instruments from their objects, one deprives buddhi of raw material, and buddhi eventually reflects Puruṣa clearly rather than the world's objects."
+}}
+]},
+{name:"Ahaṃkāra — Ego Principle",ref:"SK 24–26",color:C.coral,children:[
+{n:"Abhimāno'haṃkāraḥ",d:"Ahaṃkāra is defined by abhimāna — self-arrogation; it produces in three modes corresponding to the guṇas",r:"SK 24",
+det:{
+c:"<em>Ahaṃkāra</em> (ego) evolves from buddhi and is defined by <em>abhimāna</em> — the act of identification, the appropriation of 'I am this.' From ahaṃkāra evolve the mind, sense organs, and subtle elements. Its three modes: <em>vaikṛta</em> (sāttvika — produces mind and cognitive organs), <em>taijasa</em> (rājasika — the activating principle), <em>bhūtādi</em> (tāmasika — produces the tanmātras and from them the gross elements).",
+g:"Gaudapāda: Ahaṃkāra is the root of all ordinary selfhood. 'I am a man,' 'I am happy,' 'I am the one who knows' — these are all forms of ahaṃkāra's abhimāna. Liberation is the dissolution of this mistaken identification.",
+vm:"Vācaspati: The three forms producing different orders of reality answers how physical and mental worlds arise from the same root. Sāttvika ahaṃkāra produces mentality; tāmasika produces physicality; rājasika energizes both processes.",
+vb:"Hariharānanda: From the yogic perspective, the practitioner must trace all particular identifications back to this root ego-sense. Dissolving ahaṃkāra does not destroy the person — it reveals Puruṣa, who was always present but obscured."
+}}
+]},
+{name:"Manas, Organs & Tanmātras",ref:"SK 27–35",color:C.teal,children:[
+{n:"Ubhayātmakaṃ manaḥ",d:"Mind (manas) is of both cognitive and conative nature — it coordinates all instruments",r:"SK 27",
+det:{
+c:"<em>Manas</em> (mind) occupies an intermediate position between the inner instrument (buddhi, ahaṃkāra) and the outer organs. It is both cognitive and conative — it accompanies both knowing and acting. Raw data from the sense organs is presented to manas; manas organizes and passes the result upward to buddhi. It is the twelfth tattva counting from Puruṣa.",
+g:"Gaudapāda: The Sāṃkhya triad of antaḥkaraṇa — buddhi, ahaṃkāra, manas — corresponds roughly to reason, ego, and the coordinating mental faculty. Their sequential hierarchy explains the structure of inner experience.",
+vm:"Vācaspati: Unlike Nyāya which treats manas as an organ of inference only, Sāṃkhya makes manas a full sensory and motor organ — participating in all five modes of cognition and action.",
+vb:"Hariharānanda: In yogic practice, control of manas is the key practical challenge. When manas is controlled, the sense organs naturally withdraw, and buddhi becomes clear."
+}},
+{n:"Pañca-buddhīndriyāṇi",d:"Five cognitive organs (hearing, touching, seeing, tasting, smelling) and five conative organs (speech, grasping, moving, excreting, procreating) — capacities, not instruments",r:"SK 26–29",
+det:{
+c:"The ten external instruments evolve from vaikṛta ahaṃkāra (for cognitive organs) and bhūtādi ahaṃkāra (for conative organs), energized by taijasa. The <em>jñānendriyāṇi</em> (cognitive): śrota (hearing), tvak (touching), cakṣus (seeing), rasana (tasting), ghrāṇa (smelling). The <em>karmendriyāṇi</em> (conative): vāk (speech), pāṇi (grasping), pāda (moving), pāyu (excreting), upastha (procreating). These are capacities, not the physical organs themselves.",
+g:"Gaudapāda: The sense organs are capacities, not material instruments. The ear's capacity for hearing is distinct from the physical ear; the former survives bodily death in the subtle body, the latter does not.",
+vm:"Vācaspati: The practical implication: indriya control means restraining these capacities, not damaging the physical organs.",
+vb:"Hariharānanda: The five conative organs are often overlooked in meditation practice, yet their control (especially speech and sexuality) is as important as cognitive sense control for purifying the antaḥkaraṇa."
+}},
+{n:"Sva-viṣaya-samprayoge",d:"All the instruments perform simultaneously, but each has its own distinct function in presenting objects to buddhi",r:"SK 30–32",
+det:{
+c:"The sense organs engage their specific objects; mind synthesizes; ahaṃkāra appropriates; buddhi determines. This four-level processing of every experience happens instantaneously. The analogy used: like a king who commands his agents — the outer senses collect tribute (data), the inner instruments process and present to the king (buddhi/Puruṣa). The key distinction: the outer instruments are object-bound; the inner instruments relate to the self.",
+g:"Gaudapāda: The simultaneous functioning of all thirteen instruments (5 cognitive, 5 conative, manas, ahaṃkāra, buddhi) in every experience demonstrates the remarkable integration within Prakṛti's evolutionary order.",
+vm:"Vācaspati: The distinction between immediate and mediate instruments parallels modern neuroscience's distinction between peripheral sensing and central processing.",
+vb:"Hariharānanda: For practice, this means that meditation cannot target only the outer senses. The meditator must work progressively inward: from sense-withdrawal (pratyāhāra) → concentration (dhāraṇā) → buddhi-purification."
+}},
+{n:"Tanmātrāṇi — Subtle Elements",d:"The five tanmātras arise from bhūtādi ahaṃkāra; from them, the five gross elements evolve by cumulative quality-addition",r:"SK 33–35",
+det:{
+c:"The five <em>tanmātras</em> (subtle elements) intermediate between ahaṃkāra and the gross world: <em>śabda-tanmātra</em> (sound-essence), <em>sparśa-tanmātra</em> (touch-essence), <em>rūpa-tanmātra</em> (form-essence), <em>rasa-tanmātra</em> (taste-essence), <em>gandha-tanmātra</em> (smell-essence). The five gross elements evolve by cumulative addition: ākāśa (space) has sound only; vāyu (air) adds touch; tejas (fire) adds form; jala (water) adds taste; pṛthivī (earth) adds smell and thus has all five qualities.",
+ex:"Earth objects can be experienced through all five senses; space can be heard but not seen, touched, tasted, or smelled — because space is the tanmātra of sound-essence only.",
+g:"Gaudapāda: This cumulative theory explains both the structure of the physical world and the order of yogic sense-withdrawal: practice begins with the grossest qualities (smell/earth) and moves toward the subtlest (sound/space).",
+vm:"Vācaspati: The tanmātras are perceptible only in samādhi — the yogi who achieves saṃyama on them can perceive subtle reality directly, as described in Yoga Sūtras 3.44.",
+vb:"Hariharānanda: From an Āyurvedic perspective, the tanmātras underlie the doctrine of rasas and their effects on doṣas — the same knowledge-body in different terminologies."
+}}
+]},
+{name:"The Subtle Body",ref:"SK 39–40",color:C.gray,children:[
+{n:"Sūkṣmaṃ mātur ādīnāṃ",d:"The subtle body, formed first, is enduring and transmigrates; the gross body is born from parents each time",r:"SK 39–40",
+det:{
+c:"The <em>sūkṣma śarīra</em> (subtle body) is the complex of seventeen subtle elements: buddhi (1), ahaṃkāra (1), manas (1), five jñānendriyāṇi (5), five karmendriyāṇi (5). This subtle body is formed once at the beginning of a Puruṣa's association with Prakṛti and persists across deaths, carrying saṃskāras of all past experiences. The gross body, made of the five mahābhūtas, is produced anew from parents in each birth.",
+ex:"The subtle body is like a traveler who changes vehicles (bodies) but retains the same memories, character, and karmic tendencies. The gross body is like a rented vehicle — used for one life and left behind.",
+g:"Gaudapāda: The subtle body's persistence across lives explains personal identity across births and why karma accumulates and must be worked through.",
+vm:"Vācaspati: The subtle body also explains differential experience: souls in similar circumstances have different responses because they carry different subtle body impressions from prior lives.",
+vb:"Hariharānanda: From a meditative standpoint, sādhanā modifies the subtle body directly — and it is the subtle body that carries those modifications into the next life, making spiritual practice cumulative across incarnations."
+}}
+]}
+]},
+{pada:"Bandha Mokṣa",sub:"SK 39–72 · Bondage, Experience, and Liberation",ref:"SK 39–72",
+intro:"The final section addresses the existential questions: why does a free Puruṣa appear bound? How does liberation occur? What are the varieties of Prakṛtic creation? Īśvarakṛṣṇa uses the famous theater analogy — Prakṛti as the dancer performing for Puruṣa — to explain both bondage and liberation. The text concludes with the transmission of this saving knowledge through the lineage of teachers.",
+branches:[
+{name:"Bondage — The Apparent Conjunction",ref:"SK 41–45",color:C.red,children:[
+{n:"Tasmāt tatsaṃyogāt acetanaṃ cetanāvad iva",d:"From conjunction, the unconscious appears conscious and the unconcerned appears involved",r:"SK 20",
+det:{
+c:"Bondage is not real but apparent. Puruṣa is eternally free, eternally a witness — it never truly acts or suffers. Prakṛti is eternally unconscious — it never truly knows or desires. But in their proximity, Puruṣa appears conscious of Prakṛti's modifications (as if involved), and Prakṛti appears purposive (as if conscious). This mutual reflection produces the entire experience of being a bounded, suffering, acting person. It is like a red rose reflected in a crystal — the crystal appears red but is not red.",
+g:"Gaudapāda: This reflexive misidentification is the <em>avidyā</em> of Sāṃkhya. It is not a cognitive error by Puruṣa (who is non-cognitive) but a structural feature of proximity: proximity plus non-discrimination equals apparent bondage.",
+vm:"Vācaspati: The removal of apparent bondage requires discrimination (viveka), which occurs in buddhi. When buddhi achieves the clear cognition 'Puruṣa is not Prakṛti,' the reflection dissolves — not by any action of Puruṣa but by Prakṛti's own recoil.",
+vb:"Hariharānanda: The analogy of the crystal and the rose recurs throughout Indian philosophy (Yoga Sūtras 1.41) precisely because it captures non-causal conjunction: the crystal doesn't cause the rose to be red, nor does the rose cause the crystal to change — yet an observer sees red crystal."
+}},
+{n:"Rūpair aṣṭabhiḥ",d:"Buddhi takes eight forms — four sāttvika, four tāmasika — constituting the subtle body's character",r:"SK 43",
+det:{
+c:"The eight forms of buddhi (dharma, jñāna, vairāgya, aiśvarya and their opposites adharma, ajñāna, avairāgya, anaiśvarya) constitute the full range of human character and karmic disposition. Their sāttvika forms lead toward liberation. Their tāmasika opposites constitute the subtle body weighted toward rebirth. The practitioner's path is to cultivate the sāttvika forms, bringing buddhi to the threshold of discriminative clarity.",
+g:"Gaudapāda: These eight forms are not sequential stages but simultaneous orientations. A person's character is a blend of all eight; liberation progressively shifts the balance toward the sāttvika four until viveka-jñāna arises.",
+vm:"Vācaspati: <em>Aiśvarya</em> (sovereignty) in its sāttvika form means mastery over the senses and mind — not worldly power. Its tāmasika opposite is helplessness and dependency on the guṇas' play.",
+vb:"Hariharānanda: This eight-fold schema is the Sāṃkhya basis for the yogic virtues (YS 2.30-45). The yamas and niyamas correspond to developing the sāttvika forms of buddhi."
+}},
+{n:"Bāhyam ādhyātmikaṃ ca",d:"Nine types of incapacity (aśakti) afflict the seventeen instruments — eleven organic and seventeen intellectual — constituting the precise anatomy of bondage",r:"SK 49",
+det:{
+c:"The Sāṃkhyakārikā provides a detailed taxonomy of what impedes liberation. The organic incapacities are eleven: one for each cognitive organ, one for each conative organ, and one for the mind — deafness, blindness, dullness, etc. The intellectual incapacities are seventeen: the nine vrtti obstacles of buddhi (mentioned as tuṣṭi and siddhi types). These precise diagnostics allow the practitioner to identify their specific limitations and apply targeted remedies.",
+g:"Gaudapāda: This clinical taxonomy is uniquely Sāṃkhya in character — it treats the problem of bondage with the same precision a physician brings to diagnosis. Identifying the specific blockage determines the specific remedy.",
+vm:"Vācaspati: The seventeen intellectual incapacities in the siddhi category (knowledge, hearing, etc.) show that even spiritual attainments can become obstacles when they generate complacency.",
+vb:"Hariharānanda: This list is valuable for the practitioner's self-examination: an honest assessment of where one's instruments are impaired points directly to what needs healing or transcending."
+}}
+]},
+{name:"Liberation — Viveka-Jñāna",ref:"SK 64–68",color:C.green,children:[
+{n:"Evam tattvābhyāsān",d:"Through sustained practice of the discrimination 'not I, not mine, not me,' liberating knowledge arises",r:"SK 64",
+det:{
+c:"Liberation (<em>mokṣa, apavarga, kaivalya</em>) in Sāṃkhya comes from the arising of discriminative knowledge (<em>viveka-jñāna</em>) in buddhi: the clear recognition that Puruṣa and Prakṛti are entirely distinct. This knowledge produces the three-fold realization: <em>na asmi</em> (I am not this body/mind), <em>na me</em> (nothing belongs to me), <em>na aham</em> (there is no 'I' as ordinarily conceived). When this knowledge is stable and unreversed, Prakṛti ceases to present herself to that Puruṣa.",
+g:"Gaudapāda: Repeated practice (<em>abhyāsa</em>) is required because a single glimpse of viveka does not immediately dissolve all saṃskāras. The discriminative knowledge must be stabilized until the subtle body's tāmasika weight is dissolved.",
+vm:"Vācaspati: The three-fold realization progressively dismantles ahaṃkāra's claim: first body-identification, then the possessive self-sense, then the very sense of personal identity. What remains is Puruṣa, pure and undifferentiated.",
+vb:"Hariharānanda: This is among the most important karikas: it defines what liberation consists of experientially. It is not a new state achieved but the dissolution of a false superimposition — the 'not' is doing the liberating work."
+}},
+{n:"Prakriyā nivartyate",d:"When Prakṛti sees she has been seen, she ceases — like a dancer who, once truly perceived by the audience, withdraws from the stage",r:"SK 61",
+det:{
+c:"The theater analogy is Sāṃkhya's most elegant expression of liberation: Prakṛti is a dancer performing for Puruṣa the audience. When Puruṣa has seen enough — when discrimination arises — Prakṛti, like a modest dancer who realizes she has been fully seen, withdraws. She does not cease to exist but ceases to perform for that Puruṣa. Liberation is Prakṛti's voluntary withdrawal in response to being truly known.",
+ex:"A dancer who realizes the audience has recognized her true nature ceases to play a role and stands as herself. Similarly, when Puruṣa sees Prakṛti clearly for what she is (unconscious, guṇātmaka, other), Prakṛti no longer has a role to play.",
+g:"Gaudapāda: The beauty of this analogy is that it preserves Puruṣa's passivity: Puruṣa doesn't do anything to liberate itself. Discrimination is Prakṛti's own transformation within buddhi — Prakṛti liberates Puruṣa by recognizing her own separateness.",
+vm:"Vācaspati: From Prakṛti's side, liberation is her greatest achievement — she produces, nourishes, and finally releases the Puruṣa she served, like a teacher who produces a student capable of going beyond the teacher.",
+vb:"Hariharānanda: This altruistic framing of Prakṛti's role is unique to Sāṃkhya. Rather than being an obstacle or illusion (as in some Vedānta), Prakṛti is a devoted servant who works toward the liberation she will never herself experience."
+}},
+{n:"Tasmāt saptavidho'ntaḥ",d:"Seven stages of knowledge lead to the dissolution of suffering; liberation is Puruṣa resting in itself",r:"SK 51",
+det:{
+c:"The seven stages (<em>bhūmis</em>) of knowledge leading to liberation: (1) <em>jijñāsā</em> (desire to know the truth); (2) <em>parigraha</em> (receptive study under a teacher); (3) <em>tadarthī-abhyāsa</em> (practice oriented toward that goal); (4) <em>upalabdhi</em> (first experience of discriminative knowledge); (5) <em>viprakṛṣṭa-abhyāsa</em> (continued intensive practice); (6) <em>aśeṣa-viyoga</em> (complete separation from all guṇa-modifications); (7) <em>kaivalya</em> — final isolation of Puruṣa. Each stage builds on the previous.",
+g:"Gaudapāda: The seven-stage path makes clear that Sāṃkhya is a practical discipline, not merely theoretical. The teaching is designed to be applied progressively.",
+vm:"Vācaspati: The parallel with Patañjali's seven-fold wisdom (YS 2.27) is intentional — Sāṃkhya and Yoga share the same path structure, differing in whether Īśvara is included as an auxiliary.",
+vb:"Hariharānanda: The final stage (kaivalya) does not annihilate Puruṣa — it reveals it as always having been what it is: pure witnessing consciousness, unentangled, sufficient unto itself."
+}}
+]},
+{name:"Varieties of Creation",ref:"SK 53–60",color:C.coral,children:[
+{n:"Aṣṭavidhā devasarga",d:"Divine creation is eightfold; human creation is fivefold; beings are classified by their guṇic composition",r:"SK 53",
+det:{
+c:"The varieties of beings produced by Prakṛti: eight orders of divine beings (brahma, prajāpati, deva, gandharva, yakṣa, rākṣasa, piśāca, and bhūta), five human groups, and subhuman/animal realms. Different proportions of the three guṇas determine the realm of birth. More sattva → higher realms; more tamas → lower realms.",
+g:"Gaudapāda: Even the divine realms are within Prakṛti's domain — the gods, however exalted, are still guṇātmaka and thus still within the cycle of bondage and rebirth. Only Puruṣa-knowledge liberates; divine status alone does not.",
+vm:"Vācaspati: This section explains why Sāṃkhya does not idealize heavenly states: they too are temporary. All Prakṛtic experience, however refined, is still mixed with suffering.",
+vb:"Hariharānanda: The 28 types of inability (aśakti) are particularly important for spiritual diagnostics. Identifying one's specific limitations allows targeted practice."
+}},
+{n:"Ūrdhvaṃ sattva-viśālas tamasā",d:"In higher realms sattva predominates; in the human realm all three are equal; in lower realms tamas predominates",r:"SK 54",
+det:{
+c:"The cosmic hierarchy of beings is a guṇic gradient: in the highest divine realms, sattva predominates strongly, producing clarity, bliss, and long life. In the human realm, all three guṇas are roughly balanced — which is exactly why humans have the unique capacity for liberation. In lower realms, tamas predominates, producing heaviness, instability, and suffering. Human birth is the privileged occasion because the relative balance of guṇas makes viveka possible.",
+g:"Gaudapāda: The human birth is philosophically prized precisely because it is not dominated by sattva (which produces pleasure without urgency to seek liberation) or tamas (which produces dullness), but by the volatile balance that makes inquiry and effort possible.",
+vm:"Vācaspati: This hierarchical cosmology has a practical corollary: cultivating sattva brings the human being closer to the conditions in which discriminative knowledge can arise. But the goal is not a divine birth — it is viveka-jñāna.",
+vb:"Hariharānanda: This karikā provides the Sāṃkhya basis for the value of human birth — a theme central to all Indian philosophy. Uniquely, Sāṃkhya grounds this value in the specific guṇic structure of the human condition."
+}}
+]},
+{name:"Conclusion & Lineage",ref:"SK 69–72",color:C.gray,children:[
+{n:"Pauraṃparyeṇa kapilasya",d:"This knowledge was transmitted from Kapila through Āsuri to Pañcaśikha; Īśvarakṛṣṇa condensed that tradition into 72 verses",r:"SK 69–70",
+det:{
+c:"Sāṃkhya traces its transmission through a defined lineage: <em>Kapila</em> (the founding rṣi) → <em>Āsuri</em> → <em>Pañcaśikha</em>, whose 70-stanza version spread the teaching widely. Īśvarakṛṣṇa's Sāṃkhyakārikā condenses that tradition into 72 precise verses, preserving the essential structure while eliminating the exhaustive replies to objections that fill Pañcaśikha's text.",
+g:"Gaudapāda: The mention of the lineage authenticates the text as āptāgama — testimony from those who realized the truth directly. Īśvarakṛṣṇa does not claim to invent; he claims to transmit.",
+vm:"Vācaspati: The lineage from Kapila signals that Sāṃkhya is not a later development but belongs to the most ancient wisdom tradition of India, predating the systematization of Vedānta.",
+vb:"Hariharānanda: The transmission model underscores the methodological point made at the outset (SK 7): some knowledge requires āptāgama. A teacher who has realized Puruṣa-Prakṛti discrimination can guide students in ways that scriptural study alone cannot replicate."
+}},
+{n:"Etat pavitram agryam",d:"This knowledge — purest and supreme — is the raft across the ocean of suffering; Puruṣa is released by the discrimination of Prakṛti",r:"SK 72",
+det:{
+c:"The closing verse affirms the liberatory efficacy of the knowledge transmitted. By discriminative knowledge of Prakṛti and Puruṣa, the Puruṣa-witness is released from the three-fold suffering forever. The text ends not with ritual or devotional injunction but with a quiet restatement of the cognitive solution: know the difference — and you are free.",
+g:"Gaudapāda: The final verse is characteristically Sāṃkhya: knowledge, not action, not ritual, not devotion — purely and simply, discriminative knowledge is the liberating instrument.",
+vm:"Vācaspati: The description of this knowledge as <em>pavitra</em> (purifying) and <em>agra</em> (supreme) places the Sāṃkhyakārikā within the tradition of the Upaniṣads' highest wisdom-texts.",
+vb:"Hariharānanda: The final note is epistemological humility: the text acknowledges that it is a transmission, not a creation. The knowledge it conveys precedes the text and will persist beyond it, in those who realize it.",
+v:"Vyāsa (Mahābhārata, Śānti Parva, Mokṣadharma section): The Sāṃkhya teaching occurs extensively in the Mahābhārata, presented as the highest of all philosophical doctrines — the one most directly concerned with liberation from the cycle of rebirth."
 }}
 ]}
 ]}
@@ -494,11 +769,10 @@ function renderDetail(d, color, leafId){
     </div>`;
   }
   const coms = [
-    {key:'v',  name:'Vyāsa · Yoga Bhāṣya'},
-    {key:'s',  name:'Śaṅkara · Vivaraṇa'},
-    {key:'vm', name:'Vācaspati Miśra · Tattva-Vaiśāradī'},
-    {key:'vb', name:'Vijñāna-Bhikṣu · Yoga-Vārttika'},
-    {key:'bg', name:'Bhoja · Rāja-Mārtaṇḍa'}
+    {key:'g',  name:'Gaudapāda · Sāṃkhya-Kārikā-Bhāṣya'},
+    {key:'vm', name:'Vācaspati Miśra · Tattva-Kaumudī'},
+    {key:'vb', name:'Hariharānanda Āraṇya · Commentary'},
+    {key:'v',  name:'Vyāsa · Mahābhārata Tradition'}
   ];
   const present = coms.filter(c => d[c.key]);
   if(present.length){
@@ -592,14 +866,14 @@ function toggleDetail(id, ev){
 
 // ── Init ─────────────────────────────────────────────────
 const legend = [
-  {color:C.purple, label:'Philosophy / Metaphysics'},
-  {color:C.teal,   label:'Practice / Limbs'},
-  {color:C.coral,  label:'Kriyā / Action'},
-  {color:C.red,    label:'Afflictions / Obstacles'},
-  {color:C.blue,   label:'Samādhi / Inner Limbs'},
-  {color:C.amber,  label:'Siddhis / Powers'},
-  {color:C.green,  label:'Liberation / Goal'},
-  {color:C.gray,   label:'Karma'}
+  {color:C.purple, label:'Pramāṇas / Epistemology'},
+  {color:C.teal,   label:'Guṇas / Qualities'},
+  {color:C.amber,  label:'Prakṛti / Matter'},
+  {color:C.blue,   label:'Puruṣa / Consciousness'},
+  {color:C.coral,  label:'Tattva Evolution'},
+  {color:C.red,    label:'Bondage / Saṃsāra'},
+  {color:C.green,  label:'Liberation / Kaivalya'},
+  {color:C.gray,   label:'Conclusion'}
 ];
 
 let html = `<div class="legend">`;

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nyaya Sutras — Map</title>
+<title>Nyāya Sūtras — Complete Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inconsolata:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
@@ -423,9 +423,9 @@ body {
 <body>
 <div id="app-shell">
   <header class="site-header">
-    <div class="eyebrow">Classical Indian Philosophy</div>
-    <h1>Nyaya Sutras — Map</h1>
-    <div class="subtitle">Overview of Nyaya Logic & Epistemology</div>
+    <div class="eyebrow">Gautama · c. 2nd century BCE</div>
+    <h1>Nyāya Sūtras — Complete Map</h1>
+    <div class="subtitle">Five Books · 528 Sūtras · Vātsyāyana, Vācaspati Miśra, Udayana, Raghunātha &amp; Viśvanātha</div>
   </header>
   <div id="app"></div>
 </div>
@@ -444,21 +444,284 @@ const C={
 };
 
 const data=[
-{pada:"Nyaya Sutras",sub:"Sample · First Chapter",ref:"NS 1.1",
-intro:"Gautama's Nyāya Sūtras lay the foundation for Indian logic and epistemology. It details the 16 categories (padārthas) whose true knowledge leads to liberation. This is a representative sample showing the structure with commentaries.",
+{pada:"Adhyāya I.i",sub:"NS 1.1.1–44 · The 16 Categories, Pramāṇas, and the Five-Part Syllogism",ref:"NS 1.1",
+intro:"The Nyāya Sūtras open with the bold claim that knowledge of sixteen specific categories is the path to the highest good. The first adhyāya defines each category concisely and elaborates the four valid means of knowledge (pramāṇas) in detail. The central concern is epistemological: how do we know anything? And how does correct knowing lead to freedom from suffering? Gautama's logic became the foundational Indian discipline of reasoning, influencing every subsequent philosophical school.",
 branches:[
-{name:"The 16 Categories & Purpose",ref:"NS 1.1",color:C.amber,children:[
-{n:"Pramāṇa-prameya...",d:"Knowledge of the 16 categories leads to the highest good.",r:"NS 1.1.1",
+{name:"Liberation through True Knowledge",ref:"NS 1.1.1–2",color:C.green,children:[
+{n:"Pramāṇa-prameya-saṃśaya-prayojana",d:"Knowledge of the true nature of the 16 categories — pramāṇa, prameya, saṃśaya, prayojana, dṛṣṭānta, siddhānta, avayava, tarka, nirṇaya, vāda, jalpa, vitaṇḍā, hetvābhāsa, chala, jāti, nigrahasthāna — leads to the highest good",r:"NS 1.1.1",
 det:{
-c:"Supreme felicity (apavarga) is attained by the knowledge of the true nature of: 1. Means of right knowledge (pramāṇa), 2. Object of right knowledge (prameya), 3. Doubt, 4. Purpose, 5. Familiar instance, 6. Established tenet, 7. Members of a syllogism, 8. Confutation, 9. Ascertainment, 10. Discussion, 11. Wrangling, 12. Cavil, 13. Fallacy, 14. Quibble, 15. Futility, and 16. Ground of defeat.",
-v:"Vātsyāyana (Nyāya Bhāṣya): Without the means of knowledge, the object cannot be known. The lamp of all sciences is Nyaya.",
-vm:"Vācaspati Miśra (Tātparya Tīkā): The knowledge of these 16 categories is instrumental in removing ignorance, the root of all suffering.",
-vb:"Udayana (Pariśuddhi): The removal of false knowledge leads to the cessation of faults, which stops activity, ending rebirth and suffering."
+c:"The opening sūtra makes a single sweeping claim: knowing the <em>tattva</em> (real nature, not mere verbal definition) of all sixteen categories is sufficient for <em>niḥśreyasa</em> (the highest good, liberation). The sixteen cover: (1) the means of knowing (pramāṇa), (2) what is to be known (prameya), (3) the cognitive problem that drives inquiry (saṃśaya/doubt), (4) the goal that motivates action (prayojana), (5) the example that grounds reasoning (dṛṣṭānta), (6) established conclusions (siddhānta), (7) parts of a syllogism (avayava), (8) hypothetical reasoning (tarka), (9) definitive conclusion (nirṇaya), (10–12) three kinds of discourse (vāda, jalpa, vitaṇḍā), (13) logical fallacy (hetvābhāsa), (14) quibble (chala), (15) futile responses (jāti), (16) grounds of defeat (nigrahasthāna).",
+v:"Vātsyāyana (Nyāya Bhāṣya): Without the means of knowledge, the object cannot be known. Without the object, the means has nothing to cognize. The sixteen categories together form a complete system covering the full range of philosophical inquiry.",
+vm:"Vācaspati Miśra (Tātparya Ṭīkā): <em>Tattva-jñāna</em> (knowledge of true nature) is distinguished from mere verbal familiarity. One can know the word 'soul' without knowing the soul's true nature. The liberation promised requires the latter.",
+u:"Udayana (Pariśuddhi): The removal of false knowledge leads to the cessation of faults, which stops activity, ending rebirth and suffering — this causal chain is elaborated in the next sūtra.",
+r:"Raghunātha Śiromaṇi (Bhāṣya Candra): The sixteen categories are not arbitrary — they represent the complete taxonomy of what occurs in valid philosophical discourse: what we use to know (1), what we know about (2), why inquiry begins (3-5), how conclusions are reached (6-9), and how discourse can succeed or fail (10-16).",
+vis:"Viśvanātha (Nyāya Sūtra Vṛtti): The lamp of all sciences is Nyāya. Just as a lamp illuminates all objects in a room, logical methodology illuminates all subjects of inquiry."
 }},
-{n:"Duḥkha-janma...",d:"The chain of cessation leading to liberation.",r:"NS 1.1.2",
+{n:"Duḥkha-janma-pravṛtti-doṣa-mithyājñānānām",d:"Liberation is the successive cessation in reverse order: false knowledge → faults → activity → birth → suffering",r:"NS 1.1.2",
 det:{
-c:"Pain, birth, activity, faults, and misapprehension — on the successive annihilation of these in the reverse order, there follows release (apavarga).",
-ex:"Ignorance causes faults (desire/aversion). Faults cause action (karma). Action causes birth. Birth causes suffering. Remove ignorance, and the entire chain collapses like dominos."
+c:"The five-link causal chain to bondage (and the map for liberation): <em>mithyājñāna</em> (false knowledge/ignorance) causes <em>doṣas</em> (faults: desire, aversion, confusion). Doṣas cause <em>pravṛtti</em> (activity/karma). Karma causes <em>janma</em> (birth/rebirth). Birth causes <em>duḥkha</em> (suffering). Liberation comes by removing these <em>in reverse</em>: destroy false knowledge → faults cease → activities cease → rebirth ceases → suffering ceases. True knowledge is the sole means.",
+ex:"Ignorance ('the body is me') causes desire ('I want what pleases the body') and aversion ('I hate what harms the body'). These faults cause actions with karmic consequence. Karma causes the next birth. Birth necessarily involves suffering. Remove the root — ignorance — and the entire chain collapses.",
+v:"Vātsyāyana: The causal chain is exhaustive — there is no other path to suffering except through false knowledge. Conversely, there is no other path to liberation except through true knowledge. This makes Nyāya fundamentally an epistemological soteriology.",
+vm:"Vācaspati: The phrase <em>uttarottara-apāye</em> (successive cessation) is precise: it is not simultaneous removal but sequential. First false knowledge must be removed; the downstream links then cease automatically.",
+u:"Udayana: The false knowledge referred to is not mere error in ordinary cognition but the foundational misidentification of the self with the body-mind complex — the same avidyā that all Indian philosophy targets.",
+r:"Raghunātha: Note that Gautama does not say 'renunciation causes liberation' or 'devotion causes liberation' — he says <em>tattva-jñāna</em> does. This places Nyāya in the jñāna-mārga tradition alongside Sāṃkhya and Advaita.",
+vis:"Viśvanātha: The five links are mutually supportive: faults strengthen ignorance, activity reinforces faults, rebirth perpetuates activity. It is a self-sustaining cycle — only an external intervention (knowledge) can break it."
+}}
+]},
+{name:"The Four Pramāṇas",ref:"NS 1.1.3–8",color:C.blue,children:[
+{n:"Pratyakṣānumānopamānaśabdāḥ pramāṇāni",d:"Perception, inference, comparison, and verbal testimony are the four valid means of knowledge",r:"NS 1.1.3",
+det:{
+c:"Nyāya accepts four pramāṇas — more than Sāṃkhya's three, less than Mīmāṃsā's six. The addition of <em>upamāna</em> (comparison) as a separate pramāṇa is characteristic of Nyāya and marks its careful attention to how new knowledge arises from analogical cognition. All four are genuine sources of new knowledge, not merely forms of inference.",
+v:"Vātsyāyana: Each pramāṇa covers a domain the others cannot access. Their combination is epistemically exhaustive — there is no genuine knowledge that cannot be traced to one of these four sources.",
+vm:"Vācaspati: The inclusion of upamāna as a separate pramāṇa distinguishes Nyāya from Sāṃkhya. For Nyāya, the knowledge 'this animal called a wild cow resembles the domestic cow' arises from a distinct cognitive process — recognition of resemblance.",
+u:"Udayana: Later Navya-Nyāya analysis reduces all four to variants of perception and inference, but classical Nyāya insists on their distinctness at the level of common epistemic experience.",
+r:"Raghunātha: The fourfold division maps to four types of epistemic access: direct (pratyakṣa), mediated via marks (anumāna), mediated via similarity (upamāna), and mediated via language/authority (śabda).",
+vis:"Viśvanātha: The pramāṇa list is not a mere inventory but a methodology for adjudicating disputes. When two parties disagree, the first question is always: by which pramāṇa do you establish your claim?"
+}},
+{n:"Indriyārtha-sannikarṣotpannaṃ jñānam avyapadeśyam",d:"Perception is knowledge produced by sense-contact with its object — non-verbal, non-errant, and determinate",r:"NS 1.1.4",
+det:{
+c:"The definition of perception has four conditions: (1) <em>indriyārtha-sannikarṣa</em> — contact between sense-organ and object; (2) <em>avyapadeśya</em> — non-verbal, not mediated by words or concepts; (3) <em>avyabhicāri</em> — non-errant, never mistaken (this refers to genuine perception, not illusion); (4) <em>vyavasāyātmaka</em> — determinate, not indistinct. This four-condition definition allows Nyāya to exclude both verbal testimony (lacks sense-contact) and illusion (lacks non-errancy) from genuine perception.",
+v:"Vātsyāyana: Sense-contact takes six forms (sāmānya, viśeṣa, samavāya, samavāyi-samavāya, viśeṣaṇa-viśeṣya, jñāna-lakṣaṇa) — allowing Nyāya to account for the perception of universals, relations, and even mental states.",
+vm:"Vācaspati: The condition <em>avyapadeśya</em> (non-verbal) marks the crucial distinction between perception itself and its verbal expression. Pre-verbal bare perception is the foundation; verbal formulation of perception comes after.",
+u:"Udayana: Navya-Nyāya later distinguishes <em>nirvikalpa</em> (indeterminate, non-relational) and <em>savikalpa</em> (determinate, relational) perception. Both are genuine perceptions; the former is foundational, the latter is the normal everyday perceptual cognition.",
+r:"Raghunātha (Bhāṣya Candra): The qualifier <em>avyabhicāri</em> (non-errant) is the key to the epistemological status of perception. Since illusions fulfill conditions 1-3 but violate this, they are not genuine perceptions.",
+vis:"Viśvanātha: The six types of sense-contact allow Nyāya to explain how we perceive abstract objects — universals are perceived via samavāya (inherence) contact, not direct physical contact."
+}},
+{n:"Atha tatpūrvakaṃ trividham anumānam",d:"Inference is preceded by perception and is of three kinds: pūrvavat, śeṣavat, and sāmānyato-dṛṣṭa",r:"NS 1.1.5",
+det:{
+c:"Inference is knowledge preceded by perception of the mark (liṅga) and its relation to the inferred object. Three types: (1) <em>pūrvavat</em> — from cause to effect: seeing dark clouds (cause), infer rain (effect). (2) <em>śeṣavat</em> — from effect to cause: seeing a flooded river (effect), infer past rain (cause). (3) <em>sāmānyato-dṛṣṭa</em> — from general observed association: the sun moves across the sky (perceived), infer that the sun must have a location (not directly perceived).",
+ex:"Seeing smoke on a hill (perception) → inferring fire (inference). The smoke is the liṅga; its invariable concomitance with fire (vyāpti) is the basis; 'the hill has fire' is the conclusion.",
+v:"Vātsyāyana: The third type (sāmānyato-dṛṣṭa) is the most philosophically significant, as it grounds all metaphysical inference — including the inference of the soul, of causal connections, and of God's existence.",
+vm:"Vācaspati: The requirement that inference be 'preceded by perception' means the invariable concomitance (vyāpti) between mark and inferred object must be grounded in prior perceptual experience.",
+u:"Udayana: Later Nyāya refines this into the formal five-part syllogism. The classification pūrvavat/śeṣavat/sāmānyato-dṛṣṭa is more phenomenological — it describes what we observe rather than the logical structure of inference.",
+r:"Raghunātha: The third type (sāmānyato-dṛṣṭa) is crucial for Nyāya's proofs of God: from the orderly structure of the world (perceived), we infer an intelligent maker (not perceived). This inference is of the third type.",
+vis:"Viśvanātha: All inference ultimately reduces to perception of a mark + knowledge of invariable concomitance + the conclusion. The three types describe the direction of the causal inference, not its logical form."
+}},
+{n:"Prasiddha-sādharmyāt sādhya-sādhanaṃ upamānam",d:"Comparison is knowledge of the connection between a name and the named object, arising from similarity to a known object",r:"NS 1.1.6",
+det:{
+c:"<em>Upamāna</em> (comparison) produces knowledge of a new kind: the connection between a word and its referent, established through observed similarity. The classic example: a person is told 'a gavaya (wild cow) is like a cow' and goes to the forest. On seeing the gavaya, he thinks 'this is what gavaya means.' The new knowledge — the connection between the word 'gavaya' and the animal — arises from comparison with the known cow. This is not inference (which requires a mark with invariable concomitance) but recognition via similarity.",
+v:"Vātsyāyana: Upamāna is irreducible to inference because it yields a distinctive kind of knowledge — the meaning-connection (sāmjñā-saṃbandha) between a word and its object — not an object's existence.",
+vm:"Vācaspati: Upamāna is also irreducible to perception, because the recognized similarity is not directly seen in the new object but emerges from comparing remembered knowledge with present experience.",
+u:"Udayana: The objection that upamāna is just a form of inference is answered by pointing to its distinctive result: not 'there is a gavaya here' (inference) but 'this is what gavaya means' (recognition of semantic connection).",
+r:"Raghunātha: In the Navya-Nyāya analysis, upamāna reduces to a complex of memory plus perception plus recognition. But at the phenomenological level, the resultant knowledge has a distinctive character that justifies its separate classification.",
+vis:"Viśvanātha: Upamāna has practical significance for language acquisition and dictionary-making, where new words are explained by comparison with known ones. Nyāya's recognition of it as a separate pramāṇa reflects its fine-grained attention to how knowledge actually arises."
+}},
+{n:"Āptopadeśaḥ śabdaḥ",d:"Testimony (śabda) is the statement of a reliable person (āpta)",r:"NS 1.1.7",
+det:{
+c:"<em>Śabda</em> (verbal testimony) is the statement of an <em>āpta</em> — a trustworthy, directly-knowing person who has no motive to deceive. Testimony yields knowledge of objects that cannot be directly perceived or inferred by the hearer at the time of cognition. Two types: <em>dṛṣṭārtha</em> (testimony about perceptible matters, like a friend's report) and <em>adṛṣṭārtha</em> (testimony about transcendent matters, like scripture).",
+v:"Vātsyāyana: <em>Āpta</em> is defined as one who has direct knowledge of the matter and is motivated by the desire to communicate truthfully. An āpta speaking about fire gives me knowledge of fire even before I see it.",
+vm:"Vācaspati: The extension to scriptural testimony is crucial: the Vedas are śabda-pramāṇa because the ṛṣis who perceived their contents were āptas — persons who directly apprehended the truths they conveyed.",
+u:"Udayana: The Nyāya school's acceptance of scripture as a pramāṇa does not conflict with its rationalist epistemology: scripture is testimony, and testimony is valid when the source is reliable. The āptatva (reliability) of the Vedas is established by the reliability of the ṛṣis.",
+r:"Raghunātha: The question of whether the Vedas are apauruṣeya (person-less, without an author) or person-authored is handled differently by Mīmāṃsā vs. Nyāya: Nyāya holds that the Vedas were authored by God (Īśvara), making them the most reliable testimony.",
+vis:"Viśvanātha: Testimony's validity is conditional on the reliability of the source. This explains why Nyāya emphasizes logical criteria for evaluating claims rather than accepting testimony uncritically."
+}},
+{n:"Sa dvividhaḥ dṛṣṭādṛṣṭārthatvāt",d:"Testimony is of two kinds: about perceptible matters and about transcendent matters",r:"NS 1.1.8",
+det:{
+c:"<em>Dṛṣṭārtha śabda</em> (testimony about observable matters): 'There is a fire in the kitchen' — the hearer could in principle verify this by direct perception, but saves time by trusting the speaker. <em>Adṛṣṭārtha śabda</em> (testimony about transcendent matters): 'The soul persists after death,' 'the results of dharma manifest in future lives' — the hearer cannot in principle verify these perceptually; they must rely on the authority of those who have directly cognized these truths (yogic perception, scriptural revelation).",
+v:"Vātsyāyana: Both kinds are valid pramāṇas; they differ in the kind of corroboration available, not in their epistemic status. The second kind requires greater scrutiny of the source's reliability.",
+vm:"Vācaspati: The adṛṣṭārtha kind is where scripture's authority enters. Nyāya's acceptance of scripture is not blind faith but the rational recognition that some truths are accessible only to those with non-ordinary cognitive access.",
+u:"Udayana: The argument for God (Īśvara) in Nyāya rests precisely on the need for a reliable author for adṛṣṭārtha testimony: who authored the scriptural truths about liberation, karma, and dharma? Only an omniscient, perfectly reliable person — God.",
+vis:"Viśvanātha: The distinction also has legal significance in Indian thought: eyewitness testimony (dṛṣṭārtha) and traditional knowledge (adṛṣṭārtha based on lineage) are treated differently in procedural contexts."
+}}
+]},
+{name:"The 12 Prameyas — Overview",ref:"NS 1.1.9",color:C.teal,children:[
+{n:"Ātma-śarīrendriya-artha-buddhi-manaḥ-pravṛtti-doṣa-pretyabhāva-phala-duḥkha-apavargāḥ",d:"The twelve prameyas (objects of valid knowledge) are: soul, body, senses, sense-objects, cognition, mind, activity, faults, rebirth, fruit, suffering, and liberation",r:"NS 1.1.9",
+det:{
+c:"Nyāya lists twelve objects that must be truly known to achieve liberation. This list covers the full range of what matters for soteriology: who we are (soul), what we inhabit (body, senses), what we encounter (sense-objects), how we know (cognition, mind), what we do (activity), why we do it (faults — desire, aversion, confusion), what follows (rebirth, fruit of action, suffering), and what we seek (liberation). The list is not exhaustive of all knowable objects but exhaustive of what is relevant to the liberation project.",
+v:"Vātsyāyana: The twelve prameyas are not arbitrary. Each links directly to the causal chain of bondage described in NS 1.1.2: soul and mind are the loci of false knowledge; faults, activity, and rebirth are the chain; suffering is the result; liberation is the goal.",
+vm:"Vācaspati: The soul is listed first because it is the primary subject — the one who is bound, who seeks knowledge, and who is liberated. All other prameyas are understood in relation to the soul.",
+r:"Raghunātha: Modern Navya-Nyāya substantially expands the list of valid objects of knowledge to include universals, particulars, inherence, and absence. The original twelve reflect the classical school's soteriological focus.",
+vis:"Viśvanātha: Note that liberation (apavarga) is itself a prameya — an object of knowledge. This is significant: Nyāya holds that liberation must be correctly understood (not just desired) for it to be achieved."
+}}
+]},
+{name:"Doubt, Purpose & Familiar Instance",ref:"NS 1.1.27–29",color:C.purple,children:[
+{n:"Vimarśo jñātvā'vimarśaḥ",d:"Saṃśaya (doubt) is cognition that touches both possibilities of an alternative without settling on either",r:"NS 1.1.27",
+det:{
+c:"<em>Saṃśaya</em> is the specific cognitive state that motivates philosophical inquiry — the moment where the mind oscillates between two contradictory positions without resolution. Example: 'Is that a post or a person in the dusk?' Both possibilities are live; neither is settled. Doubt is distinguished from mere ignorance (not knowing) and from error (wrongly settling). It is the productive middle state that drives the inquiry forward.",
+v:"Vātsyāyana: Doubt arises from five causes: (1) common marks (seeing something that both posts and persons share — an upright shape), (2) distinguishing marks (seeing marks that neither fully settles), (3) hearsay without direct knowledge, (4) irregular presentation, (5) erratic perception.",
+vm:"Vācaspati: Doubt is listed as a padartha because it plays a structural role in philosophical discourse — inquiry begins with doubt, proceeds through argument, and ends with certainty (nirṇaya). The three stages map to saṃśaya, tarka, nirṇaya.",
+u:"Udayana: Productive doubt (that motivates philosophical inquiry) must be distinguished from skeptical paralysis (which doubts everything). Nyāya's epistemology is designed to convert productive doubt into certain knowledge.",
+vis:"Viśvanātha: Saṃśaya about the soul — 'is there a soul distinct from the body or not?' — is the prime philosophical doubt. All the epistemological machinery of Nyāya is ultimately deployed to resolve this foundational question."
+}},
+{n:"Yam artham adhikṛtya pravartate tat prayojanam",d:"Purpose (prayojana) is that with a view to which one engages in action — it is the motive behind all inquiry and activity",r:"NS 1.1.28",
+det:{
+c:"<em>Prayojana</em> is the goal or purpose that motivates an agent to act. Nothing rational is done without a purpose, and understanding the purpose is essential for evaluating whether an action or argument is well-directed. In philosophical discourse, the purpose of inquiry into each category must be understood — otherwise the inquiry is unmotivated and unfocused. The ultimate prayojana of Nyāya as a whole is liberation (apavarga).",
+v:"Vātsyāyana: Prayojana is listed as a padartha because it explains why anything at all is done. In a debate, understanding the purpose of the debate helps the participants stay relevant.",
+vm:"Vācaspati: The immediate purpose (iha prayojana) and the ultimate purpose (parampara prayojana) must be distinguished. The immediate purpose of studying pramāṇas may be to win an argument; the ultimate purpose is liberation.",
+vis:"Viśvanātha: An action without a discernible purpose is irrational. This principle is used by Nyāya to establish God's existence: the world has an intelligible structure that implies a purpose; purpose implies an agent with that purpose — Īśvara."
+}},
+{n:"Lokasya prasiddhārthaḥ dṛṣṭānta",d:"A familiar instance (dṛṣṭānta) is an example about which experts and non-experts agree",r:"NS 1.1.29",
+det:{
+c:"<em>Dṛṣṭānta</em> is the example or illustration used in an argument that both the speaker and audience recognize as established beyond dispute. Unlike premises (which may be contested), the dṛṣṭānta is common ground — something so evidently true that it can anchor the argument. In a syllogism ('wherever there is smoke there is fire — as in a kitchen'), the kitchen is the dṛṣṭānta.",
+v:"Vātsyāyana: The dṛṣṭānta serves as the empirical anchor for the universal principle (vyāpti) being deployed in an argument. It must be genuinely agreed upon, not just asserted to be agreed upon.",
+vm:"Vācaspati: The condition that both <em>loka</em> (ordinary people) and <em>paṇḍita</em> (experts) agree removes any possibility of dṛṣṭāntas that are only accepted in one community — ensuring that arguments have genuine inter-subjective validity.",
+vis:"Viśvanātha: Without agreed-upon examples, philosophical argument becomes impossible — every premise could be endlessly contested. The dṛṣṭānta provides the shared empirical basis on which rational discourse can proceed."
+}}
+]},
+{name:"The Five-Part Syllogism",ref:"NS 1.1.32–39",color:C.amber,children:[
+{n:"Sādhyanirdeśaḥ pratijñā",d:"Proposition (pratijñā) is the statement of what is to be proved",r:"NS 1.1.33",
+det:{
+c:"The Nyāya syllogism has five parts (pañcāvayava): (1) <em>Pratijñā</em> — the thesis: 'The hill has fire.' (2) <em>Hetu</em> — the reason: 'Because it has smoke.' (3) <em>Udāharaṇa</em> — the example: 'Wherever there is smoke there is fire, as in a kitchen.' (4) <em>Upanaya</em> — the application: 'This hill has smoke.' (5) <em>Nigamana</em> — the conclusion: 'Therefore this hill has fire.' This is the full formal structure of an Nyāya inference when stated for another's benefit (parārthānumāna).",
+v:"Vātsyāyana: The five-part syllogism is designed for philosophical debate — it presents an inference in a form that can be challenged at each step. The conclusion (nigamana) reiterates the pratijñā after the full argument has been given.",
+vm:"Vācaspati: The Nyāya syllogism differs from the Aristotelian: the example (udāharaṇa) introduces the universal principle empirically, grounding the major premise in observed cases rather than asserting it abstractly.",
+u:"Udayana: Later Nyāya reduces the five parts to three (pratijñā, hetu, dṛṣṭānta) and then to two (pakṣa-dharmatā and vyāpti). The five-part form is pedagogically complete but logically reducible.",
+r:"Raghunātha: The distinctiveness of Indian logic is precisely the empirical grounding of the universal: 'wherever there is smoke there is fire, as in a kitchen' — the example prevents the universal from being purely formal.",
+vis:"Viśvanātha: The five parts map to different logical functions: the thesis states what is unknown; the reason gives the epistemic grounds; the example grounds the universal in the known; the application brings the universal to the particular case; the conclusion completes the circuit."
+}},
+{n:"Uddeśa-lakṣaṇa-parīkṣā",d:"Tarka (hypothetical reasoning) is reasoning that establishes truth by revealing the absurdity of the alternative",r:"NS 1.1.40",
+det:{
+c:"<em>Tarka</em> is not a positive pramāṇa but a supporting tool: it establishes a position by demonstrating that its denial leads to absurdity (reductio ad absurdum). If the soul does not persist after death, why do people remember past lives? If cognition is only bodily, why do unconscious bodies not cognize? Tarka is the pressure-test of a position — it does not itself generate new knowledge but establishes which alternative is viable.",
+v:"Vātsyāyana: Tarka is used to support a position already established by a pramāṇa, not to replace the pramāṇa. Its role is to remove the opponent's objections by showing their consequences are untenable.",
+vm:"Vācaspati: Tarka is formally a hypothetical: 'If X were true, then Y would follow — but Y is absurd, therefore X is false.' The absurdity must be demonstrable, not merely asserted.",
+u:"Udayana: Tarka is what distinguishes philosophical debate from mere assertion. Without tarka, opposing positions simply state their views; with tarka, they test each other's positions against their consequences.",
+vis:"Viśvanātha: The use of tarka is particularly important in Nyāya's arguments for God: if there were no creator, the world's orderliness would be unexplained — and the inexplicability is itself an argument (tarka) for Īśvara."
+}}
+]},
+{name:"Three Kinds of Discourse",ref:"NS 1.2.1–3",color:C.purple,children:[
+{n:"Pramāṇa-tarka-sādhana-uddhava kathā",d:"Vāda (discussion) is the pursuit of truth through pramāṇas and tarka, holding to siddhānta",r:"NS 1.2.1",
+det:{
+c:"Three kinds of discourse are distinguished. <em>Vāda</em> (genuine discussion) is the honest joint inquiry into truth: both parties use pramāṇas and tarka, accept established conclusions (siddhānta), and are willing to be persuaded. <em>Jalpa</em> (wrangling) uses valid and invalid means alike, pursuing victory not truth. <em>Vitaṇḍā</em> (cavil) is purely destructive debate: only refutation, no positive thesis. Nyāya values vāda and conditionally tolerates the others for training in argumentation.",
+v:"Vātsyāyana: Vāda is the appropriate mode for a sincere inquiry. Jalpa and vitaṇḍā have value only in training — they develop skill in defending a position against hostile attack.",
+vm:"Vācaspati: The distinction is crucial for philosophy: a tradition that conflates wrangling with genuine inquiry will produce sophistical cleverness but not knowledge. Nyāya insists on the primacy of truth-seeking discourse.",
+u:"Udayana: The criteria for vāda — use of pramāṇas and tarka, adherence to siddhānta — are the standards by which Nyāya evaluates all philosophical positions, including its own.",
+r:"Raghunātha: The social ethics of philosophical discourse is embedded in this classification: respect for one's opponent (not trying to defeat them by any means necessary) and commitment to truth distinguish the genuine philosopher.",
+vis:"Viśvanātha: In the tradition's self-understanding, the great debates between Nyāya and Buddhist logicians were ideally vāda — genuine inquiry — even when they became heated."
+}}
+]}
+]},
+{pada:"Adhyāya I.ii–II",sub:"NS 1.2 – 2.2 · The 12 Prameyas and Syllogistic Structure",ref:"NS 1.2–2.2",
+intro:"The second half of Book I and all of Book II examine the twelve prameyas (objects of knowledge) in detail — particularly the soul, body, senses, and mind — and then refine the theory of inference, fallacies, and debate. The most philosophically rich content concerns the soul (ātman), whose existence, nature, and liberation are the ultimate concern of Nyāya philosophy. The analysis of fallacies (hetvābhāsa) is among the most developed in any philosophical tradition.",
+branches:[
+{name:"The Soul (Ātman)",ref:"NS 1.1.10",color:C.gray,children:[
+{n:"Icchā-dveṣa-prayatna-sukha-duḥkha-jñānāny ātmano liṅgam",d:"Desire, aversion, effort, pleasure, pain, and cognition are the marks (liṅga) by which the soul is inferred",r:"NS 1.1.10",
+det:{
+c:"The soul's existence is established by inference, not perception (since the soul is not directly perceived by the sense organs). The six marks are all properties that require a persistent subject to which they can belong: desire, aversion, effort, pleasure, pain, and cognition. The body and senses alone cannot explain these — a corpse has senses but no desire; a person in dreamless sleep has a body but no active cognition. These marks collectively prove a distinct non-physical subject.",
+v:"Vātsyāyana: The soul is inferred, not imagined. These six marks are experienced as mine — that 'mine'-ness presupposes a subject that has them. The soul is that subject.",
+vm:"Vācaspati: The soul is distinct from the body (the body cannot desire or cognize), distinct from the senses (the senses cannot feel pleasure — they are instruments, not subjects), and distinct from the mind (the mind is merely the instrument of the soul's cognition).",
+u:"Udayana: Udayana's major work, the <em>Ātmatattvaviveka</em>, comprehensively refutes the Buddhist no-self doctrine by showing that each of the six liṅgas requires a persistent substrate — the ātman — that momentary consciousness cannot provide.",
+r:"Raghunātha: The identity of the cognizing subject across time (the 'same' person who was hungry yesterday is satisfied today) is one of the strongest marks of the soul. Momentary consciousness cannot account for this felt identity.",
+vis:"Viśvanātha: The soul's liberation consists in the total cessation of these six properties — not their transformation. In mukti, the soul neither desires, avers, nor cognizes: it rests in its own pure being."
+}},
+{n:"Śarīraṃ vayasaḥ kriyākaraṇa-sukhaduḥkhānām āśrayaḥ",d:"The body is the locus of activity, sense-organs, pleasure, and pain",r:"NS 1.1.11",
+det:{
+c:"The body is defined functionally as the substrate in which activities, instruments (sense-organs), and experiences (pleasure, pain) inhere. This distinguishes it from the soul (which is the subject of experience) and from the external world (which is the object). The body is the meeting-point between the inner subject and the outer world — it is neither pure subject nor pure object.",
+v:"Vātsyāyana: The body is produced by karma (past actions) for the purposes of the soul's continued experience. Different bodies arise in different births according to the karmic inheritance.",
+vm:"Vācaspati: The body's instrumentality for experience is not its most important property — its deeper significance is that it is the arena in which the soul's liberation can be pursued or delayed. The practitioner's relation to the body is thus ambivalent: neither identified with it nor rejecting it.",
+u:"Udayana: The Nyāya view of the body as a karmic product relates to its account of creation: Īśvara allocates bodies to souls according to their accumulated karma. The body is thus a moral institution, not just a physical one.",
+vis:"Viśvanātha: The definition of the body has legal and ethical implications: the soul's accountability for bodily actions, the karmic consequences of harming another's body, the status of the body after death — all flow from this definition."
+}},
+{n:"Pratyekaṃ pañca-indriyāṇi",d:"The five senses are each specific to their objects: ear to sound, skin to touch, eye to color, tongue to taste, nose to smell",r:"NS 1.1.12–14",
+det:{
+c:"The five sense-organs are defined by their object-specificity: only the ear cognizes sound; only the eye cognizes color/form. Their substrate is one of the five great elements: ear is ether-based (ākāśa-ja, for sound), skin is air-based, eye is fire-based, tongue is water-based, nose is earth-based. The senses are not the gross physical organs (ear, eye, etc.) but the subtle cognitive capacities inhering in them.",
+v:"Vātsyāyana: The element-basis of each sense explains the limitations and specific powers of sensory cognition. The eye, being fire-based, can cognize color (which is fire-quality) but not sound.",
+vm:"Vācaspati: The Nyāya account of the senses as element-specific instruments differs from Sāṃkhya's account (where senses are evolved from guṇic ahaṃkāra) but agrees with Āyurveda in grounding sensory powers in elemental constitution.",
+u:"Udayana: The mind (manas) is the internal sense-organ that coordinates the outer five. Without manas, the outer senses would be simultaneously active, producing a chaos of perception — only one cognition at a time is possible because manas mediates.",
+vis:"Viśvanātha: The specificity of each sense to its object explains the nature of perceptual error: when cross-modal confusion occurs (the mind misroutes the data), a perceptual illusion is generated."
+}}
+]},
+{name:"Mind (Manas) and Cognition",ref:"NS 1.1.15–17",color:C.teal,children:[
+{n:"Jñānaṃ buddhiḥ upalabdhiḥ",d:"Cognition, buddhi, and upalabdhi are synonyms for the soul's knowledge-events; mind is the internal sense mediating all experience",r:"NS 1.1.15",
+det:{
+c:"Nyāya distinguishes the soul (the persistent subject) from its cognitive episodes (buddhi/jñāna). These episodes arise when: soul + manas + sense-organ contact with object. The soul is not itself cognitive; it is the substrate in which cognitions arise. The mind (<em>manas</em>) is the internal organ whose atomic structure means only one cognition can arise at a time — there is no simultaneity of perception.",
+v:"Vātsyāyana: The mind's atomicity explains why we cannot simultaneously see and hear with full attention — only one sense is fully active at a moment, though rapid alternation creates the illusion of simultaneity.",
+vm:"Vācaspati: The mind is the organ that connects the soul's desire/aversion with the sense-organs, directing them to their objects. Without mind, the soul could not control the direction of attention.",
+u:"Udayana: The mind is the instrument of inference, comparison, and recollection — not just immediate sense-perception. It is the most versatile of the instruments, operating both as an inner sense and as the instrument of higher cognition.",
+vis:"Viśvanātha: The atomicity of manas is one of Nyāya's most contested doctrines. Buddhist opponents argued for a stream of consciousness; Nyāya insisted on the atomic, sequential nature of cognitive events as the best explanation of our inability to perceive two things equally and simultaneously."
+}},
+{n:"Mana ātmendriya-artha-sannikarṣe jñānasya",d:"Mind is the cause of non-simultaneous cognition — its atomic nature produces only one cognition at a time",r:"NS 1.1.16",
+det:{
+c:"The mind (<em>manas</em>) is a single, eternal, atomic substance — unlike the sense organs, which are five. Its atomicity explains the non-simultaneous character of cognition: since only one atom can be in contact with the soul at a time, only one cognition arises at a moment. This is Nyāya's explanation of what might now be called 'serial processing' in cognition.",
+v:"Vātsyāyana: If mind were non-atomic (extended), multiple simultaneous cognitions would occur when multiple senses are simultaneously stimulated. But this does not happen — we experience one cognition at a time, with rapid alternation.",
+vm:"Vācaspati: The eternal nature of manas (unlike the body, which perishes at death) explains how karmic impressions persist: they are stored in the soul and manifest through the mind in successive lives.",
+r:"Raghunātha: Navya-Nyāya retains the atomicity doctrine but refines it to say that manas contacts the soul at each moment of cognition, and this contact point is unique — explaining serial experience.",
+vis:"Viśvanātha: The contrast with Sāṃkhya is notable: Sāṃkhya's manas is a cosmic principle evolved from ahaṃkāra; Nyāya's manas is an individual atomic substance, one per soul."
+}}
+]},
+{name:"Fallacies (Hetvābhāsa)",ref:"NS 1.2.4–9",color:C.coral,children:[
+{n:"Pañca hetvābhāsāḥ",d:"Five fallacies of inference: vyabhicāra (undistributed), viruddha (contradictory), prakaraṇasama (question-begging), sādhyasama (unproven), kālātīta (mistimed)",r:"NS 1.2.4–9",
+det:{
+c:"Nyāya identifies five fallacious reasons (hetvābhāsa — that which appears to be a valid reason but is not): (1) <em>Savyabhicāra</em> (undistributed / wandering) — the reason is present in cases where the conclusion does not hold: 'fire has no smell because it is a product' — but space is also a product and has no smell, while pots are products but do have smell. (2) <em>Viruddha</em> (contradictory) — the reason contradicts the thesis: 'sound is eternal because it is produced' — production entails impermanence, not eternity. (3) <em>Prakaraṇasama</em> (question-begging) — the reason is equally available to the opponent. (4) <em>Sādhyasama</em> (unproven) — the reason requires as much proof as the conclusion. (5) <em>Kālātīta</em> (mistimed) — the reason does not apply at the relevant time.",
+v:"Vātsyāyana: The detection of hetvābhāsa is the central analytical skill in philosophical debate. A person who cannot identify fallacies will be misled by specious reasoning.",
+vm:"Vācaspati: The five fallacies map to different ways in which the invariable concomitance (vyāpti) between reason and conclusion can be violated or unestablished.",
+u:"Udayana: Later Nyāya refines the classification significantly. The Navya-Nyāya account distinguishes by whether the defect is in the pervasion (vyāpti), the subject-residence (pakṣatā), or the knowledge of pervasion.",
+r:"Raghunātha: The most common fallacy in actual philosophical debate is savyabhicāra: the reason is good in some cases but not universally. Identifying the counter-example (vipakṣa) where the reason holds but the conclusion doesn't exposes this fallacy.",
+vis:"Viśvanātha: Buddhist logicians developed parallel classifications of fallacy (also five-fold in Dignāga). The subsequent Nyāya-Buddhist debate on the correct account of valid inference drove the most sophisticated development of Indian logic."
+}},
+{n:"Vacana-doṣāt saṃśaya-pratipādanāt",d:"Three kinds of quibble (chala): over words, generality, and metaphor",r:"NS 1.2.10–14",
+det:{
+c:"<em>Chala</em> is the deliberate misinterpretation of an opponent's statement to avoid the force of their argument. Three types: (1) <em>Vāk-chala</em> — quibbling over the literal meaning of words: when told 'the boy is nava-kambala (has new blankets),' responding 'the boy cannot have nine blankets.' (2) <em>Sāmānya-chala</em> — wrongly applying a general principle to the particular case. (3) <em>Upacāra-chala</em> — taking a metaphorical expression literally: when someone says 'the scaffolding shouts,' taking it to mean the scaffolding has a voice.",
+v:"Vātsyāyana: Chala is a form of verbal bad faith. It represents the degeneration of discourse from vāda (genuine inquiry) to jalpa (wrangling). Identifying it restores the discourse.",
+vm:"Vācaspati: The detection of chala requires attending to context, intended meaning, and standard usage — not just the literal string of words. This is a pragmatic skill that logical analysis alone cannot capture.",
+vis:"Viśvanātha: Chala is common in informal debate and is one of the nigrahasthānas (grounds of defeat) when identified and called out. Its identification is a sophisticated skill requiring both logical and linguistic competence."
+}}
+]}
+]},
+{pada:"Adhyāya III–V",sub:"NS 3–5 · Liberation, Futility, and Grounds of Defeat",ref:"NS 3–5",
+intro:"Books III through V of the Nyāya Sūtras address the nature of the soul and liberation in detail (Book III), refine the theory of perception and inference (Book III continued), examine futile responses (jāti) to arguments (Book V part 1), and enumerate the grounds of defeat (nigrahasthāna) in formal debate (Book V part 2). Together they complete the comprehensive account of both philosophical knowledge and philosophical discourse that the opening sūtra promised.",
+branches:[
+{name:"Soul, Liberation, and the Eternal",ref:"NS 3.1–2",color:C.gray,children:[
+{n:"Sarīrendriya-viṣaya-saṃnipāte",d:"Examination of perception, non-perception, and the status of the eternal — sound, soul, and space",r:"NS 3.1.1–10",
+det:{
+c:"Book III opens with sustained argumentation for the non-perceptibility of the soul and then defends its reality through inference. The key arguments: (1) The unity of experience across sense-modalities requires a single unifying subject — the soul. (2) Memory ('I saw this before') requires the same subject at two times — only a persistent soul explains this. (3) Recognition ('this is the same as what I saw before') requires the perceiver at T1 and T2 to be identical — which requires the soul.",
+v:"Vātsyāyana: The argument from memory is particularly decisive: memory presupposes that the one who remembers and the one who originally experienced are the same person. This identity across time cannot be explained by a momentary self.",
+vm:"Vācaspati: The Buddhist objection — that memory is produced by a previous mental state, not the same soul — requires the previous state to be causally connected to the present. But causal connection across states requires some persistent substrate: that is the soul.",
+u:"Udayana: His <em>Ātmatattvaviveka</em> (Examination of the Reality of the Soul) is the definitive classical Nyāya text on this topic, running through every Buddhist objection with comprehensive counter-arguments.",
+r:"Raghunātha: The self-awareness argument: 'I know this' — the 'I' that knows and the 'this' that is known cannot be identical (the known object cannot know itself). There must be a knowing subject distinct from all objects — that is the ātman.",
+vis:"Viśvanātha: The Nyāya proof of the soul is not a metaphysical leap but the minimal hypothesis required by the facts of experience: memory, recognition, and unified cognition all require more than momentary consciousness can provide."
+}},
+{n:"Duḥkhānāṃ uttarottara-nivṛttau",d:"Liberation (apavarga) is the complete and permanent cessation of suffering — not positive bliss but freedom from all pain",r:"NS 1.1.22",
+det:{
+c:"Nyāya's conception of liberation is notably austere: <em>apavarga</em> is the cessation of all twenty-one types of suffering, resulting in the soul's rest in its own pure being — a state of neither pleasure nor pain, neither cognition nor desire. This contrasts with Vedānta's conception of liberation as ānanda (bliss). For Nyāya, the soul in liberation has no properties except existence; it is free from the suffering-causing properties (desire, aversion, etc.) that constituted bondage.",
+v:"Vātsyāyana: Liberation is the soul's return to its natural state — without the borrowed properties of desire, cognition, and suffering that arose from its association with body and mind. In liberation, the soul exists free from all modifications.",
+vm:"Vācaspati: The objection that liberation is then indistinguishable from a stone's state (inert, unconscious) is answered: the stone was never conscious; the liberated soul had been conscious and chose to be free. The difference is in the history and the capacity, not the present state.",
+u:"Udayana: The later Nyāya tradition (following Udayana) reconceives liberation as a positive state — blissful identification with God (Īśvara). This theological development modifies the original austere account of apavarga.",
+r:"Raghunātha: The debate between the 'negative liberation' view (Gautama) and 'positive liberation' view (later Nyāya/Vedānta) maps to the question of the soul's intrinsic nature: is it intrinsically conscious and blissful (Vedānta) or merely the substrate of cognitive events (Nyāya)?",
+vis:"Viśvanātha: The practical implication is crucial: one cannot 'experience' liberation as a pleasant state, because experience requires the very mind-soul complex that liberation dissolves. Liberation can only be the object of philosophical knowledge, not of sensory anticipation."
+}}
+]},
+{name:"Jāti — Futile Responses",ref:"NS 5.1",color:C.red,children:[
+{n:"Sādharmya-vaidharmyābhyāṃ pratyavasthānaṃ jātiḥ",d:"Jāti is a futile rejoinder that uses superficial similarity or dissimilarity to block an argument without actually refuting it",r:"NS 5.1.1",
+det:{
+c:"<em>Jāti</em> (futility) is a class of twenty-four argumentative maneuvers that appear to be genuine objections but in fact achieve nothing substantively. They exploit formal features of arguments (similarity, dissimilarity, part-whole, doubt) to create an appearance of refutation without actually disproving anything. Example: 'You say all products are impermanent — but the eternal and the non-eternal both have existence in common; so by similarity of existence, the eternal too should be impermanent!' This <em>sādharmya-jāti</em> uses irrelevant similarity to block the argument.",
+v:"Vātsyāyana: The twenty-four jātis are catalogued to help practitioners recognize and dismiss these maneuvers when encountered in debate. An honest philosopher will not use them; a skilled debater must be able to identify and counter them.",
+vm:"Vācaspati: The jātis are categorized by which aspect of an argument they exploit: similarity (sādharmya), dissimilarity (vaidharmya), doubt (saṃśayasama), etc. Each category has a characteristic logical structure.",
+u:"Udayana: The significance of jāti for Nyāya extends beyond debate: the pattern of using superficial resemblances to block substantive conclusions appears in many philosophical objections. Recognizing jāti trains the philosopher to demand genuinely responsive counter-arguments.",
+vis:"Viśvanātha: The Buddhist logician Dignāga argued that some jātis are legitimate and that Nyāya's classification is incomplete. The subsequent exchange between Nyāya and Buddhist logicians over jāti drove some of the most sophisticated development of Indian epistemology."
+}}
+]},
+{name:"Nigrahasthāna — Grounds of Defeat",ref:"NS 5.2",color:C.red,children:[
+{n:"Pratijñā-hāniḥ pratijñāntaram",d:"The twenty-two grounds of defeat mark the conditions under which a debater has lost the argument",r:"NS 5.2.1–25",
+det:{
+c:"<em>Nigrahasthāna</em> (grounds of defeat) are the twenty-two conditions that constitute the failure of a debater in formal philosophical discourse. They include: (1) <em>Pratijñā-hāni</em> — abandonment of the original thesis; (2) <em>Pratijñāntara</em> — shifting to a different thesis; (3) <em>Pratijñā-virodha</em> — contradicting the original thesis; (4) <em>Pratijñā-sannyāsa</em> — denying the original thesis; (5) <em>Hetvantara</em> — shifting to a different reason; (6) <em>Arthāntara</em> — shifting to a different meaning; through to (22) <em>Nigrahasthāna-sāmarthya</em> — failure to understand what counts as defeat.",
+v:"Vātsyāyana: The twenty-two grounds of defeat are not arbitrary rules but mark genuine intellectual failures — ways in which a debater shows they are no longer honestly engaging with the argument.",
+vm:"Vācaspati: The list has two functions: (1) normative — specifying the standards for philosophical discourse; (2) practical — providing the criteria by which a referee can declare a winner in formal debate.",
+u:"Udayana: Some grounds of defeat (like not knowing the argument or being unable to respond) are about intellectual competence; others (like contradicting the thesis or shifting meanings) are about honesty and logical discipline.",
+r:"Raghunātha: The nigrahasthānas can be read as the virtues of philosophical discourse in negative form: they describe what not to do in genuine inquiry — abandon your thesis, contradict yourself, use irrelevant responses, refuse to acknowledge valid refutations.",
+vis:"Viśvanātha: The very existence of this careful taxonomy of defeat-conditions is evidence of the highly developed institutional practice of philosophical debate in classical India — formal debates with referees, clear rules, and explicit criteria for victory and defeat."
+}}
+]}
+]},
+{pada:"Nyāya Theology",sub:"NS selected · Proof of Īśvara and the Nature of God",ref:"Nyāya Theology",
+intro:"Later Nyāya, particularly in the works of Udayana (c. 984 CE) and Gaṅgeśa, developed the most systematic philosophical theology in the Indian tradition. The argument for God (Īśvara) draws on Nyāya's own epistemological framework: from the orderly, purposive character of the world (perceived), we infer an intelligent maker (inference). God is the ultimate āpta whose testimony grounds scriptural authority. The Nyāya arguments for God anticipated several themes in later Western natural theology.",
+branches:[
+{name:"The Nyāya Proof for God (Īśvara)",ref:"NS 4.1.19–21 & Udayana",color:C.green,children:[
+{n:"Kāryāt — From Effect to Cause",d:"The world is an effect requiring an intelligent cause; since it is an effect, it must have had an intelligent maker",r:"NS 4.1.21 & Udayana, Nyāyakusumāñjali",
+det:{
+c:"The Nyāya proof from effect (kāryānumāna): the world (including the atoms, which are products of prior arrangements) is an effect — something that exhibits the marks of being produced. Every produced thing requires a producer. The producer must be intelligent (since the world exhibits order, teleology, and complex coordination). This producer must be omniscient (to coordinate all atomic combination correctly), omnipotent (to bring about such universal effects), and perfectly good (to ensure the world serves souls' liberation). This is Īśvara.",
+v:"Vātsyāyana: The atoms themselves, being unconscious, cannot combine themselves into orderly wholes — they require an intelligent director. Īśvara is that director, acting at the beginning of each cosmic cycle to initiate the orderly evolution of the world.",
+vm:"Vācaspati: The argument is specifically against the Mīmāṃsā denial of a creator: Mīmāṃsā holds the world to be beginningless. Nyāya responds: the world shows the marks of being produced (it has parts, it is composite, it is for a purpose) — non-beginningless production requires a producer.",
+u:"Udayana (Nyāyakusumāñjali): Udayana gives nine distinct proofs for God: from effect (kārya), from composition (āyojana), from support (dhṛti), from perception (prati, referring to yogic perception of God), from verbal authority (āgama), from scriptural numbers (śrutipāmāṇya), from spatial distinctions (pratibandha), and from the presence of experience-organizing marks (śrutyarthasamarthana). This is the most comprehensive philosophical theology in the Indian tradition.",
+r:"Raghunātha: Raghunātha challenges some of Udayana's arguments by pointing out that the inference from effect to intelligent cause requires establishing the vyāpti (invariable concomitance) between 'being an orderly product' and 'having an intelligent maker' — and this vyāpti is not evident from our ordinary experience of products (which are made by finite, not omniscient, makers).",
+vis:"Viśvanātha: The Nyāya God is not the Brahman of Advaita or the Puruṣa of Sāṃkhya. Īśvara is a distinct individual soul (like other souls, but without karma and without a body of the ordinary kind) who serves as the cosmic administrator, allocating bodies and experiences to souls according to their karma."
+}},
+{n:"Āptāgama — Scripture as God's Testimony",d:"The Vedas are reliable testimony because their author, God (Īśvara), is omniscient and free from error",r:"NS 2.1.68–69",
+det:{
+c:"Nyāya's account of scriptural authority is distinctive: unlike Mīmāṃsā (which holds the Vedas to be author-less/self-validating), Nyāya holds that the Vedas were authored by the omniscient, perfectly good God (Īśvara). Their validity derives from his reliability as the ultimate āpta. This theological grounding of scriptural authority integrates Nyāya epistemology with its theology: the pramāṇa of śabda (testimony) is grounded in the existence of God.",
+v:"Vātsyāyana: God's authorship of the Vedas explains their perfect reliability — an omniscient God cannot be deceived or deceive, has direct knowledge of all dharma and adharma, and has the interest of all souls' liberation as his purpose.",
+vm:"Vācaspati: The Nyāya account handles the Mīmāṃsā objection (that an authored text reflects the limitations of its author) by insisting on God's omniscience: the limitations objection applies to finite human authors, not to an infinite, omniscient author.",
+u:"Udayana: The circularity objection (we know God exists from the Vedas, but we accept the Vedas because God authored them) is answered by Udayana: God's existence is established independently by inference before turning to the Vedas as his testimony.",
+r:"Raghunātha: The Navya-Nyāya reconstruction of scriptural authority places more emphasis on inference and less on simple appeal to God's authorship — reflecting the tradition's increasing confidence in its own philosophical methodology.",
+vis:"Viśvanātha: The practical corollary: Nyāya does not accept the Vedas as authority on matters that can be established by inference. Scripture functions as testimony (śabda pramāṇa) and is thus subject to the conditions on testimony: it is valid when the source is reliable and the topic is within the source's domain of knowledge."
 }}
 ]}
 ]}
@@ -489,11 +752,11 @@ function renderDetail(d, color, leafId){
     </div>`;
   }
   const coms = [
-    {key:'v',  name:'Vyāsa · Yoga Bhāṣya'},
-    {key:'s',  name:'Śaṅkara · Vivaraṇa'},
-    {key:'vm', name:'Vācaspati Miśra · Tattva-Vaiśāradī'},
-    {key:'vb', name:'Vijñāna-Bhikṣu · Yoga-Vārttika'},
-    {key:'bg', name:'Bhoja · Rāja-Mārtaṇḍa'}
+    {key:'v',   name:'Vātsyāyana · Nyāya-Bhāṣya'},
+    {key:'vm',  name:'Vācaspati Miśra · Tātparya-Ṭīkā'},
+    {key:'u',   name:'Udayana · Pariśuddhi'},
+    {key:'r',   name:'Raghunātha Śiromaṇi · Bhāṣya-Candra'},
+    {key:'vis', name:'Viśvanātha · Nyāya-Sūtra-Vṛtti'}
   ];
   const present = coms.filter(c => d[c.key]);
   if(present.length){
@@ -587,14 +850,14 @@ function toggleDetail(id, ev){
 
 // ── Init ─────────────────────────────────────────────────
 const legend = [
-  {color:C.purple, label:'Philosophy / Metaphysics'},
-  {color:C.teal,   label:'Practice / Limbs'},
-  {color:C.coral,  label:'Kriyā / Action'},
-  {color:C.red,    label:'Afflictions / Obstacles'},
-  {color:C.blue,   label:'Samādhi / Inner Limbs'},
-  {color:C.amber,  label:'Siddhis / Powers'},
-  {color:C.green,  label:'Liberation / Goal'},
-  {color:C.gray,   label:'Karma'}
+  {color:C.green,  label:'Liberation / Apavarga'},
+  {color:C.blue,   label:'Pramāṇas / Valid Knowledge'},
+  {color:C.teal,   label:'Prameya / Objects'},
+  {color:C.purple, label:'Debate Categories'},
+  {color:C.amber,  label:'Syllogism / Avayava'},
+  {color:C.coral,  label:'Fallacies / Hetvābhāsa'},
+  {color:C.red,    label:'Futility / Grounds of Defeat'},
+  {color:C.gray,   label:'Soul &amp; Liberation'}
 ];
 
 let html = `<div class="legend">`;
