@@ -1,0 +1,5 @@
+**Steps:**
+<!--1. Use Temp/patanjali_yoga_sutras_complete_map_2.html and place all the contents into a new tab called Yoga Sutras.-->
+1. Fix the index.html page to look similar to yoga sutras tab in terms of formatting.
+2. Create a new tab called as "Samkhya" with it's structure and information populated from original source with translation for each verse and commentaries from veda vyasa, krishna and hariharananda aranya.
+3. Create a new tab called as "Nyaya Sutra" with it's structure, definitions, descriptions against verses by Gautama's Nyaya Sutras and also commentaries by Vatsyayana's Nyaya Sutra Bhashya, and Vachaspati Mishra's Tatparya Tika on Uddyotaraka's Vartika(Sanskrit source = https://archive.org/details/NyayaVartikaTatparyaTika1927VolIKashiSeries24Chowkhamba), and Udayana's Parishuddhi on Vachaspati Mishra's Tatparya Tika (https://archive.org/details/in.ernet.dli.2015.345180), and Raghunatha Shiromani's Bhashya Chandra (https://archive.org/details/NyayaDarsanaKhadotyaGanganathaJhaBhashyaChandraNotesAmbodasShastriDhundhiRajaSastriChowkambha), and Vishwantha's Nyaya Sutra Vritti (https://archive.org/details/bub_gb_4C5Tsfe4bF4C).

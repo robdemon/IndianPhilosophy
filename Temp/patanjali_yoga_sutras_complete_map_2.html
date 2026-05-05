@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patañjali's Yoga Sūtras — Complete Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inconsolata:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:            #FAF8F4;
+  --bg-card:       #F4F1EB;
+  --bg-panel:      #EDEAE2;
+  --text-primary:  #1C1810;
+  --text-secondary:#4A4235;
+  --text-muted:    #8C7E6A;
+  --border:        #D8D0C0;
+  --border-light:  #E8E2D6;
+  --gold:          #9A7B3C;
+  --gold-light:    #C4A96B;
+  --radius:        6px;
+  --radius-lg:     10px;
+  --font-body:     'EB Garamond', Georgia, serif;
+  --font-display:  'Cormorant Garamond', Georgia, serif;
+  --font-mono:     'Inconsolata', 'Courier New', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:            #15120D;
+    --bg-card:       #1E1A13;
+    --bg-panel:      #252018;
+    --text-primary:  #F0EBE0;
+    --text-secondary:#BEB49E;
+    --text-muted:    #7A6E58;
+    --border:        #3A3328;
+    --border-light:  #2E2820;
+    --gold:          #C4A96B;
+    --gold-light:    #9A7B3C;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  padding: 0;
+}
+
+#app-shell {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+
+/* ── Header ──────────────────────────────────────── */
+.site-header {
+  text-align: center;
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.site-header h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.site-header .subtitle {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ── Legend ──────────────────────────────────────── */
+.legend {
+  display: flex;
+  gap: 8px 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend .ld {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+/* ── Pada tab bar ────────────────────────────────── */
+.section-bar {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 28px;
+  background: var(--bg-card);
+  padding: 4px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.section-bar button {
+  flex: 1;
+  padding: 9px 6px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.18s ease;
+  line-height: 1.3;
+}
+
+.section-bar button:hover {
+  color: var(--text-secondary);
+  background: var(--bg-panel);
+}
+
+.section-bar button.active {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+/* ── Pada title ──────────────────────────────────── */
+.pada-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.pada-sub {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 18px;
+}
+
+/* ── Intro card ──────────────────────────────────── */
+.intro-card {
+  padding: 14px 18px;
+  margin-bottom: 22px;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  border-left: 2px solid var(--gold);
+  font-style: italic;
+}
+
+.intro-card strong {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ── Tree ────────────────────────────────────────── */
+.tree {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+/* ── Branch ──────────────────────────────────────── */
+.branch {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.branch:hover { border-color: var(--border); }
+
+.branch-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.12s;
+  background: var(--bg-card);
+}
+
+.branch-head:hover { background: var(--bg-panel); }
+
+.branch-head .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.branch-head .label {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.branch-head .ref {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.branch-head .chev {
+  font-size: 10px;
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.branch-head.open .chev { transform: rotate(90deg); }
+
+.branch-body {
+  display: none;
+  padding: 8px 14px 14px 32px;
+  background: var(--bg);
+  border-top: 1px solid var(--border-light);
+}
+
+.branch-body.open { display: block; }
+
+/* ── Sub-tree ────────────────────────────────────── */
+.sub-tree {
+  margin: 8px 0 4px;
+  padding-left: 14px;
+  border-left: 1.5px solid var(--border);
+}
+
+.sub-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 8px 0 4px;
+}
+
+/* ── Leaf ────────────────────────────────────────── */
+.leaf {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px 8px 6px 4px;
+  cursor: pointer;
+  border-radius: var(--radius);
+  transition: background 0.1s;
+  margin: 1px 0;
+}
+
+.leaf:hover { background: var(--bg-card); }
+
+.leaf .lf-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 7px;
+  opacity: 0.55;
+}
+
+.leaf-content { flex: 1; min-width: 0; }
+
+.leaf .lf-name {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.leaf .lf-ref {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--text-muted);
+  margin-left: 6px;
+}
+
+.leaf .lf-desc {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-top: 2px;
+}
+
+.leaf .lf-expand {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  letter-spacing: 0.02em;
+  opacity: 0.7;
+}
+
+/* ── Detail panel ────────────────────────────────── */
+.detail-panel {
+  display: none;
+  margin-top: 10px;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border-left: 2px solid var(--accent, var(--gold));
+  font-size: 13px;
+}
+
+.detail-panel.open { display: block; }
+
+.detail-section {
+  margin-bottom: 12px;
+}
+
+.detail-section:last-child { margin-bottom: 0; }
+
+.detail-label {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.detail-text {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.detail-text em {
+  color: var(--text-primary);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.commentaries-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-commentary {
+  padding: 10px 12px;
+  background: var(--bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+}
+
+.com-name {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.com-text {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.com-text em {
+  font-style: normal;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+</style>
+</head>
+<body>
+<div id="app-shell">
+  <header class="site-header">
+    <div class="eyebrow">Patañjali · c. 400 CE</div>
+    <h1>Yoga Sūtras — Complete Map</h1>
+    <div class="subtitle">Four Pādas · 196 aphorisms · Classical commentaries</div>
+  </header>
+  <div id="app"></div>
+</div>
+
+<script>
+const C={
+  purple:'#7F77DD',
+  teal:'#1D9E75',
+  coral:'#D85A30',
+  pink:'#D4537E',
+  blue:'#378ADD',
+  amber:'#EF9F27',
+  green:'#639922',
+  red:'#E24B4A',
+  gray:'#888780'
+};
+
+const data=[
+{pada:"Samādhi Pāda",sub:"Chapter 1 · 51 sūtras · Nature of yoga and samādhi",ref:"YS 1.1–1.51",
+intro:"Patañjali opens with the most direct teaching: yoga is the stilling of mental fluctuations. This chapter is addressed to the advanced practitioner whose mind already has some steadiness. It defines yoga, classifies the modifications of consciousness, prescribes practice and dispassion as the twin means, and then maps the entire ladder of samādhi from gross object-absorption to seedless liberation.",
+branches:[
+{name:"Definition of yoga",ref:"1.1–1.4",color:C.purple,children:[
+{n:"Yogaś citta-vṛtti-nirodhaḥ",d:"Yoga is the cessation of the modifications of mind",r:"1.2",
+det:{
+c:"This is the foundational definition. <em>Citta</em> is the entire inner instrument — buddhi (intellect), ahaṃkāra (ego), and manas (lower mind) taken together. <em>Vṛtti</em> means a turning, a wave, a mode in which citta takes shape. <em>Nirodha</em> is restraint, suppression, stilling — not destruction of the mind but the cessation of its tendency to morph into objects. When the lake stops rippling, the moon is reflected truly; likewise, when citta stops turning into vṛttis, puruṣa stands revealed.",
+ex:"Watching a sunset and gradually becoming the watching itself — thoughts about the day, judgments about the colors, plans for tomorrow all subside. What remains is bare awareness. That progressive thinning of mental waves toward absolute stillness is what Patañjali names yoga.",
+v:"Vyāsa explains that 'yoga is samādhi,' and samādhi is a property of citta in all its stages. Citta has five stages — kṣipta (restless), mūḍha (dull), vikṣipta (distracted), ekāgra (one-pointed), niruddha (restrained). Only the last two qualify as yoga; the first three produce false samādhi.",
+vm:"Vācaspati Miśra emphasizes that <em>sarva-vṛtti-nirodha</em> — restraint of all vṛttis without exception — is intended; partial cessation is merely concentration on one object, not yoga proper.",
+vb:"Vijñānabhikṣu insists nirodha does not mean the mind becomes void; rather, citta returns to its causal state (kāraṇa-avasthā) in prakṛti while consciousness rests in itself."
+}},
+{n:"Tadā draṣṭuḥ svarūpe'vasthānam",d:"Then the seer abides in its own nature",r:"1.3",
+det:{
+c:"When vṛttis cease, the <em>draṣṭā</em> (seer, puruṣa) no longer appears mixed with citta's modifications. Puruṣa was never actually changed — but as long as the mind churned, consciousness appeared to take the shape of those churnings. With stillness, awareness rests as itself: pure, witnessing, contentless luminosity.",
+ex:"A clear mirror reflects whatever is placed before it and seems to 'become' that thing. Remove the objects, wipe the mirror — and the mirror simply is itself, reflecting nothing but its own clarity. The 'self' was always there; only the borrowed forms drop away.",
+v:"Vyāsa: at the time of nirodha, puruṣa is established as <em>citi-mātra</em> — pure awareness only. In other states it appears assimilated to vṛttis (sārūpya), as if it had become them.",
+s:"Śaṅkara (in the Vivaraṇa attributed to him) clarifies that 'abiding in own nature' is not a new attainment — puruṣa has never lost its nature; the phrase only marks the cessation of an apparent loss.",
+vb:"Vijñānabhikṣu: this is liberation experienced even while embodied (jīvanmukti) — the seer's self-luminosity is no longer occluded by the colored mind."
+}},
+{n:"Vṛtti-sārūpyam itaratra",d:"Otherwise, identification with the modifications",r:"1.4",
+det:{
+c:"<em>Itaratra</em> means 'at other times' — outside the state of nirodha. Then puruṣa appears to assume the form (sārūpya) of whatever vṛtti is active. This is the diagnosis of bondage: not that the seer is actually transformed, but that it falsely appears to be transformed, like a crystal seeming red beside a red flower.",
+ex:"You see a friend, the mind takes the form 'friend,' and you experience yourself as 'the one who sees a friend.' The pure witness has been overlaid with the cognition. Anger arises and you say 'I am angry' — sārūpya in action.",
+v:"Vyāsa uses the famous crystal analogy: as a clear crystal seems to take on the color of objects placed near it, so puruṣa seems to take on the form of citta's vṛttis without itself changing.",
+vm:"Vācaspati: the apparent identification arises from beginningless avidyā; it is not real but is experientially undeniable until viveka dawns."
+}}
+]},
+{name:"Five vṛttis (mental modifications)",ref:"1.5–1.11",color:C.teal,children:[
+{n:"Kliṣṭa / Akliṣṭa",d:"Each vṛtti is either painful or non-painful",r:"1.5",
+det:{
+c:"All five vṛttis are classed twofold: <em>kliṣṭa</em> (afflicted, fed by the five kleśas of avidyā, asmitā, rāga, dveṣa, abhiniveśa) and <em>akliṣṭa</em> (unafflicted, conducive to viveka). The same act of memory or inference can be either, depending on whether it strengthens or weakens the kleśas.",
+ex:"Remembering a slight and rehearsing the grievance — kliṣṭa smṛti. Remembering a teacher's instruction in order to apply it — akliṣṭa smṛti. The vṛtti type is identical (memory); only its alliance differs.",
+v:"Vyāsa: kliṣṭa vṛttis are the field where afflictions grow; akliṣṭa vṛttis oppose the guṇas' outward thrust and lead toward discrimination. Both arise even within a single mind; akliṣṭa ones survive within streams of kliṣṭa flow, like grain among weeds.",
+vm:"Vācaspati: 'unafflicted' does not mean free of all guṇas — it means not nourishing afflictions. They still arise from sattva-predominant citta and are dropped only at the very end."
+}},
+{n:"Pramāṇa (valid knowledge)",d:"Pratyakṣa (direct perception), Anumāna (inference), Āgama (testimony)",r:"1.7",
+det:{
+c:"Patañjali accepts three valid means of knowledge. <em>Pratyakṣa</em> is the vṛtti that arises from sense-contact with an object, primarily grasping its specific (viśeṣa) features. <em>Anumāna</em> is the vṛtti based on a relation (like smoke and fire) that grasps the general (sāmānya). <em>Āgama</em> is the vṛtti that arises from the words of a trustworthy speaker conveying what cannot be perceived or inferred.",
+ex:"Pratyakṣa: seeing the cup on the table. Anumāna: seeing footprints in the snow and inferring someone walked here. Āgama: knowing about distant galaxies from astronomers' reports, or about subtle truths from the Upaniṣads.",
+v:"Vyāsa defines each carefully and notes that āgama is valid only when the speaker has direct knowledge and is free from intent to deceive — hence the special status of the Veda and of the realized teacher.",
+vb:"Vijñānabhikṣu adds that yogi-pratyakṣa (yogic perception) is included under pratyakṣa; it grasps even subtle and remote objects directly."
+}},
+{n:"Viparyaya (misconception)",d:"False knowledge not based on the real form of the object",r:"1.8",
+det:{
+c:"<em>Viparyaya</em> is mithyā-jñāna — knowledge that contradicts what is actually there. It will be corrected by a later cognition. Patañjali later identifies the five kleśas themselves as forms of viparyaya, making this vṛtti the cognitive root of bondage.",
+ex:"Seeing a coiled rope in dim light and perceiving 'snake!' — the perception is real, the knowledge is false. The famous Vedānta example, also used by yoga commentators. So too: identifying the body as the self.",
+v:"Vyāsa: viparyaya is the same as the five kleśas described in chapter 2. It is dispelled by viveka, which is the true knowledge of the seer's distinction from the seen.",
+s:"Śaṅkara (Vivaraṇa): false cognition has positive content; it is not mere absence of knowledge but a misplacement of one thing's identity onto another (adhyāsa)."
+}},
+{n:"Vikalpa (verbal delusion)",d:"Knowledge from words without a corresponding reality",r:"1.9",
+det:{
+c:"<em>Vikalpa</em> follows on words and conceptual constructions but has no actual referent. It is neither true (no real object) nor demonstrably false (the words make sense). Patañjali singles this out as a distinctive Indian category — meaningful conceptual play without ontological backing.",
+ex:"'The consciousness of puruṣa' — grammatically two things are linked, but puruṣa <em>is</em> consciousness; there is no genuine relation. Or: 'a barren woman's son,' 'the horns of a hare' — meaningful in language, vacant in reality.",
+v:"Vyāsa: vikalpa pervades ordinary language and even sacred texts; the practitioner must learn to discern when words point to realities and when they only construct mental forms.",
+vm:"Vācaspati: imagination, planning, hypothetical thinking, mathematics — all involve vikalpa. Useful in the world but to be transcended in the highest samādhi."
+}},
+{n:"Nidrā (sleep)",d:"Modification based on absence of content — tamas vṛtti",r:"1.10",
+det:{
+c:"Sleep is itself a vṛtti — not absence of mind but a mental modification whose content is absence of waking content. We know sleep was a vṛtti because on waking we recall 'I slept well, I knew nothing' — that recollection requires that something was experienced and registered.",
+ex:"After deep dreamless sleep, you awake refreshed and report 'I slept well.' Memory presupposes prior cognition; therefore even dreamless sleep is a cognition — of nothing-ness, dominated by tamas.",
+v:"Vyāsa: the sleep-vṛtti has tamas as its support, with sattva and rajas dormant. To be still in samādhi, even sleep must be transcended; otherwise yogis confuse deep sleep with samādhi.",
+vb:"Vijñānabhikṣu warns sharply against this confusion. Sleep is unconscious and saṃskāra-producing; samādhi is supremely conscious and saṃskāra-dissolving."
+}},
+{n:"Smṛti (memory)",d:"Non-loss of experienced objects — saṃskāra-based recall",r:"1.11",
+det:{
+c:"<em>Smṛti</em> is the vṛtti of not losing what has been previously experienced. Every experience deposits a saṃskāra; that latent trace, when activated by similar conditions, generates a memory-vṛtti resembling the original. All four other vṛttis can become memory.",
+ex:"You meet someone after years and a flood of past scenes returns — those saṃskāras were dormant; the present cue triggered them. Memory of perception (face), inference (their habits), testimony (what others said about them), wrong knowledge (your old misjudgment), or even sleep ('we slept in the same room')—all become smṛti.",
+v:"Vyāsa: memory is twofold — bhāvitasmartavyā (of an experienced object) and abhāvita (in dreams, where memory rearranges fragments). Both are vṛttis to be stilled.",
+vm:"Vācaspati: smṛti is a peculiar vṛtti because its object is not present yet appears as present — this is its distinguishing trait."
+}}
+]},
+{name:"Means of cessation",ref:"1.12–1.16",color:C.coral,children:[
+{n:"Abhyāsa (practice)",d:"Persistent effort to still the mind, done long, without break, with devotion",r:"1.12–14",
+det:{
+c:"<em>Abhyāsa</em> is the effort directed at sthiti — steadiness in the chosen state of cessation. Patañjali specifies three conditions for abhyāsa to become firmly grounded (dṛḍha-bhūmi): it must be (1) for a long time, (2) without interruption, and (3) attended with reverence and earnestness. Drop any of the three and the practice never takes root.",
+ex:"Meditation done daily for ten minutes for three months produces effect; the same hours done in two weekend marathons does not. The mind is a field; saṃskāras are seeds; only steady, reverent watering across seasons produces a stable harvest.",
+v:"Vyāsa: practice is the operation aimed at the river of citta flowing toward kaivalya, against its natural flow toward worldly objects. The river of mind has two channels — outward toward saṃsāra, inward toward viveka. Abhyāsa narrows the worldly channel and widens the liberating one.",
+vm:"Vācaspati emphasizes <em>satkāra</em> (reverence) — practice without devotion becomes mechanical and produces little fruit; reverence keeps the inner orientation right.",
+vb:"Vijñānabhikṣu compares it to grinding sandalwood — every stroke seems to add nothing, yet eventually fragrance fills the room. Effects accumulate beneath visibility."
+}},
+{n:"Vairāgya (detachment)",d:"Non-thirst for seen and heard objects",r:"1.15",
+det:{
+c:"<em>Vairāgya</em> is vaśīkāra-saṃjñā — the consciousness of mastery — toward objects either directly perceived (dṛṣṭa, like food and partners) or learned about through tradition (ānuśravika, like heaven and divine pleasures). The mind is no longer pulled by craving, aversion, or even curiosity for these. Practice (positive movement) and detachment (negative movement) work as the two wings of the same bird.",
+ex:"Not 'I cannot have it' (suppression), nor 'I despise it' (aversion), but 'I see what it is, and the mind is no longer drawn.' Like a once-loved sweet that, after illness, simply no longer tempts — without struggle.",
+v:"Vyāsa lists four stages: yatamāna (attempting), vyatireka (sorting which senses are still hooked), ekendriya (only mental craving remains), vaśīkāra (full mastery, mind unmoved even when objects appear).",
+vm:"Vācaspati: vairāgya is not a state of dullness or disgust, but of clarity — one sees the defects in objects (impermanence, suffering, dependence) and the mind naturally turns away."
+}},
+{n:"Para-vairāgya",d:"Supreme detachment — desirelessness even of guṇas, through puruṣa-knowledge",r:"1.16",
+det:{
+c:"Higher than ordinary vairāgya is <em>para-vairāgya</em>: dispassion toward the very guṇas (sattva, rajas, tamas) — the building blocks of all experience. This arises only from direct discernment of puruṣa as utterly distinct from prakṛti. The yogi no longer wants liberation as something to acquire; the very impulse toward attainment dissolves.",
+ex:"Lower vairāgya: 'I no longer crave wealth or pleasure.' Para-vairāgya: 'Even the subtle joy of meditation, even the sense of being a meditator, holds no grip.' This is the vairāgya of the seer who has nothing left to gain.",
+v:"Vyāsa: this is the indispensable condition for asamprajñāta samādhi. Without it, the mind clings even to the bliss of samādhi and slides back.",
+vb:"Vijñānabhikṣu: para-vairāgya is itself a fruit of jñāna; it cannot be cultivated directly. One pursues lower vairāgya and viveka; para-vairāgya dawns of itself."
+}}
+]},
+{name:"Types of samādhi",ref:"1.17–1.18, 1.41–1.51",color:C.blue,sub:[
+{name:"Samprajñāta (with seed)",ref:"1.17, 1.42–1.50",children:[
+{n:"Savitarka",d:"Absorption with gross object + word + meaning mixed",r:"1.42",
+det:{
+c:"In <em>savitarka</em> samādhi, the gross object (sthūla) is held in awareness along with its name (śabda), its meaning (artha), and the cognition (jñāna) of it — three elements blended in one cognitive field. The yogi knows 'cow,' the word 'cow,' and the cognition 'cow' as undifferentiated unity.",
+ex:"Concentrating on a clay pot: the object, the word 'pot,' and the conceptual idea of pot all arise together as one absorption. The mind is steady on the object but not yet free from verbal-conceptual overlay.",
+v:"Vyāsa: this is the lowest grade of samprajñāta. Word, object, and idea normally appear conflated in ordinary cognition; here that conflation persists but the mind no longer wanders.",
+vm:"Vācaspati clarifies that vitarka is the contemplation directed at gross elements (mahābhūtas) — earth, water, fire, air, ākāśa — and at sense-organs."
+}},
+{n:"Nirvitarka",d:"Memory purified — object shines without conceptual overlay",r:"1.43",
+det:{
+c:"In <em>nirvitarka</em>, smṛti is purified (smṛti-pariśuddhi) — the deposits of word and meaning fall away. Citta becomes 'as if empty of its own form,' and the gross object alone shines forth in its bare suchness. This is direct yogic perception of the object.",
+ex:"The pot is now apprehended without the word 'pot' interposing, without comparisons, without past associations — only the object's own immediate reality. Like seeing a flower without the running commentary of botanical labels.",
+v:"Vyāsa describes this as svarūpa-śūnyam iva — the mind appears emptied of its self-form, becoming a transparent medium through which the object's own form alone radiates.",
+vb:"Vijñānabhikṣu: this stage gives the yogi direct insight into the constitution of gross matter — the actual particulate nature of bodies, hidden from ordinary sense."
+}},
+{n:"Savicāra",d:"Absorption on subtle elements (tanmātras) with reflection",r:"1.44",
+det:{
+c:"<em>Savicāra</em> turns saṃyama on the subtle elements (sūkṣma) — tanmātras (sound, touch, form, taste, smell as pure essences) and the inner instrument (antaḥkaraṇa). Reflection (vicāra) on the subtle is still mixed with notions of space, time, and causation.",
+ex:"Instead of meditating on the gross flame (fire as object), the yogi contemplates the tanmātra of light/heat itself — the subtle essence that, combined, gives the gross flame its quality. Time and place still frame the contemplation.",
+v:"Vyāsa: vicāra extends to all subtle realities, including the principle of mahat (the cosmic intellect) and ahaṃkāra. These are objects only available in deep samādhi, not to ordinary perception.",
+vm:"Vācaspati: the difference between vitarka and vicāra is the difference between the visible and the invisible — both are objects, but at different ontological depths."
+}},
+{n:"Nirvicāra",d:"Reflection ceases — inner luminosity (adhyātma-prasāda)",r:"1.47",
+det:{
+c:"In <em>nirvicāra</em>, even the reflective overlay drops; the subtle object shines without the framing of space-time-cause. Patañjali calls the result <em>adhyātma-prasāda</em> — clarity of the inner self, when the citta becomes pure transparency.",
+ex:"Where savicāra still 'thinks about' the subtle, nirvicāra 'is' it — the meditator becomes the field in which the tanmātra simply is, with no cognitive distance. Like crystal placed against a colored cloth taking on the cloth's hue without effort.",
+v:"Vyāsa: at this level the yogi gains <em>ṛtaṃbharā prajñā</em> — wisdom that bears truth, never erroneous, of an entirely different order from inferential or testimonial knowledge (1.48–49).",
+vb:"Vijñānabhikṣu: ṛtaṃbharā prajñā differs from ordinary knowledge as direct perception differs from hearsay — it grasps particulars exactly as they are, beyond conceptual generalization."
+}},
+{n:"Sānanda",d:"Absorption with bliss as object",r:"1.17",
+det:{
+c:"<em>Sānanda</em> samādhi takes inner bliss (ānanda) — characteristic of sattva-predominant inner instrument — as its object. The senses cease their outward grasp; the joy that pervades the calm citta is the content of awareness.",
+ex:"Often arises spontaneously after long meditation: an unmistakable sweetness pervades the body and mind. The danger is that the yogi mistakes this bliss for the goal and stops there.",
+v:"Vyāsa: the inner instrument here is sāttvika and produces a quality of sukha that the yogi may identify with as 'I am happy.' This is still subtle ego-identification.",
+vm:"Vācaspati notes that bliss-absorption is the trap of many practitioners; it must be transcended into asmitā-samādhi and beyond."
+}},
+{n:"Sāsmitā",d:"Absorption with pure I-sense as object",r:"1.17",
+det:{
+c:"<em>Sāsmitā</em> takes the bare 'I am' — pure asmitā, the sense of being a unified subject — as object. This is the subtlest samprajñāta level; only the trace of subjectivity remains, with no further objective content.",
+ex:"Beyond all thoughts, beyond bliss, there remains a feeling: 'I am.' That bare witness-sense, isolated and contemplated, is sāsmitā. It is not yet liberation — for to take 'I am' as object presupposes a witness who is more original still.",
+v:"Vyāsa: sāsmitā is the boundary of samprajñāta; the next step removes even this final cognitive prop, opening into asamprajñāta.",
+vb:"Vijñānabhikṣu: the careful yogi distinguishes asmitā (false I-sense identifying with buddhi) from puruṣa (true seer); the former is the object of sāsmitā samādhi, the latter is what shines when even sāsmitā dissolves."
+}}
+]},
+{name:"Asamprajñāta / Nirbīja (seedless)",ref:"1.18, 1.51",children:[
+{n:"Asamprajñāta",d:"All vṛttis cease — only saṃskāras remain",r:"1.18",
+det:{
+c:"<em>Asamprajñāta</em> samādhi has no cognitive object. It is reached by the practice of cessation (virāma-pratyaya): when all active vṛttis subside, only the seeds (saṃskāras) of past experience remain in citta. There is no perception, no inference, no bliss-absorption — only the empty residue of latent traces.",
+ex:"Imagine clearing a desk of every paper: the desk is empty, but the grain of the wood (its history) remains. So too in asamprajñāta — the surface is still, the deep impressions are not yet erased.",
+v:"Vyāsa: this is reached by para-vairāgya. It is not a void, but a state where citta has reverted to its causal condition; only the seed-saṃskāras of nirodha itself remain operative.",
+vm:"Vācaspati: in this state the yogi appears like a dead person to outside observers — no breath, no movement — but is in fact in the highest cognitive purity."
+}},
+{n:"Nirbīja samādhi",d:"Even saṃskāras of samādhi are restrained — seedless liberation",r:"1.51",
+det:{
+c:"<em>Nirbīja</em> means 'without seed.' When even the saṃskāras produced by nirodha are restrained — when the very tendency to nirodha exhausts itself — the cycle ends. There is nothing left to sprout future cittas. This is kaivalya from the Samādhi Pāda's perspective.",
+ex:"The fire that burns the fuel finally consumes itself. The last saṃskāra (of the practice that brought nirodha) is also extinguished. What remains is puruṣa alone, established in itself.",
+v:"Vyāsa concludes the Samādhi Pāda here: when the citta has burnt all its seeds, puruṣa is liberated, and yoga has done its work.",
+vb:"Vijñānabhikṣu: nirbīja samādhi is identical with the dharma-megha samādhi of 4.29 — the same culminating state described from different angles in different chapters."
+}}
+]}
+]},
+{name:"Īśvara (the Lord)",ref:"1.23–1.29",color:C.amber,children:[
+{n:"Īśvara-praṇidhāna",d:"Surrender to Īśvara as alternative path to samādhi",r:"1.23",
+det:{
+c:"Patañjali offers <em>Īśvara-praṇidhāna</em> — devotional surrender to the Lord — as an alternative direct route to samādhi, parallel to the abhyāsa-vairāgya path. For temperaments inclined to devotion, this single means suffices; one need not laboriously climb every step.",
+ex:"Like a passenger on a ship who simply trusts the captain rather than learning navigation, the devotee surrenders the ego's project of self-liberation. The Lord then becomes both refuge and the inner remover of obstacles.",
+v:"Vyāsa: praṇidhāna is a special kind of devotion — bhakti-viśeṣa — in which the yogi offers all actions and their fruits to the Lord. The Lord, pleased, draws the yogi swiftly to samādhi.",
+vm:"Vācaspati: praṇidhāna is not mere ritual; it is the inward orientation by which the entire stream of one's intentions flows toward Īśvara as anchor.",
+vb:"Vijñānabhikṣu: this is the most powerful of all means; it is mentioned again in 2.1 and 2.45 because of its importance across all stages."
+}},
+{n:"Kleśa-karma-vipāka-āśayaiḥ aparāmṛṣṭaḥ",d:"Īśvara is untouched by afflictions, actions, results, and latencies",r:"1.24",
+det:{
+c:"Patañjali's Īśvara is a special puruṣa (puruṣa-viśeṣa) — never touched by kleśas (afflictions), karma (actions producing future), vipāka (their fruition), or āśaya (the latent storehouse of saṃskāras). All other puruṣas have been bound by these in some past time; Īśvara never was.",
+ex:"Where ordinary liberated beings have escaped bondage they once had, Īśvara is eternally and intrinsically free — like a king born to royalty rather than one who attained it through conquest.",
+v:"Vyāsa: this distinguishes Īśvara from both the ordinary jīva and the liberated jīvanmukta. Liberation is for jīvas a return after wandering; for Īśvara it is original and inalienable.",
+s:"Śaṅkara (Vivaraṇa): Īśvara's omniscience is not acquired but eternal; his knowledge of dharma and adharma is unbroken across cosmic cycles.",
+vb:"Vijñānabhikṣu: Īśvara has a sāttvika body of pure sattva that he assumes by his own will to compassion, in order to teach the original yogis at the dawn of each cycle."
+}},
+{n:"Praṇava (OṂ)",d:"OṂ is the designator of Īśvara — its repetition removes obstacles",r:"1.27–28",
+det:{
+c:"<em>Praṇava</em> (OṂ) is the verbal designator (vācaka) of Īśvara. The relation between word and named is eternal — like that of father and son in convention, but here primordial. Its repetition (japa) accompanied by reflection on its meaning (artha-bhāvanam) becomes a powerful sādhana.",
+ex:"Repeating OṂ while contemplating Īśvara's nature combines two streams: the vibration steadies the body-mind, and the meaning lifts attention beyond the syllable. Together, they dissolve the obstacles described in the next sūtras.",
+v:"Vyāsa: japa alone is mechanical; meaning-contemplation alone is dry; their combination produces both the calming and the illuminating effect.",
+vm:"Vācaspati: the eternality of OṂ–Īśvara connection is established in śruti; it is not a human convention but the natural sound-form of the divine.",
+vb:"Vijñānabhikṣu: praṇava-japa is recommended as the universal practice — suitable to all temperaments, applicable in all conditions, the safest and surest sādhana."
+}}
+]},
+{name:"Nine obstacles (antarāya)",ref:"1.30–1.31",color:C.red,children:[
+{n:"Vyādhi",d:"Disease",r:"1.30",
+det:{
+c:"<em>Vyādhi</em> is bodily illness arising from imbalance of the doṣas (vāta, pitta, kapha). It distracts the mind through pain and weakness, blocking sustained practice. The yogi must care for bodily health as a foundation, not as an end.",
+ex:"Chronic indigestion or insomnia disrupts every meditation session. Patañjali later prescribes prāṇāyāma and lifestyle observances precisely to address these substrates.",
+v:"Vyāsa: vyādhi disturbs the equilibrium of the body, which in turn disturbs prāṇa, which in turn agitates citta. The chain runs from gross to subtle.",
+vm:"Vācaspati: even minor illness undermines concentration; the yogi adopts moderate diet and regimen as preventive medicine."
+}},
+{n:"Styāna",d:"Dullness / mental inertia",r:"1.30",
+det:{
+c:"<em>Styāna</em> is the heaviness or inactivity of the mind — it knows what to do but cannot rouse itself to do it. Tamas predominates; the will is weighed down.",
+ex:"The yogi sits to meditate, the timer is set, the cushion is ready — and the mind simply will not engage. There is no opposition, only fog. This is styāna, distinct from positive resistance.",
+v:"Vyāsa: styāna is akarmaṇyatā — unfitness for action of the inner instrument; the mind has lost its edge.",
+vb:"Vijñānabhikṣu: styāna is countered by stimulating sattva — fresh air, light exercise, brief change of object."
+}},
+{n:"Saṃśaya",d:"Doubt",r:"1.30",
+det:{
+c:"<em>Saṃśaya</em> is the wavering between two contradictory possibilities — 'is this practice effective or not? is the goal real or not?' — a mental modification that paralyzes commitment.",
+ex:"Halfway through a long retreat, the practitioner starts wondering if the teaching is correct, if results will come, if the time is wasted. This pendulum motion of mind is saṃśaya.",
+v:"Vyāsa: doubt is dispelled only by śraddhā (faith) born of small confirming experiences — not by argument alone.",
+vm:"Vācaspati: doubt has its place in inquiry; it becomes an obstacle only when it persists past the point where evidence has been gathered."
+}},
+{n:"Pramāda",d:"Carelessness",r:"1.30",
+det:{
+c:"<em>Pramāda</em> is heedlessness — failure to maintain the means of samādhi when one knows them. It is not ignorance but inattention; the practitioner becomes lax even with full knowledge of what is required.",
+ex:"Skipping the morning sit because of a pleasant distraction; eating heavily before practice though knowing the consequences. Pramāda is the leak that empties the vessel slowly.",
+v:"Vyāsa: pramāda is the absence of the cultivation of the means; it is the soil in which the other obstacles take root."
+}},
+{n:"Ālasya",d:"Laziness",r:"1.30",
+det:{
+c:"<em>Ālasya</em> is bodily and mental heaviness that resists effort — distinct from styāna in being more physical, more inertial. The body itself becomes reluctant; the practitioner postpones, delays, returns to bed.",
+ex:"The alarm rings for early practice; the body refuses, sleep returns. This is ālasya — the gravitational pull of tamas on the limbs.",
+v:"Vyāsa: ālasya is heaviness of body and mind alike, born of an excess of kapha or rich food; it is countered by tapas."
+}},
+{n:"Avirati",d:"Sensual indulgence",r:"1.30",
+det:{
+c:"<em>Avirati</em> is non-detachment — the active craving for sense-objects that pulls the mind outward at every opportunity. It is the opposite of vairāgya and the most persistent of the obstacles.",
+ex:"The yogi sits to meditate, and the mind serves up images of food, partners, entertainment, success. The pull is relentless until vairāgya is cultivated.",
+vm:"Vācaspati: avirati is the obstacle that returns even after long practice; one must guard it by withdrawing the senses (pratyāhāra) and reflecting on the defects of objects."
+}},
+{n:"Bhrānti-darśana",d:"False perception",r:"1.30",
+det:{
+c:"<em>Bhrānti-darśana</em> is misperception of the path itself — taking a lesser experience for the goal, a sign for substance, a stage for the destination. It is doctrinally dangerous because it produces false confidence.",
+ex:"A vision of light arises in meditation, the practitioner concludes 'this is samādhi,' stops the deeper practice, and declares attainment. Bhrānti-darśana ossifies into spiritual pride.",
+v:"Vyāsa: this is the trap of mistaken cognition specifically about the means and goal of yoga; it is corrected only by the trustworthy guidance of teacher and śāstra."
+}},
+{n:"Alabdha-bhūmikatva",d:"Failure to attain ground",r:"1.30",
+det:{
+c:"<em>Alabdha-bhūmikatva</em> is the inability to reach the next stage of samādhi despite practice. The previous stage was attained, but progress halts; one cannot break through to the higher level.",
+ex:"The practitioner has stable concentration but cannot progress to true dhyāna; or has glimpses of samprajñāta but cannot stabilize. The ground above remains out of reach.",
+vb:"Vijñānabhikṣu: this obstacle is overcome by intensification of practice and especially by Īśvara-praṇidhāna, which clears subtle resistances."
+}},
+{n:"Anavasthitatva",d:"Instability — slipping from ground gained",r:"1.30",
+det:{
+c:"<em>Anavasthitatva</em> is loss of attained ground — the higher stage was reached but cannot be held. Each session begins from scratch; gains slip through the fingers.",
+ex:"A retreat produces deep states; back home, ordinary distractions pull the mind down to its old level within days. Anavasthitatva is the failure to consolidate.",
+v:"Vyāsa: stable ground is achieved only by long uninterrupted practice with reverence (echoing 1.14); without these conditions, gains will slip."
+}},
+{n:"Companions of obstacles",d:"Suffering, depression, body trembling, disturbed breathing",r:"1.31",
+det:{
+c:"Patañjali lists four <em>antarāya-sahabhuvaḥ</em>: duḥkha (subjective suffering), daurmanasya (frustration of unfulfilled desire, depression), aṅgam-ejayatva (involuntary tremor of the body), śvāsa-praśvāsa (irregular inhalation-exhalation). These are not separate obstacles but the symptomatic constellation that announces obstacles are active.",
+ex:"After a session disrupted by obstacles, one notices: the body felt restless, breath was shallow and uneven, mood sank, a vague sorrow lingered. These four are the signature; the obstacles themselves are the cause.",
+vm:"Vācaspati: the practitioner uses these four as diagnostic — when they appear, an obstacle is present; the remedies of 1.32–39 should be applied immediately."
+}}
+]},
+{name:"Seven remedies to still the mind",ref:"1.33–1.39",color:C.green,children:[
+{n:"Maitrī, karuṇā, muditā, upekṣā",d:"Friendliness, compassion, joy, equanimity toward happy/unhappy/virtuous/wicked",r:"1.33",
+det:{
+c:"Patañjali's famous <em>brahma-vihāras</em>: cultivate friendliness (maitrī) toward the happy, compassion (karuṇā) toward the suffering, sympathetic joy (muditā) toward the virtuous, and equanimity (upekṣā) toward the wicked. This four-fold disposition purifies citta of the four poisonous reactions — envy, cruelty, jealousy, and indignation.",
+ex:"A colleague gets a promotion: the natural reaction may be envy; cultivate maitrī. A stranger is suffering: avoid pity that distances; cultivate karuṇā. Someone behaves virtuously: replace competitive comparison with muditā. A wrongdoer cannot be reformed: instead of moral outrage, settle into upekṣā that neither approves nor obsesses.",
+v:"Vyāsa: these are not occasional moods but bhāvanā — sustained mental cultivations that reshape the citta's default reactions. Done long enough, they become spontaneous.",
+vm:"Vācaspati: the four pair the four kinds of beings (happy, suffering, virtuous, vicious) with the four right responses; misapplied, each reaction itself becomes a kleśa."
+}},
+{n:"Prāṇāyāma",d:"Exhalation and retention of breath",r:"1.34",
+det:{
+c:"Patañjali offers <em>pracchardana-vidhāraṇābhyām vā prāṇasya</em> — extended exhalation and retention of prāṇa — as a calming method. The mind and breath are coupled; lengthening the out-breath quiets the autonomic system and the citta with it.",
+ex:"Slow, complete exhalation followed by gentle holding before the next inhale. Done repeatedly, this drops the heart rate, slows mental traffic, and produces a clear pre-meditative steadiness.",
+v:"Vyāsa: this is a preliminary form of prāṇāyāma — the full eight-limbed treatment comes in chapter 2. Here it is offered as an immediate remedy when the mind is agitated."
+}},
+{n:"Viṣayavatī pravṛttiḥ",d:"Higher sensory activity that steadies the mind",r:"1.35",
+det:{
+c:"<em>Viṣayavatī pravṛtti</em>: cultivating extraordinary sense-perceptions — divine smell at the tip of the nose, divine taste at the tongue's tip, etc. — by saṃyama on those locations. The arising of such subtle perceptions confirms the mind's capacity, and that confirmation steadies practice.",
+ex:"The practitioner contemplates the tip of the nose; in time, a subtle fragrance arises. This is not the goal but a sign — and the unmistakable arising of an unusual sensory event banishes doubt and stabilizes the mind.",
+vm:"Vācaspati: such perceptions are signs that the citta has become sūkṣma — capable of contacting subtle realities; the yogi gains śraddhā from them but does not chase them."
+}},
+{n:"Viśokā jyotiṣmatī",d:"Sorrowless luminous state",r:"1.36",
+det:{
+c:"<em>Viśokā jyotiṣmatī</em>: meditation on the inner sorrowless light — the sāttvika illumination at the heart-lotus, free from rajas and tamas. The mind, taking this luminosity as object, becomes itself luminous and grief-free.",
+ex:"Visualizing a steady inner flame in the heart, brilliant and unflickering, the practitioner identifies with that light's quality of sorrowless clarity. Over time the citta acquires that same character.",
+v:"Vyāsa: the heart-lotus is the seat of citta; the meditator focuses there and the buddhi becomes radiant. This is also a stage of sāsmitā samādhi."
+}},
+{n:"Vīta-rāga viṣayam",d:"Mind taking as object one free from attachment",r:"1.37",
+det:{
+c:"<em>Vīta-rāga</em> means 'one whose passion is gone.' Meditation on the mind of a great sage, saint, or jīvanmukta — one whose citta is utterly free of craving — transmits its quality to one's own citta.",
+ex:"Holding the image and qualities of one's guru, or of an exemplar like the Buddha or Yājñavalkya, and absorbing the dispassionate clarity that radiates from such a being. Mind takes the shape of what it dwells on.",
+vm:"Vācaspati: this is a form of bhāvanā that uses an external sāttvika object; the yogi is uplifted by association in subtle space."
+}},
+{n:"Svapna-nidrā jñāna",d:"Knowledge from dream and sleep states",r:"1.38",
+det:{
+c:"<em>Svapna-nidrā-jñāna-ālambanam</em>: taking as object the cognitions of dream or deep sleep that have brought clarity. Some dreams (especially of one's iṣṭa-devatā) and the peaceful clarity recalled from deep sleep can be re-entered as objects of waking meditation.",
+ex:"The yogi recalls the auspicious quality of a sacred dream — its peace, its luminosity — and uses that recollection as a meditation object during waking hours. Or contemplates the very stillness of dreamless sleep.",
+v:"Vyāsa: the cognitions of dream and deep sleep are also vṛttis; sāttvika ones can serve as supports for stilling the agitated mind."
+}},
+{n:"Yathā-abhimata dhyānāt",d:"Meditation on anything agreeable",r:"1.39",
+det:{
+c:"<em>Yathā-abhimata</em> — 'as one wishes' — is the most accommodating of the seven remedies: meditate on whatever is agreeable to your temperament, provided it is sāttvika. Patañjali grants enormous flexibility: the proper object is the one that genuinely steadies your particular mind.",
+ex:"For one, the breath; for another, an iṣṭa-devatā; for a third, a sacred sound; for a fourth, an inner light. Patañjali does not legislate one method — he insists on what works for the individual.",
+vb:"Vijñānabhikṣu: this sūtra is supremely practical — it acknowledges the diversity of constitutions and authorizes each yogi to find the right object, provided sattva governs the choice."
+}}
+]}
+]},
+{pada:"Sādhana Pāda",sub:"Chapter 2 · 55 sūtras · Practice, afflictions, and the eight limbs",ref:"YS 2.1–2.55",
+intro:"Where the first chapter spoke to advanced practitioners with steady minds, the Sādhana Pāda addresses those still in the world. Patañjali begins with kriyā-yoga (action-yoga), then diagnoses the five kleśas (afflictions) and their fruits, traces the doctrine of karma, and finally lays out the famous eight limbs (aṣṭāṅga) — yama, niyama, āsana, prāṇāyāma, pratyāhāra in this chapter, with the inner three (dhāraṇā, dhyāna, samādhi) reserved for chapter 3.",
+branches:[
+{name:"Kriyā Yoga",ref:"2.1–2.2",color:C.coral,children:[
+{n:"Tapas",d:"Discipline / austerity — purifies body-mind through effort",r:"2.1",
+det:{
+c:"<em>Tapas</em> literally means 'heat' — the heat generated by sustained effort against the grain of habit. It is the deliberate accepting of difficulty for the sake of purification. Not self-punishment, but the willing endurance of what discipline requires: regulated diet, controlled speech, withstanding pairs of opposites (heat-cold, hunger-satiety).",
+ex:"Rising before dawn for sādhana when the body wants more sleep; observing silence on a chosen day; fasting moderately; bearing patiently an insult that one's old habit would answer. Each is a small fire that burns impurity.",
+v:"Vyāsa: tapas is indispensable; without it, no kleśa can be weakened. But Vyāsa cautions against tapas that disturbs the body's equilibrium — it must purify, not damage.",
+vm:"Vācaspati: the right tapas is one that the practitioner can sustain without producing duḥkha; extreme tapas defeats its purpose by agitating the mind it was meant to clear."
+}},
+{n:"Svādhyāya",d:"Self-study and study of sacred texts",r:"2.1",
+det:{
+c:"<em>Svādhyāya</em> has two faces: study of the liberating texts (Upaniṣads, Yoga Sūtras, Gītā) and study of oneself in their light. It includes japa of liberating mantras like OṂ. The point is not scholarship; it is the steady exposure of the mind to the wisdom that dissolves ignorance.",
+ex:"Daily reading of a few verses of the Gītā, contemplating their meaning, and applying that contemplation to one's actual reactions during the day. Or japa of a mantra received from one's tradition, repeated as a continuous undercurrent.",
+v:"Vyāsa: svādhyāya brings vision of the iṣṭa-devatā — the deity of one's chosen path — and the support of the lineage of seers who left these texts.",
+vb:"Vijñānabhikṣu: japa of praṇava is the highest svādhyāya; it combines word, meaning, and devotion in a single act."
+}},
+{n:"Īśvara-praṇidhāna",d:"Surrender to the Lord — reduces ego",r:"2.1",
+det:{
+c:"In the kriyā-yoga context, <em>Īśvara-praṇidhāna</em> means dedicating all actions and their fruits to the Lord. The practitioner does the work but renounces ownership — both of effort and of result. This dissolves the asmitā that would otherwise feed on practice itself.",
+ex:"Sitting to meditate, the yogi inwardly says, 'Not for my benefit; let this be Yours.' Completing a difficult task, the result is offered. The form of the act is the same; the inner posture transforms it from ego-fuel to ego-solvent.",
+v:"Vyāsa: by this surrender, the Lord turns the yogi swiftly to samādhi — for there is no obstacle that an ego-thinned mind, helped by Īśvara, cannot overcome.",
+vm:"Vācaspati: praṇidhāna here is the practical, in-the-world form; in 1.23 it is the more inward form. Together they constitute the full bhakti dimension of yoga."
+}},
+{n:"Purpose",d:"Attenuates kleśas and cultivates samādhi",r:"2.2",
+det:{
+c:"Patañjali states the twofold purpose of kriyā-yoga: <em>samādhi-bhāvanārthaḥ kleśa-tanū-karaṇārthaḥ</em> — to cultivate samādhi and to thin the kleśas. The two go together: as kleśas thin, samādhi deepens; as samādhi deepens, kleśas dwindle. Kriyā-yoga is the ground floor on which the eight limbs are built.",
+ex:"Before sustained meditation can succeed, the gross kleśas must be weakened. Tapas, svādhyāya, and Īśvara-praṇidhāna do this preparatory work; the higher limbs then become accessible.",
+v:"Vyāsa: kleśas, like seeds, can be made dṛḍha (firm) or tanū (thin). Kriyā-yoga makes them tanū; jñāna born of samādhi finally burns them. The two stages are sequential and necessary."
+}}
+]},
+{name:"Five kleśas (afflictions)",ref:"2.3–2.9",color:C.red,children:[
+{n:"Avidyā (ignorance)",d:"Root of all kleśas — mistaking impermanent for permanent, impure for pure, pain for pleasure, non-Self for Self",r:"2.4–5",
+det:{
+c:"<em>Avidyā</em> is the field (kṣetra) in which the other four kleśas grow. It is not absence of knowledge but positive misknowledge — the four-fold misidentification: taking the impermanent (anitya) as permanent, the impure (aśuci) as pure, suffering (duḥkha) as pleasure (sukha), and the non-Self (anātman) as Self (ātman). All bondage traces back to this fourfold misperception.",
+ex:"Treating one's body as if it would last forever (anitya as nitya); pursuing pleasures that are bound to bring eventual pain (duḥkha as sukha); calling the body or thoughts 'I' (anātman as ātman). Every kleśa is some form of one of these confusions.",
+v:"Vyāsa: avidyā is the soil; asmitā, rāga, dveṣa, abhiniveśa are the crops. Pull up the soil and the crops cannot grow. Avidyā is positively existent — like a 'friend' who is in fact an enemy in disguise — not a mere absence.",
+s:"Śaṅkara (Vivaraṇa): the four-fold viparyaya is the standard analysis of avidyā in both Yoga and Vedānta; it is dispelled by viveka-khyāti (discriminative knowledge of seer and seen).",
+vb:"Vijñānabhikṣu: avidyā has four states — dormant (in liberated beings until karma exhausts), thinned (in the practitioner), interrupted (when one kleśa temporarily overpowers another), and active (in the worldly being)."
+}},
+{n:"Asmitā (I-am-ness / ego)",d:"Identifying puruṣa with buddhi — confusing seer with instrument of seeing",r:"2.6",
+det:{
+c:"<em>Asmitā</em> is the apparent identity (ekātmatā iva) of the power of seeing (puruṣa) with the power of the instrument of seeing (buddhi). Where puruṣa is pure consciousness and buddhi is its modifying instrument, asmitā is the false sense that the two are one and the same 'I.'",
+ex:"When you say 'I think,' 'I decide,' 'I know' — the buddhi is the actual agent; puruṣa is the witness. Confusing them produces the contracted 'I' that takes credit, accumulates pride, and then suffers when its identifications collapse.",
+v:"Vyāsa: a single ekātmatā-illusion produces all subsequent identifications. The yogi must reach the discrimination — 'this is buddhi, that is puruṣa' — to dissolve asmitā.",
+vm:"Vācaspati: asmitā here is the kleśa, distinct from the asmitā that is an object of sāsmitā samādhi (1.17). The latter is a subtle, sāttvika reflection; the former is the gross knot of bondage."
+}},
+{n:"Rāga (attachment)",d:"Dwelling on pleasure — clinging to past pleasurable experiences",r:"2.7",
+det:{
+c:"<em>Sukha-anuśayī rāgaḥ</em> — rāga is the dwelling-along-with pleasure. When pleasure has been experienced, the memory leaves a saṃskāra; that saṃskāra, activated, becomes craving for more. Rāga is not the pleasure itself but the pull toward repetition.",
+ex:"A meal at a particular restaurant was excellent; weeks later the mind returns there and craves another visit. The body did not need it; the saṃskāra of past pleasure pulls the mind. Multiplied across all enjoyments, this becomes the engine of saṃsāra.",
+v:"Vyāsa: rāga is the thirst (tṛṣṇā) for the means and the experience of pleasure; it follows from the recollection of having enjoyed.",
+vb:"Vijñānabhikṣu: rāga and dveṣa are the active poles of avidyā in operation; they drive the wheel of action."
+}},
+{n:"Dveṣa (aversion)",d:"Dwelling on pain — recoiling from past painful experiences",r:"2.8",
+det:{
+c:"<em>Duḥkha-anuśayī dveṣaḥ</em> — dveṣa is dwelling-along-with pain. Past suffering leaves a saṃskāra of recoil; that saṃskāra becomes anger, fear, hatred toward whatever is associated with the original pain.",
+ex:"A childhood humiliation produces lifelong avoidance of public speaking. The original pain is past; the saṃskāra of recoil persists and shapes present behavior. Dveṣa is the negative twin of rāga — both are equally binding.",
+v:"Vyāsa: dveṣa is anger, resentment, the wish to harm — all rooted in remembered pain. It binds as firmly as rāga; the yogi must dissolve both.",
+vm:"Vācaspati: rāga and dveṣa together are the operational form of avidyā in daily life; weakening them weakens avidyā itself."
+}},
+{n:"Abhiniveśa (clinging to life)",d:"Fear of death — instinctive, present even in the wise",r:"2.9",
+det:{
+c:"<em>Abhiniveśa</em> is the spontaneous, untaught will to continue existing — the recoil from death that arises in worm and sage alike. Patañjali says it is <em>svarasa-vāhī</em> — flowing by its own taste, self-sustaining. Its presence even in those who have never personally died proves the existence of past births: only the saṃskāra of past death-experiences explains universal death-fear.",
+ex:"A scholar who has intellectually concluded the body is not the self still flinches when a car nearly hits him. That involuntary flinch is abhiniveśa, deeper than any reasoning.",
+v:"Vyāsa offers this as a powerful argument for rebirth — abhiniveśa is innate to all beings; what is innate must have a cause; the only adequate cause is the saṃskāra of having died before. Even the wise have it, until liberation finally erases it.",
+vb:"Vijñānabhikṣu: abhiniveśa is the most subtle kleśa; it is dissolved last, only at the threshold of kaivalya itself."
+}}
+]},
+{name:"Karma doctrine",ref:"2.12–2.14",color:C.gray,children:[
+{n:"Karmāśaya",d:"Storehouse of karmic residues, rooted in kleśas",r:"2.12",
+det:{
+c:"<em>Karmāśaya</em> is the storehouse (āśaya) of karmic deposits. Every action driven by kleśas leaves a residue; these residues accumulate and ripen in this life or future lives. Actions free of kleśas (the yogi's actions) leave no āśaya — they are seedless and produce no future fruit.",
+ex:"An act of charity done from genuine compassion (free of egoic self-image) leaves no binding residue, however good the act. The same act done for praise is kliṣṭa-karma — it deposits a saṃskāra and binds.",
+v:"Vyāsa: karmāśaya has roots in kleśas; if kleśas are destroyed, the storehouse is sterilized — past karma still ripens, but no new karma accumulates.",
+vb:"Vijñānabhikṣu: this is precisely the doctrine of the Bhagavad Gītā — niṣkāma karma (action without selfish desire) does not bind."
+}},
+{n:"Jāti, āyuḥ, bhoga",d:"Results manifest as birth condition, lifespan, and experiences",r:"2.13",
+det:{
+c:"When karmāśaya ripens, it produces three fruits: <em>jāti</em> (the species and family of birth), <em>āyuḥ</em> (the duration of that life), and <em>bhoga</em> (the experiences enjoyed and suffered within it). All three are determined by the ripening of past karmas at the moment of conception.",
+ex:"Why this body, this family, this lifespan, this set of opportunities and constraints? The yoga answer: jāti, āyuḥ, and bhoga are the karmic harvest of seeds planted in prior lives. Free will is exercised within this inherited frame.",
+v:"Vyāsa: a single life can ripen the fruits of multiple past karmas; or one karma can require multiple lives to bear its full fruit. The exact ripening is governed by complex laws not fully knowable to ordinary cognition.",
+vm:"Vācaspati: this sūtra grounds the moral order of the cosmos — actions necessarily bear fruit; nothing is lost; nothing is unjust at the cosmic level."
+}},
+{n:"Puṇya / apuṇya",d:"Virtuous actions yield pleasure, non-virtuous yield pain",r:"2.14",
+det:{
+c:"<em>Te hlāda-paritāpa-phalāḥ puṇyāpuṇya-hetutvāt</em>: the three (jāti, āyuḥ, bhoga) bear fruits of joy or grief, depending on whether their causes were virtuous (puṇya) or non-virtuous (apuṇya). Cosmic causality is moral: pleasure follows good karma; pain follows bad karma.",
+ex:"A person born into ease, with sound body and good fortune, is enjoying the fruit of past puṇya. Misfortune in another, however undeserved it appears in this life, has its cause in past apuṇya. The doctrine is rigorous and unsentimental.",
+v:"Vyāsa: even within the same life, joy and grief alternate as different karmas ripen. The yogi's task is not to chase joy or flee grief but to step outside the wheel altogether.",
+vb:"Vijñānabhikṣu: the discerning practitioner sees that even the joy of puṇya-karma is mixed with subtle suffering — for it must end, and its ending brings grief. Hence the next sūtra's verdict: all is suffering for the discerning."
+}}
+]},
+{name:"Viveka-khyāti (discriminative discernment)",ref:"2.15–2.28",color:C.purple,children:[
+{n:"Duḥkham eva sarvaṃ vivekinaḥ",d:"To the discerning, all is suffering due to guṇa conflict, change, saṃskāras",r:"2.15",
+det:{
+c:"<em>Pariṇāma-tāpa-saṃskāra-duḥkhaiḥ guṇa-vṛtti-virodhāc ca duḥkham eva sarvaṃ vivekinaḥ</em>. To one with viveka (discrimination), everything is duḥkha — for three reasons: pariṇāma (the change-suffering — pleasure must end and the ending hurts), tāpa (the burning-suffering even within pleasure — anxiety of loss), saṃskāra (the residue-suffering — every pleasure deposits a craving for repetition). Plus the constant conflict of the guṇas pulling in opposite directions.",
+ex:"A delicious meal: pleasure while eating; anxiety as the plate empties; sadness when it is gone; saṃskāra producing future craving; the very digestion brings new bodily disturbance. The discerning eye sees suffering threaded through what the worldly call pleasure.",
+v:"Vyāsa: this is not pessimism but realism. The ordinary mind sees only the surface pleasure; viveka sees the entire structure. From this clear seeing arises genuine vairāgya — not as renunciation of joy, but as recognition of the truth.",
+vm:"Vācaspati: pariṇāma-duḥkha is the rajasic distress of change; tāpa-duḥkha is the anxious burn of clinging; saṃskāra-duḥkha is the deep tamasic residue. The three guṇas produce three modes of suffering, all subsumed in viveka's vision."
+}},
+{n:"Heyaṃ duḥkham anāgatam",d:"Future suffering is to be avoided",r:"2.16",
+det:{
+c:"Past suffering has happened; present suffering is being undergone — neither can be avoided. But <em>future</em> suffering — duḥkham anāgatam — is what the entire yoga discipline aims to prevent. Yoga is preventive medicine for the soul: it does not erase yesterday but extinguishes the seeds of tomorrow.",
+ex:"You cannot uneat the rich meal that is now causing indigestion. You can refuse to eat the next one. Yoga's discipline addresses the next round of saṃsāra — the duḥkha that is not yet but is queued in the karmāśaya.",
+v:"Vyāsa: this sūtra defines yoga's strategic aim: not to alter what is already actualized but to prevent what is still latent from manifesting.",
+vb:"Vijñānabhikṣu: this is the medical analogy — the yogi is the patient, ignorance is the disease, future suffering is the symptom to be averted, viveka is the cure, and the puruṣa-prakṛti distinction is the diagnosis."
+}},
+{n:"Draṣṭṛ-dṛśyayoḥ saṃyogaḥ",d:"The cause of suffering is union of seer with seen",r:"2.17",
+det:{
+c:"Patañjali's diagnosis is precise: the cause of avoidable suffering is the <em>saṃyoga</em> — apparent conjunction — between draṣṭā (seer, puruṣa) and dṛśya (seen, prakṛti and its products). They are utterly distinct; their seeming union (which is in fact a misperception) is the root malady.",
+ex:"A magnet does not really 'merge' with iron filings; the filings cluster around it without altering its substance. So puruṣa attracts, illuminates, witnesses prakṛti without ever being modified — but ignorance reads the situation as a merger, and from that misreading arises every kleśa.",
+v:"Vyāsa: the saṃyoga is not real conjunction (puruṣa is changeless and cannot truly conjoin with anything) but an apparent identity arising from avidyā. Remove avidyā, and the saṃyoga ends without anything actually moving.",
+s:"Śaṅkara (Vivaraṇa): this is the medical model — disease (duḥkha), cause of disease (saṃyoga), health (kaivalya), means to health (viveka-khyāti). Yoga is structured as a fourfold therapeutic.",
+vm:"Vācaspati: the saṃyoga is beginningless; it has no first moment in time. But it does have an end — the moment viveka becomes complete and steady."
+}},
+{n:"Kaivalya — the goal",d:"Established in its own nature when ignorance dissolves",r:"2.25",
+det:{
+c:"<em>Tad-abhāvāt saṃyoga-abhāvo hānam tad dṛśeḥ kaivalyam</em>: from the absence of avidyā follows the absence of saṃyoga; this absence is the cessation (hāna) of suffering and is called kaivalya — the absolute aloneness/independence of puruṣa. Kaivalya is not annihilation but the seer's standing forth in its own pure nature, freed from all confusion with the seen.",
+ex:"When the dream ends, the dreamer was never harmed by the dream's events. Likewise, when avidyā ends, puruṣa is not 'rescued' — it was never actually bound. The bondage was apparent only; the freedom is therefore also a recognition rather than an attainment.",
+v:"Vyāsa: kaivalya means kevalatā — being only itself, without entanglement with the modifications of the seen. It is the same as the svarūpa-pratiṣṭhā of 1.3 and the goal of 4.34.",
+vb:"Vijñānabhikṣu: kaivalya in Yoga is not the merger of jīva with brahman as in Advaita Vedānta — it is the unconfused standing of each puruṣa in its own pure consciousness; many puruṣas, each independently free."
+}}
+]},
+{name:"Aṣṭāṅga Yoga — eight limbs",ref:"2.29–2.55",color:C.teal,sub:[
+{name:"Yama (social restraints)",ref:"2.30–2.31",children:[
+{n:"Ahiṃsā",d:"Non-violence",r:"2.30",
+det:{
+c:"<em>Ahiṃsā</em> — non-injury — is the foundational yama, in thought, word, and deed, toward all beings, in all places and times. Patañjali later (2.35) declares that when ahiṃsā is fully established in the yogi, all hostility ceases in his presence — even natural enemies abandon enmity. Ahiṃsā is not passive non-action but active goodwill.",
+ex:"Refraining from sharp speech that would wound; choosing food and livelihood that minimize harm; cultivating thoughts free of resentment. Even violence to oneself (excessive tapas, harsh self-criticism) is a violation.",
+v:"Vyāsa: ahiṃsā is the root of all the yamas; the others (truthfulness, non-stealing, etc.) are valid only insofar as they do not violate ahiṃsā. A truth that wounds gratuitously is not satya but disguised hiṃsā.",
+vm:"Vācaspati: ahiṃsā is to be observed as a mahāvrata — a great vow — unqualified by caste, place, time, or circumstance. Lesser practitioners may observe qualified ahiṃsā; the yogi observes it absolutely."
+}},
+{n:"Satya",d:"Truthfulness",r:"2.30",
+det:{
+c:"<em>Satya</em> is conformity of speech and mind to fact, with intent to benefit others. It is not crude factuality but truth in the service of welfare. When perfected (2.36), the yogi's words become factually efficacious — what he says becomes so.",
+ex:"Telling a difficult truth gently rather than evading it; refusing to flatter or deceive even for advantage; aligning inner thought with outer speech. Yet a truth told without compassion or context can become hiṃsā.",
+v:"Vyāsa: satya must serve the welfare of beings; if a literal truth would cause harm with no countervailing good, silence is preferred. Truth is for liberation, not weaponization.",
+vb:"Vijñānabhikṣu: satya is also satya in the inner life — the yogi does not lie to himself about his motives, attainments, or failings."
+}},
+{n:"Asteya",d:"Non-stealing",r:"2.30",
+det:{
+c:"<em>Asteya</em> — non-stealing — extends beyond physical theft to include the desire to take what is not given: not coveting another's wealth, position, ideas, time, or attention. The mind that does not even mentally appropriate becomes free from a deep undercurrent of agitation.",
+ex:"Returning what was borrowed promptly; not exploiting another's vulnerability for gain; not taking credit for another's work; not consuming more than one's share. Mental theft (envy, plotting to acquire) is also addressed.",
+v:"Vyāsa: when asteya is perfected (2.37), all jewels approach the yogi — the universe spontaneously offers wealth to one who has stopped grasping for it.",
+vm:"Vācaspati: asteya is closely tied to aparigraha; together they regulate the yogi's relation to material wealth at root."
+}},
+{n:"Brahmacarya",d:"Continence / right use of energy",r:"2.30",
+det:{
+c:"<em>Brahmacarya</em> literally means 'walking in brahman' — the conduct that conduces to the highest. It is conservation and sublimation of vital energy, especially sexual energy, in service of sādhana. For householders, it means right and limited sexual life within marriage; for renunciates, complete celibacy. The aim is the redirection of prāṇic resource toward inner work.",
+ex:"Discipline of the senses generally; turning away from gratuitous stimulation; channeling the energy that would dissipate outward into the practice. When perfected (2.38), the yogi gains <em>vīrya</em> — extraordinary strength and vigor of body and mind.",
+v:"Vyāsa: brahmacarya is the guardian of tapas; without it, the heat of practice leaks out. Its perfection produces a luminous vitality recognizable in great practitioners.",
+vb:"Vijñānabhikṣu: the rule applies according to one's āśrama — householder-brahmacarya is regulated, not absolute; for the saṃnyāsin it is total."
+}},
+{n:"Aparigraha",d:"Non-possessiveness",r:"2.30",
+det:{
+c:"<em>Aparigraha</em> is the refusal to accumulate beyond need — including objects, relationships claimed as 'mine,' and even ideas held as personal property. Possessions create the burden of acquiring, protecting, and grieving their loss. The yogi keeps only what is needed for sādhana.",
+ex:"Living simply; not hoarding; not multiplying possessions because one can; refusing gifts that would create obligation. Even mental possessiveness — clinging to one's reputation, ideas, status — is loosened.",
+v:"Vyāsa: when aparigraha is perfected (2.39), the yogi gains knowledge of the 'how and why' of births — for he has stopped the pattern of grasping that drives rebirth.",
+vm:"Vācaspati: aparigraha applied to the body itself — recognizing 'this body is not mine' — leads directly into the discriminative knowledge of puruṣa and prakṛti."
+}}
+]},
+{name:"Niyama (personal observances)",ref:"2.32–2.45",children:[
+{n:"Śauca",d:"Purity (body and mind)",r:"2.32",
+det:{
+c:"<em>Śauca</em> is purification, outer and inner. Outer śauca: bathing, clean food, clean environment. Inner śauca: mental cleanliness — friendliness, compassion, freedom from harmful emotions. Patañjali (2.40) says outer śauca produces detachment from one's own body and from contact with others' bodies — for one sees the impurity of the physical when constantly tending to it.",
+ex:"Daily ablutions, sattvic diet, clean dwelling. Internally: scrubbing the mind of envy, ill-will, contempt. From outer śauca arises an unexpected fruit — vairāgya from one's own body, recognizing it as a vessel that must continually be purified, never permanently pure.",
+v:"Vyāsa: from inner śauca arise sattva-śuddhi (purity of sattva), saumanasya (mental cheerfulness), ekāgratā (one-pointedness), indriya-jaya (mastery of senses), ātma-darśana-yogyatā (fitness for self-vision). A whole chain of purifications follows from this single niyama.",
+vm:"Vācaspati: the body, no matter how cleaned, remains intrinsically impure (it constantly produces waste); contemplating this freshens dispassion."
+}},
+{n:"Santoṣa",d:"Contentment",r:"2.32",
+det:{
+c:"<em>Santoṣa</em> is contentment with what comes unsought, without seeking more. It is not passivity — the yogi continues to act — but inner satisfaction independent of external attainment. Patañjali (2.42) says santoṣa produces unexcelled happiness — sukham anuttamam.",
+ex:"Eating with gratitude what is offered; receiving what life brings without comparing it to what others have; doing one's work without anxious calculation of reward. The mind freed from the projection of 'more' rests in the sufficiency of what is.",
+v:"Vyāsa: there is no joy in the world to compare with the joy of contentment; all the pleasures of all the heavens together are not equal to the bliss of a mind that craves nothing.",
+vb:"Vijñānabhikṣu: santoṣa is the antidote to abhinveśa-driven accumulation; it disrupts the fundamental pattern by which kleśas perpetuate themselves."
+}},
+{n:"Tapas",d:"Austerity / self-discipline",r:"2.32",
+det:{
+c:"Tapas reappears as a niyama (after being part of kriyā-yoga in 2.1). Here it is the systematic cultivation of the capacity to bear what discipline requires. Patañjali (2.43) says tapas, by destroying impurities, produces perfection of the body and senses — kāyendriya-siddhi.",
+ex:"The yogi accepts pairs of opposites — heat and cold, hunger and satiety, praise and blame — without flinching. This bearing develops the inner musculature of practice.",
+v:"Vyāsa: tapas burns up the impurities of the body and the inner instrument; the result is fitness for higher samādhi and sometimes specific siddhis like clairaudience or clairvoyance.",
+vm:"Vācaspati: tapas must be selected according to one's strength; an excess produces tāmasic exhaustion rather than sāttvika clarity."
+}},
+{n:"Svādhyāya",d:"Self-study",r:"2.32",
+det:{
+c:"Svādhyāya as niyama: continual study of liberating texts and continual self-examination in their light. Patañjali (2.44) says svādhyāya produces communion with one's iṣṭa-devatā — the chosen aspect of the divine.",
+ex:"Daily reading and contemplation of a text, with personal application. Japa of the mantra of one's iṣṭa-devatā. Over time, the line between studying about and being met by becomes thin.",
+v:"Vyāsa: through svādhyāya the yogi sees the deity face to face; the texts are not mere literature but channels through which the lineage of seers communicates.",
+vb:"Vijñānabhikṣu: praṇava-japa is the supreme svādhyāya; combined with bhāvanā of its meaning, it accomplishes both samādhi and removal of obstacles."
+}},
+{n:"Īśvara-praṇidhāna",d:"Surrender to God",r:"2.32",
+det:{
+c:"Īśvara-praṇidhāna as niyama: the daily, lived posture of surrendering all action and its fruits to the Lord. Patañjali (2.45) gives the most direct fruit of any niyama: <em>samādhi-siddhir Īśvara-praṇidhānāt</em> — perfection of samādhi from surrender to the Lord.",
+ex:"Beginning every action with inner offering; receiving every result as the Lord's gift; treating each event of the day as the Lord's communication. The ego that would otherwise feed on practice is steadily dissolved.",
+v:"Vyāsa: this is the easiest and surest path — by surrender alone, samādhi is perfected, even when other limbs are imperfect.",
+vm:"Vācaspati: of the five niyamas, this one stands out for the directness and completeness of its fruit. It is the supreme niyama as well as the supreme means."
+}}
+]},
+{name:"Āsana (posture)",ref:"2.46–2.48",children:[
+{n:"Sthira-sukham āsanam",d:"Posture should be steady and comfortable",r:"2.46",
+det:{
+c:"Patañjali's entire teaching on āsana fits in three sūtras and emphasizes one principle: <em>sthira-sukham</em> — steady and comfortable. Posture in Patañjali is the seated posture for meditation, not the elaborate physical culture of later haṭha-yoga. The two qualities — stability and ease — must coexist; either alone is insufficient.",
+ex:"A meditation seat one can hold without strain, without movement, for the duration of practice. Could be padmāsana, siddhāsana, sukhāsana, or even a chair if necessary. The criterion is functional: does it allow the mind to forget the body?",
+v:"Vyāsa lists several seats by name — padmāsana, vīrāsana, bhadrāsana, svastikāsana, daṇḍāsana, sopāśraya, paryaṅka, krauñca-niṣadana, hasta-niṣadana, uṣṭra-niṣadana, sama-saṃsthāna, sthira-sukha — but emphasizes that the kind of posture matters less than its quality.",
+vm:"Vācaspati: 'steady' means without trembling, 'comfortable' means without producing duḥkha. Both must be present together."
+}},
+{n:"Prayatna-śaithilya",d:"By relaxation of effort and absorption in the infinite",r:"2.47",
+det:{
+c:"Posture becomes perfect by two means: <em>prayatna-śaithilya</em> (relaxation of the natural effort to hold the body) and <em>ananta-samāpattibhyām</em> (absorption in the infinite — the cosmic serpent Ananta who supports the worlds, or simply the limitless space). The body settles when effort is dropped and consciousness expands.",
+ex:"As long as the body is held by muscular effort, it will tire. Relax the effort progressively; let support come from skeletal alignment and from inner ease. Simultaneously, let attention expand into vast space — the body becomes light, and the posture stable.",
+v:"Vyāsa: ordinary posture requires effort; perfected āsana requires the dropping of that effort. The contemplation of Ananta — the infinite — is the support that replaces muscular tension.",
+vb:"Vijñānabhikṣu: meditation on space, on the infinite serpent Śeṣa, or on the boundlessness of brahman — all serve to dissolve the body-fixation that makes posture difficult."
+}},
+{n:"Dvandva-anabhighātaḥ",d:"Then pairs of opposites cease to disturb",r:"2.48",
+det:{
+c:"From perfected āsana arises <em>dvandva-anabhighāta</em> — the cessation of disturbance from pairs of opposites: heat and cold, hunger and thirst, honor and dishonor. The settled body becomes the platform of the settled mind; from this base, the yogi is no longer thrown about by external pairs.",
+ex:"Once the meditation seat is truly stable, a fly landing, a sudden cold, a noise outside no longer disturbs the practice. The same equanimity extends gradually to all the pairs that ordinarily move us.",
+v:"Vyāsa: this is the visible sign of mastered āsana — the practitioner can sit through what would have disturbed him before.",
+vm:"Vācaspati: dvandvas are the elementary pulls of saṃsāra; freedom from them at the bodily level prepares freedom from them at every level."
+}}
+]},
+{name:"Prāṇāyāma (breath control)",ref:"2.49–2.53",children:[
+{n:"Śvāsa-praśvāsayoḥ gati-vicchedaḥ",d:"Regulation of inhalation and exhalation movements",r:"2.49",
+det:{
+c:"Once āsana is steady, prāṇāyāma follows: <em>tasmin sati śvāsa-praśvāsayoḥ gati-vicchedaḥ prāṇāyāmaḥ</em>. Prāṇāyāma is the cutting (viccheda) of the natural movement (gati) of inhalation and exhalation. The ordinary spontaneous flow is interrupted, regulated, made conscious. This is not breath-stopping but breath-cultivation.",
+ex:"From unconscious natural breathing the yogi moves to deliberately measured breathing — extending, refining, eventually pausing. Each phase becomes a domain of conscious control.",
+v:"Vyāsa: prāṇāyāma presupposes āsana — without a steady seat, the breath cannot be cultivated. The 'cutting' is not violent but a graceful transition from natural to cultivated rhythm.",
+vb:"Vijñānabhikṣu: prāṇa is the bridge between body and mind; by mastering breath, the yogi gains a handle on both gross body and subtle citta."
+}},
+{n:"Bāhya, ābhyantara, stambha",d:"External, internal, and suspended — regulated by place, time, number",r:"2.50",
+det:{
+c:"Three modes of prāṇāyāma: <em>bāhya</em> (external — the suspension after exhalation, lungs empty), <em>ābhyantara</em> (internal — the suspension after inhalation, lungs full), <em>stambha</em> (suspended — sudden cessation in any phase). Each is regulated by deśa (place — where in the body the prāṇa is felt), kāla (time — duration measured in mātrās), and saṅkhyā (number — how many cycles). Through this regulation, the breath becomes long and subtle (dīrgha-sūkṣma).",
+ex:"Counting the inhalation, holding, the exhalation, holding — each phase measured. With practice, the count extends; the breath becomes finer; eventually the practitioner can hold for long durations without strain.",
+v:"Vyāsa: deśa, kāla, saṅkhyā are the three measurements; mastery requires steady progress in all three. The result is a breath that is long, fine, and capable of long suspension.",
+vm:"Vācaspati: the three suspensions correspond to three different prāṇic conditions in the body and have different effects on citta; advanced yogis use them deliberately."
+}},
+{n:"Dhāraṇāsu ca yogyatā manasaḥ",d:"Mind becomes fit for concentration",r:"2.53",
+det:{
+c:"Patañjali states the central fruit of prāṇāyāma in 2.52–53: <em>tataḥ kṣīyate prakāśa-āvaraṇam</em> (then the covering of light is destroyed) and <em>dhāraṇāsu ca yogyatā manasaḥ</em> (and the mind becomes fit for concentration). Prāṇāyāma's purpose is preparatory: it removes the karmic veil that obscures sattva and makes the mind capable of sustained dhāraṇā.",
+ex:"Before prāṇāyāma, the mind cannot hold concentration for more than seconds; after sustained prāṇāyāma practice, dhāraṇā becomes effortless because the underlying restlessness has been dissolved at its source — the breath.",
+v:"Vyāsa: the 'covering of light' is the karmic occlusion that prevents sattva from shining; prāṇāyāma is uniquely effective at thinning this covering.",
+vb:"Vijñānabhikṣu: of all the limbs, prāṇāyāma is the most direct preparation for dhāraṇā — it should not be skipped."
+}}
+]},
+{name:"Pratyāhāra (sense withdrawal)",ref:"2.54–2.55",children:[
+{n:"Sva-viṣaya-asamprayoge",d:"When senses cease contact with their objects",r:"2.54",
+det:{
+c:"<em>Pratyāhāra</em> is the senses' withdrawal: when the senses, disconnected from their respective objects, follow as it were the form of the citta itself. The senses do not contact their objects; they turn back to their source in citta. Citta becomes the master rather than the servant of the indriyas.",
+ex:"The classic image: the bee follows the queen — when she rises, all rise. Likewise, when citta turns inward, the senses naturally follow; they do not fight to remain outward. This is not forced repression but natural withdrawal.",
+v:"Vyāsa: pratyāhāra is not the suppression of the senses by force but their natural following of the inward-turning citta. Just as the bees follow the queen-bee's flight, the senses follow citta's inward orientation.",
+vm:"Vācaspati: this is the bridge between the outer five limbs and the inner three; without pratyāhāra, dhāraṇā cannot stabilize because the senses keep dragging citta back outward."
+}},
+{n:"Paramaḥ vaśyatā indriyāṇām",d:"Supreme mastery over the senses results",r:"2.55",
+det:{
+c:"<em>Tataḥ paramā vaśyatā-indriyāṇām</em> — from pratyāhāra arises supreme mastery over the senses. Not merely control (which would still be effort against resistance) but vaśyatā — the senses become naturally obedient, no longer pulling against the will of citta.",
+ex:"At first the practitioner struggles to keep the eyes from wandering, the ears from following sound. After pratyāhāra is established, the senses simply remain quiet when the yogi turns inward; their independent agitation has ceased.",
+v:"Vyāsa: this is supreme mastery — the senses themselves no longer demand objects, no longer agitate citta. Lower mastery requires effort against pull; supreme mastery has no pull to oppose.",
+vb:"Vijñānabhikṣu: with this mastery, the practitioner is ready for the antaraṅga limbs (dhāraṇā, dhyāna, samādhi) of chapter 3 — the inner work proper."
+}}
+]}
+]}
+]},
+{pada:"Vibhūti Pāda",sub:"Chapter 3 · 56 sūtras · Powers, saṃyama, and siddhis",ref:"YS 3.1–3.56",
+intro:"The third chapter introduces the inner three limbs (dhāraṇā, dhyāna, samādhi) and the technique of saṃyama — their combined application on a single object. From this technique flow the famous siddhis (yogic powers): knowledge of past and future, of other minds, of one's previous births, mastery over elements and senses. Patañjali catalogs these vibhūtis carefully and concludes with a stern warning: these powers are obstacles to the highest samādhi unless transcended by vairāgya.",
+branches:[
+{name:"Inner three limbs (antaraṅga)",ref:"3.1–3.3",color:C.blue,children:[
+{n:"Dhāraṇā",d:"Binding of consciousness to a single point, place, or object",r:"3.1",
+det:{
+c:"<em>Deśa-bandhaḥ cittasya dhāraṇā</em>: dhāraṇā is the binding of citta to a particular spot — a place in the body (heart, navel, third eye), a deity, an external object. The mind is held to this single deśa, returning to it whenever it strays. This is the elementary discipline of concentration.",
+ex:"Fixing attention on the breath at the nostrils. Each time the mind drifts, it is gently returned. The 'binding' is repeated re-establishment, not iron grip.",
+v:"Vyāsa lists possible deśas: nābhi-cakra (navel), hṛdaya-puṇḍarīka (heart-lotus), mūrdha-jyotis (light at the crown), nāsikāgra (tip of nose), jihvāgra (tip of tongue), or any external sāttvika object. Each suits different temperaments.",
+vm:"Vācaspati: dhāraṇā is the foundation of dhyāna; without it, meditation has no stable axis. It must be cultivated patiently before the next stage can naturally arise."
+}},
+{n:"Dhyāna",d:"Unbroken flow of cognition toward that object",r:"3.2",
+det:{
+c:"<em>Tatra pratyaya-eka-tānatā dhyānam</em>: dhyāna is the continuous, unbroken flow of cognitions of the same object in dhāraṇā's chosen place. Where dhāraṇā repeatedly returns the mind, dhyāna is the unbroken stay — like oil poured in a steady stream rather than drop by drop.",
+ex:"After dhāraṇā has stabilized attention on the chosen object, the cognitions of that object flow continuously, unbroken by other thoughts. Subject and object remain distinct, but the stream is unbroken.",
+v:"Vyāsa: dhyāna is to dhāraṇā as a continuous stream of oil is to its drops. The same object, the same orientation — but now without interruption.",
+vb:"Vijñānabhikṣu: dhyāna is reached only when dhāraṇā has been long practiced; trying to skip directly to dhyāna produces unstable, fragmentary states mistaken for it."
+}},
+{n:"Samādhi",d:"Object alone shines — mind loses its own form",r:"3.3",
+det:{
+c:"<em>Tad eva artha-mātra-nirbhāsam svarūpa-śūnyam iva samādhiḥ</em>: when the same dhyāna shines forth as the object alone, as if empty of its own form (the form of cognition), it is samādhi. The cognitive distance between meditator and object collapses; only the object's reality shines.",
+ex:"Where dhyāna still has the structure 'I am cognizing this object,' samādhi has only 'this object' — the meditator and the act of meditation have receded; the object's own being radiates.",
+v:"Vyāsa: in samādhi the citta becomes svarūpa-śūnyam iva — as if empty of its own form. The 'as if' (iva) is important: citta has not actually disappeared, but it no longer obtrudes as a separate cognitive layer.",
+vm:"Vācaspati: this is samprajñāta samādhi (object still present); the asamprajñāta of 1.18 is reached when even the object dissolves."
+}}
+]},
+{name:"Saṃyama (integration)",ref:"3.4–3.8",color:C.purple,children:[
+{n:"Trayam ekatra saṃyamaḥ",d:"Dhāraṇā + Dhyāna + Samādhi together = Saṃyama",r:"3.4",
+det:{
+c:"<em>Trayam ekatra saṃyamaḥ</em>: the three (dhāraṇā, dhyāna, samādhi) together on one object constitute saṃyama. This is Patañjali's technical term for the unified application of the three inner limbs on a single subject. Saṃyama is the engine that produces all the siddhis listed in the rest of the chapter.",
+ex:"The yogi takes one object — say, the sun — applies dhāraṇā (binding attention to it), dhyāna (unbroken flow), samādhi (object alone shining). The three together on this one object yield direct knowledge of the cosmic regions (3.26).",
+v:"Vyāsa: saṃyama is the proper technique of the yogi. It is not three separate practices but their unified application; only as a unity does it produce its characteristic results.",
+vb:"Vijñānabhikṣu: saṃyama is the operating technique of all yoga investigation; it is the means by which the yogi gains direct knowledge of any chosen object, gross or subtle."
+}},
+{n:"Taj-jayāt prajñā-ālokaḥ",d:"Mastery of saṃyama brings the light of prajñā (wisdom)",r:"3.5",
+det:{
+c:"<em>Tajjayāt prajñā-ālokaḥ</em>: from mastery of saṃyama arises the light (āloka) of prajñā — wisdom that directly perceives the chosen object. The yogi gains a faculty of penetrating insight, applicable wherever saṃyama is applied.",
+ex:"With saṃyama mastered, the yogi can investigate any subject directly: the structure of the body by saṃyama on it, the nature of mind by saṃyama on the mind, the nature of subtle elements by saṃyama on them. Each application yields specific prajñā.",
+v:"Vyāsa: this prajñā is the ṛtaṃbharā of 1.48 — wisdom that bears truth, never erroneous, of an order above ordinary perception, inference, or testimony.",
+vm:"Vācaspati: prajñā-āloka is incremental; saṃyama is applied progressively to coarser then subtler objects, with prajñā illuminating each in turn (3.6)."
+}},
+{n:"Trayam antaraṅgam pūrvebhyaḥ",d:"These three are inner limbs compared to the first five",r:"3.7",
+det:{
+c:"<em>Trayam antaraṅgam pūrvebhyaḥ</em>: these three (dhāraṇā, dhyāna, samādhi) are inner limbs (antaraṅga) compared to the previous five (yama through pratyāhāra), which are outer (bahiraṅga). The first five are preparatory; the three inner limbs constitute yoga proper.",
+ex:"Yama and niyama prepare ethical ground; āsana and prāṇāyāma prepare body and breath; pratyāhāra prepares the senses. Only with these in place can the inner three operate. The outer prepare the field; the inner three plant and harvest.",
+v:"Vyāsa: the outer five are also yoga, but in a preparatory sense. Without them, the inner three cannot stabilize. Without the inner three, the outer five do not reach their goal.",
+vb:"Vijñānabhikṣu: the inner three are 'inner' both in object (more subtle) and in mode (less dependent on body and external conditions)."
+}},
+{n:"Tad api bahiraṅgam nirbījasya",d:"Even these three are outer compared to seedless samādhi",r:"3.8",
+det:{
+c:"<em>Tad api bahiraṅgam nirbījasya</em>: even these three (the antaraṅga limbs) are outer (bahiraṅga) when compared to the seedless samādhi (nirbīja, 1.51). What was inner relative to the first five is outer relative to the highest. Bahiraṅga and antaraṅga are relational, not absolute.",
+ex:"Climbing a mountain, what was 'higher' from the foothills becomes 'lower' from the summit. Similarly, samprajñāta samādhi is the goal of the inner three — but in turn becomes a means to nirbīja, the seedless state in which even the inner three are transcended.",
+v:"Vyāsa: nirbīja samādhi has no support, no object, no seed — the inner three all involve some object and so remain relatively outer. Only nirbīja is unconditionally inner.",
+vm:"Vācaspati: this sūtra closes the systematic exposition of the eight limbs and points beyond them to the seedless samādhi that is yoga's highest reach."
+}}
+]},
+{name:"Pariṇāma (transformations of mind)",ref:"3.9–3.15",color:C.teal,children:[
+{n:"Nirodha-pariṇāma",d:"Transformation where arising impressions are suppressed",r:"3.9",
+det:{
+c:"<em>Nirodha-pariṇāma</em>: the transformation of citta in which the saṃskāra of vyutthāna (active outward state) is overcome by the rising saṃskāra of nirodha. Citta is colored momentarily by the dawning saṃskāra of cessation. This is the first of three pariṇāmas describing the gradual coming-to-rest of mind.",
+ex:"In meditation, the busy mind subsides not all at once but in moments — a flash of stillness, then activity again, then a longer flash. Each flash of stillness is a moment of nirodha-pariṇāma; over time these moments grow.",
+v:"Vyāsa: vyutthāna and nirodha are alternating moments of mind; nirodha-pariṇāma is the transformation by which moments of nirodha increase in frequency and duration. The yogi cultivates this by repeatedly returning to the practice.",
+vm:"Vācaspati: this is the foundational transformation; without it, samādhi cannot stabilize. It is the gradual replacement of outward moments by stilling moments."
+}},
+{n:"Samādhi-pariṇāma",d:"One-pointed flow replaces scattered activity",r:"3.11",
+det:{
+c:"<em>Samādhi-pariṇāma</em>: the transformation in which the citta's all-pointedness (sarvārthatā) declines and one-pointedness (ekāgratā) arises. The citta no longer scatters across many objects; it tends naturally toward unity.",
+ex:"Beyond the moment-by-moment alternation of nirodha-pariṇāma, here the very <em>tendency</em> of mind shifts — from a habitual scatter to a habitual gathering. Over weeks and months of sustained practice, this becomes one's default mental mode.",
+v:"Vyāsa: this is the transformation that makes samādhi a stable property of citta rather than an isolated event. The mind acquires the disposition (saṃskāra) of one-pointedness.",
+vb:"Vijñānabhikṣu: this transformation is the goal of dhāraṇā and dhyāna; once established, samādhi flows naturally without elaborate setup."
+}},
+{n:"Ekāgratā-pariṇāma",d:"Identical pratyayas arise and subside — steady single-pointedness",r:"3.12",
+det:{
+c:"<em>Ekāgratā-pariṇāma</em>: the transformation in which the rising pratyaya (cognition) and the subsiding pratyaya are identical (tulya), giving an unbroken single-pointedness. Each cognition that arises is the same as the one that just subsided; the flow is uninterrupted same-ness.",
+ex:"In stable samādhi, the cognition of the chosen object continues moment by moment as the same cognition — like a steady flame fed by an unbroken oil supply. There is succession (it is not a frozen state) but the content is unchanging.",
+v:"Vyāsa: this is the proper functioning of the citta in samādhi. Time still flows, cognition still arises and subsides, but the content remains the same — yielding the experience of unbroken absorption.",
+vm:"Vācaspati: this clarifies that samādhi is not the cessation of mental movement absolutely, but movement reduced to identical succession — like a torch waved in a circle producing the appearance of a stationary ring."
+}},
+{n:"Dharma, lakṣaṇa, avasthā",d:"Property, character, and condition transformations of elements and senses",r:"3.13",
+det:{
+c:"By extension to all things: the same threefold pariṇāma (dharma, lakṣaṇa, avasthā — property, character/time, condition) applies to bhūtas (elements) and indriyas (senses). Every transformation is a change of property (a thing acquires a new property and loses an old one), of character (its time-mode shifts from future to present to past), or of condition (its present-state intensity varies).",
+ex:"Clay becomes a pot: dharma-pariṇāma (form changes from lump to pot). The pot is now present rather than future: lakṣaṇa-pariṇāma. The pot is new vs. old vs. broken: avasthā-pariṇāma. All change in nature is some combination of these three.",
+v:"Vyāsa elaborates: this analysis applies universally — to elements, senses, mind, and even to the saṃskāras of the yogi. It is the Sāṃkhya-Yoga theory of change, foundational to understanding pariṇāma in any context.",
+vb:"Vijñānabhikṣu: this analytic of change underlies the entire siddhi-section that follows; powers arise by saṃyama on different aspects of these transformations."
+}}
+]},
+{name:"Siddhis (powers via saṃyama)",ref:"3.16–3.49",color:C.amber,children:[
+{n:"On pariṇāma-traya",d:"Knowledge of past and future",r:"3.16",
+det:{
+c:"By saṃyama on the three pariṇāmas (dharma, lakṣaṇa, avasthā) of any object, the yogi gains knowledge of its past and future. Since past and future are aspects of the lakṣaṇa-pariṇāma, perceiving the threefold transformation directly opens to the temporal extension of the object.",
+ex:"Saṃyama on a tree's threefold transformation reveals what it was (sapling, sprout, seed) and what it will be (decay, fall, dust). The same applied to events, persons, civilizations gives prediction and retrocognition.",
+v:"Vyāsa: past and future exist in their own form within the dharma — they are not absolute non-being. Yogic perception, free from the limitations of ordinary cognition, can directly contact them.",
+vm:"Vācaspati: this is the yogic basis of the prophetic and historical knowledge attributed to great rishis."
+}},
+{n:"On śabda / artha / pratyaya",d:"Knowledge of all languages and sounds of creatures",r:"3.17",
+det:{
+c:"By saṃyama on the distinct separation (vibhāga) of word (śabda), object (artha), and idea (pratyaya) — which are normally confused as one — the yogi gains knowledge of the cries of all beings. Ordinary cognition mixes the three; the yogi separates them and so understands meaning in any vehicle of expression.",
+ex:"A bird's call, a cow's lowing, a foreign tongue: where ordinary hearers grasp only sound, the yogi separates the sound from the meaning-intention (artha) and the cognition (pratyaya), and so understands the communication.",
+v:"Vyāsa explains the linguistic philosophy at length: śabda is the vibration; artha is the referent; pratyaya is the cognition produced. The conflation of the three (called <em>saṃkara</em>) is what makes language puzzling. The yogi resolves the conflation by saṃyama.",
+vb:"Vijñānabhikṣu: this siddhi underlies the legendary capacity of certain sages to converse with animals and to understand languages they had never learned."
+}},
+{n:"On saṃskāras",d:"Knowledge of previous births",r:"3.18",
+det:{
+c:"By saṃyama on saṃskāras (latent impressions in citta), the yogi gains knowledge of his previous births. Saṃskāras carry the deposits of all past experience, life after life; reading them directly opens the past.",
+ex:"The yogi turns saṃyama on the deep deposits of his own citta and reads, as in an ancient library, the records of who he has been across many births.",
+v:"Vyāsa: saṃskāras are of two kinds — those producing memory and those producing kleśa-vāsanā. Both can be read; together they yield full knowledge of the past life-sequence.",
+vm:"Vācaspati: this knowledge serves the yogi by intensifying vairāgya — seeing the long, repetitive pattern of births strengthens the resolve to end the sequence."
+}},
+{n:"On pratyaya of another",d:"Knowledge of another's mind",r:"3.19",
+det:{
+c:"By saṃyama on the pratyaya (cognition) of another, the yogi gains knowledge of that other's mind. The yogi reads not the body language nor the words, but the inner cognition itself — what the other is actually thinking.",
+ex:"The teacher who answers the disciple's unspoken question; the sage who knows the visitor's secret intention before he speaks. This is parā-citta-jñāna, knowledge of another's mind.",
+v:"Vyāsa adds (3.20) that this gives knowledge of the cognition's content but not of the cognition's basis (ālambana) — that requires further saṃyama on the basis itself.",
+vb:"Vijñānabhikṣu: this is one of the more famous siddhis; it explains the apparent telepathy of advanced yogis but is described as a specific outcome of a specific saṃyama, not a vague gift."
+}},
+{n:"On kāya-rūpa",d:"Invisibility — body form unseen",r:"3.21",
+det:{
+c:"By saṃyama on the body's form (rūpa) and on the suspension of its grasping power by another's eye, the yogi disconnects the perceiver from the perceived light. The body is present, but the conditions for its perception are blocked. The yogi becomes invisible.",
+ex:"Light reflects off the body and meets the eye, producing perception. Saṃyama suspends this transmission. The yogi is not bodyless but unperceived — a yogic stealth.",
+v:"Vyāsa: similarly (by extension) the yogi can become inaudible by suspending sound-transmission, untouchable by suspending touch-transmission, and so on. The principle is severance of the contact between sense-faculty and its object.",
+vm:"Vācaspati: this is one of the more dramatic siddhis; tradition describes its use by yogis seeking to avoid disturbance from worldly attention."
+}},
+{n:"On sūrya (sun)",d:"Knowledge of the cosmic regions",r:"3.26",
+det:{
+c:"By saṃyama on the sun (sūrya), the yogi gains knowledge of all the cosmic regions (bhuvana-jñānam). The sun, as the central cosmic principle of light and life, is the gateway to knowledge of all the lokas — physical, subtle, and divine — described in traditional cosmology.",
+ex:"In yogic cosmology, the sun is not merely a physical object but the focal point through which the structure of all worlds is intelligible. Saṃyama on it opens the entire map.",
+v:"Vyāsa elaborates the seven lokas (bhū, bhuvar, svar, mahar, jana, tapas, satya) and the seven nether regions (atala through pātāla), all knowable through this saṃyama. The cosmology is detailed and traditional.",
+vb:"Vijñānabhikṣu: the saṃyama can be on the physical sun (giving knowledge of physical worlds) or on the inner sun at the suṣumṇā (giving knowledge of subtle worlds)."
+}},
+{n:"On candra (moon)",d:"Knowledge of the arrangement of stars",r:"3.27",
+det:{
+c:"By saṃyama on the moon (candra), the yogi gains knowledge of the arrangement of the stars (tārā-vyūha). The moon, in its monthly traverse, marks the lunar mansions (nakṣatras); saṃyama on it opens knowledge of the stellar geography.",
+ex:"The yogic astronomer (jyotiṣī) knows the heavens not from telescope but from inner perception developed by this saṃyama. The traditional jyotiṣa system has yogic roots.",
+v:"Vyāsa: this is the basis of yogic astronomy; combined with saṃyama on dhruva (the pole star, 3.28), it gives knowledge of stellar motion and the cosmic clock.",
+vm:"Vācaspati: the moon is also the inner principle of the manas; saṃyama on it has both outer (cosmic) and inner (psychological) fruits."
+}},
+{n:"On nābhi-cakra (navel)",d:"Knowledge of body's organization",r:"3.29",
+det:{
+c:"By saṃyama on the navel-cakra, the yogi gains knowledge of the body's organization (kāya-vyūha-jñānam). The navel is the metabolic center; from it the entire structure of the body — gross organs, subtle nāḍīs, vital fires — becomes intelligible.",
+ex:"This is the basis of yogic anatomy: not dissection but inner perception of the body's functional architecture, the network of channels (72,000 nāḍīs) and centers (cakras).",
+v:"Vyāsa lists the components of the body that become known: the seven dhātus (skin, blood, flesh, fat, bone, marrow, semen), the major organs, the network of channels.",
+vb:"Vijñānabhikṣu: this saṃyama is the basis of yogic medicine and of the haṭha-yoga later developed by the Nāth tradition."
+}},
+{n:"On kaṇṭha-kūpa (throat)",d:"Cessation of hunger and thirst",r:"3.30",
+det:{
+c:"By saṃyama on the pit of the throat (kaṇṭha-kūpa), the yogi gains cessation of hunger and thirst. The throat is the gateway of food and water; saṃyama on it disconnects the chain of craving for sustenance.",
+ex:"Yogis in long meditation can sustain themselves with little or no food and water — a phenomenon documented in tradition. This sūtra gives the technique: not suppression but a specific saṃyama.",
+v:"Vyāsa: hunger and thirst are not merely physiological but rooted in the citta's attention to the throat-region. Withdrawing that attention severs the experience.",
+vm:"Vācaspati: this is one of the more useful siddhis for the renunciate, freeing him from constant attention to food."
+}},
+{n:"On hṛdaya (heart)",d:"Knowledge of the mind (citta)",r:"3.34",
+det:{
+c:"By saṃyama on the heart (hṛdaya), the yogi gains knowledge of citta itself. The heart is the seat of citta; saṃyama on it reveals the mind's own structure, content, and tendencies.",
+ex:"The yogi turns saṃyama inward on its own seat: what arises is direct knowledge of citta — its qualities, its saṃskāras, the play of guṇas within it. This is the basis of self-knowledge in the technical yogic sense.",
+v:"Vyāsa: the heart-lotus is the primary seat of citta; the brahma-pura (city of brahman) of the Upaniṣads. Saṃyama here is one of the most fertile of all the saṃyamas.",
+vb:"Vijñānabhikṣu: this saṃyama is the practical basis of self-inquiry within the yoga system; it is the means by which the yogi gains intimate knowledge of his own inner instrument."
+}},
+{n:"On prātibha (intuitive light)",d:"Knowledge of everything",r:"3.36",
+det:{
+c:"<em>Prātibha</em> is the spontaneous luminous insight that arises before the dawn of viveka-khyāti — like dawn light before sunrise. From it (or by saṃyama on it) arises knowledge of subtle, distant, hidden objects (3.25) and ultimately, in its highest form, knowledge of everything (sarva-jñātṛtva).",
+ex:"As insight ripens in the advanced yogi, occasional flashes of comprehensive knowing arise — the answer to a problem comes whole, the situation of distant friends is suddenly known, the next event of the world is foreseen. These are prātibha.",
+v:"Vyāsa: prātibha-jñāna is the immediate cognition that bypasses inference, perception, and testimony; it is the budding of pure prajñā that will fully bloom in viveka-khyāti.",
+vm:"Vācaspati: when prātibha matures, it becomes itself an obstacle — for the yogi may rest in this attractive faculty rather than press on to kaivalya."
+}},
+{n:"Warning",d:"These are accomplishments but obstacles to samādhi",r:"3.38",
+det:{
+c:"Patañjali's stern warning (3.38): <em>te samādhāv upasargā vyutthāne siddhayaḥ</em> — these (siddhis) are obstacles in samādhi though accomplishments in the outward state. From the perspective of one engaged in worldly life, siddhis are powers; from the perspective of one seeking kaivalya, they are distractions that catch the mind and arrest its progress.",
+ex:"A pilgrim on the way to a great mountain finds a fertile valley with all amenities. He could stop and live well there — but the mountain remains unreached. Siddhis are such valleys: pleasant, even spectacular, but not the destination.",
+v:"Vyāsa: siddhis arise as side-effects of advanced practice; the wise yogi recognizes them as such and does not pursue them as goals. The yogi who pursues them stops at the level that produces them.",
+vb:"Vijñānabhikṣu: this is the central ethical instruction of the chapter — Patañjali catalogs siddhis honestly so that the yogi will recognize them when they arise, but warns that they are not the path's culmination."
+}}
+]},
+{name:"Higher attainments",ref:"3.50–3.56",color:C.green,children:[
+{n:"Vairāgya from siddhis",d:"Non-attachment even to mastery destroys the seed of bondage",r:"3.50",
+det:{
+c:"<em>Tad-vairāgyād api doṣa-bīja-kṣaye kaivalyam</em>: by vairāgya even from those (the highest siddhis described in 3.49 — mastery over all states of being and omniscience) — when even the seed of defect is destroyed — kaivalya results. Even the supreme yogic powers must be released; clinging to them perpetuates the seed of bondage.",
+ex:"The yogi who has mastered the elements and all knowing — supreme states by ordinary measure — recognizes that even these are products of prakṛti and not the seer. Releasing attachment to them, he passes to kaivalya.",
+v:"Vyāsa: as long as any vāsanā remains, even toward exalted states, the seed of saṃsāra remains. Vairāgya from siddhis is the final purification before kaivalya.",
+vm:"Vācaspati: this is para-vairāgya in operation at the highest level — desirelessness even of the most exalted attainments."
+}},
+{n:"Kaivalya approach",d:"Discriminative knowledge of puruṣa and sattva",r:"3.55",
+det:{
+c:"<em>Tāraka</em> is the highest discriminative knowledge — that which carries one across (tarati). It comprises everything in every way (sarva-viṣayam sarvathā-viṣayam) and is non-sequential (akrama-jam) — knowing all at once rather than object by object. This jñāna is the immediate forerunner of kaivalya.",
+ex:"Where ordinary knowledge is partial and sequential ('first this, then that'), tāraka-jñāna is total and instantaneous — comprehending all objects of all categories at once. It is the cognitive aspect of viveka-khyāti at its full ripeness.",
+v:"Vyāsa: this prajñā arises only at the highest stage; it is the boat that crosses the ocean of saṃsāra. From it kaivalya follows immediately.",
+vb:"Vijñānabhikṣu: tāraka is the same as the jñāna that destroys kleśas in 4.30; the third and fourth chapters describe the same culmination from different angles."
+}},
+{n:"Sattva-puruṣayoḥ śuddhi-sāmye kaivalyam",d:"Liberation when sattva and puruṣa are equally pure",r:"3.56",
+det:{
+c:"<em>Sattva-puruṣayoḥ śuddhi-sāmye kaivalyam</em>: when sattva (the highest, purest mode of buddhi) and puruṣa become equal in purity, kaivalya results. Buddhi-sattva, refined to its utmost transparency, no longer distorts puruṣa's reflection — and the yogi knows the seer purely as itself, distinct from even the most refined buddhi.",
+ex:"A perfectly polished mirror reflects without distortion. When buddhi-sattva is so polished, puruṣa is no longer mistaken for it; the discrimination is permanent; the apparent saṃyoga ends.",
+v:"Vyāsa: this is the technical statement of kaivalya from the side of buddhi: when buddhi-sattva matches puruṣa in purity, their distinction becomes evident, and the misperception ends. Chapter 3 closes here; chapter 4 elaborates kaivalya itself.",
+vm:"Vācaspati: equal purity does not mean buddhi becomes puruṣa — it means buddhi no longer obscures puruṣa. The two remain distinct; their purity, hitherto unequal, is now equalized."
+}}
+]}
+]},
+{pada:"Kaivalya Pāda",sub:"Chapter 4 · 34 sūtras · Liberation and the nature of consciousness",ref:"YS 4.1–4.34",
+intro:"The fourth and final chapter is philosophical: Patañjali examines the nature of mind, the ontology of objects, the persistence of saṃskāras across lives, and the precise meaning of liberation. He defends the yoga doctrine of independent puruṣas against rivals (Vijñānavāda Buddhism in particular) and culminates in dharma-megha samādhi — the 'cloud of dharma' — and the final establishment of the seer in its own nature.",
+branches:[
+{name:"Sources of siddhis",ref:"4.1",color:C.amber,children:[
+{n:"Janma (birth)",d:"Innate powers from previous lives",r:"4.1",
+det:{
+c:"Patañjali opens chapter 4 by listing five sources from which siddhis can arise — to forestall the misunderstanding that yoga is the only source. <em>Janma</em>: some beings are born with siddhis already developed, the fruit of intense practice in previous lives. Such siddhis appear without apparent effort in this life.",
+ex:"Children who display extraordinary capacity from infancy — savants, prodigies, those with apparent past-life knowledge — are exhibiting janma-siddhis. The traditional examples include great yogis born with supernatural abilities.",
+v:"Vyāsa: such beings, by the karma of past tapas, take birth in a body and lineage where their previous attainments manifest spontaneously. The siddhis are real but not freshly earned in this life.",
+vm:"Vācaspati: this explains the apparent injustice that some beings effortlessly possess what others struggle for — the difference is past karma, not capricious gift."
+}},
+{n:"Oṣadhi (herbs)",d:"Plant-based substances",r:"4.1",
+det:{
+c:"<em>Oṣadhi</em> — herbs and substances — can also produce siddhis. Certain plants, minerals, and prepared substances can induce altered states, extended faculties, or specific powers. Patañjali catalogs the source without endorsing it as superior.",
+ex:"The soma of the Vedas, the rasa of alchemical traditions, certain meditative herbs — all are oṣadhi-siddhis. The traditions warn that such siddhis are temporary and dependent on continued use of the substance.",
+v:"Vyāsa: oṣadhi-siddhis arise in the houses of the asuras and certain mountain regions where particular substances grow. They are powerful but external — dependent on a continuing physical cause.",
+vb:"Vijñānabhikṣu: these are the lowest of the five sources because they bring dependence; they should not be sought by the serious yogi."
+}},
+{n:"Mantra",d:"Sacred syllables",r:"4.1",
+det:{
+c:"<em>Mantra</em> — sacred sound-formulas — can produce siddhis when properly received from a qualified teacher and practiced according to specification. The mantra carries a specific power; correct application releases it.",
+ex:"Specific mantras associated with particular deities are said to confer their characteristic powers — protection, eloquence, healing, vision. The tradition is highly regulated; mantras taken without lineage are considered ineffective or harmful.",
+v:"Vyāsa: mantra-siddhis follow correct repetition (japa) with appropriate disposition; they are well attested in the Vedic and Tantric traditions.",
+vm:"Vācaspati: mantras work because the sound-form is the natural designator of the corresponding power; the relation is not arbitrary."
+}},
+{n:"Tapas (austerity)",d:"Ascetic practices",r:"4.1",
+det:{
+c:"<em>Tapas</em> — sustained austerity — produces siddhis through the heat it generates. The tapasvī, by enduring extremes (heat, cold, fast, silence), purifies the body-mind and accumulates a kind of stored potency that manifests as power.",
+ex:"The traditional ascetics of India undertook tapas of remarkable severity and were credited with corresponding powers. Patañjali acknowledges this as a real source while noting it is not the supreme one.",
+v:"Vyāsa: tapas-siddhis are well attested in the Purāṇic literature — the rishis whose curses came true, the sages whose blessings produced kingdoms.",
+vb:"Vijñānabhikṣu: tapas alone, without samādhi, produces siddhis but not liberation; this is why Patañjali distinguishes the two."
+}},
+{n:"Samādhi",d:"Meditative absorption — the highest source",r:"4.1",
+det:{
+c:"<em>Samādhi</em> is the supreme source of siddhis — and uniquely, it leads also to kaivalya. The siddhis of samādhi are not isolated powers but expressions of the yogi's penetration into the structure of reality. Listed last but ranked first.",
+ex:"Where janma-siddhi is inherited, oṣadhi-siddhi is purchased, mantra-siddhi is borrowed, and tapas-siddhi is forced — samādhi-siddhi is grown from the very root of one's being. It alone integrates with the path to liberation.",
+v:"Vyāsa: of all five sources, only samādhi continues to produce both siddhis and the higher fruit of kaivalya. The others give powers but not the final freedom.",
+vm:"Vācaspati: this list is given to clarify and rank — Patañjali does not deny the lower sources but establishes samādhi as the path that includes everything."
+}}
+]},
+{name:"Karma theory (expanded)",ref:"4.7–4.12",color:C.gray,children:[
+{n:"Karma-aśukla-akṛṣṇam",d:"Yogi's karma is neither white nor black — beyond duality",r:"4.7",
+det:{
+c:"<em>Karmāśuklākṛṣṇaṃ yoginas trividham itareṣām</em>: the yogi's karma is neither white nor black; for others it is threefold (white, black, mixed). The yogi acts but the action does not deposit binding saṃskāras because it is free of kleśas; ordinary action, driven by attachment or aversion, deposits puṇya, pāpa, or both.",
+ex:"The yogi performs his duties — eating, teaching, walking, breathing — but no 'mine' attaches; no fruit is grasped; no saṃskāra of doership is deposited. The same act in an ordinary person would mark the karmāśaya; in the yogi, it leaves no trace.",
+v:"Vyāsa: white karma comes from acts like service, charity, study; black from harm, lying, theft; mixed from worldly action that combines benefit and harm. The yogi's action stands outside this triple — it is colorless because no kleśa colors it.",
+vb:"Vijñānabhikṣu: this echoes the Bhagavad Gītā's teaching of niṣkāma karma; the same insight in different vocabulary."
+}},
+{n:"Vāsanā",d:"Latent impressions manifest only in matching conditions",r:"4.8",
+det:{
+c:"<em>Tatas tad-vipāka-anuguṇānām eva-abhivyaktir vāsanānām</em>: from those (the threefold karmas) only the vāsanās appropriate to the resulting birth manifest. The vast storehouse of vāsanās accumulated across many lives is selectively activated — only those compatible with the present birth's circumstances come forward; the rest remain latent.",
+ex:"Born as a human in a particular culture, only vāsanās compatible with this body, mind, and environment manifest. The vāsanās of past animal lives lie dormant; the vāsanās of incompatible cultures sleep. Each birth is a specific filtering of the total karmic inheritance.",
+v:"Vyāsa: even though vāsanās are countless and accumulated over endless past, only the matching ones bear fruit in any given life. The yogi can know any vāsanā by saṃyama (3.18) but only the matching ones operate.",
+vm:"Vācaspati: this explains the apparent inconsistency between the doctrine of karma's totality and the limited character of any actual life — the totality remains, but only a subset is active."
+}},
+{n:"Smṛti-saṃskāra continuity",d:"Memory and impressions are beginningless — persist across births",r:"4.9–10",
+det:{
+c:"Memory (smṛti) and the saṃskāras (saṃskāra) producing it have a single form (rūpa) despite separation by birth, place, time. The continuity is unbroken: a saṃskāra deposited a thousand lives ago can produce a memory in the present life when its conditions ripen. And these saṃskāras have no beginning (anāditvam) — for the will-to-live (āśīs) underlying them is itself eternal.",
+ex:"A child's spontaneous fear of fire, with no learned cause; a sudden inexplicable affinity for a particular language or place — these are smṛti-saṃskāras from past lives surfacing in this one. The thread is unbroken even when consciously forgotten.",
+v:"Vyāsa: this is the yoga proof that saṃsāra is beginningless. Saṃskāras have always existed; they have no first origin in time. Their end is achievable (in kaivalya), but their beginning is not findable.",
+vb:"Vijñānabhikṣu: this argument refutes the Buddhist position that saṃskāras are momentary; here they have continuity across lives, providing the substrate of identity over time."
+}},
+{n:"Past-future existence",d:"Past and future exist in their own form within dharmas",r:"4.12",
+det:{
+c:"<em>Atīta-anāgataṃ svarūpato'sty adhva-bhedād dharmāṇām</em>: past and future exist in their own form (svarūpa); they are not absolute non-being. The difference is only in adhva — the path or condition (the time-mode) of the dharmas. Patañjali defends a realist view of time against momentarist or illusionist alternatives.",
+ex:"The seed exists before the sprout (as future); the seed exists after the plant (as past, in the form of dust and continued lineage). Different time-modes; same underlying reality. Past and future are not nothing — they are present in different conditions.",
+v:"Vyāsa: this is the yoga answer to the question 'do past and future exist?' Yes — but in different conditions. The present is the manifest condition; past and future are unmanifest but real conditions of the same dharmas.",
+vm:"Vācaspati: this realism about time grounds the possibility of yogic knowledge of past and future (3.16) — were they utterly non-being, no knowledge of them would be possible."
+}}
+]},
+{name:"Nature of mind and objects",ref:"4.15–4.24",color:C.purple,children:[
+{n:"Objects are independent of mind",d:"The same object is perceived differently by different minds",r:"4.15",
+det:{
+c:"<em>Vastu-sāmye citta-bhedāt tayor vibhaktaḥ panthāḥ</em>: while the object is the same, minds differ; therefore the paths of the two (mind and object) are distinct. Patañjali defends the realist position: objects exist independently of any particular mind. If they were mind-projections, all minds would perceive them identically — but minds differ, and the same object appears differently to each.",
+ex:"A piece of music: the trained musician hears structure; the casual listener hears mood; the bored child hears noise. The music is the same; the minds differ. The realist conclusion: the music has its own being independent of any of these perceptions.",
+v:"Vyāsa: Patañjali here refutes the Vijñānavāda Buddhist position that objects are nothing but mental projection. If objects were merely citta-projections, then when one citta is in nirodha (no projection), the world should disappear for that yogi — but it does not.",
+vm:"Vācaspati elaborates this refutation extensively, arguing that the realist position is required to explain shared experience and inter-subjective agreement."
+}},
+{n:"Citta is not self-luminous",d:"Mind is known by another — puruṣa",r:"4.19",
+det:{
+c:"<em>Na tat svābhāsam dṛśyatvāt</em>: citta is not self-luminous, because it is itself an object (dṛśya) — that is, it is something seen, something witnessed. What is seen requires a seer; the citta cannot be both seen and seer simultaneously. Therefore puruṣa, the eternal seer, is required.",
+ex:"The lamp illuminates the room and is itself seen by its own light. But the citta is not such a lamp — it is the medium by which objects are known, but it does not illuminate itself; it is illuminated by puruṣa, who never himself becomes an object.",
+v:"Vyāsa: this is a crucial argument against Vijñānavāda. If citta were self-luminous, it would not need puruṣa; but the very fact that we know our own mind (we say 'I noticed my anger') shows the mind is known by something other — by the seer.",
+vb:"Vijñānabhikṣu: this argument is the cornerstone of yoga's dualism: puruṣa and prakṛti (including its highest evolute, citta) must remain distinct because the relation of seer-and-seen requires their distinctness."
+}},
+{n:"Mind cannot know itself",d:"This would require infinite regress or memory confusion",r:"4.21",
+det:{
+c:"<em>Cittāntara-dṛśye buddhi-buddher atiprasaṅgaḥ smṛti-saṅkaraś ca</em>: if one citta were known by another citta, infinite regress (atiprasaṅga) would result, and memories would be confused (saṅkara). For citta-A to know itself would require citta-B to know citta-A; then citta-B would require citta-C; and so on without end. And memories would jumble across these layered cittas. Hence the only escape is to posit puruṣa — pure consciousness that knows without itself being known by another.",
+ex:"You cannot lift yourself by your own bootstraps. The mind cannot witness itself without an external witness. Either you accept an infinite regress (untenable) or you accept a self-luminous principle outside the chain (puruṣa). Patañjali takes the second.",
+v:"Vyāsa: this argument is decisive against the Buddhist sva-saṃvedana doctrine (that consciousness witnesses itself). The yoga insists on a fundamental subject-object structure that puruṣa alone resolves.",
+vm:"Vācaspati develops this into a full philosophical defense of yoga dualism against monistic alternatives."
+}},
+{n:"Citta serves puruṣa",d:"Mind, colored by seer and seen, serves the purpose of puruṣa",r:"4.24",
+det:{
+c:"<em>Tad asaṅkhyeya-vāsanābhiś citram api parārthaṃ saṃhatya-kāritvāt</em>: although citta is variegated by countless vāsanās, it acts for another's purpose — for it acts in combination (saṃhatya). Whatever acts in combination acts for the sake of something other than itself (the parts of a chariot serve the rider, not themselves). Citta with all its vāsanās exists for puruṣa's sake — to bring puruṣa's recognition of its own nature, hence kaivalya.",
+ex:"The eyes do not see for themselves; they see for the seer. The mind, however complex its vāsanās, ultimately serves puruṣa — providing experience that culminates in puruṣa's recognition of its distinction from prakṛti. This is the teleology of yoga.",
+v:"Vyāsa: even the most variegated citta of an ordinary person is serving puruṣa, however unwittingly. Saṃsāra itself is puruṣa's instrument for self-recognition; kaivalya is the goal of even the most apparently lost being.",
+vb:"Vijñānabhikṣu: this is the yogic theodicy — the existence of suffering and bondage is for the sake of liberation; prakṛti's whole evolution serves puruṣa's eventual freedom."
+}}
+]},
+{name:"Path to kaivalya",ref:"4.25–4.34",color:C.teal,children:[
+{n:"Viveka-nimnaṃ",d:"Mind inclines toward discrimination — flows toward kaivalya",r:"4.26",
+det:{
+c:"<em>Tadā viveka-nimnaṃ kaivalya-prāgbhāraṃ cittam</em>: when (the distinction of seer from seen is grasped, 4.25), citta inclines toward discrimination (viveka-nimnam) — its current flows downward toward kaivalya (kaivalya-prāgbhāraṃ). Where before the citta flowed outward toward objects, now its very gradient is reversed: it flows naturally toward the discriminative knowledge that is the gateway to liberation.",
+ex:"A river that previously flowed east now flows west — the same water, but a fundamental reorientation. The advanced yogi finds that the mind no longer needs to be pushed toward discrimination; it goes there of itself, as water seeks the lowest point.",
+v:"Vyāsa: just as water flows naturally to the low place, the citta of the discerning yogi flows naturally to viveka. This is the inflection point of the path; from here, kaivalya is no longer uphill.",
+vm:"Vācaspati: this slope toward kaivalya is the natural fruit of all the prior practice; the yogi must now only protect the slope from new obstructions (the next sūtra)."
+}},
+{n:"Tac-chidreṣu pratyaya-antarāṇi saṃskārebhyaḥ",d:"In gaps of discrimination, other pratyayas arise from saṃskāras",r:"4.27",
+det:{
+c:"<em>Tac-chidreṣu pratyaya-antarāṇi saṃskārebhyaḥ</em>: in the gaps of viveka, other cognitions arise from saṃskāras. Even in this advanced state, when discrimination wavers for a moment, latent saṃskāras can sprout into thoughts — 'I am,' 'this is mine,' 'I want.' These are remnants from the long history of bondage that have not yet been burnt.",
+ex:"The yogi, established in viveka for hours, has a momentary lapse — a flash of self-reference, a brief desire. This is not failure but the inevitable manifestation of remaining saṃskāras until they too are dissolved.",
+v:"Vyāsa: even on the threshold of kaivalya, old saṃskāras may sprout in the gaps. The yogi must continue to weed them out by continued vairāgya and viveka until none remain.",
+vb:"Vijñānabhikṣu: this sūtra prevents premature claims of liberation — until saṃskāras are wholly dissolved, the slope toward kaivalya is real but the journey is not yet complete."
+}},
+{n:"Hānam eṣāṃ kleśavat",d:"Their removal is like removal of kleśas",r:"4.28",
+det:{
+c:"<em>Hānam eṣāṃ kleśavad uktam</em>: the removal of these (remaining cognitions from saṃskāras) is described as similar to the removal of kleśas. As the kleśas are dissolved by viveka and the burning of seeds, so these residual pratyayas yield to the same method. The technique is consistent: viveka illuminates, vairāgya releases, and the seeds are progressively burnt.",
+ex:"The same method that worked at the gross level continues to work at the subtle level. There is no new technique for the final stretch; only the same viveka, applied with continued steadiness to ever-finer remnants.",
+v:"Vyāsa: as in 2.10–11, where kleśas in subtle form are dissolved by their resorption into prakṛti, so here the residual pratyayas are dissolved by the same fundamental method.",
+vm:"Vācaspati: this consistency simplifies the final stages — no new doctrine is required, only the patient continuation of what has already been working."
+}},
+{n:"Dharma-megha samādhi",d:"'Cloud of dharma' samādhi — highest realization, when even interest in discrimination ceases",r:"4.29",
+det:{
+c:"<em>Prasaṅkhyāne'py akusīdasya sarvathā viveka-khyāter dharma-meghaḥ samādhiḥ</em>: for one who has no interest even in the highest discrimination (prasaṅkhyāna) — for one whose viveka-khyāti is complete in every way — there arises <em>dharma-megha samādhi</em>, the 'cloud of dharma.' The metaphor is rich: like a cloud raining liberation, this samādhi pours forth the dharma of supreme freedom.",
+ex:"The yogi has reached the point where even the desire for liberation is gone — not because he doesn't value it, but because he has nothing left to attain. From this state, dharma-megha samādhi rains down: the highest fruit of the entire path. The 'cloud' suggests both the immensity and the gentle outpouring.",
+v:"Vyāsa: when the yogi is akusīda (without selfish interest, like one who refuses interest on a loan) even regarding viveka itself, the dharma-megha samādhi arises. This is the supreme samādhi — the same as nirbīja of 1.51 and the goal of the entire path.",
+vb:"Vijñānabhikṣu: dharma-megha samādhi is the technical name of the ultimate samādhi; it is what 1.51, 3.55, and 4.29 each describe from different angles. From this samādhi, kaivalya immediately follows."
+}},
+{n:"Tataḥ kleśa-karma-nivṛttiḥ",d:"Then afflictions and karma cease entirely",r:"4.30",
+det:{
+c:"<em>Tataḥ kleśa-karma-nivṛttiḥ</em>: from that (dharma-megha samādhi) follows the cessation of kleśas and karma. The fivefold afflictions (avidyā, asmitā, rāga, dveṣa, abhiniveśa) and the entire karmic apparatus they fuel are extinguished at the root. Past karma may still play out (in the ongoing body), but no new karma is generated.",
+ex:"A fire whose fuel supply has been cut: the existing fuel burns out, but no new fire arises. The jīvanmukta (one liberated while embodied) lives out the prārabdha karma already in motion; no future karma is being created.",
+v:"Vyāsa: with kleśas destroyed, the engine of new karma has no fuel. The remaining body and its experiences continue by inertia (prārabdha) until the body falls away; with that, the cycle is wholly ended.",
+vm:"Vācaspati: this is the technical statement of jīvanmukti — liberation while embodied — followed by videhamukti when the body finally falls."
+}},
+{n:"Puruṣārtha-śūnyānāṃ guṇānām pratiprasavaḥ",d:"Guṇas, having fulfilled their purpose, return to source",r:"4.34",
+det:{
+c:"<em>Puruṣārtha-śūnyānāṃ guṇānām pratiprasavaḥ</em>: the guṇas, now empty of any purpose for puruṣa (because puruṣa has been fully served), return to their source (pratiprasava). The whole evolved manifestation of prakṛti collapses back into its unmanifest cause — for this particular puruṣa. The guṇas, having staged the entire drama for puruṣa's recognition, take their bow.",
+ex:"A teacher who has finished teaching, having given the student everything needed, retires. The student now stands on his own. So too the guṇas: their service complete, they return to mūla-prakṛti, and puruṣa stands forth alone.",
+v:"Vyāsa: this is the dissolution of prakṛti for this puruṣa. Other beings continue their journeys; this one is free. The cosmic drama continues, but this seer has exited the stage.",
+vb:"Vijñānabhikṣu: pratiprasava is the reverse of sarga (manifestation); for this liberated puruṣa, the cosmos has 'unhappened.' This is liberation in its full ontological sense."
+}},
+{n:"Kaivalyam — svarūpa-pratiṣṭhā",d:"Pure consciousness established in its own nature — liberation",r:"4.34",
+det:{
+c:"<em>Kaivalyaṃ svarūpa-pratiṣṭhā vā citi-śaktir iti</em>: kaivalya is the establishment in its own nature; or, the power of consciousness itself. Patañjali ends as he began — yoga is the seer abiding in its own nature (1.3), now realized fully and finally. The 'or' (vā) offers two equivalent definitions: standing in own nature (from puruṣa's side); pure power of consciousness (from the side of citi-śakti). Both name the same single reality.",
+ex:"The journey ends where it began: the seer was always in its own nature; only avidyā made it appear otherwise. Now that appearance is gone, what is is what always was — but now <em>known</em> as it is. This is kaivalya: not a new state but the recognition of the eternal one.",
+v:"Vyāsa closes his commentary with reverent silence — there is nothing more to say. The puruṣa stands as itself, free of all that was never truly other. The yoga has done its work; the seer is the seer; nothing remains to be done.",
+vm:"Vācaspati: kaivalya is final, irrevocable, and absolute. There is no falling back; no new bondage; the journey is complete. The yoga sūtras themselves end here, having brought the practitioner — by understanding — to the threshold of what only practice can finally cross.",
+vb:"Vijñānabhikṣu: with this sūtra, the entire teaching is sealed. Citi-śakti — the power of consciousness — was never bound; that very unbound consciousness, now recognized as such, is kaivalya. The seeker discovers that he was the sought."
+}}
+]}
+]}
+];
+
+const colors=Object.values(C);
+
+
+function safeHtml(s){
+  if(!s) return '';
+  // Allow <em> tags; the content is trusted internal data
+  return s;
+}
+
+function renderDetail(d, color, leafId){
+  if(!d) return '';
+  let h = `<div class="detail-panel" id="d${leafId}" style="--accent:${color}">`;
+  if(d.c){
+    h += `<div class="detail-section">
+      <div class="detail-label">Concept &amp; Meaning</div>
+      <div class="detail-text">${safeHtml(d.c)}</div>
+    </div>`;
+  }
+  if(d.ex){
+    h += `<div class="detail-section">
+      <div class="detail-label">Example &amp; Application</div>
+      <div class="detail-text">${safeHtml(d.ex)}</div>
+    </div>`;
+  }
+  const coms = [
+    {key:'v',  name:'Vyāsa · Yoga Bhāṣya'},
+    {key:'s',  name:'Śaṅkara · Vivaraṇa'},
+    {key:'vm', name:'Vācaspati Miśra · Tattva-Vaiśāradī'},
+    {key:'vb', name:'Vijñāna-Bhikṣu · Yoga-Vārttika'},
+    {key:'bg', name:'Bhoja · Rāja-Mārtaṇḍa'}
+  ];
+  const present = coms.filter(c => d[c.key]);
+  if(present.length){
+    h += `<div class="detail-section">
+      <div class="detail-label">Classical Commentaries</div>
+      <div class="commentaries-wrap">`;
+    present.forEach(c => {
+      h += `<div class="detail-commentary">
+        <div class="com-name">${c.name}</div>
+        <div class="com-text">${safeHtml(d[c.key])}</div>
+      </div>`;
+    });
+    h += `</div></div>`;
+  }
+  h += `</div>`;
+  return h;
+}
+
+function renderLeaf(l, color){
+  const id = 'l' + Math.random().toString(36).slice(2,8);
+  const hasDet = !!l.det;
+  const expandHint = hasDet
+    ? `<div class="lf-expand">&#9654; tap for commentaries</div>`
+    : '';
+  const onclick = hasDet ? `onclick="toggleDetail('${id}',event)"` : '';
+  return `<div class="leaf" ${onclick}>
+    <div class="lf-dot" style="background:${color}"></div>
+    <div class="leaf-content">
+      <div>
+        <span class="lf-name">${l.n}</span>
+        <span class="lf-ref">${l.r}</span>
+      </div>
+      <div class="lf-desc">${l.d}</div>
+      ${expandHint}
+      ${hasDet ? renderDetail(l.det, color, id) : ''}
+    </div>
+  </div>`;
+}
+
+function renderBranch(b, i){
+  const id = 'b' + i + '_' + Math.random().toString(36).slice(2,6);
+  let body = '';
+  if(b.sub){
+    b.sub.forEach(s => {
+      body += `<div class="sub-tree">`;
+      if(s.label) body += `<div class="sub-label">${s.label}</div>`;
+      s.children.forEach(c => { body += renderLeaf(c, b.color); });
+      body += `</div>`;
+    });
+  }
+  if(b.children){ b.children.forEach(c => { body += renderLeaf(c, b.color); }); }
+  return `<div class="branch">
+    <div class="branch-head" id="bh${id}" onclick="toggleBranch('bb${id}',this)">
+      <div class="dot" style="background:${b.color}"></div>
+      <div class="label">${b.name}</div>
+      <div class="ref">${b.ref||''}</div>
+      <div class="chev">&#9654;</div>
+    </div>
+    <div class="branch-body" id="bb${id}">${body}</div>
+  </div>`;
+}
+
+function renderPada(idx){
+  const p = data[idx];
+  document.querySelectorAll('.section-bar button').forEach((b,i) => {
+    b.classList.toggle('active', i === idx);
+  });
+  let h = '';
+  h += `<div class="pada-title">${p.pada}</div>`;
+  h += `<div class="pada-sub">${p.sub}</div>`;
+  if(p.intro){
+    h += `<div class="intro-card">${p.intro}</div>`;
+  }
+  h += `<div class="tree">`;
+  p.branches.forEach((b,i) => { h += renderBranch(b, i); });
+  h += `</div>`;
+  document.getElementById('content').innerHTML = h;
+}
+
+function toggleBranch(id, el){
+  const body = document.getElementById(id);
+  const open = body.classList.toggle('open');
+  el.classList.toggle('open', open);
+}
+
+function toggleDetail(id, ev){
+  ev.stopPropagation();
+  const panel = document.getElementById('d' + id);
+  if(panel){ panel.classList.toggle('open'); }
+}
+
+// ── Init ─────────────────────────────────────────────────
+const legend = [
+  {color:C.purple, label:'Philosophy / Metaphysics'},
+  {color:C.teal,   label:'Practice / Limbs'},
+  {color:C.coral,  label:'Kriyā / Action'},
+  {color:C.red,    label:'Afflictions / Obstacles'},
+  {color:C.blue,   label:'Samādhi / Inner Limbs'},
+  {color:C.amber,  label:'Siddhis / Powers'},
+  {color:C.green,  label:'Liberation / Goal'},
+  {color:C.gray,   label:'Karma'}
+];
+
+let html = `<div class="legend">`;
+legend.forEach(l => {
+  html += `<span><div class="ld" style="background:${l.color}"></div>${l.label}</span>`;
+});
+html += `</div>`;
+
+html += `<div class="section-bar">`;
+data.forEach((p, i) => {
+  const parts = p.pada.split(' ');
+  html += `<button ${i===0?'class="active"':''} onclick="renderPada(${i})">${parts[0]}<br>${parts[1]||''}</button>`;
+});
+html += `</div>`;
+
+html += `<div id="content"></div>`;
+
+document.getElementById('app').innerHTML = html;
+renderPada(0);
+</script>
+</body>
+</html>
