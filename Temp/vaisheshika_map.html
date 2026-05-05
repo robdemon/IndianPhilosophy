@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ṣaḍdarśana — Six Orthodox Systems of Indian Philosophy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Warm parchment palette */
+  --bg:#F5EDDC;
+  --bg-card:#EFE3CC;
+  --bg-panel:#E8D9BC;
+  --bg-deep:#FBF6EA;
+  --text-primary:#2A1D0E;
+  --text-secondary:#4F3D26;
+  --text-muted:#8A7553;
+  --border:#C9B587;
+  --border-light:#DCCBA3;
+  --gold:#9C6F2A;
+  --gold-light:#C49344;
+  --shadow:0 1px 3px rgba(120,80,30,.08), 0 4px 12px rgba(120,80,30,.04);
+  --shadow-lg:0 4px 16px rgba(120,80,30,.10), 0 12px 32px rgba(120,80,30,.06);
+  --radius:7px;--radius-lg:12px;
+  --font-body:'Lora',Georgia,'Times New Roman',serif;
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-mono:'JetBrains Mono','Inconsolata','Courier New',monospace;
+
+  /* System accents — each system gets its own warm hue */
+  --sys-yoga:#B8501F;        /* terracotta */
+  --sys-yoga-bg:#F8E6D4;     /* yoga panel tint */
+  --sys-yoga-deep:#9F4218;
+  --sys-samkhya:#8C5A2B;     /* burnt sienna */
+  --sys-samkhya-bg:#F2E1C8;
+  --sys-samkhya-deep:#73471F;
+  --sys-nyaya:#6B6428;       /* olive gold */
+  --sys-nyaya-bg:#EDE6C5;
+  --sys-nyaya-deep:#534D1D;
+  --sys-vaisheshika:#5C7048; /* sage */
+  --sys-vaisheshika-bg:#E5E8CF;
+  --sys-vaisheshika-deep:#445335;
+  --sys-mimamsa:#A03E3E;     /* deep red-clay */
+  --sys-mimamsa-bg:#F5DCD4;
+  --sys-mimamsa-deep:#7E2E2E;
+  --sys-vedanta:#7A4980;     /* aubergine */
+  --sys-vedanta-bg:#EDDDE6;
+  --sys-vedanta-deep:#5C3563;
+  --sys-vedas:#9C6F2A;       /* warm gold */
+  --sys-vedas-bg:#F3E4C2;
+  --sys-vedas-deep:#7A551E;
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#1B140A;
+  --bg-card:#251B0E;
+  --bg-panel:#2E2213;
+  --bg-deep:#15100A;
+  --text-primary:#F2EAD8;
+  --text-secondary:#D5C7A9;
+  --text-muted:#9A876A;
+  --border:#4A3920;
+  --border-light:#352818;
+  --gold:#D4A152;
+  --gold-light:#9C6F2A;
+  --shadow:0 1px 3px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+  --shadow-lg:0 4px 16px rgba(0,0,0,.5), 0 12px 32px rgba(0,0,0,.3);
+
+  --sys-yoga:#E07A45;        --sys-yoga-bg:#2D1B0E;       --sys-yoga-deep:#F0996B;
+  --sys-samkhya:#C18A50;     --sys-samkhya-bg:#291C0E;    --sys-samkhya-deep:#D9A66B;
+  --sys-nyaya:#B5A852;       --sys-nyaya-bg:#252210;      --sys-nyaya-deep:#D4C870;
+  --sys-vaisheshika:#9CB07A; --sys-vaisheshika-bg:#1F2615;--sys-vaisheshika-deep:#B8CB94;
+  --sys-mimamsa:#D86B6B;     --sys-mimamsa-bg:#2A1313;    --sys-mimamsa-deep:#E89090;
+  --sys-vedanta:#B17BB8;     --sys-vedanta-bg:#241A26;    --sys-vedanta-deep:#CB9CCF;
+  --sys-vedas:#D4A152;       --sys-vedas-bg:#291F0F;      --sys-vedas-deep:#E8BD70;
+}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-body);
+  background:var(--bg);
+  background-image:
+    radial-gradient(at 20% 10%, rgba(196,147,68,.08) 0%, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(156,111,42,.06) 0%, transparent 50%);
+  background-attachment:fixed;
+  color:var(--text-primary);
+  min-height:100vh;
+  font-feature-settings:"liga" 1,"kern" 1;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+#shell{max-width:880px;margin:0 auto;padding:32px 20px 100px}
+
+/* HEADER */
+.site-header{text-align:center;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+.site-header .eyebrow{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:500}
+.site-header h1{font-family:var(--font-display);font-size:2.4rem;font-weight:500;color:var(--text-primary);line-height:1.2;margin-bottom:6px;letter-spacing:-.01em}
+.site-header .subtitle{font-family:var(--font-display);font-size:14px;color:var(--text-muted);font-style:italic;letter-spacing:.02em}
+
+/* TOP NAV — systems */
+.top-nav{
+  display:flex;gap:4px;flex-wrap:wrap;
+  background:var(--bg-card);
+  padding:5px;
+  border-radius:var(--radius-lg);
+  border:1px solid var(--border);
+  margin-bottom:28px;
+  box-shadow:var(--shadow);
+}
+.top-nav button{
+  flex:1;min-width:96px;
+  padding:11px 8px;
+  font-family:var(--font-mono);
+  font-size:10px;letter-spacing:.06em;
+  border:none;background:transparent;
+  color:var(--text-muted);
+  cursor:pointer;
+  border-radius:8px;
+  transition:all .18s ease;
+  line-height:1.4;text-align:center;
+  font-weight:500;
+  border-bottom:2.5px solid transparent;
+}
+.top-nav button:hover{color:var(--text-secondary);background:var(--bg-deep)}
+.top-nav button.active{
+  background:var(--bg-deep);
+  color:var(--text-primary);
+  font-weight:600;
+  box-shadow:0 1px 4px rgba(120,80,30,.15);
+}
+/* per-system accent color on active button */
+.top-nav button[data-sys="yoga"].active        {border-bottom-color:var(--sys-yoga)}
+.top-nav button[data-sys="samkhya"].active     {border-bottom-color:var(--sys-samkhya)}
+.top-nav button[data-sys="nyaya"].active       {border-bottom-color:var(--sys-nyaya)}
+.top-nav button[data-sys="vaisheshika"].active {border-bottom-color:var(--sys-vaisheshika)}
+.top-nav button[data-sys="mimamsa"].active     {border-bottom-color:var(--sys-mimamsa)}
+.top-nav button[data-sys="vedanta"].active     {border-bottom-color:var(--sys-vedanta)}
+.top-nav button[data-sys="vedas"].active       {border-bottom-color:var(--sys-vedas)}
+
+/* SYSTEM PANEL — each system has its own warm tinted backdrop */
+.system-panel{display:none;padding:22px 22px 24px;border-radius:var(--radius-lg);box-shadow:var(--shadow)}
+.system-panel.active{display:block}
+.system-panel#yoga        {background:var(--sys-yoga-bg);        --accent:var(--sys-yoga);        --accent-deep:var(--sys-yoga-deep)}
+.system-panel#samkhya     {background:var(--sys-samkhya-bg);     --accent:var(--sys-samkhya);     --accent-deep:var(--sys-samkhya-deep)}
+.system-panel#nyaya       {background:var(--sys-nyaya-bg);       --accent:var(--sys-nyaya);       --accent-deep:var(--sys-nyaya-deep)}
+.system-panel#vaisheshika {background:var(--sys-vaisheshika-bg); --accent:var(--sys-vaisheshika); --accent-deep:var(--sys-vaisheshika-deep)}
+.system-panel#mimamsa     {background:var(--sys-mimamsa-bg);     --accent:var(--sys-mimamsa);     --accent-deep:var(--sys-mimamsa-deep)}
+.system-panel#vedanta     {background:var(--sys-vedanta-bg);     --accent:var(--sys-vedanta);     --accent-deep:var(--sys-vedanta-deep)}
+.system-panel#vedas       {background:var(--sys-vedas-bg);       --accent:var(--sys-vedas);       --accent-deep:var(--sys-vedas-deep)}
+
+/* SUB NAV — padas / books / adhyayas */
+.sub-nav{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:22px}
+.sub-nav button{
+  padding:8px 14px;
+  font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;font-weight:500;
+  border:1px solid transparent;
+  background:rgba(255,255,255,.35);
+  color:var(--text-muted);
+  cursor:pointer;border-radius:var(--radius);
+  transition:all .15s;
+}
+.sub-nav button:hover{color:var(--text-secondary);background:rgba(255,255,255,.6);border-color:var(--border-light)}
+.sub-nav button.active{
+  background:var(--accent,var(--gold));
+  color:#FBF6EA;
+  font-weight:600;
+  border-color:var(--accent-deep,var(--gold));
+  box-shadow:0 1px 3px rgba(120,80,30,.2);
+}
+
+/* SECTION TITLE */
+.sec-title{
+  font-family:var(--font-display);
+  font-size:1.7rem;font-weight:500;
+  color:var(--accent-deep,var(--text-primary));
+  margin-bottom:3px;letter-spacing:-.005em;
+}
+.sec-sub{
+  font-family:var(--font-mono);
+  font-size:10.5px;color:var(--text-muted);
+  letter-spacing:.06em;margin-bottom:18px;font-weight:500;
+}
+
+/* INTRO CARD */
+.intro-card{
+  padding:16px 20px;margin-bottom:22px;
+  background:var(--bg-deep);
+  border-radius:var(--radius-lg);
+  font-size:14.5px;line-height:1.78;
+  color:var(--text-secondary);
+  border-left:3px solid var(--accent,var(--gold));
+  box-shadow:var(--shadow);
+}
+.intro-card strong{font-weight:600;color:var(--text-primary)}
+.intro-card em{color:var(--accent-deep,var(--text-primary));font-style:italic;font-weight:500}
+
+/* LEGEND */
+.legend{display:flex;gap:8px 18px;flex-wrap:wrap;margin-bottom:20px;font-family:var(--font-mono);font-size:10.5px;color:var(--text-muted);letter-spacing:.03em;font-weight:500;padding:10px 14px;background:rgba(255,255,255,.3);border-radius:var(--radius)}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend .ld{width:9px;height:9px;border-radius:50%;flex-shrink:0;opacity:.9;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}
+
+/* TREE */
+.tree{display:flex;flex-direction:column;gap:6px;margin-bottom:24px}
+
+/* BRANCH */
+.branch{
+  border-radius:var(--radius-lg);
+  background:var(--bg-deep);
+  border:1px solid var(--border-light);
+  overflow:hidden;
+  transition:all .18s;
+  box-shadow:var(--shadow);
+}
+.branch:hover{border-color:var(--border)}
+.branch-head{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 16px;
+  cursor:pointer;user-select:none;
+  background:var(--bg-deep);
+  transition:background .14s;
+}
+.branch-head:hover{background:var(--bg-card)}
+.branch-head .dot{
+  width:10px;height:10px;border-radius:50%;
+  flex-shrink:0;opacity:.9;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.1);
+}
+.branch-head .label{
+  font-family:var(--font-display);
+  font-size:1.05rem;font-weight:600;
+  color:var(--text-primary);flex:1;
+  letter-spacing:.005em;
+}
+.branch-head .ref{
+  font-family:var(--font-mono);
+  font-size:10.5px;color:var(--accent-deep,var(--text-muted));
+  letter-spacing:.05em;font-weight:500;
+}
+.branch-head .chev{
+  font-size:10px;color:var(--text-muted);
+  transition:transform .22s ease;flex-shrink:0;
+}
+.branch-head.open .chev{transform:rotate(90deg)}
+.branch-body{
+  display:none;
+  padding:10px 16px 16px 36px;
+  background:var(--bg-deep);
+  border-top:1px solid var(--border-light);
+}
+.branch-body.open{display:block}
+
+/* SUB-TREE */
+.sub-tree{margin:9px 0 5px;padding-left:14px;border-left:2px solid var(--accent,var(--border))}
+.sub-label{
+  font-family:var(--font-mono);
+  font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--accent-deep,var(--text-muted));
+  margin:9px 0 5px;font-weight:600;
+}
+
+/* LEAF */
+.leaf{
+  display:flex;align-items:flex-start;gap:9px;
+  padding:8px 10px 8px 6px;
+  cursor:pointer;
+  border-radius:var(--radius);
+  transition:background .12s;
+  margin:2px 0;
+}
+.leaf:hover{background:var(--bg-card)}
+.leaf .lf-dot{
+  width:6px;height:6px;border-radius:50%;
+  flex-shrink:0;margin-top:9px;opacity:.65;
+}
+.leaf-content{flex:1;min-width:0}
+.leaf .lf-name{
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:1.05rem;font-weight:500;
+  color:var(--text-primary);
+}
+.leaf .lf-ref{
+  font-family:var(--font-mono);
+  font-size:10.5px;color:var(--accent-deep,var(--text-muted));
+  margin-left:7px;font-weight:500;
+}
+.leaf .lf-skt{
+  font-family:var(--font-body);
+  font-size:13px;color:var(--text-muted);
+  font-style:italic;display:block;margin-top:2px;
+}
+.leaf .lf-desc{
+  font-family:var(--font-body);
+  font-size:13.5px;color:var(--text-secondary);
+  line-height:1.65;margin-top:3px;
+}
+.leaf .lf-expand{
+  font-family:var(--font-mono);
+  font-size:9.5px;color:var(--text-muted);
+  margin-top:5px;letter-spacing:.05em;
+  opacity:.75;font-weight:500;
+}
+
+/* DETAIL PANEL */
+.detail-panel{
+  display:none;
+  margin-top:11px;
+  padding:16px 18px;
+  background:var(--bg-deep);
+  border-radius:var(--radius-lg);
+  border-left:3px solid var(--accent,var(--gold));
+  box-shadow:var(--shadow);
+}
+.detail-panel.open{display:block}
+.detail-section{margin-bottom:13px}
+.detail-section:last-child{margin-bottom:0}
+.detail-label{
+  font-family:var(--font-mono);
+  font-size:9.5px;text-transform:uppercase;
+  letter-spacing:.14em;color:var(--accent-deep,var(--text-muted));
+  margin-bottom:5px;font-weight:600;
+}
+.detail-text{
+  font-family:var(--font-body);
+  font-size:14.5px;color:var(--text-primary);
+  line-height:1.78;
+}
+.detail-text em{color:var(--accent-deep,var(--text-primary));font-style:italic;font-weight:600}
+.skt-block{
+  font-family:var(--font-body);
+  font-size:14px;font-style:italic;
+  color:var(--text-secondary);
+  padding:11px 15px;
+  background:var(--bg-card);
+  border-radius:var(--radius);
+  margin-bottom:10px;line-height:1.75;
+  border-left:2px solid var(--accent,var(--border));
+}
+.commentaries-wrap{display:flex;flex-direction:column;gap:9px;margin-top:6px}
+.detail-commentary{
+  padding:11px 14px;
+  background:var(--bg-card);
+  border-radius:var(--radius);
+  border:1px solid var(--border-light);
+  border-top:2px solid var(--accent,var(--gold));
+}
+.com-name{
+  font-family:var(--font-mono);
+  font-size:9.5px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent-deep,var(--gold));margin-bottom:4px;
+}
+.com-text{
+  font-family:var(--font-body);
+  font-size:13.5px;color:var(--text-secondary);
+  line-height:1.72;
+}
+.com-text em{font-style:italic;font-weight:600;color:var(--text-primary)}
+
+/* mobile tweaks */
+@media (max-width:600px){
+  html{font-size:16px}
+  #shell{padding:20px 14px 80px}
+  .system-panel{padding:16px 14px 18px}
+  .site-header h1{font-size:1.9rem}
+  .branch-body{padding:10px 12px 14px 22px}
+  .top-nav button{min-width:70px;font-size:9.5px;padding:9px 5px}
+}
+</style>
+</head>
+<body>
+<div id="shell">
+<header class="site-header">
+  <div class="eyebrow">Kaṇāda · c. 200 BCE</div>
+  <h1>Vaiśeṣika Sūtras — Complete Map</h1>
+  <div class="subtitle">Six Padārthas · Atomism · Praśastapāda &amp; Udayana Commentaries</div>
+</header>
+<div id="vaisheshika" class="system-panel active"></div>
+</div>
+<script>
+'use strict';
+const C={
+  purple:'#7F77DD',teal:'#1D9E75',coral:'#D85A30',pink:'#D4537E',
+  blue:'#378ADD',amber:'#EF9F27',green:'#639922',red:'#E24B4A',
+  gray:'#888780',indigo:'#5B6FBB',rose:'#C25B7A',ochre:'#B87333',
+  sage:'#6B8A6B',slate:'#5E7080',plum:'#8B5A8B',sienna:'#A05030'
+};
+
+// ─── Shared render helpers ────────────────────────────────────────────────────
+function safeHtml(s){return s||'';}
+
+function renderDetail(d,color,id){
+  if(!d)return'';
+  let h=`<div class="detail-panel" id="d${id}" style="--accent:${color}">`;
+  if(d.skt){h+=`<div class="skt-block">${safeHtml(d.skt)}</div>`;}
+  if(d.tr){h+=`<div class="detail-section"><div class="detail-label">Translation</div><div class="detail-text">${safeHtml(d.tr)}</div></div>`;}
+  if(d.c){h+=`<div class="detail-section"><div class="detail-label">Concept &amp; Meaning</div><div class="detail-text">${safeHtml(d.c)}</div></div>`;}
+  if(d.ex){h+=`<div class="detail-section"><div class="detail-label">Example &amp; Application</div><div class="detail-text">${safeHtml(d.ex)}</div></div>`;}
+  const comDefs=[
+    {k:'vy', n:'Vyāsa · Yoga Bhāṣya'},
+    {k:'vb', n:'Vijñānabhikṣu · Yoga-Vārttika'},
+    {k:'vm', n:'Vācaspati Miśra · Tattva-Vaiśāradī'},
+    {k:'sk', n:'Śaṅkara · Vivaraṇa'},
+    {k:'gp', n:'Gauḍapāda · Bhāṣya'},
+    {k:'tk', n:'Vācaspati Miśra · Tattvakaumudī'},
+    {k:'mat',n:'Māṭhara · Māṭharāvṛtti'},
+    {k:'vts',n:'Vātsyāyana · Nyāya Bhāṣya'},
+    {k:'udd',n:'Uddyotakara · Nyāya Vārttika'},
+    {k:'vmt',n:'Vācaspati Miśra · Tātparya-Ṭīkā'},
+    {k:'uda',n:'Udayana · Nyāya-Pariśuddhi'},
+    {k:'rgh',n:'Raghunātha Śiromaṇi · Bhāṣā-Pariccheda'},
+    {k:'vis',n:'Viśvanātha · Nyāya-Sūtra-Vṛtti'},
+    {k:'prs',n:'Praśastapāda · Padārthadharmasaṃgraha'},
+    {k:'sbt',n:'Śabara · Mīmāṃsā Bhāṣya'},
+    {k:'kum',n:'Kumārila Bhaṭṭa · Ślokavārttika'},
+    {k:'prb',n:'Prabhākara · Bṛhatī'},
+    {k:'shk',n:'Śaṅkara · Bhāṣya'},
+    {k:'rmj',n:'Rāmānuja · Śrī-Bhāṣya'},
+    {k:'mdv',n:'Madhva · Anuvyākhyāna'},
+    {k:'nim',n:'Nimbārka · Vedānta-Pārijāta-Saurabha'},
+    {k:'val',n:'Vallabha · Aṇubhāṣya'},
+    {k:'syk',n:'Sāyaṇa · Commentary'},
+    {k:'mhi',n:'Mahīdhara · Vedadīpa'},
+    {k:'uvt',n:'Uvvaṭa · Commentary'},
+  ];
+  const present=comDefs.filter(x=>d[x.k]);
+  if(present.length){
+    h+=`<div class="detail-section"><div class="detail-label">Classical Commentaries</div><div class="commentaries-wrap">`;
+    present.forEach(x=>{
+      h+=`<div class="detail-commentary"><div class="com-name">${x.n}</div><div class="com-text">${safeHtml(d[x.k])}</div></div>`;
+    });
+    h+=`</div></div>`;
+  }
+  h+=`</div>`;return h;
+}
+
+function renderLeaf(l,color){
+  const id='L'+Math.random().toString(36).slice(2,9);
+  const has=!!l.det;
+  const hint=has?`<div class="lf-expand">&#9654; tap for commentaries</div>`:'';
+  const oc=has?`onclick="toggleDetail('${id}',event)"`:'';
+  return`<div class="leaf" ${oc}>
+    <div class="lf-dot" style="background:${color}"></div>
+    <div class="leaf-content">
+      <div><span class="lf-name">${l.n}</span><span class="lf-ref">${l.r||''}</span></div>
+      ${l.sk?`<span class="lf-skt">${l.sk}</span>`:''}
+      <div class="lf-desc">${l.d}</div>
+      ${hint}
+      ${has?renderDetail(l.det,color,id):''}
+    </div>
+  </div>`;
+}
+
+function renderBranch(b,idx){
+  const id='B'+idx+'_'+Math.random().toString(36).slice(2,6);
+  let body='';
+  if(b.sub){b.sub.forEach(s=>{
+    body+=`<div class="sub-tree">`;
+    if(s.label)body+=`<div class="sub-label">${s.label}</div>`;
+    s.children.forEach(c=>{body+=renderLeaf(c,b.color);});
+    body+=`</div>`;
+  });}
+  if(b.children){b.children.forEach(c=>{body+=renderLeaf(c,b.color);});}
+  return`<div class="branch">
+    <div class="branch-head" onclick="toggleBranch('BB${id}',this)">
+      <div class="dot" style="background:${b.color}"></div>
+      <div class="label">${b.name}</div>
+      <div class="ref">${b.ref||''}</div>
+      <div class="chev">&#9654;</div>
+    </div>
+    <div class="branch-body" id="BB${id}">${body}</div>
+  </div>`;
+}
+
+function renderSection(sec,containerEl){
+  let h=`<div class="sec-title">${sec.title}</div>`;
+  h+=`<div class="sec-sub">${sec.sub||''}</div>`;
+  if(sec.intro)h+=`<div class="intro-card">${sec.intro}</div>`;
+  if(sec.legend){
+    h+=`<div class="legend">`;
+    sec.legend.forEach(l=>{h+=`<span><div class="ld" style="background:${l.c}"></div>${l.t}</span>`;});
+    h+=`</div>`;
+  }
+  h+=`<div class="tree">`;
+  sec.branches.forEach((b,i)=>{h+=renderBranch(b,i);});
+  h+=`</div>`;
+  containerEl.innerHTML=h;
+}
+
+function buildSubNav(sections,panelId,renderFn){
+  const panel=document.getElementById(panelId);
+  if(!sections||sections.length===0)return;
+  let nav=`<div class="sub-nav" id="sn_${panelId}">`;
+  sections.forEach((s,i)=>{
+    nav+=`<button ${i===0?'class="active"':''} onclick="switchSub('${panelId}',${i})">${s.tab||s.title}</button>`;
+  });
+  nav+=`</div><div id="sc_${panelId}"></div>`;
+  panel.innerHTML=nav;
+  renderFn(sections[0],document.getElementById(`sc_${panelId}`));
+  panel._sections=sections;
+  panel._renderFn=renderFn;
+}
+
+function switchSub(panelId,idx){
+  const panel=document.getElementById(panelId);
+  document.querySelectorAll(`#sn_${panelId} button`).forEach((b,i)=>b.classList.toggle('active',i===idx));
+  panel._renderFn(panel._sections[idx],document.getElementById(`sc_${panelId}`));
+}
+
+function showSystem(id){
+  document.querySelectorAll('.system-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.top-nav button').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  const btns=document.querySelectorAll('.top-nav button');
+  const map={yoga:0,samkhya:1,nyaya:2,vaisheshika:3,mimamsa:4,vedanta:5,vedas:6};
+  btns[map[id]].classList.add('active');
+  if(!document.getElementById(id)._built){
+    builders[id]();
+    document.getElementById(id)._built=true;
+  }
+}
+
+function toggleBranch(id,el){
+  const body=document.getElementById(id);
+  const open=body.classList.toggle('open');
+  el.classList.toggle('open',open);
+}
+function toggleDetail(id,ev){
+  ev.stopPropagation();
+  const p=document.getElementById('d'+id);
+  if(p)p.classList.toggle('open');
+}
+
+// ─── BUILDERS — each system builds itself lazily ──────────────────────────────
+const builders={};
+builders.vaisheshika=function(){
+const secs=[
+{tab:"Six Padārthas",title:"Six Padārthas — Categories of Reality",sub:"VS 1.1–1.2 · The six ontological categories",
+intro:"Vaiśeṣika's fundamental claim is that everything that exists can be classified under six (later seven) padārthas: dravya (substance), guṇa (quality), karma (motion), sāmānya (universal), viśeṣa (particular), and samavāya (inherence). This ontological scheme is at once a classification of all existing things and a theory of the kinds of properties and relations that bind them.",
+legend:[{c:C.amber,t:"Dravya/Substance"},{c:C.teal,t:"Guṇa/Quality"},{c:C.coral,t:"Karma/Motion"},{c:C.blue,t:"Universals"},{c:C.purple,t:"Particulars"},{c:C.green,t:"Inherence"}],
+branches:[
+{name:"Dravya — Nine Substances",ref:"VS 1.1.4–1.1.7",color:C.amber,children:[
+{n:"Nine Dravyas",r:"VS 1.1.5",d:"Earth, water, fire, air, ether, time, space, self, mind — the nine substances",
+det:{skt:"पृथिव्यापस्तेजो वायुराकाशं कालो दिगात्मा मन इति द्रव्याणि",
+tr:"Earth (pṛthivī), water (āpas), fire (tejas), air (vāyu), ether (ākāśa), time (kāla), space/direction (diś), self (ātman), and mind (manas) — these are the nine substances.",
+c:"The nine dravyas are the ultimate subjects of all real properties. Key distinctions: The first four (earth through air) are composed of atoms and are the building blocks of the material world. Ether (ākāśa), time (kāla), and space/direction (diś) are non-atomic, omnipresent, and eternal — they are the media within which material events occur. The self (ātman) is eternal, omnipresent (in the individual sense — all-pervading to the extent of its body-field), and the locus of consciousness. Manas (mind) is atomic — one per individual — and is the internal sense-organ that coordinates sense-perception and self-awareness.",
+prs:"Praśastapāda: the nine substances are not merely a list but a structured hierarchy. The four material substances (earth through air) are subject to creation and destruction; ether, time, and space are uncreated and indestructible (nitya); the self is uncreated, indestructible, and conscious; manas is uncreated in its atomic form but produced in its functional form.",
+uda:"Udayana: the inclusion of time (kāla) and space (diś) as substances is Vaiśeṣika's most original ontological contribution. Time is not a property of events (as the Buddhists hold) but the substance in which events are located — the medium of succession. Space is not a property of objects but the substance in which objects have directional relations."}},
+{n:"Pṛthivī — Earth",r:"VS 2.1.1",d:"Earth has the quality of smell as its distinctive characteristic",
+det:{skt:"गन्धवती पृथिवी",tr:"Earth (pṛthivī) is that which possesses smell (gandha).",
+c:"Each of the four material substances is defined by its <em>viśeṣa guṇa</em> (distinctive quality): earth — smell; water — taste; fire — colour/form; air — touch. These distinctive qualities are what make the substances qualitatively distinct from one another despite all being material. Additionally: earth also has taste, colour, touch, and sound; water has taste, colour, and touch but not smell; fire has colour and touch but not taste or smell; air has touch only.",
+prs:"Praśastapāda: the viśeṣa guṇa is the identifying criterion for each substance, but it does not exhaust the substance's qualities. Earth is defined by smell but it also possesses all four tangible qualities because it is the densest and most complex of the four elements.",
+uda:"Udayana: the four material substances are atomic at their finest level. The paramāṇus (atoms) of earth, water, fire, and air are eternal, indivisible, and individually imperceptible — they only become perceptible when combined into dyads (dyaṇukas) and triads (tryaṇukas) and larger aggregates."}}
+]},
+{name:"Guṇa — Twenty-Four Qualities",ref:"VS 1.1.6",color:C.teal,children:[
+{n:"The Twenty-Four Guṇas",r:"VS 1.1.6",d:"Twenty-four qualities — from rūpa to saṃskāra",
+det:{skt:"रूपरसगन्धस्पर्शसंख्यापरिमाणपृथक्त्वसंयोगविभागपरत्वापरत्वगुरुत्वद्रवत्वस्नेहशब्दबुद्धिसुखदुःखेच्छाद्वेषप्रयत्नधर्माधर्मसंस्काराश्च",
+tr:"Colour, taste, smell, touch, number, magnitude, separateness, conjunction, disjunction, priority, posteriority, weight, fluidity, viscosity, sound, cognition, pleasure, pain, desire, aversion, effort, virtue, vice, and latent impression — these are the twenty-four guṇas.",
+c:"The twenty-four guṇas are properties that inhere in substances but cannot themselves be properties of other properties (no second-order properties in Vaiśeṣika). Key distinctions: Sensory qualities (rūpa through sound) inhere in material substances. Mental qualities (cognition through effort) inhere only in the ātman and/or manas. Moral qualities (dharma, adharma) inhere in the ātman. Saṃskāra (latent impression) inheres in the ātman and in material substances.",
+prs:"Praśastapāda: guṇas are ontologically dependent on dravyas — they cannot exist without inhering in some substance. But they are distinct from the substance: the pot is not its redness; the redness is a distinct entity inhering in the pot through the relation of samavāya (inherence).",
+uda:"Udayana: the inclusion of dharma and adharma as guṇas (not just ethical categories) is Vaiśeṣika's moral realism. Virtue and vice are real, objective properties that attach to the ātman through moral actions — they are what determine the quality of future births and ultimately the possibility of liberation."}}
+]},
+{name:"Karma — Five Motions",ref:"VS 1.1.7",color:C.coral,children:[
+{n:"Five Karmas — Actions/Motions",r:"VS 1.1.7",d:"Upward, downward, contracting, expanding, and going — five types of motion",
+det:{skt:"उत्क्षेपणमवक्षेपणमाकुञ्चनं प्रसारणं गमनमिति कर्माणि",
+tr:"Throwing upward, throwing downward, contracting, expanding, and moving — these are the five karmas.",
+c:"<em>Karma</em> in Vaiśeṣika means physical motion — not moral action. The five types are: (1) Utkṣepaṇa — upward movement (throwing up, rising); (2) Avakṣepaṇa — downward movement (falling, sinking); (3) Ākuñcana — contraction (muscle contraction, withdrawal); (4) Prasāraṇa — expansion (spreading, opening); (5) Gamana — generic locomotion (going in any direction). Karma is an episodic category — it exists only for the duration of the movement and does not persist.",
+prs:"Praśastapāda: karma is the cause of conjunction (saṃyoga) and disjunction (vibhāga) between substances. The motion of the pot-making wheel causes the clay to conjoin in new ways — karma is therefore the proximate cause of all material change.",
+uda:"Udayana: karma is distinct from the force (vega) that produces it. The arrow in flight has karma (the motion); it also has vega (the saṃskāra of force impressed by the bowstring). The vega sustains the karma across time until the arrow reaches its target."}}
+]},
+{name:"Sāmānya, Viśeṣa, Samavāya — The Binding Categories",ref:"VS 1.2.3–1.2.18",color:C.blue,children:[
+{n:"Sāmānya — Universals",r:"VS 1.2.3",d:"Universals are eternal, one, and inhere in many particulars",
+det:{skt:"सत्तासामान्यविशेषाः",tr:"Being (sattā), universal (sāmānya), and particular (viśeṣa) are (the remaining categories).",
+c:"<em>Sāmānya</em> (universal) is an eternal, one, and objectively real entity that inheres in multiple particular instances simultaneously. The universal 'cow-ness' (gotva) inheres in every particular cow, making them all cows. The universal 'being' (sattā) inheres in all substances, qualities, and motions — it is the most general universal. Vaiśeṣika's realism about universals is its response to the Buddhist nominalist position that only particulars exist.",
+prs:"Praśastapāda: universals are perceived directly — when we see a cow and know 'this is a cow,' we are perceiving not just the particular cow but also the universal cowness that inheres in it and in all cows. The universal is grasped through a distinct cognitive act (vyāpti-jñāna) triggered by the perception of the particular.",
+uda:"Udayana: universals are not mental constructs (as the Buddhists hold) but objective features of reality. Evidence: different people perceive the same object as 'a cow' without prior communication — this intersubjective agreement is best explained by a real universal cowness that is the same in all these perceptions."}},
+{n:"Viśeṣa — Ultimate Particulars",r:"VS 1.2.6",d:"Viśeṣas are eternal distinguishers of eternal atoms and substances",
+det:{skt:"अन्त्यविशेषाः",tr:"The ultimate particulars (antyaviśeṣas) are the distinguishers of the eternal (atoms etc.).",
+c:"<em>Viśeṣa</em> (ultimate particular) is the category that gives Vaiśeṣika its name. The problem: if two atoms of earth are qualitatively identical (both atoms, both earth-atoms, both possessing smell, etc.), what makes them two and not one? Universals cannot distinguish them; qualities are the same; substances are the same. Vaiśeṣika posits irreducible ultimate particulars (antyaviśeṣas) that are the ultimate basis of the numerical distinctness of atoms. Viśeṣas are eternal (they inhere only in eternal entities — atoms and eternals), uncaused, and directly perceived by yogis.",
+prs:"Praśastapāda: the viśeṣas are the most radical assertion of Vaiśeṣika realism — the positing of irreducible bare particulars (haecceities) as real entities. Without viśeṣas, the system cannot explain why two otherwise identical atoms are two.",
+uda:"Udayana: the viśeṣa concept anticipates the modern metaphysical debate between bundle theory (all properties are universals; particularity is their combination) and substratum theory (there is a bare particular beneath all properties). Vaiśeṣika effectively posits both — the dravya as substratum and the antyaviśeṣa as the individuator."}},
+{n:"Samavāya — The Relation of Inherence",r:"VS 7.2.26",d:"Samavāya is the eternal, non-separable binding relation between substances and their properties",
+det:{skt:"इह इति यतः कार्यकारणयोः स तु सम्बन्धविशेषः समवायः",
+tr:"Samavāya is the special relation of 'here in this' — the inseparable relation between cause and effect (and between substance and quality, universal and particular, etc.).",
+c:"<em>Samavāya</em> (inherence) is the most philosophically contested Vaiśeṣika category. It is the relation by which a quality inheres in a substance, a universal inheres in its instances, a part inheres in the whole, and a motion inheres in the moving substance. Samavāya is: (1) one (there is only one samavāya relation, not many); (2) eternal (it does not come and go); (3) non-separable (anapāyin — what is related by samavāya cannot be separated while maintaining that relation). Example: redness is in the rose by samavāya — not merely near it, or touching it, but genuinely internally related to it.",
+prs:"Praśastapāda: samavāya is different from saṃyoga (conjunction), which is an accidental, separable contact between two substances. The book on the table is related by saṃyoga; the table's brownness is related to the table by samavāya. Removing the book leaves both book and table intact; removing the brownness from the table destroys either the brownness or the table's identity as this brown table.",
+uda:"Udayana: samavāya is one of the most contested categories in Indian philosophy. Buddhist critics argue that it is superfluous — the 'in-here' relation can be explained without positing a further relation called 'inherence' (this leads to an infinite regress: if samavāya relates S and Q, what relates samavāya to S? Answer: samavāya is self-linking — it relates itself to what it relates.). Udayana defends this self-linking character of samavāya as a unique, fundamental metaphysical primitive."}}
+]}
+]},
+{tab:"Atomic Theory & Causation",title:"Atomic Theory and the Doctrine of Causation",sub:"VS 2.1.1–4.1.14 · Paramāṇu theory and the asatkāryavāda",
+intro:"Vaiśeṣika's atomic theory is one of the earliest and most developed atomic theories in world philosophy. Atoms (paramāṇus) are eternal, indivisible, and imperceptible — the ultimate constituents of material reality. Their combination (through God's will) produces the perceivable world. Vaiśeṣika holds the asatkāryavāda (the doctrine that the effect is not pre-existent in the cause) — directly opposing Sāṃkhya's satkāryavāda.",
+legend:[{c:C.purple,t:"Atomism"},{c:C.amber,t:"Causation"},{c:C.blue,t:"God/Īśvara"},{c:C.green,t:"Liberation"}],
+branches:[
+{name:"Paramāṇu — Atomic Theory",ref:"VS 4.1.1–4.1.14",color:C.purple,children:[
+{n:"Paramāṇu — The Atom",r:"VS 4.1.1",d:"The atom is eternal, partless, invisible, the ultimate cause of all material existence",
+det:{skt:"नित्यं परमाणु",tr:"The atom is eternal (nitya).",
+c:"The Vaiśeṣika atom (paramāṇu) is: (1) <em>Nitya</em> (eternal) — uncaused, indestructible; (2) <em>Niravaayava</em> (partless) — having no spatial parts; (3) <em>Adṛśya</em> (imperceptible) — too small for any sense to detect; (4) <em>Sarvajanana</em> (generator of all things) — all perceptible material objects are composed of atoms. Four types of atoms (corresponding to the four material substances): earth-atoms, water-atoms, fire-atoms, air-atoms. Each type of atom has the qualities of its respective element — earth-atoms have smell, water-atoms have taste, etc.",
+prs:"Praśastapāda: atoms are beginninglessly moving (spanda-śīla) — they have an intrinsic vibrating motion (parispanda). At pralaya (cosmic dissolution), all compound objects dissolve back into atoms — the atoms themselves never dissolve. At the next sarga (creation), atoms recombine under the directive will of Īśvara.",
+uda:"Udayana: atoms must be eternal and partless because they are the final terminus of analysis. If atoms had parts, those parts would be prior to them — and we would need to explain those parts' ultimate constituents. The regress terminates only with eternal, indivisible atoms. This is a classic reductio argument for atomism."}},
+{n:"Dyaṇuka and Tryaṇuka — Combination",r:"VS 4.1.4–4.1.8",d:"Two atoms produce a dyad; three dyads produce a triad — the first perceivable entity",
+det:{c:"The process of atomic combination: (1) Two atoms (paramāṇus) combine to form a dyad (dvyaṇuka or dvyaṇu). A dyad has magnitude (parimāṇa) greater than an atom but is itself imperceptible — it is an intermediate ontological stage. (2) Three dyads combine to form a triad (tryaṇuka). The triad is the smallest perceivable entity — the threshold of perceptibility. (3) Larger aggregates (from four dyads up) produce the perceivable world of everyday objects.",
+prs:"Praśastapāda: the movement from two atoms to a dyad is not a mere addition of atoms but the creation of a genuinely new entity with properties the atoms lack individually (like magnitude). This is Vaiśeṣika's asatkāryavāda in action: the effect (dyad) is a genuinely new existence, not pre-existent in the causes.",
+uda:"Udayana: the dyad is the most philosophically interesting of the three stages. It has magnitude but is imperceptible — suggesting that magnitude is not sufficient for perceptibility. Perceptibility requires a threshold of magnitude that only the triad reaches. This distinction between 'having magnitude' and 'being perceptible' is an important ontological refinement."}}
+]},
+{name:"Asatkāryavāda — Effect is New",ref:"VS 5.1.1–5.2.26",color:C.amber,children:[
+{n:"Asatkāryavāda vs Satkāryavāda",r:"VS 5.2.1",d:"Vaiśeṣika holds that the effect does not pre-exist in the cause — it is a genuinely new entity",
+det:{c:"The central dispute in Indian philosophy of causation: <em>Satkāryavāda</em> (Sāṃkhya): the effect pre-exists in the cause in an unmanifest (avyakta) form; production is merely manifestation of what was already there. <em>Asatkāryavāda</em> (Vaiśeṣika-Nyāya): the effect is a genuinely new entity, not previously existing in the cause; production is genuine origination. Arguments for asatkāryavāda: (1) We observe that the pot is a new entity with properties (hollow, able to hold water) that the clay lacks — if the pot pre-existed in the clay, we should observe these properties before the pot is made. (2) The very concept of 'production' requires that what is produced was not there before — otherwise what is being 'produced'?",
+prs:"Praśastapāda: samavāyikāraṇa (the inherence cause) is what Vaiśeṣika uses to explain causation. The clay is the inherence-cause (samavāyikāraṇa) of the pot — the pot, when produced, inheres in the clay (the clay becomes the substrate of the pot). The potter's hands and wheel are the non-inherence causes (asamavāyikāraṇa and nimittakāraṇa). This three-cause analysis (inherence, non-inherence, efficient) is Vaiśeṣika's distinctive contribution to causal theory.",
+uda:"Udayana: asatkāryavāda is supported by everyday observation and by the success of productive action. If the effect pre-existed in the cause (satkāryavāda), the potter's effort would be pointless — you cannot 'make' what already exists. The fact that productive effort genuinely changes the world — that the pot did not exist before and now exists — is the commonsense evidence for asatkāryavāda."}}
+]}
+]},
+{tab:"Praśastapāda's System",title:"Praśastapāda's Padārthadharmasaṃgraha",sub:"c. 600 CE · The systematic elaboration and synthesis of Vaiśeṣika",
+intro:"Praśastapāda's Padārthadharmasaṃgraha (Summary of the Properties of the Categories) is not a commentary on the Vaiśeṣika Sūtras but an independent systematic treatise that became the standard exposition of the school. It elaborates the six padārthas with extraordinary precision, adds significant new doctrines, and integrates theology (Īśvara as the cause of atomic combination) into the system.",
+legend:[{c:C.amber,t:"Categories"},{c:C.blue,t:"Theology"},{c:C.purple,t:"Cosmology"},{c:C.green,t:"Liberation"}],
+branches:[
+{name:"Praśastapāda on Creation and God",ref:"Padārthadharmasaṃgraha",color:C.blue,children:[
+{n:"Īśvara as the Director of Atomic Combination",r:"PDhS",d:"God directs the combination of atoms at creation and their dissolution at pralaya",
+det:{c:"Praśastapāda's major theological addition to Vaiśeṣika: atoms cannot combine on their own (they have no intelligence or will). Their initial combination at sarga (creation) must be directed by an omniscient, omnipotent agent — Īśvara. Īśvara uses dharma (the accumulated merit of past cycles of beings) as the instrumental cause and his own will as the efficient cause to direct atoms into their initial combinations, creating the material world.",
+prs:"Praśastapāda: Īśvara is not the material cause of the world — atoms are. Īśvara is the intelligent efficient cause (nimittakāraṇa) — the designer and director, not the substance. This preserves the ātman-prakṛti dualism while adding a theistic dimension: Īśvara, the eternal and liberated puruṣa (analogous to Patañjali's Yoga Sūtras 1.24), directs the material world for the benefit of individual ātmans.",
+uda:"Udayana's Kiraṇāvalī develops this further: Īśvara must be omniscient to know the accumulated dharma and adharma of all past ātmans and to direct atomic combinations precisely so that each ātman gets the experiences its karma merits. Omniscience is not a luxury but a functional requirement of the creator."}}
+]},
+{name:"Liberation in Vaiśeṣika",ref:"PDhS on Mokṣa",color:C.green,children:[
+{n:"Mokṣa — Liberation as Cessation of All Qualities",r:"PDhS",d:"Liberation is the state where the ātman is free of all guṇas including cognition",
+det:{c:"Vaiśeṣika's account of liberation parallels Nyāya's: mokṣa is the complete cessation of the ātman's connection with manas, the senses, and the body — and consequently the cessation of all cognition, pleasure, pain, desire, aversion, and effort. The liberated ātman has no remaining guṇas except existence (sattā). This is sometimes called the 'stone-liberation' critique: critics object that a consciousness without any cognitive content is indistinguishable from a stone. Vaiśeṣika responds that the ātman's nature is not consciousness (as Vedānta holds) but a substance that can possess consciousness as a quality — and the liberated ātman simply no longer possesses that quality.",
+prs:"Praśastapāda: liberation is achieved through tattvajñāna — the direct knowledge of the ātman as distinct from the body, senses, and mind. This knowledge, combined with the cessation of adharma (moral merit) and dharma (moral demerit), allows the ātman's manas-connection to dissolve. Without manas, no further experience arises; the ātman rests alone in its own substance.",
+uda:"Udayana: the apparent emptiness of Vaiśeṣika liberation is actually a profound state: the ātman, no longer conditioned by any of prakṛti's modifications, simply is what it essentially is — a pure substance without accidental properties. This is the most radical fulfillment of the principle that every substance is ultimately what it is by itself, not by its properties."}}
+]}
+]}
+];
+buildSubNav(secs,'vaisheshika',renderSection);
+};
+
+// ═══════════════════════════════════════════════════════════════════
+// PŪRVA MĪMĀṂSĀ — Jaimini's Mīmāṃsā Sūtras (c. 300 BCE)
+// Commentaries: Śabara Bhāṣya, Kumārila Bhaṭṭa Ślokavārttika,
+//               Prabhākara Bṛhatī
+// ═══════════════════════════════════════════════════════════════════
+
+// ── Init ──
+builders.vaisheshika();
+</script>
+</body>
+</html>

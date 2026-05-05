@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ṣaḍdarśana — Six Orthodox Systems of Indian Philosophy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Warm parchment palette */
+  --bg:#F5EDDC;
+  --bg-card:#EFE3CC;
+  --bg-panel:#E8D9BC;
+  --bg-deep:#FBF6EA;
+  --text-primary:#2A1D0E;
+  --text-secondary:#4F3D26;
+  --text-muted:#8A7553;
+  --border:#C9B587;
+  --border-light:#DCCBA3;
+  --gold:#9C6F2A;
+  --gold-light:#C49344;
+  --shadow:0 1px 3px rgba(120,80,30,.08), 0 4px 12px rgba(120,80,30,.04);
+  --shadow-lg:0 4px 16px rgba(120,80,30,.10), 0 12px 32px rgba(120,80,30,.06);
+  --radius:7px;--radius-lg:12px;
+  --font-body:'Lora',Georgia,'Times New Roman',serif;
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-mono:'JetBrains Mono','Inconsolata','Courier New',monospace;
+
+  /* System accents — each system gets its own warm hue */
+  --sys-yoga:#B8501F;        /* terracotta */
+  --sys-yoga-bg:#F8E6D4;     /* yoga panel tint */
+  --sys-yoga-deep:#9F4218;
+  --sys-samkhya:#8C5A2B;     /* burnt sienna */
+  --sys-samkhya-bg:#F2E1C8;
+  --sys-samkhya-deep:#73471F;
+  --sys-nyaya:#6B6428;       /* olive gold */
+  --sys-nyaya-bg:#EDE6C5;
+  --sys-nyaya-deep:#534D1D;
+  --sys-vaisheshika:#5C7048; /* sage */
+  --sys-vaisheshika-bg:#E5E8CF;
+  --sys-vaisheshika-deep:#445335;
+  --sys-mimamsa:#A03E3E;     /* deep red-clay */
+  --sys-mimamsa-bg:#F5DCD4;
+  --sys-mimamsa-deep:#7E2E2E;
+  --sys-vedanta:#7A4980;     /* aubergine */
+  --sys-vedanta-bg:#EDDDE6;
+  --sys-vedanta-deep:#5C3563;
+  --sys-vedas:#9C6F2A;       /* warm gold */
+  --sys-vedas-bg:#F3E4C2;
+  --sys-vedas-deep:#7A551E;
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#1B140A;
+  --bg-card:#251B0E;
+  --bg-panel:#2E2213;
+  --bg-deep:#15100A;
+  --text-primary:#F2EAD8;
+  --text-secondary:#D5C7A9;
+  --text-muted:#9A876A;
+  --border:#4A3920;
+  --border-light:#352818;
+  --gold:#D4A152;
+  --gold-light:#9C6F2A;
+  --shadow:0 1px 3px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+  --shadow-lg:0 4px 16px rgba(0,0,0,.5), 0 12px 32px rgba(0,0,0,.3);
+
+  --sys-yoga:#E07A45;        --sys-yoga-bg:#2D1B0E;       --sys-yoga-deep:#F0996B;
+  --sys-samkhya:#C18A50;     --sys-samkhya-bg:#291C0E;    --sys-samkhya-deep:#D9A66B;
+  --sys-nyaya:#B5A852;       --sys-nyaya-bg:#252210;      --sys-nyaya-deep:#D4C870;
+  --sys-vaisheshika:#9CB07A; --sys-vaisheshika-bg:#1F2615;--sys-vaisheshika-deep:#B8CB94;
+  --sys-mimamsa:#D86B6B;     --sys-mimamsa-bg:#2A1313;    --sys-mimamsa-deep:#E89090;
+  --sys-vedanta:#B17BB8;     --sys-vedanta-bg:#241A26;    --sys-vedanta-deep:#CB9CCF;
+  --sys-vedas:#D4A152;       --sys-vedas-bg:#291F0F;      --sys-vedas-deep:#E8BD70;
+}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-body);
+  background:var(--bg);
+  background-image:
+    radial-gradient(at 20% 10%, rgba(196,147,68,.08) 0%, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(156,111,42,.06) 0%, transparent 50%);
+  background-attachment:fixed;
+  color:var(--text-primary);
+  min-height:100vh;
+  font-feature-settings:"liga" 1,"kern" 1;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+#shell{max-width:880px;margin:0 auto;padding:32px 20px 100px}
+
+/* HEADER */
+.site-header{text-align:center;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+.site-header .eyebrow{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:500}
+.site-header h1{font-family:var(--font-display);font-size:2.4rem;font-weight:500;color:var(--text-primary);line-height:1.2;margin-bottom:6px;letter-spacing:-.01em}
+.site-header .subtitle{font-family:var(--font-display);font-size:14px;color:var(--text-muted);font-style:italic;letter-spacing:.02em}
+
+/* TOP NAV — systems */
+.top-nav{
+  display:flex;gap:4px;flex-wrap:wrap;
+  background:var(--bg-card);
+  padding:5px;
+  border-radius:var(--radius-lg);
+  border:1px solid var(--border);
+  margin-bottom:28px;
+  box-shadow:var(--shadow);
+}
+.top-nav button{
+  flex:1;min-width:96px;
+  padding:11px 8px;
+  font-family:var(--font-mono);
+  font-size:10px;letter-spacing:.06em;
+  border:none;background:transparent;
+  color:var(--text-muted);
+  cursor:pointer;
+  border-radius:8px;
+  transition:all .18s ease;
+  line-height:1.4;text-align:center;
+  font-weight:500;
+  border-bottom:2.5px solid transparent;
+}
+.top-nav button:hover{color:var(--text-secondary);background:var(--bg-deep)}
+.top-nav button.active{
+  background:var(--bg-deep);
+  color:var(--text-primary);
+  font-weight:600;
+  box-shadow:0 1px 4px rgba(120,80,30,.15);
+}
+/* per-system accent color on active button */
+.top-nav button[data-sys="yoga"].active        {border-bottom-color:var(--sys-yoga)}
+.top-nav button[data-sys="samkhya"].active     {border-bottom-color:var(--sys-samkhya)}
+.top-nav button[data-sys="nyaya"].active       {border-bottom-color:var(--sys-nyaya)}
+.top-nav button[data-sys="vaisheshika"].active {border-bottom-color:var(--sys-vaisheshika)}
+.top-nav button[data-sys="mimamsa"].active     {border-bottom-color:var(--sys-mimamsa)}
+.top-nav button[data-sys="vedanta"].active     {border-bottom-color:var(--sys-vedanta)}
+.top-nav button[data-sys="vedas"].active       {border-bottom-color:var(--sys-vedas)}
+
+/* SYSTEM PANEL — each system has its own warm tinted backdrop */
+.system-panel{display:none;padding:22px 22px 24px;border-radius:var(--radius-lg);box-shadow:var(--shadow)}
+.system-panel.active{display:block}
+.system-panel#yoga        {background:var(--sys-yoga-bg);        --accent:var(--sys-yoga);        --accent-deep:var(--sys-yoga-deep)}
+.system-panel#samkhya     {background:var(--sys-samkhya-bg);     --accent:var(--sys-samkhya);     --accent-deep:var(--sys-samkhya-deep)}
+.system-panel#nyaya       {background:var(--sys-nyaya-bg);       --accent:var(--sys-nyaya);       --accent-deep:var(--sys-nyaya-deep)}
+.system-panel#vaisheshika {background:var(--sys-vaisheshika-bg); --accent:var(--sys-vaisheshika); --accent-deep:var(--sys-vaisheshika-deep)}
+.system-panel#mimamsa     {background:var(--sys-mimamsa-bg);     --accent:var(--sys-mimamsa);     --accent-deep:var(--sys-mimamsa-deep)}
+.system-panel#vedanta     {background:var(--sys-vedanta-bg);     --accent:var(--sys-vedanta);     --accent-deep:var(--sys-vedanta-deep)}
+.system-panel#vedas       {background:var(--sys-vedas-bg);       --accent:var(--sys-vedas);       --accent-deep:var(--sys-vedas-deep)}
+
+/* SUB NAV — padas / books / adhyayas */
+.sub-nav{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:22px}
+.sub-nav button{
+  padding:8px 14px;
+  font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;font-weight:500;
+  border:1px solid transparent;
+  background:rgba(255,255,255,.35);
+  color:var(--text-muted);
+  cursor:pointer;border-radius:var(--radius);
+  transition:all .15s;
+}
+.sub-nav button:hover{color:var(--text-secondary);background:rgba(255,255,255,.6);border-color:var(--border-light)}
+.sub-nav button.active{
+  background:var(--accent,var(--gold));
+  color:#FBF6EA;
+  font-weight:600;
+  border-color:var(--accent-deep,var(--gold));
+  box-shadow:0 1px 3px rgba(120,80,30,.2);
+}
+
+/* SECTION TITLE */
+.sec-title{
+  font-family:var(--font-display);
+  font-size:1.7rem;font-weight:500;
+  color:var(--accent-deep,var(--text-primary));
+  margin-bottom:3px;letter-spacing:-.005em;
+}
+.sec-sub{
+  font-family:var(--font-mono);
+  font-size:10.5px;color:var(--text-muted);
+  letter-spacing:.06em;margin-bottom:18px;font-weight:500;
+}
+
+/* INTRO CARD */
+.intro-card{
+  padding:16px 20px;margin-bottom:22px;
+  background:var(--bg-deep);
+  border-radius:var(--radius-lg);
+  font-size:14.5px;line-height:1.78;
+  color:var(--text-secondary);
+  border-left:3px solid var(--accent,var(--gold));
+  box-shadow:var(--shadow);
+}
+.intro-card strong{font-weight:600;color:var(--text-primary)}
+.intro-card em{color:var(--accent-deep,var(--text-primary));font-style:italic;font-weight:500}
+
+/* LEGEND */
+.legend{display:flex;gap:8px 18px;flex-wrap:wrap;margin-bottom:20px;font-family:var(--font-mono);font-size:10.5px;color:var(--text-muted);letter-spacing:.03em;font-weight:500;padding:10px 14px;background:rgba(255,255,255,.3);border-radius:var(--radius)}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend .ld{width:9px;height:9px;border-radius:50%;flex-shrink:0;opacity:.9;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}
+
+/* TREE */
+.tree{display:flex;flex-direction:column;gap:6px;margin-bottom:24px}
+
+/* BRANCH */
+.branch{
+  border-radius:var(--radius-lg);
+  background:var(--bg-deep);
+  border:1px solid var(--border-light);
+  overflow:hidden;
+  transition:all .18s;
+  box-shadow:var(--shadow);
+}
+.branch:hover{border-color:var(--border)}
+.branch-head{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 16px;
+  cursor:pointer;user-select:none;
+  background:var(--bg-deep);
+  transition:background .14s;
+}
+.branch-head:hover{background:var(--bg-card)}
+.branch-head .dot{
+  width:10px;height:10px;border-radius:50%;
+  flex-shrink:0;opacity:.9;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.1);
+}
+.branch-head .label{
+  font-family:var(--font-display);
+  font-size:1.05rem;font-weight:600;
+  color:var(--text-primary);flex:1;
+  letter-spacing:.005em;
+}
+.branch-head .ref{
+  font-family:var(--font-mono);
+  font-size:10.5px;color:var(--accent-deep,var(--text-muted));
+  letter-spacing:.05em;font-weight:500;
+}
+.branch-head .chev{
+  font-size:10px;color:var(--text-muted);
+  transition:transform .22s ease;flex-shrink:0;
+}
+.branch-head.open .chev{transform:rotate(90deg)}
+.branch-body{
+  display:none;
+  padding:10px 16px 16px 36px;
+  background:var(--bg-deep);
+  border-top:1px solid var(--border-light);
+}
+.branch-body.open{display:block}
+
+/* SUB-TREE */
+.sub-tree{margin:9px 0 5px;padding-left:14px;border-left:2px solid var(--accent,var(--border))}
+.sub-label{
+  font-family:var(--font-mono);
+  font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--accent-deep,var(--text-muted));
+  margin:9px 0 5px;font-weight:600;
+}
+
+/* LEAF */
+.leaf{
+  display:flex;align-items:flex-start;gap:9px;
+  padding:8px 10px 8px 6px;
+  cursor:pointer;
+  border-radius:var(--radius);
+  transition:background .12s;
+  margin:2px 0;
+}
+.leaf:hover{background:var(--bg-card)}
+.leaf .lf-dot{
+  width:6px;height:6px;border-radius:50%;
+  flex-shrink:0;margin-top:9px;opacity:.65;
+}
+.leaf-content{flex:1;min-width:0}
+.leaf .lf-name{
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:1.05rem;font-weight:500;
+  color:var(--text-primary);
+}
+.leaf .lf-ref{
+  font-family:var(--font-mono);
+  font-size:10.5px;color:var(--accent-deep,var(--text-muted));
+  margin-left:7px;font-weight:500;
+}
+.leaf .lf-skt{
+  font-family:var(--font-body);
+  font-size:13px;color:var(--text-muted);
+  font-style:italic;display:block;margin-top:2px;
+}
+.leaf .lf-desc{
+  font-family:var(--font-body);
+  font-size:13.5px;color:var(--text-secondary);
+  line-height:1.65;margin-top:3px;
+}
+.leaf .lf-expand{
+  font-family:var(--font-mono);
+  font-size:9.5px;color:var(--text-muted);
+  margin-top:5px;letter-spacing:.05em;
+  opacity:.75;font-weight:500;
+}
+
+/* DETAIL PANEL */
+.detail-panel{
+  display:none;
+  margin-top:11px;
+  padding:16px 18px;
+  background:var(--bg-deep);
+  border-radius:var(--radius-lg);
+  border-left:3px solid var(--accent,var(--gold));
+  box-shadow:var(--shadow);
+}
+.detail-panel.open{display:block}
+.detail-section{margin-bottom:13px}
+.detail-section:last-child{margin-bottom:0}
+.detail-label{
+  font-family:var(--font-mono);
+  font-size:9.5px;text-transform:uppercase;
+  letter-spacing:.14em;color:var(--accent-deep,var(--text-muted));
+  margin-bottom:5px;font-weight:600;
+}
+.detail-text{
+  font-family:var(--font-body);
+  font-size:14.5px;color:var(--text-primary);
+  line-height:1.78;
+}
+.detail-text em{color:var(--accent-deep,var(--text-primary));font-style:italic;font-weight:600}
+.skt-block{
+  font-family:var(--font-body);
+  font-size:14px;font-style:italic;
+  color:var(--text-secondary);
+  padding:11px 15px;
+  background:var(--bg-card);
+  border-radius:var(--radius);
+  margin-bottom:10px;line-height:1.75;
+  border-left:2px solid var(--accent,var(--border));
+}
+.commentaries-wrap{display:flex;flex-direction:column;gap:9px;margin-top:6px}
+.detail-commentary{
+  padding:11px 14px;
+  background:var(--bg-card);
+  border-radius:var(--radius);
+  border:1px solid var(--border-light);
+  border-top:2px solid var(--accent,var(--gold));
+}
+.com-name{
+  font-family:var(--font-mono);
+  font-size:9.5px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent-deep,var(--gold));margin-bottom:4px;
+}
+.com-text{
+  font-family:var(--font-body);
+  font-size:13.5px;color:var(--text-secondary);
+  line-height:1.72;
+}
+.com-text em{font-style:italic;font-weight:600;color:var(--text-primary)}
+
+/* mobile tweaks */
+@media (max-width:600px){
+  html{font-size:16px}
+  #shell{padding:20px 14px 80px}
+  .system-panel{padding:16px 14px 18px}
+  .site-header h1{font-size:1.9rem}
+  .branch-body{padding:10px 12px 14px 22px}
+  .top-nav button{min-width:70px;font-size:9.5px;padding:9px 5px}
+}
+</style>
+</head>
+<body>
+<div id="shell">
+<header class="site-header">
+  <div class="eyebrow">Jaimini · c. 300 BCE</div>
+  <h1>Pūrva Mīmāṃsā — Complete Map</h1>
+  <div class="subtitle">Vedic Exegesis &amp; Dharma · Śabara, Kumārila &amp; Prabhākara</div>
+</header>
+<div id="mimamsa" class="system-panel active"></div>
+</div>
+<script>
+'use strict';
+const C={
+  purple:'#7F77DD',teal:'#1D9E75',coral:'#D85A30',pink:'#D4537E',
+  blue:'#378ADD',amber:'#EF9F27',green:'#639922',red:'#E24B4A',
+  gray:'#888780',indigo:'#5B6FBB',rose:'#C25B7A',ochre:'#B87333',
+  sage:'#6B8A6B',slate:'#5E7080',plum:'#8B5A8B',sienna:'#A05030'
+};
+
+// ─── Shared render helpers ────────────────────────────────────────────────────
+function safeHtml(s){return s||'';}
+
+function renderDetail(d,color,id){
+  if(!d)return'';
+  let h=`<div class="detail-panel" id="d${id}" style="--accent:${color}">`;
+  if(d.skt){h+=`<div class="skt-block">${safeHtml(d.skt)}</div>`;}
+  if(d.tr){h+=`<div class="detail-section"><div class="detail-label">Translation</div><div class="detail-text">${safeHtml(d.tr)}</div></div>`;}
+  if(d.c){h+=`<div class="detail-section"><div class="detail-label">Concept &amp; Meaning</div><div class="detail-text">${safeHtml(d.c)}</div></div>`;}
+  if(d.ex){h+=`<div class="detail-section"><div class="detail-label">Example &amp; Application</div><div class="detail-text">${safeHtml(d.ex)}</div></div>`;}
+  const comDefs=[
+    {k:'vy', n:'Vyāsa · Yoga Bhāṣya'},
+    {k:'vb', n:'Vijñānabhikṣu · Yoga-Vārttika'},
+    {k:'vm', n:'Vācaspati Miśra · Tattva-Vaiśāradī'},
+    {k:'sk', n:'Śaṅkara · Vivaraṇa'},
+    {k:'gp', n:'Gauḍapāda · Bhāṣya'},
+    {k:'tk', n:'Vācaspati Miśra · Tattvakaumudī'},
+    {k:'mat',n:'Māṭhara · Māṭharāvṛtti'},
+    {k:'vts',n:'Vātsyāyana · Nyāya Bhāṣya'},
+    {k:'udd',n:'Uddyotakara · Nyāya Vārttika'},
+    {k:'vmt',n:'Vācaspati Miśra · Tātparya-Ṭīkā'},
+    {k:'uda',n:'Udayana · Nyāya-Pariśuddhi'},
+    {k:'rgh',n:'Raghunātha Śiromaṇi · Bhāṣā-Pariccheda'},
+    {k:'vis',n:'Viśvanātha · Nyāya-Sūtra-Vṛtti'},
+    {k:'prs',n:'Praśastapāda · Padārthadharmasaṃgraha'},
+    {k:'sbt',n:'Śabara · Mīmāṃsā Bhāṣya'},
+    {k:'kum',n:'Kumārila Bhaṭṭa · Ślokavārttika'},
+    {k:'prb',n:'Prabhākara · Bṛhatī'},
+    {k:'shk',n:'Śaṅkara · Bhāṣya'},
+    {k:'rmj',n:'Rāmānuja · Śrī-Bhāṣya'},
+    {k:'mdv',n:'Madhva · Anuvyākhyāna'},
+    {k:'nim',n:'Nimbārka · Vedānta-Pārijāta-Saurabha'},
+    {k:'val',n:'Vallabha · Aṇubhāṣya'},
+    {k:'syk',n:'Sāyaṇa · Commentary'},
+    {k:'mhi',n:'Mahīdhara · Vedadīpa'},
+    {k:'uvt',n:'Uvvaṭa · Commentary'},
+  ];
+  const present=comDefs.filter(x=>d[x.k]);
+  if(present.length){
+    h+=`<div class="detail-section"><div class="detail-label">Classical Commentaries</div><div class="commentaries-wrap">`;
+    present.forEach(x=>{
+      h+=`<div class="detail-commentary"><div class="com-name">${x.n}</div><div class="com-text">${safeHtml(d[x.k])}</div></div>`;
+    });
+    h+=`</div></div>`;
+  }
+  h+=`</div>`;return h;
+}
+
+function renderLeaf(l,color){
+  const id='L'+Math.random().toString(36).slice(2,9);
+  const has=!!l.det;
+  const hint=has?`<div class="lf-expand">&#9654; tap for commentaries</div>`:'';
+  const oc=has?`onclick="toggleDetail('${id}',event)"`:'';
+  return`<div class="leaf" ${oc}>
+    <div class="lf-dot" style="background:${color}"></div>
+    <div class="leaf-content">
+      <div><span class="lf-name">${l.n}</span><span class="lf-ref">${l.r||''}</span></div>
+      ${l.sk?`<span class="lf-skt">${l.sk}</span>`:''}
+      <div class="lf-desc">${l.d}</div>
+      ${hint}
+      ${has?renderDetail(l.det,color,id):''}
+    </div>
+  </div>`;
+}
+
+function renderBranch(b,idx){
+  const id='B'+idx+'_'+Math.random().toString(36).slice(2,6);
+  let body='';
+  if(b.sub){b.sub.forEach(s=>{
+    body+=`<div class="sub-tree">`;
+    if(s.label)body+=`<div class="sub-label">${s.label}</div>`;
+    s.children.forEach(c=>{body+=renderLeaf(c,b.color);});
+    body+=`</div>`;
+  });}
+  if(b.children){b.children.forEach(c=>{body+=renderLeaf(c,b.color);});}
+  return`<div class="branch">
+    <div class="branch-head" onclick="toggleBranch('BB${id}',this)">
+      <div class="dot" style="background:${b.color}"></div>
+      <div class="label">${b.name}</div>
+      <div class="ref">${b.ref||''}</div>
+      <div class="chev">&#9654;</div>
+    </div>
+    <div class="branch-body" id="BB${id}">${body}</div>
+  </div>`;
+}
+
+function renderSection(sec,containerEl){
+  let h=`<div class="sec-title">${sec.title}</div>`;
+  h+=`<div class="sec-sub">${sec.sub||''}</div>`;
+  if(sec.intro)h+=`<div class="intro-card">${sec.intro}</div>`;
+  if(sec.legend){
+    h+=`<div class="legend">`;
+    sec.legend.forEach(l=>{h+=`<span><div class="ld" style="background:${l.c}"></div>${l.t}</span>`;});
+    h+=`</div>`;
+  }
+  h+=`<div class="tree">`;
+  sec.branches.forEach((b,i)=>{h+=renderBranch(b,i);});
+  h+=`</div>`;
+  containerEl.innerHTML=h;
+}
+
+function buildSubNav(sections,panelId,renderFn){
+  const panel=document.getElementById(panelId);
+  if(!sections||sections.length===0)return;
+  let nav=`<div class="sub-nav" id="sn_${panelId}">`;
+  sections.forEach((s,i)=>{
+    nav+=`<button ${i===0?'class="active"':''} onclick="switchSub('${panelId}',${i})">${s.tab||s.title}</button>`;
+  });
+  nav+=`</div><div id="sc_${panelId}"></div>`;
+  panel.innerHTML=nav;
+  renderFn(sections[0],document.getElementById(`sc_${panelId}`));
+  panel._sections=sections;
+  panel._renderFn=renderFn;
+}
+
+function switchSub(panelId,idx){
+  const panel=document.getElementById(panelId);
+  document.querySelectorAll(`#sn_${panelId} button`).forEach((b,i)=>b.classList.toggle('active',i===idx));
+  panel._renderFn(panel._sections[idx],document.getElementById(`sc_${panelId}`));
+}
+
+function showSystem(id){
+  document.querySelectorAll('.system-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.top-nav button').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  const btns=document.querySelectorAll('.top-nav button');
+  const map={yoga:0,samkhya:1,nyaya:2,vaisheshika:3,mimamsa:4,vedanta:5,vedas:6};
+  btns[map[id]].classList.add('active');
+  if(!document.getElementById(id)._built){
+    builders[id]();
+    document.getElementById(id)._built=true;
+  }
+}
+
+function toggleBranch(id,el){
+  const body=document.getElementById(id);
+  const open=body.classList.toggle('open');
+  el.classList.toggle('open',open);
+}
+function toggleDetail(id,ev){
+  ev.stopPropagation();
+  const p=document.getElementById('d'+id);
+  if(p)p.classList.toggle('open');
+}
+
+// ─── BUILDERS — each system builds itself lazily ──────────────────────────────
+const builders={};
+builders.mimamsa=function(){
+const secs=[
+{tab:"Adhyāya 1 — Dharma & Authority",title:"Adhyāya 1 — The Nature of Dharma and Vedic Authority",sub:"MS 1.1.1–1.1.32 · What is dharma? What makes the Veda valid?",
+intro:"Jaimini opens with the most fundamental question in Mīmāṃsā: what is dharma, and how can we know it? His answer — dharma is the prescriptive content of Vedic injunctions, known exclusively through those injunctions — immediately raises the question of the Veda's authority. The Veda cannot derive its authority from God (as Nyāya holds) because there is no God in Mīmāṃsā's ontology; it cannot derive authority from the tradition's acceptance of it (circular). Jaimini's solution: the Veda is eternal, authorless, and self-validating — its authority is intrinsic.",
+legend:[{c:C.amber,t:"Dharma/Duty"},{c:C.blue,t:"Vedic Authority"},{c:C.teal,t:"Injunctions"},{c:C.purple,t:"Epistemology"},{c:C.coral,t:"Ritual"},{c:C.green,t:"Soteria"}],
+branches:[
+{name:"Definition of Dharma",ref:"MS 1.1.1–1.1.5",color:C.amber,children:[
+{n:"Athāto dharmajijñāsā",r:"1.1.1",d:"Now, therefore, the desire to know dharma",
+det:{skt:"अथातो धर्मजिज्ञासा",tr:"Now, therefore, (begins) the desire to know dharma.",
+c:"The opening sūtra (parallel to Patañjali's 'atha yogānuśāsanam' and Bādarāyaṇa's 'athāto brahmajijñāsā') announces a formal inquiry. <em>Atha</em> implies prior preparation: the student has mastered the Vedas and their auxiliaries (vedāṅgas) and is now ready for the higher-order inquiry into the nature and scope of dharma. <em>Dharma</em> is the subject of inquiry — not God, not the self, not consciousness, but the normative content of Vedic injunctions: what ought to be done.",
+sbt:"Śabara's Bhāṣya: 'atha' (now) marks the beginning of a new, formal inquiry following the mastery of preliminary knowledge. The jijñāsā (desire to know) is not mere curiosity but a motivated inquiry with liberation as its ultimate purpose — understanding dharma fully leads to its proper performance, which leads to the highest good.",
+kum:"Kumārila Bhaṭṭa: the priority of dharma-inquiry over brahma-inquiry (Vedānta's project) is Mīmāṃsā's foundational claim. The Vedic injunctions (vidhis) are the primary content of the Veda; the Upaniṣads' philosophical statements are auxiliary — they serve to motivate the performance of injunctions by revealing the nature of the self that performs them."}},
+{n:"Codanālakṣaṇo'rtho dharmaḥ",r:"1.1.2",d:"Dharma is that which is indicated by a Vedic injunction as the thing to be accomplished",
+det:{skt:"चोदनालक्षणोऽर्थो धर्मः",tr:"Dharma is the thing (artha) whose characteristic mark is a Vedic injunction (codanā).",
+c:"The formal definition of dharma: dharma is whatever is prescribed (coditā — marked out, enjoined) by a Vedic injunction. This definition is at once epistemological and ontological: epistemologically, the Veda is the only means of knowing dharma (it cannot be perceived or inferred); ontologically, dharma is constituted by the prescriptive content of Vedic injunctions — it is not an independent moral fact that the Veda merely describes. Dharma = 'what the Veda prescribes' — not 'what is independently good, which the Veda happens to report.'",
+sbt:"Śabara: the word <em>codanā</em> specifically means an injunctive verbal form in the Veda — not a descriptive statement (arthavāda) or a name (nāmadheya) or an explanatory passage. The injunction 'one desiring heaven should sacrifice with the Agniṣṭoma' is a codanā; the explanation 'Indra killed Vṛtra with the vajra' is arthavāda (subsidiary discourse supporting the injunction).",
+kum:"Kumārila: dharma is known only through Vedic injunctions because it concerns supersensible actions and their supersensible results (like the heavenly fruit of sacrifice). No perception, inference, or comparison can access these — the Veda is the unique epistemic pathway to dharmic knowledge.",
+prb:"Prabhākara: the definition is precise. 'Thing' (artha) indicates that dharma is not just a relation but an objective state of affairs — the performance of the prescribed action. 'Characteristic mark is a Vedic injunction' (codanālakṣaṇa) indicates that the Vedic injunction is both the means of knowing dharma and what makes dharma dharma — there is no dharma independent of the Vedic prescription."}},
+{n:"Svataḥ prāmāṇya — Intrinsic Validity of the Veda",r:"1.1.2–1.1.5",d:"The Veda is self-validating — its authority is intrinsic, not derived from any external source",
+det:{c:"Mīmāṃsā's most controversial and most influential epistemological doctrine: <em>svataḥ prāmāṇyavāda</em> — the theory of intrinsic validity. Every cognition, including every Vedic statement, is inherently valid until and unless specifically contradicted. Validity does not need to be established from outside; it is the default. Invalidity (aprāmāṇya) must be established from outside — by a contradicting cognition or by the discovery of defects in the knowing instrument. Applied to the Veda: the Veda is valid because no defeater has ever been found for any of its injunctions. Its validity is intrinsic and eternal.",
+sbt:"Śabara: the Veda is apauruṣeya (authorless) and nitya (eternal). Because it was not composed by any person, it cannot have the defects of human knowledge (error, bias, memory failure, deception). Its validity is therefore underwritten by the absence of the causes of invalidity — not by positive external certification.",
+kum:"Kumārila's detailed elaboration in the Ślokavārttika: cognitions are self-illuminating (svayamprakāśa) with respect to their content; they are not self-illuminating with respect to their validity. Validity is established by the absence of defeaters — which in ordinary cognitions must be verified but in the Veda requires no verification since the Veda, being eternal and authorless, can have no defeaters in principle.",
+prb:"Prabhākara's variant: svataḥ prāmāṇya means that cognitions do not require external validation of their validity — their validity is assumed from the moment of their occurrence. This is not uncritical dogmatism but rational default trust: in the absence of specific reason to distrust a cognition, we proceed as if it is valid. The burden of proof lies always with those who claim invalidity."}}
+]},
+{name:"The Veda — Nitya and Apauruṣeya",ref:"MS 1.1.5–1.1.32",color:C.blue,children:[
+{n:"Eternality of the Veda — Nityatva",r:"1.1.18–1.1.32",d:"The Veda is eternal because its words bear an eternal, uncaused relation to their meanings",
+det:{skt:"औत्पत्तिकस्तु शब्दस्यार्थेन सम्बन्धः",tr:"But the relation of the (Vedic) word to its meaning is natural/original (autpattika) — (not made by convention).",
+c:"Mīmāṃsā's most contested linguistic claim: the word-meaning relation is not conventional (āupādhika) — not established by any speaker's act of naming — but natural and eternal (autpattika, āmnāya — received from the beginning). This 'natural' relation means: the phoneme 'g-o' has always and necessarily referred to the category of cows, not because anyone decided so, but because this is simply how language is. The implication: if the word-meaning relation is eternal, the Vedic sentences that express eternal injunctions are themselves not produced by any author — they are eternal expressions of eternal meanings.",
+sbt:"Śabara: the eternality of the word-meaning relation is established by the fact that we learn words and their meanings by hearing — not by witnessing an original act of naming. Children learn language by hearing it used; this suggests that the relation precedes any particular use and any particular user.",
+kum:"Kumārila: the phoneme (varṇa) is the primary carrier of meaning, not the physical sound-token (nāda). Phonemes are eternal types — the abstract phoneme 'k' that is 'manifested' (abhivyakta) by any particular utterance of 'k'. Because phoneme-types are eternal, the words composed of them are eternal, and the Vedic sentences composed of these words are eternal.",
+prb:"Prabhākara: adds that the eternality of the phoneme is confirmed by the phenomenon of recognition (pratyabhijñā). When I hear the word 'cow' spoken by different people at different times, I recognise it as the same word — not just a similar one. Recognition of identity requires an eternal, numerically identical object of recognition — the eternal phoneme-type."}}
+]}
+]},
+{tab:"Adhyāya 2-3 — Injunctions",title:"Adhyāya 2–3 — Types of Vedic Injunctions",sub:"MS 2.1–3.8 · Vidhi, Niyama, Parisaṃkhyā — The taxonomy of Vedic prescription",
+intro:"Mīmāṃsā develops an elaborate taxonomy of Vedic injunctions (vidhis) to handle the apparent contradictions and redundancies in the vast Vedic corpus. Understanding which type of injunction a given Vedic statement is determines how it functions normatively — whether it prescribes a new action, restricts alternatives, or excludes options.",
+legend:[{c:C.coral,t:"Vidhi Types"},{c:C.teal,t:"Qualifications"},{c:C.amber,t:"Sacrifice"},{c:C.blue,t:"Hermeneutics"}],
+branches:[
+{name:"Four Types of Vidhi",ref:"MS 2.1.1–2.1.18",color:C.coral,children:[
+{n:"Utpattividhi, Viniyogavidhi, Prayogavidhi, Adhikāravidhi",r:"MS 2.1.1–2.1.18",d:"Four types of Vedic injunction: originating, applying, procedural, qualifying",
+det:{c:"Mīmāṃsā recognises four types of prescriptive injunction: (1) <em>Utpattividhi</em> (originating injunction): the primary injunction that prescribes a new action entirely — e.g., 'One desiring heaven should sacrifice with the Agniṣṭoma.' This creates an entirely new obligatory action where none was previously known. (2) <em>Viniyogavidhi</em> (applicatory injunction): prescribes which subsidiary element belongs to which main rite — e.g., 'One should use this mantra in this ritual context.' (3) <em>Prayogavidhi</em> (procedural injunction): specifies the sequence in which actions within a ritual are to be performed. (4) <em>Adhikāravidhi</em> (qualificatory injunction): specifies who is qualified (adhikārin) to perform a given rite — e.g., 'The Brahmin who desires heaven should sacrifice' qualifies Brahmins with the desire for heaven as the proper performers.",
+sbt:"Śabara: the distinction between utpattividhi and viniyogavidhi is crucial because it determines whether a given element of the ritual is independently prescribed or merely subordinate to a main prescription. Getting this wrong leads to either under-performance (omitting an independently required element) or over-performance (treating a viniyoga as an independent utpatti).",
+kum:"Kumārila: the adhikāravidhi is the basis of Mīmāṃsā's social philosophy. Not all persons are qualified for all rites — the Vedic qualification (adhikāra) system specifies the competencies required for each category of ritual. This is not mere social hierarchy (as critics claim) but a functional assignment: different rites require different types of qualification (desire for a specific result, membership in a specific social category, ritual purity, etc.)."}},
+{n:"Arthavāda — Subsidiary Explanatory Passages",r:"MS 1.2.1–1.2.18",d:"Arthavāda passages are not injunctions — they are supportive commentary that motivates the injunctions",
+det:{skt:"विधिना त्वेकवाक्यत्वादर्थवादस्तदाश्रितः",tr:"Because of unity of sentence with the injunction, the arthavāda is dependent on it.",
+c:"<em>Arthavāda</em> is a major category of Vedic text distinct from injunctions. These are passages that praise an action ('By this sacrifice, Indra obtained the sovereignty of heaven'), condemn an alternative ('He who does not sacrifice falls into the abyss'), or explain the background ('Prajāpati offered this sacrifice at the beginning of creation'). They are not themselves injunctions — they do not prescribe anything independently. They function to motivate the performance of the injunctions by providing reasons, praise, and warnings.",
+sbt:"Śabara: arthavāda passages are not false (the Vedic statements are not incorrect) but they are not literally accurate descriptions of events either. They are 'true' in the sense that they correctly characterise the normative status of actions — praising what is good (prescribed), condemning what is bad (prohibited). They are rhetorical support for the injunctions, not independent factual claims.",
+kum:"Kumārila: arthavāda's complex relationship to injunctions is Mīmāṃsā's answer to the apparent contradiction between Vedic narratives (describing events in the past, e.g., 'Indra killed Vṛtra') and Vedic injunctions (prescribing future actions). The narratives are in the service of the prescriptions — they motivate rather than inform.",
+prb:"Prabhākara: arthavāda is an independent species of valid Vedic cognition — it produces what Prabhākara calls 'codanā-janya-jñāna' (cognition born from prescriptive force). Even arthavāda passages, properly understood, carry a kind of prescriptive meaning — the praise of an action is equivalent to a weak prescription of it."}}
+]},
+{name:"Adhikāra — Qualification for Ritual",ref:"MS 6.1.1–6.1.38",color:C.amber,children:[
+{n:"Three Conditions of Adhikāra",r:"MS 6.1.1",d:"Desire for the result, capacity, and scriptural prescription — the three conditions for ritual qualification",
+det:{c:"To be a valid performer (adhikārin) of a Vedic rite, a person must meet three conditions: (1) <em>Phale abhilāṣa</em> — genuine desire for the specific result of the rite (e.g., genuine desire for heaven motivates the Agniṣṭoma). (2) <em>Sāmarthya</em> — practical capacity to perform the rite (physical, financial, ritual — the rite's requirements are met). (3) <em>Vidhisambandhana</em> — being mentioned in the prescriptive injunction either explicitly or by inference.",
+sbt:"Śabara: the first condition (desire for the result) is the most important. The Vedic injunctions are hypothetical imperatives: 'If you desire X, you should do Y.' A person who does not desire heaven is not obligated by the Agniṣṭoma injunction. But the nityakarmas (daily obligatory rites like the morning prayer) are categorical: they are prescribed regardless of specific result-desires.",
+kum:"Kumārila: the adhikāra framework explains why Mīmāṃsā is not moral absolutism — it is a sophisticated system of conditional obligations. The categoricality of nityakarmas arises not from an independent moral fact but from the structure of the injunction: the prescription's domain includes all who belong to a certain social-ritual category (like 'all Brahmins')."}},
+{n:"Nityakarma, Naimittika, Kāmya — Obligatory, Occasional, Optional Rites",r:"MS",d:"Three categories of Vedic action by obligatory force",
+det:{c:"(1) <em>Nityakarma</em> (obligatory, daily rites): rites that are absolutely required regardless of specific desire for their result — e.g., the Sandhyāvandana (daily prayers), the Agnihotra (daily fire offering). Non-performance of nityakarmas generates sin (adharma); performance generates no merit (dharma) beyond the avoidance of sin. (2) <em>Naimittika</em> (occasional, circumstantial rites): rites prescribed for specific occasions (birth, marriage, death, eclipses) — their performance is obligatory when the occasion arises. (3) <em>Kāmya</em> (optional, desire-based rites): rites performed only when a person desires a specific result (the Agniṣṭoma for heaven, the Putrakāmeṣṭi for a son). Non-performance of kāmya rites generates no sin — only the sacrifice of the desired result.",
+sbt:"Śabara: the tripartite distinction is fundamental to practical Mīmāṃsā (the branch concerned with telling people what they must, may, and need not do). The nityakarma-adharma connection is Mīmāṃsā's version of moral necessity: certain actions are necessary not because of their results but because omitting them produces a deficit in one's ritual standing.",
+kum:"Kumārila: the kāmya rites are prescribed by hypothetical imperatives (if...then) but their prescriptions are nonetheless genuinely Vedic and genuinely obligatory for those who fit the conditions. The conditionality does not make the obligation fictional or merely advisory — it makes it appropriately conditional."}}
+]}
+]},
+{tab:"Adhyāya 6-7 — Śabdanaya",title:"Adhyāya 6–7 — Theory of Meaning and Sentence-Understanding",sub:"MS 6.1 · How Vedic sentences generate dharmic knowledge",
+intro:"The core of Mīmāṃsā's philosophy of language: how do Vedic sentences communicate prescriptive content? The theory of how words generate sentence-meaning (akhyāti or anyathākhyāti, the nature of error) and the debate between Kumārila and Prabhākara on sentence-meaning are among the most sophisticated contributions to Indian philosophy of language.",
+legend:[{c:C.blue,t:"Philosophy of Language"},{c:C.purple,t:"Semantics"},{c:C.teal,t:"Pramāṇa Theory"},{c:C.amber,t:"Error Theory"}],
+branches:[
+{name:"Theory of Error — Khyātivāda",ref:"Ślokavārttika",color:C.purple,children:[
+{n:"Anyathākhyāti — Kumārila's Theory of Error",r:"Ślokavārttika",d:"Error is the misapprehension of one real thing as another real thing — a relational mistake, not a creation of the unreal",
+det:{c:"The debate on the nature of perceptual error is one of classical Indian philosophy's most refined. The problem: in the classic case of 'shell appearing as silver,' what exactly goes wrong? Three theories: (1) Buddhist asatkhyāti (apprehension of the non-existent): the silver that appears is unreal, a product of pure mental construction. (2) Advaita Vedānta anirvacanīyakhyāti (apprehension of the indescribable): the apparent silver is neither real (it is contradicted by the correcting cognition) nor unreal (it appears). (3) Nyāya-Vaiśeṣika anyathākhyāti (misapprehension): the silver seen in the shell is real silver — but it is seen in the wrong place. The error consists in a relational mistake, not in seeing something unreal. Kumārila endorses anyathākhyāti: the illusory silver is real silver (elsewhere, perhaps in one's memory), being misattributed to the shell by a defective cognitive process.",
+sbt:"Śabara's foundational analysis: error is a real cognitive event — it is not the mere absence of correct cognition. This has implications for svataḥ prāmāṇya: errors are valid cognitions with respect to their content but are rendered invalid by external contradiction. The silver-cognition is valid in itself; its invalidity is established by the subsequent 'this is shell' cognition.",
+kum:"Kumārila's Anyathākhyāti has a subtle implication for Mīmāṃsā's theory of Vedic validity: the Vedic cognitions (produced by eternal, authorless injunctions) can have no external contradicting cognition — their invalidity cannot be established by any means. Their validity, being intrinsic and unchallenged, is therefore permanent. Svataḥ prāmāṇya + anyathākhyāti together form an unassailable defence of Vedic authority."}}
+]},
+{name:"Word-Meaning and Sentence-Meaning",ref:"Ślokavārttika & Bṛhatī",color:C.blue,children:[
+{n:"Śabdanityatva — Eternality of the Phoneme",r:"Ślokavārttika",d:"The phoneme-type is eternal — individual utterances only manifest it, not create it",
+det:{c:"Mīmāṃsā's claim: the Vedic word (śabda) is eternal (nitya). What is 'eternal' here? Not the physical sound-token (nāda) — which is obviously impermanent — but the phoneme-type (varṇa) — the abstract, repeatable entity 'the sound k,' 'the sound a,' etc. These phoneme-types are eternal, not produced by anyone, and their combinations into words and sentences are therefore also eternal. This is the basis of the Veda's apauruṣeyatva: since the Vedic words are eternal and not produced by anyone, the Veda as a collection of these eternal words is itself eternal and without author.",
+sbt:"Śabara's argument for the eternality of the phoneme: when different people utter the word 'cow' (go), we hear it as the same word — not because they are producing identical sound-waves but because they are 'manifesting' the same eternal phoneme-type. The phoneme-type 'g' is one and eternal; individual utterances only manifest it, they do not create it.",
+kum:"Kumārila against the Buddhist theory of the phoneme as momentary: if each utterance of 'g' produced a numerically distinct, momentary phoneme-token, then the different utterances of 'go' would be different words — communication would be impossible. The fact that communication succeeds across different speakers and times proves the existence of an eternal, repeatable phoneme-type.",
+prb:"Prabhākara's variant: the eternality of the phoneme is established not just by the recurrence-argument but by the nature of recognition (pratyabhijñā). When I hear the same sentence again, I recognise it as the same sentence — not as a qualitatively similar but numerically distinct sequence. Recognition of identity (not merely similarity) requires an eternal identical entity to be recognised."}},
+{n:"Abhihitānvaya vs Ānvitābhidhāna",r:"Ślokavārttika / Bṛhatī",d:"How does the unified sentence-meaning arise from individual word-meanings?",
+det:{c:"Two competing theories of sentence-meaning: (1) Kumārila's <em>Abhihitānvaya</em> (combination of individually expressed meanings): the individual words express their meanings separately, and the sentence-meaning is then grasped as a combination of these separately expressed meanings. The unity of the sentence-meaning is produced by a secondary mental act of combination (anvaya). (2) Prabhākara's <em>Ānvitābhidhāna</em> (expression of meanings in their relation): words directly express their meanings-as-already-related — the individual word 'bring' does not mean 'bring' in isolation but 'bring-as-related-to-an-object.' The relation is primary, not secondary.",
+sbt:"Śabara's foundational analysis: the sentence-meaning is the unified action-complex expressed by the main verb — the action (kriyā), its agent (kartā), its object (karma), and the qualifications of each. The injunctive Vedic sentence expresses a unified complex of obligation — not a sum of separate word-meanings.",
+kum:"Kumārila: the primary carrier of meaning is the word (pada); the sentence-meaning is derived from the individual word-meanings through the operation of three factors — ākāṅkṣā (mutual expectation of words for completion), yogyatā (semantic compatibility), and āsatti (proximity/contiguity). Only when these three conditions are satisfied does the sentence generate a unified cognition.",
+prb:"Prabhākara: word-meanings are always relational — a word never expresses an isolated meaning but always a meaning-as-related-to-others. This is more consistent with the actual experience of understanding sentences, where we do not first grasp isolated meanings and then combine them but grasp the relational structure directly. Prabhākara's position anticipates structural linguistics' emphasis on the primacy of syntactic relations over isolated lexical meanings."}}
+]}
+]}
+];
+buildSubNav(secs,'mimamsa',renderSection);
+};
+// ═══════════════════════════════════════════════════════════════════
+// VEDĀNTA — 108 Upaniṣads with Commentaries
+// Śaṅkara Bhāṣya (Advaita), Rāmānuja Śrī-Bhāṣya (Viśiṣṭādvaita),
+// Madhva Anuvyākhyāna (Dvaita)
+// ═══════════════════════════════════════════════════════════════════
+
+// ── Init ──
+builders.mimamsa();
+</script>
+</body>
+</html>

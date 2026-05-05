@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ṣaḍdarśana — Six Orthodox Systems of Indian Philosophy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Warm parchment palette */
+  --bg:#F5EDDC;
+  --bg-card:#EFE3CC;
+  --bg-panel:#E8D9BC;
+  --bg-deep:#FBF6EA;
+  --text-primary:#2A1D0E;
+  --text-secondary:#4F3D26;
+  --text-muted:#8A7553;
+  --border:#C9B587;
+  --border-light:#DCCBA3;
+  --gold:#9C6F2A;
+  --gold-light:#C49344;
+  --shadow:0 1px 3px rgba(120,80,30,.08), 0 4px 12px rgba(120,80,30,.04);
+  --shadow-lg:0 4px 16px rgba(120,80,30,.10), 0 12px 32px rgba(120,80,30,.06);
+  --radius:7px;--radius-lg:12px;
+  --font-body:'Lora',Georgia,'Times New Roman',serif;
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-mono:'JetBrains Mono','Inconsolata','Courier New',monospace;
+
+  /* System accents — each system gets its own warm hue */
+  --sys-yoga:#B8501F;        /* terracotta */
+  --sys-yoga-bg:#F8E6D4;     /* yoga panel tint */
+  --sys-yoga-deep:#9F4218;
+  --sys-samkhya:#8C5A2B;     /* burnt sienna */
+  --sys-samkhya-bg:#F2E1C8;
+  --sys-samkhya-deep:#73471F;
+  --sys-nyaya:#6B6428;       /* olive gold */
+  --sys-nyaya-bg:#EDE6C5;
+  --sys-nyaya-deep:#534D1D;
+  --sys-vaisheshika:#5C7048; /* sage */
+  --sys-vaisheshika-bg:#E5E8CF;
+  --sys-vaisheshika-deep:#445335;
+  --sys-mimamsa:#A03E3E;     /* deep red-clay */
+  --sys-mimamsa-bg:#F5DCD4;
+  --sys-mimamsa-deep:#7E2E2E;
+  --sys-vedanta:#7A4980;     /* aubergine */
+  --sys-vedanta-bg:#EDDDE6;
+  --sys-vedanta-deep:#5C3563;
+  --sys-vedas:#9C6F2A;       /* warm gold */
+  --sys-vedas-bg:#F3E4C2;
+  --sys-vedas-deep:#7A551E;
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#1B140A;
+  --bg-card:#251B0E;
+  --bg-panel:#2E2213;
+  --bg-deep:#15100A;
+  --text-primary:#F2EAD8;
+  --text-secondary:#D5C7A9;
+  --text-muted:#9A876A;
+  --border:#4A3920;
+  --border-light:#352818;
+  --gold:#D4A152;
+  --gold-light:#9C6F2A;
+  --shadow:0 1px 3px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+  --shadow-lg:0 4px 16px rgba(0,0,0,.5), 0 12px 32px rgba(0,0,0,.3);
+
+  --sys-yoga:#E07A45;        --sys-yoga-bg:#2D1B0E;       --sys-yoga-deep:#F0996B;
+  --sys-samkhya:#C18A50;     --sys-samkhya-bg:#291C0E;    --sys-samkhya-deep:#D9A66B;
+  --sys-nyaya:#B5A852;       --sys-nyaya-bg:#252210;      --sys-nyaya-deep:#D4C870;
+  --sys-vaisheshika:#9CB07A; --sys-vaisheshika-bg:#1F2615;--sys-vaisheshika-deep:#B8CB94;
+  --sys-mimamsa:#D86B6B;     --sys-mimamsa-bg:#2A1313;    --sys-mimamsa-deep:#E89090;
+  --sys-vedanta:#B17BB8;     --sys-vedanta-bg:#241A26;    --sys-vedanta-deep:#CB9CCF;
+  --sys-vedas:#D4A152;       --sys-vedas-bg:#291F0F;      --sys-vedas-deep:#E8BD70;
+}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-body);
+  background:var(--bg);
+  background-image:
+    radial-gradient(at 20% 10%, rgba(196,147,68,.08) 0%, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(156,111,42,.06) 0%, transparent 50%);
+  background-attachment:fixed;
+  color:var(--text-primary);
+  min-height:100vh;
+  font-feature-settings:"liga" 1,"kern" 1;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+#shell{max-width:880px;margin:0 auto;padding:32px 20px 100px}
+
+/* HEADER */
+.site-header{text-align:center;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+.site-header .eyebrow{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:500}
+.site-header h1{font-family:var(--font-display);font-size:2.4rem;font-weight:500;color:var(--text-primary);line-height:1.2;margin-bottom:6px;letter-spacing:-.01em}
+.site-header .subtitle{font-family:var(--font-display);font-size:14px;color:var(--text-muted);font-style:italic;letter-spacing:.02em}
+
+/* TOP NAV — systems */
+.top-nav{
+  display:flex;gap:4px;flex-wrap:wrap;
+  background:var(--bg-card);
+  padding:5px;
+  border-radius:var(--radius-lg);
+  border:1px solid var(--border);
+  margin-bottom:28px;
+  box-shadow:var(--shadow);
+}
+.top-nav button{
+  flex:1;min-width:96px;
+  padding:11px 8px;
+  font-family:var(--font-mono);
+  font-size:10px;letter-spacing:.06em;
+  border:none;background:transparent;
+  color:var(--text-muted);
+  cursor:pointer;
+  border-radius:8px;
+  transition:all .18s ease;
+  line-height:1.4;text-align:center;
+  font-weight:500;
+  border-bottom:2.5px solid transparent;
+}
+.top-nav button:hover{color:var(--text-secondary);background:var(--bg-deep)}
+.top-nav button.active{
+  background:var(--bg-deep);
+  color:var(--text-primary);
+  font-weight:600;
+  box-shadow:0 1px 4px rgba(120,80,30,.15);
+}
+/* per-system accent color on active button */
+.top-nav button[data-sys="yoga"].active        {border-bottom-color:var(--sys-yoga)}
+.top-nav button[data-sys="samkhya"].active     {border-bottom-color:var(--sys-samkhya)}
+.top-nav button[data-sys="nyaya"].active       {border-bottom-color:var(--sys-nyaya)}
+.top-nav button[data-sys="vaisheshika"].active {border-bottom-color:var(--sys-vaisheshika)}
+.top-nav button[data-sys="mimamsa"].active     {border-bottom-color:var(--sys-mimamsa)}
+.top-nav button[data-sys="vedanta"].active     {border-bottom-color:var(--sys-vedanta)}
+.top-nav button[data-sys="vedas"].active       {border-bottom-color:var(--sys-vedas)}
+
+/* SYSTEM PANEL — each system has its own warm tinted backdrop */
+.system-panel{display:none;padding:22px 22px 24px;border-radius:var(--radius-lg);box-shadow:var(--shadow)}
+.system-panel.active{display:block}
+.system-panel#yoga        {background:var(--sys-yoga-bg);        --accent:var(--sys-yoga);        --accent-deep:var(--sys-yoga-deep)}
+.system-panel#samkhya     {background:var(--sys-samkhya-bg);     --accent:var(--sys-samkhya);     --accent-deep:var(--sys-samkhya-deep)}
+.system-panel#nyaya       {background:var(--sys-nyaya-bg);       --accent:var(--sys-nyaya);       --accent-deep:var(--sys-nyaya-deep)}
+.system-panel#vaisheshika {background:var(--sys-vaisheshika-bg); --accent:var(--sys-vaisheshika); --accent-deep:var(--sys-vaisheshika-deep)}
+.system-panel#mimamsa     {background:var(--sys-mimamsa-bg);     --accent:var(--sys-mimamsa);     --accent-deep:var(--sys-mimamsa-deep)}
+.system-panel#vedanta     {background:var(--sys-vedanta-bg);     --accent:var(--sys-vedanta);     --accent-deep:var(--sys-vedanta-deep)}
+.system-panel#vedas       {background:var(--sys-vedas-bg);       --accent:var(--sys-vedas);       --accent-deep:var(--sys-vedas-deep)}
+
+/* SUB NAV — padas / books / adhyayas */
+.sub-nav{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:22px}
+.sub-nav button{
+  padding:8px 14px;
+  font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;font-weight:500;
+  border:1px solid transparent;
+  background:rgba(255,255,255,.35);
+  color:var(--text-muted);
+  cursor:pointer;border-radius:var(--radius);
+  transition:all .15s;
+}
+.sub-nav button:hover{color:var(--text-secondary);background:rgba(255,255,255,.6);border-color:var(--border-light)}
+.sub-nav button.active{
+  background:var(--accent,var(--gold));
+  color:#FBF6EA;
+  font-weight:600;
+  border-color:var(--accent-deep,var(--gold));
+  box-shadow:0 1px 3px rgba(120,80,30,.2);
+}
+
+/* SECTION TITLE */
+.sec-title{
+  font-family:var(--font-display);
+  font-size:1.7rem;font-weight:500;
+  color:var(--accent-deep,var(--text-primary));
+  margin-bottom:3px;letter-spacing:-.005em;
+}
+.sec-sub{
+  font-family:var(--font-mono);
+  font-size:10.5px;color:var(--text-muted);
+  letter-spacing:.06em;margin-bottom:18px;font-weight:500;
+}
+
+/* INTRO CARD */
+.intro-card{
+  padding:16px 20px;margin-bottom:22px;
+  background:var(--bg-deep);
+  border-radius:var(--radius-lg);
+  font-size:14.5px;line-height:1.78;
+  color:var(--text-secondary);
+  border-left:3px solid var(--accent,var(--gold));
+  box-shadow:var(--shadow);
+}
+.intro-card strong{font-weight:600;color:var(--text-primary)}
+.intro-card em{color:var(--accent-deep,var(--text-primary));font-style:italic;font-weight:500}
+
+/* LEGEND */
+.legend{display:flex;gap:8px 18px;flex-wrap:wrap;margin-bottom:20px;font-family:var(--font-mono);font-size:10.5px;color:var(--text-muted);letter-spacing:.03em;font-weight:500;padding:10px 14px;background:rgba(255,255,255,.3);border-radius:var(--radius)}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend .ld{width:9px;height:9px;border-radius:50%;flex-shrink:0;opacity:.9;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}
+
+/* TREE */
+.tree{display:flex;flex-direction:column;gap:6px;margin-bottom:24px}
+
+/* BRANCH */
+.branch{
+  border-radius:var(--radius-lg);
+  background:var(--bg-deep);
+  border:1px solid var(--border-light);
+  overflow:hidden;
+  transition:all .18s;
+  box-shadow:var(--shadow);
+}
+.branch:hover{border-color:var(--border)}
+.branch-head{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 16px;
+  cursor:pointer;user-select:none;
+  background:var(--bg-deep);
+  transition:background .14s;
+}
+.branch-head:hover{background:var(--bg-card)}
+.branch-head .dot{
+  width:10px;height:10px;border-radius:50%;
+  flex-shrink:0;opacity:.9;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.1);
+}
+.branch-head .label{
+  font-family:var(--font-display);
+  font-size:1.05rem;font-weight:600;
+  color:var(--text-primary);flex:1;
+  letter-spacing:.005em;
+}
+.branch-head .ref{
+  font-family:var(--font-mono);
+  font-size:10.5px;color:var(--accent-deep,var(--text-muted));
+  letter-spacing:.05em;font-weight:500;
+}
+.branch-head .chev{
+  font-size:10px;color:var(--text-muted);
+  transition:transform .22s ease;flex-shrink:0;
+}
+.branch-head.open .chev{transform:rotate(90deg)}
+.branch-body{
+  display:none;
+  padding:10px 16px 16px 36px;
+  background:var(--bg-deep);
+  border-top:1px solid var(--border-light);
+}
+.branch-body.open{display:block}
+
+/* SUB-TREE */
+.sub-tree{margin:9px 0 5px;padding-left:14px;border-left:2px solid var(--accent,var(--border))}
+.sub-label{
+  font-family:var(--font-mono);
+  font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--accent-deep,var(--text-muted));
+  margin:9px 0 5px;font-weight:600;
+}
+
+/* LEAF */
+.leaf{
+  display:flex;align-items:flex-start;gap:9px;
+  padding:8px 10px 8px 6px;
+  cursor:pointer;
+  border-radius:var(--radius);
+  transition:background .12s;
+  margin:2px 0;
+}
+.leaf:hover{background:var(--bg-card)}
+.leaf .lf-dot{
+  width:6px;height:6px;border-radius:50%;
+  flex-shrink:0;margin-top:9px;opacity:.65;
+}
+.leaf-content{flex:1;min-width:0}
+.leaf .lf-name{
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:1.05rem;font-weight:500;
+  color:var(--text-primary);
+}
+.leaf .lf-ref{
+  font-family:var(--font-mono);
+  font-size:10.5px;color:var(--accent-deep,var(--text-muted));
+  margin-left:7px;font-weight:500;
+}
+.leaf .lf-skt{
+  font-family:var(--font-body);
+  font-size:13px;color:var(--text-muted);
+  font-style:italic;display:block;margin-top:2px;
+}
+.leaf .lf-desc{
+  font-family:var(--font-body);
+  font-size:13.5px;color:var(--text-secondary);
+  line-height:1.65;margin-top:3px;
+}
+.leaf .lf-expand{
+  font-family:var(--font-mono);
+  font-size:9.5px;color:var(--text-muted);
+  margin-top:5px;letter-spacing:.05em;
+  opacity:.75;font-weight:500;
+}
+
+/* DETAIL PANEL */
+.detail-panel{
+  display:none;
+  margin-top:11px;
+  padding:16px 18px;
+  background:var(--bg-deep);
+  border-radius:var(--radius-lg);
+  border-left:3px solid var(--accent,var(--gold));
+  box-shadow:var(--shadow);
+}
+.detail-panel.open{display:block}
+.detail-section{margin-bottom:13px}
+.detail-section:last-child{margin-bottom:0}
+.detail-label{
+  font-family:var(--font-mono);
+  font-size:9.5px;text-transform:uppercase;
+  letter-spacing:.14em;color:var(--accent-deep,var(--text-muted));
+  margin-bottom:5px;font-weight:600;
+}
+.detail-text{
+  font-family:var(--font-body);
+  font-size:14.5px;color:var(--text-primary);
+  line-height:1.78;
+}
+.detail-text em{color:var(--accent-deep,var(--text-primary));font-style:italic;font-weight:600}
+.skt-block{
+  font-family:var(--font-body);
+  font-size:14px;font-style:italic;
+  color:var(--text-secondary);
+  padding:11px 15px;
+  background:var(--bg-card);
+  border-radius:var(--radius);
+  margin-bottom:10px;line-height:1.75;
+  border-left:2px solid var(--accent,var(--border));
+}
+.commentaries-wrap{display:flex;flex-direction:column;gap:9px;margin-top:6px}
+.detail-commentary{
+  padding:11px 14px;
+  background:var(--bg-card);
+  border-radius:var(--radius);
+  border:1px solid var(--border-light);
+  border-top:2px solid var(--accent,var(--gold));
+}
+.com-name{
+  font-family:var(--font-mono);
+  font-size:9.5px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent-deep,var(--gold));margin-bottom:4px;
+}
+.com-text{
+  font-family:var(--font-body);
+  font-size:13.5px;color:var(--text-secondary);
+  line-height:1.72;
+}
+.com-text em{font-style:italic;font-weight:600;color:var(--text-primary)}
+
+/* mobile tweaks */
+@media (max-width:600px){
+  html{font-size:16px}
+  #shell{padding:20px 14px 80px}
+  .system-panel{padding:16px 14px 18px}
+  .site-header h1{font-size:1.9rem}
+  .branch-body{padding:10px 12px 14px 22px}
+  .top-nav button{min-width:70px;font-size:9.5px;padding:9px 5px}
+}
+</style>
+</head>
+<body>
+<div id="shell">
+<header class="site-header">
+  <div class="eyebrow">c. 1500–500 BCE · Four Saṃhitās</div>
+  <h1>The Vedas — Complete Map</h1>
+  <div class="subtitle">Ṛgveda · Sāmaveda · Yajurveda · Atharvaveda · Key Hymns &amp; Upaniṣads</div>
+</header>
+<div id="vedas" class="system-panel active"></div>
+</div>
+<script>
+'use strict';
+const C={
+  purple:'#7F77DD',teal:'#1D9E75',coral:'#D85A30',pink:'#D4537E',
+  blue:'#378ADD',amber:'#EF9F27',green:'#639922',red:'#E24B4A',
+  gray:'#888780',indigo:'#5B6FBB',rose:'#C25B7A',ochre:'#B87333',
+  sage:'#6B8A6B',slate:'#5E7080',plum:'#8B5A8B',sienna:'#A05030'
+};
+
+// ─── Shared render helpers ────────────────────────────────────────────────────
+function safeHtml(s){return s||'';}
+
+function renderDetail(d,color,id){
+  if(!d)return'';
+  let h=`<div class="detail-panel" id="d${id}" style="--accent:${color}">`;
+  if(d.skt){h+=`<div class="skt-block">${safeHtml(d.skt)}</div>`;}
+  if(d.tr){h+=`<div class="detail-section"><div class="detail-label">Translation</div><div class="detail-text">${safeHtml(d.tr)}</div></div>`;}
+  if(d.c){h+=`<div class="detail-section"><div class="detail-label">Concept &amp; Meaning</div><div class="detail-text">${safeHtml(d.c)}</div></div>`;}
+  if(d.ex){h+=`<div class="detail-section"><div class="detail-label">Example &amp; Application</div><div class="detail-text">${safeHtml(d.ex)}</div></div>`;}
+  const comDefs=[
+    {k:'vy', n:'Vyāsa · Yoga Bhāṣya'},
+    {k:'vb', n:'Vijñānabhikṣu · Yoga-Vārttika'},
+    {k:'vm', n:'Vācaspati Miśra · Tattva-Vaiśāradī'},
+    {k:'sk', n:'Śaṅkara · Vivaraṇa'},
+    {k:'gp', n:'Gauḍapāda · Bhāṣya'},
+    {k:'tk', n:'Vācaspati Miśra · Tattvakaumudī'},
+    {k:'mat',n:'Māṭhara · Māṭharāvṛtti'},
+    {k:'vts',n:'Vātsyāyana · Nyāya Bhāṣya'},
+    {k:'udd',n:'Uddyotakara · Nyāya Vārttika'},
+    {k:'vmt',n:'Vācaspati Miśra · Tātparya-Ṭīkā'},
+    {k:'uda',n:'Udayana · Nyāya-Pariśuddhi'},
+    {k:'rgh',n:'Raghunātha Śiromaṇi · Bhāṣā-Pariccheda'},
+    {k:'vis',n:'Viśvanātha · Nyāya-Sūtra-Vṛtti'},
+    {k:'prs',n:'Praśastapāda · Padārthadharmasaṃgraha'},
+    {k:'sbt',n:'Śabara · Mīmāṃsā Bhāṣya'},
+    {k:'kum',n:'Kumārila Bhaṭṭa · Ślokavārttika'},
+    {k:'prb',n:'Prabhākara · Bṛhatī'},
+    {k:'shk',n:'Śaṅkara · Bhāṣya'},
+    {k:'rmj',n:'Rāmānuja · Śrī-Bhāṣya'},
+    {k:'mdv',n:'Madhva · Anuvyākhyāna'},
+    {k:'nim',n:'Nimbārka · Vedānta-Pārijāta-Saurabha'},
+    {k:'val',n:'Vallabha · Aṇubhāṣya'},
+    {k:'syk',n:'Sāyaṇa · Commentary'},
+    {k:'mhi',n:'Mahīdhara · Vedadīpa'},
+    {k:'uvt',n:'Uvvaṭa · Commentary'},
+  ];
+  const present=comDefs.filter(x=>d[x.k]);
+  if(present.length){
+    h+=`<div class="detail-section"><div class="detail-label">Classical Commentaries</div><div class="commentaries-wrap">`;
+    present.forEach(x=>{
+      h+=`<div class="detail-commentary"><div class="com-name">${x.n}</div><div class="com-text">${safeHtml(d[x.k])}</div></div>`;
+    });
+    h+=`</div></div>`;
+  }
+  h+=`</div>`;return h;
+}
+
+function renderLeaf(l,color){
+  const id='L'+Math.random().toString(36).slice(2,9);
+  const has=!!l.det;
+  const hint=has?`<div class="lf-expand">&#9654; tap for commentaries</div>`:'';
+  const oc=has?`onclick="toggleDetail('${id}',event)"`:'';
+  return`<div class="leaf" ${oc}>
+    <div class="lf-dot" style="background:${color}"></div>
+    <div class="leaf-content">
+      <div><span class="lf-name">${l.n}</span><span class="lf-ref">${l.r||''}</span></div>
+      ${l.sk?`<span class="lf-skt">${l.sk}</span>`:''}
+      <div class="lf-desc">${l.d}</div>
+      ${hint}
+      ${has?renderDetail(l.det,color,id):''}
+    </div>
+  </div>`;
+}
+
+function renderBranch(b,idx){
+  const id='B'+idx+'_'+Math.random().toString(36).slice(2,6);
+  let body='';
+  if(b.sub){b.sub.forEach(s=>{
+    body+=`<div class="sub-tree">`;
+    if(s.label)body+=`<div class="sub-label">${s.label}</div>`;
+    s.children.forEach(c=>{body+=renderLeaf(c,b.color);});
+    body+=`</div>`;
+  });}
+  if(b.children){b.children.forEach(c=>{body+=renderLeaf(c,b.color);});}
+  return`<div class="branch">
+    <div class="branch-head" onclick="toggleBranch('BB${id}',this)">
+      <div class="dot" style="background:${b.color}"></div>
+      <div class="label">${b.name}</div>
+      <div class="ref">${b.ref||''}</div>
+      <div class="chev">&#9654;</div>
+    </div>
+    <div class="branch-body" id="BB${id}">${body}</div>
+  </div>`;
+}
+
+function renderSection(sec,containerEl){
+  let h=`<div class="sec-title">${sec.title}</div>`;
+  h+=`<div class="sec-sub">${sec.sub||''}</div>`;
+  if(sec.intro)h+=`<div class="intro-card">${sec.intro}</div>`;
+  if(sec.legend){
+    h+=`<div class="legend">`;
+    sec.legend.forEach(l=>{h+=`<span><div class="ld" style="background:${l.c}"></div>${l.t}</span>`;});
+    h+=`</div>`;
+  }
+  h+=`<div class="tree">`;
+  sec.branches.forEach((b,i)=>{h+=renderBranch(b,i);});
+  h+=`</div>`;
+  containerEl.innerHTML=h;
+}
+
+function buildSubNav(sections,panelId,renderFn){
+  const panel=document.getElementById(panelId);
+  if(!sections||sections.length===0)return;
+  let nav=`<div class="sub-nav" id="sn_${panelId}">`;
+  sections.forEach((s,i)=>{
+    nav+=`<button ${i===0?'class="active"':''} onclick="switchSub('${panelId}',${i})">${s.tab||s.title}</button>`;
+  });
+  nav+=`</div><div id="sc_${panelId}"></div>`;
+  panel.innerHTML=nav;
+  renderFn(sections[0],document.getElementById(`sc_${panelId}`));
+  panel._sections=sections;
+  panel._renderFn=renderFn;
+}
+
+function switchSub(panelId,idx){
+  const panel=document.getElementById(panelId);
+  document.querySelectorAll(`#sn_${panelId} button`).forEach((b,i)=>b.classList.toggle('active',i===idx));
+  panel._renderFn(panel._sections[idx],document.getElementById(`sc_${panelId}`));
+}
+
+function showSystem(id){
+  document.querySelectorAll('.system-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.top-nav button').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  const btns=document.querySelectorAll('.top-nav button');
+  const map={yoga:0,samkhya:1,nyaya:2,vaisheshika:3,mimamsa:4,vedanta:5,vedas:6};
+  btns[map[id]].classList.add('active');
+  if(!document.getElementById(id)._built){
+    builders[id]();
+    document.getElementById(id)._built=true;
+  }
+}
+
+function toggleBranch(id,el){
+  const body=document.getElementById(id);
+  const open=body.classList.toggle('open');
+  el.classList.toggle('open',open);
+}
+function toggleDetail(id,ev){
+  ev.stopPropagation();
+  const p=document.getElementById('d'+id);
+  if(p)p.classList.toggle('open');
+}
+
+// ─── BUILDERS — each system builds itself lazily ──────────────────────────────
+const builders={};
+builders.vedas=function(){
+const secs=[
+// ───────────────────────────────────────────────────────────────────────────
+// 1. ṚGVEDA
+// ───────────────────────────────────────────────────────────────────────────
+{tab:"Ṛgveda",title:"Ṛgveda Saṃhitā",sub:"10 Maṇḍalas · 85 Anuvākas · 1,028 Sūktas · 10,552 Mantras · Śākala recension",
+intro:"The Ṛgveda is the oldest compilation of human wisdom — the foundational sacred text of India and the oldest preserved Indo-European literary monument. As the Vedic Heritage Portal notes, it is not a single book but a compilation of older and later strata composed over centuries (c. 1500–900 BCE) by named ṛṣi-families. The whole Ṛgveda-Saṃhitā is in verse form. <em>Ṛk</em> denotes mantras meant for the praise (from root <em>ṛc</em>, 'to praise') of deities. Its hierarchical structure is: <em>Maṇḍala</em> (book) → <em>Anuvāka</em> (section) → <em>Sūkta</em> (hymn) → <em>Ṛk</em> (verse). Every ṛk has a <em>ṛṣi</em> (seer), a <em>devatā</em> (deity), and a <em>chandas</em> (meter). Of five originally-named śākhās (Śākala, Bāṣkala, Aśvalāyana, Śāṅkhāyana, Māṇḍūkāyana), only Śākala is fully extant today, with limited Bāṣkala and Aśvalāyana materials surviving.",
+legend:[{c:C.coral,t:"Family Books (II–VII)"},{c:C.blue,t:"Soma Maṇḍala (IX)"},{c:C.purple,t:"Speculative (X)"},{c:C.amber,t:"Cosmogony"},{c:C.teal,t:"Famous Sūktas"},{c:C.green,t:"Ṛṣis & Recensions"}],
+branches:[
+{name:"Recensions of the Ṛgveda (Śākhās)",ref:"Caraṇavyūha",color:C.green,children:[
+{n:"Śākala Saṃhitā — The principal extant recension",r:"Śākala",d:"Today's standard Ṛgveda — 1,028 Sūktas, 10,552 Mantras across 10 Maṇḍalas",
+det:{skt:"शाकल — एकस्मिन् मण्डले अनुवाकाः, सूक्तानि, मन्त्राः",tr:"Śākala — Mandala-Anuvāka-Sūkta-Mantra structure preserved by the Śākala lineage.",
+c:"The <em>Śākala recension</em> is the only Ṛgveda recension fully extant today. Two preservation traditions: the <em>Mahārāṣṭra tradition</em> (continuous oral chanting in Maharashtra) and the <em>Kerala tradition</em> (preserved by Nambūdiri Brāhmaṇas in Kerala with their own pronunciation conventions). The Śākala text was edited critically by Max Müller and F. Max Aufrecht in the 19th century; the current standard mantra-count of 10,552 derives from Aufrecht's 1877 edition. The Vedic Heritage Portal preserves both traditions in audio-visual form.",
+syk:"Sāyaṇa's bhāṣya (14th c. CE, Vijayanagara) is on the Śākala recension and remains the standard medieval commentary on the entire Ṛgveda. His method: word-by-word paraphrase, etymological analysis (using Yāska's Nirukta), grammatical parsing (using Pāṇini), and ritual application (using the Kalpa-Sūtras).",
+vnk:"Veṅkaṭamādhava's earlier Ṛgveda-vyākhyā (c. 11th c.) is more concise than Sāyaṇa's. He emphasizes the meditative-philosophical (adhyātmika) reading of mantras alongside the ritual (ādhibhautika) reading, anticipating later Vedāntic interpretation.",
+sknd:"Skandasvāmin (c. 7th c. CE) wrote one of the oldest surviving Ṛgveda commentaries, covering only the first 1.5 maṇḍalas. He preserves earlier interpretive traditions — including alternative readings (pāṭha-bheda) — that Sāyaṇa later harmonized."}},
+{n:"Bāṣkala Saṃhitā — Largely lost; appendix preserved",r:"Bāṣkala",d:"Includes 8 vālakhilya hymns among regular hymns (1,025 regular + 98 Khilāni appendix)",
+det:{tr:"The Bāṣkala recension survives only fragmentarily.",
+c:"The <em>Bāṣkala recension</em> incorporated eight of the vālakhilya hymns (ŚR 8.49–8.59 in Śākala) into the regular sūkta count, yielding 1,025 regular hymns. It also possessed its own appendix called the <em>Khilāni</em> — 98 hymns not present in Śākala, including some philosophically and ritually important compositions. The Khilāni are still studied even though the Bāṣkala saṃhitā proper is largely lost.",
+syk:"Sāyaṇa occasionally cites Bāṣkala readings (bāṣkala-pāṭha) where they differ from Śākala — preserving fragments of the lost recension within his commentary. The Khilāni include the famous Śrī Sūkta (laudation of Lakṣmī) which became central to later Śrīvaiṣṇava liturgy."}},
+{n:"Aśvalāyana, Śāṅkhāyana, Māṇḍūkāyana — Lost or fragmentary",r:"Other śākhās",d:"Aśvalāyana partly extant; Śāṅkhāyana and Māṇḍūkāyana lost",
+det:{c:"<em>Aśvalāyana Saṃhitā</em>: a few fragments survive; the Aśvalāyana Śrauta-Sūtra and Gṛhya-Sūtra remain in active use. <em>Śāṅkhāyana</em>: the Saṃhitā is lost but the Brāhmaṇa (Kauṣītaki/Śāṅkhāyana Brāhmaṇa), Āraṇyaka, and Sūtras are extant. <em>Māṇḍūkāyana</em>: lost entirely. The Vedic Heritage Portal includes the surviving Aśvalāyana materials. Caraṇavyūha (a pariśiṣṭa attributed to Śaunaka) lists these five recensions as the principal Ṛgveda śākhās."}}
+]},
+{name:"Maṇḍala Structure — The 10 Books",ref:"RV 1–10",color:C.coral,sub:[
+{label:"Maṇḍala 1 — Maducchanda, Medhātithi, Gotama et al. (191 sūktas, 2,006 mantras)",children:[
+{n:"Agni Sūkta — Opening hymn",r:"RV 1.1",d:"Agnim īḷe purohitaṃ — 'I praise Agni, the domestic priest of the sacrifice'",
+det:{skt:"अग्निमीळे पुरोहितं यज्ञस्य देवमृत्विजम् । होतारं रत्नधातमम् ॥",tr:"I praise Agni, the domestic priest (purohita) of the sacrifice, the divine ṛtvik, the hotar, the supreme bestower of treasure.",
+c:"The Ṛgveda opens with a hymn to Agni — the sacrificial fire — as mediator between humans and gods. Agni is purohita (the household-priest, 'placed before'), ṛtvik (seasonal officiant), hotar (invoker), and ratnadhātama (most generous bestower). The seven verses establish Agni's complete priestly identity before any other deity.",
+syk:"Sāyaṇa: 'purohita' (placed-before) = Agni stands before the sacrificer as representative to the divine world, like a king's ambassador. The Ṛgveda's opening with Agni rather than a cosmogony is programmatic — it announces the Veda's foundational orientation as ritual.",
+vnk:"Veṅkaṭamādhava: Agni is 'mouth of the gods' — the visible, tangible divine presence in the human world. All worship begins with Agni because no offering reaches the gods except through fire."}},
+{n:"Indra-Vṛtra Sūkta",r:"RV 1.32",d:"The cosmic battle — Indra slays Vṛtra and releases the waters",
+det:{skt:"इन्द्रस्य नु वीर्याणि प्र वोचं यानि चकार प्रथमानि वज्री । अहन्नहिं अन्वपस्ततर्द प्र वक्षणा अभिनत् पर्वतानाम् ॥",tr:"Now I will proclaim the heroic deeds of Indra — those which the wielder of the vajra performed first. He slew the serpent, released the waters, split open the bellies of the mountains.",
+c:"The central cosmogonic myth: Vṛtra (Obstruction) had blocked the cosmic waters until Indra, with his vajra, slew him and released them. Cosmogonic (release of waters = ordering of cosmos), meteorological (monsoon breaking drought), and sacrificial (soma-drinking empowers Indra). The 15 verses are the Ṛgveda's fullest single telling of the myth.",
+syk:"Sāyaṇa interprets Vṛtra historically as a specific demon damming cosmic rivers. Indra's victory initiated the present cosmic order. The mountains are real mountains through which rivers flow.",
+vnk:"Veṅkaṭamādhava: dual reading — literal (cosmic battle) and symbolic (consciousness against ignorance). Indra = creative will-power; Vṛtra = primordial inertia; release of waters = release of consciousness's creative potential."}},
+{n:"Uṣas Sūkta — Hymn to the Dawn",r:"RV 1.48",d:"The most celebrated nature poetry of the Ṛgveda",
+det:{skt:"एषा ज्योतिर्विश्वा सावित्री सूनृता मही उदेत्यरुणा महि ।",tr:"She rises, the great red one, sending forth all light — the bountiful, great daughter of the Sun.",
+c:"Uṣas (Dawn) is portrayed as a beautiful red-robed young woman who drives away darkness, reveals the world, and awakens beings to their proper work. Daughter of Dyaus (Sky), sister of Rātri (Night), precursor of Sūrya (Sun). Each dawn = new creation, the reassertion of light over darkness.",
+syk:"Sāyaṇa: Uṣas is both the literal dawn and a deity propitiated in the prātaranuvāka (morning-recitation) liturgy. Daily ritual aligns with the cosmic drama of light defeating darkness."}},
+{n:"Varuṇa Sūkta",r:"RV 1.25",d:"Varuṇa, keeper of ṛta — moral law and cosmic order",
+det:{skt:"यच्चिद्धि ते विशो यथा प्र देव वरुण व्रतम् । मीमाँसमहे अद्या वयम् ॥",tr:"Whatever, O god Varuṇa, your ordinance which we, your people, may have violated today — we seek to understand (and be freed from it).",
+c:"Varuṇa is the most morally complex Ṛgvedic deity — upholder of <em>ṛta</em> (cosmic order, truth, moral law), punisher of <em>enas</em> (sin), the only Vedic deity addressed in personal moral relationship. His spies (the stars) watch all conduct; his noose (pāśa) binds the sinner; his mercy releases. Anticipates the bhakti tradition's penitential prayers.",
+syk:"Sāyaṇa: ṛta is both cosmic order (regular motions of heavenly bodies) and moral order (correct relations among beings). Violation = enas, which Varuṇa sees and records. The hymns are actual liturgical means of obtaining pardon, not merely poetry."}}
+]},
+{label:"Maṇḍala 2 — Gṛtsamada family (43 sūktas, 429 mantras)",children:[
+{n:"Family-Book core hymns to Indra, Agni, Viśvedevās",r:"RV 2.1–2.43",d:"Gṛtsamada hymns — primarily to Indra and Agni",
+det:{skt:"अग्निरेक इद् दूत्यं विश्वं देवेषु विद्वान् देवान्याति वेद।",tr:"Agni alone, knowing all, serves as messenger — he goes among all the gods, knowing the gods.",
+c:"Maṇḍala 2 (Gṛtsamada family): refined stylistic elegance, sustained imagery developed across multiple verses rather than concentrated in single strophes. Many hymns achieved canonical liturgical status.",
+syk:"Sāyaṇa: family books (2–7) are the oldest stratum. Single-family attribution indicates hereditary priestly lineage (gotra) transmission — the authority of a mantra derives partly from this unbroken oral lineage.",
+vnk:"Veṅkaṭamādhava: in family books the ṛṣi 'sees' (draṣṭā) the mantra rather than 'composing' it. The mantra pre-exists and the seer perceives it in meditation — basis of the apauruṣeya (not made by a person) doctrine."}}
+]},
+{label:"Maṇḍala 3 — Viśvāmitra family (62 sūktas, 617 mantras)",children:[
+{n:"Gāyatrī Mantra — The supreme Vedic mantra",r:"RV 3.62.10",d:"Tat savitur vareṇyam — the most recited Vedic mantra, to Savitṛ",
+det:{skt:"तत् सवितुर्वरेण्यं भर्गो देवस्य धीमहि । धियो यो नः प्रचोदयात् ॥",tr:"We meditate upon that excellent glory of the divine Savitṛ. May he stimulate our intellects.",
+c:"The most widely recited Vedic mantra. Named for the gāyatrī meter (3 × 8 syllables). Savitṛ is the solar deity in his stimulating-vivifying aspect (root <em>sū</em> 'to impel'). The mantra is simultaneously a prayer to the sun and a meditation on divine intelligence — 'may he illuminate our intellects' (dhiyo yo naḥ pracodayāt). Foundation of every twice-born Hindu's daily sandhyā.",
+syk:"Sāyaṇa: the three pādas correspond to the three worlds (bhūr-bhuvaḥ-svaḥ), three times (past-present-future), three fires (gārhapatya, āhavanīya, dakṣiṇa). 'Bharga' = both physical solar light and illuminating cosmic intelligence (prajñā).",
+vnk:"Veṅkaṭamādhava: the shift from first-person plural present (dhīmahi 'we meditate') to third-person optative (pracodayāt 'may he stimulate') enacts the yogic paradox — meditator both actively engaging and passively receiving illumination.",
+sknd:"Skandasvāmin: called Sāvitrī (after Savitṛ); the supreme initiation mantra — upanayana (sacred-thread ceremony) consists essentially in its transmission from teacher to initiated student. Veda-mātā — 'Mother of the Vedas.'"}}
+]},
+{label:"Maṇḍala 4 — Vāmadeva family (58 sūktas, 589 mantras)",children:[
+{n:"Vāmadeva's hymns to Indra and Agni",r:"RV 4.1–4.58",d:"Vāmadeva — known for the dialogue 'while still in the womb' (RV 4.27)",
+det:{c:"The Vāmadeva family hymns include the celebrated RV 4.27 — Vāmadeva's claim to have known all the secrets of the gods 'while still within the womb.' This verse became foundational for the later Indian theory of <em>jātismara</em> (memory of past births) and the doctrine that liberation-knowledge can be inborn rather than only acquired through this life's effort.",
+syk:"Sāyaṇa: Vāmadeva's intra-uterine knowledge demonstrates that ṛṣi-status (the capacity to 'see' mantras) is not a function of post-natal study but of prior-life attainment that flowers in the present body. The mantras are not invented — they are remembered."}}
+]},
+{label:"Maṇḍala 5 — Atri family (87 sūktas, 727 mantras)",children:[
+{n:"Atri family — wide-ranging deities including Maruts and Mitrā-Varuṇa",r:"RV 5.1–5.87",d:"The Atri family hymns",
+det:{c:"The Atri Maṇḍala covers a wide range of deities — Agni, Indra, the Maruts, Mitrā-Varuṇa, Aśvins, Uṣas, and Sūrya. Notable for the prominence of Mitrā-Varuṇa hymns (the dual divinity of contract/covenant and cosmic order). The Atri family was historically associated with the Pañcāla region and with the practice of fire-sacrifice in the early Vedic period."}}
+]},
+{label:"Maṇḍala 6 — Bharadvāja family (75 sūktas, 765 mantras)",children:[
+{n:"Bharadvāja family — predominantly Indra and Agni hymns",r:"RV 6.1–6.75",d:"The Bharadvāja Maṇḍala — characteristic vigorous heroic style",
+det:{c:"The Bharadvāja Maṇḍala emphasizes Indra (warrior-deity) and Agni (priestly-deity) — the two core deities of early Vedic religion. Notable for vigorous, heroic style, with extended battle-imagery. The Bharadvāja gotra became one of the most important Brāhmaṇa lineages and remains so today."}}
+]},
+{label:"Maṇḍala 7 — Vasiṣṭha family (104 sūktas, 841 mantras)",children:[
+{n:"Vasiṣṭha's Varuṇa hymns",r:"RV 7.86–88",d:"The most personal Varuṇa hymns — confession of sin, prayer for forgiveness",
+det:{skt:"कद् वा चित्रं वरुण ज्मन्नेतत् कद् इन्द्रे भवसि सातये नृणाम् ।",tr:"What wonderful thing is this on earth, O Varuṇa? What shall Indra do for the gaining of men?",
+c:"The most personally inflected devotional hymns in the Ṛgveda. Vasiṣṭha addresses Varuṇa with intimacy — acknowledging his sins, expressing longing for direct presence, asking to be 'placed in the boat of ṛta.' Prefigures bhakti's emphasis on personal relationship, confession, and grace. RV 7.86: 'Whatever I have done against you, may I not suffer for that, O truly mighty one.'",
+syk:"Sāyaṇa: Vasiṣṭha had fallen into disfavor with Varuṇa through some ritual transgression. The hymns are means of restoration. The 'boat of ṛta' is no abstract principle but an actual vessel carrying the devotee through the ocean of existence.",
+vnk:"Veṅkaṭamādhava: the Varuṇa-Vasiṣṭha dialogue is the Ṛgvedic forerunner of the guru-śiṣya and devotee-deity relationships of the Upaniṣads and Purāṇas. Acknowledgment of wrongdoing rather than mere request for favor marks moral elevation."}}
+]},
+{label:"Maṇḍala 8 — Kāṇva, Aṅgirā families (103 sūktas, 1,716 mantras)",children:[
+{n:"Soma ecstasy verse — RV 8.48.3",r:"RV 8.48",d:"'We have drunk the Soma, we have become immortal'",
+det:{skt:"अपाम सोमममृता अभूमागन्म ज्योतिरविदाम देवान् । किं नूनमस्मान् कृणवदरातिः किमु धूर्तिरमृत मर्त्यस्य ॥",tr:"We have drunk the Soma, we have become immortal, we have gone to the light, we have found the gods. What now can the enemy do to us? What, O Immortal, can the hostility of a mortal do?",
+c:"The most famous soma-verse and one of the most celebrated lines in all Sanskrit literature. Describes the experiential state induced by soma-drinking: immortality, illumination, divine proximity — in the first-person plural ('we'), indicating the shared experience of the sacrificial community. Raises perennial questions about Vedic religion's experiential basis.",
+syk:"Sāyaṇa: 'amṛtā abhūma' = attainment of svarga (heaven) through sacrificial merit. The soma experience is a temporary preview of the heavenly state the sacrifice eventually brings.",
+vnk:"Veṅkaṭamādhava: must be read on multiple levels — ritual (culminating act of Soma sacrifice), experiential (genuine transformation of consciousness), cosmic (participation in the same soma-drinking the gods perform in svarga)."}}
+]},
+{label:"Maṇḍala 9 — Soma Pavamāna Maṇḍala (114 sūktas, 1,108 mantras)",children:[
+{n:"Soma Pavamāna — The flowing, purifying Soma",r:"RV 9.1–9.114",d:"The entire ninth maṇḍala is devoted to Soma in his pavamāna (flowing/purifying) aspect",
+det:{skt:"पवस्व सोम धारया इन्दो देवेभ्यः सुतः।",tr:"Flow, O Soma, in a stream! O Indu (drop), pressed and purified for the gods.",
+c:"Maṇḍala 9 is unique: all 114 hymns address Soma Pavamāna — the soma being pressed and filtered. Soma is simultaneously a plant (probably Ephedra or related; identity debated), a ritual substance pressed/filtered/mixed/drunk, and a deity (embodiment of ecstasy, inspiration, immortality, the moon, the celestial soma-ocean). The Soma Maṇḍala accompanied the Soma sacrifices (Agniṣṭoma, Vājapeya, Aśvamedha).",
+syk:"Sāyaṇa: 'pavamāna' (purifying) is the technical term for soma being filtered through the woollen strainer during pressing. As it flows into the droṇakalaśa vessel, the priests chant the Pavamāna hymns — physical purification and liturgical praise are inseparable.",
+sknd:"Skandasvāmin: the identity of the soma plant is among the great unresolved questions of Vedic scholarship. Skandasvāmin's commentary preserves early botanical traditions about soma, but even in his time (7th c. CE) the original soma plant had been substituted by various surrogates."}}
+]},
+{label:"Maṇḍala 10 — The late book (191 sūktas, 1,754 mantras)",children:[
+{n:"Puruṣa Sūkta — Cosmic Person and Creation",r:"RV 10.90",d:"The Cosmic Puruṣa whose sacrifice produces the world, varṇas, and Vedas",
+det:{skt:"सहस्रशीर्षा पुरुषः सहस्राक्षः सहस्रपात् । स भूमिं विश्वतो वृत्वात्यतिष्ठद्दशाङ्गुलम् ॥",tr:"The Puruṣa has a thousand heads, a thousand eyes, a thousand feet. Covering the earth on all sides, he stood beyond it by ten fingers' breadth.",
+c:"Perhaps the most influential single hymn in all Vedic literature. The 16 verses describe a primordial cosmic Puruṣa whose sacrifice by the gods produces: the four varṇas (mouth/arms/thighs/feet → Brāhmaṇa/Rājanya/Vaiśya/Śūdra), the sun (eye), moon (mind), Vedas (breath/mouth), Indra-Agni (mouth), Vāyu (breath), sky (navel), quarters (ear), earth (feet). First text mentioning the four varṇas. Foundational for cosmic-sacrifice theology, Pāñcarātra divine-body theology, and varṇa interpretations.",
+syk:"Sāyaṇa: the cosmic Puruṣa is Prajāpati — Lord of Progeny — who sacrifices himself to produce the world. Not suicide but generative self-offering (ātmayajña). Every Vedic sacrifice reenacts this primordial self-sacrifice.",
+vnk:"Veṅkaṭamādhava: the Vedic source for the divine-body theology (vigraha). In Vaiṣṇava interpretation, the cosmic Puruṣa is Viṣṇu, and the entire cosmos is Viṣṇu's body (viśva-rūpa). Further developed in Bhagavad Gītā 11 and the Pāñcarātra Āgamas."}},
+{n:"Nāsadīya Sūkta — The Hymn of Creation",r:"RV 10.129",d:"Before being was non-being — the most philosophical cosmogonic hymn",
+det:{skt:"नासदासीन्नो सदासीत्तदानीं नासीद्रजो नो व्योमा परो यत् । किमावरीवः कुह कस्य शर्मन्नम्भः किमासीद् गहनं गभीरम् ॥",tr:"Then neither being (sat) nor non-being (asat) was. There was no air, nor heaven beyond. What covered it? Where? In whose protection? Was there water — unfathomable, deep?",
+c:"The most philosophically sophisticated hymn in the Ṛgveda. Describes the state before creation through radical negation: neither sat nor asat, neither death nor immortality, neither night nor day. From this primordial darkness, 'the one' (tad ekam) arose by its own heat (tapas). Culminates in radical uncertainty: even the gods do not know the origin (they were produced in it); even the highest seer perhaps knows, perhaps does not. Earliest Indian example of the radical questioning of religious certainty.",
+syk:"Sāyaṇa: state of pralaya (dissolution) before the current cosmic cycle. 'Tad ekam' = Prajāpati, who generates the world through tapas. The final question is rhetorical, indicating the inaccessibility of cosmogonic knowledge to ordinary understanding.",
+vnk:"Veṅkaṭamādhava: Vedic foundation for the Vedāntic <em>avyākṛta</em> (undifferentiated state before manifestation). 'Tad ekam' = Brahman — undifferentiated pure being from which the world arises through māyā. The final uncertainty is genuine: not even the highest upāsaka can know Brahman as object, because Brahman is the knowing subject itself.",
+sknd:"Skandasvāmin: the hymn's philosophical power lies in its method — progressively removing all predicates (not sat, not asat, not darkness, not light, not death, not immortality). This negative (apophatic) method anticipates the Upaniṣadic <em>neti neti</em> as the only adequate approach to the absolute."}},
+{n:"Vivāha Sūkta — Marriage hymn",r:"RV 10.85",d:"Sūryā's wedding — foundational text for the Vedic marriage ritual",
+det:{skt:"सोमो ददद् गन्धर्वाय गन्धर्वो ददद् अग्नये। रयिं च पुत्राँश्चादाद् अग्निर्मह्यमथो इमाम् ॥",tr:"Soma gave the bride to the Gandharva; the Gandharva gave her to Agni; Agni gave wealth and sons and gave this woman to me.",
+c:"Primary source for the Vedic marriage ceremony (vivāha-saṃskāra). Narrates the mythological prototype: Sūryā (sun-daughter) passes through divine 'possessors' (Soma → Gandharva → Agni → human) before reaching her human husband. This sequence is embedded in the marriage ritual as scriptural authority for its phases. Establishes auspiciousness of the bride, marriage bond, prayers for progeny, household blessings — became template for Gṛhya-Sūtra and classical Hindu marriage."}},
+{n:"Hiraṇyagarbha Sūkta — The Golden Embryo",r:"RV 10.121",d:"In the beginning the Golden Embryo arose — refrain: 'kasmai devāya haviṣā vidhema'",
+det:{skt:"हिरण्यगर्भः समवर्तताग्रे भूतस्य जातः पतिरेक आसीत्।",tr:"In the beginning the Golden Embryo (Hiraṇyagarbha) arose — born, he was the one Lord of all that exists.",
+c:"The Hiraṇyagarbha Sūkta — 10 verses each ending with the famous refrain <em>'kasmai devāya haviṣā vidhema'</em> ('to which god shall we offer oblation?') — describes the cosmic Golden Embryo as the unique source of all existence. The recurring question creates a meditative effect, holding open the radical openness of the cosmogonic question even while affirming the cosmic Lord's existence. The 'unknown god' to whom oblation is offered became identified in later tradition as Prajāpati.",
+syk:"Sāyaṇa: Hiraṇyagarbha = Prajāpati = Brahman in his manifested-creator aspect. The repeated question 'kasmai devāya' enables the worshipper to address the supreme Lord without the limitation of any one specific name — preparing the ground for the Upaniṣadic shift toward nirguṇa Brahman."}},
+{n:"Devī Sūkta — The Vāk Goddess Hymn",r:"RV 10.125",d:"Spoken by Vāk (Speech) herself — the goddess identifying herself with the cosmic principle",
+det:{skt:"अहं राष्ट्री संगमनी वसूनां चिकितुषी प्रथमा यज्ञियानाम् ।",tr:"I am the queen, the gatherer of treasures, the first among the worship-receivers, the wise one.",
+c:"The Devī Sūkta is unique — spoken by Vāk (Speech, divinized) in the first person. The goddess identifies herself with cosmic sovereignty, with all the gods (she 'carries' Mitra and Varuṇa, Indra and Agni, the Aśvins), with the wind that blows, and with the very source of speech and consciousness. Foundational for the entire later Śākta (goddess-worship) tradition. Quoted at length in the Devī Māhātmya and the Lalitā-Sahasranāma.",
+syk:"Sāyaṇa: Vāk in this hymn is not merely the faculty of speech but the cosmic Vāk — the principle of self-revelation by which the absolute becomes known to itself and to others. Vāk-as-goddess prefigures the Tantric Śakti and the Upaniṣadic identification of Brahman with consciousness."}}
+]}
+]}
+]},
+
+// ───────────────────────────────────────────────────────────────────────────
+// 2. YAJURVEDA
+// ───────────────────────────────────────────────────────────────────────────
+{tab:"Yajurveda",title:"Yajurveda Saṃhitā",sub:"Two recensions: Śukla and Kṛṣṇa · 6 surviving Saṃhitās · Ritual prose for the Adhvaryu priest",
+intro:"The Yajurveda is fundamentally different from the Ṛgveda and Sāmaveda — principally in <em>prose</em> form. <em>Yajus</em> = 'that which is in prose form' (gadyātmako yajuḥ); also from the root <em>yaj</em> (to sacrifice). The Yajurveda is a guide-book for the <em>Adhvaryu priest</em> who performs the physical actions of the sacrifice — from selection of the altar-plot down to pouring oblations into the fire. The Vedic Heritage Portal organizes the Yajurveda into two main recensions: <em>Śukla (White) Yajurveda</em> — separating mantra and Brāhmaṇa cleanly, related to the Āditya school; and <em>Kṛṣṇa (Black) Yajurveda</em> — mixing mantra and Brāhmaṇa together, related to the Brahma school. The traditional story (preserved by Mahīdhara): the sage Vaiśampāyana taught the Yajurveda to Yājñavalkya; angered, he asked Yājñavalkya to vomit it back; Yājñavalkya then prayed to the Sun who came as a horse (vāji) and re-taught the Veda — hence Vājasaneyī. Today: 2 surviving Śukla Saṃhitās (Mādhyandina, Kāṇva); 4 surviving Kṛṣṇa Saṃhitās (Taittirīya, Maitrāyaṇī, Kāṭhaka, Kapiṣṭhala).",
+legend:[{c:C.amber,t:"Adhvaryu liturgy"},{c:C.coral,t:"Brāhmaṇa prose"},{c:C.blue,t:"Philosophy"},{c:C.green,t:"Upaniṣads"},{c:C.purple,t:"Cosmic correspondences"},{c:C.teal,t:"Recensions"}],
+branches:[
+{name:"Śukla Yajurveda — White Yajurveda Recensions",ref:"Vājasaneyī",color:C.coral,sub:[
+{label:"Vājasaneyī Saṃhitā (Mādhyandina) — 40 Adhyāyas",children:[
+{n:"Mādhyandina recension — the principal Śukla Yajurveda",r:"VS-M",d:"40 adhyāyas; the standard Śukla Yajurveda used across most of North India",
+det:{c:"The <em>Mādhyandina</em> recension is the most widespread Śukla Yajurveda recension, prevalent across most of North India. Its Saṃhitā has 40 adhyāyas (chapters). The first 18 adhyāyas of VS-M are quoted word-for-word and explained in the Śatapatha Brāhmaṇa (Mādhyandina) — leading some scholars to suggest the later adhyāyas (especially 19–25 and 36–40) may be of later date. Adhyāya 40 is the famous Īśāvāsya Upaniṣad.",
+mhi:"Mahīdhara's <em>Vedadīpa</em> (16th c.) is the standard commentary on VS-Mādhyandina. He prefaces with the Vaiśampāyana-Yājñavalkya story (the source of the 'Vājasaneyī' name) and provides word-by-word explication with ritual application.",
+uvt:"Uvvaṭa's earlier commentary on VS-M (11th c.) is more concise and emphasizes the etymological-grammatical analysis of the mantras. Both Uvvaṭa and Mahīdhara are typically printed together in modern editions of VS-M."}},
+{n:"VS Adhyāya 40 — Īśāvāsya Upaniṣad",r:"VS 40 = ĪU 1–18",d:"The entire 40th adhyāya is the Īśāvāsya Upaniṣad — the only Upaniṣad embedded in a Saṃhitā",
+det:{skt:"ईशावास्यमिदं सर्वं यत्किञ्च जगत्यां जगत् । तेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम् ॥",tr:"All this — whatever moves in this moving world — is to be pervaded by the Lord (Īśa). By that renounced (portion), enjoy. Do not covet anyone's wealth.",
+c:"Unique among major Upaniṣads in being embedded directly within the Saṃhitā (not in a Brāhmaṇa or Āraṇyaka). 18 verses synthesize Vedic and Upaniṣadic worldviews — neither rejecting ritual nor renouncing the world, but reframing both within non-attachment. Famous opening: world is 'Īśā-vāsya' (Lord-clothed/Lord-pervaded); enjoy your portion without coveting another's.",
+mhi:"Mahīdhara: 'Īśāvāsya' = the Lord-clothed or Lord-pervaded. The Lord is not separate from the world but its inner pervader — preventing both world-rejection and world-attachment.",
+uvt:"Uvvaṭa: ethical injunction ('do not covet') is grounded in metaphysical principle ('all is Lord-pervaded'). Ethics and metaphysics inseparable.",
+shk:"Śaṅkara: the Īśāvāsya teaches non-grasping (tyāga) as the correct relationship to the phenomenal world — not renunciation but enjoyment of one's legitimate portion with recognition that nothing ultimately belongs to the individual ego. Foundation for Bhagavad Gītā's karma-yoga.",
+rmj:"Rāmānuja: 'Īśā' = Paramātmā (Viṣṇu) as antaryāmin pervading all beings. Correct response: not detached enjoyment but joyful offering of enjoyment back to Viṣṇu — the mode of bhakti."}}
+]},
+{label:"Vājasaneyī Saṃhitā (Kāṇva) — 40 Adhyāyas",children:[
+{n:"Kāṇva recension — South India and Maharashtra",r:"VS-K",d:"Variant Śukla Yajurveda preserved in South India and Maharashtra",
+det:{c:"The <em>Kāṇva</em> recension differs from Mādhyandina in numerous mantra-readings and verse-orderings. Same overall structure (40 adhyāyas) but the texts diverge in approximately 10% of verses. The Kāṇva is associated with the Kāṇva śākhā of the Śatapatha Brāhmaṇa (Kāṇva ŚB). Particularly preserved in coastal regions of South India and parts of Maharashtra. The Bṛhadāraṇyaka Upaniṣad attached to it shows minor variations from the Mādhyandina BU. The Vedic Heritage Portal preserves both recensions in audio form."}}
+]}
+]},
+{name:"Kṛṣṇa Yajurveda — Black Yajurveda Recensions",ref:"Mantra+Brāhmaṇa",color:C.amber,sub:[
+{label:"Taittirīya Saṃhitā — 7 Kāṇḍas",children:[
+{n:"Taittirīya — the most extant Kṛṣṇa Yajurveda recension",r:"TS",d:"Used widely in South India; preserves the Kṛṣṇa Yajurveda with both Brāhmaṇa-prose and mantras intermixed",
+det:{c:"The <em>Taittirīya Saṃhitā</em> is the most extensively preserved Kṛṣṇa Yajurveda recension and is the basis of South Indian (Tamil and Kerala) Vedic learning. Structure: 7 kāṇḍas (books), 44 prapāṭhakas (chapters), 651 anuvākas (sub-sections). Organization is by ritual rather than by maṇḍala — kāṇḍa 1: Soma; 2: Iṣṭi (basic offerings); 3: Soma; 4: Agni-cayana (fire-altar building); 5: Agni-cayana continued; 6: Iṣṭi; 7: Soma. Famous for its phonological precision — the Taittirīya Prātiśākhya governs its pronunciation. The Vedic Heritage Portal includes Taittirīya Saṃhitā in audio, video, and learning-purpose formats.",
+syk:"Sāyaṇa wrote a complete bhāṣya on the Taittirīya Saṃhitā as well — the Taittirīya bhāṣya predates his Ṛgveda bhāṣya. The Taittirīya tradition was already strong at Vijayanagara when Sāyaṇa worked there."}},
+{n:"Agnihotra formulas — Daily fire sacrifice",r:"TS 1.5",d:"Formulas for the twice-daily milk oblation",
+det:{skt:"अग्नये स्वाहा। अग्नये प्रजापतये स्वाहा।",tr:"Hail to Agni! Hail to Agni-Prajāpati!",
+c:"The Agnihotra (twice-daily milk-offering at dawn and dusk) is the most fundamental Vedic domestic ritual; the Yajurveda formulas for it are among the most universally used in Vedic practice. <em>Svāhā</em> = sacrificial exclamation; etymologically <em>su+āhā</em> ('well-said') or <em>svā+hā</em> ('self-offered'). Each formula identifies the deity-recipient; svāhā seals the offering's transfer.",
+mhi:"Mahīdhara: order matters — 'Agni' alone in the morning recognizes Agni as independent recipient; 'Agni-Prajāpati' adds Prajāpati as the cosmic source whom Agni mediates. Reversed order at dusk indicates the sun's setting into Prajāpati's domain.",
+uvt:"Uvvaṭa: 'svāhā' = 'su-āhā' = 'truly spoken' — declaration of truth-force (satya-bala). Effectiveness of offering depends on the truth-value of the utterance — false sacrifice yields no fruit."}}
+]},
+{label:"Maitrāyaṇī Saṃhitā",children:[
+{n:"Maitrāyaṇī — preserved chiefly in Maharashtra and Gujarat",r:"MS",d:"4 kāṇḍas; the Maitrāyaṇī recension preserved by the Maitrāyaṇīya school",
+det:{c:"The <em>Maitrāyaṇī Saṃhitā</em> (MS) belongs to the Maitrāyaṇī school of the Kṛṣṇa Yajurveda. 4 kāṇḍas with 54 prapāṭhakas. Distinctive for preserving some archaic linguistic features lost in other recensions — important for historical-linguistic study of Vedic Sanskrit. Geographically preserved chiefly in Maharashtra and Gujarat. The associated Maitrāyaṇī Upaniṣad (also called Maitrī Upaniṣad) is one of the major Upaniṣads, particularly important for its prāṇa and Yoga-related teachings."}}
+]},
+{label:"Kāṭhaka Saṃhitā",children:[
+{n:"Kāṭhaka — preserved chiefly in Kashmir",r:"KS",d:"5 kāṇḍas (sthānakas); the Carakaśākhā recension preserved by the Kāṭhas",
+det:{c:"The <em>Kāṭhaka Saṃhitā</em> (KS, also called Caraka-Kāṭhaka Saṃhitā) belongs to the Kāṭha branch of the Kṛṣṇa Yajurveda. 5 sthānakas (sections) with 40 chapters. Preserved chiefly in Kashmir and parts of Punjab; the tradition was documented in detail by Bühler in the 19th century. Important for textual-critical study because it preserves variant readings of Yajurvedic mantras. The famous <em>Kaṭha Upaniṣad</em> (the Naciketas-Yama dialogue) is attached to this recension."}}
+]},
+{label:"Kapiṣṭhala-Kāṭhaka Saṃhitā",children:[
+{n:"Kapiṣṭhala — closely related to Kāṭhaka, fragmentary",r:"KapS",d:"Closely related sister-recension to Kāṭhaka; fragmentary preservation",
+det:{c:"The <em>Kapiṣṭhala-Kāṭhaka Saṃhitā</em> (KapS) is a sister-recension to the Kāṭhaka, preserved in fragmentary form. Many of its readings overlap with the Kāṭhaka but with distinctive variants. Geographically associated with the Kapiṣṭhala school which historically flourished in regions of present-day Haryana and Punjab. Despite its fragmentary state, it provides important comparative material for the Kṛṣṇa Yajurveda tradition. Listed among the Kṛṣṇa Yajurveda recensions in the Vedic Heritage Portal."}}
+]}
+]}
+]},
+
+// ───────────────────────────────────────────────────────────────────────────
+// 3. SĀMAVEDA
+// ───────────────────────────────────────────────────────────────────────────
+{tab:"Sāmaveda",title:"Sāmaveda Saṃhitā",sub:"Pūrvārcika (650 verses) + Uttarārcika (1,225 verses) = 1,875 total · Three recensions",
+intro:"The Sāmaveda is the shortest of the four Vedas and is closely connected to the Ṛgveda — most of its 1,875 verses are drawn from the Ṛgveda (chiefly Maṇḍalas 8 and 9), set to specific melodic patterns (<em>sāmans</em>) for chanting by the <em>Udgātṛ priest</em> during Soma sacrifices. As Vedic Heritage notes: <em>'Sāman'</em> (from <em>sam+mā</em>) = 'measuring harmoniously with a Ṛk' — and <em>'gītiṣu sāmākhyā'</em> ('that called Sāman among songs/chants', Jaiminīya Sūtra). In the Bhagavad-Gītā 10.22, Kṛṣṇa declares: <em>vedānāṃ sāmavedo'smi</em> — 'among the Vedas, I am the Sāmaveda.' Patañjali notes the Sāmaveda once had 1,000 recensions; today only three survive: <em>Kauthuma</em> (most prominent, prevalent across India), <em>Jaiminīya</em> (preserved chiefly in Tamil Nadu and Kerala), and <em>Rāṇāyanīya</em> (preserved chiefly in Maharashtra and Karnataka). The Kauthuma Saṃhitā has two parts: Pūrvārcika (650 verses, 4 sub-parts) and Uttarārcika (1,225 verses).",
+legend:[{c:C.teal,t:"Pūrvārcika"},{c:C.amber,t:"Uttarārcika"},{c:C.purple,t:"Recensions"},{c:C.blue,t:"Soma liturgy"},{c:C.coral,t:"Melodies (Gānas)"},{c:C.green,t:"Upaniṣads"}],
+branches:[
+{name:"Recensions of the Sāmaveda",ref:"3 Śākhās",color:C.purple,children:[
+{n:"Kauthuma Śākhā — The principal recension",r:"Kauthuma",d:"Most widespread Sāmaveda recension; 1,875 verses; structure of Pūrvārcika + Uttarārcika",
+det:{c:"The <em>Kauthuma Saṃhitā</em> is the most prominent surviving Sāmaveda recension and is the basis of standard Sāmaveda study throughout India. Two-part structure: <em>Pūrvārcika</em> (650 verses, 4 parts: Āgneya, Aindra, Pavamāna, Āraṇya) and <em>Uttarārcika</em> (1,225 verses). Of the 1,875 total verses, 1,771 are from the Ṛgveda; only 99 are unique to Sāmaveda. The musical material is preserved separately in 4 Gāna texts: <em>Grāmageyagāna</em> (village-songs, public), <em>Āraṇyagāna</em> (forest-songs, esoteric), <em>Ūhagāna</em>, <em>Ūhyagāna</em> (the latter two are derivative variations). The Chāndogya and Kena Upaniṣads belong to the Kauthuma school.",
+syk:"Sāyaṇa: the verses in Sāmaveda are not identical to the Ṛgvedic originals — they contain phonological modifications required by the melodies (lengthening of syllables, insertion of <em>stobhas</em> — meaningless syllables like 'hā', 'i', 'u', 'o' — to fill musical intervals). These are not errors but musical requirements."}},
+{n:"Jaiminīya Śākhā — South Indian recension",r:"Jaiminīya",d:"Preserved chiefly in Tamil Nadu and Kerala; some surviving Brāhmaṇa material",
+det:{c:"The <em>Jaiminīya Saṃhitā</em> is preserved chiefly by Nambūdiri Brāhmaṇas in Kerala and certain communities in Tamil Nadu. Structurally similar to Kauthuma but with distinctive pronunciation traditions and some textual variants. Importantly, the <em>Jaiminīya Brāhmaṇa</em> and <em>Jaiminīyopaniṣad Brāhmaṇa</em> (also called Talavakāra Brāhmaṇa) are extant — the latter contains the Kena Upaniṣad. The Jaiminīya material is among the most archaic-sounding Sāmaveda preserved today; some scholars consider its melodic traditions among the oldest documented melodies in the world."}},
+{n:"Rāṇāyanīya Śākhā — Maharashtra-Karnataka recension",r:"Rāṇāyanīya",d:"Preserved chiefly in Maharashtra and Karnataka",
+det:{c:"The <em>Rāṇāyanīya Saṃhitā</em> is preserved chiefly by Brāhmaṇa communities in Maharashtra and Karnataka. The textual content is very close to Kauthuma but with distinct melodic conventions and accent-patterns. Of the 1,000 recensions Patañjali mentions for the Sāmaveda, only these three survive in active use today. The Vedic Heritage Portal preserves all three recensions in audio form."}}
+]},
+{name:"Pūrvārcika — The Earlier Verses (650 verses)",ref:"Kauthuma Pūrvārcika",color:C.teal,sub:[
+{label:"Āgneya Parvan — 114 verses for Agni",children:[
+{n:"Opening Agni verses — drawn primarily from RV Maṇḍalas 1–6",r:"SV Pūrvārcika 1–114",d:"114 verses praising Agni — set to specific sāmans for the morning Soma-pressing",
+det:{skt:"अग्न आयाहि वीतये गृणानो हव्यदातये। नि होता सत्सि बर्हिषि ॥",tr:"O Agni, come for the feast, being praised, for the giving of the oblation. Sit down as the hotar on the barhis (sacred grass).",
+c:"The Pūrvārcika opens with 114 verses to Agni drawn from across the Ṛgveda (Maṇḍalas 1–6). The critical difference from Ṛgvedic verses is the musical notation — each syllable receives specific tonal accent, organized into specific melodic patterns (sāmans) that transform the spoken text into chant. The Sāmaveda is therefore not a text to be read but a score to be performed — its full meaning is realized only in musical recitation."}}
+]},
+{label:"Aindra Parvan — 352 verses for Indra",children:[
+{n:"Indra verses — the largest Pūrvārcika section",r:"SV Pūrvārcika 115–466",d:"352 verses to Indra — for the climactic phase of the Soma sacrifice",
+det:{skt:"इन्द्रमिद् गाथिनो बृहदिन्द्रमर्केभिरर्किणः। इन्द्रं वाणीरनूषत ॥",tr:"The singers praise Indra greatly; those with songs praise Indra; the divine voices have praised Indra.",
+c:"The Aindra Parvan is the largest Pūrvārcika section, reflecting Indra's centrality to the Soma sacrifice. Soma was pressed and offered specifically to Indra; the Udgātṛ priest's chanting of these verses was the primary means of invoking Indra and persuading him to drink soma and bless the sacrificers. The dramatic arc of the sacrifice — pressing → filtering → offering → consuming → ecstasy — was accompanied at each stage by specific sāmans.",
+syk:"Sāyaṇa: different sāmans (Bṛhatsāman at noon, Rathantara in morning, Vāmadevya throughout) are matched to phases of the sacrifice and times of day. Each melody has its own ritual effect (phala) and cosmic correspondence."}}
+]},
+{label:"Pavamāna Parvan — 119 verses for Soma Pavamāna",children:[
+{n:"Soma Pavamāna verses — pressing and filtering accompaniment",r:"SV Pūrvārcika 467–585",d:"119 verses chanted while soma is being pressed and filtered",
+det:{skt:"पवस्व वाजसातये पवस्व देव मेधाय।",tr:"Purify yourself for the gaining of strength; purify yourself, O god, for intelligence.",
+c:"The Pavamāna verses are chanted specifically during the soma-pressing — the most sacred ritual moment. The three pressings (morning, midday, evening) each have their own sāmans. The Udgātṛ's chanting was believed to purify and consecrate the soma beyond the physical filtering. Reciprocal purification: the soma purifies the sacrificers; their chanting purifies the soma."}}
+]},
+{label:"Āraṇya Parvan — 55 verses + 10 Mahānāmni Mantras",children:[
+{n:"Āraṇya verses — for Indra, Agni, Soma; with the Mahānāmnī appendix",r:"SV Pūrvārcika 586–650",d:"55 forest-tradition verses for various deities, plus 10 Mahānāmnī (Great-Name) Mantras",
+det:{c:"The <em>Āraṇya Parvan</em> ('Forest-Tradition') consists of 55 verses for Indra, Agni, Soma, and other deities — preserved in the Āraṇyagāna melodic tradition (forest-songs, traditionally chanted in forest retreats and considered esoteric/secret). Appended to it are the 10 <em>Mahānāmnī Mantras</em> (Great-Name Mantras) — short verses of high ritual potency used in the Mahāvrata sacrifice and other elevated rites. The Āraṇya Parvan is the most sacred and protected layer of the Pūrvārcika."}}
+]}
+]},
+{name:"Uttarārcika — The Later Verses (1,225 verses)",ref:"Kauthuma Uttarārcika",color:C.amber,children:[
+{n:"Liturgical applications — verses arranged for actual sacrifices",r:"SV Uttarārcika 1–1225",d:"1,225 verses arranged according to their use in specific Soma sacrifices",
+det:{c:"The <em>Uttarārcika</em> contains 1,225 verses arranged according to their use in specific Soma sacrifices (Agniṣṭoma, Vājapeya, Aśvamedha, etc.). Where the Pūrvārcika groups verses by deity (Agni, Indra, Soma) for melodic practice, the Uttarārcika groups them by their actual liturgical sequence in performances. This makes the Uttarārcika the practical performance-manual of the Sāmaveda priesthood. Each verse-group corresponds to a specific stage of a specific sacrifice. Together with the Gāna texts (Grāmageyagāna, Āraṇyagāna, Ūhagāna, Ūhyagāna), the Uttarārcika constitutes the complete Sāmaveda liturgical apparatus."}},
+{n:"Pavamāna Sūktas of the Uttarārcika — Soma-pressing verses",r:"SV Uttarārcika Pavamāna",d:"The full Pavamāna section for actual Soma-pressing performance",
+det:{skt:"पवस्व सोम महान् समुद्रः।",tr:"Flow, O Soma, the great ocean.",
+c:"The Uttarārcika's Pavamāna section assembles the verses needed for the actual three pressings of the Soma sacrifice — morning, midday, evening — in the precise order required. Where the Pūrvārcika presented verses for melodic study, the Uttarārcika presents them for performance.",
+syk:"Sāyaṇa: 'pavasva' (purify yourself) addresses the soma as agent of its own purification — the soma deity is invited to purify itself through the act of flowing through the wool strainer. Reciprocal purification."}}
+]},
+{name:"Sāmaveda's Upaniṣads",ref:"Chāndogya · Kena · Jaiminīyopaniṣad Brāhmaṇa",color:C.green,children:[
+{n:"Chāndogya Upaniṣad — Udgītha and the OM",r:"ChU 1.1–1.13",d:"'Atha khalu ya udgīthaḥ — om iti hy udgāyati' — the udgītha is OM",
+det:{skt:"ओमित्येतदक्षरमुद्गीथमुपासीत।",tr:"One should meditate upon this syllable OM as the udgītha.",
+c:"The Chāndogya — the most extensive Sāmaveda Upaniṣad — opens by identifying the cosmic principle (Brahman) with the syllable OM and with the <em>udgītha</em> (the melodic high-note of the Sāmavedic chant). Not arbitrary: udgītha is the melodic apex of Sāmaveda performance; OM is the sonic apex containing all speech. The Chāndogya develops elaborate meditations (upāsanās) on Sāmavedic categories — fivefold sāman, musical qualities — as means of meditating on Brahman.",
+syk:"Sāyaṇa: the OM-udgītha identification is the Sāmaveda's unique contribution to Upaniṣadic thought. Other Vedas approach Brahman through text (Ṛgveda), action (Yajurveda), or breath (Atharvaveda) — Sāmaveda approaches Brahman through music. The highest reality is heard, not thought.",
+shk:"Śaṅkara (Chāndogya Bhāṣya): identifying udgītha (a specific ritual chant) with OM and with Brahman teaches that every genuine ritual act is, at its deepest level, a meditation on Brahman. Ritual and philosophy are not two domains but two aspects of one reality."}},
+{n:"Kena Upaniṣad — 'By whom?'",r:"Kena Upaniṣad 1–4",d:"'By whom willed and directed does the mind go to its objects?' — the inquiry into the source of consciousness",
+det:{skt:"केनेषितं पतति प्रेषितं मनः केन प्राणः प्रथमः प्रैति युक्तः।",tr:"By whom willed and directed does the mind go to its objects? By whom commanded does the first prāṇa proceed?",
+c:"The Kena Upaniṣad belongs to the Talavakāra (Jaiminīya) recension of the Sāmaveda — preserved within the Jaiminīyopaniṣad Brāhmaṇa. Its opening question — 'kena' ('by whom') — drives the inquiry into the unseen source that empowers mind, breath, eye, and ear. The Upaniṣad's answer: that source is itself ungraspable by mind, eye, or speech — yet without it, none of these would function.",
+shk:"Śaṅkara (Kena Bhāṣya): the Kena teaches the via negativa with extreme precision — 'that which is not seen by the eye but by which the eye sees, know that alone to be Brahman, not what people worship here.' The Sāmavedic origin is significant: this Upaniṣad emerges from the tradition that knows reality through hearing rather than seeing."}}
+]}
+]},
+
+// ───────────────────────────────────────────────────────────────────────────
+// 4. ATHARVAVEDA
+// ───────────────────────────────────────────────────────────────────────────
+{tab:"Atharvaveda",title:"Atharvaveda Saṃhitā",sub:"20 Kāṇḍas · 730 Sūktas · 5,987 Mantras (Śaunaka recension) · The Veda of varied knowledge",
+intro:"The Atharvaveda is the Veda of the <em>Atharvan</em> (the fire-priest, in whose name <em>Atharvan</em> originally meant 'priest', though Nirukta etymology gives it as 'one stable-minded, immovably firm — the yogi'). Originally called the <em>Atharvāṅgirasa-Veda</em> ('Veda of the Atharvans and the Aṅgirasas'). According to Patañjali, it had 9 śākhās; today only 2 recensions survive: <em>Śaunaka</em> (the standard, with 730 hymns and 5,987 mantras across 20 kāṇḍas) and <em>Paippalāda</em> (preserved in Odisha and Kashmir, with significant differences). About 1,200 verses are derived from the Ṛgveda; about 1/6 (including kāṇḍas 15 and 16 entirely) is in prose. The Vedic Heritage Portal calls it 'the only Veda which is related to both worldly happiness and spiritual knowledge' (Sāyaṇa's praise). It is the oldest literary monument of Indian medicine — believed to be the origin of <em>Āyurveda</em>. The supervising priest of Vedic sacrifices, the <em>Brahman ṛtvik</em>, traditionally represents the Atharvaveda — hence its alternative name <em>Brahmaveda</em>.",
+legend:[{c:C.blue,t:"Healing/Medical"},{c:C.red,t:"Protection"},{c:C.purple,t:"Philosophy/Cosmology"},{c:C.teal,t:"Love & Charms"},{c:C.amber,t:"Domestic rites"},{c:C.green,t:"Upaniṣads"}],
+branches:[
+{name:"Recensions of the Atharvaveda",ref:"2 Śākhās",color:C.purple,children:[
+{n:"Śaunaka Saṃhitā — The principal recension",r:"AV-Ś",d:"20 kāṇḍas, 730 sūktas, 5,987 mantras — the standard Atharvaveda",
+det:{c:"The <em>Śaunaka recension</em> is the principal extant Atharvaveda — when 'Atharvaveda' is mentioned without qualification, this is what is meant. Structure: 20 kāṇḍas (books), 730 sūktas (hymns), 5,987 mantras. Of nine śākhās Patañjali mentions, only Śaunaka and Paippalāda survive. The Vedic Heritage Portal preserves Śaunaka in both audio and video formats.",
+syk:"Sāyaṇa wrote a complete Atharvaveda-bhāṣya on the Śaunaka recension — among his most extensive commentarial works. He gives particular attention to the medical and protective hymns, identifying specific plants and disease-categories. His commentary preserves much medical-botanical knowledge that would otherwise be lost."}},
+{n:"Paippalāda Saṃhitā — Preserved in Odisha and Kashmir",r:"AV-P",d:"Variant Atharvaveda recension; significantly different from Śaunaka in arrangement and content",
+det:{c:"The <em>Paippalāda recension</em> is preserved chiefly in Odisha (Orissa) and was previously preserved in Kashmir. It differs significantly from Śaunaka in both arrangement and content — many hymns appear in different kāṇḍas, with different verse-orderings, and there are many hymns unique to Paippalāda. The Paippalāda was thought lost until the Kashmir manuscript was discovered by Roth in the 19th century; further Odisha manuscripts were discovered in the 20th century. Critical edition work continues. The Paippalāda preserves what may be older readings in many cases — a vital comparative resource for Atharvaveda studies."}}
+]},
+{name:"Kāṇḍas 1–7 — Healing & Protective Hymns (Bhaiṣajya)",ref:"AV 1–7",color:C.blue,children:[
+{n:"Healing hymns — Bhiṣaj (physician) mantras",r:"AV 1.2, 2.3, 4.13",d:"Hymns against fever (takman), serpent-bite, demonic disease-causes",
+det:{skt:"यस्ते तक्मन् हरिमाणो यः शीतः यस्ते विषमः परुषो ज्वरस्ते नाशयामि।",tr:"O Takman (fever), your yellow-making (jaundice), your cold (chill), your irregular hot fever — all these I destroy.",
+c:"The Atharvaveda's healing hymns address specific diseases by name and invoke healing forces. <em>Takman</em> = the fever-demon, addressed as a divine power that can be persuaded or expelled. The medical hymns reflect demonological etiology (disease = specific demonic forces, malign spirits, sorcerers' curses) combined with botanical knowledge (specific plants praised as healing agents). AV 6.91 — most elaborate plant-hymn — praises kuṣṭha (probably <em>Saussurea lappa</em>) as healer of all diseases. AV 4.13 uses ritual substitution: the fever is 'sent' to the Balhikas (distant foreigners).",
+syk:"Sāyaṇa: AV's medical hymns must be understood with Āyurveda — the science of life — considered a subsidiary Veda (upaveda) of the Atharvaveda. Healing mantras are systematic applications of mantra-power to pathological conditions identified by Āyurvedic nosology, not folk magic.",
+sknd:"Skandasvāmin: disease-names correspond to Āyurvedic categories — takman = fever generally; śīta = cold (probably malarial); viṣama = irregular fever (quartan malaria); yamala = paired fever. AV's medical precision is remarkable for its antiquity."}},
+{n:"Protective hymns — Kavacha (armor) mantras",r:"AV 1.7, 2.10, 7.73",d:"Hymns for protection against enemies, witchcraft (kṛtyā), and the evil eye",
+det:{skt:"यन्त्रेण देवाः परिगृह्य सर्वाः कृत्याः अमित्रे प्रतिसर्जयामः।",tr:"We send back all the sorceries (kṛtyās) upon the enemy, having encompassed them with a divine restraint (yantra).",
+c:"Three types of protective technique: (1) <em>Counterspell</em> — malign force identified and sent back to its sender; (2) <em>Divine protection</em> — deity (usually Indra, Varuṇa, Rudra) invoked to stand guard; (3) <em>Amulet consecration</em> — a specific object (gold amulet, plant, stone) charged with protective power through mantra and worn. The Atharvaveda is the primary source for the Indian tradition of amulets (<em>kavaca</em>, <em>rakṣā-bandha</em>) and protective ritual.",
+syk:"Sāyaṇa: <em>kṛtyā</em> (witchcraft) is a real force — demonic power sent by a human sorcerer (<em>ābhicārika</em>) or arising spontaneously from a violated taboo. AV's counterspell hymns are legitimate ritual means of household protection — not to be confused with the offensive abhicāra they defend against."}}
+]},
+{name:"Kāṇḍas 8–12 — Cosmological Hymns (Brahmajñāna)",ref:"AV 8–12",color:C.purple,children:[
+{n:"Bhūmi Sūkta — Hymn to Mother Earth (12.1)",r:"AV 12.1",d:"63 verses to Pṛthivī — 'Earth is mother and I am son of Earth'",
+det:{skt:"माता भूमिः पुत्रोऽहं पृथिव्याः।",tr:"Earth is the mother, and I am the son of Earth.",
+c:"The <em>Bhūmi Sūkta</em> — 63 verses to Pṛthivī Mātā (Mother Earth) — is the Atharvaveda's most celebrated single hymn and one of the world's earliest ecological-environmental manifestos. Earth is praised as upholder, nourisher, the source of life and protection; the worshipper offers reverence and pledges respect. The hymn has been frequently cited in modern environmental movements as the Vedic basis for ecological consciousness. Listed by Bloomfield among the most important AV sūktas.",
+syk:"Sāyaṇa: the Bhūmi Sūkta teaches that Earth is not merely physical substrate but a divine mother who upholds and nourishes all beings — and that human conduct must respect this maternal relationship. Violations of Earth's integrity (excessive extraction, pollution) are violations of dharma."}},
+{n:"Skambha Sūkta — The Cosmic Pillar (10.7)",r:"AV 10.7",d:"Skambha (cosmic support/pillar) as the all-containing Brahman",
+det:{skt:"कस्मिन्नङ्गे तपः कृत्स्नं कस्मिन्नङ्गे ऋतम् आहितम् ।",tr:"In which limb (of Skambha) is tapas entirely? In which limb is ṛta (cosmic order) placed?",
+c:"The Skambha Sūkta is one of the most philosophically advanced hymns in all Vedic literature — direct predecessor to the Upaniṣadic Brahman. <em>Skambha</em> ('pillar', 'support') begins as the cosmic prop holding heaven and earth apart, but in this hymn becomes the all-containing Absolute: all Vedic realities (ṛta, tapas, vrata, all deities, all that has been or will be) are 'in the limbs of Skambha.' Catechetical method: 'In which limb is X?' leading to the answer that Skambha contains all. Anticipates the Upaniṣadic ātman/Brahman.",
+syk:"Sāyaṇa: 'Skambha' = Prajāpati / Brahman in Vedāntic sense — universal support underlying all. The catechetical form is itself upāsanā: by asking where ṛta, tapas, and vrata are located in Skambha, the worshipper meditates on the all-encompassing Absolute.",
+sknd:"Skandasvāmin: the Atharvaveda's most significant contribution to speculative theology. The cosmic-pillar concept had physical-cosmological origins (cosmic mountain, world-pillar) but in AV 10.7 has been thoroughly metaphysicalized into the Upaniṣadic Brahman."}},
+{n:"Prāṇa Sūkta — Breath as Cosmic Principle (11.4)",r:"AV 11.4",d:"Prāṇa (breath/life-force) as the all-containing cosmic reality",
+det:{skt:"प्राणाय नमो यस्य सर्वमिदं वशे।",tr:"Homage to Prāṇa, in whose control all this is.",
+c:"The <em>Prāṇa Sūkta</em> elevates Prāṇa from biological function (breath sustaining life) to cosmic function (the force sustaining all existence). 'All this is in Prāṇa's control' — simultaneously physiological observation (all bodily functions depend on breath) and cosmological claim (all existence depends on cosmic breath). This Prāṇa theology directly feeds into Upaniṣadic discussions of the five prāṇas (prāṇa, apāna, vyāna, udāna, samāna) and into Yoga's prāṇāyāma theory.",
+syk:"Sāyaṇa: the Vedic source for the <em>mukhya-prāṇa</em> (principal breath) doctrine of Chāndogya and Bṛhadāraṇyaka Upaniṣads. The argument that Prāṇa is best of vital forces (since others cease without it) is prefigured here."}},
+{n:"Kāla Sūkta — Time as Creator (19.53–54)",r:"AV 19.53–54",d:"Time (Kāla) as the supreme cosmic principle from which all arises",
+det:{skt:"कालः ससर्ज भुवनानि। काल: सूर्यमजनयत्।",tr:"Time created the worlds. Time generated the sun.",
+c:"The <em>Kāla Sūktas</em> (AV 19.53 and 19.54) elevate Time (Kāla) to the position of supreme cosmic principle — the source from which sun, moon, atmosphere, earth, and all beings arise. Time is described as a horse with seven reins (the seven days of the week, or seven planetary periods) drawing the cosmic chariot. These hymns are among the earliest philosophical reflections on time as a metaphysical principle, anticipating later Indian philosophical schools (especially the Kālavāda — time-doctrine) that posited time as ultimate reality."}}
+]},
+{name:"Kāṇḍas 13–18 — Speculative & Domestic",ref:"AV 13–18",color:C.amber,children:[
+{n:"Rohita Sūktas — The Red Sun (13.1–9)",r:"AV 13.1–9",d:"Hymns to Rohita (the Red Sun) as cosmic creator and supreme deity",
+det:{c:"The <em>Rohita Sūktas</em> (AV 13.1–9) form an extended sequence praising Rohita ('the Red One') — the rising sun deified as cosmic creator and supreme being. These hymns blend solar imagery with Brahmanic speculation: Rohita is simultaneously the visible sun, the cosmic intelligence behind it, and the principle of creative order. Listed by Bloomfield among the foundational AV speculative hymns. The Rohita theology contributed to later Sūrya-worship and to the Saura sect of Hinduism."}},
+{n:"Vivāha Sūkta — Marriage rite (Kāṇḍa 14)",r:"AV 14",d:"The entire 14th kāṇḍa is the Vivāha Sūkta — the most extensive Vedic marriage liturgy",
+det:{c:"Where the Ṛgveda's Vivāha Sūkta (RV 10.85) is one hymn, the Atharvaveda devotes its entire 14th kāṇḍa to the marriage rite. Two extensive sections covering: (1) the bride's preparation, anointing, and consecration; (2) the wedding fire-rituals, the seven steps (saptapadī), the binding of the marital bond, prayers for progeny and prosperity. AV 14 is the most extensive Vedic marriage liturgy and the primary source for the elaborate marriage rites of classical Hindu vivāha-saṃskāra as elaborated in the Gṛhya-Sūtras."}},
+{n:"Brahmacarya Sūkta — The Vedic Student (11.5)",r:"AV 11.5",d:"The Brahmacārī as cosmic figure — student-life as a form of cosmic ordering",
+det:{skt:"ब्रह्मचारीष्णँश्चरति रोदसी उभे।",tr:"The Brahmacārī, moving onward, traverses both worlds (heaven and earth).",
+c:"The <em>Brahmacarya Sūkta</em> (AV 11.5) is the foundational text for the institution of brahmacarya (Vedic studentship). The Brahmacārī (student) is described in cosmic terms — moving through both heaven and earth, sustaining cosmic order through his discipline. The girdle (mekhalā), staff (daṇḍa), and deer-skin (ajinam) of the student are described as cosmic instruments. This hymn theologically grounds the entire Indian institution of guru-śiṣya parampara and the disciplined student-life.",
+syk:"Sāyaṇa: the Brahmacārī's discipline (tapas, brahmacarya, svādhyāya) is not merely personal preparation but cosmic service. The student who properly observes brahmacarya 'sustains both worlds' — his discipline contributes to the cosmic ṛta."}},
+{n:"Madhuvidyā Sūkta — Honey-doctrine (9.1)",r:"AV 9.1",d:"The Madhu (honey) Vidyā — esoteric teaching on the cosmic nectar",
+det:{c:"The <em>Madhuvidyā Sūkta</em> (AV 9.1) is the Atharvavedic source for the Madhu-Vidyā (honey-doctrine) developed extensively in the Bṛhadāraṇyaka Upaniṣad (2.5). The doctrine: every aspect of cosmos is 'honey' (madhu) — sweet nectar — for every other aspect; sun is honey for earth, earth is honey for sun, etc. — establishing the universal mutual-sustaining interrelation of all things. Anticipates the Upaniṣadic vision of cosmic interconnectedness."}},
+{n:"Samanasya Sūkta — Like-mindedness (3.30)",r:"AV 3.30",d:"Famous concord-hymn — 'May your minds be of one accord, your hearts united'",
+det:{skt:"समानी प्रपा सह वोऽन्नभागः समाने योक्त्रे सह वो युनज्मि।",tr:"Common be your water, common your share of food; I yoke you together with a common yoke.",
+c:"The <em>Samanasya Sūkta</em> (AV 3.30) is the celebrated 'concord hymn' frequently quoted in modern Indian discourse on national unity. Originally a hymn for family harmony, it asks that members of a family share food, water, and purpose like the spokes of a single wheel — minds in one accord, hearts united. Its closing imagery of the common yoke and common water-trough has become a standard scriptural reference for principles of social cooperation and unity."}}
+]},
+{name:"Kāṇḍas 19–20 & Atharvavedic Upaniṣads",ref:"AV 19–20 + Upaniṣads",color:C.green,children:[
+{n:"Kuntāpa Sūktas (Kāṇḍa 20)",r:"AV 20.127–136",d:"The Kuntāpa hymns — riddles, narratives, and ritual recitations",
+det:{c:"The <em>Kuntāpa Sūktas</em> (AV 20.127–136) form a distinctive sub-collection within the 20th kāṇḍa. They contain riddles (brahmodya), narratives, and ritual recitations used in specific late-Vedic ceremonies. The Kuntāpa hymns include some of the most archaic-feeling material in the Atharvaveda alongside some of the latest. Bloomfield singled them out as a distinct subject-category. Their Sanskrit shows distinctive features that have made them important for historical-linguistic study."}},
+{n:"Muṇḍaka Upaniṣad — The two knowledges",r:"MuU 1.1",d:"Para and Apara vidyā — higher and lower knowledge — the AV's crown jewel",
+det:{skt:"द्वे विद्ये वेदितव्ये इति ह स्म यद् ब्रह्मविदो वदन्ति। परा चैवापरा च।",tr:"Two knowledges are to be known — so say those who know Brahman. The higher (parā) and the lower (aparā).",
+c:"The Muṇḍaka opens with the decisive classification of all knowledge: <em>Aparā vidyā</em> (lower knowledge) — including all four Vedas and auxiliary sciences — and <em>Parā vidyā</em> (higher knowledge) — the direct, immediate knowledge of the imperishable Brahman. Not devaluing lower knowledge but establishing hierarchy: lower yields specific results (svarga, progeny, wealth); higher yields the imperishable, liberation. Sparks-and-fire metaphor (1.2.1) establishes Brahman as source from which all beings arise.",
+syk:"Sāyaṇa: the para/apara classification is the Muṇḍaka's central contribution — resolving the apparent contradiction between Vedic ritual tradition and Upaniṣadic tradition by giving each its proper domain.",
+shk:"Śaṅkara (Muṇḍaka Bhāṣya): the two-knowledge classification is key to understanding the entire Vedic corpus. Vedas in literal meaning teach apara (ritual for results); Vedas in ultimate purport (tātparya) teach para (knowledge of indivisible imperishable Brahman). Upaniṣads make explicit what ritual texts imply.",
+rmj:"Rāmānuja: para vidyā = brahma-sākṣātkāra (direct vision of Brahman as Īśvara = Viṣṇu). Sparks-and-fire metaphor is pāriṇāmika (transformative) not vivartika (illusory): individual selves (jīvas) are genuine modifications of Brahman, not illusory appearances.",
+mdv:"Madhva: confirms Brahman (= Viṣṇu) is categorically different from all other objects of knowledge. Lower knowledge deals with dependent realities (paratantra-tattvas); higher knowledge with the independent reality (svatantra-tattva = Viṣṇu) directly."}},
+{n:"Praśna Upaniṣad — Six Questions",r:"PrU 1–6",d:"Six students approach Pippalāda; six questions on the highest knowledge",
+det:{c:"The <em>Praśna Upaniṣad</em> ('Question Upaniṣad') belongs to the Atharvaveda's Pippalāda tradition. Six students (Sukeśin, Satyakāma, Sauryāyaṇī, Kausalya, Bhārgava, Kabandhi) approach the sage Pippalāda with six questions on the source of beings, the nature of prāṇa, the origin of life, the nature of dream and waking, the syllable OM, and the puruṣa with sixteen parts. Pippalāda's answers form a systematic Atharvavedic Brahma-jñāna. Important especially for its detailed treatment of the prāṇas.",
+shk:"Śaṅkara (Praśna Bhāṣya): the dialogue form is pedagogically significant — different students need different angles of approach to the one truth. The six questions and answers together constitute a complete preliminary curriculum in Atharvavedic Brahma-jñāna."}},
+{n:"Māṇḍūkya Upaniṣad — The Four States",r:"MāU 1–12",d:"OM and the four states of consciousness — waking, dream, deep sleep, turīya",
+det:{skt:"ओमित्येतदक्षरमिदं सर्वम्।",tr:"OM — this syllable is all this.",
+c:"The <em>Māṇḍūkya</em> — shortest of the principal Upaniṣads (12 verses) — is among the most philosophically influential. It correlates the four <em>mātrās</em> (sound-units) of OM (A-U-M-silence) with the four states of consciousness: <em>jāgrat</em> (waking), <em>svapna</em> (dream), <em>suṣupti</em> (deep sleep), and <em>turīya</em> (the fourth, beyond all three). The Māṇḍūkya is the foundational text for Advaita Vedānta's analysis of consciousness. Gauḍapāda's <em>Kārikā</em> on the Māṇḍūkya was the first systematic Advaita treatise.",
+shk:"Śaṅkara: the Māṇḍūkya alone, with Gauḍapāda's Kārikā, would be sufficient for liberation if rightly understood. The four-state analysis demonstrates that the witnessing consciousness (turīya) is not a fourth state alongside the others but the unchanging substrate of all three.",
+gp:"Gauḍapāda's Kārikā (the foundational Advaita text): the analysis of the three states reveals that all three are equally appearances within the unchanging Brahman-consciousness. Waking is not more 'real' than dream or deep sleep — all three are vyāvahārika appearances within turīya."}}
+]}
+]}
+];
+buildSubNav(secs,'vedas',renderSection);
+};
+
+// ── Init ──
+builders.vedas();
+</script>
+</body>
+</html>
