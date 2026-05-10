@@ -1,22 +1,24 @@
 :root{
-  /* Warm parchment palette */
-  --bg:#F5EDDC;
-  --bg-card:#EFE3CC;
-  --bg-panel:#E8D9BC;
-  --bg-deep:#FBF6EA;
-  --text-primary:#2A1D0E;
-  --text-secondary:#4F3D26;
-  --text-muted:#8A7553;
-  --border:#C9B587;
-  --border-light:#DCCBA3;
-  --gold:#9C6F2A;
-  --gold-light:#C49344;
-  --shadow:0 1px 3px rgba(120,80,30,.08), 0 4px 12px rgba(120,80,30,.04);
-  --shadow-lg:0 4px 16px rgba(120,80,30,.10), 0 12px 32px rgba(120,80,30,.06);
+  color-scheme: light;
+  /* Warm saffron / parchment palette — sunlit, yogic */
+  --bg:#FCF5E8;
+  --bg-card:#F6E9CB;
+  --bg-panel:#EFDDB2;
+  --bg-deep:#FFFCF2;
+  --text-primary:#2A1D0A;
+  --text-secondary:#5A4220;
+  --text-muted:#8B7349;
+  --border:#DCC59A;
+  --border-light:#ECDCB7;
+  --gold:#B8741F;       /* deep saffron */
+  --gold-light:#E29B45; /* warm marigold */
+  --rose:#C45A30;       /* sunset terracotta */
+  --shadow:0 1px 3px rgba(120,80,30,.08), 0 4px 12px rgba(120,80,30,.06);
+  --shadow-lg:0 4px 16px rgba(120,80,30,.12), 0 12px 32px rgba(120,80,30,.08);
   --radius:7px;--radius-lg:12px;
-  --font-body:'Lora',Georgia,'Times New Roman',serif;
+  --font-body:'EB Garamond','Lora',Georgia,'Times New Roman',serif;
   --font-display:'Cormorant Garamond',Georgia,serif;
-  --font-mono:'JetBrains Mono','Inconsolata','Courier New',monospace;
+  --font-mono:'Inconsolata','JetBrains Mono','Courier New',monospace;
 
   /* System accents — each system gets its own warm hue */
   --sys-yoga:#B8501F;        /* terracotta */
@@ -41,37 +43,17 @@
   --sys-vedas-bg:#F3E4C2;
   --sys-vedas-deep:#7A551E;
 }
-@media(prefers-color-scheme:dark){:root{
-  --bg:#1B140A;
-  --bg-card:#251B0E;
-  --bg-panel:#2E2213;
-  --bg-deep:#15100A;
-  --text-primary:#F2EAD8;
-  --text-secondary:#D5C7A9;
-  --text-muted:#9A876A;
-  --border:#4A3920;
-  --border-light:#352818;
-  --gold:#D4A152;
-  --gold-light:#9C6F2A;
-  --shadow:0 1px 3px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
-  --shadow-lg:0 4px 16px rgba(0,0,0,.5), 0 12px 32px rgba(0,0,0,.3);
-
-  --sys-yoga:#E07A45;        --sys-yoga-bg:#2D1B0E;       --sys-yoga-deep:#F0996B;
-  --sys-samkhya:#C18A50;     --sys-samkhya-bg:#291C0E;    --sys-samkhya-deep:#D9A66B;
-  --sys-nyaya:#B5A852;       --sys-nyaya-bg:#252210;      --sys-nyaya-deep:#D4C870;
-  --sys-vaisheshika:#9CB07A; --sys-vaisheshika-bg:#1F2615;--sys-vaisheshika-deep:#B8CB94;
-  --sys-mimamsa:#D86B6B;     --sys-mimamsa-bg:#2A1313;    --sys-mimamsa-deep:#E89090;
-  --sys-vedanta:#B17BB8;     --sys-vedanta-bg:#241A26;    --sys-vedanta-deep:#CB9CCF;
-  --sys-vedas:#D4A152;       --sys-vedas-bg:#291F0F;      --sys-vedas-deep:#E8BD70;
-}}
+/* Auto dark-mode removed: the warm light palette is intentionally used
+   regardless of OS preference, since the parchment look is core to the
+   yogic aesthetic and the prior dark mode produced low-contrast text. */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:17px;-webkit-text-size-adjust:100%}
 body{
   font-family:var(--font-body);
   background:var(--bg);
   background-image:
-    radial-gradient(at 20% 10%, rgba(196,147,68,.08) 0%, transparent 50%),
-    radial-gradient(at 80% 80%, rgba(156,111,42,.06) 0%, transparent 50%);
+    radial-gradient(at 18% 10%, rgba(226,155,69,.16) 0%, transparent 50%),
+    radial-gradient(at 82% 90%, rgba(196,90,48,.10) 0%, transparent 55%);
   background-attachment:fixed;
   color:var(--text-primary);
   min-height:100vh;
@@ -82,10 +64,17 @@ body{
 #shell{max-width:880px;margin:0 auto;padding:32px 20px 100px}
 
 /* HEADER */
-.site-header{text-align:center;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+.site-header{text-align:center;margin-bottom:32px;padding-bottom:28px;border-bottom:1px solid var(--border-light);position:relative}
+.site-header::after{
+  content:"❋";
+  position:absolute;bottom:-0.65rem;left:50%;transform:translateX(-50%);
+  background:var(--bg);color:var(--gold);
+  padding:0 14px;font-size:14px;letter-spacing:.4em;
+}
 .site-header .eyebrow{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:500}
 .site-header h1{font-family:var(--font-display);font-size:2.4rem;font-weight:500;color:var(--text-primary);line-height:1.2;margin-bottom:6px;letter-spacing:-.01em}
-.site-header .subtitle{font-family:var(--font-display);font-size:14px;color:var(--text-muted);font-style:italic;letter-spacing:.02em}
+.site-header h1::before{content:"ॐ ";color:var(--rose);font-weight:400;font-style:normal}
+.site-header .subtitle{font-family:var(--font-display);font-size:14.5px;color:var(--text-secondary);font-style:italic;letter-spacing:.02em}
 
 /* TOP NAV — systems */
 .top-nav{

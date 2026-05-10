@@ -1,217 +1,278 @@
 :root {
-            --bg:            #FAF8F4;
-            --bg-card:       #F4F1EB;
-            --bg-panel:      #EDEAE2;
-            --text-primary:  #1C1810;
-            --text-secondary:#4A4235;
-            --text-muted:    #8C7E6A;
-            --border:        #D8D0C0;
-            --border-light:  #E8E2D6;
-            --gold:          #9A7B3C;
-            --gold-light:    #C4A96B;
-            --radius:        6px;
-            --radius-lg:     10px;
-            --font-body:     'EB Garamond', Georgia, serif;
-            --font-display:  'Cormorant Garamond', Georgia, serif;
-            --font-mono:     'Inconsolata', 'Courier New', monospace;
-        }
+  color-scheme: light;
+  /* Warm parchment / saffron palette — yogic, sunlit */
+  --bg:            #FCF5E8;
+  --bg-card:       #F6E9CB;
+  --bg-panel:      #EFDDB2;
+  --bg-deep:       #FFFCF2;
+  --text-primary:  #2A1D0A;
+  --text-secondary:#5A4220;
+  --text-muted:    #8B7349;
+  --border:        #DCC59A;
+  --border-light:  #ECDCB7;
+  --gold:          #B8741F;     /* deep saffron */
+  --gold-light:    #E29B45;     /* warm marigold */
+  --rose:          #C45A30;     /* sunset terracotta */
+  --shadow-sm:     0 1px 3px rgba(120, 80, 30, .08);
+  --shadow:        0 2px 8px rgba(120, 80, 30, .10), 0 1px 3px rgba(120, 80, 30, .06);
+  --shadow-lg:     0 4px 16px rgba(120, 80, 30, .12), 0 12px 32px rgba(120, 80, 30, .08);
+  --radius:        7px;
+  --radius-lg:     12px;
+  --font-body:     'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-display:  'Cormorant Garamond', Georgia, serif;
+  --font-mono:     'Inconsolata', 'Courier New', monospace;
+}
 
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg:            #15120D;
-                --bg-card:       #1E1A13;
-                --bg-panel:      #252018;
-                --text-primary:  #F0EBE0;
-                --text-secondary:#BEB49E;
-                --text-muted:    #7A6E58;
-                --border:        #3A3328;
-                --border-light:  #2E2820;
-                --gold:          #C4A96B;
-                --gold-light:    #9A7B3C;
-            }
-        }
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
 
-        body {
-            font-family: var(--font-body);
-            background: var(--bg);
-            color: var(--text-primary);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  background-image:
+    radial-gradient(at 18% 12%, rgba(226, 155, 69, .14) 0%, transparent 50%),
+    radial-gradient(at 82% 88%, rgba(196, 90, 48, .08) 0%, transparent 55%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-feature-settings: "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
 
-        /* Navigation */
-        nav {
-            background: var(--bg-card);
-            border-bottom: 1px solid var(--border);
-            padding: 1rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+/* ── Navigation ─────────────────────────────────── */
+nav {
+  background: rgba(246, 233, 203, 0.92);
+  backdrop-filter: saturate(140%) blur(8px);
+  -webkit-backdrop-filter: saturate(140%) blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 0.9rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
 
-        .logo {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 400;
-            font-style: italic;
-            color: var(--gold);
-            letter-spacing: 0.02em;
-        }
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
 
-        .tabs {
-            display: flex;
-            gap: 3px;
-            background: var(--bg-panel);
-            padding: 4px;
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--border);
-        }
+.logo::before {
+  content: "ॐ";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+  color: var(--rose);
+  text-shadow: 0 0 18px rgba(196, 90, 48, 0.18);
+}
 
-        .tab-btn {
-            flex: 1;
-            padding: 9px 12px;
-            font-family: var(--font-mono);
-            font-size: 11px;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            border: none;
-            background: transparent;
-            color: var(--text-muted);
-            cursor: pointer;
-            border-radius: 7px;
-            transition: all 0.18s ease;
-            line-height: 1.3;
-        }
+.tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-deep);
+  padding: 5px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: inset 0 1px 2px rgba(120, 80, 30, .05);
+}
 
-        .tab-btn:hover {
-            color: var(--text-secondary);
-            background: var(--bg-card);
-        }
+.tab-btn {
+  flex: 1;
+  padding: 10px 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.18s ease;
+  line-height: 1.3;
+  font-weight: 500;
+}
 
-        .tab-btn.active {
-            background: var(--bg);
-            color: var(--text-primary);
-            font-weight: 500;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.12);
-        }
+.tab-btn:hover {
+  color: var(--text-secondary);
+  background: var(--bg-card);
+}
 
-        /* Content Area */
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            position: relative;
-        }
+.tab-btn.active {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  color: #FFFCF2;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(184, 116, 31, 0.35);
+}
 
-        .tab-content {
-            display: none;
-            flex: 1;
-            height: 100%;
-            width: 100%;
-            animation: fadeIn 0.4s ease-out;
-        }
+/* ── Content area ───────────────────────────────── */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
 
-        .tab-content.active {
-            display: flex;
-            flex-direction: column;
-        }
+.tab-content {
+  display: none;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  animation: fadeIn 0.4s ease-out;
+}
 
-        /* Home Tab specific */
-        #home-tab {
-            padding: 3rem 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            width: 100%;
-        }
+.tab-content.active {
+  display: flex;
+  flex-direction: column;
+}
 
-        .hero {
-            text-align: center;
-            margin-bottom: 2.5rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border);
-        }
+/* ── Home Tab ───────────────────────────────────── */
+#home-tab {
+  padding: 3.5rem 2rem 4rem;
+  max-width: 880px;
+  margin: 0 auto;
+  width: 100%;
+}
 
-        .hero .eyebrow {
-            font-family: var(--font-mono);
-            font-size: 10px;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 10px;
-        }
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid var(--border-light);
+  position: relative;
+}
 
-        .hero h1 {
-            font-family: var(--font-display);
-            font-size: 2rem;
-            font-weight: 300;
-            font-style: italic;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-            line-height: 1.2;
-        }
+.hero::after {
+  content: "❋";
+  position: absolute;
+  bottom: -0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg);
+  color: var(--gold);
+  padding: 0 14px;
+  font-size: 14px;
+  letter-spacing: 0.4em;
+}
 
-        .hero p {
-            color: var(--text-muted);
-            font-size: 0.875rem;
-            font-style: italic;
-            max-width: 560px;
-            margin: 0 auto;
-            line-height: 1.65;
-        }
+.hero .eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 2rem;
-        }
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  line-height: 1.18;
+  letter-spacing: -0.005em;
+}
 
-        .card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
-            padding: 2rem;
-            transition: transform 0.3s ease, border-color 0.15s;
-        }
+.hero p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
 
-        .card:hover {
-            transform: translateY(-2px);
-            border-color: var(--gold);
-        }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
 
-        .card h3 {
-            font-family: var(--font-display);
-            font-style: italic;
-            font-size: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: var(--text-primary);
-        }
+.card {
+  background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-card) 100%);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.85rem;
+  transition: transform 0.25s ease, border-color 0.18s, box-shadow 0.25s ease;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
 
-        .card p {
-            color: var(--text-secondary);
-            line-height: 1.55;
-            font-size: 0.95rem;
-        }
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold-light), var(--rose));
+  opacity: 0.7;
+}
 
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            flex: 1;
-            background-color: transparent;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold-light);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-glyph {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: var(--gold);
+  margin-bottom: 0.55rem;
+  line-height: 1;
+  filter: drop-shadow(0 1px 1px rgba(184, 116, 31, 0.18));
+}
+
+.card h3 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.45rem;
+  font-weight: 500;
+  margin-bottom: 0.65rem;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.card p {
+  color: var(--text-secondary);
+  line-height: 1.62;
+  font-size: 0.95rem;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  flex: 1;
+  background-color: transparent;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

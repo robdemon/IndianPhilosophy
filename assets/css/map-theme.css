@@ -1,35 +1,26 @@
 :root {
-  --bg:            #FAF8F4;
-  --bg-card:       #F4F1EB;
-  --bg-panel:      #EDEAE2;
-  --text-primary:  #1C1810;
-  --text-secondary:#4A4235;
-  --text-muted:    #8C7E6A;
-  --border:        #D8D0C0;
-  --border-light:  #E8E2D6;
-  --gold:          #9A7B3C;
-  --gold-light:    #C4A96B;
-  --radius:        6px;
-  --radius-lg:     10px;
+  color-scheme: light;
+  /* Warm saffron / parchment palette — yogic, sunlit */
+  --bg:            #FCF5E8;
+  --bg-card:       #F6E9CB;
+  --bg-panel:      #EFDDB2;
+  --bg-deep:       #FFFCF2;
+  --text-primary:  #2A1D0A;
+  --text-secondary:#5A4220;
+  --text-muted:    #8B7349;
+  --border:        #DCC59A;
+  --border-light:  #ECDCB7;
+  --gold:          #B8741F;     /* deep saffron */
+  --gold-light:    #E29B45;     /* warm marigold */
+  --rose:          #C45A30;     /* sunset terracotta */
+  --radius:        7px;
+  --radius-lg:     12px;
   --font-body:     'EB Garamond', Georgia, serif;
   --font-display:  'Cormorant Garamond', Georgia, serif;
   --font-mono:     'Inconsolata', 'Courier New', monospace;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg:            #15120D;
-    --bg-card:       #1E1A13;
-    --bg-panel:      #252018;
-    --text-primary:  #F0EBE0;
-    --text-secondary:#BEB49E;
-    --text-muted:    #7A6E58;
-    --border:        #3A3328;
-    --border-light:  #2E2820;
-    --gold:          #C4A96B;
-    --gold-light:    #9A7B3C;
-  }
-}
+/* Auto dark-mode removed: forcing the warm parchment palette guarantees
+   readable text and preserves the yogic aesthetic on every device. */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -38,9 +29,16 @@ html { font-size: 16px; }
 body {
   font-family: var(--font-body);
   background: var(--bg);
+  background-image:
+    radial-gradient(at 18% 10%, rgba(226,155,69,.14) 0%, transparent 50%),
+    radial-gradient(at 82% 90%, rgba(196,90,48,.08) 0%, transparent 55%);
+  background-attachment: fixed;
   color: var(--text-primary);
   min-height: 100vh;
   padding: 0;
+  font-feature-settings: "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 #app-shell {
