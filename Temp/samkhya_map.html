@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inconsolata:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/map-theme.css">
+<link rel="stylesheet" href="../assets/css/samkhya-sutra.css">
 </head>
 <body>
 <div id="app-shell">
@@ -16,10 +17,18 @@
     <h1>Sāṃkhyakārikā — Complete Map</h1>
     <div class="subtitle">72 Kārikās · Four Sections · Gaudapāda, Vācaspati Miśra &amp; Hariharānanda Āraṇya</div>
   </header>
+
+  <div class="view-bar" role="tablist" aria-label="Samkhya view">
+    <button id="view-map" class="active" onclick="switchView('map')">Map</button>
+    <button id="view-sutra" onclick="switchView('sutra')">Sutra</button>
+  </div>
+
   <div id="app"></div>
+  <div id="sutra" hidden></div>
 </div>
 
 <script src="../assets/js/map-core.js"></script>
+<script src="../assets/js/samkhya-sutras.js"></script>
 <script>
 const COMS = [
     {key:'g',  name:'Gaudapāda · Sāṃkhya-Kārikā-Bhāṣya'},
@@ -338,6 +347,115 @@ v:"Vyāsa (Mahābhārata, Śānti Parva, Mokṣadharma section): The Sāṃkhya 
 ]}
 ];
 initMap();
+
+// ── Sutra view ───────────────────────────────────────────
+function escapeHtml(s){
+  return (s || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function renderSutraView(){
+  const root = document.getElementById('sutra');
+  if (root.dataset.rendered === '1') return;
+
+  let h = '';
+  h += `<div class="sutra-search"><input type="search" id="sutra-q" placeholder="Search verses by number, title, Sanskrit, or translation…" /></div>`;
+  h += `<div class="sutra-controls">`;
+  h += `<button onclick="setAllVerses(true)">Expand all</button>`;
+  h += `<button onclick="setAllVerses(false)">Collapse all</button>`;
+  h += `<span class="sutra-count" id="sutra-count">${SAMKHYA_SUTRAS.length} verses</span>`;
+  h += `</div>`;
+  h += `<div class="sutra-list" id="sutra-list">`;
+
+  SAMKHYA_SUTRAS.forEach(v => {
+    const id = 'v' + v.number;
+    h += `<article class="verse-card" id="${id}">`;
+    h += `  <header class="verse-head" onclick="toggleVerse('${id}')">`;
+    h += `    <span class="verse-num">SK ${v.number}</span>`;
+    h += `    <span class="verse-title">${escapeHtml(v.title)}</span>`;
+    h += `    <span class="verse-chev">&#9654;</span>`;
+    h += `  </header>`;
+    h += `  <div class="verse-body">`;
+    if (v.sanskrit) {
+      h += `<section class="verse-section">`;
+      h += `  <div class="verse-section-label">Sanskrit Text</div>`;
+      h += `  <div class="verse-sanskrit">${escapeHtml(v.sanskrit)}</div>`;
+      h += `</section>`;
+    }
+    if (v.translation) {
+      h += `<section class="verse-section">`;
+      h += `  <div class="verse-section-label">English Translation</div>`;
+      h += `  <div class="verse-translation">${escapeHtml(v.translation)}</div>`;
+      h += `</section>`;
+    }
+    if (v.pairs && v.pairs.length){
+      h += `<section class="verse-section">`;
+      h += `  <div class="verse-section-label">Word-by-Word Breakdown</div>`;
+      h += `  <div class="verse-words">`;
+      v.pairs.forEach(p => {
+        h += `<div class="verse-word-sk">${escapeHtml(p[0])}</div>`;
+        h += `<div class="verse-word-meaning">${escapeHtml(p[1])}</div>`;
+      });
+      h += `  </div>`;
+      h += `</section>`;
+    } else if (v.words_html){
+      h += `<section class="verse-section">`;
+      h += `  <div class="verse-section-label">Word-by-Word Breakdown</div>`;
+      h += `  <div class="verse-words-raw">${v.words_html}</div>`;
+      h += `</section>`;
+    }
+    h += `  </div>`;
+    h += `</article>`;
+  });
+  h += `</div>`;
+  h += `<div class="sutra-empty" id="sutra-empty" hidden>No verses match your search.</div>`;
+  root.innerHTML = h;
+  root.dataset.rendered = '1';
+
+  document.getElementById('sutra-q').addEventListener('input', filterVerses);
+}
+
+function toggleVerse(id){
+  document.getElementById(id).classList.toggle('open');
+}
+
+function setAllVerses(open){
+  document.querySelectorAll('#sutra .verse-card').forEach(c => {
+    c.classList.toggle('open', !!open);
+  });
+}
+
+function filterVerses(){
+  const q = (document.getElementById('sutra-q').value || '').trim().toLowerCase();
+  const cards = document.querySelectorAll('#sutra .verse-card');
+  let visible = 0;
+  cards.forEach(c => {
+    if (!q){ c.classList.remove('hidden'); visible++; return; }
+    // Match on verse number (e.g. "12", "SK 12"), title, sanskrit, translation, words
+    const text = c.textContent.toLowerCase();
+    const numMatch = c.id.replace('v','') === q || ('sk ' + c.id.replace('v','')) === q;
+    const hit = numMatch || text.includes(q);
+    c.classList.toggle('hidden', !hit);
+    if (hit) visible++;
+  });
+  document.getElementById('sutra-empty').hidden = visible !== 0;
+  document.getElementById('sutra-count').textContent =
+    visible === SAMKHYA_SUTRAS.length
+      ? `${SAMKHYA_SUTRAS.length} verses`
+      : `${visible} of ${SAMKHYA_SUTRAS.length} verses`;
+}
+
+function switchView(name){
+  const showSutra = name === 'sutra';
+  document.getElementById('view-map').classList.toggle('active', !showSutra);
+  document.getElementById('view-sutra').classList.toggle('active', showSutra);
+  document.getElementById('app').hidden = showSutra;
+  document.getElementById('sutra').hidden = !showSutra;
+  if (showSutra) renderSutraView();
+}
 </script>
 </body>
 </html>

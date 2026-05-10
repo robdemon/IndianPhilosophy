@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/darshana-theme.css">
+<link rel="stylesheet" href="../assets/css/samkhya-sutra.css">
 </head>
 <body>
 <div id="shell">
@@ -35,6 +36,7 @@
 </div>
 
 <script src="../assets/js/darshana-core.js"></script>
+<script src="../assets/js/samkhya-sutras.js"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════════
 // YOGA SŪTRAS — Patañjali (c. 400 CE)
@@ -177,6 +179,13 @@ buildSubNav(yogaSections,'yoga',renderSection);
 //               Māṭhara Vṛtti, Vijñānabhikṣu Sāṃkhyapravacanabhāṣya
 // ═══════════════════════════════════════════════════════════════════
 builders.samkhya=function(){
+document.getElementById('samkhya').innerHTML =
+  `<div class="view-bar" role="tablist" aria-label="Samkhya view">
+     <button id="samkhya-view-map" class="active" onclick="switchSamkhyaView('map')">Map</button>
+     <button id="samkhya-view-sutra" onclick="switchSamkhyaView('sutra')">Sutra</button>
+   </div>
+   <div id="samkhya-map"></div>
+   <div id="samkhya-sutra" hidden></div>`;
 const secs=[
 {tab:"Introduction & Suffering",title:"Introduction — Three Kinds of Suffering",sub:"Kārikā 1–2 · Purpose and the three-fold suffering",
 intro:"Īśvarakṛṣṇa begins with an existential observation rather than an abstract proposition: all living beings are motivated by the desire to overcome the three-fold suffering. The Vedic ritual means are insufficient; the Sāṃkhya investigation of the principles (tattvas) of existence is the sovereign remedy. This pragmatic motivation distinguishes Sāṃkhya from mere speculative philosophy — it is a science of liberation.",
@@ -318,8 +327,112 @@ tk:"Vācaspati Miśra: 'going upward' through dharma refers not only to heavenly
 ]}
 ]}
 ];
-buildSubNav(secs,'samkhya',renderSection);
+buildSubNav(secs,'samkhya-map',renderSection);
 };
+
+// ── Samkhya Sutra view (verse-by-verse from Samkhya.pdf) ──────────────
+function _samkhyaEscape(s){
+  return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function renderSamkhyaSutras(){
+  const root = document.getElementById('samkhya-sutra');
+  if (!root || root.dataset.rendered === '1') return;
+  if (typeof SAMKHYA_SUTRAS === 'undefined') {
+    root.innerHTML = '<div class="sutra-empty">Sutra data failed to load.</div>';
+    return;
+  }
+  let h = '';
+  h += `<div class="sutra-search"><input type="search" id="samkhya-sutra-q" placeholder="Search verses by number, title, Sanskrit, or translation…" /></div>`;
+  h += `<div class="sutra-controls">`;
+  h += `  <button onclick="setAllSamkhyaVerses(true)">Expand all</button>`;
+  h += `  <button onclick="setAllSamkhyaVerses(false)">Collapse all</button>`;
+  h += `  <span class="sutra-count" id="samkhya-sutra-count">${SAMKHYA_SUTRAS.length} verses</span>`;
+  h += `</div>`;
+  h += `<div class="sutra-list" id="samkhya-sutra-list">`;
+  SAMKHYA_SUTRAS.forEach(v => {
+    const id = 'sk-v' + v.number;
+    h += `<article class="verse-card" id="${id}">`;
+    h += `  <header class="verse-head" onclick="toggleSamkhyaVerse('${id}')">`;
+    h += `    <span class="verse-num">SK ${v.number}</span>`;
+    h += `    <span class="verse-title">${_samkhyaEscape(v.title)}</span>`;
+    h += `    <span class="verse-chev">&#9654;</span>`;
+    h += `  </header>`;
+    h += `  <div class="verse-body">`;
+    if (v.sanskrit) {
+      h += `<section class="verse-section">
+              <div class="verse-section-label">Sanskrit Text</div>
+              <div class="verse-sanskrit">${_samkhyaEscape(v.sanskrit)}</div>
+            </section>`;
+    }
+    if (v.translation) {
+      h += `<section class="verse-section">
+              <div class="verse-section-label">English Translation</div>
+              <div class="verse-translation">${_samkhyaEscape(v.translation)}</div>
+            </section>`;
+    }
+    if (v.pairs && v.pairs.length) {
+      h += `<section class="verse-section">
+              <div class="verse-section-label">Word-by-Word Breakdown</div>
+              <div class="verse-words">`;
+      v.pairs.forEach(p => {
+        h += `<div class="verse-word-sk">${_samkhyaEscape(p[0])}</div>`;
+        h += `<div class="verse-word-meaning">${_samkhyaEscape(p[1])}</div>`;
+      });
+      h += `  </div></section>`;
+    } else if (v.words_html) {
+      h += `<section class="verse-section">
+              <div class="verse-section-label">Word-by-Word Breakdown</div>
+              <div class="verse-words-raw">${v.words_html}</div>
+            </section>`;
+    }
+    h += `  </div></article>`;
+  });
+  h += `</div>`;
+  h += `<div class="sutra-empty" id="samkhya-sutra-empty" hidden>No verses match your search.</div>`;
+  root.innerHTML = h;
+  root.dataset.rendered = '1';
+  document.getElementById('samkhya-sutra-q').addEventListener('input', filterSamkhyaVerses);
+}
+
+function toggleSamkhyaVerse(id){
+  document.getElementById(id).classList.toggle('open');
+}
+
+function setAllSamkhyaVerses(open){
+  document.querySelectorAll('#samkhya-sutra .verse-card').forEach(c => {
+    c.classList.toggle('open', !!open);
+  });
+}
+
+function filterSamkhyaVerses(){
+  const input = document.getElementById('samkhya-sutra-q');
+  const q = (input.value || '').trim().toLowerCase();
+  const cards = document.querySelectorAll('#samkhya-sutra .verse-card');
+  let visible = 0;
+  cards.forEach(c => {
+    if (!q) { c.classList.remove('hidden'); visible++; return; }
+    const num = c.id.replace('sk-v','');
+    const numMatch = num === q || ('sk ' + num) === q;
+    const hit = numMatch || c.textContent.toLowerCase().includes(q);
+    c.classList.toggle('hidden', !hit);
+    if (hit) visible++;
+  });
+  document.getElementById('samkhya-sutra-empty').hidden = visible !== 0;
+  document.getElementById('samkhya-sutra-count').textContent =
+    visible === SAMKHYA_SUTRAS.length
+      ? `${SAMKHYA_SUTRAS.length} verses`
+      : `${visible} of ${SAMKHYA_SUTRAS.length} verses`;
+}
+
+function switchSamkhyaView(name){
+  const showSutra = name === 'sutra';
+  document.getElementById('samkhya-view-map').classList.toggle('active', !showSutra);
+  document.getElementById('samkhya-view-sutra').classList.toggle('active', showSutra);
+  document.getElementById('samkhya-map').hidden = showSutra;
+  document.getElementById('samkhya-sutra').hidden = !showSutra;
+  if (showSutra) renderSamkhyaSutras();
+}
 // ═══════════════════════════════════════════════════════════════════
 // NYĀYA SŪTRAS — Gautama (c. 200 BCE–200 CE)
 // Commentaries: Vātsyāyana Nyāya Bhāṣya, Uddyotakara Nyāya Vārttika,

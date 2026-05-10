@@ -1,0 +1,252 @@
+/* Samkhya Sutra view — verse-by-verse reading mode */
+
+/* ── View-toggle bar ──────────────────────────────── */
+.view-bar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 22px;
+  background: var(--bg-card);
+  padding: 4px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view-bar button {
+  padding: 9px 22px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.18s ease;
+}
+
+.view-bar button:hover {
+  color: var(--text-secondary);
+  background: var(--bg-panel);
+}
+
+.view-bar button.active {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* ── Sutra list ───────────────────────────────────── */
+.sutra-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sutra-search {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.sutra-search input {
+  width: 100%;
+  padding: 11px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.sutra-search input::placeholder { color: var(--text-muted); }
+.sutra-search input:focus { border-color: var(--gold); }
+
+.sutra-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+}
+
+.sutra-controls button {
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  transition: all 0.12s;
+}
+
+.sutra-controls button:hover {
+  color: var(--text-primary);
+  border-color: var(--gold);
+}
+
+.sutra-count {
+  margin-left: auto;
+  align-self: center;
+  color: var(--text-muted);
+}
+
+/* ── Verse card ───────────────────────────────────── */
+.verse-card {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.verse-card:hover { border-color: var(--border); }
+.verse-card.open { border-color: var(--gold); }
+
+.verse-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 13px 16px;
+  cursor: pointer;
+  user-select: none;
+  background: var(--bg-card);
+  transition: background 0.12s;
+}
+
+.verse-head:hover { background: var(--bg-panel); }
+
+.verse-num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  font-weight: 500;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  min-width: 70px;
+}
+
+.verse-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-primary);
+  flex: 1;
+  line-height: 1.3;
+}
+
+.verse-chev {
+  font-size: 11px;
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.verse-card.open .verse-chev { transform: rotate(90deg); }
+
+.verse-body {
+  display: none;
+  padding: 18px 22px 22px;
+  background: var(--bg);
+  border-top: 1px solid var(--border-light);
+}
+
+.verse-card.open .verse-body { display: block; }
+
+.verse-section {
+  margin-bottom: 18px;
+}
+
+.verse-section:last-child { margin-bottom: 0; }
+
+.verse-section-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.verse-sanskrit {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--text-primary);
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.verse-translation {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.verse-words {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 18px;
+  padding: 4px 2px;
+}
+
+.verse-word-sk {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 14.5px;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.verse-word-meaning {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.verse-word-meaning:empty::after {
+  content: "—";
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Inline diacritic-flagged Sanskrit token in fallback raw rendering */
+.verse-words-raw {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+.verse-words-raw .sk {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--text-primary);
+}
+
+/* Hidden state during search filtering */
+.verse-card.hidden { display: none; }
+
+/* Empty/no-results message */
+.sutra-empty {
+  padding: 32px 16px;
+  text-align: center;
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 14px;
+}
