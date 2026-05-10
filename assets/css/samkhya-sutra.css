@@ -1,4 +1,4 @@
-/* Samkhya Sutra view — verse-by-verse reading mode */
+/* Sutra view — verse-by-verse reading mode (used by Sāṃkhya, Nyāya, Vaiśeṣika panels) */
 
 /* ── View-toggle bar ──────────────────────────────── */
 .view-bar {
@@ -241,6 +241,37 @@
 
 /* Hidden state during search filtering */
 .verse-card.hidden { display: none; }
+
+/* ── Commentaries (Nyāya, Vaiśeṣika) ──────────────── */
+.verse-commentaries {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.verse-commentary {
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border-left: 2px solid var(--border);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.verse-commentary-name {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.verse-commentary-text {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
 
 /* Empty/no-results message */
 .sutra-empty {

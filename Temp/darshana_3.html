@@ -37,6 +37,8 @@
 
 <script src="../assets/js/darshana-core.js"></script>
 <script src="../assets/js/samkhya-sutras.js"></script>
+<script src="../assets/js/nyaya-sutras.js"></script>
+<script src="../assets/js/vaisesika-sutras.js"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════════
 // YOGA SŪTRAS — Patañjali (c. 400 CE)
@@ -433,6 +435,140 @@ function switchSamkhyaView(name){
   document.getElementById('samkhya-sutra').hidden = !showSutra;
   if (showSutra) renderSamkhyaSutras();
 }
+
+// ── Shared sutra-list renderer (used by Nyāya and Vaiśeṣika) ──────────
+function _buildSutraListHtml(verses, prefix, sutraLabel){
+  let h = '';
+  h += `<div class="sutra-search"><input type="search" id="${prefix}-sutra-q" placeholder="Search sūtras by number, Sanskrit, or translation…" /></div>`;
+  h += `<div class="sutra-controls">`;
+  h += `  <button onclick="setAllSutras('${prefix}', true)">Expand all</button>`;
+  h += `  <button onclick="setAllSutras('${prefix}', false)">Collapse all</button>`;
+  h += `  <span class="sutra-count" id="${prefix}-sutra-count">${verses.length} sūtras</span>`;
+  h += `</div>`;
+  h += `<div class="sutra-list" id="${prefix}-sutra-list">`;
+  verses.forEach(v => {
+    const idStr = String(v.id);
+    const cardId = `${prefix}-v${idStr.replace(/\./g,'-')}`;
+    h += `<article class="verse-card" id="${cardId}" data-vid="${idStr}">`;
+    h += `  <header class="verse-head" onclick="toggleSutra('${cardId}')">`;
+    h += `    <span class="verse-num">${sutraLabel} ${idStr}</span>`;
+    h += `    <span class="verse-title"></span>`;
+    h += `    <span class="verse-chev">&#9654;</span>`;
+    h += `  </header>`;
+    h += `  <div class="verse-body">`;
+    if (v.sanskrit) {
+      h += `<section class="verse-section">
+              <div class="verse-section-label">Sanskrit Text</div>
+              <div class="verse-sanskrit">${_samkhyaEscape(v.sanskrit)}</div>
+            </section>`;
+    }
+    if (v.translation) {
+      h += `<section class="verse-section">
+              <div class="verse-section-label">English Translation</div>
+              <div class="verse-translation">${_samkhyaEscape(v.translation)}</div>
+            </section>`;
+    }
+    if (v.pairs && v.pairs.length) {
+      h += `<section class="verse-section">
+              <div class="verse-section-label">Word-by-Word Breakdown</div>
+              <div class="verse-words">`;
+      v.pairs.forEach(p => {
+        h += `<div class="verse-word-sk">${_samkhyaEscape(p[0])}</div>`;
+        h += `<div class="verse-word-meaning">${_samkhyaEscape(p[1])}</div>`;
+      });
+      h += `  </div></section>`;
+    }
+    if (v.commentaries && v.commentaries.length) {
+      h += `<section class="verse-section">
+              <div class="verse-section-label">Classical Commentaries</div>
+              <div class="verse-commentaries">`;
+      v.commentaries.forEach(c => {
+        h += `<div class="verse-commentary">
+                <div class="verse-commentary-name">${_samkhyaEscape(c.name)}</div>
+                <div class="verse-commentary-text">${_samkhyaEscape(c.text)}</div>
+              </div>`;
+      });
+      h += `  </div></section>`;
+    }
+    h += `  </div></article>`;
+  });
+  h += `</div>`;
+  h += `<div class="sutra-empty" id="${prefix}-sutra-empty" hidden>No sūtras match your search.</div>`;
+  return h;
+}
+
+function toggleSutra(cardId){
+  document.getElementById(cardId).classList.toggle('open');
+}
+
+function setAllSutras(prefix, open){
+  document.querySelectorAll(`#${prefix}-sutra .verse-card`).forEach(c => {
+    c.classList.toggle('open', !!open);
+  });
+}
+
+function filterSutras(prefix, total){
+  const input = document.getElementById(`${prefix}-sutra-q`);
+  const q = (input.value || '').trim().toLowerCase();
+  const cards = document.querySelectorAll(`#${prefix}-sutra .verse-card`);
+  let visible = 0;
+  cards.forEach(c => {
+    if (!q) { c.classList.remove('hidden'); visible++; return; }
+    const vid = (c.dataset.vid || '').toLowerCase();
+    const hit = vid === q || c.textContent.toLowerCase().includes(q);
+    c.classList.toggle('hidden', !hit);
+    if (hit) visible++;
+  });
+  document.getElementById(`${prefix}-sutra-empty`).hidden = visible !== 0;
+  document.getElementById(`${prefix}-sutra-count`).textContent =
+    visible === total ? `${total} sūtras` : `${visible} of ${total} sūtras`;
+}
+
+// ── Nyāya Sutra view ─────────────────────────────────────────────────
+function renderNyayaSutras(){
+  const root = document.getElementById('nyaya-sutra');
+  if (!root || root.dataset.rendered === '1') return;
+  if (typeof NYAYA_SUTRAS === 'undefined') {
+    root.innerHTML = '<div class="sutra-empty">Sutra data failed to load.</div>';
+    return;
+  }
+  root.innerHTML = _buildSutraListHtml(NYAYA_SUTRAS, 'nyaya', 'NS');
+  root.dataset.rendered = '1';
+  document.getElementById('nyaya-sutra-q').addEventListener('input',
+    () => filterSutras('nyaya', NYAYA_SUTRAS.length));
+}
+
+function switchNyayaView(name){
+  const showSutra = name === 'sutra';
+  document.getElementById('nyaya-view-map').classList.toggle('active', !showSutra);
+  document.getElementById('nyaya-view-sutra').classList.toggle('active', showSutra);
+  document.getElementById('nyaya-map').hidden = showSutra;
+  document.getElementById('nyaya-sutra').hidden = !showSutra;
+  if (showSutra) renderNyayaSutras();
+}
+
+// ── Vaiśeṣika Sutra view ─────────────────────────────────────────────
+function renderVaisesikaSutras(){
+  const root = document.getElementById('vaisheshika-sutra');
+  if (!root || root.dataset.rendered === '1') return;
+  if (typeof VAISESIKA_SUTRAS === 'undefined') {
+    root.innerHTML = '<div class="sutra-empty">Sutra data failed to load.</div>';
+    return;
+  }
+  root.innerHTML = _buildSutraListHtml(VAISESIKA_SUTRAS, 'vaisheshika', 'VS');
+  root.dataset.rendered = '1';
+  document.getElementById('vaisheshika-sutra-q').addEventListener('input',
+    () => filterSutras('vaisheshika', VAISESIKA_SUTRAS.length));
+}
+
+function switchVaisesikaView(name){
+  const showSutra = name === 'sutra';
+  document.getElementById('vaisheshika-view-map').classList.toggle('active', !showSutra);
+  document.getElementById('vaisheshika-view-sutra').classList.toggle('active', showSutra);
+  document.getElementById('vaisheshika-map').hidden = showSutra;
+  document.getElementById('vaisheshika-sutra').hidden = !showSutra;
+  if (showSutra) renderVaisesikaSutras();
+}
 // ═══════════════════════════════════════════════════════════════════
 // NYĀYA SŪTRAS — Gautama (c. 200 BCE–200 CE)
 // Commentaries: Vātsyāyana Nyāya Bhāṣya, Uddyotakara Nyāya Vārttika,
@@ -440,6 +576,13 @@ function switchSamkhyaView(name){
 //   Raghunātha Śiromaṇi, Viśvanātha Nyāya-Sūtra-Vṛtti
 // ═══════════════════════════════════════════════════════════════════
 builders.nyaya=function(){
+document.getElementById('nyaya').innerHTML =
+  `<div class="view-bar" role="tablist" aria-label="Nyaya view">
+     <button id="nyaya-view-map" class="active" onclick="switchNyayaView('map')">Map</button>
+     <button id="nyaya-view-sutra" onclick="switchNyayaView('sutra')">Sutra</button>
+   </div>
+   <div id="nyaya-map"></div>
+   <div id="nyaya-sutra" hidden></div>`;
 const secs=[
 {tab:"Adhyāya 1 — Padārthas & Pramāṇas",title:"Adhyāya 1 — Sixteen Padārthas and the Pramāṇas",sub:"NS 1.1.1–1.2.20 · Categories of inquiry and valid means of knowledge",
 intro:"Gautama opens with a statement of sixteen padārthas (categories of inquiry) whose examination leads to liberation. He then analyses the four pramāṇas — pratyakṣa, anumāna, upamāna, and śabda — establishing Nyāya's epistemology on precise definitions. This chapter is the foundation of the entire analytical method.",
@@ -585,13 +728,20 @@ uda:"Udayana: the nigrahasthāna framework is the foundation of academic philoso
 ]}
 ]}
 ];
-buildSubNav(secs,'nyaya',renderSection);
+buildSubNav(secs,'nyaya-map',renderSection);
 };
 // ═══════════════════════════════════════════════════════════════════
 // VAIŚEṢIKA SŪTRAS — Kaṇāda (c. 200 BCE)
 // Commentaries: Praśastapāda Padārthadharmasaṃgraha, Udayana Kiraṇāvalī
 // ═══════════════════════════════════════════════════════════════════
 builders.vaisheshika=function(){
+document.getElementById('vaisheshika').innerHTML =
+  `<div class="view-bar" role="tablist" aria-label="Vaisheshika view">
+     <button id="vaisheshika-view-map" class="active" onclick="switchVaisesikaView('map')">Map</button>
+     <button id="vaisheshika-view-sutra" onclick="switchVaisesikaView('sutra')">Sutra</button>
+   </div>
+   <div id="vaisheshika-map"></div>
+   <div id="vaisheshika-sutra" hidden></div>`;
 const secs=[
 {tab:"Six Padārthas",title:"Six Padārthas — Categories of Reality",sub:"VS 1.1–1.2 · The six ontological categories",
 intro:"Vaiśeṣika's fundamental claim is that everything that exists can be classified under six (later seven) padārthas: dravya (substance), guṇa (quality), karma (motion), sāmānya (universal), viśeṣa (particular), and samavāya (inherence). This ontological scheme is at once a classification of all existing things and a theory of the kinds of properties and relations that bind them.",
@@ -685,7 +835,7 @@ uda:"Udayana: the apparent emptiness of Vaiśeṣika liberation is actually a pr
 ]}
 ]}
 ];
-buildSubNav(secs,'vaisheshika',renderSection);
+buildSubNav(secs,'vaisheshika-map',renderSection);
 };
 
 // ═══════════════════════════════════════════════════════════════════
