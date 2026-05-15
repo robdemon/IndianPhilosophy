@@ -22,7 +22,7 @@ function openDarshana(system) {
         iwin.showSystem(system);
     } else {
         // Not yet loaded — set src with hash so it auto-selects on load
-        iframe.src = 'Temp/darshana_3.html#' + system;
+        iframe.src = 'Temp/darshana_3.html?v=20260515#' + system;
     }
     document.querySelector('[data-target="darshana-tab"]').click();
 }
