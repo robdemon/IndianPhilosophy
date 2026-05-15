@@ -39,11 +39,19 @@
 <script src="../assets/js/samkhya-sutras.js"></script>
 <script src="../assets/js/nyaya-sutras.js"></script>
 <script src="../assets/js/vaisesika-sutras.js"></script>
+<script src="../assets/js/yoga-sutras.js"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════════
 // YOGA SŪTRAS — Patañjali (c. 400 CE)
 // ═══════════════════════════════════════════════════════════════════
 builders.yoga=function(){
+document.getElementById('yoga').innerHTML =
+  `<div class="view-bar" role="tablist" aria-label="Yoga view">
+     <button id="yoga-view-map" class="active" onclick="switchYogaView('map')">Map</button>
+     <button id="yoga-view-sutra" onclick="switchYogaView('sutra')">Sutra</button>
+   </div>
+   <div id="yoga-map"></div>
+   <div id="yoga-sutra" hidden></div>`;
 const yogaSections=[
 {tab:"Samādhi Pāda",title:"Samādhi Pāda",sub:"Chapter 1 · 51 sūtras · Nature of yoga and samādhi",
 intro:"Patañjali opens with the most direct teaching: yoga is the stilling of mental fluctuations. This chapter addresses the advanced practitioner whose mind already has some steadiness. It defines yoga, classifies the five vṛttis, prescribes abhyāsa and vairāgya as the twin means, and maps the entire ladder of samādhi from gross object-absorption up to seedless liberation.",
@@ -173,8 +181,31 @@ branches:[
 ]}
 ]}
 ];
-buildSubNav(yogaSections,'yoga',renderSection);
+buildSubNav(yogaSections,'yoga-map',renderSection);
 };
+
+// ── Yoga Sutra view ──────────────────────────────────────────────────
+function renderYogaSutras(){
+  const root = document.getElementById('yoga-sutra');
+  if (!root || root.dataset.rendered === '1') return;
+  if (typeof YOGA_SUTRAS === 'undefined') {
+    root.innerHTML = '<div class="sutra-empty">Sutra data failed to load.</div>';
+    return;
+  }
+  root.innerHTML = _buildSutraListHtml(YOGA_SUTRAS, 'yoga', 'YS');
+  root.dataset.rendered = '1';
+  document.getElementById('yoga-sutra-q').addEventListener('input',
+    () => filterSutras('yoga', YOGA_SUTRAS.length));
+}
+
+function switchYogaView(name){
+  const showSutra = name === 'sutra';
+  document.getElementById('yoga-view-map').classList.toggle('active', !showSutra);
+  document.getElementById('yoga-view-sutra').classList.toggle('active', showSutra);
+  document.getElementById('yoga-map').hidden = showSutra;
+  document.getElementById('yoga-sutra').hidden = !showSutra;
+  if (showSutra) renderYogaSutras();
+}
 // ═══════════════════════════════════════════════════════════════════
 // SĀṂKHYA — Sāṃkhyakārikā of Īśvarakṛṣṇa (c. 350 CE)
 // Commentaries: Gauḍapāda Bhāṣya, Vācaspati Miśra Tattvakaumudī,
