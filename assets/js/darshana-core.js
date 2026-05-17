@@ -43,6 +43,13 @@ function renderDetail(d,color,id){
     {k:'syk',n:'Sāyaṇa · Commentary'},
     {k:'mhi',n:'Mahīdhara · Vedadīpa'},
     {k:'uvt',n:'Uvvaṭa · Commentary'},
+    {k:'ksm',n:'Kṣemarāja · Śiva-Sūtra-Vimarśinī'},
+    {k:'bhk',n:'Bhāskara · Vārttika'},
+    {k:'abg',n:'Abhinavagupta · Tantrāloka & Tantric Corpus'},
+    {k:'lkj',n:'Swami Lakshmanjoo · The Supreme Awakening'},
+    {k:'jds',n:'Jaideva Singh · English Critical Edition'},
+    {k:'jrv',n:'Jayaram V · Translation & Commentary'},
+    {k:'asu',n:'Adi Suyash · Threads of Transcendence'},
   ];
   const present=comDefs.filter(x=>d[x.k]);
   if(present.length){
@@ -133,7 +140,7 @@ function showSystem(id){
   document.querySelectorAll('.top-nav button').forEach(b=>b.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   const btns=document.querySelectorAll('.top-nav button');
-  const map={yoga:0,samkhya:1,nyaya:2,vaisheshika:3,mimamsa:4,vedanta:5,vedas:6};
+  const map={yoga:0,samkhya:1,nyaya:2,vaisheshika:3,mimamsa:4,vedanta:5,vedas:6,shiva:7};
   btns[map[id]].classList.add('active');
   if(!document.getElementById(id)._built){
     builders[id]();
