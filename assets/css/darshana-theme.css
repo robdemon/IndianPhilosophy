@@ -51,10 +51,6 @@ html{font-size:17px;-webkit-text-size-adjust:100%}
 body{
   font-family:var(--font-body);
   background:var(--bg);
-  background-image:
-    radial-gradient(at 18% 10%, rgba(226,155,69,.16) 0%, transparent 50%),
-    radial-gradient(at 82% 90%, rgba(196,90,48,.10) 0%, transparent 55%);
-  background-attachment:fixed;
   color:var(--text-primary);
   min-height:100vh;
   font-feature-settings:"liga" 1,"kern" 1;
@@ -63,58 +59,33 @@ body{
 }
 #shell{max-width:880px;margin:0 auto;padding:32px 20px 100px}
 
-/* HEADER */
-.site-header{text-align:center;margin-bottom:32px;padding-bottom:28px;border-bottom:1px solid var(--border-light);position:relative}
-.site-header::after{
-  content:"❋";
-  position:absolute;bottom:-0.65rem;left:50%;transform:translateX(-50%);
-  background:var(--bg);color:var(--gold);
-  padding:0 14px;font-size:14px;letter-spacing:.4em;
-}
-.site-header .eyebrow{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:500}
-.site-header h1{font-family:var(--font-display);font-size:2.4rem;font-weight:500;color:var(--text-primary);line-height:1.2;margin-bottom:6px;letter-spacing:-.01em}
-.site-header h1::before{content:"ॐ ";color:var(--rose);font-weight:400;font-style:normal}
-.site-header .subtitle{font-family:var(--font-display);font-size:14.5px;color:var(--text-secondary);font-style:italic;letter-spacing:.02em}
+/* HEADER — quiet bar with a way home */
+.site-header{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:16px;margin-bottom:20px;border-bottom:1px solid var(--border-light)}
+.site-header .home-link{font-family:var(--font-display);font-size:22px;font-weight:500;color:var(--text-primary);text-decoration:none}
+.site-header .home-link:hover{color:#8A5714}
+.site-header .subtitle{font-size:15px;color:var(--text-muted)}
 
-/* TOP NAV — systems */
-.top-nav{
-  display:flex;gap:4px;flex-wrap:wrap;
-  background:var(--bg-card);
-  padding:5px;
-  border-radius:var(--radius-lg);
-  border:1px solid var(--border);
-  margin-bottom:28px;
-  box-shadow:var(--shadow);
-}
+/* TOP NAV — systems, as a row of text tabs */
+.top-nav{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:24px}
 .top-nav button{
   flex:1;min-width:96px;
-  padding:11px 8px;
-  font-family:var(--font-mono);
-  font-size:10px;letter-spacing:.06em;
-  border:none;background:transparent;
-  color:var(--text-muted);
-  cursor:pointer;
-  border-radius:8px;
-  transition:all .18s ease;
-  line-height:1.4;text-align:center;
-  font-weight:500;
-  border-bottom:2.5px solid transparent;
+  padding:8px;
+  font-family:var(--font-body);font-size:15px;line-height:1.3;text-align:center;
+  border:none;border-bottom:2px solid transparent;border-radius:8px 8px 0 0;
+  background:transparent;color:var(--text-muted);cursor:pointer;
+  transition:color .15s,background-color .15s,border-color .15s;
 }
-.top-nav button:hover{color:var(--text-secondary);background:var(--bg-deep)}
-.top-nav button.active{
-  background:var(--bg-deep);
-  color:var(--text-primary);
-  font-weight:600;
-  box-shadow:0 1px 4px rgba(120,80,30,.15);
-}
+.top-nav button:hover{color:var(--text-primary);background:var(--bg-card)}
+.top-nav button:focus-visible{outline:2px solid #8A5714;outline-offset:2px}
+.top-nav button.active{color:var(--text-primary);border-bottom-color:var(--accent-nav,#8A5714)}
 /* per-system accent color on active button */
-.top-nav button[data-sys="yoga"].active        {border-bottom-color:var(--sys-yoga)}
-.top-nav button[data-sys="samkhya"].active     {border-bottom-color:var(--sys-samkhya)}
-.top-nav button[data-sys="nyaya"].active       {border-bottom-color:var(--sys-nyaya)}
-.top-nav button[data-sys="vaisheshika"].active {border-bottom-color:var(--sys-vaisheshika)}
-.top-nav button[data-sys="mimamsa"].active     {border-bottom-color:var(--sys-mimamsa)}
-.top-nav button[data-sys="vedanta"].active     {border-bottom-color:var(--sys-vedanta)}
-.top-nav button[data-sys="vedas"].active       {border-bottom-color:var(--sys-vedas)}
+.top-nav button[data-sys="yoga"]        {--accent-nav:var(--sys-yoga)}
+.top-nav button[data-sys="samkhya"]     {--accent-nav:var(--sys-samkhya)}
+.top-nav button[data-sys="nyaya"]       {--accent-nav:var(--sys-nyaya)}
+.top-nav button[data-sys="vaisheshika"] {--accent-nav:var(--sys-vaisheshika)}
+.top-nav button[data-sys="mimamsa"]     {--accent-nav:var(--sys-mimamsa)}
+.top-nav button[data-sys="vedanta"]     {--accent-nav:var(--sys-vedanta)}
+.top-nav button[data-sys="vedas"]       {--accent-nav:var(--sys-vedas)}
 
 /* SYSTEM PANEL — each system has its own warm tinted backdrop */
 .system-panel{display:none;padding:22px 22px 24px;border-radius:var(--radius-lg);box-shadow:var(--shadow)}

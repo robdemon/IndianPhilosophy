@@ -3,84 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indian Philosophy Portal</title>
+    <title>Indian Philosophy</title>
+    <meta name="description" content="Root texts of the darśanas, the Vedas and the Śiva Sūtras, read sūtra by sūtra with their classical commentaries.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inconsolata:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/portal.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Cormorant+Garamond:wght@500&family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/portal.css?v=20261121">
+    <!-- Warm the cache for the reader while the visitor reads the contents -->
+    <link rel="prefetch" href="Temp/darshana_3.html?v=20261121">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">Indian Philosophy</div>
-        <div class="tabs">
-            <button class="tab-btn active" data-target="home-tab">Home</button>
-            <button class="tab-btn" data-target="darshana-tab">Darśanas</button>
-        </div>
-        <div style="width: 140px;"></div> <!-- Spacer -->
-    </nav>
+    <header class="bar">
+        <a class="logo" href="./">Indian Philosophy</a>
+        <span class="bar-meta">8 texts · sūtra by sūtra</span>
+    </header>
 
     <main>
-        <!-- Home Tab Content -->
-        <div id="home-tab" class="tab-content active">
-            <div class="hero">
-                <div class="eyebrow">Classical Indian Philosophy</div>
-                <h1>Wisdom of the Ancients</h1>
-                <p>Explore the profound insights, detailed maps, and classical commentaries of India&#x2019;s philosophical traditions.</p>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>The root texts of Indian philosophy, read sūtra by sūtra</h1>
+                <p>The darśanas, the Vedas and the Śiva Sūtras, each set beside its classical commentaries.</p>
+                <a class="primary" href="Temp/darshana_3.html?v=20261121#yoga">Start with the Yoga Sūtras</a>
             </div>
-            
-            <div class="cards">
-                <div class="card" data-sys="yoga" style="cursor:pointer" onclick="openDarshana('yoga')">
-                    <span class="card-glyph">☸</span>
-                    <h3>Yoga Sūtras</h3>
-                    <p>Patañjali · 196 sūtras · samādhi, practice, powers, and liberation.</p>
-                </div>
-                <div class="card" data-sys="samkhya" style="cursor:pointer" onclick="openDarshana('samkhya')">
-                    <span class="card-glyph">☯</span>
-                    <h3>Sāṃkhyakārikā</h3>
-                    <p>Īśvarakṛṣṇa · 72 kārikās · dualism of Puruṣa and Prakṛti.</p>
-                </div>
-                <div class="card" data-sys="nyaya" style="cursor:pointer" onclick="openDarshana('nyaya')">
-                    <span class="card-glyph">⚖</span>
-                    <h3>Nyāya Sūtras</h3>
-                    <p>Gautama · logic and epistemology · five classical commentaries.</p>
-                </div>
-                <div class="card" data-sys="vaisheshika" style="cursor:pointer" onclick="openDarshana('vaisheshika')">
-                    <span class="card-glyph">⚛</span>
-                    <h3>Vaiśeṣika Sūtras</h3>
-                    <p>Kaṇāda · atomism · six padārthas · Praśastapāda &amp; Udayana.</p>
-                </div>
-                <div class="card" data-sys="mimamsa" style="cursor:pointer" onclick="openDarshana('mimamsa')">
-                    <span class="card-glyph">🜂</span>
-                    <h3>Pūrva Mīmāṃsā</h3>
-                    <p>Jaimini · Vedic exegesis · Śabara, Kumārila &amp; Prabhākara.</p>
-                </div>
-                <div class="card" data-sys="vedanta" style="cursor:pointer" onclick="openDarshana('vedanta')">
-                    <span class="card-glyph">𑗉</span>
-                    <h3>Vedānta &amp; Upaniṣads</h3>
-                    <p>Bādarāyaṇa · Śaṅkara, Rāmānuja, Madhva, Nimbārka &amp; Vallabha.</p>
-                </div>
-                <div class="card" data-sys="vedas" style="cursor:pointer" onclick="openDarshana('vedas')">
-                    <span class="card-glyph">ॐ</span>
-                    <h3>Vedas</h3>
-                    <p>Ṛgveda · Sāmaveda · Yajurveda · Atharvaveda · hymns &amp; cosmology.</p>
-                </div>
-                <div class="card" data-sys="shiva" style="cursor:pointer" onclick="openDarshana('shiva')">
-                    <span class="card-glyph">त्र</span>
-                    <h3>Śiva Sūtras</h3>
-                    <p>Vasugupta · 77 sūtras · Kashmir Śaivism · seven commentarial perspectives.</p>
-                </div>
-            </div>
-        </div>
+            <figure class="incipit" aria-label="atha, the word that opens four of these texts">
+                <span class="incipit-word" lang="sa">अथ</span>
+                <figcaption><span class="ref">atha</span> — “now.” The Yoga, Vaiśeṣika, Mīmāṃsā and Brahma Sūtras all open with this word.</figcaption>
+            </figure>
+        </section>
 
-        <!-- Darshana Tab Content -->
-        <div id="darshana-tab" class="tab-content">
-            <iframe id="darshana-iframe" src="Temp/darshana_3.html?v=20260517" title="Ṣaḍdarśana — Six Orthodox Systems"></iframe>
-        </div>
-
-
+        <section class="contents" aria-labelledby="contents-title">
+            <h2 id="contents-title">Contents</h2>
+            <ol>
+                <li><a href="Temp/darshana_3.html?v=20261121#yoga">
+                    <span class="deva" lang="sa">योगसूत्र</span>
+                    <span class="name">Yoga Sūtras</span>
+                    <span class="by">Patañjali · 196 sūtras · samādhi, practice, powers and liberation</span>
+                    <span class="first"><span class="ref">YS 1.1</span> <span lang="sa">अथ योगानुशासनम्</span></span>
+                </a></li>
+                <li><a href="Temp/darshana_3.html?v=20261121#samkhya">
+                    <span class="deva" lang="sa">सांख्यकारिका</span>
+                    <span class="name">Sāṃkhyakārikā</span>
+                    <span class="by">Īśvarakṛṣṇa · 72 kārikās · the dualism of Puruṣa and Prakṛti</span>
+                    <span class="first"><span class="ref">SK 1</span> <span lang="sa">दुःखत्रयाभिघाताज्जिज्ञासा</span></span>
+                </a></li>
+                <li><a href="Temp/darshana_3.html?v=20261121#nyaya">
+                    <span class="deva" lang="sa">न्यायसूत्र</span>
+                    <span class="name">Nyāya Sūtras</span>
+                    <span class="by">Gautama · logic and epistemology · five classical commentaries</span>
+                    <span class="first"><span class="ref">NS 1.1.1</span> <span lang="sa">प्रमाणप्रमेयसंशय…</span></span>
+                </a></li>
+                <li><a href="Temp/darshana_3.html?v=20261121#vaisheshika">
+                    <span class="deva" lang="sa">वैशेषिकसूत्र</span>
+                    <span class="name">Vaiśeṣika Sūtras</span>
+                    <span class="by">Kaṇāda · atomism and the six padārthas · Praśastapāda and Udayana</span>
+                    <span class="first"><span class="ref">VS 1.1.1</span> <span lang="sa">अथातो धर्मं व्याख्यास्यामः</span></span>
+                </a></li>
+                <li><a href="Temp/darshana_3.html?v=20261121#mimamsa">
+                    <span class="deva" lang="sa">मीमांसासूत्र</span>
+                    <span class="name">Pūrva Mīmāṃsā</span>
+                    <span class="by">Jaimini · Vedic exegesis · Śabara, Kumārila and Prabhākara</span>
+                    <span class="first"><span class="ref">MS 1.1.1</span> <span lang="sa">अथातो धर्मजिज्ञासा</span></span>
+                </a></li>
+                <li><a href="Temp/darshana_3.html?v=20261121#vedanta">
+                    <span class="deva" lang="sa">वेदान्त</span>
+                    <span class="name">Vedānta and Upaniṣads</span>
+                    <span class="by">Bādarāyaṇa · Śaṅkara, Rāmānuja, Madhva, Nimbārka and Vallabha</span>
+                    <span class="first"><span class="ref">BS 1.1.1</span> <span lang="sa">अथातो ब्रह्मजिज्ञासा</span></span>
+                </a></li>
+                <li><a href="Temp/darshana_3.html?v=20261121#vedas">
+                    <span class="deva" lang="sa">वेद</span>
+                    <span class="name">Vedas</span>
+                    <span class="by">Ṛgveda · Sāmaveda · Yajurveda · Atharvaveda · hymns and cosmology</span>
+                    <span class="first"><span class="ref">ṚV 1.1.1</span> <span lang="sa">अग्निमीळे पुरोहितं</span></span>
+                </a></li>
+                <li><a href="Temp/darshana_3.html?v=20261121#shiva">
+                    <span class="deva" lang="sa">शिवसूत्र</span>
+                    <span class="name">Śiva Sūtras</span>
+                    <span class="by">Vasugupta · 77 sūtras · Kashmir Śaivism · seven commentarial perspectives</span>
+                    <span class="first"><span class="ref">ŚS 1.1</span> <span lang="sa">चैतन्यमात्मा</span></span>
+                </a></li>
+            </ol>
+        </section>
     </main>
 
-    <script src="assets/js/portal.js"></script>
 </body>
 </html>

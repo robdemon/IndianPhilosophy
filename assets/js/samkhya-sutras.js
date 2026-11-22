@@ -66,7 +66,13 @@ const SAMKHYA_SUTRAS = [
         "because of the absence / non-existence"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">duḥkha</em> suffering / pain traya threefold <em class=\"sk\">abhighātāt</em> from the strike / impact / torment <em class=\"sk\">jijñāsā</em> desire to know / inquiry tad that (referring to suffering) <em class=\"sk\">apaghātake</em> in the destroyer / removal hetau for the cause / means <em class=\"sk\">dṛṣṭe</em> in the seen / worldly (remedies) <em class=\"sk\">sā</em> that (inquiry) <em class=\"sk\">apārthā</em> useless / without purpose cet if na not so <em class=\"sk\">ekānta</em> absolute (certainty of cure) atyantato permanent (non-return of pain) <em class=\"sk\">abhāvāt</em> because of the absence / non-existence"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">duḥkha</em> suffering / pain traya threefold <em class=\"sk\">abhighātāt</em> from the strike / impact / torment <em class=\"sk\">jijñāsā</em> desire to know / inquiry tad that (referring to suffering) <em class=\"sk\">apaghātake</em> in the destroyer / removal hetau for the cause / means <em class=\"sk\">dṛṣṭe</em> in the seen / worldly (remedies) <em class=\"sk\">sā</em> that (inquiry) <em class=\"sk\">apārthā</em> useless / without purpose cet if na not so <em class=\"sk\">ekānta</em> absolute (certainty of cure) atyantato permanent (non-return of pain) <em class=\"sk\">abhāvāt</em> because of the absence / non-existence",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.15–16 — ‘to the discerning, all is suffering’; ‘the suffering yet to come is to be avoided.’ Both texts begin from pain, not from God or the world. Veda: Chāndogya Up. 7.1.3 — Nārada: ‘I know the mantras but not the Self; I have heard that the knower of the Self crosses sorrow. Take me across.’ Taittirīya Up. 3.1 — ‘desire to know (vijijñāsasva) that from which beings are born.’ Meaning: the question starts with suffering and ends with knowing."
+      }
+    ]
   },
   {
     "number": 2,
@@ -124,7 +130,13 @@ const SAMKHYA_SUTRAS = [
         "from the discriminative knowledge"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">dṛṣṭavad</em> like the seen (visible means) <em class=\"sk\">ānuśravikaḥ</em> the revealed / scriptural (Vedic means) <em class=\"sk\">saḥ</em> that hi indeed <em class=\"sk\">aviśuddhi</em> impurity <em class=\"sk\">kṣaya</em> decay / destruction <em class=\"sk\">atiśaya</em> excess / inequality <em class=\"sk\">yuktaḥ</em> linked with / accompanied by <em class=\"sk\">tadviparītaḥ</em> the opposite of that (superior method) <em class=\"sk\">śreyān</em> better / superior <em class=\"sk\">vyaktā</em> the manifest (the 23 evolutes) avyakta the unmanifest (Prakriti) <em class=\"sk\">jña</em> the knower (Purusha) <em class=\"sk\">vijñānāt</em> from the discriminative knowledge"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">dṛṣṭavad</em> like the seen (visible means) <em class=\"sk\">ānuśravikaḥ</em> the revealed / scriptural (Vedic means) <em class=\"sk\">saḥ</em> that hi indeed <em class=\"sk\">aviśuddhi</em> impurity <em class=\"sk\">kṣaya</em> decay / destruction <em class=\"sk\">atiśaya</em> excess / inequality <em class=\"sk\">yuktaḥ</em> linked with / accompanied by <em class=\"sk\">tadviparītaḥ</em> the opposite of that (superior method) <em class=\"sk\">śreyān</em> better / superior <em class=\"sk\">vyaktā</em> the manifest (the 23 evolutes) avyakta the unmanifest (Prakriti) <em class=\"sk\">jña</em> the knower (Purusha) <em class=\"sk\">vijñānāt</em> from the discriminative knowledge",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.15 — dispassion toward objects ‘seen or heard of (ānuśravika)’ — Patañjali uses the Kārikā’s word for scriptural reward. Veda: the Veda says this of itself — Muṇḍaka Up. 1.2.7 — ‘unsteady rafts are these forms of sacrifice’; 1.2.12 — ‘the uncreated is not won by what is made’; Muṇḍaka 1.1.5 counts the four Vedas as the lower knowledge. Meaning: the Upaniṣads already ranked knowledge above ritual; the Kārikā builds on that."
+      }
+    ]
   },
   {
     "number": 3,
@@ -190,7 +202,13 @@ const SAMKHYA_SUTRAS = [
         "Consciousness / The Witness"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">mūlaprakṛtiḥ</em> Root Nature / Original Matter <em class=\"sk\">avikṛtiḥ</em> not a modification / uncreated <em class=\"sk\">mahadādyāḥ</em> Intellect (Mahat) and the rest <em class=\"sk\">prakṛti</em> producer / cause <em class=\"sk\">vikṛtayaḥ</em> modifications / effects sapta seven <em class=\"sk\">ṣoḍaśakas</em> group of sixteen tu but / indeed <em class=\"sk\">vikāro</em> modifications (only effects) na <em class=\"sk\">prakṛtir</em> not a producer / not nature na <em class=\"sk\">vikṛtiḥ</em> not a modification / not created <em class=\"sk\">puruṣaḥ</em> Consciousness / The Witness"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">mūlaprakṛtiḥ</em> Root Nature / Original Matter <em class=\"sk\">avikṛtiḥ</em> not a modification / uncreated <em class=\"sk\">mahadādyāḥ</em> Intellect (Mahat) and the rest <em class=\"sk\">prakṛti</em> producer / cause <em class=\"sk\">vikṛtayaḥ</em> modifications / effects sapta seven <em class=\"sk\">ṣoḍaśakas</em> group of sixteen tu but / indeed <em class=\"sk\">vikāro</em> modifications (only effects) na <em class=\"sk\">prakṛtir</em> not a producer / not nature na <em class=\"sk\">vikṛtiḥ</em> not a modification / not created <em class=\"sk\">puruṣaḥ</em> Consciousness / The Witness",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.19 sorts the same twenty-five into four levels. Veda: Kaṭha Up. 1.3.10–11 orders objects, mind, intellect, the great self (mahat), the unmanifest (avyakta) and the Person (puruṣa) — three Sāṃkhya terms in one verse. Gītā 7.4 lists earth, water, fire, air, space, mind, intellect and ego as ‘my eightfold prakṛti’. Meaning: the twenty-five principles systematise an older Upaniṣadic ladder."
+      }
+    ]
   },
   {
     "number": 4,
@@ -240,7 +258,13 @@ const SAMKHYA_SUTRAS = [
         "from the means of knowledge hi indeed"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">dṛṣṭam</em> seen / direct perception <em class=\"sk\">anumānam</em> inference <em class=\"sk\">āptavacanam</em> trustworthy word / valid testimony ca and sarva all <em class=\"sk\">pramāṇa</em> means of knowledge <em class=\"sk\">siddhatvāt</em> because of being established trividham threefold <em class=\"sk\">pramāṇam</em> means of valid knowledge <em class=\"sk\">iṣṭaṁ</em> accepted / desired prameya object to be known Sanskrit Word English Meaning <em class=\"sk\">siddhiḥ</em> proof / establishment <em class=\"sk\">pramāṇāt</em> from the means of knowledge hi indeed"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">dṛṣṭam</em> seen / direct perception <em class=\"sk\">anumānam</em> inference <em class=\"sk\">āptavacanam</em> trustworthy word / valid testimony ca and sarva all <em class=\"sk\">pramāṇa</em> means of knowledge <em class=\"sk\">siddhatvāt</em> because of being established trividham threefold <em class=\"sk\">pramāṇam</em> means of valid knowledge <em class=\"sk\">iṣṭaṁ</em> accepted / desired prameya object to be known Sanskrit Word English Meaning <em class=\"sk\">siddhiḥ</em> proof / establishment <em class=\"sk\">pramāṇāt</em> from the means of knowledge hi indeed",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.7 names the same three means — perception, inference, testimony. Veda: Bṛhadāraṇyaka Up. 2.4.5 — the Self is to be ‘heard, reflected on, and meditated upon’ — testimony, reasoning, direct knowing. Meaning: both schools accept the Veda as testimony, but only as one of three."
+      }
+    ]
   },
   {
     "number": 5,
@@ -298,7 +322,13 @@ const SAMKHYA_SUTRAS = [
         "and / indeed"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">prativiṣaya</em> with regard to specific objects <em class=\"sk\">adhyavasāyaḥ</em> ascertainment / determination <em class=\"sk\">dṛṣṭaṁ</em> perception trividham threefold <em class=\"sk\">anumānam</em> inference <em class=\"sk\">ākhyātam</em> is declared tad that (inference) <em class=\"sk\">liṅga</em> characteristic mark / sign <em class=\"sk\">liṅgi</em> that which bears the mark <em class=\"sk\">pūrvakam</em> preceded by <em class=\"sk\">āptaśrutiḥ</em> trustworthy revelation / text <em class=\"sk\">āptavacanam</em> trustworthy word tu and / indeed"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">prativiṣaya</em> with regard to specific objects <em class=\"sk\">adhyavasāyaḥ</em> ascertainment / determination <em class=\"sk\">dṛṣṭaṁ</em> perception trividham threefold <em class=\"sk\">anumānam</em> inference <em class=\"sk\">ākhyātam</em> is declared tad that (inference) <em class=\"sk\">liṅga</em> characteristic mark / sign <em class=\"sk\">liṅgi</em> that which bears the mark <em class=\"sk\">pūrvakam</em> preceded by <em class=\"sk\">āptaśrutiḥ</em> trustworthy revelation / text <em class=\"sk\">āptavacanam</em> trustworthy word tu and / indeed",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.7 again; YS 1.49 adds that yogic insight grasps the particular, which inference and testimony cannot. Veda: Kaṭha Up. 1.2.8–9 — the Self is not grasped by one who merely reasons, ‘this insight is not reached by logic.’ Meaning: inference has a place, but a limited one."
+      }
+    ]
   },
   {
     "number": 6,
@@ -356,7 +386,13 @@ const SAMKHYA_SUTRAS = [
         "is established"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">sāmānyataḥ</em> based on general correlation tu but / indeed <em class=\"sk\">dṛṣṭāt</em> from observation <em class=\"sk\">atīndriyāṇāṁ</em> of things beyond the senses <em class=\"sk\">pratītiḥ</em> knowledge / understanding <em class=\"sk\">anumānāt</em> from inference <em class=\"sk\">tasmāt</em> from that api even ca and <em class=\"sk\">asiddhaṁ</em> unestablished / unproved <em class=\"sk\">parokṣam</em> imperceptible / remote <em class=\"sk\">āptāgamāt</em> from trustworthy texts / tradition siddham is established"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">sāmānyataḥ</em> based on general correlation tu but / indeed <em class=\"sk\">dṛṣṭāt</em> from observation <em class=\"sk\">atīndriyāṇāṁ</em> of things beyond the senses <em class=\"sk\">pratītiḥ</em> knowledge / understanding <em class=\"sk\">anumānāt</em> from inference <em class=\"sk\">tasmāt</em> from that api even ca and <em class=\"sk\">asiddhaṁ</em> unestablished / unproved <em class=\"sk\">parokṣam</em> imperceptible / remote <em class=\"sk\">āptāgamāt</em> from trustworthy texts / tradition siddham is established",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.49 — insight reaches what testimony and inference cannot. Veda: Kaṭha Up. 2.3.12–13 — ‘not by speech, not by mind, not by sight can it be reached. How can it be known except by one who says “It is”?’ Meaning: what is beyond the senses is reached first by testimony, then by inference, and finally by insight."
+      }
+    ]
   },
   {
     "number": 7,
@@ -406,7 +442,13 @@ const SAMKHYA_SUTRAS = [
         "and"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">atidūrāt</em> from extreme distance <em class=\"sk\">sāmīpyāt</em> from extreme proximity <em class=\"sk\">indriyaghātāt</em> from injury to the senses <em class=\"sk\">manaḥ</em> mind <em class=\"sk\">anavasthānāt</em> from unsteadiness / distraction <em class=\"sk\">sūkṣmyāt</em> from subtlety <em class=\"sk\">vyavadhānāt</em> from obstruction / interposition Sanskrit Word English Meaning <em class=\"sk\">abhibhavāt</em> from being overpowered (like stars by the sun) <em class=\"sk\">samānābhihārāt</em> from being mixed with similar things ca and"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">atidūrāt</em> from extreme distance <em class=\"sk\">sāmīpyāt</em> from extreme proximity <em class=\"sk\">indriyaghātāt</em> from injury to the senses <em class=\"sk\">manaḥ</em> mind <em class=\"sk\">anavasthānāt</em> from unsteadiness / distraction <em class=\"sk\">sūkṣmyāt</em> from subtlety <em class=\"sk\">vyavadhānāt</em> from obstruction / interposition Sanskrit Word English Meaning <em class=\"sk\">abhibhavāt</em> from being overpowered (like stars by the sun) <em class=\"sk\">samānābhihārāt</em> from being mixed with similar things ca and",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 3.25 — yogic sight reaches the subtle, the hidden and the distant — the same causes of non-perception listed here. Veda: Chāndogya Up. 6.12 — the essence in the banyan seed: ‘you do not see it, yet the great tree stands from it.’ Meaning: not seeing something does not mean it is not there."
+      }
+    ]
   },
   {
     "number": 8,
@@ -464,7 +506,13 @@ const SAMKHYA_SUTRAS = [
         "and"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">saukṣmyāt</em> due to subtlety tad its (Prakriti's) <em class=\"sk\">anupalabdhiḥ</em> non-perception na not <em class=\"sk\">abhāvāt</em> due to non-existence <em class=\"sk\">kāryataḥ</em> from its effect tad its <em class=\"sk\">upalabdhiḥ</em> perception / apprehension <em class=\"sk\">mahadādi</em> intellect (Mahat) and the rest tac that ca and <em class=\"sk\">kāryaṁ</em> effect <em class=\"sk\">prakṛtisvarūpaṁ</em> similar in nature to Prakriti <em class=\"sk\">virūpaṁ</em> dissimilar ca and"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">saukṣmyāt</em> due to subtlety tad its (Prakriti's) <em class=\"sk\">anupalabdhiḥ</em> non-perception na not <em class=\"sk\">abhāvāt</em> due to non-existence <em class=\"sk\">kāryataḥ</em> from its effect tad its <em class=\"sk\">upalabdhiḥ</em> perception / apprehension <em class=\"sk\">mahadādi</em> intellect (Mahat) and the rest tac that ca and <em class=\"sk\">kāryaṁ</em> effect <em class=\"sk\">prakṛtisvarūpaṁ</em> similar in nature to Prakriti <em class=\"sk\">virūpaṁ</em> dissimilar ca and",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.45 — the range of subtle objects ends in the unmarked (prakṛti). Veda: Chāndogya Up. 6.13 — salt dissolved in water: unseen but tasted everywhere; Kaṭha Up. 1.3.11 — ‘beyond the great is the unmanifest’. Meaning: the root of nature is known by its effects, like salt by its taste."
+      }
+    ]
   },
   {
     "number": 9,
@@ -514,7 +562,13 @@ const SAMKHYA_SUTRAS = [
         "the effect exists (before its manifestation)"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning asat non-existent <em class=\"sk\">akaraṇāt</em> from not being able to be produced <em class=\"sk\">upādāna</em> material cause <em class=\"sk\">grahaṇāt</em> from the selection / necessity of taking sarva all / everything sambhava production / arising <em class=\"sk\">abhāvāt</em> from the absence <em class=\"sk\">śaktasya</em> of the capable / potent (cause) <em class=\"sk\">śakyakaraṇāt</em> from producing what is possible <em class=\"sk\">kāraṇabhāvāt</em> from the nature of the cause ca and <em class=\"sk\">satkāryam</em> the effect exists (before its manifestation)"
+    "words_html": "Sanskrit Word English Meaning asat non-existent <em class=\"sk\">akaraṇāt</em> from not being able to be produced <em class=\"sk\">upādāna</em> material cause <em class=\"sk\">grahaṇāt</em> from the selection / necessity of taking sarva all / everything sambhava production / arising <em class=\"sk\">abhāvāt</em> from the absence <em class=\"sk\">śaktasya</em> of the capable / potent (cause) <em class=\"sk\">śakyakaraṇāt</em> from producing what is possible <em class=\"sk\">kāraṇabhāvāt</em> from the nature of the cause ca and <em class=\"sk\">satkāryam</em> the effect exists (before its manifestation)",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 3.13–14 and 4.12 — the substrate persists; past and future exist in it. Veda: Chāndogya Up. 6.2.2 — ‘how could being come from non-being?’ — the Upaniṣad’s own argument for satkāryavāda; 6.1.4 — clay alone is real, its forms are names. Meaning: nothing comes from nothing; effects pre-exist in their cause."
+      }
+    ]
   },
   {
     "number": 10,
@@ -572,7 +626,13 @@ const SAMKHYA_SUTRAS = [
         "the unmanifest"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning hetumat having a cause Sanskrit Word English Meaning anityam impermanent <em class=\"sk\">avyāpi</em> non-pervasive / limited sakriyam active anekam manifold / many <em class=\"sk\">āśritaṁ</em> dependent / supported <em class=\"sk\">liṅgam</em> serving as a mark / characteristic <em class=\"sk\">sāvayavaṁ</em> composed of parts <em class=\"sk\">paratantraṁ</em> subordinate / dependent <em class=\"sk\">vyaktaṁ</em> the manifest <em class=\"sk\">viparītam</em> the reverse / opposite avyaktam the unmanifest"
+    "words_html": "Sanskrit Word English Meaning hetumat having a cause Sanskrit Word English Meaning anityam impermanent <em class=\"sk\">avyāpi</em> non-pervasive / limited sakriyam active anekam manifold / many <em class=\"sk\">āśritaṁ</em> dependent / supported <em class=\"sk\">liṅgam</em> serving as a mark / characteristic <em class=\"sk\">sāvayavaṁ</em> composed of parts <em class=\"sk\">paratantraṁ</em> subordinate / dependent <em class=\"sk\">vyaktaṁ</em> the manifest <em class=\"sk\">viparītam</em> the reverse / opposite avyaktam the unmanifest",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.19 — the marked (liṅga) and the unmarked (aliṅga) are this verse’s manifest and unmanifest. Veda: Kaṭha Up. 2.3.8 — ‘beyond the unmanifest is the Person, pervading and unmarked (aliṅga).’ Meaning: the Kaṭha uses Sāṃkhya’s technical word before Sāṃkhya does."
+      }
+    ]
   },
   {
     "number": 11,
@@ -630,7 +690,13 @@ const SAMKHYA_SUTRAS = [
         "Purusha / Spirit"
       ]
     ],
-    "words_html": "<em class=\"sk\">triguṇam</em> composed of the three gunas aviveki indiscriminate / non-distinguishing <em class=\"sk\">viṣayaḥ</em> objective / object of experience <em class=\"sk\">sāmānyam</em> common / universal <em class=\"sk\">acetanaṁ</em> non-conscious / insentient prasavadharmi prolific / productive <em class=\"sk\">vyaktaṁ</em> the manifest <em class=\"sk\">tathā</em> similarly / so <em class=\"sk\">pradhānam</em> Pradhana / Root Prakriti <em class=\"sk\">tadviparītas</em> the reverse of that / opposite <em class=\"sk\">tathā</em> ca and yet similar <em class=\"sk\">pumān</em> Purusha / Spirit"
+    "words_html": "<em class=\"sk\">triguṇam</em> composed of the three gunas aviveki indiscriminate / non-distinguishing <em class=\"sk\">viṣayaḥ</em> objective / object of experience <em class=\"sk\">sāmānyam</em> common / universal <em class=\"sk\">acetanaṁ</em> non-conscious / insentient prasavadharmi prolific / productive <em class=\"sk\">vyaktaṁ</em> the manifest <em class=\"sk\">tathā</em> similarly / so <em class=\"sk\">pradhānam</em> Pradhana / Root Prakriti <em class=\"sk\">tadviparītas</em> the reverse of that / opposite <em class=\"sk\">tathā</em> ca and yet similar <em class=\"sk\">pumān</em> Purusha / Spirit",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.15–16 — objects are shared and not dependent on one mind — the ‘common’ (sāmānya) and ‘objective’ here. Veda: Śvetāśvatara Up. 1.10 — ‘pradhāna is perishable; the immortal is imperishable.’ Meaning: nature is real and common; consciousness is its other."
+      }
+    ]
   },
   {
     "number": 12,
@@ -704,7 +770,13 @@ const SAMKHYA_SUTRAS = [
         "the threads / qualities"
       ]
     ],
-    "words_html": "<em class=\"sk\">prīti</em> pleasure / joy (Sattva) <em class=\"sk\">aprīti</em> pain / distress (Rajas) <em class=\"sk\">viṣāda</em> delusion / dullness (Tamas) <em class=\"sk\">ātmakāḥ</em> whose nature is <em class=\"sk\">prakāśa</em> illumination / clarity <em class=\"sk\">pravṛtti</em> activity / movement niyama restraint / inertia <em class=\"sk\">arthāḥ</em> for the purpose of anyonya mutual / one another abhibhava subduing / overpowering <em class=\"sk\">āśraya</em> supporting / depending on janana producing / generating maithuna consorting / mixing together <em class=\"sk\">vṛttayaś</em> functioning / acting ca and <em class=\"sk\">guṇāḥ</em> the threads / qualities"
+    "words_html": "<em class=\"sk\">prīti</em> pleasure / joy (Sattva) <em class=\"sk\">aprīti</em> pain / distress (Rajas) <em class=\"sk\">viṣāda</em> delusion / dullness (Tamas) <em class=\"sk\">ātmakāḥ</em> whose nature is <em class=\"sk\">prakāśa</em> illumination / clarity <em class=\"sk\">pravṛtti</em> activity / movement niyama restraint / inertia <em class=\"sk\">arthāḥ</em> for the purpose of anyonya mutual / one another abhibhava subduing / overpowering <em class=\"sk\">āśraya</em> supporting / depending on janana producing / generating maithuna consorting / mixing together <em class=\"sk\">vṛttayaś</em> functioning / acting ca and <em class=\"sk\">guṇāḥ</em> the threads / qualities",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.18 — the seen is luminous, active and stable; YS 2.15 — the guṇas’ conflict makes all experience painful. Veda: Atharvaveda 10.8.43 — ‘the lotus of nine gates covered with three guṇas’; Chāndogya Up. 6.4.1 — red, white and black. Meaning: the three strands of experience have Vedic roots."
+      }
+    ]
   },
   {
     "number": 13,
@@ -778,7 +850,13 @@ const SAMKHYA_SUTRAS = [
         "functioning / action"
       ]
     ],
-    "words_html": "<em class=\"sk\">sattvaṁ</em> Sattva laghu buoyant / light <em class=\"sk\">prakāśakam</em> illuminating <em class=\"sk\">iṣṭam</em> is considered / desired <em class=\"sk\">upaṣṭambhakaṁ</em> stimulating / exciting <em class=\"sk\">calaṁ</em> mobile / unsteady ca and <em class=\"sk\">rajaḥ</em> Rajas guru heavy <em class=\"sk\">varaṇakam</em> enveloping / obscuring eva indeed <em class=\"sk\">tamaḥ</em> Tamas <em class=\"sk\">pradīpavat</em> like a lamp ca and arthato for a single purpose <em class=\"sk\">vṛttiḥ</em> functioning / action"
+    "words_html": "<em class=\"sk\">sattvaṁ</em> Sattva laghu buoyant / light <em class=\"sk\">prakāśakam</em> illuminating <em class=\"sk\">iṣṭam</em> is considered / desired <em class=\"sk\">upaṣṭambhakaṁ</em> stimulating / exciting <em class=\"sk\">calaṁ</em> mobile / unsteady ca and <em class=\"sk\">rajaḥ</em> Rajas guru heavy <em class=\"sk\">varaṇakam</em> enveloping / obscuring eva indeed <em class=\"sk\">tamaḥ</em> Tamas <em class=\"sk\">pradīpavat</em> like a lamp ca and arthato for a single purpose <em class=\"sk\">vṛttiḥ</em> functioning / action",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.18 (prakāśa, kriyā, sthiti) and 4.14 (one thing from coordinated change). The lamp — wick, oil and flame working together — reappears in YS 4.14’s idea of a unified change. Veda: Gītā 14.6–8 — sattva illumines, rajas drives, tamas binds. Meaning: opposite forces, one purpose."
+      }
+    ]
   },
   {
     "number": 14,
@@ -824,7 +902,13 @@ const SAMKHYA_SUTRAS = [
         "is established"
       ]
     ],
-    "words_html": "<em class=\"sk\">avivekyādiḥ</em> indiscriminateness and the rest siddhas are established / proved <em class=\"sk\">traiguṇyāt</em> from the three gunas <em class=\"sk\">tadviparyayābhāvāt</em> from the absence of their reverse <em class=\"sk\">kāraṇaguṇātmakatvāt</em> because the effect has the qualities of the cause <em class=\"sk\">kāryasya</em> of the effect avyaktam the unmanifest api also siddham is established"
+    "words_html": "<em class=\"sk\">avivekyādiḥ</em> indiscriminateness and the rest siddhas are established / proved <em class=\"sk\">traiguṇyāt</em> from the three gunas <em class=\"sk\">tadviparyayābhāvāt</em> from the absence of their reverse <em class=\"sk\">kāraṇaguṇātmakatvāt</em> because the effect has the qualities of the cause <em class=\"sk\">kāryasya</em> of the effect avyaktam the unmanifest api also siddham is established",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.13 — all characteristics consist of the guṇas. Veda: Śvetāśvatara Up. 4.5 — the unborn she-goat ‘producing many offspring like herself’ — effects resembling their cause. Meaning: the unmanifest is known because effects carry its marks."
+      }
+    ]
   },
   {
     "number": 15,
@@ -866,7 +950,13 @@ const SAMKHYA_SUTRAS = [
         "of the entire universe / multiformity"
       ]
     ],
-    "words_html": "<em class=\"sk\">bhedānāṁ</em> of specific objects / differences <em class=\"sk\">parimāṇāt</em> from the finite nature / measurement <em class=\"sk\">samanvayāt</em> from homogeneity / coordination <em class=\"sk\">śaktitaḥ</em> through power / capability <em class=\"sk\">pravṛtteśca</em> and from evolution / activity <em class=\"sk\">kāraṇakāryavibhāgād</em> from the separation of cause and effect <em class=\"sk\">avibhāgād</em> from the non-separation / reunion <em class=\"sk\">vaiśvarūpyasya</em> of the entire universe / multiformity"
+    "words_html": "<em class=\"sk\">bhedānāṁ</em> of specific objects / differences <em class=\"sk\">parimāṇāt</em> from the finite nature / measurement <em class=\"sk\">samanvayāt</em> from homogeneity / coordination <em class=\"sk\">śaktitaḥ</em> through power / capability <em class=\"sk\">pravṛtteśca</em> and from evolution / activity <em class=\"sk\">kāraṇakāryavibhāgād</em> from the separation of cause and effect <em class=\"sk\">avibhāgād</em> from the non-separation / reunion <em class=\"sk\">vaiśvarūpyasya</em> of the entire universe / multiformity",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.45 and 2.19 — limited things point back to the unlimited unmanifest. Veda: Ṛgveda 10.129.1–3 — ‘neither non-being nor being … darkness hidden by darkness’; Chāndogya Up. 6.12 — the seed. Meaning: the variety of the world needs a single source."
+      }
+    ]
   },
   {
     "number": 16,
@@ -920,7 +1010,13 @@ const SAMKHYA_SUTRAS = [
         "due to specific nature / difference"
       ]
     ],
-    "words_html": "<em class=\"sk\">kāraṇam</em> the cause asty exists <em class=\"sk\">avyaktaṁ</em> the unmanifest pravartate functions / operates <em class=\"sk\">triguṇataḥ</em> through the three gunas <em class=\"sk\">samudayācca</em> and by combination / aggregation <em class=\"sk\">pariṇāmataḥ</em> by modification / transformation salilavat like water pratiprati each respective <em class=\"sk\">guṇāśraya</em> resting in the guna <em class=\"sk\">viśeṣāt</em> due to specific nature / difference"
+    "words_html": "<em class=\"sk\">kāraṇam</em> the cause asty exists <em class=\"sk\">avyaktaṁ</em> the unmanifest pravartate functions / operates <em class=\"sk\">triguṇataḥ</em> through the three gunas <em class=\"sk\">samudayācca</em> and by combination / aggregation <em class=\"sk\">pariṇāmataḥ</em> by modification / transformation salilavat like water pratiprati each respective <em class=\"sk\">guṇāśraya</em> resting in the guna <em class=\"sk\">viśeṣāt</em> due to specific nature / difference",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 3.13 and 4.2 — transformation ‘by the in-flow of prakṛti’. Veda: Chāndogya Up. 6.2.3 — ‘it thought: may I be many’; Muṇḍaka Up. 1.1.7 — ‘as a spider sends out and draws in its thread.’ Meaning: one stuff, changing like water into the shape of each vessel."
+      }
+    ]
   },
   {
     "number": 17,
@@ -974,7 +1070,13 @@ const SAMKHYA_SUTRAS = [
         "and"
       ]
     ],
-    "words_html": "<em class=\"sk\">sanghāta</em> assemblages / combinations of matter <em class=\"sk\">parārthatvāt</em> because of being for another's purpose <em class=\"sk\">triguṇādi</em> the three gunas, etc. <em class=\"sk\">viparyayāt</em> because of being the reverse / opposite <em class=\"sk\">adhiṣṭhānāt</em> because of control / supervision <em class=\"sk\">puruṣo'sti</em> Purusha exists <em class=\"sk\">bhoktṛbhāvāt</em> because of the nature of being an experiencer <em class=\"sk\">kaivalyārtham</em> for the purpose of liberation <em class=\"sk\">pravṛtteś</em> because of the activity / tendency ca and"
+    "words_html": "<em class=\"sk\">sanghāta</em> assemblages / combinations of matter <em class=\"sk\">parārthatvāt</em> because of being for another's purpose <em class=\"sk\">triguṇādi</em> the three gunas, etc. <em class=\"sk\">viparyayāt</em> because of being the reverse / opposite <em class=\"sk\">adhiṣṭhānāt</em> because of control / supervision <em class=\"sk\">puruṣo'sti</em> Purusha exists <em class=\"sk\">bhoktṛbhāvāt</em> because of the nature of being an experiencer <em class=\"sk\">kaivalyārtham</em> for the purpose of liberation <em class=\"sk\">pravṛtteś</em> because of the activity / tendency ca and",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.21 and 4.24 — the seen exists for the seer, ‘because it acts in combination’. Veda: Bṛhadāraṇyaka Up. 2.4.5 — ‘all is dear for the sake of the Self’; Ṛgveda 10.90 names the cosmic Person (puruṣa). Meaning: the world is arranged for a subject."
+      }
+    ]
   },
   {
     "number": 18,
@@ -1024,7 +1126,13 @@ const SAMKHYA_SUTRAS = [
         "eva and indeed"
       ]
     ],
-    "words_html": "janana birth <em class=\"sk\">maraṇa</em> death <em class=\"sk\">karaṇānāṁ</em> of the instruments / organs <em class=\"sk\">pratiniyamād</em> from individual allotment / regulation ayugapat non-simultaneous <em class=\"sk\">pravṛtteśca</em> and from activity <em class=\"sk\">puruṣabahutvaṁ</em> multiplicity of Purushas <em class=\"sk\">siddhaṁ</em> is established <em class=\"sk\">traiguṇyaviparyayāt</em> from the diverse modifications of the three gunas ca eva and indeed"
+    "words_html": "janana birth <em class=\"sk\">maraṇa</em> death <em class=\"sk\">karaṇānāṁ</em> of the instruments / organs <em class=\"sk\">pratiniyamād</em> from individual allotment / regulation ayugapat non-simultaneous <em class=\"sk\">pravṛtteśca</em> and from activity <em class=\"sk\">puruṣabahutvaṁ</em> multiplicity of Purushas <em class=\"sk\">siddhaṁ</em> is established <em class=\"sk\">traiguṇyaviparyayāt</em> from the diverse modifications of the three gunas ca eva and indeed",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.22 — the seen ends for one but not for others — which assumes many puruṣas. Veda: here Sāṃkhya differs openly from Ṛgveda 1.164.46 (‘the one being the wise call by many names’) and Śvetāśvatara Up. 6.11 (‘one God in all beings’). The Kārikā argues from different births and deaths; the Upaniṣad from one source. Meaning: an honest disagreement, preserved by both traditions."
+      }
+    ]
   },
   {
     "number": 19,
@@ -1078,7 +1186,13 @@ const SAMKHYA_SUTRAS = [
         "and the nature of being a non-doer"
       ]
     ],
-    "words_html": "<em class=\"sk\">tasmāc</em> therefore ca and <em class=\"sk\">viparyāsāt</em> from that contrast / reverse <em class=\"sk\">siddhaṁ</em> is established <em class=\"sk\">sākṣitvam</em> the nature of being a witness asya of this <em class=\"sk\">puruṣasya</em> of Purusha <em class=\"sk\">kaivalyaṁ</em> isolation / absolute freedom <em class=\"sk\">mādhyasthyaṁ</em> neutrality <em class=\"sk\">draṣṭṛtvam</em> the nature of being a seer <em class=\"sk\">akartṛbhāvaśca</em> and the nature of being a non-doer"
+    "words_html": "<em class=\"sk\">tasmāc</em> therefore ca and <em class=\"sk\">viparyāsāt</em> from that contrast / reverse <em class=\"sk\">siddhaṁ</em> is established <em class=\"sk\">sākṣitvam</em> the nature of being a witness asya of this <em class=\"sk\">puruṣasya</em> of Purusha <em class=\"sk\">kaivalyaṁ</em> isolation / absolute freedom <em class=\"sk\">mādhyasthyaṁ</em> neutrality <em class=\"sk\">draṣṭṛtvam</em> the nature of being a seer <em class=\"sk\">akartṛbhāvaśca</em> and the nature of being a non-doer",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.20 — the seer is ‘seeing alone’. Veda: Śvetāśvatara Up. 6.11 — ‘witness (sākṣī), consciousness, alone (kevala), without guṇas’ — three of this verse’s five terms; Bṛhadāraṇyaka Up. 4.3.15 — ‘this person is unattached’; Ṛgveda 1.164.20 — the bird that watches without eating. Meaning: the Upaniṣad supplied the vocabulary."
+      }
+    ]
   },
   {
     "number": 20,
@@ -1136,7 +1250,13 @@ const SAMKHYA_SUTRAS = [
         "the indifferent one (Purusha)"
       ]
     ],
-    "words_html": "<em class=\"sk\">tasmāt</em> therefore <em class=\"sk\">tatsaṁyogād</em> from their conjunction / association <em class=\"sk\">acetanaṁ</em> the non-conscious <em class=\"sk\">cetanāvad</em> like the conscious iva as if <em class=\"sk\">liṅgam</em> the evolute / sign (Intellect) <em class=\"sk\">guṇakartṛtve</em> while the gunas are the agents ca and <em class=\"sk\">tathā</em> similarly karteva as if the agent bhavaty becomes <em class=\"sk\">udāsīnaḥ</em> the indifferent one (Purusha)"
+    "words_html": "<em class=\"sk\">tasmāt</em> therefore <em class=\"sk\">tatsaṁyogād</em> from their conjunction / association <em class=\"sk\">acetanaṁ</em> the non-conscious <em class=\"sk\">cetanāvad</em> like the conscious iva as if <em class=\"sk\">liṅgam</em> the evolute / sign (Intellect) <em class=\"sk\">guṇakartṛtve</em> while the gunas are the agents ca and <em class=\"sk\">tathā</em> similarly karteva as if the agent bhavaty becomes <em class=\"sk\">udāsīnaḥ</em> the indifferent one (Purusha)",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.4, 2.6 and 4.22 — the seer takes on the form of the vṛttis; asmitā is the false identity of seer and seeing. Veda: Gītā 3.27 — ‘actions are done by the guṇas; the one deluded by ego thinks “I am the doer”’; 13.20 — prakṛti is the cause of action, puruṣa of experience. Meaning: we credit the mind with consciousness and the Self with action — both mistakes."
+      }
+    ]
   },
   {
     "number": 21,
@@ -1190,7 +1310,13 @@ const SAMKHYA_SUTRAS = [
         "creation / evolution"
       ]
     ],
-    "words_html": "<em class=\"sk\">puruṣasya</em> of the Purusha <em class=\"sk\">darśanārthaṁ</em> for the purpose of seeing/experiencing <em class=\"sk\">kaivalyārthaṁ</em> for the purpose of liberation <em class=\"sk\">tathā</em> likewise / so <em class=\"sk\">pradhānasya</em> of Pradhana / Prakriti <em class=\"sk\">paṅgvandhavad</em> like the lame and the blind ubhayor of both api also / indeed <em class=\"sk\">saṁyogas</em> conjunction / union <em class=\"sk\">tatkṛtaḥ</em> made by that / caused by that <em class=\"sk\">sargaḥ</em> creation / evolution"
+    "words_html": "<em class=\"sk\">puruṣasya</em> of the Purusha <em class=\"sk\">darśanārthaṁ</em> for the purpose of seeing/experiencing <em class=\"sk\">kaivalyārthaṁ</em> for the purpose of liberation <em class=\"sk\">tathā</em> likewise / so <em class=\"sk\">pradhānasya</em> of Pradhana / Prakriti <em class=\"sk\">paṅgvandhavad</em> like the lame and the blind ubhayor of both api also / indeed <em class=\"sk\">saṁyogas</em> conjunction / union <em class=\"sk\">tatkṛtaḥ</em> made by that / caused by that <em class=\"sk\">sargaḥ</em> creation / evolution",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.17 and 2.23 — the conjunction of seer and seen, for knowing each. Veda: Śvetāśvatara Up. 1.9 — ‘two unborn: the knower and the not-knower, the lord and the not-lord’; Muṇḍaka Up. 3.1.1 — two birds on one tree. Meaning: the lame man sees, the blind man walks; together they travel, and the trip is for both."
+      }
+    ]
   },
   {
     "number": 22,
@@ -1256,7 +1382,13 @@ const SAMKHYA_SUTRAS = [
         "gross elements"
       ]
     ],
-    "words_html": "<em class=\"sk\">prakṛter</em> from Prakriti (Root Nature) <em class=\"sk\">mahāṁs</em> the Great One (Mahat / Intellect) tato from that (Mahat) <em class=\"sk\">'haṅkāras</em> Ahamkara (Ego / I-maker) <em class=\"sk\">tasmād</em> from that (Ahamkara) <em class=\"sk\">gaṇaś</em> the group ca and <em class=\"sk\">ṣoḍaśakaḥ</em> of sixteen <em class=\"sk\">tasmād</em> from that api further <em class=\"sk\">ṣoḍaśakāt</em> from the sixteen <em class=\"sk\">pañcabhyaḥ</em> from the five (subtle elements) <em class=\"sk\">pañca</em> the five <em class=\"sk\">bhūtāni</em> gross elements"
+    "words_html": "<em class=\"sk\">prakṛter</em> from Prakriti (Root Nature) <em class=\"sk\">mahāṁs</em> the Great One (Mahat / Intellect) tato from that (Mahat) <em class=\"sk\">'haṅkāras</em> Ahamkara (Ego / I-maker) <em class=\"sk\">tasmād</em> from that (Ahamkara) <em class=\"sk\">gaṇaś</em> the group ca and <em class=\"sk\">ṣoḍaśakaḥ</em> of sixteen <em class=\"sk\">tasmād</em> from that api further <em class=\"sk\">ṣoḍaśakāt</em> from the sixteen <em class=\"sk\">pañcabhyaḥ</em> from the five (subtle elements) <em class=\"sk\">pañca</em> the five <em class=\"sk\">bhūtāni</em> gross elements",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.19 — the levels of the seen. Veda: Taittirīya Up. 2.1 — ‘from the Self came space, from space air, from air fire, from fire water, from water earth’; Muṇḍaka Up. 2.1.3 — from it are born breath, mind, the senses and the elements. Meaning: the Upaniṣads give creation’s order; the Kārikā sets the inner layers above the elements."
+      }
+    ]
   },
   {
     "number": 23,
@@ -1310,7 +1442,13 @@ const SAMKHYA_SUTRAS = [
         "reversed / opposite"
       ]
     ],
-    "words_html": "<em class=\"sk\">adhyavasāyo</em> ascertainment / determination buddhir Intellect dharmo virtue / duty <em class=\"sk\">jñānaṁ</em> knowledge <em class=\"sk\">virāga</em> non-attachment / dispassion <em class=\"sk\">aiśvaryam</em> power / sovereignty <em class=\"sk\">sāttvikam</em> Sattvic (pure / luminous) <em class=\"sk\">etadrūpaṁ</em> its forms <em class=\"sk\">tāmasam</em> Tamasic (dark / heavy) <em class=\"sk\">asmād</em> from this viparyastam reversed / opposite"
+    "words_html": "<em class=\"sk\">adhyavasāyo</em> ascertainment / determination buddhir Intellect dharmo virtue / duty <em class=\"sk\">jñānaṁ</em> knowledge <em class=\"sk\">virāga</em> non-attachment / dispassion <em class=\"sk\">aiśvaryam</em> power / sovereignty <em class=\"sk\">sāttvikam</em> Sattvic (pure / luminous) <em class=\"sk\">etadrūpaṁ</em> its forms <em class=\"sk\">tāmasam</em> Tamasic (dark / heavy) <em class=\"sk\">asmād</em> from this viparyastam reversed / opposite",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.41 — purity brings sattva-śuddhi; YS 1.15 — dispassion; YS 3.45 — power. The Kārikā’s four sattvic forms of buddhi are Yoga’s goals. Veda: Gāyatrī (Ṛgveda 3.62.10) prays for the stirring of dhī, intellect; Kaṭha Up. 1.3.3 — ‘know buddhi as the charioteer.’ Meaning: the intellect is the driver; its quality decides the journey."
+      }
+    ]
   },
   {
     "number": 24,
@@ -1364,7 +1502,13 @@ const SAMKHYA_SUTRAS = [
         "and indeed"
       ]
     ],
-    "words_html": "<em class=\"sk\">abhimāno</em> self-conceit / I-sense / arrogation <em class=\"sk\">'haṅkāras</em> Ahamkara (Ego) <em class=\"sk\">tasmād</em> from that <em class=\"sk\">dvividhaḥ</em> twofold pravartate proceeds <em class=\"sk\">sargaḥ</em> creation <em class=\"sk\">ekādaśakaś</em> the group of eleven ca and <em class=\"sk\">gaṇas</em> group <em class=\"sk\">tanmātrapañcakaṁ</em> the five subtle elements caiva and indeed"
+    "words_html": "<em class=\"sk\">abhimāno</em> self-conceit / I-sense / arrogation <em class=\"sk\">'haṅkāras</em> Ahamkara (Ego) <em class=\"sk\">tasmād</em> from that <em class=\"sk\">dvividhaḥ</em> twofold pravartate proceeds <em class=\"sk\">sargaḥ</em> creation <em class=\"sk\">ekādaśakaś</em> the group of eleven ca and <em class=\"sk\">gaṇas</em> group <em class=\"sk\">tanmātrapañcakaṁ</em> the five subtle elements caiva and indeed",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.6 — asmitā; YS 4.4 — minds made from asmitā alone. Veda: Bṛhadāraṇyaka Up. 1.4.1 — ‘in the beginning the Self alone … it said first “I am” (aham asmi).’ Meaning: the first act of creation is saying ‘I’."
+      }
+    ]
   },
   {
     "number": 25,
@@ -1418,7 +1562,13 @@ const SAMKHYA_SUTRAS = [
         "both"
       ]
     ],
-    "words_html": "<em class=\"sk\">sāttvika</em> Sattvic (pure) <em class=\"sk\">ekādaśakaḥ</em> group of eleven (organs/senses) pravartate proceeds <em class=\"sk\">vaikṛtād</em> from the Vaikrita (modified/Sattvic) <em class=\"sk\">ahaṅkārāt</em> from Ahamkara <em class=\"sk\">bhūtādes</em> from the Bhutadi (origin of elements/Tamasic) <em class=\"sk\">tanmātraḥ</em> the subtle elements sa that <em class=\"sk\">tāmasas</em> Tamasic (dark/heavy) <em class=\"sk\">taijasād</em> from the Taijasa (luminous/active/Rajasic) ubhayam both"
+    "words_html": "<em class=\"sk\">sāttvika</em> Sattvic (pure) <em class=\"sk\">ekādaśakaḥ</em> group of eleven (organs/senses) pravartate proceeds <em class=\"sk\">vaikṛtād</em> from the Vaikrita (modified/Sattvic) <em class=\"sk\">ahaṅkārāt</em> from Ahamkara <em class=\"sk\">bhūtādes</em> from the Bhutadi (origin of elements/Tamasic) <em class=\"sk\">tanmātraḥ</em> the subtle elements sa that <em class=\"sk\">tāmasas</em> Tamasic (dark/heavy) <em class=\"sk\">taijasād</em> from the Taijasa (luminous/active/Rajasic) ubhayam both",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 3.47 — mastery of the senses through their source in asmitā. Veda: Chāndogya Up. 6.4–5 — the threefold division gives mind from food, breath from water, speech from heat. Meaning: senses and elements branch from one ego along different guṇas."
+      }
+    ]
   },
   {
     "number": 26,
@@ -1484,7 +1634,13 @@ const SAMKHYA_SUTRAS = [
         "they say / are said to be"
       ]
     ],
-    "words_html": "<em class=\"sk\">buddhīndriyāṇi</em> organs of perception / intellect <em class=\"sk\">cakṣuḥ</em> eyes <em class=\"sk\">śrotra</em> ears <em class=\"sk\">ghrāṇa</em> nose rasana tongue tvag skin <em class=\"sk\">ākhyāni</em> are called <em class=\"sk\">vāk</em> voice / speech <em class=\"sk\">pāṇi</em> hands <em class=\"sk\">pāda</em> feet <em class=\"sk\">pāyu</em> excretory organ <em class=\"sk\">upasthān</em> generative organ <em class=\"sk\">karmendriyāṇy</em> organs of action <em class=\"sk\">āhuḥ</em> they say / are said to be"
+    "words_html": "<em class=\"sk\">buddhīndriyāṇi</em> organs of perception / intellect <em class=\"sk\">cakṣuḥ</em> eyes <em class=\"sk\">śrotra</em> ears <em class=\"sk\">ghrāṇa</em> nose rasana tongue tvag skin <em class=\"sk\">ākhyāni</em> are called <em class=\"sk\">vāk</em> voice / speech <em class=\"sk\">pāṇi</em> hands <em class=\"sk\">pāda</em> feet <em class=\"sk\">pāyu</em> excretory organ <em class=\"sk\">upasthān</em> generative organ <em class=\"sk\">karmendriyāṇy</em> organs of action <em class=\"sk\">āhuḥ</em> they say / are said to be",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.54–55 — pratyāhāra and mastery of the senses. Veda: Kaṭha Up. 1.3.4 — ‘the senses are the horses, objects their roads’; Praśna Up. 4.2 — in sleep all senses become one in the mind. Meaning: ten horses, five for knowing and five for acting."
+      }
+    ]
   },
   {
     "number": 27,
@@ -1550,7 +1706,13 @@ const SAMKHYA_SUTRAS = [
         "and"
       ]
     ],
-    "words_html": "<em class=\"sk\">ubhayātmakam</em> of the nature of both (perception and action) atra here <em class=\"sk\">manaḥ</em> mind <em class=\"sk\">saṅkalpakam</em> deliberating / pondering <em class=\"sk\">indriyaṁ</em> sense organ ca and <em class=\"sk\">sādharmyāt</em> due to similarity / affinity <em class=\"sk\">guṇa</em> gunas (Sattva, Rajas, Tamas) <em class=\"sk\">pariṇāma</em> modification <em class=\"sk\">viśeṣān</em> due to specifics <em class=\"sk\">nānātvaṁ</em> multiplicity / variety <em class=\"sk\">bāhya</em> external <em class=\"sk\">bhedāś</em> differences ca and"
+    "words_html": "<em class=\"sk\">ubhayātmakam</em> of the nature of both (perception and action) atra here <em class=\"sk\">manaḥ</em> mind <em class=\"sk\">saṅkalpakam</em> deliberating / pondering <em class=\"sk\">indriyaṁ</em> sense organ ca and <em class=\"sk\">sādharmyāt</em> due to similarity / affinity <em class=\"sk\">guṇa</em> gunas (Sattva, Rajas, Tamas) <em class=\"sk\">pariṇāma</em> modification <em class=\"sk\">viśeṣān</em> due to specifics <em class=\"sk\">nānātvaṁ</em> multiplicity / variety <em class=\"sk\">bāhya</em> external <em class=\"sk\">bhedāś</em> differences ca and",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.53 — the mind fit for concentration. Veda: Kaṭha Up. 1.3.3 — ‘mind is the reins’; Śukla Yajurveda 34.1 — ‘that which goes far when awake … may my mind be of auspicious resolve.’ Maitrī Up. 6.34 — ‘mind is the cause of bondage and release.’ Meaning: the mind connects the senses to the self."
+      }
+    ]
   },
   {
     "number": 28,
@@ -1612,7 +1774,13 @@ const SAMKHYA_SUTRAS = [
         "of the (other) five (organs of action)"
       ]
     ],
-    "words_html": "<em class=\"sk\">rūpādiṣu</em> regarding form/color and the rest <em class=\"sk\">pañcānām</em> of the five (organs of perception) <em class=\"sk\">ālocana</em> witnessing / observing / bare perception <em class=\"sk\">mātram</em> merely / only <em class=\"sk\">iṣyate</em> is considered / desired <em class=\"sk\">vṛttiḥ</em> function vacana speaking <em class=\"sk\">ādāna</em> grasping <em class=\"sk\">viharaṇa</em> walking / moving utsarga excreting <em class=\"sk\">ānandāś</em> joy / bliss (sexual function) ca and <em class=\"sk\">pañcānām</em> of the (other) five (organs of action)"
+    "words_html": "<em class=\"sk\">rūpādiṣu</em> regarding form/color and the rest <em class=\"sk\">pañcānām</em> of the five (organs of perception) <em class=\"sk\">ālocana</em> witnessing / observing / bare perception <em class=\"sk\">mātram</em> merely / only <em class=\"sk\">iṣyate</em> is considered / desired <em class=\"sk\">vṛttiḥ</em> function vacana speaking <em class=\"sk\">ādāna</em> grasping <em class=\"sk\">viharaṇa</em> walking / moving utsarga excreting <em class=\"sk\">ānandāś</em> joy / bliss (sexual function) ca and <em class=\"sk\">pañcānām</em> of the (other) five (organs of action)",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.43 — object alone shining — is perception returned to this bare presentation (ālocana). Veda: Kena Up. 1.2 — ‘the eye of the eye’. Meaning: the senses only show; meaning is added inside."
+      }
+    ]
   },
   {
     "number": 29,
@@ -1670,7 +1838,13 @@ const SAMKHYA_SUTRAS = [
         "five"
       ]
     ],
-    "words_html": "<em class=\"sk\">svālakṣaṇyaṁ</em> own specific characteristic <em class=\"sk\">vṛttis</em> function trayasya of the three (internal organs) <em class=\"sk\">saiṣā</em> that very bhavaty is / becomes <em class=\"sk\">asāmānyā</em> uncommon / extraordinary <em class=\"sk\">sāmānya</em> common <em class=\"sk\">karaṇa</em> instrument / organ <em class=\"sk\">vṛttiḥ</em> function <em class=\"sk\">prāṇādyā</em> Prana and the rest (vital airs) <em class=\"sk\">vāyavaḥ</em> winds / airs <em class=\"sk\">pañca</em> five"
+    "words_html": "<em class=\"sk\">svālakṣaṇyaṁ</em> own specific characteristic <em class=\"sk\">vṛttis</em> function trayasya of the three (internal organs) <em class=\"sk\">saiṣā</em> that very bhavaty is / becomes <em class=\"sk\">asāmānyā</em> uncommon / extraordinary <em class=\"sk\">sāmānya</em> common <em class=\"sk\">karaṇa</em> instrument / organ <em class=\"sk\">vṛttiḥ</em> function <em class=\"sk\">prāṇādyā</em> Prana and the rest (vital airs) <em class=\"sk\">vāyavaḥ</em> winds / airs <em class=\"sk\">pañca</em> five",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 3.39–40 — mastery of udāna and samāna; YS 2.49 — prāṇāyāma. Veda: Praśna Up. 3 — prāṇa, apāna, samāna, vyāna, udāna described by seat and function; Bṛhadāraṇyaka Up. 1.5.3 lists the five breaths. Meaning: breath is the common life of mind, ego and intellect."
+      }
+    ]
   },
   {
     "number": 30,
@@ -1740,7 +1914,13 @@ const SAMKHYA_SUTRAS = [
         "function"
       ]
     ],
-    "words_html": "yugapac simultaneously <em class=\"sk\">catuṣṭayasya</em> of the four (3 internal + 1 external organ) tu but / indeed <em class=\"sk\">vṛttiḥ</em> function <em class=\"sk\">kramaśaś</em> sequentially ca and tasya of that <em class=\"sk\">nirdiṣṭā</em> is indicated / declared <em class=\"sk\">dṛṣṭe</em> regarding the seen / visible objects <em class=\"sk\">tathāpy</em> so also / nevertheless <em class=\"sk\">adṛṣṭe</em> regarding the unseen / invisible objects trayasya of the three (internal organs) tat that <em class=\"sk\">pūrvikā</em> preceded by <em class=\"sk\">vṛttiḥ</em> function"
+    "words_html": "yugapac simultaneously <em class=\"sk\">catuṣṭayasya</em> of the four (3 internal + 1 external organ) tu but / indeed <em class=\"sk\">vṛttiḥ</em> function <em class=\"sk\">kramaśaś</em> sequentially ca and tasya of that <em class=\"sk\">nirdiṣṭā</em> is indicated / declared <em class=\"sk\">dṛṣṭe</em> regarding the seen / visible objects <em class=\"sk\">tathāpy</em> so also / nevertheless <em class=\"sk\">adṛṣṭe</em> regarding the unseen / invisible objects trayasya of the three (internal organs) tat that <em class=\"sk\">pūrvikā</em> preceded by <em class=\"sk\">vṛttiḥ</em> function",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.20 — the mind cannot know itself and its object at once. The Kārikā says organs act together or in sequence on objects; Yoga adds that self-knowing is never one of those acts. Veda: Bṛhadāraṇyaka Up. 3.4.2 — ‘you cannot see the seer of seeing.’ Meaning: perception can be fast, but not self-seeing."
+      }
+    ]
   },
   {
     "number": 31,
@@ -1794,7 +1974,13 @@ const SAMKHYA_SUTRAS = [
         "the instrument / organ"
       ]
     ],
-    "words_html": "<em class=\"sk\">svāṁ</em> <em class=\"sk\">svāṁ</em> their own respective pratipadyante they perform / they undertake <em class=\"sk\">parasparākūtavetukāṁ</em> incited by mutual impulse / intention <em class=\"sk\">vṛttim</em> function <em class=\"sk\">puruṣārtha</em> the purpose of Purusha eva alone / indeed hetur the cause na not kenacit by anyone <em class=\"sk\">kāryate</em> is made to act <em class=\"sk\">karaṇam</em> the instrument / organ"
+    "words_html": "<em class=\"sk\">svāṁ</em> <em class=\"sk\">svāṁ</em> their own respective pratipadyante they perform / they undertake <em class=\"sk\">parasparākūtavetukāṁ</em> incited by mutual impulse / intention <em class=\"sk\">vṛttim</em> function <em class=\"sk\">puruṣārtha</em> the purpose of Purusha eva alone / indeed hetur the cause na not kenacit by anyone <em class=\"sk\">kāryate</em> is made to act <em class=\"sk\">karaṇam</em> the instrument / organ",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.3 — causes only remove obstacles; nature flows by itself. Veda: Kena Up. 1.1–2 — ‘impelled by whom does the mind go?’ Meaning: the organs cooperate for a purpose they do not own."
+      }
+    ]
   },
   {
     "number": 32,
@@ -1860,7 +2046,13 @@ const SAMKHYA_SUTRAS = [
         "and"
       ]
     ],
-    "words_html": "<em class=\"sk\">karaṇaṁ</em> the instrument <em class=\"sk\">trayodaśavidhaṁ</em> of thirteen kinds tad that <em class=\"sk\">āharaṇa</em> seizing <em class=\"sk\">dhāraṇa</em> retaining <em class=\"sk\">prakāśakaram</em> illuminating <em class=\"sk\">kāryaṁ</em> the object / function ca and tasya its <em class=\"sk\">daśadhā</em> of ten kinds <em class=\"sk\">hāryaṁ</em> what is to be seized <em class=\"sk\">dhāryaṁ</em> what is to be retained <em class=\"sk\">prakāśyaṁ</em> what is to be illuminated ca and"
+    "words_html": "<em class=\"sk\">karaṇaṁ</em> the instrument <em class=\"sk\">trayodaśavidhaṁ</em> of thirteen kinds tad that <em class=\"sk\">āharaṇa</em> seizing <em class=\"sk\">dhāraṇa</em> retaining <em class=\"sk\">prakāśakaram</em> illuminating <em class=\"sk\">kāryaṁ</em> the object / function ca and tasya its <em class=\"sk\">daśadhā</em> of ten kinds <em class=\"sk\">hāryaṁ</em> what is to be seized <em class=\"sk\">dhāryaṁ</em> what is to be retained <em class=\"sk\">prakāśyaṁ</em> what is to be illuminated ca and",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.43 — tapas perfects body and senses. Veda: Kaṭha Up. 1.3.3–4 — the chariot with its driver, reins and horses. Meaning: thirteen instruments for grasping, holding and showing."
+      }
+    ]
   },
   {
     "number": 33,
@@ -1914,7 +2106,13 @@ const SAMKHYA_SUTRAS = [
         "organ / instrument"
       ]
     ],
-    "words_html": "<em class=\"sk\">antaḥkaraṇaṁ</em> the internal organ <em class=\"sk\">trividhaṁ</em> threefold <em class=\"sk\">daśadhā</em> tenfold <em class=\"sk\">bāhyaṁ</em> the external trayasya of the three <em class=\"sk\">viṣayākhyam</em> called the object <em class=\"sk\">sāmpratakālaṁ</em> in the present time <em class=\"sk\">bāhyaṁ</em> the external <em class=\"sk\">trikālam</em> in the three times (past, present, future) <em class=\"sk\">ābhyantaraṁ</em> the internal <em class=\"sk\">karaṇam</em> organ / instrument"
+    "words_html": "<em class=\"sk\">antaḥkaraṇaṁ</em> the internal organ <em class=\"sk\">trividhaṁ</em> threefold <em class=\"sk\">daśadhā</em> tenfold <em class=\"sk\">bāhyaṁ</em> the external trayasya of the three <em class=\"sk\">viṣayākhyam</em> called the object <em class=\"sk\">sāmpratakālaṁ</em> in the present time <em class=\"sk\">bāhyaṁ</em> the external <em class=\"sk\">trikālam</em> in the three times (past, present, future) <em class=\"sk\">ābhyantaraṁ</em> the internal <em class=\"sk\">karaṇam</em> organ / instrument",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 3.7 — the last three limbs are ‘inner’ compared to the first five, as here the inner organ is distinguished from the outer ten. Veda: Kaṭha Up. 1.3.10 — beyond the senses, mind; beyond mind, intellect. Meaning: the inner organ lives in all three times; the senses only in the present."
+      }
+    ]
   },
   {
     "number": 34,
@@ -1964,7 +2162,13 @@ const SAMKHYA_SUTRAS = [
         "having all five as objects"
       ]
     ],
-    "words_html": "<em class=\"sk\">buddhīndriyāṇi</em> the organs of perception <em class=\"sk\">teṣāṁ</em> among them <em class=\"sk\">pañca</em> the five <em class=\"sk\">viśeṣāviśeṣaviṣayāṇi</em> having specific and non-specific objects <em class=\"sk\">vāk</em> speech bhavati is <em class=\"sk\">śabdaviṣayā</em> having sound as its object <em class=\"sk\">śeṣāṇi</em> the rest tu but <em class=\"sk\">pañcaviṣayāṇi</em> having all five as objects"
+    "words_html": "<em class=\"sk\">buddhīndriyāṇi</em> the organs of perception <em class=\"sk\">teṣāṁ</em> among them <em class=\"sk\">pañca</em> the five <em class=\"sk\">viśeṣāviśeṣaviṣayāṇi</em> having specific and non-specific objects <em class=\"sk\">vāk</em> speech bhavati is <em class=\"sk\">śabdaviṣayā</em> having sound as its object <em class=\"sk\">śeṣāṇi</em> the rest tu but <em class=\"sk\">pañcaviṣayāṇi</em> having all five as objects",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.35 and 3.36 — subtle sense perception of non-specific objects. Veda: Śvetāśvatara Up. 2.11 — subtle appearances in early yoga. Meaning: senses reach both gross and subtle."
+      }
+    ]
   },
   {
     "number": 35,
@@ -2022,7 +2226,13 @@ const SAMKHYA_SUTRAS = [
         "the rest"
       ]
     ],
-    "words_html": "<em class=\"sk\">sāntaḥkaraṇā</em> together with the internal organs <em class=\"sk\">buddhiḥ</em> Intellect <em class=\"sk\">sarvaṁ</em> every <em class=\"sk\">viṣayam</em> object <em class=\"sk\">avagāhate</em> comprehends / plunges into <em class=\"sk\">yasmāt</em> since <em class=\"sk\">tasmāt</em> therefore <em class=\"sk\">trividhaṁ</em> threefold <em class=\"sk\">karaṇaṁ</em> instrument <em class=\"sk\">dvāri</em> the principal / gatekeeper <em class=\"sk\">dvārāṇi</em> the gates <em class=\"sk\">śeṣāṇi</em> the rest"
+    "words_html": "<em class=\"sk\">sāntaḥkaraṇā</em> together with the internal organs <em class=\"sk\">buddhiḥ</em> Intellect <em class=\"sk\">sarvaṁ</em> every <em class=\"sk\">viṣayam</em> object <em class=\"sk\">avagāhate</em> comprehends / plunges into <em class=\"sk\">yasmāt</em> since <em class=\"sk\">tasmāt</em> therefore <em class=\"sk\">trividhaṁ</em> threefold <em class=\"sk\">karaṇaṁ</em> instrument <em class=\"sk\">dvāri</em> the principal / gatekeeper <em class=\"sk\">dvārāṇi</em> the gates <em class=\"sk\">śeṣāṇi</em> the rest",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.23 — the citta, coloured by seer and seen, grasps all; YS 4.5 — one mind directing many. Veda: Kaṭha Up. 1.3.3 — buddhi is the charioteer. Meaning: the senses are doors; the intellect is the keeper."
+      }
+    ]
   },
   {
     "number": 36,
@@ -2068,7 +2278,13 @@ const SAMKHYA_SUTRAS = [
         "they present / give"
       ]
     ],
-    "words_html": "ete these <em class=\"sk\">pradīpakalpāḥ</em> resembling a lamp <em class=\"sk\">parasparavilakṣaṇā</em> characteristically different from one another <em class=\"sk\">guṇaviśeṣāḥ</em> specific modifications of the gunas <em class=\"sk\">kṛtsnaṁ</em> the entire <em class=\"sk\">puruṣasyārthaṁ</em> purpose of the Purusha <em class=\"sk\">prakāśya</em> having illuminated buddhau to the Intellect prayacchanti they present / give"
+    "words_html": "ete these <em class=\"sk\">pradīpakalpāḥ</em> resembling a lamp <em class=\"sk\">parasparavilakṣaṇā</em> characteristically different from one another <em class=\"sk\">guṇaviśeṣāḥ</em> specific modifications of the gunas <em class=\"sk\">kṛtsnaṁ</em> the entire <em class=\"sk\">puruṣasyārthaṁ</em> purpose of the Purusha <em class=\"sk\">prakāśya</em> having illuminated buddhau to the Intellect prayacchanti they present / give",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.17–19 — the mind lights objects but is not self-luminous. Veda: Kaṭha Up. 2.2.15 — ‘by his light all this shines’; Bṛhadāraṇyaka Up. 4.3.6 — ‘the Self is his light.’ Meaning: the organs are lamps, but their light is borrowed."
+      }
+    ]
   },
   {
     "number": 37,
@@ -2126,7 +2342,13 @@ const SAMKHYA_SUTRAS = [
         "subtle"
       ]
     ],
-    "words_html": "<em class=\"sk\">sarvaṁ</em> all <em class=\"sk\">pratyupabhogaṁ</em> enjoyment / experience <em class=\"sk\">yasmāt</em> since <em class=\"sk\">puruṣasya</em> of the Purusha <em class=\"sk\">sādhayati</em> accomplishes / brings about <em class=\"sk\">buddhiḥ</em> Intellect saiva that very ca and <em class=\"sk\">viśinaṣṭi</em> distinguishes <em class=\"sk\">punaḥ</em> again / further <em class=\"sk\">pradhānapuruṣāntaraṁ</em> the difference between Pradhana and Purusha <em class=\"sk\">sūkṣmam</em> subtle"
+    "words_html": "<em class=\"sk\">sarvaṁ</em> all <em class=\"sk\">pratyupabhogaṁ</em> enjoyment / experience <em class=\"sk\">yasmāt</em> since <em class=\"sk\">puruṣasya</em> of the Purusha <em class=\"sk\">sādhayati</em> accomplishes / brings about <em class=\"sk\">buddhiḥ</em> Intellect saiva that very ca and <em class=\"sk\">viśinaṣṭi</em> distinguishes <em class=\"sk\">punaḥ</em> again / further <em class=\"sk\">pradhānapuruṣāntaraṁ</em> the difference between Pradhana and Purusha <em class=\"sk\">sūkṣmam</em> subtle",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.26 and 3.35 — discriminative recognition of sattva and puruṣa. Veda: Kaṭha Up. 1.3.12 — ‘seen by subtle seers through a sharp, subtle intellect’; Muṇḍaka Up. 3.1.8 — ‘the one of pure sattva sees.’ Meaning: the same intellect that serves enjoyment can see past it."
+      }
+    ]
   },
   {
     "number": 38,
@@ -2192,7 +2414,13 @@ const SAMKHYA_SUTRAS = [
         "and"
       ]
     ],
-    "words_html": "<em class=\"sk\">tanmātrāṇy</em> the subtle elements <em class=\"sk\">aviśeṣās</em> non-specific / un-diversified tebhyo from those <em class=\"sk\">bhūtāni</em> the elements <em class=\"sk\">pañca</em> five <em class=\"sk\">pañcabhyaḥ</em> from the five ete these <em class=\"sk\">smṛtā</em> are known / considered <em class=\"sk\">viśeṣāḥ</em> specific / diversified <em class=\"sk\">śāntā</em> tranquil / soothing (Sattvic) <em class=\"sk\">ghorāś</em> terrifying / turbulent (Rajasic) ca and <em class=\"sk\">mūḍhāś</em> deluding / stupefying (Tamasic) ca and"
+    "words_html": "<em class=\"sk\">tanmātrāṇy</em> the subtle elements <em class=\"sk\">aviśeṣās</em> non-specific / un-diversified tebhyo from those <em class=\"sk\">bhūtāni</em> the elements <em class=\"sk\">pañca</em> five <em class=\"sk\">pañcabhyaḥ</em> from the five ete these <em class=\"sk\">smṛtā</em> are known / considered <em class=\"sk\">viśeṣāḥ</em> specific / diversified <em class=\"sk\">śāntā</em> tranquil / soothing (Sattvic) <em class=\"sk\">ghorāś</em> terrifying / turbulent (Rajasic) ca and <em class=\"sk\">mūḍhāś</em> deluding / stupefying (Tamasic) ca and",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 3.44 and 1.44 — subtle and gross elements, mastered in samādhi. Veda: Taittirīya Up. 2.1 — the order of the elements; Chāndogya Up. 6.2–4 — heat, water and food. Meaning: the gross grows from the subtle, and is pleasant, painful or dulling."
+      }
+    ]
   },
   {
     "number": 39,
@@ -2250,7 +2478,13 @@ const SAMKHYA_SUTRAS = [
         "perish / turn away"
       ]
     ],
-    "words_html": "<em class=\"sk\">sūkṣmā</em> subtle bodies <em class=\"sk\">mātāpitṛjāḥ</em> born of parents (gross bodies) saha together with <em class=\"sk\">prabhūtais</em> the gross elements <em class=\"sk\">tridhā</em> of three kinds <em class=\"sk\">viśeṣāḥ</em> specific entities <em class=\"sk\">syuḥ</em> are <em class=\"sk\">sūkṣmās</em> the subtle ones <em class=\"sk\">teṣāṁ</em> among them <em class=\"sk\">niyatā</em> constant / permanent <em class=\"sk\">mātāpitṛjā</em> those born of parents nivartante perish / turn away"
+    "words_html": "<em class=\"sk\">sūkṣmā</em> subtle bodies <em class=\"sk\">mātāpitṛjāḥ</em> born of parents (gross bodies) saha together with <em class=\"sk\">prabhūtais</em> the gross elements <em class=\"sk\">tridhā</em> of three kinds <em class=\"sk\">viśeṣāḥ</em> specific entities <em class=\"sk\">syuḥ</em> are <em class=\"sk\">sūkṣmās</em> the subtle ones <em class=\"sk\">teṣāṁ</em> among them <em class=\"sk\">niyatā</em> constant / permanent <em class=\"sk\">mātāpitṛjā</em> those born of parents nivartante perish / turn away",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.40 and 3.46 — the body seen and perfected. Veda: Chāndogya Up. 8.12.1 — ‘this body is mortal; it is the seat of the immortal, bodiless Self.’ Meaning: subtle body, birth-body, elements — three kinds of specific thing."
+      }
+    ]
   },
   {
     "number": 40,
@@ -2296,7 +2530,13 @@ const SAMKHYA_SUTRAS = [
         "the subtle body / characteristic mark"
       ]
     ],
-    "words_html": "<em class=\"sk\">pūrvotpannam</em> previously formed (at the beginning of creation) <em class=\"sk\">asaktaṁ</em> unattached / unconfined niyatam constant <em class=\"sk\">mahadādi-sūkṣmabhūtaparyantam</em> from Mahat down to the subtle elements <em class=\"sk\">saṁsarati</em> migrates / transmigrates <em class=\"sk\">nirupabhogaṁ</em> devoid of experience itself <em class=\"sk\">bhāvair</em> with dispositions / conditions <em class=\"sk\">adhivāsitaṁ</em> invested / perfumed / colored <em class=\"sk\">liṅgam</em> the subtle body / characteristic mark"
+    "words_html": "<em class=\"sk\">pūrvotpannam</em> previously formed (at the beginning of creation) <em class=\"sk\">asaktaṁ</em> unattached / unconfined niyatam constant <em class=\"sk\">mahadādi-sūkṣmabhūtaparyantam</em> from Mahat down to the subtle elements <em class=\"sk\">saṁsarati</em> migrates / transmigrates <em class=\"sk\">nirupabhogaṁ</em> devoid of experience itself <em class=\"sk\">bhāvair</em> with dispositions / conditions <em class=\"sk\">adhivāsitaṁ</em> invested / perfumed / colored <em class=\"sk\">liṅgam</em> the subtle body / characteristic mark",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.9–10 — vāsanās carried across births, beginningless. Veda: Bṛhadāraṇyaka Up. 4.4.3 — ‘like a caterpillar … the self reaches the next body’; 4.4.2 — knowledge, deeds and past experience go with it. Meaning: something subtle travels; consciousness itself does not."
+      }
+    ]
   },
   {
     "number": 41,
@@ -2366,7 +2606,13 @@ const SAMKHYA_SUTRAS = [
         "the subtle body"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">citraṁ</em> a picture / painting <em class=\"sk\">yathā</em> as <em class=\"sk\">āśrayam</em> <em class=\"sk\">ṛte</em> without a support / canvas <em class=\"sk\">sthāṇvādibhyo</em> <em class=\"sk\">vinā</em> without a post and the rest <em class=\"sk\">yathā</em> as <em class=\"sk\">chāyā</em> a shadow tadvad similarly / in that way <em class=\"sk\">vinā</em> <em class=\"sk\">viśeṣair</em> without specific (gross) elements na <em class=\"sk\">tiṣṭhati</em> does not stand / does not exist <em class=\"sk\">nirāśrayaṁ</em> without support / ungrounded <em class=\"sk\">liṅgam</em> the subtle body"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">citraṁ</em> a picture / painting <em class=\"sk\">yathā</em> as <em class=\"sk\">āśrayam</em> <em class=\"sk\">ṛte</em> without a support / canvas <em class=\"sk\">sthāṇvādibhyo</em> <em class=\"sk\">vinā</em> without a post and the rest <em class=\"sk\">yathā</em> as <em class=\"sk\">chāyā</em> a shadow tadvad similarly / in that way <em class=\"sk\">vinā</em> <em class=\"sk\">viśeṣair</em> without specific (gross) elements na <em class=\"sk\">tiṣṭhati</em> does not stand / does not exist <em class=\"sk\">nirāśrayaṁ</em> without support / ungrounded <em class=\"sk\">liṅgam</em> the subtle body",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 3.38 — entering another body by loosening the mind’s bond. Veda: Praśna Up. 3.10 — at death, prāṇa joins with the mind and fire and leads the self on. Meaning: the subtle body always needs a support, like a picture needs a wall."
+      }
+    ]
   },
   {
     "number": 42,
@@ -2408,7 +2654,13 @@ const SAMKHYA_SUTRAS = [
         "the subtle body"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">puruṣārthahetukam</em> motivated by Purusha's purpose <em class=\"sk\">idaṁ</em> this <em class=\"sk\">nimittanaimittikaprasaṅgena</em> through the connection of causes and effects (means and ends) <em class=\"sk\">prakṛter</em> of Prakriti <em class=\"sk\">vibhutvayogān</em> due to connection with the all-pervading power <em class=\"sk\">naṭavad</em> like an actor <em class=\"sk\">vyavatiṣṭhate</em> acts / plays roles / behaves <em class=\"sk\">liṅgam</em> the subtle body"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">puruṣārthahetukam</em> motivated by Purusha's purpose <em class=\"sk\">idaṁ</em> this <em class=\"sk\">nimittanaimittikaprasaṅgena</em> through the connection of causes and effects (means and ends) <em class=\"sk\">prakṛter</em> of Prakriti <em class=\"sk\">vibhutvayogān</em> due to connection with the all-pervading power <em class=\"sk\">naṭavad</em> like an actor <em class=\"sk\">vyavatiṣṭhate</em> acts / plays roles / behaves <em class=\"sk\">liṅgam</em> the subtle body",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.13 and 4.2 — kinds of birth by karma and the inflow of nature. Veda: Kaṭha Up. 2.2.7 — ‘some enter a womb, others a stationary thing, according to deeds and knowledge.’ Meaning: like an actor, the subtle body plays many parts."
+      }
+    ]
   },
   {
     "number": 43,
@@ -2466,7 +2718,13 @@ const SAMKHYA_SUTRAS = [
         "the embryo and the rest"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">sāṁsiddhikāś</em> innate / essential ca and <em class=\"sk\">bhāvāḥ</em> dispositions / states <em class=\"sk\">prākṛtikā</em> natural <em class=\"sk\">vaikṛtikāś</em> acquired / modified ca and Sanskrit Word English Meaning <em class=\"sk\">dharmādyāḥ</em> virtue and the rest <em class=\"sk\">dṛṣṭāḥ</em> are seen / considered <em class=\"sk\">karaṇāśrayiṇaḥ</em> dependent on the instruments (internal organs) <em class=\"sk\">kāryāśrayiṇaś</em> dependent on the effect (gross body) ca and <em class=\"sk\">kalalādyāḥ</em> the embryo and the rest"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">sāṁsiddhikāś</em> innate / essential ca and <em class=\"sk\">bhāvāḥ</em> dispositions / states <em class=\"sk\">prākṛtikā</em> natural <em class=\"sk\">vaikṛtikāś</em> acquired / modified ca and Sanskrit Word English Meaning <em class=\"sk\">dharmādyāḥ</em> virtue and the rest <em class=\"sk\">dṛṣṭāḥ</em> are seen / considered <em class=\"sk\">karaṇāśrayiṇaḥ</em> dependent on the instruments (internal organs) <em class=\"sk\">kāryāśrayiṇaś</em> dependent on the effect (gross body) ca and <em class=\"sk\">kalalādyāḥ</em> the embryo and the rest",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.1 — powers from birth, herbs, mantra, tapas or samādhi — innate, natural, acquired. Veda: Kaṭha Up. 1.2.23 — the Self ‘chooses’ some; Taittirīya Up. 3.2 — others reach it by tapas. Meaning: some qualities are born with us; others are earned."
+      }
+    ]
   },
   {
     "number": 44,
@@ -2524,7 +2782,13 @@ const SAMKHYA_SUTRAS = [
         "bondage"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">dharmeṇa</em> by virtue / dharma gamanam going / ascent <em class=\"sk\">ūrdhvaṁ</em> upward / to higher regions gamanam going / descent adho downward / to lower regions bhavaty becomes / happens <em class=\"sk\">adharmeṇa</em> by vice / non-virtue <em class=\"sk\">jñānena</em> by knowledge <em class=\"sk\">cāpavargo</em> and liberation / emancipation <em class=\"sk\">viparyayād</em> from the reverse (ignorance) <em class=\"sk\">iṣyate</em> is considered / results in <em class=\"sk\">bandhaḥ</em> bondage"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">dharmeṇa</em> by virtue / dharma gamanam going / ascent <em class=\"sk\">ūrdhvaṁ</em> upward / to higher regions gamanam going / descent adho downward / to lower regions bhavaty becomes / happens <em class=\"sk\">adharmeṇa</em> by vice / non-virtue <em class=\"sk\">jñānena</em> by knowledge <em class=\"sk\">cāpavargo</em> and liberation / emancipation <em class=\"sk\">viparyayād</em> from the reverse (ignorance) <em class=\"sk\">iṣyate</em> is considered / results in <em class=\"sk\">bandhaḥ</em> bondage",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.14 — joy and pain from merit and demerit; YS 2.24–25 — ignorance binds, its removal frees. Veda: Chāndogya Up. 5.10 — paths up and down by conduct; Bṛhadāraṇyaka Up. 4.4.5 — ‘good by good action’; Śvetāśvatara Up. 6.13 — ‘knowing God, one is freed.’ Meaning: virtue lifts, vice lowers, only knowledge frees."
+      }
+    ]
   },
   {
     "number": 45,
@@ -2570,7 +2834,13 @@ const SAMKHYA_SUTRAS = [
         "the reverse of that (obstruction)"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">vairāgyāt</em> from non-attachment / dispassion <em class=\"sk\">prakṛtilayaḥ</em> absorption into Prakriti <em class=\"sk\">saṁsāro</em> transmigration / worldly existence bhavati becomes / results in <em class=\"sk\">rāgāt</em> from attachment / passion <em class=\"sk\">aiśvaryād</em> from power / mastery <em class=\"sk\">avighāto</em> non-obstruction / freedom of will <em class=\"sk\">viparyayāt</em> from the reverse (weakness) <em class=\"sk\">tadviparyāsaḥ</em> the reverse of that (obstruction)"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">vairāgyāt</em> from non-attachment / dispassion <em class=\"sk\">prakṛtilayaḥ</em> absorption into Prakriti <em class=\"sk\">saṁsāro</em> transmigration / worldly existence bhavati becomes / results in <em class=\"sk\">rāgāt</em> from attachment / passion <em class=\"sk\">aiśvaryād</em> from power / mastery <em class=\"sk\">avighāto</em> non-obstruction / freedom of will <em class=\"sk\">viparyayāt</em> from the reverse (weakness) <em class=\"sk\">tadviparyāsaḥ</em> the reverse of that (obstruction)",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.19 — ‘prakṛtilaya’, absorption into nature — the same word, the same warning: high, but not freedom. YS 3.45 — power gives non-obstruction. Veda: Muṇḍaka Up. 1.2.10 — those who stop at merit ‘enjoy heaven, then return.’ Meaning: dispassion without knowledge only parks you in nature."
+      }
+    ]
   },
   {
     "number": 46,
@@ -2628,7 +2898,13 @@ const SAMKHYA_SUTRAS = [
         "fifty"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">eṣa</em> this pratyayasargo intellectual creation / mental evolution viparyaya ignorance / misconception <em class=\"sk\">aśakti</em> incapacity / disability <em class=\"sk\">tuṣṭi</em> complacency / contentment siddhi perfection / success <em class=\"sk\">ākhyaḥ</em> called / termed <em class=\"sk\">guṇavaiṣamya</em> inequality of the gunas <em class=\"sk\">vimardāt</em> from the suppression / clashing tasya its ca and Sanskrit Word English Meaning <em class=\"sk\">bhedās</em> varieties / divisions tu indeed <em class=\"sk\">pañcāśat</em> fifty"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">eṣa</em> this pratyayasargo intellectual creation / mental evolution viparyaya ignorance / misconception <em class=\"sk\">aśakti</em> incapacity / disability <em class=\"sk\">tuṣṭi</em> complacency / contentment siddhi perfection / success <em class=\"sk\">ākhyaḥ</em> called / termed <em class=\"sk\">guṇavaiṣamya</em> inequality of the gunas <em class=\"sk\">vimardāt</em> from the suppression / clashing tasya its ca and Sanskrit Word English Meaning <em class=\"sk\">bhedās</em> varieties / divisions tu indeed <em class=\"sk\">pañcāśat</em> fifty",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.3 and 1.30 — afflictions and obstacles; YS 2.42 and 2.29 — contentment and the limbs. Veda: Kaṭha Up. 1.2.5 — ‘dwelling in ignorance, thinking themselves wise.’ Meaning: fifty ways the intellect can stall or succeed."
+      }
+    ]
   },
   {
     "number": 47,
@@ -2678,7 +2954,13 @@ const SAMKHYA_SUTRAS = [
         "perfection"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">pañcaviparyayabhedā</em> five varieties of ignorance bhavanty are <em class=\"sk\">aśakteś</em> of incapacity ca and <em class=\"sk\">karaṇavaikalyāt</em> from defect/impairment of organs <em class=\"sk\">aṣṭāviṁśatibhedās</em> twenty-eight varieties <em class=\"sk\">tuṣṭir</em> complacency <em class=\"sk\">navadhā</em> ninefold <em class=\"sk\">aṣṭadhā</em> eightfold <em class=\"sk\">siddhiḥ</em> perfection"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">pañcaviparyayabhedā</em> five varieties of ignorance bhavanty are <em class=\"sk\">aśakteś</em> of incapacity ca and <em class=\"sk\">karaṇavaikalyāt</em> from defect/impairment of organs <em class=\"sk\">aṣṭāviṁśatibhedās</em> twenty-eight varieties <em class=\"sk\">tuṣṭir</em> complacency <em class=\"sk\">navadhā</em> ninefold <em class=\"sk\">aṣṭadhā</em> eightfold <em class=\"sk\">siddhiḥ</em> perfection",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: the five errors are YS 2.3’s five kleśas. Veda: Īśa Up. 9 — ‘blind darkness’. Meaning: Sāṃkhya counts, Yoga treats."
+      }
+    ]
   },
   {
     "number": 48,
@@ -2736,7 +3018,13 @@ const SAMKHYA_SUTRAS = [
         "utter gloom (Abhinivesha)"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning bhedas variety / division tamaso of obscurity (Avidya) <em class=\"sk\">'ṣṭavidho</em> eightfold mohasya of delusion (Asmita) ca and (also eightfold) <em class=\"sk\">daśavidho</em> tenfold <em class=\"sk\">mahāmohaḥ</em> extreme delusion (Raga) <em class=\"sk\">tāmisro</em> gloom (Dvesha) <em class=\"sk\">'ṣṭādaśadhā</em> eighteenfold <em class=\"sk\">tathā</em> similarly bhavaty is <em class=\"sk\">andhatāmisraḥ</em> utter gloom (Abhinivesha)"
+    "words_html": "Sanskrit Word English Meaning bhedas variety / division tamaso of obscurity (Avidya) <em class=\"sk\">'ṣṭavidho</em> eightfold mohasya of delusion (Asmita) ca and (also eightfold) <em class=\"sk\">daśavidho</em> tenfold <em class=\"sk\">mahāmohaḥ</em> extreme delusion (Raga) <em class=\"sk\">tāmisro</em> gloom (Dvesha) <em class=\"sk\">'ṣṭādaśadhā</em> eighteenfold <em class=\"sk\">tathā</em> similarly bhavaty is <em class=\"sk\">andhatāmisraḥ</em> utter gloom (Abhinivesha)",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: tamas = avidyā (YS 2.5), moha = asmitā (2.6), mahāmoha = rāga (2.7), tāmisra = dveṣa (2.8), andhatāmisra = abhiniveśa (2.9) — the equation made by Vyāsa and the Sāṃkhya commentators. Veda: Īśa Up. 3 — the ‘worlds covered in blind darkness (andhena tamasāvṛtāḥ)’ — the image behind ‘andhatāmisra’. Meaning: five names for one darkness at five depths."
+      }
+    ]
   },
   {
     "number": 49,
@@ -2786,7 +3074,13 @@ const SAMKHYA_SUTRAS = [
         "of complacencies and perfections"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">ekādaśa</em> eleven <em class=\"sk\">indriyavadhāḥ</em> injuries of the organs saha together with buddhivadhair injuries of the intellect <em class=\"sk\">aśaktir</em> incapacity <em class=\"sk\">uddiṣṭā</em> is declared <em class=\"sk\">saptadaśavadhā</em> seventeen injuries buddher of the intellect <em class=\"sk\">viparyayāt</em> from the inversion / opposite <em class=\"sk\">tuṣṭisiddhīnām</em> of complacencies and perfections"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">ekādaśa</em> eleven <em class=\"sk\">indriyavadhāḥ</em> injuries of the organs saha together with buddhivadhair injuries of the intellect <em class=\"sk\">aśaktir</em> incapacity <em class=\"sk\">uddiṣṭā</em> is declared <em class=\"sk\">saptadaśavadhā</em> seventeen injuries buddher of the intellect <em class=\"sk\">viparyayāt</em> from the inversion / opposite <em class=\"sk\">tuṣṭisiddhīnām</em> of complacencies and perfections",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.30 — nine obstacles, from illness to instability. Veda: Śvetāśvatara Up. 2.13 lists health and steadiness as early signs of progress — the opposite of incapacity. Meaning: damaged instruments slow the work."
+      }
+    ]
   },
   {
     "number": 50,
@@ -2844,7 +3138,13 @@ const SAMKHYA_SUTRAS = [
         "are accepted / considered"
       ]
     ],
-    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">ādhyātmikyaś</em> internal (relating to the self) <em class=\"sk\">catasraḥ</em> four <em class=\"sk\">prakṛti</em> Nature <em class=\"sk\">upādāna</em> Means <em class=\"sk\">kāla</em> Time <em class=\"sk\">bhāgākhyāḥ</em> named Luck / Destiny <em class=\"sk\">bāhyā</em> external <em class=\"sk\">viṣayoparamāt</em> from abstention of objects <em class=\"sk\">pañca</em> five nava nine (in total) <em class=\"sk\">tuṣṭayo</em> complacencies <em class=\"sk\">'bhimatāḥ</em> are accepted / considered"
+    "words_html": "Sanskrit Word English Meaning <em class=\"sk\">ādhyātmikyaś</em> internal (relating to the self) <em class=\"sk\">catasraḥ</em> four <em class=\"sk\">prakṛti</em> Nature <em class=\"sk\">upādāna</em> Means <em class=\"sk\">kāla</em> Time <em class=\"sk\">bhāgākhyāḥ</em> named Luck / Destiny <em class=\"sk\">bāhyā</em> external <em class=\"sk\">viṣayoparamāt</em> from abstention of objects <em class=\"sk\">pañca</em> five nava nine (in total) <em class=\"sk\">tuṣṭayo</em> complacencies <em class=\"sk\">'bhimatāḥ</em> are accepted / considered",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: contrast YS 2.42 — contentment brings ‘unsurpassed happiness’. Sāṃkhya warns against settling for nature, means, time or luck before knowledge. Yoga’s contentment is with circumstance, not with ignorance. Veda: Kaṭha Up. 1.3.14 — ‘arise, awake.’ Meaning: don’t mistake comfort for arrival."
+      }
+    ]
   },
   {
     "number": 51,
@@ -2910,7 +3210,13 @@ const SAMKHYA_SUTRAS = [
         "threefold"
       ]
     ],
-    "words_html": "<em class=\"sk\">ūhaḥ</em> reasoning / contemplation <em class=\"sk\">śabdo</em> word / oral instruction <em class=\"sk\">'dhyayanaṁ</em> study <em class=\"sk\">duḥkhavighātās</em> removal of suffering <em class=\"sk\">trayaḥ</em> the three (kinds) <em class=\"sk\">suhṛtprāptiḥ</em> acquisition of friends (teachers/companions) <em class=\"sk\">dānaṁ</em> giving / charity / purity ca and siddhayo perfections <em class=\"sk\">'ṣṭau</em> eight <em class=\"sk\">siddheḥ</em> of perfection <em class=\"sk\">pūrvo</em> the previous (three classes) <em class=\"sk\">'ṅkuśas</em> curb / hook / obstruction <em class=\"sk\">trividhaḥ</em> threefold"
+    "words_html": "<em class=\"sk\">ūhaḥ</em> reasoning / contemplation <em class=\"sk\">śabdo</em> word / oral instruction <em class=\"sk\">'dhyayanaṁ</em> study <em class=\"sk\">duḥkhavighātās</em> removal of suffering <em class=\"sk\">trayaḥ</em> the three (kinds) <em class=\"sk\">suhṛtprāptiḥ</em> acquisition of friends (teachers/companions) <em class=\"sk\">dānaṁ</em> giving / charity / purity ca and siddhayo perfections <em class=\"sk\">'ṣṭau</em> eight <em class=\"sk\">siddheḥ</em> of perfection <em class=\"sk\">pūrvo</em> the previous (three classes) <em class=\"sk\">'ṅkuśas</em> curb / hook / obstruction <em class=\"sk\">trividhaḥ</em> threefold",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.29 — eight limbs; YS 2.44 — svādhyāya; YS 1.33 — friendliness. Veda: Muṇḍaka Up. 1.2.12 — ‘go to a teacher’; Bṛhadāraṇyaka Up. 2.4.5 — hear, reflect, meditate. Meaning: reasoning, teaching and study, together with the end of the three sufferings, good friends and giving."
+      }
+    ]
   },
   {
     "number": 52,
@@ -2976,7 +3282,13 @@ const SAMKHYA_SUTRAS = [
         "creation"
       ]
     ],
-    "words_html": "na not <em class=\"sk\">vinā</em> without <em class=\"sk\">bhāvair</em> dispositions / conditions <em class=\"sk\">liṅgaṁ</em> the subtle body na not <em class=\"sk\">vinā</em> without <em class=\"sk\">liṅgena</em> the subtle body <em class=\"sk\">bhāvanirvṛttiḥ</em> formation / manifestation of dispositions <em class=\"sk\">liṅgākhyo</em> called the subtle body <em class=\"sk\">bhāvākhyas</em> called the dispositions <em class=\"sk\">tasmād</em> therefore <em class=\"sk\">dvividhaḥ</em> twofold pravartate proceeds <em class=\"sk\">sargaḥ</em> creation"
+    "words_html": "na not <em class=\"sk\">vinā</em> without <em class=\"sk\">bhāvair</em> dispositions / conditions <em class=\"sk\">liṅgaṁ</em> the subtle body na not <em class=\"sk\">vinā</em> without <em class=\"sk\">liṅgena</em> the subtle body <em class=\"sk\">bhāvanirvṛttiḥ</em> formation / manifestation of dispositions <em class=\"sk\">liṅgākhyo</em> called the subtle body <em class=\"sk\">bhāvākhyas</em> called the dispositions <em class=\"sk\">tasmād</em> therefore <em class=\"sk\">dvividhaḥ</em> twofold pravartate proceeds <em class=\"sk\">sargaḥ</em> creation",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.10–11 — vāsanās beginningless, held by cause and fruit. Veda: Ṛgveda 10.129.4 — ‘desire arose in the beginning, the first seed of mind.’ Meaning: dispositions and subtle body make each other."
+      }
+    ]
   },
   {
     "number": 53,
@@ -3034,7 +3346,13 @@ const SAMKHYA_SUTRAS = [
         "creation"
       ]
     ],
-    "words_html": "<em class=\"sk\">aṣṭavikalpo</em> eight varieties daivas divine <em class=\"sk\">tairyagyonaś</em> animal / lower creation ca and <em class=\"sk\">pañcadhā</em> of five kinds bhavati is / becomes <em class=\"sk\">mānuṣaś</em> human ca and <em class=\"sk\">ekavidhaḥ</em> of one kind <em class=\"sk\">samāsato</em> in brief / in summary <em class=\"sk\">bhautikaḥ</em> elemental / gross <em class=\"sk\">sargaḥ</em> creation"
+    "words_html": "<em class=\"sk\">aṣṭavikalpo</em> eight varieties daivas divine <em class=\"sk\">tairyagyonaś</em> animal / lower creation ca and <em class=\"sk\">pañcadhā</em> of five kinds bhavati is / becomes <em class=\"sk\">mānuṣaś</em> human ca and <em class=\"sk\">ekavidhaḥ</em> of one kind <em class=\"sk\">samāsato</em> in brief / in summary <em class=\"sk\">bhautikaḥ</em> elemental / gross <em class=\"sk\">sargaḥ</em> creation",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 3.26 — knowledge of the worlds. Veda: Bṛhadāraṇyaka Up. 1.3 and Chāndogya Up. 1.2 — gods and demons; Kaṭha Up. 2.2.7 — beings by karma. Meaning: three orders of embodied life — divine, animal, human."
+      }
+    ]
   },
   {
     "number": 54,
@@ -3080,7 +3398,13 @@ const SAMKHYA_SUTRAS = [
         "down to a blade of grass / pillar"
       ]
     ],
-    "words_html": "<em class=\"sk\">ūrdhvaṁ</em> above / in higher regions <em class=\"sk\">sattvaviśālas</em> abounding in Sattva (purity/light) <em class=\"sk\">tamoviśālas</em> abounding in Tamas (darkness/inertia) <em class=\"sk\">tūmūlataḥ</em> at the root / in lower regions <em class=\"sk\">sargaḥ</em> creation madhye in the middle <em class=\"sk\">rajoviśālo</em> abounding in Rajas (activity/passion) <em class=\"sk\">brahmādi</em> beginning with Brahma <em class=\"sk\">stambaparyantaḥ</em> down to a blade of grass / pillar"
+    "words_html": "<em class=\"sk\">ūrdhvaṁ</em> above / in higher regions <em class=\"sk\">sattvaviśālas</em> abounding in Sattva (purity/light) <em class=\"sk\">tamoviśālas</em> abounding in Tamas (darkness/inertia) <em class=\"sk\">tūmūlataḥ</em> at the root / in lower regions <em class=\"sk\">sargaḥ</em> creation madhye in the middle <em class=\"sk\">rajoviśālo</em> abounding in Rajas (activity/passion) <em class=\"sk\">brahmādi</em> beginning with Brahma <em class=\"sk\">stambaparyantaḥ</em> down to a blade of grass / pillar",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.22 — differences of intensity; YS 3.26 — realms. Veda: Bṛhadāraṇyaka Up. 1.3.28 — ‘from the unreal to the real, from darkness to light.’ Meaning: sattva above, tamas below, rajas in the middle — where humans stand."
+      }
+    ]
   },
   {
     "number": 55,
@@ -3134,7 +3458,13 @@ const SAMKHYA_SUTRAS = [
         "by its very nature / naturally"
       ]
     ],
-    "words_html": "tatra there / in that creation <em class=\"sk\">jarāmaraṇakṛtaṁ</em> arising from old age and death <em class=\"sk\">duḥkhaṁ</em> suffering / pain <em class=\"sk\">prāpnoti</em> attains / experiences <em class=\"sk\">cetanaḥ</em> the conscious <em class=\"sk\">puruṣaḥ</em> Purusha / Spirit <em class=\"sk\">liṅgasya</em> of the subtle body <em class=\"sk\">avinivṛttes</em> until the cessation <em class=\"sk\">tasmād</em> therefore <em class=\"sk\">duḥkhaṁ</em> suffering <em class=\"sk\">svabhāvena</em> by its very nature / naturally"
+    "words_html": "tatra there / in that creation <em class=\"sk\">jarāmaraṇakṛtaṁ</em> arising from old age and death <em class=\"sk\">duḥkhaṁ</em> suffering / pain <em class=\"sk\">prāpnoti</em> attains / experiences <em class=\"sk\">cetanaḥ</em> the conscious <em class=\"sk\">puruṣaḥ</em> Purusha / Spirit <em class=\"sk\">liṅgasya</em> of the subtle body <em class=\"sk\">avinivṛttes</em> until the cessation <em class=\"sk\">tasmād</em> therefore <em class=\"sk\">duḥkhaṁ</em> suffering <em class=\"sk\">svabhāvena</em> by its very nature / naturally",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.9 and 2.15 — clinging to life and the suffering of change. Veda: Ṛgveda 7.59.12 — ‘release me from death’; Kaṭha Up. 1.1.26 — ‘these things last only till tomorrow.’ Meaning: as long as the subtle body lasts, so does the pain of decay and death."
+      }
+    ]
   },
   {
     "number": 56,
@@ -3180,7 +3510,13 @@ const SAMKHYA_SUTRAS = [
         "undertaking / creation"
       ]
     ],
-    "words_html": "iti thus <em class=\"sk\">eṣa</em> this <em class=\"sk\">prakṛtikṛto</em> made by Prakriti <em class=\"sk\">mahadādiviśeṣabhūtaparyantaḥ</em> from Intellect down to specific gross elements <em class=\"sk\">pratipuruṣavimokṣārthaṁ</em> for the deliverance of each Purusha <em class=\"sk\">svārtha</em> own benefit iva as if <em class=\"sk\">parārtha</em> for another's benefit <em class=\"sk\">ārambhaḥ</em> undertaking / creation"
+    "words_html": "iti thus <em class=\"sk\">eṣa</em> this <em class=\"sk\">prakṛtikṛto</em> made by Prakriti <em class=\"sk\">mahadādiviśeṣabhūtaparyantaḥ</em> from Intellect down to specific gross elements <em class=\"sk\">pratipuruṣavimokṣārthaṁ</em> for the deliverance of each Purusha <em class=\"sk\">svārtha</em> own benefit iva as if <em class=\"sk\">parārtha</em> for another's benefit <em class=\"sk\">ārambhaḥ</em> undertaking / creation",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.18 — the seen is for experience and release (bhoga-apavarga). Veda: Bṛhadāraṇyaka Up. 2.4.5 — ‘for the sake of the Self’. Meaning: nature works for each puruṣa’s freedom, as if for another’s good."
+      }
+    ]
   },
   {
     "number": 57,
@@ -3226,7 +3562,13 @@ const SAMKHYA_SUTRAS = [
         "of Pradhana / Prakriti"
       ]
     ],
-    "words_html": "<em class=\"sk\">vatsavivṛddhinimittaṁ</em> for the purpose of the calf's growth <em class=\"sk\">kṣīrasya</em> of the milk <em class=\"sk\">yathā</em> just as <em class=\"sk\">pravṛttir</em> functioning / activity <em class=\"sk\">ajñasya</em> of the non-intelligent <em class=\"sk\">puruṣavimokṣanimittaṁ</em> for the purpose of Purusha's liberation <em class=\"sk\">tathā</em> so / in that way <em class=\"sk\">pravṛttiḥ</em> functioning / activity <em class=\"sk\">pradhānasya</em> of Pradhana / Prakriti"
+    "words_html": "<em class=\"sk\">vatsavivṛddhinimittaṁ</em> for the purpose of the calf's growth <em class=\"sk\">kṣīrasya</em> of the milk <em class=\"sk\">yathā</em> just as <em class=\"sk\">pravṛttir</em> functioning / activity <em class=\"sk\">ajñasya</em> of the non-intelligent <em class=\"sk\">puruṣavimokṣanimittaṁ</em> for the purpose of Purusha's liberation <em class=\"sk\">tathā</em> so / in that way <em class=\"sk\">pravṛttiḥ</em> functioning / activity <em class=\"sk\">pradhānasya</em> of Pradhana / Prakriti",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.3 — nature flows by itself once obstacles are removed. Here Yoga adds Īśvara (YS 1.24) where the Kārikā does not need one. Veda: Śvetāśvatara Up. 4.10 — ‘know prakṛti as māyā and the great Lord as its wielder.’ Meaning: Sāṃkhya says the milk flows by nature; the Upaniṣad says a Lord guides it."
+      }
+    ]
   },
   {
     "number": 58,
@@ -3276,7 +3618,13 @@ const SAMKHYA_SUTRAS = [
         "the unmanifest (Prakriti)"
       ]
     ],
-    "words_html": "<em class=\"sk\">autsukyanivṛttyarthaṁ</em> for the purpose of relieving desire / curiosity <em class=\"sk\">yathā</em> just as <em class=\"sk\">kriyāsu</em> in actions pravartate engages <em class=\"sk\">lokaḥ</em> the people / the world <em class=\"sk\">puruṣasya</em> of the Purusha <em class=\"sk\">vimokṣārthaṁ</em> for the purpose of liberation pravartate engages / functions tadvad similarly / like that avyaktam the unmanifest (Prakriti)"
+    "words_html": "<em class=\"sk\">autsukyanivṛttyarthaṁ</em> for the purpose of relieving desire / curiosity <em class=\"sk\">yathā</em> just as <em class=\"sk\">kriyāsu</em> in actions pravartate engages <em class=\"sk\">lokaḥ</em> the people / the world <em class=\"sk\">puruṣasya</em> of the Purusha <em class=\"sk\">vimokṣārthaṁ</em> for the purpose of liberation pravartate engages / functions tadvad similarly / like that avyaktam the unmanifest (Prakriti)",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.21 — nature’s essence is for the seer. Veda: Bṛhadāraṇyaka Up. 4.4.5 — ‘as one desires, so one acts.’ Meaning: just as desire drives action until satisfied, nature acts until release."
+      }
+    ]
   },
   {
     "number": 59,
@@ -3334,7 +3682,13 @@ const SAMKHYA_SUTRAS = [
         "Prakriti"
       ]
     ],
-    "words_html": "<em class=\"sk\">raṅgasya</em> to the audience / stage <em class=\"sk\">darśayitvā</em> having shown / exhibited nivartate ceases / withdraws <em class=\"sk\">nartakī</em> the dancer <em class=\"sk\">yathā</em> just as <em class=\"sk\">nṛtyāt</em> from the dance <em class=\"sk\">puruṣasya</em> to the Purusha <em class=\"sk\">ātmānaṁ</em> herself <em class=\"sk\">prakāśya</em> having manifested / illuminated <em class=\"sk\">tathā</em> similarly nivartate ceases / withdraws <em class=\"sk\">prakṛtiḥ</em> Prakriti"
+    "words_html": "<em class=\"sk\">raṅgasya</em> to the audience / stage <em class=\"sk\">darśayitvā</em> having shown / exhibited nivartate ceases / withdraws <em class=\"sk\">nartakī</em> the dancer <em class=\"sk\">yathā</em> just as <em class=\"sk\">nṛtyāt</em> from the dance <em class=\"sk\">puruṣasya</em> to the Purusha <em class=\"sk\">ātmānaṁ</em> herself <em class=\"sk\">prakāśya</em> having manifested / illuminated <em class=\"sk\">tathā</em> similarly nivartate ceases / withdraws <em class=\"sk\">prakṛtiḥ</em> Prakriti",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.32 — the guṇas’ sequence ends once their purpose is done. Veda: Śvetāśvatara Up. 4.5 — one unborn ‘leaves her, having enjoyed her.’ Meaning: the dancer stops when the audience has seen."
+      }
+    ]
   },
   {
     "number": 60,
@@ -3392,7 +3746,13 @@ const SAMKHYA_SUTRAS = [
         "acts / goes about"
       ]
     ],
-    "words_html": "<em class=\"sk\">nānāvidhair</em> by manifold / various <em class=\"sk\">upāyair</em> means <em class=\"sk\">upakāriṇy</em> helpful / benevolent <em class=\"sk\">anupakāriṇaḥ</em> of the non-helpful / bringing no return <em class=\"sk\">puṁsaḥ</em> of the Purusha <em class=\"sk\">guṇavaty</em> endowed with gunas <em class=\"sk\">aguṇasya</em> of the one without gunas satas being (thus) tasya his artham purpose <em class=\"sk\">apārthakaṁ</em> without purpose (for herself) / uselessly carati acts / goes about"
+    "words_html": "<em class=\"sk\">nānāvidhair</em> by manifold / various <em class=\"sk\">upāyair</em> means <em class=\"sk\">upakāriṇy</em> helpful / benevolent <em class=\"sk\">anupakāriṇaḥ</em> of the non-helpful / bringing no return <em class=\"sk\">puṁsaḥ</em> of the Purusha <em class=\"sk\">guṇavaty</em> endowed with gunas <em class=\"sk\">aguṇasya</em> of the one without gunas satas being (thus) tasya his artham purpose <em class=\"sk\">apārthakaṁ</em> without purpose (for herself) / uselessly carati acts / goes about",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.21 — the seen exists only for the seer. Veda: Bṛhadāraṇyaka Up. 2.4.5 — ‘for the sake of the Self’. Meaning: nature serves without being served in return."
+      }
+    ]
   },
   {
     "number": 61,
@@ -3450,7 +3810,13 @@ const SAMKHYA_SUTRAS = [
         "of Purusha"
       ]
     ],
-    "words_html": "<em class=\"sk\">prakṛteḥ</em> than Prakriti <em class=\"sk\">sukumārataraṁ</em> more delicate / more modest na <em class=\"sk\">kiñcid</em> nothing <em class=\"sk\">astīti</em> is (thus) me my matir bhavati belief/mind is <em class=\"sk\">yā</em> who <em class=\"sk\">dṛṣṭāsmi</em> \"I have been seen\" iti thus punar na never again <em class=\"sk\">darśanam</em> upaiti comes into sight <em class=\"sk\">puruṣasya</em> of Purusha"
+    "words_html": "<em class=\"sk\">prakṛteḥ</em> than Prakriti <em class=\"sk\">sukumārataraṁ</em> more delicate / more modest na <em class=\"sk\">kiñcid</em> nothing <em class=\"sk\">astīti</em> is (thus) me my matir bhavati belief/mind is <em class=\"sk\">yā</em> who <em class=\"sk\">dṛṣṭāsmi</em> \"I have been seen\" iti thus punar na never again <em class=\"sk\">darśanam</em> upaiti comes into sight <em class=\"sk\">puruṣasya</em> of Purusha",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.22 and 4.34 — once seen, nature withdraws for that seer. Veda: Kena Up. 3 — the yakṣa vanishes when approached by Indra, leaving the teaching; Kaṭha Up. 2.3.15 — the knot, once cut, does not return. Meaning: nothing is shyer than prakṛti once fully seen."
+      }
+    ]
   },
   {
     "number": 62,
@@ -3504,7 +3870,13 @@ const SAMKHYA_SUTRAS = [
         "Prakriti"
       ]
     ],
-    "words_html": "<em class=\"sk\">tasmān</em> therefore na badhyate is not bound <em class=\"sk\">addhā</em> in reality / truly na mucyate is not liberated <em class=\"sk\">nāpi</em> <em class=\"sk\">saṁsarati</em> nor transmigrates <em class=\"sk\">kaścit</em> anyone / any Purusha <em class=\"sk\">saṁsarati</em> transmigrates badhyate is bound mucyate ca and is liberated <em class=\"sk\">nānāśrayā</em> abiding in various forms / supporting many <em class=\"sk\">prakṛtiḥ</em> Prakriti"
+    "words_html": "<em class=\"sk\">tasmān</em> therefore na badhyate is not bound <em class=\"sk\">addhā</em> in reality / truly na mucyate is not liberated <em class=\"sk\">nāpi</em> <em class=\"sk\">saṁsarati</em> nor transmigrates <em class=\"sk\">kaścit</em> anyone / any Purusha <em class=\"sk\">saṁsarati</em> transmigrates badhyate is bound mucyate ca and is liberated <em class=\"sk\">nānāśrayā</em> abiding in various forms / supporting many <em class=\"sk\">prakṛtiḥ</em> Prakriti",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.20 and 4.18 — puruṣa is unchanging, only appearing to cognise. Veda: Kaṭha Up. 1.2.18–19 — ‘it is not born, it does not die … it does not slay, nor is it slain’; Bṛhadāraṇyaka Up. 4.3.15 — ‘unattached’. Meaning: bondage and release happen in nature; the Self was never caught."
+      }
+    ]
   },
   {
     "number": 63,
@@ -3558,7 +3930,13 @@ const SAMKHYA_SUTRAS = [
         "by one form (knowledge)"
       ]
     ],
-    "words_html": "<em class=\"sk\">rūpaiḥ</em> by forms / dispositions saptabhir by seven eva tu indeed / but <em class=\"sk\">badhnāty</em> binds <em class=\"sk\">ātmānam</em> herself <em class=\"sk\">ātmanā</em> by herself <em class=\"sk\">prakṛtiḥ</em> Prakriti saiva ca and she herself <em class=\"sk\">puruṣārthaṁ</em> prati for the purpose of Purusha vimocayaty liberates <em class=\"sk\">ekarūpeṇa</em> by one form (knowledge)"
+    "words_html": "<em class=\"sk\">rūpaiḥ</em> by forms / dispositions saptabhir by seven eva tu indeed / but <em class=\"sk\">badhnāty</em> binds <em class=\"sk\">ātmānam</em> herself <em class=\"sk\">ātmanā</em> by herself <em class=\"sk\">prakṛtiḥ</em> Prakriti saiva ca and she herself <em class=\"sk\">puruṣārthaṁ</em> prati for the purpose of Purusha vimocayaty liberates <em class=\"sk\">ekarūpeṇa</em> by one form (knowledge)",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.24 — ignorance causes conjunction; its end ends it. Veda: Muṇḍaka Up. 3.1.2 — grieving from helplessness, freed by seeing the Lord. Meaning: nature ties herself in seven ways and unties herself in one."
+      }
+    ]
   },
   {
     "number": 64,
@@ -3616,7 +3994,13 @@ const SAMKHYA_SUTRAS = [
         "knowledge"
       ]
     ],
-    "words_html": "<em class=\"sk\">evaṁ</em> thus <em class=\"sk\">tattvābhyāsān</em> from the practice of the truth / principles <em class=\"sk\">nāsmi</em> I am not (no agency) na me not mine (no attachment) <em class=\"sk\">nāham</em> not \"I\" (no ego) ity thus <em class=\"sk\">apariśeṣam</em> completely / without residue <em class=\"sk\">aviparyayād</em> free from error / non-inverted <em class=\"sk\">viśuddhaṁ</em> pure kevalam absolute / isolated utpadyate arises <em class=\"sk\">jñānam</em> knowledge"
+    "words_html": "<em class=\"sk\">evaṁ</em> thus <em class=\"sk\">tattvābhyāsān</em> from the practice of the truth / principles <em class=\"sk\">nāsmi</em> I am not (no agency) na me not mine (no attachment) <em class=\"sk\">nāham</em> not \"I\" (no ego) ity thus <em class=\"sk\">apariśeṣam</em> completely / without residue <em class=\"sk\">aviparyayād</em> free from error / non-inverted <em class=\"sk\">viśuddhaṁ</em> pure kevalam absolute / isolated utpadyate arises <em class=\"sk\">jñānam</em> knowledge",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.26 — unbroken discriminative recognition; YS 1.48 — truth-bearing insight; YS 4.25 — the end of questions about the self. Veda: Bṛhadāraṇyaka Up. 4.4.22 — ‘not this, not this’; Muṇḍaka Up. 3.1.5 — gained by truth and right knowledge. Meaning: ‘I am not, nothing is mine, no I’ — the Upaniṣad’s negation made personal."
+      }
+    ]
   },
   {
     "number": 65,
@@ -3666,7 +4050,13 @@ const SAMKHYA_SUTRAS = [
         "abiding in his own nature"
       ]
     ],
-    "words_html": "tena by that (knowledge) <em class=\"sk\">nivṛttaprasavām</em> whose productiveness has ceased <em class=\"sk\">arthavaśāt</em> due to fulfillment of purpose <em class=\"sk\">saptarūpavinivṛttām</em> withdrawn from the seven forms <em class=\"sk\">prakṛtiṁ</em> Prakriti <em class=\"sk\">paśyati</em> sees / looks upon <em class=\"sk\">puruṣaḥ</em> Purusha <em class=\"sk\">prekṣakavad</em> like a spectator <em class=\"sk\">avasthitaḥ</em> situated / remaining <em class=\"sk\">svasthaḥ</em> abiding in his own nature"
+    "words_html": "tena by that (knowledge) <em class=\"sk\">nivṛttaprasavām</em> whose productiveness has ceased <em class=\"sk\">arthavaśāt</em> due to fulfillment of purpose <em class=\"sk\">saptarūpavinivṛttām</em> withdrawn from the seven forms <em class=\"sk\">prakṛtiṁ</em> Prakriti <em class=\"sk\">paśyati</em> sees / looks upon <em class=\"sk\">puruṣaḥ</em> Purusha <em class=\"sk\">prekṣakavad</em> like a spectator <em class=\"sk\">avasthitaḥ</em> situated / remaining <em class=\"sk\">svasthaḥ</em> abiding in his own nature",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.3 — ‘the seer abides in its own nature’ — the same picture as ‘abiding in itself (svastha), like a spectator’. Veda: Ṛgveda 1.164.20 — the bird that watches without eating; Bṛhadāraṇyaka Up. 4.4.23 — ‘calm … he sees the Self in the self.’ Meaning: the watcher stops being drawn into the show."
+      }
+    ]
   },
   {
     "number": 66,
@@ -3728,7 +4118,13 @@ const SAMKHYA_SUTRAS = [
         "for creation"
       ]
     ],
-    "words_html": "<em class=\"sk\">dṛṣṭā</em> <em class=\"sk\">mayā</em> \"she has been seen by me\" ity thus <em class=\"sk\">upekṣaka</em> indifferent / unconcerned eko the one (Purusha) <em class=\"sk\">dṛṣṭāham</em> \"I have been seen\" ity thus uparamaty ceases / stops <em class=\"sk\">anyā</em> the other (Prakriti) sati <em class=\"sk\">saṁyoge'pi</em> even though conjunction remains tayoh of the two <em class=\"sk\">prayojanaṁ</em> motive / purpose <em class=\"sk\">nāsti</em> is not sargasya for creation"
+    "words_html": "<em class=\"sk\">dṛṣṭā</em> <em class=\"sk\">mayā</em> \"she has been seen by me\" ity thus <em class=\"sk\">upekṣaka</em> indifferent / unconcerned eko the one (Purusha) <em class=\"sk\">dṛṣṭāham</em> \"I have been seen\" ity thus uparamaty ceases / stops <em class=\"sk\">anyā</em> the other (Prakriti) sati <em class=\"sk\">saṁyoge'pi</em> even though conjunction remains tayoh of the two <em class=\"sk\">prayojanaṁ</em> motive / purpose <em class=\"sk\">nāsti</em> is not sargasya for creation",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 2.22 and 4.32 — nature is ‘as if destroyed’ for the freed, though still there. Veda: Śvetāśvatara Up. 4.5 — one unborn enjoys, the other leaves her; Kaṭha Up. 2.3.14 — desires released. Meaning: contact remains; purpose has gone."
+      }
+    ]
   },
   {
     "number": 67,
@@ -3766,7 +4162,13 @@ const SAMKHYA_SUTRAS = [
         "retaining the body"
       ]
     ],
-    "words_html": "<em class=\"sk\">samyagjñānādhigamād</em> upon attainment of perfect knowledge <em class=\"sk\">dharmādīnām</em> of virtue and the rest <em class=\"sk\">akāraṇaprāptau</em> having lost causal power <em class=\"sk\">tiṣṭhati</em> remains <em class=\"sk\">saṁskāravaśāc</em> due to the force of past impressions / momentum cakrabhramavad like the whirling of a wheel <em class=\"sk\">dhṛtaśarīraḥ</em> retaining the body"
+    "words_html": "<em class=\"sk\">samyagjñānādhigamād</em> upon attainment of perfect knowledge <em class=\"sk\">dharmādīnām</em> of virtue and the rest <em class=\"sk\">akāraṇaprāptau</em> having lost causal power <em class=\"sk\">tiṣṭhati</em> remains <em class=\"sk\">saṁskāravaśāc</em> due to the force of past impressions / momentum cakrabhramavad like the whirling of a wheel <em class=\"sk\">dhṛtaśarīraḥ</em> retaining the body",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.27–28 and 3.22 — residual saṃskāras and karma already in motion. Veda: Chāndogya Up. 6.14.2 — ‘delay only until I am released; then I reach home.’ Meaning: the potter’s wheel keeps turning a while after the push stops — the freed sage keeps the body."
+      }
+    ]
   },
   {
     "number": 68,
@@ -3812,7 +4214,13 @@ const SAMKHYA_SUTRAS = [
         "attains"
       ]
     ],
-    "words_html": "<em class=\"sk\">prāpte</em> when attained <em class=\"sk\">śarīrabhede</em> separation from the body (death) <em class=\"sk\">caritārthatvāt</em> because the purpose is fulfilled <em class=\"sk\">pradhānavinivṛttau</em> when Pradhana ceases activity <em class=\"sk\">aikāntikam</em> absolute (freedom from pain) <em class=\"sk\">ātyantikam</em> permanent (non-return) ubhayam both kaivalyam liberation / isolation <em class=\"sk\">āpnoti</em> attains"
+    "words_html": "<em class=\"sk\">prāpte</em> when attained <em class=\"sk\">śarīrabhede</em> separation from the body (death) <em class=\"sk\">caritārthatvāt</em> because the purpose is fulfilled <em class=\"sk\">pradhānavinivṛttau</em> when Pradhana ceases activity <em class=\"sk\">aikāntikam</em> absolute (freedom from pain) <em class=\"sk\">ātyantikam</em> permanent (non-return) ubhayam both kaivalyam liberation / isolation <em class=\"sk\">āpnoti</em> attains",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 4.34 — kaivalya; YS 2.25 — the absence of conjunction is isolation. Veda: Śvetāśvatara Up. 6.11 — ‘alone (kevala)’; 6.13 — ‘reached by Sāṃkhya and Yoga’; Muṇḍaka Up. 3.2.8 — rivers entering the ocean. Meaning: both texts end on the same word, drawn from the Upaniṣad."
+      }
+    ]
   },
   {
     "number": 69,
@@ -3858,7 +4266,13 @@ const SAMKHYA_SUTRAS = [
         "of beings / elements"
       ]
     ],
-    "words_html": "<em class=\"sk\">puruṣārthajñānam</em> knowledge for the purpose of Purusha <em class=\"sk\">idaṁ</em> this guhyam secret / profound <em class=\"sk\">paramarṣiṇā</em> by the great sage (Kapila) <em class=\"sk\">samākhyātam</em> was declared / expounded <em class=\"sk\">sthityutpattipralayāś</em> duration, origin, and dissolution cintyante are considered / investigated yatra where / in which <em class=\"sk\">bhūtānām</em> of beings / elements"
+    "words_html": "<em class=\"sk\">puruṣārthajñānam</em> knowledge for the purpose of Purusha <em class=\"sk\">idaṁ</em> this guhyam secret / profound <em class=\"sk\">paramarṣiṇā</em> by the great sage (Kapila) <em class=\"sk\">samākhyātam</em> was declared / expounded <em class=\"sk\">sthityutpattipralayāś</em> duration, origin, and dissolution cintyante are considered / investigated yatra where / in which <em class=\"sk\">bhūtānām</em> of beings / elements",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.25–26 — Īśvara as first teacher; Vyāsa on 1.25 tells the same story of compassionate teaching to Āsuri. Veda: Muṇḍaka Up. 1.1.1–2 — the chain of teachers from Brahmā; Ṛgveda 10.129.7 — ‘who knows from where this creation came?’ Meaning: a hidden teaching about origin, duration and dissolution."
+      }
+    ]
   },
   {
     "number": 70,
@@ -3916,7 +4330,13 @@ const SAMKHYA_SUTRAS = [
         "the system / doctrine"
       ]
     ],
-    "words_html": "etat this pavitram purifying <em class=\"sk\">agryaṁ</em> supreme / foremost munir the sage (Kapila) <em class=\"sk\">āsuraye</em> to Asuri <em class=\"sk\">anukampayā</em> out of compassion pradadau gave / imparted <em class=\"sk\">āsurir</em> api Asuri also <em class=\"sk\">pañcaśikhāya</em> to Panchashikha tena ca and by him <em class=\"sk\">bahudhā</em> <em class=\"sk\">kṛtaṁ</em> was made manifold / widely expanded tantram the system / doctrine"
+    "words_html": "etat this pavitram purifying <em class=\"sk\">agryaṁ</em> supreme / foremost munir the sage (Kapila) <em class=\"sk\">āsuraye</em> to Asuri <em class=\"sk\">anukampayā</em> out of compassion pradadau gave / imparted <em class=\"sk\">āsurir</em> api Asuri also <em class=\"sk\">pañcaśikhāya</em> to Panchashikha tena ca and by him <em class=\"sk\">bahudhā</em> <em class=\"sk\">kṛtaṁ</em> was made manifold / widely expanded tantram the system / doctrine",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.1 — ‘anuśāsanam’, teaching passed down; Vyāsa on YS 1.25 quotes Pañcaśikha’s account of Kapila teaching Āsuri. Veda: Śvetāśvatara Up. 5.2 — ‘he who in the beginning bore the seer Kapila.’ Meaning: the Upaniṣad names Sāṃkhya’s founder."
+      }
+    ]
   },
   {
     "number": 71,
@@ -3966,7 +4386,13 @@ const SAMKHYA_SUTRAS = [
         "the established doctrine / principles"
       ]
     ],
-    "words_html": "<em class=\"sk\">śiṣyaparamparayā</em> by the succession of disciples <em class=\"sk\">āgatam</em> handed down / come <em class=\"sk\">īśvarakṛṣṇena</em> by Ishvarakrishna caitad and this <em class=\"sk\">āryābhiḥ</em> in the Arya meter <em class=\"sk\">saṁkṣiptam</em> summarized <em class=\"sk\">āryamatina</em> by the noble-minded samyag thoroughly / rightly <em class=\"sk\">vijñāya</em> having understood <em class=\"sk\">siddhāntam</em> the established doctrine / principles"
+    "words_html": "<em class=\"sk\">śiṣyaparamparayā</em> by the succession of disciples <em class=\"sk\">āgatam</em> handed down / come <em class=\"sk\">īśvarakṛṣṇena</em> by Ishvarakrishna caitad and this <em class=\"sk\">āryābhiḥ</em> in the Arya meter <em class=\"sk\">saṁkṣiptam</em> summarized <em class=\"sk\">āryamatina</em> by the noble-minded samyag thoroughly / rightly <em class=\"sk\">vijñāya</em> having understood <em class=\"sk\">siddhāntam</em> the established doctrine / principles",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: YS 1.1 — systematising an older teaching. Veda: Bṛhadāraṇyaka Up. 2.6 and 4.6 end with long lineages of teachers. Meaning: like the Upaniṣads, the Kārikā shows its chain of teachers."
+      }
+    ]
   },
   {
     "number": 72,
@@ -4012,6 +4438,12 @@ const SAMKHYA_SUTRAS = [
         "and also"
       ]
     ],
-    "words_html": "<em class=\"sk\">saptatyāṁ</em> in the seventy (verses) kila indeed <em class=\"sk\">ye'rthās</em> which subjects / topics <em class=\"sk\">te'rthāḥ</em> those subjects <em class=\"sk\">kṛtsnasya</em> of the entire <em class=\"sk\">ṣaṣṭitantrasya</em> of the Shashtitantra <em class=\"sk\">ākhyāyikāvirahitāḥ</em> devoid of illustrative stories <em class=\"sk\">paravādavivarjitāś</em> devoid of refutations of others' theories <em class=\"sk\">cāpi</em> and also"
+    "words_html": "<em class=\"sk\">saptatyāṁ</em> in the seventy (verses) kila indeed <em class=\"sk\">ye'rthās</em> which subjects / topics <em class=\"sk\">te'rthāḥ</em> those subjects <em class=\"sk\">kṛtsnasya</em> of the entire <em class=\"sk\">ṣaṣṭitantrasya</em> of the Shashtitantra <em class=\"sk\">ākhyāyikāvirahitāḥ</em> devoid of illustrative stories <em class=\"sk\">paravādavivarjitāś</em> devoid of refutations of others' theories <em class=\"sk\">cāpi</em> and also",
+    "commentaries": [
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Yoga ↔ Sāṃkhya: Yoga is sometimes called ‘seśvara Sāṃkhya’, Sāṃkhya with a Lord — the Yoga Sūtras keep the framework this verse summarises and add Īśvara and method. Veda: Śvetāśvatara Up. 6.13 — ‘the cause reached by Sāṃkhya and Yoga’; Gītā 5.4–5 — ‘the childish say Sāṃkhya and Yoga differ, not the wise; the state reached by Sāṃkhya is also reached by Yoga.’ Meaning: two texts, one aim."
+      }
+    ]
   }
 ];

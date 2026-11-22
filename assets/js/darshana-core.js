@@ -142,6 +142,7 @@ function showSystem(id){
   const btns=document.querySelectorAll('.top-nav button');
   const map={yoga:0,samkhya:1,nyaya:2,vaisheshika:3,mimamsa:4,vedanta:5,vedas:6,shiva:7};
   btns[map[id]].classList.add('active');
+  history.replaceState(null,'','#'+id); // keeps the URL shareable and back-button friendly
   if(!document.getElementById(id)._built){
     builders[id]();
     document.getElementById(id)._built=true;

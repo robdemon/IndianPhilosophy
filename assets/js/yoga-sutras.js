@@ -29,6 +29,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda introduces Rāja Yoga as the science of the inner world, comparable in rigor to the physical sciences. He stresses that yoga makes no demand of belief; it asks only that the student experiment with the methods and verify the results in their own experience. The word 'atha' for him marks the readiness of the student — the moment when, after the ordinary pursuits of life have been examined, the question of the mind itself becomes urgent."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: ‘anuśāsana’ means teaching handed down, not invented; SK 69–71 says the same of Sāṃkhya, received from Kapila through Āsuri and Pañcaśikha. Yoga is the practice of what Sāṃkhya analyses. Veda: the word yoga first appears for the mind in Ṛgveda 5.81.1 — ‘the seers yoke (yuñjate) their mind and yoke their thoughts’ — echoed in Śvetāśvatara Up. 2.1. Meaning: the Veda already treated the mind as something to be harnessed; this text sets out how."
       }
     ],
     "cross_ref": "Bryant pp. 3–9 · Stoler Miller pp. 29–30 · Satchidananda pp. 1–3 · Tigunait Vol. 1 (Samādhi Pāda) opening · Bryant on the meaning of 'anuśāsanam' as continuation of tradition · Leggett (Śaṅkara's gloss) on 'atha' · Prabhavananda pp. 15–17 · Satyananda pp. 1–4 · Osho 'Yoga: The Alpha and the Omega' Vol. 1, Discourse 1"
@@ -64,6 +68,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "For Vivekananda this is the central definition. The mind, he says, is like a lake whose surface is constantly disturbed by waves; the bottom — the true Self — cannot be seen until the waves are stilled. He insists that the Self is always already free and luminous; yoga does not create this freedom but removes the obstruction (the agitated mind) that hides it. Every method that follows in the text is, in his reading, a means to this single end."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the citta is Sāṃkhya’s inner instrument — buddhi, ahaṃkāra and manas (SK 33, 35). Stilling its movements is the practical form of SK 64’s knowledge. Veda: Kaṭha Up. 2.3.10–11 — ‘when the five senses rest with the mind and the intellect does not stir, that is the highest state; this steady holding of the senses they call yoga.’ Maitrī Up. 6.34: ‘mind alone is the cause of bondage and release.’ Meaning: freedom is not won by adding anything, but by stilling what moves."
       }
     ],
     "cross_ref": "Bryant pp. 10–27 (extended discussion of citta and vṛtti) · Stoler Miller pp. 30–31 · Satchidananda pp. 3–7 · Tigunait Vol. 1 on the architecture of citta · Leggett on Śaṅkara's reading of nirodha · Prabhavananda pp. 17–22 · Satyananda pp. 5–13 · Osho Vol. 1, Discourses 2–3"
@@ -99,6 +107,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda makes this practical: ordinarily we are 'crystallized' in the moods of the mind — angry, joyful, anxious — and mistake these passing colourings for ourselves. When the lake is still, the Self is seen as it is: pure, unchanging, untouched. He returns repeatedly to the metaphor: the Self is the one constant amid all change, and yoga is simply the method of recognizing what was always present."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 65 describes the freed puruṣa ‘abiding in itself (svastha), like a spectator’ — the same picture as ‘the seer abides in its own nature’. Veda: Bṛhadāraṇyaka Up. 4.4.23 — ‘calm, restrained, withdrawn, patient and collected (samāhita), he sees the Self in the self.’ Meaning: when the mind is still, nothing new appears; what was always there stops being hidden."
       }
     ],
     "cross_ref": "Bryant pp. 27–32 · Stoler Miller p. 31 · Satchidananda pp. 7–9 · Tigunait Vol. 1 on draṣṭṛ vs. dṛśya · Leggett on Śaṅkara's metaphysics of the Seer · Prabhavananda pp. 22–24 · Satyananda pp. 13–17 · Osho Vol. 1, Discourse 3"
@@ -130,6 +142,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda gives the everyday illustration: when we are angry, we say 'I am angry'; when we know something, 'I know.' But the Self does not become angry or knowing; the mind takes those forms, and the Self, reflected in the mind, seems to share them, as the moon seems to tremble in rippling water though it does not actually move."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 20 — through contact with puruṣa the unconscious intellect seems conscious, and puruṣa seems to act. This ‘taking the form of the vṛttis’ is that mutual borrowing. Veda: Muṇḍaka Up. 3.1.2 — the self on the same tree, sunk in confusion, grieves, deluded by its own helplessness. Meaning: in ordinary life we take ourselves to be whatever passes through the mind."
       }
     ],
     "cross_ref": "Bryant pp. 32–35 · Stoler Miller p. 31 · Satchidananda pp. 9–11 · Tigunait Vol. 1 on identification · Leggett on Śaṅkara · Prabhavananda pp. 24–26 · Satyananda pp. 17–20 · Osho Vol. 1, Discourse 4"
@@ -165,6 +181,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes that thoughts are not all of one quality: some bind, some liberate. The thoughts of the seeker — discrimination, study, devotion — are vṛttis too, but they cut at the root of the binding ones, like the thorn used to remove another thorn, after which both are discarded."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 23 divides buddhi’s states into sattvic (virtue, knowledge, dispassion, power) and tamasic; Yoga’s ‘afflicted / unafflicted’ vṛttis follow the same line — thoughts that bind and thoughts that free. Veda: Bṛhadāraṇyaka Up. 1.3.28 — ‘lead me from the unreal to the real, from darkness to light.’ Meaning: some thoughts are themselves the way out; practice begins by using them against the rest."
       }
     ],
     "cross_ref": "Bryant pp. 35–40 · Stoler Miller pp. 31–32 · Satchidananda pp. 11–13 · Tigunait Vol. 1 on kliṣṭa/akliṣṭa · Leggett · Prabhavananda pp. 26–28 · Satyananda pp. 20–24 · Osho Vol. 1, Discourse 4"
@@ -204,6 +224,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda walks through them as the entire repertoire of the mind: when we know correctly, when we know wrongly, when we play with mere ideas, when we sleep, when we remember — there is nothing else the mind does. The whole landscape of inner experience is covered by these five, and the project of yoga is the stilling of all of them."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the five vṛttis are buddhi’s functions; SK 23 calls buddhi ‘adhyavasāya’, ascertainment, and these five are the ways it ascertains, rightly or wrongly. Veda: Chāndogya Up. 6.1.4 — clay is real, ‘the modification is only a name arising from speech’ — distinguishes true knowledge from naming. Meaning: everything we know arrives through one of five doors; knowing the doors is the first step to closing them."
       }
     ],
     "cross_ref": "Bryant pp. 40–44 · Stoler Miller p. 32 · Satchidananda pp. 13–15 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 28–29 · Satyananda pp. 24–28 · Osho Vol. 1, Discourse 5"
@@ -239,6 +263,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda translates these into the language of evidence: what we see for ourselves, what we reason out, what we accept on the authority of those who have seen — all three are admitted by yoga as legitimate paths to truth, but with the caveat that the highest knowledge (the realization of the Self) must finally be a matter of pratyakṣa — direct experience, not merely inference or testimony."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: identical to SK 4–5 — perception, inference and reliable testimony are the only three means of knowledge. Veda: Bṛhadāraṇyaka Up. 2.4.5 — the Self ‘is to be seen, heard, reflected on and meditated upon’: hearing (testimony), reflection (inference) and direct seeing. Meaning: Yoga and Sāṃkhya share one theory of knowledge, and the Upaniṣad already ranks direct seeing above hearsay."
       }
     ],
     "cross_ref": "Bryant pp. 44–55 · Stoler Miller p. 32 · Satchidananda pp. 15–17 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 29–31 · Satyananda pp. 28–32 · Osho Vol. 1, Discourse 5"
@@ -282,6 +310,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda gives the same rope-snake example. He emphasizes that almost all human suffering rests on viparyaya — taking the body for the Self, the impermanent for the permanent, the not-Self for the Self. The whole edifice of bondage is, in his reading, built on this single category of mental wave."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 44 and 47 call this viparyaya, error, and make it the root of bondage; it is the same word Patañjali uses here. Veda: Kaṭha Up. 1.2.5 — ‘dwelling in ignorance, thinking themselves wise, the deluded go round like the blind led by the blind.’ Meaning: the trouble is not lack of experience but experience misread."
       }
     ],
     "cross_ref": "Bryant pp. 55–59 · Stoler Miller p. 33 · Satchidananda pp. 17–19 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 31–32 · Satyananda pp. 32–34 · Osho Vol. 1, Discourse 6"
@@ -325,6 +357,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats vikalpa as the realm of pure imagination and verbal play — the 'horns of a hare' or 'the son of a barren woman.' The mind constructs internally consistent ideas that have no correspondent in reality. Much of philosophy and theology, he suggests, falls into this category, and the yogi must learn to distinguish words that point to something from words that merely echo other words."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: vikalpa — thought carried by words alone — is why SK 64’s liberating insight is phrased as the negation ‘I am not, nothing is mine’ rather than a new concept. Veda: Taittirīya Up. 2.4 — ‘from which words turn back, with the mind, not reaching it’; Ṛgveda 10.71.4 — ‘one who looks has not seen speech.’ Meaning: language can point, but it can also build things that are not there."
       }
     ],
     "cross_ref": "Bryant pp. 59–63 · Stoler Miller p. 33 · Satchidananda pp. 19–21 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 32–33 · Satyananda pp. 34–37 · Osho Vol. 1, Discourse 6"
@@ -364,6 +400,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda agrees with Vyāsa's analysis: deep sleep is not nothing — we report having slept, and report it as restful or otherwise. So something must persist; sleep is a particular wave of the mind, not the cessation of waves. He distinguishes this firmly from samādhi, with which deep sleep can be confused: in sleep the mind is veiled; in samādhi it is luminous."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: sleep is a tamasic state of buddhi (SK 13: tamas is heavy and covering). Yoga insists it is still a vṛtti — something is experienced, namely absence. Veda: Māṇḍūkya Up. 5 — deep sleep is ‘a mass of knowing, made of bliss’, and the fourth (turīya) lies beyond it; Praśna Up. 4.2 — in sleep the senses merge into mind like rays into the setting sun. Meaning: the Self is not found in blankness; it is the witness of the blankness."
       }
     ],
     "cross_ref": "Bryant pp. 63–67 · Stoler Miller p. 33 · Satchidananda pp. 21–23 · Tigunait Vol. 1 on the four states · Leggett · Prabhavananda pp. 33–35 · Satyananda pp. 37–40 · Osho Vol. 1, Discourse 7"
@@ -399,6 +439,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda highlights that the ordinary mind is overwhelmingly memory-driven: most of what we take for fresh perception is actually memory colouring perception. The yogi works to recognize this, to see what is, rather than to see only what was. Memory is not evil — it is necessary for life — but its mistaking for present experience is a major source of bondage."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: memory rides on saṃskāra, the residue SK 67 compares to a potter’s wheel still turning. Veda: Chāndogya Up. 7.26.2 — ‘when the sattva is pure, memory becomes firm; with firm memory, all knots are released.’ Meaning: memory binds when it replays the past, and frees when it holds the truth steady."
       }
     ],
     "cross_ref": "Bryant pp. 67–71 · Stoler Miller p. 33 · Satchidananda pp. 23–25 · Tigunait Vol. 1 on smṛti and saṃskāra · Leggett · Prabhavananda pp. 35–36 · Satyananda pp. 40–43 · Osho Vol. 1, Discourse 7"
@@ -434,6 +478,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda calls these the two pillars. Practice is the constant, patient effort to still the mind; dispassion is the willingness to let go of the rewards that the mind clings to. He warns against romantic shortcuts: there is no method that bypasses sustained effort, and no effort that survives long without the renunciation that frees energy from outward pursuit."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 64 — liberating knowledge arises ‘from the practice of the principles’ (tattvābhyāsa); SK 23 lists dispassion (virāga) among buddhi’s sattvic forms. Practice and dispassion are the two halves of that. Veda: Muṇḍaka Up. 1.2.12 — having examined the worlds won by action, the seeker ‘should arrive at dispassion: the uncreated is not gained by the created.’ Smṛti: Gītā 6.35 repeats the pair — ‘by practice and dispassion the mind is held.’ Meaning: one hand steadies, the other lets go."
       }
     ],
     "cross_ref": "Bryant pp. 71–80 · Stoler Miller pp. 33–34 · Satchidananda pp. 25–28 · Tigunait Vol. 1 on the two wings · Bryant on parallels with Bhagavad-Gītā 6.35 · Leggett · Prabhavananda pp. 36–39 · Satyananda pp. 43–48 · Osho Vol. 1, Discourse 8"
@@ -469,6 +517,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the inwardness of practice: it is not external rituals (though these may help) but the focused attempt to keep the mind from running outward. Each time the mind wanders, bringing it back — that is the substance of practice. He compares it to training a child or a young animal: patient, repetitive, without harshness."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: ‘sthiti’, stability, is the tamas-like steadiness SK 13 assigns to the guṇas, now turned to use. Veda: Taittirīya Up. 1.11 — ‘do not be careless about study (svādhyāyān mā pramadaḥ)’; Kaṭha Up. 2.3.11 — yoga ‘arises and passes away’, so it must be held. Meaning: steadiness is not a gift; it is a repeated effort."
       }
     ],
     "cross_ref": "Bryant pp. 80–84 · Stoler Miller p. 34 · Satchidananda pp. 28–30 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 39–40 · Satyananda pp. 48–51 · Osho Vol. 1, Discourse 8"
@@ -520,6 +572,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is direct here: most failures of yoga are failures of these three conditions. People practice intensely for a week and then drop it; or daily but absent-mindedly; or expect, after a few months, what only years can produce. He insists on patience proportionate to the magnitude of the goal: nothing less than the conquest of the mind is being attempted."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 64 speaks of ‘tattvābhyāsa’, practice of the principles — knowledge in Sāṃkhya is also not one reading but a ripening. Veda: Kaṭha Up. 1.3.14 — ‘arise, awake, approach the great ones and learn; the path is like a razor’s edge.’ Meaning: long, unbroken and sincere — the Upaniṣad’s razor’s edge in three words."
       }
     ],
     "cross_ref": "Bryant pp. 84–90 · Stoler Miller p. 34 · Satchidananda pp. 30–34 · Tigunait Vol. 1 on the three conditions · Leggett · Prabhavananda pp. 40–43 · Satyananda pp. 51–55 · Osho Vol. 1, Discourse 9"
@@ -567,6 +623,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda stresses that vairāgya is not depression or world-weariness but power — the recognition 'I am the master of these objects, and I let them go.' He distinguishes false renunciation (sour grapes) from true: false renunciation says 'I cannot have it'; true renunciation says 'I can have it, and I see that it is not what I am.' Without this distinction, vairāgya becomes a poison."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 2 rejects both seen and scriptural (ānuśravika) means — the very two kinds of object named here, ‘seen and heard of’. Veda: Kaṭha Up. 1.1.26–28 — Naciketas refuses Yama’s gifts of wealth, long life and pleasures: ‘they wear out the vigour of the senses; keep your horses and your songs.’ Meaning: the Veda’s own heaven is counted as one more object to want."
       }
     ],
     "cross_ref": "Bryant pp. 90–98 · Stoler Miller pp. 34–35 · Satchidananda pp. 34–38 · Tigunait Vol. 1 on the four stages · Leggett on Śaṅkara's reading · Prabhavananda pp. 43–46 · Satyananda pp. 55–60 · Osho Vol. 1, Discourse 9"
@@ -610,6 +670,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda calls this 'extreme non-attachment' and notes that it is not a moral discipline but a recognition. When you have seen the Self, the world does not need to be pushed away; it falls away naturally, as a dream falls away on waking. Lower vairāgya is willed; higher vairāgya is the spontaneous condition of one who knows who they are."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: this is SK 66 in seed form — once the puruṣa is seen, the guṇas lose their pull: ‘I have seen her,’ and he becomes indifferent. Veda: Śvetāśvatara Up. 4.5 — the unborn one leaves the red-white-black she-goat (prakṛti, the guṇas) ‘having enjoyed her’; Gītā 2.59 — even the taste (rasa) falls away on seeing the Highest. Meaning: lower dispassion is restraint; higher dispassion is simply no longer interested."
       }
     ],
     "cross_ref": "Bryant pp. 98–102 · Stoler Miller p. 35 · Satchidananda pp. 38–41 · Tigunait Vol. 1 on parā vairāgya · Leggett · Prabhavananda pp. 46–48 · Satyananda pp. 60–64 · Osho Vol. 1, Discourse 10"
@@ -657,6 +721,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as a ladder: the meditator first stabilizes on a gross object (a form, an image), then on its subtle essence, then on the joy that arises when the mind becomes pure sattva, then on the bare sense of being — and each stage drops more of the world. The ladder is climbed in order, and the last rung opens onto something beyond cognition itself (1.18)."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the four stages climb Sāṃkhya’s ladder in reverse — gross elements, subtle elements, the sattvic senses, and asmitā/ahaṃkāra (SK 22, 24–25). Veda: Taittirīya Up. 2.1–5 lists five sheaths, from food to bliss, each subtler; Kaṭha Up. 1.3.10–11 orders objects, mind, intellect, the great self, the unmanifest, puruṣa. Meaning: meditation moves inward along the same map creation moved outward."
       }
     ],
     "cross_ref": "Bryant pp. 102–123 (extended treatment) · Stoler Miller pp. 35–36 · Satchidananda pp. 41–46 · Tigunait Vol. 1 on the four samprajñāta stages · Bryant on Sāṃkhya tattvas as objects · Leggett on Śaṅkara · Prabhavananda pp. 48–53 · Satyananda pp. 64–72 · Osho Vol. 1, Discourse 10"
@@ -704,6 +772,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda calls this 'super-conscious' state — beyond ānanda and asmitā, beyond all object — and warns that it cannot be reached by force or rushed practice. The mind learns to dwell first on a single thought, then on the gap between thoughts, and finally only the gap remains. He is careful to distinguish this from sleep or from blank trance: the saṃskāras here are dormant but charged, like seeds that have not yet sprouted."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: only saṃskāras remain — SK 67’s ‘wheel still turning from its impetus’. Veda: Kaṭha Up. 1.3.13 — merge speech into mind, mind into the knowing self, that into the great self, and that into the peaceful Self. Meaning: the last step is not another object but the stopping of objects."
       }
     ],
     "cross_ref": "Bryant pp. 123–134 · Stoler Miller p. 36 · Satchidananda pp. 46–50 · Tigunait Vol. 1 on asamprajñāta · Bryant's careful comparison with nirvāṇa · Leggett · Prabhavananda pp. 53–56 · Satyananda pp. 72–78 · Osho Vol. 1, Discourse 11"
@@ -739,6 +811,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats these as cautionary cases. The pleasures of subtle existence are real, immense, and long-lasting — but they are still within prakṛti, and so still bondage, however refined. The yogi must not mistake any state of cessation for liberation; the test is always whether discrimination of the Self has occurred."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 45 says outright, ‘from dispassion comes absorption into prakṛti (prakṛtilaya)’ — a high state, but not liberation. Patañjali uses the same word. Veda: Chāndogya Up. 5.10 contrasts paths that return with one that does not; Muṇḍaka Up. 1.2.10 — those who think ritual merit the highest ‘enjoy heaven, then re-enter this world.’ Meaning: even very refined states can be one more place to get stuck."
       }
     ],
     "cross_ref": "Bryant pp. 134–139 · Stoler Miller p. 36 · Satchidananda pp. 50–53 · Tigunait Vol. 1 on videhas and prakṛti-layas · Leggett · Prabhavananda pp. 56–58 · Satyananda pp. 78–82 · Osho Vol. 1, Discourse 11"
@@ -786,6 +862,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes that this is the path 'for the rest of us' — the human path, in contrast to the unsought states of 1.19. Each link is necessary: faith without energy is dreaming; energy without mindfulness wastes itself; mindfulness without absorption does not penetrate; absorption without prajñā does not liberate. He stresses that the order matters and that each must be cultivated."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 51’s siddhis — reasoning, instruction, study, friends — are Sāṃkhya’s version of these supports. Veda: Taittirīya Up. 2.4 — the knowing self has ‘faith (śraddhā) for its head … yoga for its trunk’; Kaṭha Up. 1.1.2 — śraddhā enters the boy Naciketas before his quest. Meaning: the Veda puts faith first, and Patañjali agrees — but faith that is then tested by vigour and wisdom."
       }
     ],
     "cross_ref": "Bryant pp. 139–149 · Stoler Miller p. 36 · Satchidananda pp. 53–58 · Tigunait Vol. 1 on the five-fold support · Bryant on Buddhist parallels (the five indriyas/balas) · Leggett · Prabhavananda pp. 58–61 · Satyananda pp. 82–88 · Osho Vol. 1, Discourse 12"
@@ -817,6 +897,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is unsparing: 'lukewarm' practitioners get lukewarm results. The desire for liberation must rival the desire of a drowning person for air. When this becomes the case, the path is short; until then, however long one has been on the path nominally, one is barely begun."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 1 — inquiry begins because suffering strikes (abhighāta); intensity of the blow sets the urgency. Veda: Kaṭha Up. 1.3.14 — ‘arise, awake’; Chāndogya Up. 7.1.3 — Nārada: ‘I know the mantras but not the Self … I am in sorrow; take me across.’ Meaning: the speed of the journey matches the honesty of the need."
       }
     ],
     "cross_ref": "Bryant pp. 149–151 · Stoler Miller pp. 36–37 · Satchidananda pp. 58–60 · Tigunait Vol. 1 on saṃvega · Leggett · Prabhavananda pp. 61–62 · Satyananda pp. 88–91 · Osho Vol. 1, Discourse 12"
@@ -860,6 +944,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda turns this practical: a person of mild urgency may take many lifetimes; one of supreme urgency may take very few years. The variable in our hands is not our innate capacity but the depth of our wanting. Increase that, and everything else accelerates."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 54 grades beings by sattva, rajas and tamas; practitioners are likewise graded. Veda: Kaṭha Up. 1.2.1–2 — the wise choose the good (śreyas) over the pleasant (preyas), the dull choose comfort. Meaning: the same practice, held with different intensity, gives different results."
       }
     ],
     "cross_ref": "Bryant pp. 151–153 · Stoler Miller p. 37 · Satchidananda pp. 60–62 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 62–63 · Satyananda pp. 91–94 · Osho Vol. 1, Discourse 13"
@@ -891,6 +979,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is striking here: he reads īśvara-praṇidhāna as a complete and sufficient path for those of devotional temperament. The bhakta need not work through the ladder of saṃprajñāta; the surrender of the heart accomplishes by another route what discrimination accomplishes by analysis. Both arrive at the same place."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: here Yoga adds what classical Sāṃkhya leaves out. The Kārikā has no Īśvara; SK 57 argues prakṛti works unaided, like milk for the calf. Veda: Śvetāśvatara Up. 6.13 names ‘that cause, to be reached by Sāṃkhya and Yoga’, and 6.11 calls the one God ‘witness, pure, alone, without guṇas’. Meaning: the Upaniṣad keeps the Lord the Kārikā drops, and Yoga follows the Upaniṣad."
       }
     ],
     "cross_ref": "Bryant pp. 153–161 · Stoler Miller p. 37 · Satchidananda pp. 62–66 · Tigunait Vol. 1 on īśvara-praṇidhāna · Bryant's extensive defense of theistic Yoga · Leggett on Śaṅkara's reading · Prabhavananda pp. 63–67 · Satyananda pp. 94–100 · Osho Vol. 1, Discourse 13"
@@ -938,6 +1030,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes that Yoga's īśvara is a philosophical category, not a sectarian deity: a puruṣa qualitatively distinguished by eternal freedom. This makes īśvara universally available as the object of meditation — those of any tradition can fix their devotion here, since the description does not require any particular mythology."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: Īśvara is ‘a special puruṣa’ — still Sāṃkhya’s category of consciousness (SK 17–19), only never bound. Veda: Śvetāśvatara Up. 6.11 — ‘one God hidden in all beings … the witness, pure consciousness, alone, without qualities’; Chāndogya Up. 8.7.1 — the Self is ‘free of evil, ageing, death and sorrow.’ Meaning: the ideal the yogi moves toward is already real in one puruṣa."
       }
     ],
     "cross_ref": "Bryant pp. 161–169 · Stoler Miller pp. 37–38 · Satchidananda pp. 66–69 · Tigunait Vol. 1 on īśvara · Bryant on the philosophical status of īśvara in Yoga vs. Vedānta · Leggett on Śaṅkara's harmonization · Prabhavananda pp. 67–70 · Satyananda pp. 100–105 · Osho Vol. 1, Discourse 14"
@@ -973,6 +1069,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as a logical proof: granted that knowledge admits of degrees, and granted that the series cannot extend infinitely without arriving at a peak, there must be a being of unsurpassable knowledge. He notes that this is not a proof of any particular religious figure, but of a category — a place in the metaphysical structure that yoga calls Īśvara."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: Vyāsa, commenting here, quotes Pañcaśikha: the first knower, out of compassion, taught the doctrine to Āsuri — the same lineage SK 70 gives. Veda: Śvetāśvatara Up. 5.2 — the One ‘who bore the seer Kapila with knowledge in the beginning’. Meaning: the Upaniṣad, the Kārikā and Yoga share one story of where this knowledge came from."
       }
     ],
     "cross_ref": "Bryant pp. 169–173 · Stoler Miller p. 38 · Satchidananda pp. 69–71 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 70–71 · Satyananda pp. 105–108 · Osho Vol. 1, Discourse 14"
@@ -1016,6 +1116,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda dwells on this: the spiritual lineage of humanity is, in his view, an unbroken transmission whose ultimate source is not human. Whoever you learn from learnt from someone, and so on, but the chain does not extend backward into infinity in time — it terminates in the timeless. This timeless source is the guru of all gurus."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 69–70 trace Sāṃkhya to the supreme seer (paramarṣi) Kapila; Yoga places a teacher behind every teacher, outside time. Veda: Muṇḍaka Up. 1.1.1–2 — Brahmā taught Atharvan, who taught Aṅgir, and so on down the line. Meaning: the Veda presents knowledge as a chain; this sūtra names the first link."
       }
     ],
     "cross_ref": "Bryant pp. 173–177 · Stoler Miller p. 38 · Satchidananda pp. 71–73 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 71–73 · Satyananda pp. 108–112 · Osho Vol. 1, Discourse 15"
@@ -1047,6 +1151,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda gives an extended discussion of Oṃ here: the most universal of sounds, encompassing the full range of human vocalization (the throat, the mouth, the lips), it is the natural symbol for that which encompasses all. He argues that no other syllable could have been chosen — Oṃ is uniquely fitted to its referent."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: Sāṃkhya has no mantra; Yoga takes this element straight from the Upaniṣads. Veda: Kaṭha Up. 1.2.15–17 — ‘the word all the Vedas proclaim … is Om; this syllable is Brahman, this is the best support’; Māṇḍūkya Up. 1 — ‘Om is all this.’ Ṛgveda 1.164.39 places the verses ‘in the imperishable syllable (akṣara) in the highest heaven.’ Meaning: Om is the Veda distilled into one sound."
       }
     ],
     "cross_ref": "Bryant pp. 177–185 · Stoler Miller p. 38 · Satchidananda pp. 73–77 · Tigunait Vol. 1 (extended on praṇava) · Bryant on the philosophy of language here · Leggett · Prabhavananda pp. 73–76 · Satyananda pp. 112–118 · Osho Vol. 1, Discourse 15"
@@ -1086,6 +1194,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is emphatic that mantra without meaning is wasted breath. The vibrations matter, but they do their work as a vehicle for the meaning carried with them. The yogi must not let japa become rote: each repetition is an offering, an aim, an act of attention to what the syllable expresses."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: repetition with meaning is the yogic form of SK 64’s ‘practice of the principles’. Veda: Muṇḍaka Up. 2.2.4 — ‘Om is the bow, the self is the arrow, Brahman the target; pierce it without carelessness and become one with it like the arrow’; Śvetāśvatara Up. 1.14 — make the body the lower fire-stick and Om the upper, and churn by meditation. Meaning: sound alone is not enough; the arrow must be aimed."
       }
     ],
     "cross_ref": "Bryant pp. 185–189 · Stoler Miller pp. 38–39 · Satchidananda pp. 77–80 · Tigunait Vol. 1 on japa-bhāvana · Leggett · Prabhavananda pp. 76–78 · Satyananda pp. 118–123 · Osho Vol. 1, Discourse 16"
@@ -1137,6 +1249,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda sees here a beautiful economy: where the discriminative path must contend with each obstacle individually, the devotional path simply turns the mind in the right direction and the obstacles, deprived of attention, dissolve. The current of consciousness reverses; what fed the obstacles now feeds insight."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: ‘pratyak-cetanā’, inward-turned consciousness, is the turn from the evolutes back toward puruṣa (SK 65). Veda: Kaṭha Up. 2.1.1 — ‘the Self-born pierced the senses outward … a wise one, seeking immortality, turned the eye inward and saw the inner Self (pratyag-ātman).’ Patañjali uses the Kaṭha’s own word. Meaning: Om turns the direction of attention around."
       }
     ],
     "cross_ref": "Bryant pp. 189–192 · Stoler Miller p. 39 · Satchidananda pp. 80–82 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 78–79 · Satyananda pp. 123–127 · Osho Vol. 1, Discourse 16"
@@ -1204,6 +1320,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda walks through each, finding in them the everyday experiences of any honest practitioner: the day you are sick, the day you cannot care, the day everything seems uncertain, the day you slack off, the day you cannot move, the day desire wins, the day a wrong idea grips, the day no progress shows, the day the progress you had vanishes. He says: do not be discouraged; recognize each, name it, and apply the practice."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 49 lists twenty-eight incapacities (aśakti) of the senses and intellect — Sāṃkhya’s catalogue of the same obstacles. Veda: Muṇḍaka Up. 2.2.4 — pierce ‘without carelessness (apramatta)’; carelessness (pramāda) is the fourth obstacle here. Meaning: the Veda’s warning against heedlessness becomes a checklist."
       }
     ],
     "cross_ref": "Bryant pp. 192–202 · Stoler Miller p. 39 · Satchidananda pp. 82–88 · Tigunait Vol. 1 (extended on the nine obstacles) · Leggett · Prabhavananda pp. 79–82 · Satyananda pp. 127–135 · Osho Vol. 1, Discourse 17"
@@ -1251,6 +1371,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as practical diagnosis: the body and breath tell on the mind. A trembling in the limbs during meditation, breath that catches or rushes — these are not random disturbances but reports from the depths. The yogi learns to read them and trace each back to its root."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 1 begins from the threefold suffering — bodily, mental and from outside; this sūtra shows them breaking into the practice itself. Veda: Śvetāśvatara Up. 2.13 lists the first signs of progress — lightness, health, steadiness, clear complexion, a pleasant voice; this sūtra lists the opposite. Meaning: body and breath are honest reports on the state of the mind."
       }
     ],
     "cross_ref": "Bryant pp. 202–207 · Stoler Miller p. 39 · Satchidananda pp. 88–91 · Tigunait Vol. 1 on the symptoms · Leggett · Prabhavananda pp. 82–84 · Satyananda pp. 135–139 · Osho Vol. 1, Discourse 17"
@@ -1294,6 +1418,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda gives the practical instruction: pick one practice — one object, one method — and stay with it. The seeker who is constantly switching method (one week breath, the next week mantra, the next week visualization) is using the very method (variety) by which the mind defeats them. Single-pointedness in the choice of practice mirrors single-pointedness in the practice itself."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: Sāṃkhya’s one principle is the distinction itself (SK 37, 64); Yoga trains the mind on one object to make that possible. Veda: Chāndogya Up. 6.2.1 — ‘in the beginning this was Being alone, one without a second.’ Meaning: a mind trained on one thing can begin to see the One."
       }
     ],
     "cross_ref": "Bryant pp. 207–212 · Stoler Miller pp. 39–40 · Satchidananda pp. 91–94 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 84–85 · Satyananda pp. 139–143 · Osho Vol. 1, Discourse 18"
@@ -1357,6 +1485,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda takes this as one of the most practical sūtras: most disturbances of the mind in daily life are not metaphysical but interpersonal, and these four attitudes target them precisely. He notes that the discipline is not to feel these toward those we already feel them toward — that costs nothing — but to extend each to the person who tests it: friendliness to the rival, compassion to the irritant, gladness to the one we envy, equanimity to the one we wish to condemn."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the four attitudes cultivate the sattvic dispositions of SK 23 (dharma, virāga). Veda: Bṛhadāraṇyaka Up. 5.2 — the thunder says ‘da da da’: be restrained, give, be compassionate (dayadhvam); Īśa Up. 6 — one who sees all beings in the Self and the Self in all beings feels no aversion. Meaning: ethics here is a technique for a clear mind, not only a rule."
       }
     ],
     "cross_ref": "Bryant pp. 212–222 (extensive treatment of the four attitudes) · Stoler Miller p. 40 · Satchidananda pp. 94–101 · Tigunait Vol. 1 on the four bhāvanas · Bryant on Buddhist parallels · Leggett · Prabhavananda pp. 85–89 · Satyananda pp. 143–151 · Osho Vol. 1, Discourse 18"
@@ -1392,6 +1524,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda makes the link explicit: prāṇa and citta are intimately connected, so that to control one is to gain leverage on the other. The breath is the more accessible of the two — visible, voluntary — and so becomes the natural handle. He warns, however, that aggressive prāṇāyāma without proper preparation is dangerous, and the basic practice indicated here (slow exhalation, gentle retention) is safe and broadly accessible."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 29 names the five breaths as the shared function of the inner instruments, so steadying breath steadies them. Veda: Śvetāśvatara Up. 2.9 — ‘restraining the breaths here, with movements controlled, breathe out through the nose when breath is spent’; Atharvaveda 11.4 praises Prāṇa, ‘in whose control is all this.’ Meaning: the breath is the handle the mind can be held by."
       }
     ],
     "cross_ref": "Bryant pp. 222–227 · Stoler Miller p. 40 · Satchidananda pp. 101–104 · Tigunait Vol. 1 on the relation of breath and mind · Leggett · Prabhavananda pp. 89–91 · Satyananda pp. 151–157 · Osho Vol. 1, Discourse 19"
@@ -1439,6 +1575,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats these as legitimate but not central. He notes that the appearance of any such 'subtle' perception is a sign that concentration is taking effect; it confirms the path. But he warns sternly against pursuing them for their own sake — they become a major distraction, a more refined version of the very obstacles described in 1.30."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: subtle sense-objects are the tanmātras of SK 38 — the non-specific objects behind sound, touch, form, taste and smell. Veda: Śvetāśvatara Up. 2.11 — fog, smoke, sun, wind, fire, fireflies, lightning, crystal, moon: forms that appear before Brahman in yoga. Meaning: early experiences of subtle perception build confidence and bind the mind."
       }
     ],
     "cross_ref": "Bryant pp. 227–233 · Stoler Miller p. 40 · Satchidananda pp. 104–108 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 91–93 · Satyananda pp. 157–162 · Osho Vol. 1, Discourse 19"
@@ -1470,6 +1610,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda speaks of the inner light in poetic terms — luminous, calm, untouched by trouble. To meditate on this is to taste in advance the freedom that is the goal. The practice has the additional benefit that, since the object is itself an aspect of the meditator's own purified mind, the practice gradually closes the gap between meditator and meditation."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the ‘luminous, sorrowless’ state is pure sattva, which SK 13 calls light (prakāśaka) and SK 12 pleasant. Veda: Bṛhadāraṇyaka Up. 4.3.7 — ‘the person made of knowing, the light within the heart’; Chāndogya Up. 8.7.1 — the Self is ‘sorrowless’ (viśoka), the very word used here. Meaning: the Upaniṣad’s inner light becomes an object of meditation."
       }
     ],
     "cross_ref": "Bryant pp. 233–237 · Stoler Miller pp. 40–41 · Satchidananda pp. 108–110 · Tigunait Vol. 1 on the heart-lotus practice · Leggett · Prabhavananda pp. 93–94 · Satyananda pp. 162–166 · Osho Vol. 1, Discourse 20"
@@ -1505,6 +1649,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as the principle behind devotion to a saint, a guru, an ideal figure: in dwelling on them, the mind begins to model itself on them. He notes that this is one of the kindest of the practices, well-suited to the devotional temperament, and works because of the very mechanism by which all bondage works (the mind takes the form of its object) — only here, the object is freedom itself."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 23 — dispassion (virāga) is a sattvic form of buddhi; resting the mind on one who has it lets it take that form. Veda: Muṇḍaka Up. 3.2.2 — one whose desires are fulfilled, whose self is made, ‘all desires dissolve here and now’; Kaṭha Up. 2.3.14 — ‘when all desires of the heart are released, the mortal becomes immortal.’ Meaning: we become like what we contemplate."
       }
     ],
     "cross_ref": "Bryant pp. 237–240 · Stoler Miller p. 41 · Satchidananda pp. 110–113 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 94–96 · Satyananda pp. 166–171 · Osho Vol. 1, Discourse 20"
@@ -1544,6 +1692,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda discusses this with care: dreams can be important indicators (especially recurring or vivid spiritual dreams), and the peace of dreamless sleep, though tamasic in origin, points to a stillness that the conscious mind can learn to approach in samādhi. The practice is to take the felt-quality of these states and deliberately re-evoke it."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: dream and sleep are vṛttis of buddhi (1.10), so they can be objects. Veda: Māṇḍūkya Up. 3–7 builds its whole teaching on waking, dream (taijasa), deep sleep (prājña), and the fourth that witnesses all three; Bṛhadāraṇyaka Up. 4.3.9–14 — in dream ‘the person is his own light.’ Meaning: the states we pass through nightly are a training ground."
       }
     ],
     "cross_ref": "Bryant pp. 240–245 · Stoler Miller p. 41 · Satchidananda pp. 113–116 · Tigunait Vol. 1 on the four states and meditation · Leggett · Prabhavananda pp. 96–97 · Satyananda pp. 171–177 · Osho Vol. 1, Discourse 21"
@@ -1579,6 +1731,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda calls this the most generous of the sūtras: yoga does not impose a single object. Different temperaments suit different objects, and the test is empirical — does this object steady your mind? If yes, it is the right one for you. He sees this sūtra as evidence of the breadth of the Yoga tradition, accommodating the vast variety of human inclination."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: Sāṃkhya accepts that buddhi takes whatever form it is turned to (SK 23, 36); Yoga allows any congenial object. Veda: Chāndogya Up. 7 — Sanatkumāra leads Nārada through name, speech, mind, will and up, saying of each ‘meditate on it as Brahman.’ Meaning: begin wherever the mind can actually rest."
       }
     ],
     "cross_ref": "Bryant pp. 245–248 · Stoler Miller p. 41 · Satchidananda pp. 116–119 · Tigunait Vol. 1 · Leggett · Prabhavananda pp. 97–98 · Satyananda pp. 177–181 · Osho Vol. 1, Discourse 21"
@@ -1618,6 +1774,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the universality of this mastery: the yogi who can hold the smallest can hold the largest, because what has been mastered is not any particular object but the holding itself. He likens this to how a trained musician can play any note across the range of the instrument; what is mastered is the instrument, not the note."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the range is from paramāṇu to the cosmic — the gross elements to mahat (SK 22, 38). Veda: Kaṭha Up. 1.2.20 and Śvetāśvatara Up. 3.20 — ‘smaller than the small, greater than the great, the Self is set in the cave of the heart.’ Meaning: a mind trained to stillness can hold the tiny and the vast alike."
       }
     ],
     "cross_ref": "Bryant pp. 248–251 · Stoler Miller p. 41 · Satchidananda pp. 119–121 · Tigunait Vol. 1 on the range of mastery · Leggett · Prabhavananda pp. 98–100 · Satyananda pp. 181–185 · Osho Vol. 1, Discourse 22"
@@ -1677,6 +1837,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda dwells lovingly on the crystal image: the perfectly cleansed mind is no longer a separate factor but a flawless transparency. Whatever is placed before it is shown forth without any distortion contributed by the mind itself. This is the basis for all the higher samādhis: only such a mind can be trusted to know things as they are, since it adds nothing of its own."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the crystal image is Sāṃkhya’s standard picture of puruṣa and buddhi colouring each other (SK 20). Veda: Śvetāśvatara Up. 2.14 — ‘as a mirror stained with dust shines brightly when cleaned, so the embodied one, seeing the truth of the Self, becomes one’; Muṇḍaka Up. 2.2.4 — ‘become one with it like the arrow (tanmaya).’ Meaning: a clean mind takes the exact shape of what it meets."
       }
     ],
     "cross_ref": "Bryant pp. 251–262 (extended on samāpatti) · Stoler Miller p. 42 · Satchidananda pp. 121–127 · Tigunait Vol. 1 on the crystal analogy · Bryant on Sāṃkhya epistemology here · Leggett · Prabhavananda pp. 100–104 · Satyananda pp. 185–192 · Osho Vol. 1, Discourse 22"
@@ -1728,6 +1892,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains: when we meditate on a cow, three things are commonly fused — the actual cow, the word 'cow,' and our idea of cow. In savitarka, all three are still present in the cognition, layered on each other. Only with refinement of practice will these come apart so that the object alone shines."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: word, meaning and idea are mixed — the vikalpa of 1.9; SK 28 says the senses only bare-present (ālocana), and the mixing is buddhi’s work. Veda: Chāndogya Up. 6.1.4 — ‘a modification is a name arising from speech; clay alone is real.’ Meaning: first absorption still carries labels."
       }
     ],
     "cross_ref": "Bryant pp. 262–268 · Stoler Miller p. 42 · Satchidananda pp. 127–131 · Tigunait Vol. 1 on savitarka · Leggett · Prabhavananda pp. 104–106 · Satyananda pp. 192–197 · Osho Vol. 1, Discourse 23"
@@ -1779,6 +1947,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the discipline behind this: the meditator must repeatedly notice when the cognition is being clouded by memory and let it go, until the mind learns to take the object directly. This is more than discipline; it is a fundamental shift in epistemology — from knowing through the screen of language to knowing without it."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: when memory is purified the object shines alone — SK 28’s bare presentation (ālocanamātra). Veda: Chāndogya Up. 7.26.2 — ‘with pure sattva memory becomes firm’; Kena Up. 1.5–6 — what the mind cannot think, but by which the mind is thought. Meaning: seeing without naming."
       }
     ],
     "cross_ref": "Bryant pp. 268–276 · Stoler Miller p. 42 · Satchidananda pp. 131–135 · Tigunait Vol. 1 on nirvitarka · Bryant comparing this with non-conceptual perception in epistemology · Leggett · Prabhavananda pp. 106–109 · Satyananda pp. 197–203 · Osho Vol. 1, Discourse 23"
@@ -1826,6 +1998,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as economy: the same psychological structure recurs at every level of object — gross, subtle, even subtler — only the contents differ. The yogi who has worked through the gross level does not need to reinvent method for the subtle; what was learnt at the gross level transfers, as the same hand that holds a stone learns to hold a jewel."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: subtle objects are the aviśeṣa — tanmātras and ahaṃkāra (SK 38). Veda: Chāndogya Up. 6.12 — the banyan seed: ‘this subtle essence you do not see, from it this great tree stands’. Meaning: the same practice now works on what lies behind the visible."
       }
     ],
     "cross_ref": "Bryant pp. 276–280 · Stoler Miller pp. 42–43 · Satchidananda pp. 135–138 · Tigunait Vol. 1 on savicāra/nirvicāra · Leggett · Prabhavananda pp. 109–111 · Satyananda pp. 203–208 · Osho Vol. 1, Discourse 24"
@@ -1861,6 +2037,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda: yoga maps the entire ladder of objective existence and shows that the meditator's mind can climb it rung by rung. At the top of the ladder is undifferentiated prakṛti — the matrix from which all worlds emerge. The mind capable of holding even this is at the threshold of liberation, since the only thing left is to recognize the seer as distinct from this entire ladder."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: ‘up to the unmarked (aliṅga)’ is prakṛti itself, which SK 8 says is not seen because it is subtle, and SK 10 calls ‘without marks’. Veda: Kaṭha Up. 1.3.11 — ‘beyond the great is the unmanifest (avyakta), beyond the unmanifest the Person.’ Meaning: meditation can reach the root of nature, but the Person lies one step further."
       }
     ],
     "cross_ref": "Bryant pp. 280–284 · Stoler Miller p. 43 · Satchidananda pp. 138–141 · Tigunait Vol. 1 on the Sāṃkhya tattva-ladder · Bryant on Sāṃkhya cosmology · Leggett · Prabhavananda pp. 111–113 · Satyananda pp. 208–213 · Osho Vol. 1, Discourse 24"
@@ -1896,6 +2076,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda introduces the term: any samādhi 'with seed' is one in which the mind is still holding something — even something exalted, even something as subtle as aliṅga prakṛti. The seed is what will eventually need to be released. Until it is, the samādhi is provisional, however magnificent."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: ‘with seed’ because the object is still part of prakṛti; SK 21’s conjunction is not yet undone. Veda: Muṇḍaka Up. 1.1.4–5 — two knowledges, the lower (including the four Vedas) and the higher, ‘by which the imperishable is grasped.’ Meaning: even the highest absorption on an object is still the lower knowledge."
       }
     ],
     "cross_ref": "Bryant pp. 284–287 · Stoler Miller p. 43 · Satchidananda pp. 141–143 · Tigunait Vol. 1 on sabīja · Leggett · Prabhavananda pp. 113–114 · Satyananda pp. 213–217 · Osho Vol. 1, Discourse 25"
@@ -1931,6 +2115,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda speaks of this 'serenity' as a felt quality: a clean, unagitated joy that has no occasion in outer circumstance. It does not arise because something good has happened; it arises because the mind has been brought to a state in which its native sattva — its luminous tendency — is uncovered. This is the immediate prelude to truth-bearing wisdom."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the ‘clarity of the inner self’ is buddhi at its most sattvic, the state SK 37 says alone can discern puruṣa. Veda: Muṇḍaka Up. 3.1.8 — ‘not by eye, not by speech … by the grace of knowledge, the pure in nature (viśuddha-sattva) sees him in meditation.’ Meaning: the Upaniṣad’s ‘pure sattva’ is the yogi’s goal here."
       }
     ],
     "cross_ref": "Bryant pp. 287–290 · Stoler Miller p. 43 · Satchidananda pp. 143–146 · Tigunait Vol. 1 on adhyātma-prasāda · Leggett · Prabhavananda pp. 114–116 · Satyananda pp. 217–222 · Osho Vol. 1, Discourse 25"
@@ -1962,6 +2150,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda dwells on the phrase 'truth-bearing': the cognitions that arise here cannot be wrong, because the medium has been cleared of all distortion. He links this to the idea of the rishis who 'see' the Veda — a kind of knowing that is not constructed but received, because the mind has become a perfect mirror to what is."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 64’s ‘complete, pure, errorless knowledge’ is the ṛtaṃbharā prajñā. Veda: ‘ṛta’, cosmic truth-order, is one of the Ṛgveda’s central words; Taittirīya Up. 1.1 — ‘I shall speak ṛta, I shall speak satya.’ Meaning: the yogi’s insight is said to carry the same truth the Vedic seers named ṛta."
       }
     ],
     "cross_ref": "Bryant pp. 290–294 · Stoler Miller p. 43 · Satchidananda pp. 146–149 · Tigunait Vol. 1 on ṛtaṃbharā · Bryant linking with the ṛṣi tradition · Leggett · Prabhavananda pp. 116–118 · Satyananda pp. 222–227 · Osho Vol. 1, Discourse 26"
@@ -2005,6 +2197,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda makes a decisive point: scripture and reasoning have an essential but limited role; they cannot substitute for direct realization. He cites this sūtra as authority: yoga acknowledges that one must finally see for oneself, because the highest truths are particular, not general, and only direct cognition reaches them. This protects yoga from being reducible to bookishness."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 4–6 rank perception above inference and testimony; here direct insight outranks both. Veda: Bṛhadāraṇyaka Up. 2.4.5 — hearing and reflecting lead to seeing; Kaṭha Up. 1.2.9 — ‘this insight is not reached by reasoning’; Chāndogya Up. 7.1.3 — Nārada knew the Vedas but not the Self. Meaning: scripture and reason point; insight sees the particular thing itself."
       }
     ],
     "cross_ref": "Bryant pp. 294–301 · Stoler Miller pp. 43–44 · Satchidananda pp. 149–153 · Tigunait Vol. 1 on the limits of inference · Bryant on the philosophy of universals/particulars here · Leggett · Prabhavananda pp. 118–120 · Satyananda pp. 227–232 · Osho Vol. 1, Discourse 26"
@@ -2044,6 +2240,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains the dynamics: the old habits of mind (saṃskāras) cannot simply be willed away; they must be displaced. The impressions left by clear seeing have the strength to displace them — like a strong, clear current scouring out a channel. Each true cognition not only delivers truth but weakens the contrary deposit, so that the work of yoga consists, in part, in this gradual rebuilding of the saṃskāra-stratum."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: one saṃskāra blocks the others — like SK 67’s wheel slowly losing its old impetus. Veda: Muṇḍaka Up. 2.2.8 — ‘the knot of the heart is cut, all doubts dispelled, and his karmas wear out when that is seen.’ Meaning: true insight leaves an impression strong enough to crowd out the rest."
       }
     ],
     "cross_ref": "Bryant pp. 301–306 · Stoler Miller p. 44 · Satchidananda pp. 153–156 · Tigunait Vol. 1 on saṃskāras and pratibandha · Leggett · Prabhavananda pp. 120–122 · Satyananda pp. 232–238 · Osho Vol. 1, Discourse 27"
@@ -2091,6 +2291,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda gives the pāda's resolving note: even the saṃskāra of clear seeing is, finally, a saṃskāra. The puruṣa's freedom is unconditional; it requires the cessation not only of bondage-saṃskāras but of all saṃskāras whatever, including the most luminous. Nirbīja is the condition of a citta with no seeds left to sprout — the threshold of kaivalya. The Samādhi Pāda has thus moved from the simple definition of yoga (1.2) to its highest realization (1.51); the remaining pādas turn to the practice (sādhana), the powers (vibhūtis), and the absoluteness (kaivalya) of liberation."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: seedless samādhi is SK 68’s final isolation in life: nothing left for prakṛti to show. Veda: Kaṭha Up. 2.3.10 — ‘when the intellect does not stir, that is the highest goal’; Māṇḍūkya Up. 7 — the fourth, ‘peaceful, auspicious, non-dual.’ Meaning: the practice ends where the Upaniṣads end — in a stillness that needs no object."
       }
     ],
     "cross_ref": "Bryant pp. 306–312 · Stoler Miller p. 44 · Satchidananda pp. 156–161 · Tigunait Vol. 1 closing of Samādhi Pāda · Bryant comparing nirbīja with related ideas in other systems · Leggett · Prabhavananda pp. 122–124 · Satyananda pp. 238–245 · Osho Vol. 1, Discourse 27 End of Pāda 1 — Samādhi Pāda The Samādhi Pāda has now traced the full arc from the opening definition of yoga (1.2) to the seedless samādhi at the threshold of kaivalya (1.51). The remaining three pādas address: how to get there from where most practitioners actually stand (Sādhana Pāda, with kriyā-yoga and aṣṭāṅga-yoga), the powers that arise as concentration matures (Vibhūti Pāda), and the nature of liberation itself (Kaivalya Pāda). When you are ready, the next pāda can be prepared in the same format."
@@ -2126,6 +2330,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as the entry-level practice — strong enough to do real work, mild enough to undertake from where one actually is. Tapas is bearing what life brings without complaint and adding deliberate restraints; svādhyāya is the daily companionship of texts and mantras that re-orient the mind; īśvara-praṇidhāna is the gradual transfer of the ego's investment from outcomes to the divine. He emphasizes that anyone, of any tradition, can begin here on any day; one does not need to wait for special conditions."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: Sāṃkhya is mainly knowledge (SK 64); kriyā-yoga is Yoga’s practical bridge to it. Veda: all three come from the Upaniṣads — Taittirīya Up. 3.2 ‘know Brahman by tapas’; 1.9 repeats ‘study and teaching (svādhyāya-pravacana)’ after every virtue; Śvetāśvatara Up. 6.18 — ‘I go for refuge to that God.’ Meaning: austerity, study and surrender are the Vedic disciplines, condensed."
       }
     ],
     "cross_ref": "Bryant pp. 161–166 · Stoler Miller pp. 45–46 · Satchidananda pp. 165–169 · Tigunait (Sādhana Pāda volume) opening · Bryant on the relation to Pāda 1 · Leggett on Śaṅkara's framing · Prabhavananda pp. 127–131 · Satyananda pp. 1–10 of Pāda 2 · Osho Vol. 2, Discourse 1"
@@ -2177,6 +2385,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains the strategy: you cannot, by direct will, abolish anger or attachment; but you can weaken them — and a weakened kleśa cannot prevent the mind from settling. Kriyā-yoga is the preparation that makes the higher work possible. He warns against the common error of trying to leap to samādhi while the kleśas are still strong: the mind will not hold, and the practitioner blames the method instead of the unfinished preparation."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the kleśas are SK 47–48’s five forms of error (viparyaya); thinning them prepares buddhi for discrimination (SK 37). Veda: Muṇḍaka Up. 3.1.5 — ‘this Self is gained by truth, tapas, right knowledge and constant brahmacarya’. Meaning: discipline does not produce liberation; it clears the ground."
       }
     ],
     "cross_ref": "Bryant pp. 166–170 · Stoler Miller p. 46 · Satchidananda pp. 169–171 · Tigunait · Leggett · Prabhavananda pp. 131–133 · Satyananda pp. 10–14 of Pāda 2 · Osho Vol. 2, Discourse 1"
@@ -2220,6 +2432,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this list as the complete inventory of bondage: every form of human suffering, however elaborate, reduces to one or more of these five. He emphasizes that abhiniveśa — clinging to life — is the most universal, observable in every creature that flees from death, and is not eliminated by argument but only by realization."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 48 names five kinds of error — tamas, moha, mahāmoha, tāmisra, andhatāmisra. Vyāsa and the Sāṃkhya commentators equate them one-to-one with these five: ignorance, I-am-ness, attraction, aversion, clinging to life. Veda: Kaṭha Up. 1.2.5 — the deluded, ‘thinking themselves wise’, go round and round. Meaning: the two schools name the same five knots."
       }
     ],
     "cross_ref": "Bryant pp. 170–179 · Stoler Miller pp. 46–47 · Satchidananda pp. 171–177 · Tigunait on the five kleśas · Bryant comparing with Buddhist kleśas · Leggett · Prabhavananda pp. 133–137 · Satyananda pp. 14–22 of Pāda 2 · Osho Vol. 2, Discourse 2"
@@ -2267,6 +2483,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds this diagnostic of profound practical use: the practitioner who thinks their attachments are gone may discover they were merely dormant or interrupted; the one who feels overwhelmed may notice that a particular kleśa is currently active but will subside, while another is merely thinned and easier to address. The four states map onto the practitioner's actual condition at any moment."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: avidyā is the field because SK 44 makes error (viparyaya) the cause of bondage; the other kleśas grow from it. Veda: Īśa Up. 9 — ‘into blind darkness enter those who worship ignorance’; Bṛhadāraṇyaka Up. 4.4.5 — desire, resolve and action follow one another. Meaning: dormant or active, every affliction is ignorance in some stage of growth."
       }
     ],
     "cross_ref": "Bryant pp. 179–184 · Stoler Miller p. 47 · Satchidananda pp. 177–180 · Tigunait on the four states · Leggett · Prabhavananda pp. 137–139 · Satyananda pp. 22–28 of Pāda 2 · Osho Vol. 2, Discourse 2"
@@ -2326,6 +2546,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the depth of this misperception: it is not that we lack information about impermanence (we know perfectly well that bodies die and pleasures fade); we behave, moment by moment, as if these facts did not apply. The kleśa is not the absence of theoretical knowledge but the persistence of practical miscognition. Only direct realization of the Self displaces it."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 64’s insight — ‘I am not, nothing is mine, no I’ — is the exact reversal of this fourfold mistake. Veda: Kaṭha Up. 2.1.2 — ‘the childish follow outward desires … the wise, knowing immortality, do not seek the permanent among things impermanent.’ Meaning: ignorance is a confusion of labels — permanent for passing, Self for not-Self."
       }
     ],
     "cross_ref": "Bryant pp. 184–192 · Stoler Miller pp. 47–48 · Satchidananda pp. 180–185 · Tigunait on the four inversions · Leggett · Prabhavananda pp. 139–142 · Satyananda pp. 28–36 of Pāda 2 · Osho Vol. 2, Discourse 3"
@@ -2369,6 +2593,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains this carefully: the Self is the witness, never the actor; the buddhi is the instrument that acts, never the witness. When these are confused — taken as one — there arises the sense of being a personal 'I,' located in the body, owning experiences. This 'I-am-ness' is not the real I (which is unconditioned puruṣa) nor a separate thing; it is precisely the confusion that yoga aims to dissolve."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: asmitā is ahaṃkāra (SK 24, ‘self-arrogation’), and its effect is SK 20 — the instrument seems to be the seer. Veda: Gītā 3.27 — ‘actions are done by the guṇas of prakṛti; one deluded by ahaṃkāra thinks “I am the doer.”’ Bṛhadāraṇyaka Up. 1.4.10 shows the corrected form: ‘I am Brahman.’ Meaning: the trouble is not ‘I’, but which thing gets called ‘I’."
       }
     ],
     "cross_ref": "Bryant pp. 192–198 · Stoler Miller p. 48 · Satchidananda pp. 185–188 · Tigunait on asmitā · Bryant on Sāṃkhya purusa/prakṛti here · Leggett · Prabhavananda pp. 142–144 · Satyananda pp. 36–42 of Pāda 2 · Osho Vol. 2, Discourse 3"
@@ -2400,6 +2628,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda points out that rāga is the gravitational pull of past pleasure on present and future action. Most of what we call 'choice' is the working out of accumulated rāga: we move toward what once gave pleasure, not because we are choosing freely, but because the trace is moving us. Yoga makes us aware of this and begins to interrupt it."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 45 — from attachment (rāga) comes rebirth. Veda: Bṛhadāraṇyaka Up. 4.4.5 — ‘as is his desire, so is his will; as is his will, so his action; as his action, so he becomes.’ Gītā 2.62 traces the same chain from dwelling on objects. Meaning: attraction is memory of pleasure leaning forward."
       }
     ],
     "cross_ref": "Bryant pp. 198–201 · Stoler Miller p. 48 · Satchidananda pp. 188–190 · Tigunait · Leggett · Prabhavananda pp. 144–145 · Satyananda pp. 42–46 of Pāda 2 · Osho Vol. 2, Discourse 4"
@@ -2431,6 +2663,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is quick to note that aversion is no less binding than attraction; the mind that flees something is as enslaved to it as the mind that pursues it. Hatred binds as surely as love; both are forms of identification with the past. Equanimity is not indifference but freedom from the rāga-dveṣa axis altogether."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: aversion is SK 48’s tāmisra, ‘gloom’. Veda: Īśa Up. 6 — ‘one who sees all beings in the Self … feels no aversion (na vijugupsate)’. Meaning: aversion is memory of pain leaning away; seeing the Self in others dissolves it."
       }
     ],
     "cross_ref": "Bryant pp. 201–204 · Stoler Miller p. 48 · Satchidananda pp. 190–192 · Tigunait · Leggett · Prabhavananda pp. 145–146 · Satyananda pp. 46–50 of Pāda 2 · Osho Vol. 2, Discourse 4"
@@ -2474,6 +2710,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds in this sūtra a striking argument: the universality of the fear of death — present even in beings too young to have learned it, present even in those whose intellect knows better — points to a mechanism deeper than this life can account for. The fear is the residue of previous deaths. Whether or not one accepts the metaphysics, the observation stands: this kleśa is in everyone, and it does not yield to argument."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: abhiniveśa is andhatāmisra, ‘blind gloom’ (SK 48); SK 55 locates suffering in decay and death. Veda: Ṛgveda 7.59.12 — ‘release me from death, as a cucumber from its stalk’; Atharvaveda 10.8.44 — knowing the desireless, ageless Self ‘one does not fear death’. Meaning: fear of death runs even in the learned, until the deathless is known."
       }
     ],
     "cross_ref": "Bryant pp. 204–211 · Stoler Miller pp. 48–49 · Satchidananda pp. 192–197 · Tigunait on abhiniveśa and saṃskāras · Bryant on the rebirth argument · Leggett · Prabhavananda pp. 146–148 · Satyananda pp. 50–58 of Pāda 2 · Osho Vol. 2, Discourse 5"
@@ -2509,6 +2749,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains: there are two layers of kleśa. The active layer can be addressed by direct methods (next sūtra). The dormant, seed-form layer cannot be uprooted by techniques operating at its own level — it lives in the citta itself, and only the dissolution of citta-as-vehicle in kaivalya removes it. Until then, the seeds remain, however thoroughly the surface has been cleaned."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: ‘pratiprasava’, flowing back to source, is the evolution of SK 22 run in reverse — effects dissolving into their causes. Veda: Kaṭha Up. 1.3.13 — merge speech into mind, mind into intellect, intellect into the great self, that into the peaceful Self. Meaning: subtle seeds are not fought; they are dissolved upstream."
       }
     ],
     "cross_ref": "Bryant pp. 211–215 · Stoler Miller p. 49 · Satchidananda pp. 197–200 · Tigunait on pratiprasava · Leggett · Prabhavananda pp. 148–150 · Satyananda pp. 58–63 of Pāda 2 · Osho Vol. 2, Discourse 5"
@@ -2544,6 +2788,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda gives the practical instruction: when a kleśa rises into active form, the technique is to bring it into the field of meditation — not to fight it, not to indulge it, but to make it the object of clear attention. Held in the light of dhyāna, the active vṛtti subsides; the seed remains for another occasion, but this expression is dispersed."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the active forms are buddhi’s vṛttis (SK 23); meditation weakens them. Veda: Kaṭha Up. 1.2.12 — ‘by the yoga of the inner self (adhyātma-yoga), the wise one leaves joy and sorrow behind.’ Meaning: the Upaniṣad’s own name for this method is adhyātma-yoga."
       }
     ],
     "cross_ref": "Bryant pp. 215–218 · Stoler Miller p. 49 · Satchidananda pp. 200–202 · Tigunait on dhyāna against kleśa-vṛttis · Leggett · Prabhavananda pp. 150–151 · Satyananda pp. 63–67 of Pāda 2 · Osho Vol. 2, Discourse 6"
@@ -2587,6 +2835,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats karma as a precise causal account, not a religious dogma. Whatever issues from a kleśa returns as experience to the one from whom it issued — sometimes immediately, sometimes much later, sometimes in a future embodiment. The reason yoga removes kleśas, not just regulates conduct, is that surface conduct without inner change keeps depositing seeds; only the cessation of the inner driver stops the cycle."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 40–42 — the subtle body carries dispositions from life to life; this is that storehouse. Veda: Bṛhadāraṇyaka Up. 4.4.5 — ‘one becomes good by good action, bad by bad’; Chāndogya Up. 3.14.1 — ‘as one’s resolve is in this world, so one becomes on departing.’ Meaning: karma is stored intention waiting for its season."
       }
     ],
     "cross_ref": "Bryant pp. 218–226 · Stoler Miller pp. 49–50 · Satchidananda pp. 202–207 · Tigunait on karma-āśaya · Bryant on Yoga karma theory · Leggett · Prabhavananda pp. 151–154 · Satyananda pp. 67–74 of Pāda 2 · Osho Vol. 2, Discourse 6"
@@ -2634,6 +2886,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains: when we ask 'why this life, why this body, why these specific joys and sorrows,' the Yoga answer is that the present life is the ripening of a particular cluster of past kleśa-rooted acts. The mechanism is impersonal; it requires no judging deity, only the lawful working out of stored impressions. Knowing this neither absolves moral responsibility nor adds to it — it explains the present without demanding that one despair of it."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 44 — virtue leads upward, vice downward; SK 53 lists the kinds of birth. Veda: Chāndogya Up. 5.10.7 — ‘those of pleasant conduct quickly enter a pleasant womb’; Kaṭha Up. 2.2.7 — ‘some enter a womb, others a stationary thing, according to their deeds and knowledge.’ Meaning: species, lifespan and experience are karma’s three harvests."
       }
     ],
     "cross_ref": "Bryant pp. 226–232 · Stoler Miller p. 50 · Satchidananda pp. 207–212 · Tigunait on jāti, āyuḥ, bhoga · Leggett · Prabhavananda pp. 154–157 · Satyananda pp. 74–81 of Pāda 2 · Osho Vol. 2, Discourse 7"
@@ -2681,6 +2937,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes that the moral causality is real but is not the end of the story. Virtuous action produces pleasant lives, certainly — but pleasant lives are still within saṃsāra, still subject to the limitations of all conditioned experience. The aim of yoga is not to ensure pleasant fruit but to free oneself from the entire mechanism of fruition."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 44 again — dharma rises, adharma falls. Veda: Bṛhadāraṇyaka Up. 4.4.5 ‘good by good action’. Meaning: Yoga, Sāṃkhya and Upaniṣad agree that joy and pain are not random; they are returns on what was done."
       }
     ],
     "cross_ref": "Bryant pp. 232–237 · Stoler Miller p. 50 · Satchidananda pp. 212–215 · Tigunait · Leggett · Prabhavananda pp. 157–159 · Satyananda pp. 81–86 of Pāda 2 · Osho Vol. 2, Discourse 7"
@@ -2748,6 +3008,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as a crucial sūtra: yoga is not pessimism, but it is honest. The 'happiness' that the ordinary mind pursues turns out, on close inspection, to be only the gap between two pains. The discerning person does not become gloomy; rather, they stop investing in a project (the pursuit of pleasure within saṃsāra) that the very structure of the project makes impossible."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: this is SK 1’s opening, sharpened — even pleasure carries change, anxiety and conditioning, so ‘all is suffering’ for the discerning. SK 12 says the guṇas are pleasure, pain and delusion, always mixed. Veda: Chāndogya Up. 7.23.1 — ‘there is no happiness in the small; the infinite (bhūman) alone is happiness.’ Meaning: the point is not pessimism but an honest audit."
       }
     ],
     "cross_ref": "Bryant pp. 237–248 (extended treatment) · Stoler Miller pp. 50–51 · Satchidananda pp. 215–221 · Tigunait on the three duḥkhas · Bryant comparing with Buddhist duḥkha · Leggett · Prabhavananda pp. 159–162 · Satyananda pp. 86–96 of Pāda 2 · Osho Vol. 2, Discourse 8"
@@ -2779,6 +3043,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as one of the most freeing sūtras: do not waste energy regretting what is done or resisting what is present. Concentrate effort on the future, which alone can be changed. The structure of yoga is built around this pragmatic point: identify the cause of future suffering (next sūtras) and address it."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 1–2 — remedies are sought for suffering that is ‘neither certain nor final’ under worldly means. Yoga narrows it: only future pain can be prevented. Veda: Muṇḍaka Up. 3.2.9 — ‘he crosses sorrow, crosses evil.’ Meaning: the past cannot be changed; the future still can."
       }
     ],
     "cross_ref": "Bryant pp. 248–251 · Stoler Miller p. 51 · Satchidananda pp. 221–224 · Tigunait · Leggett · Prabhavananda pp. 162–164 · Satyananda pp. 96–101 of Pāda 2 · Osho Vol. 2, Discourse 8"
@@ -2818,6 +3086,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds in this sūtra Yoga's parallel to the medical model — disease, healthy state, cause of disease, remedy. Future suffering is the disease; the cause is the false union of seer and seen; the cure (next sūtras) is the discernment that separates them; the goal is kaivalya, the seer free in its own nature. The whole rest of Pāda 2 is the working-out of this diagnostic structure."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 21 — puruṣa and prakṛti join ‘like the lame and the blind’; this conjunction is the root cause. Veda: Ṛgveda 1.164.20, repeated in Muṇḍaka Up. 3.1.1 — ‘two birds, companions, on one tree: one eats the sweet fruit, the other looks on without eating.’ Meaning: the Veda’s oldest image of the seer and the seen."
       }
     ],
     "cross_ref": "Bryant pp. 251–256 · Stoler Miller p. 51 · Satchidananda pp. 224–228 · Tigunait on saṃyoga · Bryant on the four-fold diagnostic structure · Leggett · Prabhavananda pp. 164–166 · Satyananda pp. 101–107 of Pāda 2 · Osho Vol. 2, Discourse 9"
@@ -2881,6 +3153,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as one of the most beautiful sūtras: the world exists for the soul. Not for itself, not at random — the whole apparatus of nature is there so that the puruṣa may have experience, learn from it, and finally see through it to its own freedom. This reframes the world: not a trap, not a punishment, but a curriculum."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 12–13 almost word for word — the guṇas are for illumination (prakāśa), activity (pravṛtti) and restraint; prakṛti exists for experience and release (SK 56–58). Veda: Śvetāśvatara Up. 4.5 — the unborn she-goat, red, white and black, ‘bearing many offspring like herself’; Chāndogya Up. 6.4.1 gives the three colours as fire, water and food. Meaning: the Veda’s three colours become the three guṇas."
       }
     ],
     "cross_ref": "Bryant pp. 256–264 · Stoler Miller pp. 51–52 · Satchidananda pp. 228–233 · Tigunait on the purpose of prakṛti · Bryant on Sāṃkhya teleology · Leggett · Prabhavananda pp. 166–169 · Satyananda pp. 107–115 of Pāda 2 · Osho Vol. 2, Discourse 9"
@@ -2920,6 +3196,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda walks through the ladder as a map of what the meditator will encounter in deepening samādhi. Each rung is more subtle, more inclusive, closer to the source. At the top is undifferentiated nature, and beyond it only the seer. He emphasizes that this map is empirically verifiable in samādhi by those who do the practice — not merely a metaphysical scheme."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the four levels map SK 3 and 38 — specific (gross elements, senses), unspecific (tanmātras, ahaṃkāra), merely-marked (mahat) and unmarked (prakṛti). Veda: Kaṭha Up. 1.3.10–11 — objects, mind, intellect, the great self, the unmanifest; Kaṭha 2.3.8 calls what is beyond ‘aliṅga’, unmarked — the same word. Meaning: the Kaṭha’s ladder is the oldest form of this map."
       }
     ],
     "cross_ref": "Bryant pp. 264–273 · Stoler Miller p. 52 · Satchidananda pp. 233–240 · Tigunait on the Sāṃkhya tattvas · Bryant on the tattva-ladder · Leggett · Prabhavananda pp. 169–173 · Satyananda pp. 115–125 of Pāda 2 · Osho Vol. 2, Discourse 10"
@@ -2963,6 +3243,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is careful here: the Self is pure seeing — no mixed nature, no doer, no enjoyer. What we call 'my experiences' are really the buddhi's modifications, made luminous by the Self's reflection in the buddhi. The Self never becomes happy or sad; the buddhi is happy or sad, and the light of the Self falling on it makes the buddhi's state appear to be the Self's. This distinction is the heart of yoga's diagnosis."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 19 — puruṣa is ‘witness, isolated, neutral, seer, non-doer’. Veda: Bṛhadāraṇyaka Up. 3.7.23 — ‘the unseen seer, the unheard hearer … there is no other seer’; 4.3.15 — ‘this person is unattached (asaṅga).’ Meaning: the seer only appears to think, by lending its light to the mind."
       }
     ],
     "cross_ref": "Bryant pp. 273–280 · Stoler Miller pp. 52–53 · Satchidananda pp. 240–244 · Tigunait on draṣṭā · Bryant on the nature of puruṣa · Leggett · Prabhavananda pp. 173–176 · Satyananda pp. 125–132 of Pāda 2 · Osho Vol. 2, Discourse 10"
@@ -3002,6 +3286,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda dwells on this: the universe is not random matter but matter-for-consciousness. Nature plays out her drama because there is one to watch, to learn, to finally see through her play. When the seer no longer needs the drama — has learnt what was to be learnt — the play ends for that particular witness, though it continues for others still in need of it."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 17 — ‘because all compounds exist for another’; SK 56 — creation is for each puruṣa’s release. Veda: Bṛhadāraṇyaka Up. 2.4.5 — ‘not for love of the husband is the husband dear, but for love of the Self.’ Meaning: everything that is seen exists for the one who sees."
       }
     ],
     "cross_ref": "Bryant pp. 280–283 · Stoler Miller p. 53 · Satchidananda pp. 244–247 · Tigunait · Leggett · Prabhavananda pp. 176–178 · Satyananda pp. 132–138 of Pāda 2 · Osho Vol. 2, Discourse 11"
@@ -3053,6 +3341,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the elegance: liberation is not destruction of the world but freedom from it. The world goes on — for everyone else who is still learning. The liberated one moves through it without the bondage of saṃyoga; for them, the play is over, though the theatre is still in use. This protects yoga from the charge of nihilism and explains how liberated beings can continue to live and even teach."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 66 — ‘she has been seen by me,’ says one, and ceases; yet prakṛti goes on for others — implied by SK 18’s many puruṣas. Veda: Śvetāśvatara Up. 4.5 — ‘one unborn lies with her, enjoying; another leaves her, having enjoyed.’ Meaning: the world ends for the freed, not for everyone."
       }
     ],
     "cross_ref": "Bryant pp. 283–288 · Stoler Miller p. 53 · Satchidananda pp. 247–251 · Tigunait on the metaphysics of liberation · Leggett · Prabhavananda pp. 178–180 · Satyananda pp. 138–144 of Pāda 2 · Osho Vol. 2, Discourse 11"
@@ -3100,6 +3392,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this with care: the bondage is also the curriculum. The Self could not come to know itself as Self without the experience of seeming to be other than itself. The play of confusion is what makes the recognition possible. Once the recognition occurs, the conjunction has done its work and falls away. This sūtra prevents one from regarding embodiment as a mistake or a fall; it is, rather, the condition of the very awakening to which yoga points."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: owner and owned, SK 21’s pairing ‘for viewing and for release’. Veda: Śvetāśvatara Up. 1.9 — ‘two unborn ones, the knower and the not-knower, the lord and the not-lord.’ Meaning: the meeting exists so each can be known for what it is."
       }
     ],
     "cross_ref": "Bryant pp. 288–293 · Stoler Miller pp. 53–54 · Satchidananda pp. 251–254 · Tigunait on the dual role of saṃyoga · Leggett · Prabhavananda pp. 180–183 · Satyananda pp. 144–151 of Pāda 2 · Osho Vol. 2, Discourse 12"
@@ -3131,6 +3427,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the freeing implication: if the cause of bondage were anything other than ignorance — anything substantive — bondage would be permanent. But because the cause is only a miscognition, the cure is the corresponding clear cognition. This is why yoga can in principle work: it addresses the cause of the disease at the only point where it can be addressed."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 44 — bondage from error; SK 63 — prakṛti binds herself by seven dispositions, all except knowledge. Veda: Muṇḍaka Up. 3.1.2 — the self ‘grieves, deluded by its helplessness (anīśā)’. Meaning: the cause of the knot is not-knowing, so its cure is knowing."
       }
     ],
     "cross_ref": "Bryant pp. 293–296 · Stoler Miller p. 54 · Satchidananda pp. 254–257 · Tigunait · Leggett · Prabhavananda pp. 183–185 · Satyananda pp. 151–156 of Pāda 2 · Osho Vol. 2, Discourse 12"
@@ -3182,6 +3482,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda underscores the symmetry of the argument: cause-then-cure. Remove ignorance, and saṃyoga is removed; remove saṃyoga, and the puruṣa is no longer apparently bound. Kaivalya is not the achievement of a new state but the cessation of the false appearance of bondage. Nothing is added to the Self; only the obscuration is removed."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 68 — ‘absolute and final isolation (kaivalya)’; Yoga uses the same word. Veda: Śvetāśvatara Up. 6.11 — the Self is ‘witness, consciousness, alone (kevala), without guṇas.’ Meaning: ‘kaivalya’ comes from the Upaniṣad’s own word kevala."
       }
     ],
     "cross_ref": "Bryant pp. 296–301 · Stoler Miller p. 54 · Satchidananda pp. 257–261 · Tigunait on kaivalya · Bryant on the medical-model structure · Leggett · Prabhavananda pp. 185–188 · Satyananda pp. 156–163 of Pāda 2 · Osho Vol. 2, Discourse 13"
@@ -3221,6 +3525,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda points to the qualifier 'aviplavā' as the decisive word. Many practitioners have moments of clarity — even powerful ones — but they pass, and the old confusion returns. What is required is a clarity that has become continuous, that no longer wavers. The eight-fold yoga that follows (2.28 ff.) is the systematic preparation for, and the cultivation of, just this unbroken discrimination."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 37 — buddhi discerns the subtle difference between pradhāna and puruṣa; SK 64 — that knowledge, practised, becomes complete. Veda: Kaṭha Up. 1.2.1–2 — the wise ‘examine and distinguish (vivinakti)’ the good from the pleasant — the same root as viveka. Meaning: one steady distinction does what no ritual can."
       }
     ],
     "cross_ref": "Bryant pp. 301–306 · Stoler Miller p. 54 · Satchidananda pp. 261–264 · Tigunait on viveka-khyāti · Leggett · Prabhavananda pp. 188–190 · Satyananda pp. 163–169 of Pāda 2 · Osho Vol. 2, Discourse 13"
@@ -3256,6 +3564,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda discusses the seven stages as a map of progressive freedom: the practitioner moves from 'I still have something to know' to 'I know all that is needful'; from 'I still have something to give up' to 'I have given up all that binds'; and finally to the subjective stages in which buddhi's task is done and puruṣa abides alone. The map is descriptive rather than prescriptive — it tells you how to recognize where you are."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the seven stages climb toward SK 64’s ‘I am not, nothing is mine, no I.’ Veda: Bṛhadāraṇyaka Up. 4.4.22 — ‘not this, not this (neti neti)’ — knowledge by stripping away. Meaning: insight matures by stages until nothing is left to know or do."
       }
     ],
     "cross_ref": "Bryant pp. 306–314 · Stoler Miller pp. 54–55 · Satchidananda pp. 264–268 · Tigunait on the seven stages · Bryant on the traditional sevenfold scheme · Leggett · Prabhavananda pp. 190–193 · Satyananda pp. 169–177 of Pāda 2 · Osho Vol. 2, Discourse 14"
@@ -3311,6 +3623,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as a clean technological statement: aṅgas — clear mind — clear knowledge — liberating discrimination. There is no magic, only a sequence of causes and effects. The practitioner who does the practices systematically gets the results systematically; the practitioner who skips steps gets partial or unstable results. The eight aṅgas, in his presentation, are the practical content of yoga."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 51 lists Sāṃkhya’s eight means (reasoning, instruction, study and the rest); Yoga’s eight limbs are the practice that ripens into SK 37’s discernment. Veda: Muṇḍaka Up. 3.1.8 — ‘by the grace of knowledge, the one pure in nature sees him’; Īśa Up. 15 asks the golden lid over truth to be removed. Meaning: practice removes impurity; light shows by itself."
       }
     ],
     "cross_ref": "Bryant pp. 314–319 · Stoler Miller p. 55 · Satchidananda pp. 268–272 · Tigunait on the aṅgas as causal structure · Leggett · Prabhavananda pp. 193–195 · Satyananda pp. 177–184 of Pāda 2 · Osho Vol. 2, Discourse 14"
@@ -3370,6 +3686,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda gives the most famous schema of yoga. He emphasizes that the order is not negotiable: yama and niyama come first because without them the inner work cannot proceed (an unstable mind cannot meditate); āsana and prāṇāyāma must be settled before the senses can be withdrawn; the inner three rest on the outer five. The sequence is itself the practice."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: Sāṃkhya has no stepwise method; Yoga supplies it. Veda: Maitrī Up. 6.18 gives a sixfold yoga — breath-control, withdrawal, meditation, concentration, reasoning (tarka) and samādhi. Patañjali adds yama, niyama and posture in front, drops tarka, and arrives at eight. Meaning: the eight limbs grow out of an older Vedic six."
       }
     ],
     "cross_ref": "Bryant pp. 319–323 · Stoler Miller p. 55 · Satchidananda pp. 272–276 · Tigunait on the aṣṭāṅga structure · Bryant comparing with other systems · Leggett · Prabhavananda pp. 195–198 · Satyananda pp. 184–192 of Pāda 2 · Osho Vol. 2, Discourse 15"
@@ -3413,6 +3733,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats these as the indispensable preliminaries: a mind agitated by guilt or by ongoing harm-doing cannot be still in meditation. The yamas are not externally-imposed morality but the practical conditions for the inner work. He is unsparing about their universality: they apply across time and place, to all classes of practitioner, in all contexts. Compromise on the yamas means compromise on yoga itself."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 2 faults Vedic ritual as ‘impure’ (aviśuddhi), which Vācaspati glosses as the harm in animal sacrifice. Ahiṃsā heads the list here for the same reason. Veda: Chāndogya Up. 3.17.4 lists austerity, giving, uprightness, non-harming (ahiṃsā) and truth as the true gifts of the inner sacrifice. Meaning: the ethics the Upaniṣads drew out of ritual become the first limb."
       }
     ],
     "cross_ref": "Bryant pp. 323–332 · Stoler Miller pp. 55–56 · Satchidananda pp. 276–286 · Tigunait on the five yamas · Bryant comparing with Jain and Buddhist parallels · Leggett · Prabhavananda pp. 198–206 · Satyananda pp. 192–204 of Pāda 2 · Osho Vol. 2, Discourse 15"
@@ -3460,6 +3784,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as the demanding standard: the yamas, fully observed, are unconditional. The moment we admit an exception ('I will be truthful except…'), we re-introduce the very fragmentation the yamas are meant to dissolve. The mahā-vrata is therefore not for everyone; it is the standard of the serious yogi. Those not ready for it should still practice partially — but should know what partial practice can and cannot deliver."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: Sāṃkhya ethics is universal because puruṣas are alike in all bodies (SK 18–19). Veda: Īśa Up. 6–7 — ‘for one who sees oneness, what delusion, what sorrow?’ Meaning: a vow that knows no exceptions is a ‘great vow’."
       }
     ],
     "cross_ref": "Bryant pp. 332–336 · Stoler Miller p. 56 · Satchidananda pp. 286–289 · Tigunait on the mahā-vrata · Leggett · Prabhavananda pp. 206–209 · Satyananda pp. 204–211 of Pāda 2 · Osho Vol. 2, Discourse 16"
@@ -3503,6 +3831,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats the niyamas as the personal practices that build the practitioner from the inside. Cleanliness (of body, surroundings, and mind); contentment with what is; the discipline of accepted hardship; the daily companionship of texts and chants; and the steady transfer of motive from the ego to the Lord. Practiced together, these five remake the practitioner from within, while the yamas were remaking them from without."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: purity and contentment build SK 23’s sattvic buddhi; study and surrender echo SK 51’s ‘study’ and Yoga’s Īśvara. Veda: Taittirīya Up. 1.11 — ‘speak truth, practise dharma, do not neglect study’; Śvetāśvatara Up. 6.18 — surrender to the Lord. Meaning: the niyamas are the Upaniṣad’s parting advice to the graduating student."
       }
     ],
     "cross_ref": "Bryant pp. 336–347 · Stoler Miller p. 56 · Satchidananda pp. 289–299 · Tigunait on the five niyamas · Leggett · Prabhavananda pp. 209–217 · Satyananda pp. 211–227 of Pāda 2 · Osho Vol. 2, Discourse 16"
@@ -3538,6 +3870,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda highlights the genius of the method: you cannot empty the mind of negativity by direct attack — that only increases agitation. But you can fill it with the opposite, and what is full of one thing has no room for its opposite. This is positive psychology millennia before the term: the technique is constructive substitution, not repressive prohibition."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: cultivating the opposite turns tamasic and rajasic buddhi toward sattva (SK 23). Veda: Śukla Yajurveda (Vājasaneyi Saṃhitā) 34.1–6 — ‘may my mind be of auspicious resolve (śiva-saṅkalpa)’. Meaning: the Veda prays for a good mind; Yoga trains for one."
       }
     ],
     "cross_ref": "Bryant pp. 347–352 · Stoler Miller p. 57 · Satchidananda pp. 299–303 · Tigunait on pratipakṣa-bhāvana · Bryant on the cognitive technique · Leggett · Prabhavananda pp. 217–220 · Satyananda pp. 227–234 of Pāda 2 · Osho Vol. 2, Discourse 17"
@@ -3629,6 +3965,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as the elaborated method: do not just think 'I should not do this' — examine the act fully. See its mechanisms, see its consequences, see how it works whether done, encouraged, or only approved. Sustained, honest contemplation drains the act of its appeal because the appeal rested on not-seeing. Once the mechanism is seen, the impulse weakens of itself."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: greed, anger and delusion map onto rajas, rajas-tamas and tamas (SK 12–13). Veda: Bṛhadāraṇyaka Up. 4.4.5 — what one does, causes, or wills, one becomes. Meaning: harm done, prompted or approved all return to the doer."
       }
     ],
     "cross_ref": "Bryant pp. 352–360 · Stoler Miller pp. 57–58 · Satchidananda pp. 303–309 · Tigunait on the 27-fold analysis · Leggett · Prabhavananda pp. 220–224 · Satyananda pp. 234–243 of Pāda 2 · Osho Vol. 2, Discourse 17"
@@ -3668,6 +4008,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda accepts the report at face value while emphasizing the principle: the yogi who has truly given up violence in thought generates a field in which violence has no support. Others' hostility cannot find purchase. The phenomenon, however unusual it appears, is consistent with the inner mechanism: harm is contagious, and so is its absence. He notes that one sees, in lesser ways, even very strong moral atmospheres calming the agitation around them."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: when buddhi is fully sattvic (SK 23), it no longer provokes the rajas in others. Veda: Īśa Up. 6 — one who sees the Self in all ‘has no aversion’; Taittirīya Up. 2.9 — ‘knowing the bliss of Brahman, one fears nothing.’ Meaning: the fearless cause no fear."
       }
     ],
     "cross_ref": "Bryant pp. 360–365 · Stoler Miller p. 58 · Satchidananda pp. 309–313 · Tigunait on the siddhi of ahiṃsā · Leggett · Prabhavananda pp. 224–227 · Satyananda pp. 243–250 of Pāda 2 · Osho Vol. 2, Discourse 18"
@@ -3707,6 +4051,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda discusses this as the power of unconditional truthfulness. Most speech in the world is mixed with degrees of falsehood (exaggeration, omission, self-flattery). The yogi in whom speech is fully purified becomes a kind of conduit between intention and outcome. Vivekananda notes that this is observable in lesser degrees: those known for absolute reliability have a power in their word that the chronic embellishers do not."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: truth is a sattvic dharma of buddhi (SK 23). Veda: Muṇḍaka Up. 3.1.6 — ‘truth alone conquers (satyam eva jayate)’; Bṛhadāraṇyaka Up. 1.4.14 equates truth with dharma. Meaning: words become effective when they are never false."
       }
     ],
     "cross_ref": "Bryant pp. 365–369 · Stoler Miller p. 58 · Satchidananda pp. 313–316 · Tigunait on the siddhi of satya · Leggett · Prabhavananda pp. 227–229 · Satyananda pp. 250–256 of Pāda 2 · Osho Vol. 2, Discourse 18"
@@ -3746,6 +4094,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains the principle: the grasping mind blocks the very flow it is trying to grab. The mind that does not grasp is open, and what is naturally moving toward it is not deflected. He cites the universal observation that the saint who has truly let go of wanting is often abundantly supplied, not by their efforts, but by what comes unbidden. The siddhi is not magical acquisition but the removal of the obstruction that prevented natural supply."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: freedom from ‘mine’ is SK 64’s ‘nothing is mine’. Veda: Īśa Up. 1 — ‘enjoy by renouncing; do not covet anyone’s wealth (mā gṛdhaḥ kasya svid dhanam).’ Meaning: the one who does not grab finds things arrive."
       }
     ],
     "cross_ref": "Bryant pp. 369–372 · Stoler Miller p. 58 · Satchidananda pp. 316–319 · Tigunait on asteya-siddhi · Leggett · Prabhavananda pp. 229–231 · Satyananda pp. 256–262 of Pāda 2 · Osho Vol. 2, Discourse 19"
@@ -3781,6 +4133,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is candid: enormous energy is locked up in sexual activity and its pursuit, and the yogi who has consolidated this energy through brahmacarya has at his disposal a force that the ordinary person lacks. He notes the testimony of yogis and ascetics across traditions on this point, and emphasizes that brahmacarya does not mean rigid suppression but the establishment of the body and mind in a different mode of energy use."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: conserved energy strengthens SK 23’s ‘power’ (aiśvarya). Veda: Muṇḍaka Up. 3.1.5 — the Self is gained by ‘constant brahmacarya’; Chāndogya Up. 8.5 calls brahmacarya the true sacrifice. Meaning: vigour is what is left when it is not spent."
       }
     ],
     "cross_ref": "Bryant pp. 372–378 · Stoler Miller pp. 58–59 · Satchidananda pp. 319–325 · Tigunait on brahmacarya and vīrya · Bryant on traditional understandings of brahmacarya · Leggett · Prabhavananda pp. 231–235 · Satyananda pp. 262–272 of Pāda 2 · Osho Vol. 2, Discourse 19"
@@ -3820,6 +4176,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda gives a striking interpretation: the mind preoccupied with possessing cannot see beyond the present life, because possession is essentially of present things. When that preoccupation falls away, the mind's gaze can extend; the wider time-structure of the soul's journey becomes visible. The siddhi is therefore not arbitrary; it is the natural sequela of releasing what blocked the view."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 64’s ‘nothing is mine’; SK 40 — the subtle body moves from life to life, which this insight sees. Veda: Īśa Up. 1 — ‘enjoy by renouncing’; Bṛhadāraṇyaka Up. 4.4.3 — like a caterpillar crossing to the next blade of grass, the self moves on. Meaning: holding nothing, one sees how holding made the births."
       }
     ],
     "cross_ref": "Bryant pp. 378–382 · Stoler Miller p. 59 · Satchidananda pp. 325–328 · Tigunait on aparigraha and the knowledge of births · Leggett · Prabhavananda pp. 235–238 · Satyananda pp. 272–279 of Pāda 2 · Osho Vol. 2, Discourse 20"
@@ -3863,6 +4223,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is careful: this is not body-hatred or asceticism gone wrong. It is the recognition that the body, however cared-for, is not what it pretends to be in the mind of the unreflective. With this clear seeing, the body is given proper care without being made an idol; relations with others are conducted without the infatuated investment that turns persons into objects of grasping."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: seeing the body as gross element (SK 38–39) loosens ‘I am this body’. Veda: Chāndogya Up. 8.12.1 — ‘this body is mortal, held by death; it is the seat of the deathless, bodiless Self.’ Meaning: cleanliness becomes a lesson in what the body is."
       }
     ],
     "cross_ref": "Bryant pp. 382–387 · Stoler Miller p. 59 · Satchidananda pp. 328–333 · Tigunait on śauca-siddhi · Leggett · Prabhavananda pp. 238–241 · Satyananda pp. 279–286 of Pāda 2 · Osho Vol. 2, Discourse 20"
@@ -3914,6 +4278,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as one of the most encouraging sūtras: real purity is not a moral burden but a felt liberation. The pure mind is naturally cheerful, naturally one-pointed, naturally master of its senses — these are not extra disciplines but spontaneous consequences of the same purification. And the fitness for ātma-darśana — direct vision of the Self — arises when the obstacles have been removed; the vision itself follows of its own accord."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: ‘sattva-śuddhi’ — purification of buddhi — is the precondition SK 37 sets for discernment. Veda: Chāndogya Up. 7.26.2 — ‘when food is pure the sattva is pure; when the sattva is pure, memory is firm’; Muṇḍaka Up. 3.1.8 — ‘the one of purified sattva sees him.’ Meaning: the Upaniṣad’s exact phrase becomes a stage of practice."
       }
     ],
     "cross_ref": "Bryant pp. 387–392 · Stoler Miller pp. 59–60 · Satchidananda pp. 333–337 · Tigunait on the five fruits of śauca · Leggett · Prabhavananda pp. 241–244 · Satyananda pp. 286–294 of Pāda 2 · Osho Vol. 2, Discourse 21"
@@ -3949,6 +4317,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as one of the most freeing of all the siddhis: contentment yields a happiness no purchase can yield, no honour can yield, no relationship can yield. It is not 'making do with less'; it is the discovery that satisfaction was never a function of acquisition. Once this is tasted, even briefly, the entire architecture of pursuit loses its grip."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: a notable difference — SK 50 lists nine ‘contentments’ (tuṣṭi) as obstacles, because they stop the search too early. Yoga praises contentment as unsurpassed happiness. The two meet if Yoga’s santoṣa is contentment with what one has, not with what one has understood. Veda: Chāndogya Up. 7.23 — ‘the infinite alone is happiness.’ Meaning: be content with your lot, never with your ignorance."
       }
     ],
     "cross_ref": "Bryant pp. 392–395 · Stoler Miller p. 60 · Satchidananda pp. 337–340 · Tigunait on santoṣa · Leggett · Prabhavananda pp. 244–246 · Satyananda pp. 294–300 of Pāda 2 · Osho Vol. 2, Discourse 21"
@@ -3992,6 +4364,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as straightforward: tapas works because the body and senses are normally impeded by impurity at multiple levels (diet, habit, indulgence). Remove these and the underlying capacity, which was always there, shines forth. The 'siddhi' is thus the original design uncovered — not an extra capacity superimposed."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: tapas burns impurity in the instruments (SK 32: the thirteen organs). Veda: Taittirīya Up. 3.2 — ‘seek to know Brahman by tapas; tapas is Brahman’; Śvetāśvatara Up. 2.12 — ‘no sickness, no ageing, no death for one who has gained a body made of the fire of yoga.’ Meaning: discipline refines the body and senses into fit instruments."
       }
     ],
     "cross_ref": "Bryant pp. 395–398 · Stoler Miller p. 60 · Satchidananda pp. 340–344 · Tigunait on tapas-siddhi · Leggett · Prabhavananda pp. 246–248 · Satyananda pp. 300–307 of Pāda 2 · Osho Vol. 2, Discourse 22"
@@ -4023,6 +4399,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains: the texts and mantras of any genuine tradition are not random verbal arrangements but tested vehicles for contact with specific levels of reality. The practitioner who repeats them with attention and meaning, day after day, year after year, gradually establishes contact with what the texts express. The 'samprayoga' is empirical, not symbolic."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 51 lists study (adhyayana) among Sāṃkhya’s eight perfections. Veda: Taittirīya Up. 1.9 — ‘study and teaching’ follow every virtue; Kaṭha Up. 1.2.23 — the Self ‘reveals its own form’ to the one it chooses. Meaning: recitation and study open a two-way door."
       }
     ],
     "cross_ref": "Bryant pp. 398–402 · Stoler Miller p. 60 · Satchidananda pp. 344–347 · Tigunait on svādhyāya and iṣṭa-devatā · Leggett · Prabhavananda pp. 248–251 · Satyananda pp. 307–314 of Pāda 2 · Osho Vol. 2, Discourse 22"
@@ -4054,6 +4434,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes: samādhi is hard precisely because the ego is hard to release. Īśvara-praṇidhāna releases the ego not by attack but by transfer — the burden of being the doer is laid down, given to the Lord. The mind, no longer carrying that weight, can settle. He treats this sūtra as a great consolation for those who cannot achieve samādhi by sheer technique: surrender accomplishes what method cannot force."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: Īśvara is Yoga’s addition to Sāṃkhya (see 1.23). Veda: Śvetāśvatara Up. 6.23 — ‘to the great-souled one who has highest devotion to God, and to the teacher as to God, these truths shine.’ Meaning: surrender is a short road, because it removes the one who blocks the way."
       }
     ],
     "cross_ref": "Bryant pp. 402–406 · Stoler Miller pp. 60–61 · Satchidananda pp. 347–351 · Tigunait on īśvara-praṇidhāna and samādhi · Leggett · Prabhavananda pp. 251–253 · Satyananda pp. 314–320 of Pāda 2 · Osho Vol. 2, Discourse 23"
@@ -4085,6 +4469,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is firm on this point: āsana in Yoga Sūtras is sitting still — the conditions for prolonged meditation. The body that is uncomfortable cannot be ignored; the body that is unsteady cannot be forgotten. So choose a posture you can hold immobile for long, and that does not press itself on your awareness through pain. Any such posture is āsana. He notes that this is the precise sense in which the great yogis used the term."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: posture steadies the gross body (SK 39) so the subtle can be worked on. Veda: Śvetāśvatara Up. 2.8 — ‘holding the body steady, with the three upper parts erect’; 2.10 — in a clean, level place, free of pebbles, fire and sand, pleasing to the mind. Meaning: the Upaniṣad already gives the seat; Patañjali gives its two qualities."
       }
     ],
     "cross_ref": "Bryant pp. 406–413 · Stoler Miller p. 61 · Satchidananda pp. 351–357 · Tigunait on the original meaning of āsana · Bryant on the history of āsana in the Yoga Sūtras vs. haṭha yoga · Leggett · Prabhavananda pp. 253–256 · Satyananda pp. 320–331 of Pāda 2 · Osho Vol. 2, Discourse 23"
@@ -4120,6 +4508,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the principle: effort is what makes the posture difficult. Let the effort go; let the mind be absorbed in something vast; the body finds its own equilibrium and holds. This is true at the physical level (the body that is not being strained does not need to be controlled) and at the mental level (the mind that is fixed on the infinite does not need to manage the body). Both moves together transform the posture from struggle into settling."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: relaxing effort lets rajas settle (SK 13: rajas is restless). Veda: Śvetāśvatara Up. 2.15 — seeing the truth of Brahman ‘with the Self as a lamp’; Kaṭha Up. 1.2.20 — the Self ‘greater than the great’, the infinite one rests in. Meaning: posture completes itself when the body forgets to try."
       }
     ],
     "cross_ref": "Bryant pp. 413–417 · Stoler Miller p. 61 · Satchidananda pp. 357–360 · Tigunait on the technique · Leggett · Prabhavananda pp. 256–258 · Satyananda pp. 331–340 of Pāda 2 · Osho Vol. 2, Discourse 24"
@@ -4151,6 +4543,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as a major preparation for meditation: the meditator who is constantly shifting because of heat, cold, hunger, or discomfort cannot go deep. The perfected āsana confers an equanimity at the body-level that allows the mind to do its own work. This is not insensibility — the yogi feels everything — but the felt sensations no longer compel response."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: pleasure and pain are guṇa pairs (SK 12); a steady body stops reacting to them. Veda: Chāndogya Up. 8.12.1 — ‘pleasure and pain do not touch the bodiless’; Gītā 2.14 — ‘heat and cold, pleasure and pain come and go — endure them.’ Meaning: steadiness in the body is the first taste of the Self’s untouched state."
       }
     ],
     "cross_ref": "Bryant pp. 417–420 · Stoler Miller pp. 61–62 · Satchidananda pp. 360–363 · Tigunait on dvandva-anabhighāta · Leggett · Prabhavananda pp. 258–260 · Satyananda pp. 340–346 of Pāda 2 · Osho Vol. 2, Discourse 24"
@@ -4198,6 +4594,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes that prāṇāyāma in the Yoga Sūtras is primarily the conscious modification of the breath, not the more elaborate techniques of haṭha yoga (though those are consistent with this definition). The principle: the breath and the mind move together; controlled breath produces controlled mind. By taking deliberate control of the breath, the practitioner gains leverage on the mind that is otherwise unavailable."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 29 — the five breaths are the shared function of buddhi, ahaṃkāra and manas, so steadying breath steadies all three. Veda: Śvetāśvatara Up. 2.9 — ‘restraining the breaths here … one should hold the mind like a chariot yoked to wild horses’; Atharvaveda 11.4.1 — ‘homage to Prāṇa, in whose control is all this.’ Meaning: breath is the rein of the mind."
       }
     ],
     "cross_ref": "Bryant pp. 420–426 · Stoler Miller p. 62 · Satchidananda pp. 363–369 · Tigunait on prāṇāyāma in the Sūtras · Bryant on Yoga Sūtra prāṇāyāma vs. later traditions · Leggett · Prabhavananda pp. 260–263 · Satyananda pp. 346–356 of Pāda 2 · Osho Vol. 2, Discourse 25"
@@ -4257,6 +4657,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda gives the systematic description: prāṇāyāma is not random breath-holding but a measured discipline. Track where the breath is felt, how long each phase lasts, and how many cycles. Over time, the natural progression is toward longer cycles and subtler quality of breath. He cautions against forcing — the lengthening should be a natural consequence of practice, not a willed achievement at the cost of strain."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: careful measurement mirrors Sāṃkhya’s habit of counting (SK 3, 22). Veda: Chāndogya Up. 5.19–23 offers the meal to the five breaths in turn — a ritual already focused on prāṇa. Meaning: the Vedic attention to breath becomes a measured practice."
       }
     ],
     "cross_ref": "Bryant pp. 426–433 · Stoler Miller p. 62 · Satchidananda pp. 369–375 · Tigunait on the three modes and three measurements · Leggett · Prabhavananda pp. 263–268 · Satyananda pp. 356–369 of Pāda 2 · Osho Vol. 2, Discourse 25"
@@ -4296,6 +4700,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as the spontaneous prāṇāyāma of the advanced practitioner: the breath naturally suspends as the mind deepens; the prior, deliberate techniques fall away and a different mode appears, in which no measurement is required because no controlling is being done. This is the mature culmination of prāṇāyāma — the breath has become so subtle and the mind so absorbed that the very framework of breath-control becomes irrelevant."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the fourth goes beyond in- and out-breath, as SK 65’s puruṣa goes beyond prakṛti’s movement. Veda: Māṇḍūkya Up. 7 — the fourth (caturtha), beyond waking, dream and sleep. Meaning: Yoga borrows the Upaniṣad’s idea of a ‘fourth’ that is not another of the three."
       }
     ],
     "cross_ref": "Bryant pp. 433–438 · Stoler Miller p. 62 · Satchidananda pp. 375–378 · Tigunait on the fourth prāṇāyāma · Bryant on traditional readings · Leggett · Prabhavananda pp. 268–270 · Satyananda pp. 369–378 of Pāda 2 · Osho Vol. 2, Discourse 26"
@@ -4331,6 +4739,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as a major claim: the inner light is always shining; what is needed is not its production but the removal of what covers it. Prāṇāyāma, by purifying the prāṇic field, removes precisely this covering. The yogi does not have to generate insight; insight is already present, hidden under the very breath-driven turbulence that prāṇāyāma resolves."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the covering is tamas over sattva’s light (SK 13). Veda: Īśa Up. 15 — ‘the face of truth is covered by a golden lid; remove it, O Pūṣan.’ Bṛhadāraṇyaka Up. 1.3.28 — ‘from darkness lead me to light.’ Meaning: breath-practice answers the Upaniṣad’s prayer."
       }
     ],
     "cross_ref": "Bryant pp. 438–442 · Stoler Miller pp. 62–63 · Satchidananda pp. 378–381 · Tigunait on prakāśāvaraṇa-kṣaya · Leggett · Prabhavananda pp. 270–272 · Satyananda pp. 378–384 of Pāda 2 · Osho Vol. 2, Discourse 26"
@@ -4366,6 +4778,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the gateway function of prāṇāyāma: it is precisely the limb that converts a normal mind into a meditation-capable mind. Without it (or some equivalent purification), all attempts at concentration are fighting against the unprepared substrate. With it, the substrate is ready, and the methods of dhāraṇā actually take hold. This is why so many traditions have emphasized breath-work as the indispensable bridge."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: manas becomes fit for steady attention (SK 27: manas deliberates). Veda: Kaṭha Up. 1.3.6 — ‘for one with understanding and a mind always yoked, the senses obey like good horses.’ Meaning: the horses are now ready to be driven."
       }
     ],
     "cross_ref": "Bryant pp. 442–445 · Stoler Miller p. 63 · Satchidananda pp. 381–384 · Tigunait on the bridge function of prāṇāyāma · Leggett · Prabhavananda pp. 272–274 · Satyananda pp. 384–390 of Pāda 2 · Osho Vol. 2, Discourse 27"
@@ -4417,6 +4833,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda gives the practical sense: the senses, normally autonomous in their outward reaching, come under the citta's command and follow its inward direction. When the citta turns inward, the senses turn inward with it; when the citta is one-pointed, the senses do not break up the unity. He compares it to a well-trained orchestra: each instrument is capable of independent sound, but in pratyāhāra they all follow the conductor (the citta), enabling music rather than noise."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 26–28 — the senses only present objects to the inner organ; withdrawn, they follow it inward. Veda: Kaṭha Up. 1.3.3–4 — the body a chariot, intellect the driver, mind the reins, senses the horses; Kaṭha 2.1.1 — the senses were pierced outward. Gītā 2.58 — like a tortoise drawing in its limbs. Meaning: the horses come home with the driver."
       }
     ],
     "cross_ref": "Bryant pp. 445–451 · Stoler Miller p. 63 · Satchidananda pp. 384–390 · Tigunait on pratyāhāra · Bryant on the mechanism of sensory withdrawal · Leggett · Prabhavananda pp. 274–278 · Satyananda pp. 390–399 of Pāda 2 · Osho Vol. 2, Discourse 27"
@@ -4452,6 +4872,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda closes the pāda with emphasis on what has been achieved by the practitioner who has worked through the first five aṅgas: a mind purified by yamas and niyamas, a body settled in āsana, a breath regulated by prāṇāyāma, and now senses fully under command through pratyāhāra. This is no small accomplishment; it is, in fact, the entire foundation of meditative life. The deeper inner work that follows (Pāda 3) presupposes precisely this preparation; without it, those inner practices have nothing to stand on. Pāda 2 ends here, having delivered the practitioner to the threshold of the inner yoga."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: full mastery of the eleven senses of SK 26–27. Veda: Kaṭha Up. 1.3.5–6 — for the undiscerning the senses run like wild horses; for the discerning they obey. Meaning: the outer limbs end where the Kaṭha’s chariot is finally under control."
       }
     ],
     "cross_ref": "Bryant pp. 451–456 · Stoler Miller p. 63 · Satchidananda pp. 390–393 · Tigunait closing of Sādhana Pāda · Bryant on the transition to Pāda 3 · Leggett · Prabhavananda pp. 278–280 · Satyananda pp. 399–407 of Pāda 2 · Osho Vol. 2, Discourse 27 End of Pāda 2 — Sādhana Pāda The Sādhana Pāda has now delivered the practitioner to the threshold of the inner yoga. From the opening kriyā-yoga (2.1), through the diagnostic of suffering and saṃyoga (2.3–2.27), to the eight-limbed structure (2.28–2.29), and through the first five aṅgas — yama, niyama, āsana, prāṇāyāma, pratyāhāra (2.30–2.55) — Patañjali has now equipped the practitioner with everything needed to begin the inner work. The body is settled, the breath regulated, the senses obedient, the ethical and personal disciplines in place. Pāda 3 (Vibhūti Pāda) opens with the remaining three aṅgas — dhāraṇā, dhyāna, samādhi — and the powers (vibhūtis) that arise as the inner concentration matures."
@@ -4487,6 +4911,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the simplicity and difficulty of dhāraṇā. The instruction is single: hold the mind here. But the mind does not stay; it goes; you bring it back; it goes again; you bring it back again. This is the whole of the practice at this stage. He notes that what is being trained is not the holding (which is instantaneous when it occurs) but the returning. The yogi who can reliably return becomes capable, in time, of staying."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: holding the citta to one place uses buddhi’s power to fix (adhyavasāya, SK 23). Veda: Kaṭha Up. 2.3.11 — yoga is ‘steady holding (dhāraṇā) of the senses’ — the very word; Ṛgveda 5.81.1 — the seers ‘yoke the mind’. Meaning: concentration is the Vedic yoking, applied to one point."
       }
     ],
     "cross_ref": "Bryant pp. 305–311 · Stoler Miller p. 67 · Satchidananda pp. 397–401 · Tigunait (Vibhūti Pāda volume) on dhāraṇā · Bryant on choice of object · Leggett on Śaṅkara's framing · Prabhavananda pp. 283–286 · Satyananda on Pāda 3.1 · Osho Vol. 3, Discourse 1"
@@ -4522,6 +4950,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda uses the same image: oil pouring smoothly, no break, no spurt. The transition from dhāraṇā to dhyāna is gradual; one cannot decide to do dhyāna instead of dhāraṇā. One practices dhāraṇā, and dhyāna arises when the gaps between successive 'holdings' close. The yogi knows it has happened by the change in felt quality: effort drops, but attention remains and even deepens."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: a single unbroken flow of pratyaya — buddhi taking one form continuously (SK 23, 36). Veda: Chāndogya Up. 7.6.1 — ‘meditation (dhyāna) is greater than thought (citta)’; Gītā 6.19 — ‘like a lamp in a windless place that does not flicker.’ Meaning: the flame stays still because nothing disturbs it."
       }
     ],
     "cross_ref": "Bryant pp. 311–315 · Stoler Miller p. 67 · Satchidananda pp. 401–404 · Tigunait on dhāraṇā/dhyāna distinction · Leggett · Prabhavananda pp. 286–289 · Satyananda on 3.2 · Osho Vol. 3, Discourse 1"
@@ -4573,6 +5005,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains the experiential mark: in dhyāna, the meditator is still aware of meditating; in samādhi, that distinction collapses. There is just the object, with no subject standing outside it watching. He insists that samādhi in this technical sense is not trance or unconsciousness — the very opposite: the cognition is at its most luminous, but the self-referential framing has dropped."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: buddhi so clear it shows only the object — SK 28’s bare seeing (ālocanamātra). Veda: Muṇḍaka Up. 2.2.4 — ‘become one with it (tanmaya), like the arrow in the target’; Bṛhadāraṇyaka Up. 4.4.23 — ‘becoming collected (samāhita), one sees.’ Meaning: the meditator disappears into what is seen."
       }
     ],
     "cross_ref": "Bryant pp. 315–319 · Stoler Miller pp. 67–68 · Satchidananda pp. 404–408 · Tigunait on samādhi as culmination · Leggett · Prabhavananda pp. 289–292 · Satyananda on 3.3 · Osho Vol. 3, Discourse 2"
@@ -4604,6 +5040,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the practical importance: most of the Vibhūti Pāda is a catalogue of 'when you perform saṃyama on X, Y arises.' Without the term, Patañjali would have to repeat 'dhāraṇā-dhyāna-samādhi' continually. Saṃyama is the compressed technical name for the inner triad when used as a tool to penetrate a chosen object."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: saṃyama is a technical tool; Sāṃkhya’s nearest equal is SK 64’s ‘practice of the principles’. Veda: Kaṭha Up. 1.3.12 — the Self ‘is seen by subtle seers through a sharp, subtle intellect (agryayā buddhyā).’ Meaning: the three together make the intellect sharp."
       }
     ],
     "cross_ref": "Bryant pp. 319–322 · Stoler Miller p. 68 · Satchidananda pp. 408–411 · Tigunait on saṃyama as method · Leggett · Prabhavananda pp. 292–294 · Satyananda on 3.4 · Osho Vol. 3, Discourse 2"
@@ -4639,6 +5079,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda compares it to a tool: once you have mastered the use of a microscope, you can direct it at any specimen and see; the seeing follows from the mastery of the instrument. Saṃyama mastered is a microscope (or, better, a kind of universal instrument) of the citta. The light of wisdom that follows is not produced by saṃyama but uncovered by it — the object yields its truth when correctly looked at."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: prajñā’s light is the sattvic power of buddhi (SK 13: sattva illumines). Veda: Gāyatrī, Ṛgveda 3.62.10 — ‘may Savitṛ stir our intellects (dhiyaḥ)’. Meaning: Yoga answers the Gāyatrī’s prayer by its own effort."
       }
     ],
     "cross_ref": "Bryant pp. 322–326 · Stoler Miller p. 68 · Satchidananda pp. 411–414 · Tigunait on prajñā-āloka · Leggett · Prabhavananda pp. 294–296 · Satyananda on 3.5 · Osho Vol. 3, Discourse 3"
@@ -4670,6 +5114,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is firm here: students reading the catalogue of siddhis from 3.16 onward are often tempted to start with the most spectacular. But the order matters. The yogi who has not first established saṃyama on simpler objects cannot deploy it successfully on subtle ones. Each bhūmi prepares the next; trying to leap is failure. Patient progression through the stages is the only honest path."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 22’s order of evolutes is climbed step by step. Veda: Chāndogya Up. 7 — Sanatkumāra leads Nārada from name upward, one stage at a time, to the infinite. Meaning: stages are not to be skipped."
       }
     ],
     "cross_ref": "Bryant pp. 326–329 · Stoler Miller p. 68 · Satchidananda pp. 414–417 · Tigunait on staged application · Leggett · Prabhavananda pp. 296–298 · Satyananda on 3.6 · Osho Vol. 3, Discourse 3"
@@ -4701,6 +5149,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds in this sūtra an important corrective to a common misreading: one might think that the 'real' yoga is yama-niyama-āsana, with meditation as a kind of extra. The reverse is true. The first five are the porch; the inner three are the temple. But — and this is the corrective in the corrective — without the porch you cannot enter the temple. The inner is supported by the outer; the outer is fulfilled in the inner."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: inner in relation to the first five limbs, as SK 33 calls buddhi, ahaṃkāra and manas the ‘inner organ’ against the ten outer senses. Veda: Kaṭha Up. 1.3.10 — ‘beyond the senses are the objects, beyond the objects the mind, beyond the mind the intellect.’ Meaning: the practice moves further in."
       }
     ],
     "cross_ref": "Bryant pp. 329–332 · Stoler Miller pp. 68–69 · Satchidananda pp. 417–420 · Tigunait on inner vs. outer aṅgas · Leggett · Prabhavananda pp. 298–300 · Satyananda on 3.7 · Osho Vol. 3, Discourse 4"
@@ -4736,6 +5188,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the implication: the very deepest concentration that involves an object is still preliminary to the absolute. Nirbīja samādhi is qualitatively different — it is not a more concentrated version of object-meditation but its surpassing. This frames everything in Pāda 3 (including all the siddhis to come): saṃyama is a powerful instrument, but it is not the goal. The goal lies beyond all instrumentality."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: even saṃyama is ‘outer’ to the seedless state — SK 65: puruṣa looks on but does not take part. Veda: Muṇḍaka Up. 1.1.4–5 — the lower knowledge includes even the Vedas; the higher grasps the imperishable. Meaning: the method is not the goal."
       }
     ],
     "cross_ref": "Bryant pp. 332–335 · Stoler Miller p. 69 · Satchidananda pp. 420–423 · Tigunait on the relativity of 'inner' · Leggett · Prabhavananda pp. 300–302 · Satyananda on 3.8 · Osho Vol. 3, Discourse 4"
@@ -4795,6 +5251,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds this analytical: yoga does not say 'stop thinking' and leave it at that. It explains, in technical terms, how the cessation actually happens. Each instant of practice deposits a saṃskāra of restraint; each such saṃskāra weakens an outgoing one. Over time, the balance shifts. The mind that was once predominantly outgoing becomes predominantly inward — not by force, but by the steady accumulation of nirodha-impressions. This is the engineering of mental change."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 67 — saṃskāras of restraint gradually replace the old impetus of the wheel. Veda: Kaṭha Up. 2.3.11 — yoga ‘comes and goes (prabhavāpyayau)’; restraint must itself become a habit. Meaning: stillness is built moment by moment."
       }
     ],
     "cross_ref": "Bryant pp. 335–344 (extended on the three pariṇāmas) · Stoler Miller p. 69 · Satchidananda pp. 423–429 · Tigunait on saṃskāra dynamics · Bryant on the Sāṃkhya theory of change · Leggett · Prabhavananda pp. 302–306 · Satyananda on 3.9 · Osho Vol. 3, Discourse 5"
@@ -4830,6 +5290,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as one of the most encouraging sūtras for the long-term practitioner: the time will come when the practice carries itself. The struggle of holding the mind, which is so prominent at the beginning, gradually gives way to a calm flow that does not need to be willed. This is not laziness or losing focus — it is the maturation of the saṃskāra-base. The yogi who has reached this stage often describes meditation as 'just sitting,' with all the technical effort having become invisible."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: a calm flow arising from saṃskāra — prakṛti now serving release (SK 56). Veda: Chāndogya Up. 7.26.2 — ‘with firm memory, all knots are released.’ Meaning: what began as effort becomes the mind’s natural current."
       }
     ],
     "cross_ref": "Bryant pp. 344–346 · Stoler Miller p. 69 · Satchidananda pp. 429–431 · Tigunait on praśānta-vāhitā · Leggett · Prabhavananda pp. 306–308 · Satyananda on 3.10 · Osho Vol. 3, Discourse 5"
@@ -4873,6 +5337,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains: most minds are sarvārtha — directed at many objects at once. This is not a defect to be overcome by violence; it is a mode that can be supplemented and gradually overtaken by ekāgratā. The yogi cultivates one-pointedness in meditation; this cultivation deposits saṃskāras of one-pointedness; over time these become strong enough to take over the citta's mode even outside formal practice. The change is in the dominant tendency, not in a single switching of states."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: rajas gives way to sattva (SK 13). Veda: Kaṭha Up. 1.3.12 — the Self is seen by a one-pointed (agryā) intellect. Meaning: scattering decreases as focus increases."
       }
     ],
     "cross_ref": "Bryant pp. 346–350 · Stoler Miller p. 70 · Satchidananda pp. 431–434 · Tigunait on samādhi-pariṇāma · Leggett · Prabhavananda pp. 308–310 · Satyananda on 3.11 · Osho Vol. 3, Discourse 6"
@@ -4920,6 +5388,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds this analysis remarkable: even when the meditator seems to be holding 'one' object continuously, what is actually happening is a succession of momentary cognitions — only, in fully developed ekāgratā, each cognition has the same content as the last. The flow looks continuous from outside, but inside it is granular. This precision matters because it shows that ekāgratā is not a frozen state but a dynamic one — the citta is still alive, still cognizing, but cognizing the same thing repeatedly without variation."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the same pratyaya arising and passing in sequence — buddhi like a steady lamp (SK 13, 36). Veda: Gītā 6.19 — the lamp in a windless place. Meaning: one-pointedness is when each moment repeats the last."
       }
     ],
     "cross_ref": "Bryant pp. 350–354 · Stoler Miller p. 70 · Satchidananda pp. 434–437 · Tigunait on ekāgratā-pariṇāma · Bryant on the moment-to-moment analysis · Leggett · Prabhavananda pp. 310–312 · Satyananda on 3.12 · Osho Vol. 3, Discourse 6"
@@ -4971,6 +5443,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda dwells on the breadth of this analysis: it is one of the most philosophically significant moments in the text. Yoga proposes a general theory of change that covers both inner and outer worlds. The point is not idle metaphysics; it is that the practitioner who understands this is no longer mystified by change — neither their own (the citta's transformations) nor that of the world (the elements' transformations). All change reduces to the same threefold structure."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 9 (satkārya) and SK 16 (the guṇas change ‘like water’ into many forms) — change is transformation of what already exists. Veda: Chāndogya Up. 6.1.4–6 — clay, copper and iron: one substance, many forms that are ‘only names’. Meaning: things don’t appear from nowhere; they change form."
       }
     ],
     "cross_ref": "Bryant pp. 354–363 · Stoler Miller pp. 70–71 · Satchidananda pp. 437–443 · Tigunait on the three pariṇāmas extended · Bryant on Sāṃkhya theory of pariṇāma · Leggett · Prabhavananda pp. 312–316 · Satyananda on 3.13 · Osho Vol. 3, Discourse 7"
@@ -5014,6 +5490,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains the practical importance for the meditator: the citta is the dharmī; the vṛttis are its dharmas. The vṛttis come and go; the citta persists. But the citta itself is not the Self — it too is dharmī to a yet deeper dharmī (in the Sāṃkhya analysis, ultimately back to prakṛti). The Self alone is beyond the dharmin-dharma relation, because it is not a substance with attributes but pure consciousness witnessing the play of dharmins and dharmas."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the dharmin that persists through past, present and future is SK 9’s cause in which the effect pre-exists. Veda: Chāndogya Up. 6.2.2 — ‘how could being come from non-being?’; 6.1.4 — clay is the reality. Meaning: the substance stays while its forms come and go."
       }
     ],
     "cross_ref": "Bryant pp. 363–369 · Stoler Miller p. 71 · Satchidananda pp. 443–446 · Tigunait on dharmī/dharma · Bryant on substance-attribute metaphysics · Leggett · Prabhavananda pp. 316–319 · Satyananda on 3.14 · Osho Vol. 3, Discourse 7"
@@ -5053,6 +5533,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as Yoga's strict causal principle: nothing happens by accident. The world is sequence; sequence is cause; cause is open to investigation. This is what makes saṃyama a real instrument of knowledge rather than a mystical guess: when directed at the krama of an object, it reveals what the krama actually is, and hence why the object is as it is. The siddhis to come are not magic but lawful consequences of correctly applied investigation."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: different sequences give different results — SK 16’s water changing differently in different containers. Veda: Chāndogya Up. 6.3–4 — three deities combined in different proportions make the world’s variety. Meaning: order of change explains difference."
       }
     ],
     "cross_ref": "Bryant pp. 369–373 · Stoler Miller p. 71 · Satchidananda pp. 446–449 · Tigunait on krama · Bryant on Sāṃkhya causality · Leggett · Prabhavananda pp. 319–322 · Satyananda on 3.15 · Osho Vol. 3, Discourse 8"
@@ -5096,6 +5580,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is careful: this is not crystal-ball gazing. It is a precise consequence of the metaphysics just laid out. If everything changes in the threefold mode, and if saṃyama reveals an object's actual workings, then saṃyama on the transformations reveals what they have been and will be. He notes that the description is restrained — there is no claim that the yogi sees the future of arbitrary events independent of their objects; rather, saṃyama on a specific object reveals its specific past and future."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: past and future exist in the cause (SK 9), so they can be known. Veda: Īśa Up. 8 — the Self ‘disposed all things rightly through endless years’; Ṛgveda 10.129 asks what existed before creation. Meaning: knowing the pattern of change opens past and future."
       }
     ],
     "cross_ref": "Bryant pp. 373–379 · Stoler Miller pp. 71–72 · Satchidananda pp. 449–453 · Tigunait on the first siddhi · Bryant comparing with Buddhist abhijñā · Leggett · Prabhavananda pp. 322–325 · Satyananda on 3.16 · Osho Vol. 3, Discourse 8"
@@ -5167,6 +5655,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as a striking insight into perception: most of what we 'hear' is not the sound itself but a fusion of sound, meaning, and idea. The animal sounds we cannot interpret are precisely those for which our auto-fusion does not have a template. The yogi who separates the three factors can perceive any sound directly, without the imposed framework, and so 'understands' it in the precise sense of grasping what it actually conveys."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: vikalpa (1.9) undone — word, meaning and idea pulled apart. Veda: Ṛgveda 1.164.45 — ‘speech is measured in four parts; three are hidden in secret, men speak the fourth’; Ṛgveda 10.71.4 — ‘one who sees has not seen speech.’ Meaning: the seers knew speech had layers the ordinary listener misses."
       }
     ],
     "cross_ref": "Bryant pp. 379–384 · Stoler Miller p. 72 · Satchidananda pp. 453–457 · Tigunait on the sound-siddhi · Bryant on the philosophy of language here · Leggett · Prabhavananda pp. 325–328 · Satyananda on 3.17 · Osho Vol. 3, Discourse 9"
@@ -5206,6 +5698,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda discusses this carefully: the past does not disappear; it is stored in the citta as saṃskāra. Most of these are inaccessible to ordinary recollection, but they are not destroyed. Saṃyama, properly directed, can illuminate them. The yogi sees their content and, with it, the experiences that produced them — which may extend back into existences before the present body. He notes that the doctrine of rebirth is not asserted here as a creed but as a consequence of the saṃskāra theory: if saṃskāras outlast experiences, and if the citta outlasts the body, the consequence follows."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 40 — the subtle body carries saṃskāras from birth to birth. Veda: Bṛhadāraṇyaka Up. 4.4.2 — at death, ‘knowledge, deeds and past experience take hold of him.’ Meaning: the past lives that matter are stored in the present mind."
       }
     ],
     "cross_ref": "Bryant pp. 384–389 · Stoler Miller p. 72 · Satchidananda pp. 457–460 · Tigunait on saṃskāra-sākṣātkāra · Leggett · Prabhavananda pp. 328–331 · Satyananda on 3.18 · Osho Vol. 3, Discourse 9"
@@ -5241,6 +5737,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this in the standard way: minds are not opaque to those who have trained their perception. The cognitions of others leave subtle signs — in expression, in bearing, in the felt atmosphere — that the trained yogi reads as readily as we read writing. He notes that more developed yogis dispense even with these external cues, reading the citta directly through saṃyama. The siddhi is presented matter-of-factly, as a consequence of trained attention."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: other minds are buddhis like one’s own (SK 18: many, alike in kind). Veda: Īśa Up. 6 — seeing all beings in the Self. Meaning: the same stuff of mind can be read in others."
       }
     ],
     "cross_ref": "Bryant pp. 389–392 · Stoler Miller p. 72 · Satchidananda pp. 460–463 · Tigunait on para-citta-jñāna · Leggett · Prabhavananda pp. 331–333 · Satyananda on 3.19 · Osho Vol. 3, Discourse 10"
@@ -5284,6 +5784,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds in this sūtra a striking honesty: yoga does not claim more than its methods deliver. The yogi who has performed saṃyama on another's cognition knows the cognition. To know its object, another saṃyama is needed. This restraint distinguishes Yoga from inflated claims; each siddhi is matched precisely to its method."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: one knows another’s state of mind, but not its object. Veda: Kena Up. 1.5–6 — what the mind cannot think, but by which the mind is thought. Meaning: knowing a thought is not knowing its support."
       }
     ],
     "cross_ref": "Bryant pp. 392–395 · Stoler Miller pp. 72–73 · Satchidananda pp. 463–466 · Tigunait on the limitation · Bryant on the philosophical precision · Leggett · Prabhavananda pp. 333–335 · Satyananda on 3.20 · Osho Vol. 3, Discourse 10"
@@ -5347,6 +5851,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda neither dismisses nor sensationalizes this. He treats it as a consequence of the analysis: perception involves both the perceiver and the perceived in a specific relational structure. Disrupt the structure and the perception fails. Yogic tradition reports such phenomena; modern readers may regard them as they choose. The point for practice is not the spectacle but the principle — that perception is constructed, and what is constructed can in principle be unconstructed."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 7 lists the causes of non-perception — invisibility is one of them, produced deliberately. Veda: Kaṭha Up. 1.3.12 — the Self ‘hidden in all beings does not shine forth’. Meaning: being seen depends on the meeting of light and eye."
       }
     ],
     "cross_ref": "Bryant pp. 395–401 · Stoler Miller p. 73 · Satchidananda pp. 466–471 · Tigunait on the invisibility-siddhi · Bryant on the mechanism · Leggett · Prabhavananda pp. 335–338 · Satyananda on 3.21 · Osho Vol. 3, Discourse 11"
@@ -5406,6 +5914,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this with the same restraint: the time of one's death is, in this analysis, not arbitrary but the working-out of specific karma. The yogi who can examine the karmic structure of their own life can read off its term. He notes that this knowledge is presented neutrally — neither as a power to be cultivated for its own sake nor as something to fear. It is one item in the catalogue, not the heart of the practice."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 67 — karma already in motion runs out like the potter’s wheel; karma not yet started can be read. Veda: Chāndogya Up. 6.14.2 — ‘the delay is only until I am released; then I shall reach home.’ Meaning: the timing of karma can be known."
       }
     ],
     "cross_ref": "Bryant pp. 401–407 · Stoler Miller p. 73 · Satchidananda pp. 471–475 · Tigunait on karma types and ariṣṭas · Bryant on this in Yoga karma theory · Leggett · Prabhavananda pp. 338–341 · Satyananda on 3.22 · Osho Vol. 3, Discourse 11"
@@ -5433,6 +5945,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is drawn to this sūtra: the most useful 'powers' the yogi develops are not exotic but precisely these — the established strengths of kindness, compassion, sympathetic joy, and equanimity. Anyone who has met a person in whom one of these is unshakable knows the power of it. Saṃyama on these attitudes is what produces them in their established, unwavering form."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: friendliness and the rest (1.33) are sattvic dispositions (SK 23). Veda: Bṛhadāraṇyaka Up. 5.2 — ‘da: be compassionate’. Meaning: what one meditates on becomes one’s strength."
       }
     ],
     "cross_ref": "Bryant pp. 407–410 · Stoler Miller p. 74 · Satchidananda pp. 475–478 · Tigunait on the four bala-siddhis · Leggett · Prabhavananda pp. 341–343 · Satyananda on 3.23 · Osho Vol. 3, Discourse 12"
@@ -5468,6 +5984,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this with measured neutrality. He notes that the tradition makes these claims; modern readers may regard them more or less literally. The principle, however, is interesting: certain kinds of strength have specific characteristics, and saṃyama on those characteristics can — at least in tradition — produce them. The siddhi is presented as one application among many of the general method."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the gross elements (SK 38) are shaped by the subtle. Veda: Atharvaveda 19.60 prays for strength in the arms, force in the thighs and firmness in the feet. Meaning: strength itself becomes an object of practice."
       }
     ],
     "cross_ref": "Bryant pp. 410–413 · Stoler Miller p. 74 · Satchidananda pp. 478–481 · Tigunait on the strength-siddhis · Leggett · Prabhavananda pp. 343–345 · Satyananda on 3.24 · Osho Vol. 3, Discourse 12"
@@ -5515,6 +6035,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda describes this as the further development of jyotiṣmatī. The inner luminosity, once stabilized, can be directed; what it illuminates becomes known. Modern readers may compare this with reports of remote viewing and similar phenomena in other traditions. He emphasizes that the description in the Sūtras is sober: the capacity is presented as a consequence of practice, not as an end in itself."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 7 — things are unseen through subtlety, obstruction or distance; this power overcomes exactly those. Veda: Kaṭha Up. 1.3.12 — seen by ‘subtle seers’. Meaning: the Kārikā’s list of reasons for not seeing becomes a list of things to overcome."
       }
     ],
     "cross_ref": "Bryant pp. 413–417 · Stoler Miller p. 74 · Satchidananda pp. 481–485 · Tigunait on the inner-light siddhi · Leggett · Prabhavananda pp. 345–348 · Satyananda on 3.25 · Osho Vol. 3, Discourse 13"
@@ -5550,6 +6074,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats the cosmological detail as tradition-specific; the underlying principle is that the yogi's investigation can extend to the structure of the cosmos as the tradition conceived it. Whether or not one accepts the Purāṇic geography, the principle of saṃyama on a structurally central object yielding knowledge of the structures organized around it is general."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 53–54 describe the realms — divine, human, animal. Veda: Gāyatrī (Ṛgveda 3.62.10) — meditation on Savitṛ, the sun; Chāndogya Up. 3.1 — the sun as the honey of the gods. Meaning: the Vedic sun-meditation becomes a doorway to the worlds."
       }
     ],
     "cross_ref": "Bryant pp. 417–423 · Stoler Miller pp. 74–75 · Satchidananda pp. 485–489 · Tigunait on cosmic regions · Bryant on Purāṇic cosmology · Leggett · Prabhavananda pp. 348–351 · Satyananda on 3.26 · Osho Vol. 3, Discourse 13"
@@ -5585,6 +6113,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda walks through these celestial sūtras as a series showing how saṃyama applies systematically to different astronomical objects. The brevity of the sūtras is itself a pedagogical point: once the method is grasped (in 3.16 and the analyses preceding it), each application is a matter of selecting the right object for the desired knowledge."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: cosmic order, part of the manifest (SK 10). Veda: Ṛgveda 10.85 links the moon to Soma and the nakṣatras. Meaning: the Vedic sky-map becomes an object of meditation."
       }
     ],
     "cross_ref": "Bryant pp. 423–425 · Stoler Miller p. 75 · Satchidananda pp. 489–491 · Tigunait · Leggett · Prabhavananda pp. 351–352 · Satyananda on 3.27 · Osho Vol. 3, Discourse 14"
@@ -5620,6 +6152,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda notes the careful structure: the celestial sūtras pair static knowledge (arrangement) with dynamic knowledge (motion). The yogi who has performed both saṃyamas knows the heavens both in form and in change. This is, in effect, traditional astronomy seen through the lens of yogic method."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the pole star (dhruva) as the fixed point among moving things. Veda: Kaṭha Up. 2.1.2 — the wise do not seek the fixed (dhruvam) among the unfixed. Meaning: the steady star is a picture of the steady Self."
       }
     ],
     "cross_ref": "Bryant pp. 425–428 · Stoler Miller p. 75 · Satchidananda pp. 491–493 · Tigunait · Leggett · Prabhavananda pp. 352–354 · Satyananda on 3.28 · Osho Vol. 3, Discourse 14"
@@ -5659,6 +6195,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as the body-systems analogue of the celestial sūtras: a central node yields the structure organized around it, whether on the cosmic scale or the somatic scale. The yogi who has performed saṃyama on the navel cakra has a felt-knowledge of the body's structure that ordinary anatomical study cannot duplicate, because it is available from within."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the arrangement of the body (SK 39 — the gross body born of parents). Veda: Atharvaveda 10.2.31 — ‘the city of the gods with eight wheels and nine gates’. Meaning: the Atharvaveda already mapped the body as a city with centres."
       }
     ],
     "cross_ref": "Bryant pp. 428–431 · Stoler Miller p. 75 · Satchidananda pp. 493–495 · Tigunait on the navel cakra · Bryant on cakras in the Sūtras · Leggett · Prabhavananda pp. 354–356 · Satyananda on 3.29 · Osho Vol. 3, Discourse 15"
@@ -5698,6 +6238,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this neutrally: the tradition reports that adept yogis can suspend hunger and thirst at will, sometimes for very long periods. Whether or not one accepts the specific localization, the underlying principle — that bodily drives have specific subtle correlates and these can be addressed by trained attention — is consistent with the rest of the analysis. He emphasizes that this is not advised as a casual practice but is part of advanced ascetic discipline."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: hunger and thirst belong to the body and prāṇas (SK 29). Veda: Chāndogya Up. 8.7.1 — the Self is ‘without hunger, without thirst’; Bṛhadāraṇyaka Up. 3.5.1 — the Self is beyond hunger and thirst. Meaning: the throat-centre touches what the Self already is."
       }
     ],
     "cross_ref": "Bryant pp. 431–434 · Stoler Miller p. 75 · Satchidananda pp. 495–497 · Tigunait on the throat-hollow practice · Leggett · Prabhavananda pp. 356–357 · Satyananda on 3.30 · Osho Vol. 3, Discourse 15"
@@ -5729,6 +6273,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats these channel-sūtras as part of yoga's traditional subtle anatomy. The named channels and centres are precise loci on which saṃyama has predictable effects. He notes that this is presented as practical knowledge for the advanced practitioner, not as theoretical anatomy; the meaning of the names becomes evident in the doing."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: steadiness from settling rajas (SK 13). Veda: Gītā 2.58 — like a tortoise drawing in its limbs, the wise one draws in the senses. Meaning: the tortoise image recurs because stillness is drawn inward."
       }
     ],
     "cross_ref": "Bryant pp. 434–436 · Stoler Miller pp. 75–76 · Satchidananda pp. 497–499 · Tigunait on kūrma-nāḍī · Leggett · Prabhavananda pp. 357–359 · Satyananda on 3.31 · Osho Vol. 3, Discourse 16"
@@ -5764,6 +6312,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as the perceptual analogue of the bhuvana-jñāna (3.26): just as saṃyama on the sun reveals the cosmic regions, saṃyama on the crown-light reveals their inhabitants. The two together would give a complete picture of the subtle cosmology. He notes that the siddhas are traditional figures in yogic and tantric literature — perfected beings whose existence the yogi can directly verify."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: light at the crown is sattvic radiance (SK 13). Veda: Kaṭha Up. 2.3.16 and Chāndogya Up. 8.6.6 — one hundred and one channels of the heart; one rises to the crown, and going up through it one reaches immortality. Meaning: the Upaniṣads’ upward channel becomes a point of meditation."
       }
     ],
     "cross_ref": "Bryant pp. 436–439 · Stoler Miller p. 76 · Satchidananda pp. 499–502 · Tigunait on mūrdha-jyotis · Leggett · Prabhavananda pp. 359–361 · Satyananda on 3.32 · Osho Vol. 3, Discourse 16"
@@ -5795,6 +6347,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the qualitative shift: the earlier siddhis are exercises of method; prātibha is a faculty that, once developed, operates more like a natural sense than a technique. The yogi with established prātibha simply 'sees,' without performing a specific saṃyama. He notes that this is a stage approached by long practice, not by shortcut."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: prātibha, intuitive flash, is the sattvic peak of buddhi (SK 23: knowledge). Veda: Kena Up. 4.4 — Brahman ‘is like the lightning that flashes, like the blink of an eye.’ Meaning: knowledge can arrive all at once."
       }
     ],
     "cross_ref": "Bryant pp. 439–443 · Stoler Miller p. 76 · Satchidananda pp. 502–505 · Tigunait on prātibha · Bryant on intuition in Yoga · Leggett · Prabhavananda pp. 361–363 · Satyananda on 3.33 · Osho Vol. 3, Discourse 17"
@@ -5826,6 +6382,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as one of the most important sūtras for practice: the yogi must come to know the citta directly, not merely conceptually. Saṃyama on the heart yields exactly this. The heart-centred meditation is a venerable practice across traditions; here it is given a precise technical role in the architecture of self-knowledge."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the heart as the seat of buddhi. Veda: Chāndogya Up. 8.1.1 — ‘in this city of Brahman is a small lotus, a dwelling; within it a small space’; Atharvaveda 10.8.43 — ‘the lotus with nine gates, covered by three guṇas’, the earliest mention of three guṇas. Meaning: the Veda puts the Self in the heart; the yogi looks there."
       }
     ],
     "cross_ref": "Bryant pp. 443–447 · Stoler Miller p. 76 · Satchidananda pp. 505–509 · Tigunait on heart-meditation · Leggett · Prabhavananda pp. 363–366 · Satyananda on 3.34 · Osho Vol. 3, Discourse 17"
@@ -5893,6 +6453,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as the most important siddhi-sūtra: the others were exercises of method; this one is the actual point of yoga. To know the puruṣa is to be liberated. The technical analysis is precise: experience involves a confused fusion of sattva and puruṣa, which fusion is the very meaning of saṃsāra (cf. 2.17). Saṃyama on the puruṣa as end-in-itself separates what was fused; the puruṣa is known as it is. Everything before this was preparation; this is the doing."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 20 and 37 — experience is failing to tell buddhi (sattva) from puruṣa. Veda: Kaṭha Up. 2.3.7 — ‘beyond the mind is sattva; beyond sattva the great self’; Ṛgveda 1.164.20 — one bird eats, the other watches. Meaning: experience is the confusion of the two birds."
       }
     ],
     "cross_ref": "Bryant pp. 447–456 (extended) · Stoler Miller pp. 76–77 · Satchidananda pp. 509–515 · Tigunait on the supreme saṃyama · Bryant on this as the turning point of Pāda 3 · Leggett · Prabhavananda pp. 366–370 · Satyananda on 3.35 · Osho Vol. 3, Discourse 18"
@@ -5944,6 +6508,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda notes the by-product character: when the citta becomes deeply purified by the highest saṃyama, the senses themselves take on a refined operation. The yogi perceives more, more subtly, in every modality. This is reported across mystical traditions: deep contemplation produces heightened perception as a side-effect. The yogi notices it; the warning of the next sūtra applies."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: subtle senses work on the tanmātras (SK 38). Veda: Śvetāśvatara Up. 3.19 — ‘without hands or feet it moves and grasps; without eyes it sees, without ears it hears.’ Meaning: perception without the usual instruments."
       }
     ],
     "cross_ref": "Bryant pp. 456–460 · Stoler Miller p. 77 · Satchidananda pp. 515–518 · Tigunait on these byproduct-siddhis · Leggett · Prabhavananda pp. 370–372 · Satyananda on 3.36 · Osho Vol. 3, Discourse 18"
@@ -5983,6 +6551,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is emphatic about this sūtra: the siddhis are dangerous precisely because they are real. The yogi who attains one is tempted to identify with it, to display it, to wield it — and this very temptation is the rāga that pulls the citta out of nirodha. He counsels that the genuine seeker should regard each arising siddhi as one would regard a beautiful but distracting view from the path: notice, acknowledge, and keep walking. To stop here is to lose the goal for the sake of a detour."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 50–51 — even perfections can become a resting place. Veda: Kaṭha Up. 1.2.1–2 — the pleasant (preyas) blocks the good (śreyas). Meaning: powers are achievements outwardly and obstacles inwardly."
       }
     ],
     "cross_ref": "Bryant pp. 460–465 · Stoler Miller p. 77 · Satchidananda pp. 518–522 · Tigunait on siddhis as obstacles · Bryant on Patañjali's critique of siddhi-seeking · Leggett · Prabhavananda pp. 372–376 · Satyananda on 3.37 · Osho Vol. 3, Discourse 19"
@@ -6042,6 +6614,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this with neutrality: the tradition reports body-entry as a yogic capacity; modern readers may regard the reports as they will. The principle is consistent with the broader analysis — the citta is bound to its body by causes; loosen the causes and the binding loosens. Whether one accepts the literal claim or reads it as a high metaphor, the principle of binding-by-cause-rather-than-by-substance is significant for the practitioner's self-understanding."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 40–41 — the subtle body needs a support and can move between bodies. Veda: Bṛhadāraṇyaka Up. 4.4.3 — like a caterpillar crossing from one blade to another, the self moves to a new body. Meaning: what moves at death can be moved in life."
       }
     ],
     "cross_ref": "Bryant pp. 465–470 · Stoler Miller pp. 77–78 · Satchidananda pp. 522–526 · Tigunait on para-śarīra-āveśa · Bryant on traditional accounts · Leggett · Prabhavananda pp. 376–379 · Satyananda on 3.38 · Osho Vol. 3, Discourse 19"
@@ -6093,6 +6669,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats these vāyu-siddhis as the next group: each of the five vāyus, when mastered, confers its specific powers. Udāna and its mastery is discussed first. He notes that the final ascent (utkrānti) — the conscious exit from the body — is among the most prized of yogic attainments, since it determines the conditions of further existence. The yogi who can leave the body in full consciousness escapes the confusion of ordinary death."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: udāna is one of SK 29’s five breaths. Veda: Praśna Up. 3.7 — ‘through one channel, udāna rising leads to the good world by merit’; Kaṭha Up. 2.3.16 — the channel to the crown. Meaning: Yoga takes the Upaniṣad’s up-breath and masters it."
       }
     ],
     "cross_ref": "Bryant pp. 470–474 · Stoler Miller p. 78 · Satchidananda pp. 526–530 · Tigunait on udāna and the vāyus · Leggett · Prabhavananda pp. 379–382 · Satyananda on 3.39 · Osho Vol. 3, Discourse 20"
@@ -6124,6 +6704,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda continues with the vāyu-mastery series: each prāṇa under control yields its specific manifest sign. The jvalana of mastered samāna is reported in many traditional accounts of advanced yogis — a visible luminosity around the body. The principle is consistent: mastery of a subtle force shows in the gross."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: samāna, the central breath (SK 29). Veda: Praśna Up. 3.5 — ‘samāna is in the middle; it evens out what is offered as food; from it rise the seven flames.’ Meaning: mastering samāna brings out the seven flames."
       }
     ],
     "cross_ref": "Bryant pp. 474–477 · Stoler Miller p. 78 · Satchidananda pp. 530–532 · Tigunait on samāna-jaya · Leggett · Prabhavananda pp. 382–384 · Satyananda on 3.40 · Osho Vol. 3, Discourse 20"
@@ -6167,6 +6751,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains the structure: each of the next several sūtras describes a supersensory version of an ordinary capacity, achieved by saṃyama on the corresponding relation. Divine hearing, divine sight (3.41 ff.), divine touch — each is the unbinding of a sense from its ordinary physical limits, achieved by understanding and acting on the underlying relation between sense and medium."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: hearing arises from the sound-tanmātra, whose gross form is space (SK 38). Veda: Taittirīya Up. 2.1 — ‘from the Self arose space (ākāśa)’; Kena Up. 1.2 — ‘the ear of the ear’. Meaning: hearing and space share a root."
       }
     ],
     "cross_ref": "Bryant pp. 477–480 · Stoler Miller p. 78 · Satchidananda pp. 532–534 · Tigunait on divya śrotra · Leggett · Prabhavananda pp. 384–386 · Satyananda on 3.41 · Osho Vol. 3, Discourse 21"
@@ -6222,6 +6810,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as another of the body-relation siddhis. The principle: the body's normal heaviness is a function of a relation (with space, gravitationally) that can be modified by trained attention. Combined with the identification-technique (samāpatti) on a light object, the body acquires lightness. He notes that traditional accounts of levitation are common across mystical traditions; whatever one makes of them, the underlying principle is consistent."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the body made light by bringing it close to space (SK 38). Veda: Ṛgveda 10.136.4 — the long-haired muni ‘flies through the mid-air’; 10.136.2 — ‘the wind-girdled sages’. Meaning: the Ṛgveda’s earliest image of the ascetic is one who travels the air."
       }
     ],
     "cross_ref": "Bryant pp. 480–484 · Stoler Miller pp. 78–79 · Satchidananda pp. 534–537 · Tigunait on ākāśa-gamana · Leggett · Prabhavananda pp. 386–388 · Satyananda on 3.42 · Osho Vol. 3, Discourse 21"
@@ -6273,6 +6865,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda is careful: imagined out-of-body experience is one thing; the actual capacity of the citta to operate independently of the body is another, and far more advanced. The mahā-videhā is the latter. The sign of having attained it is the dissolution of the prakāśa-āvaraṇa — the covering over the inner light. This is the highest of the citta-related siddhis short of liberation itself."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: buddhi working outside the body loosens SK 39–41’s dependence on a support. Veda: Bṛhadāraṇyaka Up. 4.3.12 — in dream the immortal one ‘goes wherever he pleases’. Meaning: consciousness is not fenced in by the body."
       }
     ],
     "cross_ref": "Bryant pp. 484–489 · Stoler Miller p. 79 · Satchidananda pp. 537–541 · Tigunait on mahā-videhā · Bryant on actual vs. imagined · Leggett · Prabhavananda pp. 388–391 · Satyananda on 3.43 · Osho Vol. 3, Discourse 22"
@@ -6324,6 +6920,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains the comprehensive structure of the saṃyama. To master an element, one must penetrate it at every level — its gross appearance, its essential nature, its subtle source, its substrate of guṇas, and its purpose. Saṃyama across all five yields complete mastery of the element. The yogi who has done this can act on matter in ways ordinarily impossible. The next sūtra describes the powers that follow."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: gross, essence, subtle (tanmātra), pervasion (guṇa) and purpose — SK 38 and 12–13 read as five layers of each element. Veda: Taittirīya Up. 2.1 — space, air, fire, water, earth arising in order; Śvetāśvatara Up. 2.12 — ‘when the fivefold quality of yoga arises from earth, water, fire, air and space…’ Meaning: the elements are known from the inside."
       }
     ],
     "cross_ref": "Bryant pp. 489–495 · Stoler Miller p. 79 · Satchidananda pp. 541–546 · Tigunait on the five aspects · Bryant on the elemental saṃyama · Leggett · Prabhavananda pp. 391–395 · Satyananda on 3.44 · Osho Vol. 3, Discourse 22"
@@ -6375,6 +6975,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda recounts the traditional eight mahā-siddhis matter-of-factly. He notes that these are precisely the powers the popular imagination associates with yoga; they are real items in the tradition, but they are placed here, deep in Pāda 3, after a long preparation, and they are subject to the warning of 3.37. The yogi who acquires them and stops to enjoy them has lost the path; the yogi who acquires them and continues without attachment is doing what Patañjali intends."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: the eight siddhis are power (aiśvarya), a sattvic form of buddhi (SK 23); SK 45 — ‘from power comes non-obstruction’. Veda: Śvetāśvatara Up. 2.12 — ‘no sickness, no ageing, no death for one with a body of yoga’s fire.’ Meaning: the Kārikā’s ‘non-obstruction’ is exactly the result listed here."
       }
     ],
     "cross_ref": "Bryant pp. 495–504 (extensive treatment of the mahā-siddhis) · Stoler Miller pp. 79–80 · Satchidananda pp. 546–554 · Tigunait on the eight powers · Bryant comparing with traditional lists · Leggett · Prabhavananda pp. 395–400 · Satyananda on 3.45 · Osho Vol. 3, Discourse 23"
@@ -6414,6 +7018,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as a concrete description of the yogi's body at the highest stage of bhūta-jaya. He notes that traditional descriptions of advanced yogis frequently mention these features. The body is, in the strict sense, transformed by the inner work; the four features of kāya-sampat are the visible signs."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: a perfected gross body (SK 39). Veda: Śvetāśvatara Up. 2.13 — ‘lightness, health, steadiness, clear complexion, a pleasant voice, a sweet smell’. Meaning: the Upaniṣad describes the same body."
       }
     ],
     "cross_ref": "Bryant pp. 504–508 · Stoler Miller p. 80 · Satchidananda pp. 554–557 · Tigunait on kāya-sampat · Leggett · Prabhavananda pp. 400–403 · Satyananda on 3.46 · Osho Vol. 3, Discourse 23"
@@ -6465,6 +7073,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the symmetry: bhūta-jaya is mastery on the side of the objects; indriya-jaya is mastery on the side of the perceivers. Together they constitute complete mastery over the field of experience. The five-aspect analysis is the same; the application differs in target. Patañjali's method is rigorously consistent."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: grasping, essence, asmitā, pervasion and purpose — SK 24–27 trace the senses back to ahaṃkāra and the guṇas. Veda: Kaṭha Up. 2.3.6 — ‘knowing the separateness of the senses, the wise do not grieve.’ Meaning: senses are mastered by seeing what they are made of."
       }
     ],
     "cross_ref": "Bryant pp. 508–512 · Stoler Miller p. 80 · Satchidananda pp. 557–561 · Tigunait on indriya-jaya · Leggett · Prabhavananda pp. 403–406 · Satyananda on 3.47 · Osho Vol. 3, Discourse 24"
@@ -6512,6 +7124,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda notes the sequence: bhūta-jaya gives mastery over the elements; indriya-jaya gives mastery over the senses; the combination delivers mastery over pradhāna itself — the substrate from which both elements and senses ultimately derive. The yogi at this level is at the highest peak of mastery within prakṛti. Only the puruṣa-jñāna (3.35, 3.49) takes the yogi beyond."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: mastery of pradhāna — SK 11’s word for prakṛti. Veda: Śvetāśvatara Up. 1.10 — ‘pradhāna is perishable; the immortal imperishable is Hara’; 3.19 — moving without feet. Meaning: the yogi reaches the root of nature that Sāṃkhya names."
       }
     ],
     "cross_ref": "Bryant pp. 512–518 · Stoler Miller pp. 80–81 · Satchidananda pp. 561–565 · Tigunait on the three results · Bryant on pradhāna-jaya · Leggett · Prabhavananda pp. 406–410 · Satyananda on 3.48 · Osho Vol. 3, Discourse 24"
@@ -6567,6 +7183,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda points out the precision: of all the siddhis catalogued in this pāda, these two — universal sovereignty, universal knowledge — are the only ones that absolutely require viveka-khyāti. The other siddhis can be partial, can be acquired along the way; these two require the supreme discrimination. And here is the great irony: the yogi who has viveka-khyāti is precisely the yogi who no longer needs siddhis, since they are about to be liberated. Patañjali frames the highest powers as belonging to the one who has transcended interest in them."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 37 — only buddhi can discern the difference between pradhāna and puruṣa; SK 64 — and from that comes all-knowing. Veda: Muṇḍaka Up. 1.1.3 — ‘what is that, sir, by knowing which all this becomes known?’ Meaning: one distinction gives command of everything."
       }
     ],
     "cross_ref": "Bryant pp. 518–525 · Stoler Miller p. 81 · Satchidananda pp. 565–571 · Tigunait on the two highest siddhis · Bryant on the gating role of viveka-khyāti · Leggett · Prabhavananda pp. 410–414 · Satyananda on 3.49 · Osho Vol. 3, Discourse 25"
@@ -6614,6 +7234,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the magnitude: it is one thing to renounce wealth and pleasure; it is another to renounce universal sovereignty and total knowledge. The yogi who can let go of these is on the threshold of kaivalya. This is the ultimate test of vairāgya. Anything less is still saṃyoga, still bondage, however magnificent. Patañjali is uncompromising: the goal is not the highest siddhi but freedom from all dependence — including freedom from the siddhis themselves."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 66 — the seen ceases to interest the seer; SK 68 — kaivalya. Veda: Kaṭha Up. 1.1.27 — Naciketas: ‘man is not satisfied by wealth.’ Meaning: dispassion even toward omniscience leaves only freedom."
       }
     ],
     "cross_ref": "Bryant pp. 525–530 · Stoler Miller p. 81 · Satchidananda pp. 571–575 · Tigunait on supreme vairāgya · Bryant on the climax of Pāda 3 · Leggett · Prabhavananda pp. 414–417 · Satyananda on 3.50 · Osho Vol. 3, Discourse 25"
@@ -6665,6 +7289,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as the final psychological warning. The advanced yogi has overcome ordinary desires; the temptation that remains is the most refined kind: invitation to celestial pleasures, recognition by higher beings. To accept either at any level — to feel oneself flattered, to entertain the offer — is to fall back into prakṛti's play, even from this great height. The yogi must remain undisturbed. Pride, especially, is the kleśa that does not announce itself; it dresses as virtue. The yogi must be vigilant against it precisely at the moment of greatest spiritual attainment."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 50–51 — perfections are not the end. Veda: Kaṭha Up. 1.1.21–29 — Yama offers Naciketas celestial maidens, chariots and music; he says ‘keep them yourself.’ Kena Up. 3 — even the gods grew proud of their victory. Meaning: this sūtra is the Naciketas story as instruction."
       }
     ],
     "cross_ref": "Bryant pp. 530–535 · Stoler Miller p. 81 · Satchidananda pp. 575–579 · Tigunait on the final temptations · Bryant on celestial invitations · Leggett · Prabhavananda pp. 417–420 · Satyananda on 3.51 · Osho Vol. 3, Discourse 26"
@@ -6704,6 +7332,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda dwells on the metaphysical depth: time is not a continuous flow but a succession of momentary 'nows.' Each moment is complete in itself; the apparent flow is a mental construction. To penetrate this analytically is to be no longer fooled by the apparent solidity of duration — to see, instead, the moment-by-moment arising and ceasing of all phenomena. From this seeing, viveka-jñāna arises naturally."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: moment and sequence — SK 9’s change seen at its finest grain. Veda: Kena Up. 4.4 — ‘like the blink of an eye’. Meaning: seeing change at the level of the instant shows what never changes."
       }
     ],
     "cross_ref": "Bryant pp. 535–541 · Stoler Miller pp. 81–82 · Satchidananda pp. 579–583 · Tigunait on kṣaṇa and time · Bryant on Yoga's atomism of time · Leggett · Prabhavananda pp. 420–423 · Satyananda on 3.52 · Osho Vol. 3, Discourse 26"
@@ -6755,6 +7387,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as a demonstration of the supreme precision of viveka-jñāna. The knowledge born of discrimination penetrates to the unique moment-of-being of each thing, and so can distinguish what ordinary cognition must conflate. He notes that this is more than a curious power: it is the inverse of the avidyā-driven cognition that conflates puruṣa and prakṛti. Viveka discerns where conflation defaults to identity."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 37’s subtle distinction (sūkṣma antara) carried to the finest point. Veda: Kaṭha Up. 1.3.12 — ‘seen by the subtle seers with a subtle intellect.’ Meaning: discernment sharp enough to tell identical things apart."
       }
     ],
     "cross_ref": "Bryant pp. 541–545 · Stoler Miller p. 82 · Satchidananda pp. 583–587 · Tigunait on the distinguishing power · Bryant on uniqueness vs. universals · Leggett · Prabhavananda pp. 423–426 · Satyananda on 3.53 · Osho Vol. 3, Discourse 27"
@@ -6806,6 +7442,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda celebrates this sūtra as one of the great climactic passages of the text. The knowledge that liberates is not partial, not progressive, not piecemeal — it is total, immediate, all-encompassing. Once arisen, it does not subside; it changes the yogi's relation to everything. This is the goal that Pāda 1 introduced (1.2), that Pāda 2 mapped a path to (2.26), and that Pāda 3 has finally described in its full character."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 64 — complete, pure, errorless knowledge. Veda: Muṇḍaka Up. 1.1.9 — ‘he who is all-knowing, all-wise’. Meaning: discriminative knowledge is ‘the deliverer’ (tāraka) because it carries across."
       }
     ],
     "cross_ref": "Bryant pp. 545–550 · Stoler Miller p. 82 · Satchidananda pp. 587–591 · Tigunait on the four marks of viveka-jñāna · Bryant on tāraka jñāna · Leggett · Prabhavananda pp. 426–429 · Satyananda on 3.54 · Osho Vol. 3, Discourse 27"
@@ -6845,6 +7485,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda closes the pāda with this magnificent definition. Kaivalya is not the destruction of anything or the union with anything; it is the equalization of purity — sattva so clarified that it no longer interposes any quality of its own between the puruṣa and itself. At this point, the puruṣa is, finally, alone — kevala — not in any tragic sense but in the highest sense: undivided, unmixed, established in its own nature. Pāda 3 has now traced the path from the introduction of the inner triad (3.1–3.3) through saṃyama (3.4), the three pariṇāmas (3.9–3.15), the great catalogue of siddhis (3.16–3.48), the warning against siddhi-attachment (3.37, 3.50, 3.51), and the supreme discrimination (3.49, 3.52–3.54), culminating here in the final formula of liberation. Pāda 4 (Kaivalya Pāda) will draw out the metaphysical and practical consequences of this culmination."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 68 — kaivalya when prakṛti’s work is done; Yoga adds sattva’s purity equalling puruṣa’s. Veda: Muṇḍaka Up. 3.1.8 — the one of ‘purified sattva’ sees; Śvetāśvatara Up. 6.11 — ‘alone (kevala), without guṇas’. Meaning: when the mirror is perfectly clean, there is no more mistake about what is reflected."
       }
     ],
     "cross_ref": "Bryant pp. 550–556 (close of Pāda 3) · Stoler Miller pp. 82–83 · Satchidananda pp. 591–595 · Tigunait closing of Vibhūti Pāda · Bryant on the climactic definition · Leggett · Prabhavananda pp. 429–432 · Satyananda on 3.55 · Osho Vol. 3, Discourse 28 End of Pāda 3 — Vibhūti Pāda The Vibhūti Pāda has now traced the arc from the inner triad of dhāraṇā-dhyāna-samādhi (3.1–3.3), through the introduction of saṃyama as method (3.4–3.8), the analysis of the three pariṇāmas as the structure of change (3.9–3.15), the great catalogue of saṃyama-yielded powers (3.16–3.49), the supreme vairāgya that lets go even of these (3.50), the final warnings against subtle attachment and pride (3.51), and the four marks of the viveka-ja jñāna that finally liberates (3.52–3.54). The pāda has concluded with the formal definition of kaivalya: the equalization of the purity of sattva and puruṣa (3.55). Pāda 4 (Kaivalya Pāda) will unfold the metaphysical and practical consequences of this culmination — the nature of liberation, the question of multiple puruṣas, the dissolution of the guṇas in their relation to the liberated yogi, and the absolute aloneness of the puruṣa established in its own nature."
@@ -6888,6 +7532,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this opening sūtra as a sober diagnostic. Many people who display unusual powers did not get them through yoga; some are born with the residue of past practice, some discovered chemical means, some inherited mantric lineages, some practiced extreme austerity short of yoga proper. The honest yogi acknowledges all five sources without confusing them. Among the five, only samādhi-born siddhis arise as natural consequences of the path Patañjali has laid out; the others are independent phenomena that the yogi neither needs nor should pursue. The pāda opens here because the question 'what about these powers?' must be settled before the deeper question of liberation can be addressed cleanly."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 43 — dispositions are innate, natural or acquired; these five sources of power sort the same way. Veda: herbs and mantras are the Atharvaveda’s domain; tapas is the Upaniṣads’ (Taittirīya Up. 3.2); Ṛgveda 10.136 praises the muni with powers. Meaning: Yoga accepts all the Vedic sources of power, but ranks samādhi above the rest (4.6)."
       }
     ],
     "cross_ref": "Bryant pp. 397–407 · Stoler Miller pp. 85–86 · Satchidananda pp. 599–604 · Tigunait (Kaivalya Pāda volume) opening · Bryant on the five origins · Leggett on Śaṅkara's reading · Prabhavananda pp. 435–439 · Satyananda on 4.1 · Osho Vol. 4, Discourse 1"
@@ -6927,6 +7575,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as one of Yoga's most distinctive metaphysical claims. The change from one form of existence to another is not a special creation but the natural movement of prakṛti when its channels are open. The yogi's transformations — the perfected body, the supersensory capacities — are not external impositions but expressions of what prakṛti is already prepared to become, once the obstructions are removed. The mechanism is impersonal and lawful: clear the obstacles, and the appropriate manifestation flows in. The next sūtra makes this even more explicit."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 16 — prakṛti changes ‘like water’, taking the form of each receptacle; SK 42 — the subtle body takes many forms. Veda: Chāndogya Up. 6.2.3 — ‘it thought: may I be many’. Meaning: change of form is nature filling a new shape."
       }
     ],
     "cross_ref": "Bryant pp. 407–415 · Stoler Miller p. 86 · Satchidananda pp. 604–609 · Tigunait on prakṛty-āpūra · Bryant on Yoga's theory of transformation · Leggett · Prabhavananda pp. 439–442 · Satyananda on 4.2 · Osho Vol. 4, Discourse 1"
@@ -6978,6 +7630,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda loves this sūtra. It explains why yoga 'works' without making yoga magical: nature is always ready to deliver what its lawful structures permit; obstructions are what hold back delivery; yoga is the science of removing obstructions. The yogi does not push, force, or compel anything; the yogi removes barriers, and what was always ready to flow does flow. He sees this as parallel to all skilled practice — the farmer, the surgeon, the engineer: none 'cause' the underlying nature's response, all clear the way for it. This sūtra is yoga's anti-magical statement: nothing happens that nature was not already prepared to do."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 31 — the organs act by mutual impulse, puruṣa’s purpose being the only cause; SK 57 — prakṛti flows unprompted, like milk for the calf. The farmer opening a dam, in Vyāsa’s gloss, makes the same point. Veda: Kaṭha Up. 2.2.15 — ‘by his light all this shines.’ Meaning: causes don’t push nature; they remove what blocks it."
       }
     ],
     "cross_ref": "Bryant pp. 415–423 · Stoler Miller pp. 86–87 · Satchidananda pp. 609–615 · Tigunait on the farmer analogy · Bryant on this as Yoga's causal philosophy · Leggett · Prabhavananda pp. 442–446 · Satyananda on 4.3 · Osho Vol. 4, Discourse 2"
@@ -7009,6 +7665,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as one of the more unusual claims of the tradition. He notes the doctrine without insisting on it: the most advanced yogis are said to be capable of emanating additional cittas from their own asmitā. Whether one accepts this in a literal sense or as a high metaphor for the multiplicity of activities such yogis somehow manage, the principle is what matters here: citta is constructed; its substrate is asmitā; what is constructed can in principle be reconstructed. This prepares the metaphysical ground for the next several sūtras, which examine the relation between many cittas and the puruṣas they purport to serve."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 24–25 — from ahaṃkāra come the senses and mind; here the yogi uses asmitā to make whole minds. Veda: Bṛhadāraṇyaka Up. 1.4.3 — the Self ‘did not delight alone … it made itself two.’ Meaning: the power of ‘I’ that binds can be used to build."
       }
     ],
     "cross_ref": "Bryant pp. 423–429 · Stoler Miller p. 87 · Satchidananda pp. 615–620 · Tigunait on nirmāṇa-citta · Bryant on traditional readings · Leggett · Prabhavananda pp. 446–449 · Satyananda on 4.4 · Osho Vol. 4, Discourse 2"
@@ -7052,6 +7712,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda walks through this sequence carefully. The yogi who has emanated additional cittas has not multiplied themselves; they have given themselves additional channels of action, all directed by the one original mind. This is, he notes, structurally similar to how an ordinary mind directs multiple bodily organs simultaneously — each organ has its function, but there is one director. The yogi's case is an extreme version of the same structure. The reason for the doctrine, in any case, is to clarify the relation between unity and multiplicity in advanced practice, which sets up the deeper question about cittas and puruṣas in the sūtras that follow."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: one directing citta over many, as SK 35 makes buddhi the gatekeeper over the other organs. Veda: Śvetāśvatara Up. 6.12 — ‘the one controller of the many inactive’. Meaning: many bodies, one directing intelligence."
       }
     ],
     "cross_ref": "Bryant pp. 429–433 · Stoler Miller p. 87 · Satchidananda pp. 620–624 · Tigunait on the directing citta · Leggett · Prabhavananda pp. 449–451 · Satyananda on 4.5 · Osho Vol. 4, Discourse 3"
@@ -7083,6 +7747,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda highlights the critical importance of this sūtra. All the other ways of acquiring extraordinary capacities continue to bind the practitioner — they may give power, but they also extend saṃsāra. Only the meditation-born condition does not bind, because only it is free of the kleśa-root that produces karmic deposits. This is why yoga's specific path is liberation: not because it produces unique siddhis (it does not, in the end, produce siddhis that the other methods cannot also produce), but because it alone leaves no residue. The yogi may have all the same powers as the herb-user or the mantra-adept, but only the yogi's powers come with no karmic cost."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 67 — once knowledge comes, dispositions stop producing new results. Veda: Muṇḍaka Up. 2.2.8 — ‘his karmas wear away when that is seen’. Meaning: a mind born of meditation leaves no new deposit."
       }
     ],
     "cross_ref": "Bryant pp. 433–438 · Stoler Miller p. 87 · Satchidananda pp. 624–629 · Tigunait on anāśaya · Bryant on the uniqueness of dhyāna-ja · Leggett · Prabhavananda pp. 451–454 · Satyananda on 4.6 · Osho Vol. 4, Discourse 3"
@@ -7126,6 +7794,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as one of yoga's most liberating doctrines. The popular view conflates 'no karma' with 'no action,' as if the yogi must withdraw from all activity to escape saṃsāra. Patañjali says nothing of the kind. The yogi acts — sometimes vigorously, sometimes in service, sometimes in teaching — but the actions are of a fourth kind, neither white nor black. They do not bind because they are not kleśa-rooted; they leave no āśaya. This is the karma of the liberated-while-alive, the jīvanmukta. Vivekananda links this to the Gītā's teaching of niṣkāma-karma — action without desire for fruit — and notes that both texts arrive at the same destination by different routes."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 44 — dharma and adharma (white and black) cause ascent and descent; SK 67 — knowledge removes their power. Veda: Īśa Up. 2 — ‘doing works here … karma does not cling to a person’; Bṛhadāraṇyaka Up. 4.4.22 — the knower ‘crosses over both’, the good done and the evil done. Meaning: action without self-interest leaves no stain of either colour."
       }
     ],
     "cross_ref": "Bryant pp. 438–446 · Stoler Miller pp. 87–88 · Satchidananda pp. 629–635 · Tigunait on the four karmas · Bryant on Yoga and Gītā karma theory · Leggett · Prabhavananda pp. 454–458 · Satyananda on 4.7 · Osho Vol. 4, Discourse 4"
@@ -7173,6 +7845,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats vāsanā theory as one of yoga's most sophisticated contributions to psychology. We carry within us the residues of all our experiences across all our lives — an enormous storehouse. But only a small selection becomes operative at any time, namely those that match the current karmic fruition. This is why people are recognizably 'themselves' through a lifetime (consistent vāsanā-set) but can be radically different across lifetimes (different vāsanā-sets activated). It also explains why latent tendencies can surface unexpectedly when the supporting karma matures. The theory unifies many otherwise puzzling features of human experience."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 40–42 — the subtle body is ‘perfumed’ (adhivāsita) by dispositions — the same root as vāsanā. Veda: Bṛhadāraṇyaka Up. 4.4.5 — ‘as is one’s resolve, so the deed; as the deed, so the result.’ Meaning: only those tendencies that fit the present birth wake up."
       }
     ],
     "cross_ref": "Bryant pp. 446–453 · Stoler Miller p. 88 · Satchidananda pp. 635–640 · Tigunait on vāsanās · Bryant on vāsanā vs. saṃskāra · Leggett · Prabhavananda pp. 458–462 · Satyananda on 4.8 · Osho Vol. 4, Discourse 4"
@@ -7228,6 +7904,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds this beautiful: the long, scattered journey of a soul through many forms is, despite all appearance, a continuous thread of impression and re-impression. Each saṃskāra, however far back, is potentially active; each memory draws on impressions however deeply buried. The discontinuity of births is only apparent; the continuity of the substrate is real. This is one of yoga's important contributions to the philosophy of personal identity across lives — the substrate is continuous even when the manifestations vary radically."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 40 — the subtle body moves through births unchanged in its core. Veda: Bṛhadāraṇyaka Up. 4.4.3 — like a caterpillar reaching from one blade to the next, the self carries its impressions forward. Meaning: memory and impression bridge any gap of birth, place or time."
       }
     ],
     "cross_ref": "Bryant pp. 453–459 · Stoler Miller p. 88 · Satchidananda pp. 640–646 · Tigunait on the continuity of vāsanās · Bryant on this point of Yoga psychology · Leggett · Prabhavananda pp. 462–465 · Satyananda on 4.9 · Osho Vol. 4, Discourse 5"
@@ -7267,6 +7947,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as Yoga's response to the question 'when did all this start?' The answer is: there was no start. The will-to-live is, like prakṛti itself, beginningless. So is the chain of vāsanās it generates. To ask 'why' is to ask a question the structure of reality does not answer. But — and this is the encouraging point — beginninglessness does not entail endlessness. The chain may have no past origin, but it can have a future termination: the kaivalya that yoga aims at is precisely the cutting of this chain. We need not understand how it started; we need only understand how to end it."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 52 — dispositions and subtle body need each other; creation has no first moment. Veda: Ṛgveda 10.129.4 — ‘in the beginning desire arose, the first seed of mind.’ Meaning: the will-to-be is as old as the cosmos."
       }
     ],
     "cross_ref": "Bryant pp. 459–463 · Stoler Miller p. 88 · Satchidananda pp. 646–650 · Tigunait on beginninglessness · Bryant on āśīs · Leggett · Prabhavananda pp. 465–467 · Satyananda on 4.10 · Osho Vol. 4, Discourse 5"
@@ -7322,6 +8006,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda highlights the strategic elegance: vāsanās look like a thicket impossible to clear individually, given how many of them there are. But you do not have to clear them one by one. They depend on a four-fold support; remove the support, and they all collapse together. Yoga is the systematic removal of the support structure, not the impossible task of dealing with each vāsanā in turn. This is why the path is finite even though the contents of the storehouse are vast: you are not emptying the storehouse; you are removing the storehouse itself."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: cause, fruit, support and object — remove them and vāsanās vanish, as SK 67 says dispositions lose their causal power. Veda: Kaṭha Up. 2.3.14–15 — ‘when all desires of the heart are released … when all knots of the heart are cut.’ Meaning: tendencies are held together by four ties; cut them and they fall."
       }
     ],
     "cross_ref": "Bryant pp. 463–468 · Stoler Miller pp. 88–89 · Satchidananda pp. 650–656 · Tigunait on the four supports · Bryant on the mechanism · Leggett · Prabhavananda pp. 467–470 · Satyananda on 4.11 · Osho Vol. 4, Discourse 6"
@@ -7369,6 +8057,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda discusses this with appreciation: the position is sophisticated and counter-intuitive. Most schools either reduce past and future to mere mental constructions or treat them as non-existent. Yoga says: they exist, but not in the way present things exist. They exist as the dharmin's potentials and remainders, eternally part of its real character. This explains, among other things, how the siddhi of knowing past and future (3.16) is possible without sorcery: those temporal regions are not nothing to be guessed at but actual aspects of substances that can in principle be known. The position is challenging but rigorous."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: past and future are real in their own form — SK 9, satkāryavāda. Veda: Chāndogya Up. 6.2.2 — ‘how could being come from non-being?’ Meaning: what was and what will be are latent now, not nothing."
       }
     ],
     "cross_ref": "Bryant pp. 468–477 (extended on time-metaphysics) · Stoler Miller p. 89 · Satchidananda pp. 656–661 · Tigunait on past, present, future · Bryant on Yoga's distinct time-realism · Leggett · Prabhavananda pp. 470–474 · Satyananda on 4.12 · Osho Vol. 4, Discourse 6"
@@ -7404,6 +8096,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as one of the clearest statements of Yoga's metaphysical economy: there are essentially two categories — guṇa-stuff (everything that changes) and puruṣa (the unchanging witness). Everything in between is some arrangement of guṇas, whether visible or latent, gross or subtle. This simplifies the world enormously: the yogi does not need to learn an indefinite list of substances; there is one substance (guṇa-prakṛti) and one consciousness (puruṣa), and everything reduces to one of these two and their relation."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 12–14 — all manifest things are made of the three guṇas. Veda: Śvetāśvatara Up. 4.5 — the red, white and black unborn one; Atharvaveda 10.8.43 — ‘the lotus covered by three guṇas’. Meaning: everything that appears is a mix of three strands."
       }
     ],
     "cross_ref": "Bryant pp. 477–481 · Stoler Miller p. 89 · Satchidananda pp. 661–664 · Tigunait on guṇātma · Bryant on Yoga ontology · Leggett · Prabhavananda pp. 474–477 · Satyananda on 4.13 · Osho Vol. 4, Discourse 7"
@@ -7439,6 +8135,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as a sophisticated philosophical point that has direct practical bearing. The mind (citta) is similarly constituted by the unity of its pariṇāmas — its three transformations (nirodha, samādhi, ekāgratā, cf. 3.9–12). The mind is not some hidden 'thing' apart from its changes; it IS the changes, in their unity. When the yogi understands this, the mistaken treatment of the mind as a substance to be defeated falls away. The mind is a process; modify the process and you modify the mind. There is no 'mind itself' hiding behind the modifications."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: a thing’s unity comes from the guṇas acting together, like SK 13’s lamp — wick, oil and flame for one purpose. Veda: Chāndogya Up. 6.4.1 — in fire, the red is of fire, the white of water, the black of food. Meaning: one thing is a coordinated change of three."
       }
     ],
     "cross_ref": "Bryant pp. 481–486 · Stoler Miller p. 89 · Satchidananda pp. 664–668 · Tigunait on vastu-tattva · Bryant on Yoga identity-theory · Leggett · Prabhavananda pp. 477–480 · Satyananda on 4.14 · Osho Vol. 4, Discourse 7"
@@ -7486,6 +8186,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this sūtra as a clean refutation of pure idealism. If two minds disagree about an object, this proves the disagreement, not the unreality of the object. The yogic position is that objects are real (they are prakṛti's actual products), but cognitions of them are filtered through cittas whose conditions vary. The variation does not undo the reality of the object; it only diversifies the experiences had of it. Yoga is therefore a metaphysical realist position, distinguishing it sharply from positions (then or now) that reduce the world to the cognizer's making."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 11 — the manifest is ‘objective’ (viṣaya) and ‘common’ (sāmānya), shared by all. So the object and the mind run on different tracks. Veda: here Yoga parts from later Vedānta readings — Chāndogya Up. 6.2.1 calls what is ‘being (sat)’, and Yoga takes the world’s being at its word rather than calling it the mind’s projection. Meaning: different minds see one object differently, but the object is not their invention."
       }
     ],
     "cross_ref": "Bryant pp. 486–493 (extended Yoga vs. idealism) · Stoler Miller p. 90 · Satchidananda pp. 668–674 · Tigunait on this anti-idealist argument · Bryant on Yoga vs. Yogācāra Buddhism · Leggett · Prabhavananda pp. 480–484 · Satyananda on 4.15 · Osho Vol. 4, Discourse 8"
@@ -7545,6 +8249,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as the second part of the anti-idealist argument: the world is not the construction of any one mind. If it were, the inattention or sleep of that mind would dissolve the world. But the world endures across mental states of any given observer; therefore it does not depend on that observer. This is, again, Yoga's careful philosophical positioning. The mind is not nothing — it shapes cognitions in important ways — but the mind is not the creator of objects. Objects are out there, real, independent; cognitions of them are filtered through cittas."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: realism again — SK 11’s ‘common’ objects do not depend on one perceiver. Veda: Chāndogya Up. 6.2.2 — ‘how could being come from non-being?’ — the world is grounded in being, not in a perceiver. Meaning: the world does not disappear when one stops looking."
       }
     ],
     "cross_ref": "Bryant pp. 493–500 · Stoler Miller p. 90 · Satchidananda pp. 674–680 · Tigunait on the reductio argument · Bryant on the argument structure · Leggett · Prabhavananda pp. 484–488 · Satyananda on 4.16 · Osho Vol. 4, Discourse 8"
@@ -7592,6 +8300,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains the elegant solution: the world is real, but our knowledge of it is partial because we are coloured by only some of it at any moment. To know more, we need more colouring — more of the world impressing itself on our citta. Yoga, by purifying and stabilizing the citta, makes it a better receptor — colour-ready for more of reality than the ordinary mind can take in. This is why the yogi knows more, not because they have invented reality but because they have made themselves a better mirror for it."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: buddhi knows only what colours it — SK 36: the organs, like a lamp, light up what is before them. Veda: Bṛhadāraṇyaka Up. 4.3.6 — ‘by what light does a person act?’ Meaning: knowing depends on contact between mind and object."
       }
     ],
     "cross_ref": "Bryant pp. 500–505 · Stoler Miller p. 90 · Satchidananda pp. 680–684 · Tigunait on uparāga · Bryant on Yoga's epistemology · Leggett · Prabhavananda pp. 488–491 · Satyananda on 4.17 · Osho Vol. 4, Discourse 9"
@@ -7639,6 +8351,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda emphasizes the foundational importance: ordinary thought treats consciousness as intermittent — present when we are 'aware,' absent when we are 'unconscious.' Yoga rejects this. Consciousness (puruṣa) is constant; what is intermittent is the citta's modifications. We may not be reflectively aware of a vṛtti (because we are not turning attention to it), but the puruṣa always witnesses it. This is why we can, on yogic introspection, recover memories of mental events we did not 'notice' at the time — they were witnessed by puruṣa even when not noticed by buddhi. The puruṣa is a constant illumination; the buddhi's spotlight is what moves."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 19 — puruṣa is the unchanging witness of buddhi’s changes. Veda: Bṛhadāraṇyaka Up. 3.7.23 — ‘the unseen seer, the unheard hearer’; Kena Up. 1.2 — ‘the mind of the mind’. Meaning: the mind is always known, because its knower never changes."
       }
     ],
     "cross_ref": "Bryant pp. 505–511 · Stoler Miller pp. 90–91 · Satchidananda pp. 684–689 · Tigunait on puruṣa as constant witness · Bryant on this central doctrine · Leggett · Prabhavananda pp. 491–494 · Satyananda on 4.18 · Osho Vol. 4, Discourse 9"
@@ -7674,6 +8390,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds this argument decisive: the mind is observed; therefore the mind is not the ultimate observer. We can watch our own thoughts, analyze our own moods, become aware of our own awareness — but each such observation requires an observer beyond what is observed. The buddhi, however refined, cannot be the final consciousness, because it can itself be made the object of consciousness. This points beyond the buddhi to puruṣa. The argument is brief in the sūtra but constitutes a rigorous proof of the puruṣa as something distinct from any mental phenomenon."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 20 — buddhi is non-conscious (acetana) and only seems conscious. Veda: Kaṭha Up. 2.2.15 — ‘there the sun does not shine … by his light all this shines.’ Meaning: the mind is lit, not a light."
       }
     ],
     "cross_ref": "Bryant pp. 511–518 · Stoler Miller p. 91 · Satchidananda pp. 689–695 · Tigunait on the non-self-luminous citta · Bryant on the argument vs. Yogācāra · Leggett · Prabhavananda pp. 494–498 · Satyananda on 4.19 · Osho Vol. 4, Discourse 10"
@@ -7709,6 +8429,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds the argument compelling: cognition of an object and cognition of the cognition itself cannot both be primary acts of the citta at the same instant. A unified knowing — 'I see X' — requires a knower beyond the seeing-of-X. The buddhi is engaged in seeing-X; something else must be engaged in seeing-the-seeing-of-X, and yet uniting both. That something is puruṣa: it witnesses both simultaneously without being part of either as content. The argument, brief as it is, is one of Yoga's strongest philosophical contributions."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 30 says the inner organs can act ‘together or in sequence’ on an object, but never as seer of themselves. Veda: Bṛhadāraṇyaka Up. 3.4.2 — ‘you cannot see the seer of seeing.’ Meaning: the mind cannot be its own witness."
       }
     ],
     "cross_ref": "Bryant pp. 518–522 · Stoler Miller p. 91 · Satchidananda pp. 695–699 · Tigunait on the temporal argument · Bryant on the structure · Leggett · Prabhavananda pp. 498–500 · Satyananda on 4.20 · Osho Vol. 4, Discourse 10"
@@ -7764,6 +8488,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda walks through the regress argument with appreciation. The proposal 'another citta knows this citta' looks reasonable until you ask what knows the second citta. If 'another citta,' the regress is endless. If 'nothing,' then the second citta is the unknown knower, which is just to admit a non-citta knower under another name. Either way, the position collapses. The only stable account is puruṣa: a single, unchanging, non-citta consciousness that is the ultimate knower of all cittas. The argument is Yoga's contribution to the long philosophical question of consciousness, and it is rigorous."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 17 — there must be a final enjoyer; otherwise each witness needs another. Veda: Bṛhadāraṇyaka Up. 2.4.14 — ‘by what would one know the knower?’ Meaning: the regress stops in the puruṣa."
       }
     ],
     "cross_ref": "Bryant pp. 522–528 · Stoler Miller p. 91 · Satchidananda pp. 699–704 · Tigunait on the regress argument · Bryant on this point in Indian philosophy of mind · Leggett · Prabhavananda pp. 500–503 · Satyananda on 4.21 · Osho Vol. 4, Discourse 11"
@@ -7811,6 +8539,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds this analysis ingenious: the puruṣa never moves, but in the buddhi's purified surface puruṣa is reflected, and in that reflection the buddhi 'sees itself' — though strictly it is puruṣa that sees. This preserves both the immobility of consciousness (which the previous sūtras established by argument) and the fact of self-awareness (which is undeniable in experience). Yoga's solution: self-awareness is real but mediated by reflection, not by literal motion of consciousness. The puruṣa is a mirror; the buddhi sees in that mirror its own face; the buddhi calls this 'self-knowledge.'"
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 20 — through conjunction buddhi seems conscious; here consciousness, unmoving, takes buddhi’s form. Veda: Muṇḍaka Up. 3.1.1 — the watching bird does not eat. Meaning: we know ourselves by reflection in the mind, not by the mind becoming aware."
       }
     ],
     "cross_ref": "Bryant pp. 528–536 · Stoler Miller pp. 91–92 · Satchidananda pp. 704–710 · Tigunait on the reflection-theory · Bryant on this in Sāṃkhya-Yoga · Leggett · Prabhavananda pp. 503–507 · Satyananda on 4.22 · Osho Vol. 4, Discourse 11"
@@ -7850,6 +8582,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda explains the mechanism: the citta is the only point in all of prakṛti where consciousness (puruṣa) and content (the world) meet. Both colour it simultaneously. From this dual colouring arises everything we call 'experience' — the felt knowledge of a world. Because it draws from both sides, the citta can in principle know anything: any object the senses (or saṃyama) can reach can become citta-content. This is why the citta is so central to Yoga's analysis: it is the unique meeting point, and so the unique site of both bondage and liberation."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 35 — buddhi, with ahaṃkāra and manas, takes in every object; it faces the seer on one side and the seen on the other. Veda: Maitrī Up. 6.34 — ‘the mind alone is saṃsāra; purify it with effort.’ Meaning: the mind is the meeting place, so it can show everything."
       }
     ],
     "cross_ref": "Bryant pp. 536–541 · Stoler Miller p. 92 · Satchidananda pp. 710–714 · Tigunait on dual colouring · Bryant on citta as meeting-point · Leggett · Prabhavananda pp. 507–510 · Satyananda on 4.23 · Osho Vol. 4, Discourse 12"
@@ -7905,6 +8641,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda walks through the argument: a watch's components — gears, springs — exist not for themselves but for the user of the watch. They are arranged together for an end beyond their own being. So with the citta: its components — vāsanās, vṛttis, the three pariṇāmas — are arranged together for an end. The end cannot be another component (else we have not yet reached the end); it must be something not compounded, an end-in-itself. Puruṣa is that. The citta, however magnificent in its complexity, is finally a tool for the puruṣa's experience and liberation (cf. 2.21)."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 17 almost verbatim — ‘because compounds exist for another (saṃghāta-parārthatvāt)’. Veda: Bṛhadāraṇyaka Up. 2.4.5 — ‘all is dear for the sake of the Self.’ Meaning: however rich the mind, it works for someone else."
       }
     ],
     "cross_ref": "Bryant pp. 541–547 · Stoler Miller p. 92 · Satchidananda pp. 714–719 · Tigunait on the parārthatva argument · Bryant on Sāṃkhya-Yoga teleology · Leggett · Prabhavananda pp. 510–513 · Satyananda on 4.24 · Osho Vol. 4, Discourse 12"
@@ -7944,6 +8684,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this with deep appreciation. The endless questioning 'who am I really? what is my deepest identity?' is itself a symptom of the confusion. When the discrimination is established, the question dissolves — not because it has been answered in some new way, but because the basis of the question has been seen through. There is no longer a 'who' to investigate; there is the seer, established in its own nature, and there is the seen, doing its own thing. The two are seen as two; the questioner-seeker drops away. This is, Vivekananda notes, what the realized describe: not 'I have found the answer' but 'the question no longer arises.'"
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 64 — ‘I am not, nothing is mine, no I’: the end of speculation about who one is. Veda: Bṛhadāraṇyaka Up. 4.4.22 — ‘not this, not this’. Meaning: for the one who sees the difference, the question ‘what am I?’ stops."
       }
     ],
     "cross_ref": "Bryant pp. 547–553 · Stoler Miller p. 92 · Satchidananda pp. 719–724 · Tigunait on viśeṣa-darśin · Bryant on the cessation of self-inquiry · Leggett · Prabhavananda pp. 513–516 · Satyananda on 4.25 · Osho Vol. 4, Discourse 13"
@@ -7987,6 +8731,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds this image striking and instructive. The whole battle of yoga, in the early stages, is the fight against the citta's natural downhill rush toward objects. But once viveka is established, the slope reverses. Now no fight is needed; the citta on its own inclines toward what was previously the destination of effortful practice. This is one of the most encouraging sūtras for the long-term practitioner: the time will come when no more pushing is needed, because the very nature of the citta has been reoriented. Liberation is no longer something to attain by effort; it is the natural pull of the reoriented mind."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 37 — buddhi itself now discerns; it is drawn toward isolation. Veda: Kaṭha Up. 1.2.1–2 — the wise choose the good. Meaning: the mind that once ran outward now leans toward freedom."
       }
     ],
     "cross_ref": "Bryant pp. 553–558 · Stoler Miller p. 93 · Satchidananda pp. 724–729 · Tigunait on the reversed inclination · Bryant on the image · Leggett · Prabhavananda pp. 516–519 · Satyananda on 4.26 · Osho Vol. 4, Discourse 13"
@@ -8026,6 +8774,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda offers this as a great consolation for advanced practitioners. You have done the work; the slope is reversed; viveka is established. And still — sometimes, in a gap, an old thought flashes up. Anger, desire, doubt momentarily appear. This is not loss. It is the remaining material being processed. The yogi continues; the flashes weaken; eventually they cease. The sūtra prevents the discouragement that comes when one expects perfection too quickly. Even at the threshold of kaivalya, the storehouse is still emptying. Vigilance, but not dismay."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 67 — the wheel keeps turning a little from its old impetus. Veda: Chāndogya Up. 6.14.2 — ‘there is delay only until I am released.’ Meaning: old impressions still arise for a while."
       }
     ],
     "cross_ref": "Bryant pp. 558–561 · Stoler Miller p. 93 · Satchidananda pp. 729–732 · Tigunait on the residual flashes · Bryant on the honest acknowledgment · Leggett · Prabhavananda pp. 519–521 · Satyananda on 4.27 · Osho Vol. 4, Discourse 14"
@@ -8061,6 +8813,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda confirms the practical instruction: when an old pattern flashes up, do not panic, do not invent a new method, do not treat it as a special case. Apply what you already know — dhyāna for the active expression, patient practice for the underlying. The structure is the same; only the depth and subtlety of the application differs. By the time the yogi reaches this stage, the method is second nature; what changes is the residual material it works on. The yogi keeps going."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: same treatment as the kleśas (2.10–11) — dissolve the subtle, meditate away the active. Veda: Kaṭha Up. 1.3.13 — merge inward stage by stage. Meaning: there is nothing new to do, only finishing."
       }
     ],
     "cross_ref": "Bryant pp. 561–564 · Stoler Miller p. 93 · Satchidananda pp. 732–736 · Tigunait on the parallel method · Leggett · Prabhavananda pp. 521–523 · Satyananda on 4.28 · Osho Vol. 4, Discourse 14"
@@ -8108,6 +8864,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as one of the most majestic moments in the text. 'Dharma-megha' — the cloud of dharma — is an image of unconditional outpouring. The yogi at this stage is no longer pursuing anything, no longer protecting any attainment, no longer interested even in liberation as a reward. And precisely in this absolute disinterest, the highest samādhi arises and pours its fruits unceasingly. The condition is uncompromising: any residual interest — even in the highest state — keeps one short of dharma-megha. Only complete non-grasping, even of the supreme, opens the cloud."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: no interest even in the reward of knowledge — SK 66’s indifference. Veda: Muṇḍaka Up. 3.2.2 — one whose desires are fulfilled. Meaning: the ‘cloud of dharma’ comes when nothing more is wanted."
       }
     ],
     "cross_ref": "Bryant pp. 564–572 · Stoler Miller pp. 93–94 · Satchidananda pp. 736–743 · Tigunait on dharma-megha · Bryant on Buddhist parallels · Leggett on this magnificent samādhi · Prabhavananda pp. 523–528 · Satyananda on 4.29 · Osho Vol. 4, Discourse 15"
@@ -8143,6 +8903,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda treats this as Yoga's most concise statement of liberation's practical content. What ends is not life, not action, not even the body. What ends is the kleśa-karma machinery — the inner mechanism that drives saṃsāra. With this machinery stopped, the remaining life unfolds without bondage; future life is not generated, because no further karma is being deposited. The yogi is, in the technical sense of the tradition, free."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 67 — knowledge removes the causal power of dharma and the rest. Veda: Muṇḍaka Up. 2.2.8 — ‘the knot of the heart is cut … karmas wear away’; Gītā 4.37 — ‘the fire of knowledge burns all karma to ash.’ Meaning: afflictions and karma end together."
       }
     ],
     "cross_ref": "Bryant pp. 572–576 · Stoler Miller p. 94 · Satchidananda pp. 743–747 · Tigunait on the cessation · Leggett · Prabhavananda pp. 528–530 · Satyananda on 4.30 · Osho Vol. 4, Discourse 15"
@@ -8198,6 +8962,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda dwells on this image: imagine the ordinary mind as a small lamp in a vast dark room — most is unknown, a little known. The yogi at this stage has become a sun: vast illumination, with the unilluminated reduced to mere shadows. The proportions have inverted. This is one of yoga's most encouraging end-state descriptions: liberation is not a loss of knowledge or a withdrawal from the world's contents; it is the removal of the obstructions that made our knowledge so partial. With obstructions gone, knowledge is what it always could have been — vast, easy, immediate."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 64 — knowledge that is complete and pure. Veda: Īśa Up. 15 — the golden lid removed; Muṇḍaka Up. 2.2.9 — ‘in the highest golden sheath is Brahman, stainless, partless.’ Meaning: once the covering is gone, what remains to know is very little."
       }
     ],
     "cross_ref": "Bryant pp. 576–581 · Stoler Miller p. 94 · Satchidananda pp. 747–751 · Tigunait on infinite knowledge · Bryant on this as omniscience-without-divinity · Leggett · Prabhavananda pp. 530–533 · Satyananda on 4.31 · Osho Vol. 4, Discourse 16"
@@ -8241,6 +9009,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds this one of the most precise of the closing sūtras. Liberation is not the destruction of nature, not even the disappearance of the guṇas; it is the conclusion of their relation to a specific puruṣa. The play that was running for this audience-of-one is over; the actors continue to perform for the rest of the audience. From the liberated puruṣa's standpoint, the show is finished. From the cosmic standpoint, the show is the same as ever, with one less viewer to play to. This preserves the reality of nature and the genuineness of liberation simultaneously, a subtle balance that Yoga maintains with care."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 59 — the dancer stops after showing herself; SK 66 — ‘I have been seen,’ she ceases. Veda: Śvetāśvatara Up. 4.5 — the other unborn one leaves her, having enjoyed. Meaning: the guṇas stop changing for one whose purpose is done."
       }
     ],
     "cross_ref": "Bryant pp. 581–585 · Stoler Miller p. 94 · Satchidananda pp. 751–755 · Tigunait on krama-samāpti · Bryant on the metaphysics of liberation · Leggett · Prabhavananda pp. 533–536 · Satyananda on 4.32 · Osho Vol. 4, Discourse 16"
@@ -8284,6 +9056,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda finds this sūtra elegant: the meaning of a journey appears at its end, not midway. The yogi at the moment of kaivalya finally sees the full shape of the path that brought them there — what each life was for, how each obstacle served, why each turn led where it led. This retrospective clarity is not available during the journey; it requires the journey's completion. The sūtra also re-affirms the moment-by-moment metaphysics: time is constructed of indivisible moments; sequence is their stringing-together; the whole string, as a structured thing, becomes visible only when it is complete."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: sequence is known only at the end of change — SK 9’s view of change seen from its finish. Veda: Kena Up. 4.4 — ‘the blink of an eye’. Meaning: time is a sequence of moments, seen whole only when it ends."
       }
     ],
     "cross_ref": "Bryant pp. 585–590 · Stoler Miller pp. 94–95 · Satchidananda pp. 755–759 · Tigunait on krama at apara-anta · Bryant on the metaphysical closing · Leggett · Prabhavananda pp. 536–539 · Satyananda on 4.33 · Osho Vol. 4, Discourse 17"
@@ -8347,6 +9123,10 @@ const YOGA_SUTRAS = [
       {
         "name": "Swāmī Vivekānanda · Rāja Yoga",
         "text": "Vivekananda closes his Rāja Yoga commentary at this magnificent final sūtra. Kaivalya, the goal Patañjali named at 1.2, has now been fully expounded. It is described twice: once as what happens to prakṛti (her work for this puruṣa is done, so her energies flow back into their source), and once as what happens to puruṣa (the power of consciousness is established, finally, in its own form — no longer apparently coloured by or fused with anything else). The two descriptions are one event seen from two sides. The puruṣa is alone (kevala) — not lonely, not isolated, but undivided, unmixed, free. This is the supreme accomplishment of the Yoga path: not the gaining of any new state, since the puruṣa has always been what it now is recognized as being, but the cessation of the apparent fusion that disguised it. With this, the four pādas are complete. Pāda 1 defined yoga and described its summit (samādhi). Pāda 2 laid out the diagnostic of suffering and the eight-limbed path of practice. Pāda 3 described saṃyama and its powers, with the warning that even these are obstacles when grasped at. Pāda 4 has resolved the remaining metaphysical questions and culminated in this final definition. The text closes; the practice, for those who undertake it, begins."
+      },
+      {
+        "name": "Concordance · Sāṃkhya–Yoga–Śruti",
+        "text": "Sāṃkhya ↔ Yoga: SK 68 — ‘prakṛti ceases, her purpose done; puruṣa attains absolute and final isolation.’ Patañjali gives the same ending in two forms: the guṇas returning to source, or consciousness in its own nature. Veda: Muṇḍaka Up. 3.2.8 — ‘as rivers flowing into the ocean lose name and form’; Śvetāśvatara Up. 6.13 — ‘that cause, reached by Sāṃkhya and Yoga — knowing it, one is freed from all bonds.’ Meaning: the Upaniṣad’s promise is what both texts fulfil."
       }
     ],
     "cross_ref": "Bryant pp. 590–598 (close of the Yoga Sūtras) · Stoler Miller p. 95 · Satchidananda pp. 759–765 · Tigunait closing of Kaivalya Pāda · Bryant on the final definition · Leggett on Śaṅkara's closing remarks · Prabhavananda pp. 539–544 · Satyananda closing on 4.34 · Osho Vol. 4, Discourse 17 End of Pāda 4 — Kaivalya Pāda The Kaivalya Pāda — and with it the entire Yoga Sūtras — has now reached its end. From the opening definition of yoga (1.2) through the four pādas, the text has traced the complete arc: the architecture of samādhi (Pāda 1), the practical path of preparation and the five outer aṅgas (Pāda 2), the inner three aṅgas and the powers that arise from saṃyama (Pāda 3), and finally the metaphysics of liberation and the formal definition of kaivalya itself (Pāda 4). The closing sūtra 4.34 gives the two-sided definition: from the side of prakṛti, the guṇas (their purpose for this puruṣa now fulfilled) flow back to their source; from the side of the puruṣa, the power of consciousness stands established in its own form. These are not two events but one event seen from two angles. 'Iti' — thus — and the Sūtras close."
