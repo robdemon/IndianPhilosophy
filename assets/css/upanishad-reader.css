@@ -1,0 +1,193 @@
+/* Upaniṣad reader — a wide, one-verse-per-screen layout that breaks out of the 880px reading column.
+   Uses the tokens from darshana-theme.css. */
+.upr {
+  --w: min(1320px, calc(100vw - 32px));
+  position: relative;
+  width: var(--w);
+  left: 50%;
+  margin-left: calc(var(--w) / -2);
+  display: grid;
+  grid-template-columns: 216px minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+/* ── Book list ─────────────────────── */
+.upr-rail {
+  position: sticky;
+  top: 16px;
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding-right: 4px;
+}
+.upr-group { font-family: var(--font-mono); font-size: 13px; color: var(--text-muted); margin: 16px 0 4px; }
+.upr-group:first-child { margin-top: 0; }
+.upr-rail ul { list-style: none; }
+.upr-rail button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  padding: 4px 8px;
+  margin: 0 -8px;
+  width: calc(100% + 16px);
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  font: 16px/1.35 var(--font-body);
+  color: var(--text-secondary);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color .15s var(--ease), color .15s var(--ease);
+}
+.upr-rail button:hover { background: var(--bg-card); color: var(--text-primary); }
+.upr-rail button.active { background: var(--bg-card); color: var(--text-primary); box-shadow: inset 2px 0 0 var(--gold); }
+.upr-bcount { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.upr-select { display: none; }
+
+/* ── Book header ───────────────────── */
+.upr-head { margin-bottom: 12px; }
+.upr-title { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.upr-title h2 { font-family: var(--font-display); font-size: 32px; font-weight: 500; line-height: 1.15; }
+.upr-deva { font-family: var(--font-deva); font-size: 20px; color: var(--text-muted); }
+.upr-meta { font-family: var(--font-mono); font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+.upr-about { margin-top: 8px; font-size: 16px; color: var(--text-secondary); max-width: 52em; }
+.upr-about summary { cursor: pointer; font-family: var(--font-mono); font-size: 13px; color: var(--gold); width: fit-content; }
+.upr-about p { margin-top: 8px; line-height: 1.65; }
+
+/* ── Verse navigator ───────────────── */
+.upr-nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--bg);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 20px;
+}
+.upr-navrow { display: flex; align-items: center; gap: 8px; }
+.upr-sec {
+  flex: 1;
+  min-width: 0;
+  max-width: 520px;
+  padding: 6px 10px;
+  font: 16px var(--font-body);
+  color: var(--text-primary);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.upr-pos { margin-left: auto; font-family: var(--font-mono); font-size: 13px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.upr-step {
+  width: 36px; height: 32px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color .15s var(--ease);
+}
+.upr-step:hover:not(:disabled) { background: var(--bg-card); }
+.upr-step:disabled { opacity: .35; cursor: default; }
+.upr-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+  max-height: 72px;
+  overflow-y: auto;
+  position: relative;
+  scrollbar-width: thin;
+}
+.upr-chip {
+  min-width: 36px;
+  padding: 2px 6px;
+  font: 12px/1.6 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.upr-chip:hover { background: var(--bg-card); color: var(--text-primary); }
+.upr-chip.note { color: var(--text-muted); border-style: dashed; }
+.upr-chip.active { background: var(--text-primary); border-color: var(--text-primary); color: var(--bg); }
+
+/* ── Verse ─────────────────────────── */
+.upr-vhead { display: flex; align-items: baseline; gap: 16px; margin-bottom: 16px; }
+.upr-ref { font-family: var(--font-mono); font-size: 13px; color: var(--gold); white-space: nowrap; }
+.upr-vhead h3 { font-family: var(--font-display); font-size: 26px; font-weight: 500; line-height: 1.2; }
+
+.upr-text {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-light);
+}
+.upr-sa { padding-left: 16px; border-left: 2px solid var(--gold); }
+.upr-sa p[lang="sa"] { font-family: var(--font-deva); font-size: 21px; line-height: 1.7; color: var(--text-primary); }
+.upr-iast { font-style: italic; font-size: 16px; line-height: 1.6; color: var(--text-secondary); margin-top: 8px; }
+.upr-sa p[lang="sa"] + .upr-iast { margin-top: 12px; }
+.upr-lit { font-size: 19px; line-height: 1.6; color: var(--text-primary); }
+.upr-para { font-size: 16px; line-height: 1.65; color: var(--text-secondary); margin-top: 12px; }
+
+.upr-tabs { display: flex; gap: 4px; margin: 16px 0 12px; border-bottom: 1px solid var(--border-light); }
+.upr-tabs button {
+  padding: 6px 12px;
+  margin-bottom: -1px;
+  font: 16px var(--font-body);
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+.upr-tabs button:hover { color: var(--text-primary); }
+.upr-tabs button[aria-selected="true"] { color: var(--text-primary); border-bottom-color: var(--gold); }
+.upr-tabs span { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-left: 4px; }
+
+/* Commentaries and words flow into columns so a verse fits on one screen */
+.upr-coms { columns: 2 340px; column-gap: 24px; }
+.upr-com { break-inside: avoid; padding: 12px 16px; margin-bottom: 12px; background: var(--bg-card); border-radius: 10px; font-size: 16px; line-height: 1.6; color: var(--text-secondary); }
+.upr-cname { font-family: var(--font-mono); font-size: 13px; font-weight: 500; color: var(--gold); margin-bottom: 4px; }
+.upr-words { columns: 3 240px; column-gap: 24px; }
+.upr-words div { break-inside: avoid; padding: 6px 0; border-bottom: 1px solid var(--border-light); }
+.upr-words dt { font-family: var(--font-display); font-size: 18px; font-weight: 500; color: var(--text-primary); }
+.upr-words dd { font-size: 15px; line-height: 1.5; color: var(--text-secondary); }
+.upr-gram { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); }
+.upr-notes { font-size: 16px; line-height: 1.65; color: var(--text-secondary); max-width: 52em; }
+.upr-notes p + p { margin-top: 10px; }
+.upr-notes pre { font-family: var(--font-mono); font-size: 13px; line-height: 1.45; background: var(--bg-card); padding: 12px 16px; border-radius: 10px; overflow-x: auto; margin: 12px 0; color: var(--text-primary); }
+.upr-notes table { border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+.upr-notes td { padding: 4px 12px 4px 0; border-bottom: 1px solid var(--border-light); vertical-align: top; }
+.upr-loading { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; padding: 32px 0; }
+
+/* ── Medium and small screens ──────── */
+@media (max-width: 1100px) {
+  .upr-text { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}
+@media (max-width: 900px) {
+  .upr { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .upr-rail { display: none; }
+  .upr-select {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    font: 17px var(--font-body);
+    color: var(--text-primary);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .upr-title h2 { font-size: 28px; }
+  .upr-chips { flex-wrap: nowrap; overflow-x: auto; max-height: none; padding-bottom: 4px; }
+  .upr-vhead { flex-direction: column; gap: 2px; }
+  .upr-vhead h3 { font-size: 22px; }
+  .upr-sa p[lang="sa"] { font-size: 19px; }
+}

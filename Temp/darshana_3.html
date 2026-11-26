@@ -6,9 +6,10 @@
 <title>Ṣaḍdarśana — Six Orthodox Systems of Indian Philosophy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/darshana-theme.css?v=20261121">
-<link rel="stylesheet" href="../assets/css/samkhya-sutra.css">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@500&family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/darshana-theme.css?v=20261122">
+<link rel="stylesheet" href="../assets/css/samkhya-sutra.css?v=20261122">
+<link rel="stylesheet" href="../assets/css/upanishad-reader.css?v=20261127">
 </head>
 <body>
 <div id="shell">
@@ -36,12 +37,14 @@
 <div id="shiva" class="system-panel"></div>
 </div>
 
-<script src="../assets/js/darshana-core.js?v=20261121"></script>
-<script src="../assets/js/samkhya-sutras.js?v=20261121"></script>
+<script src="../assets/js/darshana-core.js?v=20261122"></script>
+<script src="../assets/js/samkhya-sutras.js?v=20261122"></script>
 <script src="../assets/js/nyaya-sutras.js"></script>
 <script src="../assets/js/vaisesika-sutras.js"></script>
-<script src="../assets/js/yoga-sutras.js?v=20261121"></script>
+<script src="../assets/js/yoga-sutras.js?v=20261122"></script>
 <script src="../assets/js/shiva-sutras.js"></script>
+<script src="../assets/js/upanishads/index.js?v=20261127"></script>
+<script src="../assets/js/upanishad-reader.js?v=20261127"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════════
 // YOGA SŪTRAS — Patañjali (c. 400 CE)
@@ -1003,6 +1006,14 @@ buildSubNav(secs,'mimamsa',renderSection);
 // Madhva Anuvyākhyāna (Dvaita)
 // ═══════════════════════════════════════════════════════════════════
 builders.vedanta=function(){
+document.getElementById('vedanta').innerHTML =
+  `<div class="view-bar" role="tablist" aria-label="Vedānta view">
+     <button id="vedanta-view-read" class="active" onclick="switchVedantaView('read')">Verses</button>
+     <button id="vedanta-view-map" onclick="switchVedantaView('map')">Map</button>
+   </div>
+   <div id="vedanta-read"></div>
+   <div id="vedanta-map" hidden></div>`;
+mountUpanishadReader(document.getElementById('vedanta-read'));
 const secs=[
 // ───────────────────────────────────────────────────────────────────
 // TAB 1 — PRINCIPAL UPANIṢADS (Mukhya 10+3)
@@ -1271,8 +1282,15 @@ mdv:"Madhva: the Yoga Upaniṣads describe methods for purifying the mind and pr
 ]}
 ]}
 ];
-buildSubNav(secs,'vedanta',renderSection);
+buildSubNav(secs,'vedanta-map',renderSection);
 };
+function switchVedantaView(name){
+  const read = name === 'read';
+  document.getElementById('vedanta-view-read').classList.toggle('active', read);
+  document.getElementById('vedanta-view-map').classList.toggle('active', !read);
+  document.getElementById('vedanta-read').hidden = !read;
+  document.getElementById('vedanta-map').hidden = read;
+}
 // ═══════════════════════════════════════════════════════════════════
 // VEDAS — The Four Saṃhitās
 // Reference: Vedic Heritage Portal (vedicheritage.gov.in), Ministry of Culture, GoI
@@ -1743,7 +1761,9 @@ buildSubNav(secs,'shiva-map',renderSection);
 // ─── INIT ────────────────────────────────────────────────────────────────────
 const _valid=['yoga','samkhya','nyaya','vaisheshika','mimamsa','vedanta','vedas','shiva'];
 const _hash=location.hash.slice(1);
-showSystem(_valid.includes(_hash)?_hash:'yoga');
+window._deepLink=_hash; // e.g. vedanta/katha/12 — read by the Upaniṣad reader
+const _sys=_hash.split('/')[0];
+showSystem(_valid.includes(_sys)?_sys:'yoga');
 </script>
 </body>
 </html>

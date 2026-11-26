@@ -1,300 +1,164 @@
-/* Sutra view — verse-by-verse reading mode (used by Sāṃkhya, Nyāya, Vaiśeṣika panels) */
+/* Sutra view — verse-by-verse reading mode. Same paper and hairlines as the home page. */
 
-/* ── View-toggle bar ──────────────────────────────── */
+/* ── View toggle: two text tabs ───────────────────── */
 .view-bar {
   display: flex;
   gap: 4px;
-  margin-bottom: 22px;
-  background: var(--bg-card);
-  padding: 4px;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
+  margin-bottom: 24px;
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
 }
-
 .view-bar button {
-  padding: 9px 22px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  border: none;
+  padding: 6px 16px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
   background: transparent;
   color: var(--text-muted);
   cursor: pointer;
-  border-radius: 7px;
-  transition: all 0.18s ease;
+  transition: color .15s var(--ease, ease), background-color .15s var(--ease, ease), border-color .15s var(--ease, ease);
 }
-
-.view-bar button:hover {
-  color: var(--text-secondary);
-  background: var(--bg-panel);
-}
-
-.view-bar button.active {
-  background: linear-gradient(135deg, var(--gold-light), var(--gold));
-  color: #FFFCF2;
-  font-weight: 600;
-  box-shadow: 0 1px 4px rgba(184, 116, 31, 0.35);
-}
+.view-bar button:hover { color: var(--text-primary); background: var(--bg-card); }
+.view-bar button.active { color: var(--text-primary); background: var(--bg-card); border-color: var(--border-light); }
 
 /* ── Sutra list ───────────────────────────────────── */
-.sutra-list {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
+.sutra-list { display: flex; flex-direction: column; border-top: 1px solid var(--border-light); }
 
-.sutra-search {
-  margin-bottom: 16px;
-  position: relative;
-}
-
+.sutra-search { margin-bottom: 16px; position: relative; }
 .sutra-search input {
   width: 100%;
-  padding: 11px 14px;
+  padding: 12px 16px;
   font-family: var(--font-body);
-  font-size: 14px;
-  background: var(--bg-card);
+  font-size: 17px;
+  background: var(--bg);
   color: var(--text-primary);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   outline: none;
-  transition: border-color 0.15s;
+  transition: border-color .15s;
 }
-
 .sutra-search input::placeholder { color: var(--text-muted); }
 .sutra-search input:focus { border-color: var(--gold); }
 
 .sutra-controls {
   display: flex;
   gap: 8px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   font-family: var(--font-mono);
-  font-size: 10.5px;
-  letter-spacing: 0.05em;
+  font-size: 13px;
 }
-
 .sutra-controls button {
-  padding: 6px 12px;
+  padding: 4px 12px;
   background: transparent;
-  color: var(--text-muted);
-  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius);
   cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  letter-spacing: inherit;
-  transition: all 0.12s;
+  font: inherit;
+  transition: color .15s, border-color .15s;
 }
+.sutra-controls button:hover { color: var(--text-primary); border-color: var(--border); }
+.sutra-count { margin-left: auto; align-self: center; color: var(--text-muted); font-variant-numeric: tabular-nums; }
 
-.sutra-controls button:hover {
-  color: var(--text-primary);
-  border-color: var(--gold);
-}
-
-.sutra-count {
-  margin-left: auto;
-  align-self: center;
-  color: var(--text-muted);
-}
-
-/* ── Verse card ───────────────────────────────────── */
-.verse-card {
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  transition: border-color 0.15s;
-}
-
-.verse-card { background: var(--bg-deep); }
-.verse-card:hover { border-color: var(--border); }
-.verse-card.open {
-  border-color: var(--gold-light);
-  box-shadow: 0 2px 12px rgba(184, 116, 31, 0.10);
-}
+/* ── Verse row ────────────────────────────────────── */
+.verse-card { border-bottom: 1px solid var(--border-light); }
 
 .verse-head {
   display: flex;
   align-items: baseline;
-  gap: 12px;
-  padding: 13px 16px;
+  gap: 16px;
+  padding: 16px 12px;
+  margin: 4px -12px;
   cursor: pointer;
   user-select: none;
-  background: var(--bg-card);
-  transition: background 0.12s;
+  border-radius: 8px;
+  transition: background-color .15s var(--ease, ease);
 }
-
-.verse-head:hover { background: var(--bg-panel); }
+.verse-head:hover { background: var(--bg-card); }
 
 .verse-num {
   font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  color: var(--rose, var(--gold));
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--accent-deep, var(--gold));
+  font-variant-numeric: tabular-nums;
   flex-shrink: 0;
-  min-width: 76px;
+  min-width: 64px;
 }
-
 .verse-title {
   font-family: var(--font-display);
-  font-size: 16px;
-  font-style: italic;
+  font-size: 22px;
+  font-weight: 500;
   color: var(--text-primary);
   flex: 1;
-  line-height: 1.3;
+  line-height: 1.25;
 }
-
-.verse-chev {
-  font-size: 11px;
-  color: var(--text-muted);
-  transition: transform 0.2s ease;
-  flex-shrink: 0;
-}
-
+.verse-head:hover .verse-title { color: var(--gold); }
+.verse-chev { font-size: 12px; color: var(--text-muted); transition: transform .2s ease; flex-shrink: 0; }
 .verse-card.open .verse-chev { transform: rotate(90deg); }
 
-.verse-body {
-  display: none;
-  padding: 18px 22px 22px;
-  background: var(--bg);
-  border-top: 1px solid var(--border-light);
-}
-
+.verse-body { display: none; padding: 8px 0 32px 80px; }
 .verse-card.open .verse-body { display: block; }
 
-.verse-section {
-  margin-bottom: 18px;
-}
-
+.verse-section { margin-bottom: 24px; }
 .verse-section:last-child { margin-bottom: 0; }
-
 .verse-section-label {
   font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 10px;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.verse-section-label::before {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--gold-light);
-  flex-shrink: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
 }
 
 .verse-sanskrit {
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-style: italic;
-  line-height: 1.75;
+  font-family: var(--font-display), var(--font-deva);
+  font-size: 22px;
+  line-height: 1.6;
   color: var(--text-primary);
-  padding: 14px 18px;
-  background: var(--bg-card);
-  border-left: 3px solid var(--rose, var(--gold));
-  border-radius: 0 var(--radius) var(--radius) 0;
+  padding-left: 16px;
+  border-left: 2px solid var(--accent, var(--gold));
 }
-
-.verse-translation {
-  font-family: var(--font-body);
-  font-size: 15.5px;
-  line-height: 1.75;
-  color: var(--text-secondary);
-}
+.verse-translation { font-size: 18px; line-height: 1.7; color: var(--text-primary); max-width: 36em; }
 
 .verse-words {
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 6px 18px;
-  padding: 4px 2px;
+  gap: 4px 20px;
 }
-
 .verse-word-sk {
   font-family: var(--font-display);
-  font-style: italic;
-  font-size: 15px;
-  color: var(--gold);
+  font-size: 18px;
   font-weight: 500;
+  color: var(--accent-deep, var(--gold));
   white-space: nowrap;
 }
-
-.verse-word-meaning {
-  font-family: var(--font-body);
-  font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.verse-word-meaning:empty::after {
-  content: "—";
-  color: var(--text-muted);
-  font-style: italic;
-}
+.verse-word-meaning { font-size: 16px; color: var(--text-secondary); line-height: 1.6; }
+.verse-word-meaning:empty::after { content: "—"; color: var(--text-muted); }
 
 /* Inline diacritic-flagged Sanskrit token in fallback raw rendering */
-.verse-words-raw {
-  font-family: var(--font-body);
-  font-size: 13.5px;
-  line-height: 1.7;
-  color: var(--text-secondary);
-}
-.verse-words-raw .sk {
-  font-family: var(--font-display);
-  font-style: italic;
-  color: var(--text-primary);
-}
+.verse-words-raw { font-size: 16px; line-height: 1.7; color: var(--text-secondary); }
+.verse-words-raw .sk { font-family: var(--font-display); font-size: 1.1em; color: var(--text-primary); }
 
 /* Hidden state during search filtering */
 .verse-card.hidden { display: none; }
 
-/* ── Commentaries (Nyāya, Vaiśeṣika) ──────────────── */
-.verse-commentaries {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.verse-commentary {
-  padding: 12px 16px;
-  background: var(--bg-card);
-  border-left: 2px solid var(--gold-light);
-  border-radius: 0 var(--radius) var(--radius) 0;
-}
-
+/* ── Commentaries ─────────────────────────────────── */
+.verse-commentaries { display: flex; flex-direction: column; gap: 8px; }
+.verse-commentary { padding: 16px 20px; background: var(--bg-card); border-radius: var(--radius-lg); }
 .verse-commentary-name {
   font-family: var(--font-mono);
-  font-size: 10.5px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--rose, var(--gold));
-  margin-bottom: 6px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent-deep, var(--gold));
+  margin-bottom: 4px;
 }
-
-.verse-commentary-text {
-  font-family: var(--font-body);
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--text-secondary);
-}
+.verse-commentary-text { font-size: 16px; line-height: 1.7; color: var(--text-secondary); }
 
 /* Empty/no-results message */
-.sutra-empty {
-  padding: 32px 16px;
-  text-align: center;
-  color: var(--text-muted);
-  font-style: italic;
-  font-size: 14px;
+.sutra-empty { padding: 32px 16px; text-align: center; color: var(--text-muted); font-size: 16px; }
+
+@media (max-width: 760px) {
+  .verse-body { padding-left: 0; }
+  .verse-head { gap: 12px; }
+  .verse-num { min-width: 48px; }
+  .verse-title { font-size: 19px; }
+  .verse-sanskrit { font-size: 19px; }
 }
