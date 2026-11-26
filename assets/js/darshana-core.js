@@ -7,6 +7,41 @@ const C={
   sage:'#6B8A6B',slate:'#5E7080',plum:'#8B5A8B',sienna:'#A05030'
 };
 
+const MAP_COMS=[
+  {k:'vy', n:'Vyāsa · Yoga Bhāṣya'},
+  {k:'vb', n:'Vijñānabhikṣu · Yoga-Vārttika'},
+  {k:'vm', n:'Vācaspati Miśra · Tattva-Vaiśāradī'},
+  {k:'sk', n:'Śaṅkara · Vivaraṇa'},
+  {k:'gp', n:'Gauḍapāda · Bhāṣya'},
+  {k:'tk', n:'Vācaspati Miśra · Tattvakaumudī'},
+  {k:'mat',n:'Māṭhara · Māṭharāvṛtti'},
+  {k:'vts',n:'Vātsyāyana · Nyāya Bhāṣya'},
+  {k:'udd',n:'Uddyotakara · Nyāya Vārttika'},
+  {k:'vmt',n:'Vācaspati Miśra · Tātparya-Ṭīkā'},
+  {k:'uda',n:'Udayana · Nyāya-Pariśuddhi'},
+  {k:'rgh',n:'Raghunātha Śiromaṇi · Bhāṣā-Pariccheda'},
+  {k:'vis',n:'Viśvanātha · Nyāya-Sūtra-Vṛtti'},
+  {k:'prs',n:'Praśastapāda · Padārthadharmasaṃgraha'},
+  {k:'sbt',n:'Śabara · Mīmāṃsā Bhāṣya'},
+  {k:'kum',n:'Kumārila Bhaṭṭa · Ślokavārttika'},
+  {k:'prb',n:'Prabhākara · Bṛhatī'},
+  {k:'shk',n:'Śaṅkara · Bhāṣya'},
+  {k:'rmj',n:'Rāmānuja · Śrī-Bhāṣya'},
+  {k:'mdv',n:'Madhva · Anuvyākhyāna'},
+  {k:'nim',n:'Nimbārka · Vedānta-Pārijāta-Saurabha'},
+  {k:'val',n:'Vallabha · Aṇubhāṣya'},
+  {k:'syk',n:'Sāyaṇa · Commentary'},
+  {k:'mhi',n:'Mahīdhara · Vedadīpa'},
+  {k:'uvt',n:'Uvvaṭa · Commentary'},
+  {k:'ksm',n:'Kṣemarāja · Śiva-Sūtra-Vimarśinī'},
+  {k:'bhk',n:'Bhāskara · Vārttika'},
+  {k:'abg',n:'Abhinavagupta · Tantrāloka & Tantric Corpus'},
+  {k:'lkj',n:'Swami Lakshmanjoo · The Supreme Awakening'},
+  {k:'jds',n:'Jaideva Singh · English Critical Edition'},
+  {k:'jrv',n:'Jayaram V · Translation & Commentary'},
+  {k:'asu',n:'Adi Suyash · Threads of Transcendence'},
+];
+
 // ─── Shared render helpers ────────────────────────────────────────────────────
 function safeHtml(s){return s||'';}
 
@@ -17,40 +52,7 @@ function renderDetail(d,color,id){
   if(d.tr){h+=`<div class="detail-section"><div class="detail-label">Translation</div><div class="detail-text">${safeHtml(d.tr)}</div></div>`;}
   if(d.c){h+=`<div class="detail-section"><div class="detail-label">Concept &amp; Meaning</div><div class="detail-text">${safeHtml(d.c)}</div></div>`;}
   if(d.ex){h+=`<div class="detail-section"><div class="detail-label">Example &amp; Application</div><div class="detail-text">${safeHtml(d.ex)}</div></div>`;}
-  const comDefs=[
-    {k:'vy', n:'Vyāsa · Yoga Bhāṣya'},
-    {k:'vb', n:'Vijñānabhikṣu · Yoga-Vārttika'},
-    {k:'vm', n:'Vācaspati Miśra · Tattva-Vaiśāradī'},
-    {k:'sk', n:'Śaṅkara · Vivaraṇa'},
-    {k:'gp', n:'Gauḍapāda · Bhāṣya'},
-    {k:'tk', n:'Vācaspati Miśra · Tattvakaumudī'},
-    {k:'mat',n:'Māṭhara · Māṭharāvṛtti'},
-    {k:'vts',n:'Vātsyāyana · Nyāya Bhāṣya'},
-    {k:'udd',n:'Uddyotakara · Nyāya Vārttika'},
-    {k:'vmt',n:'Vācaspati Miśra · Tātparya-Ṭīkā'},
-    {k:'uda',n:'Udayana · Nyāya-Pariśuddhi'},
-    {k:'rgh',n:'Raghunātha Śiromaṇi · Bhāṣā-Pariccheda'},
-    {k:'vis',n:'Viśvanātha · Nyāya-Sūtra-Vṛtti'},
-    {k:'prs',n:'Praśastapāda · Padārthadharmasaṃgraha'},
-    {k:'sbt',n:'Śabara · Mīmāṃsā Bhāṣya'},
-    {k:'kum',n:'Kumārila Bhaṭṭa · Ślokavārttika'},
-    {k:'prb',n:'Prabhākara · Bṛhatī'},
-    {k:'shk',n:'Śaṅkara · Bhāṣya'},
-    {k:'rmj',n:'Rāmānuja · Śrī-Bhāṣya'},
-    {k:'mdv',n:'Madhva · Anuvyākhyāna'},
-    {k:'nim',n:'Nimbārka · Vedānta-Pārijāta-Saurabha'},
-    {k:'val',n:'Vallabha · Aṇubhāṣya'},
-    {k:'syk',n:'Sāyaṇa · Commentary'},
-    {k:'mhi',n:'Mahīdhara · Vedadīpa'},
-    {k:'uvt',n:'Uvvaṭa · Commentary'},
-    {k:'ksm',n:'Kṣemarāja · Śiva-Sūtra-Vimarśinī'},
-    {k:'bhk',n:'Bhāskara · Vārttika'},
-    {k:'abg',n:'Abhinavagupta · Tantrāloka & Tantric Corpus'},
-    {k:'lkj',n:'Swami Lakshmanjoo · The Supreme Awakening'},
-    {k:'jds',n:'Jaideva Singh · English Critical Edition'},
-    {k:'jrv',n:'Jayaram V · Translation & Commentary'},
-    {k:'asu',n:'Adi Suyash · Threads of Transcendence'},
-  ];
+  const comDefs=MAP_COMS;
   const present=comDefs.filter(x=>d[x.k]);
   if(present.length){
     h+=`<div class="detail-section"><div class="detail-label">Classical Commentaries</div><div class="commentaries-wrap">`;
@@ -100,19 +102,64 @@ function renderBranch(b,idx){
   </div>`;
 }
 
-function renderSection(sec,containerEl){
-  let h=`<div class="sec-title">${sec.title}</div>`;
-  h+=`<div class="sec-sub">${sec.sub||''}</div>`;
-  if(sec.intro)h+=`<div class="intro-card">${sec.intro}</div>`;
-  if(sec.legend){
-    h+=`<div class="legend">`;
-    sec.legend.forEach(l=>{h+=`<span><div class="ld" style="background:${l.c}"></div>${l.t}</span>`;});
+// Map view: topic list on the left, the selected topic's full detail on the right (sticky),
+// so a whole chapter and one passage's commentaries are visible together without expanding cards.
+function mapDetailHTML(l,color){
+  let h=`<div class="mx-dhead"><span class="mx-dref">${l.r||''}</span><h3>${l.n}</h3>${l.sk?`<div class="mx-dsk">${l.sk}</div>`:''}</div>`;
+  if(l.d)h+=`<p class="mx-ddesc">${l.d}</p>`;
+  const d=l.det;
+  if(!d)return h;
+  if(d.skt)h+=`<div class="mx-skt">${d.skt}</div>`;
+  if(d.tr)h+=`<p class="mx-tr">${d.tr}</p>`;
+  const blocks=[];
+  if(d.c)blocks.push(['Concept &amp; meaning',d.c]);
+  if(d.ex)blocks.push(['Example &amp; application',d.ex]);
+  if(blocks.length)h+=`<div class="mx-blocks">${blocks.map(([t,x])=>`<section><div class="mx-label">${t}</div><div>${x}</div></section>`).join('')}</div>`;
+  const coms=MAP_COMS.filter(x=>d[x.k]);
+  if(coms.length){
+    h+=`<div class="mx-label mx-comlabel">Commentaries <span>${coms.length}</span></div><div class="upr-coms">`;
+    coms.forEach(x=>{h+=`<div class="upr-com" style="--ink:${window.readerInk?readerInk(x.n):'var(--accent)'}"><div class="upr-cname">${x.n}</div><div>${d[x.k]}</div></div>`;});
     h+=`</div>`;
   }
-  h+=`<div class="tree">`;
-  sec.branches.forEach((b,i)=>{h+=renderBranch(b,i);});
-  h+=`</div>`;
-  containerEl.innerHTML=h;
+  return h;
+}
+
+function renderSection(sec,containerEl){
+  const leaves=[];
+  const leafBtn=(l,color)=>{
+    const i=leaves.push({l,color})-1;
+    return `<li><button class="mx-leaf" data-i="${i}" style="--bc:${color}">
+      <span class="mx-lname">${l.n}</span><span class="mx-lref">${l.r||''}</span>
+      ${l.d?`<span class="mx-ldesc">${l.d}</span>`:''}</button></li>`;
+  };
+  let list='';
+  sec.branches.forEach(b=>{
+    list+=`<section class="mx-branch" style="--bc:${b.color}"><h3><span class="mx-dot"></span>${b.name}<span class="mx-bref">${b.ref||''}</span></h3><ul>`;
+    (b.sub||[]).forEach(s=>{
+      if(s.label)list+=`<li class="mx-sublabel">${s.label}</li>`;
+      s.children.forEach(c=>{list+=leafBtn(c,b.color);});
+    });
+    (b.children||[]).forEach(c=>{list+=leafBtn(c,b.color);});
+    list+=`</ul></section>`;
+  });
+  let head=`<div class="mx-head"><div><div class="sec-title">${sec.title}</div><div class="sec-sub">${sec.sub||''}</div></div>`;
+  if(sec.legend)head+=`<div class="legend">${sec.legend.map(l=>`<span><span class="ld" style="background:${l.c}"></span>${l.t}</span>`).join('')}</div>`;
+  head+=`</div>`;
+  if(sec.intro)head+=`<details class="intro-card"><summary>About this section</summary><div>${sec.intro}</div></details>`;
+  containerEl.innerHTML=head+`<div class="mapx"><div class="mapx-list">${list}</div><aside class="mapx-detail" aria-live="polite"></aside></div>`;
+  const pane=containerEl.querySelector('.mapx-detail');
+  const narrow=()=>window.matchMedia('(max-width: 900px)').matches;
+  function show(i,btn){
+    containerEl.querySelectorAll('.mx-leaf').forEach(b=>b.classList.toggle('active',b===btn));
+    pane.style.setProperty('--bc',leaves[i].color);
+    pane.innerHTML=mapDetailHTML(leaves[i].l,leaves[i].color);
+    if(narrow())btn.closest('li').after(pane);          // phones: detail opens under the tapped topic
+    else if(pane.parentElement!==containerEl.querySelector('.mapx'))containerEl.querySelector('.mapx').appendChild(pane);
+    if(!narrow())pane.scrollTop=0;
+  }
+  containerEl.querySelectorAll('.mx-leaf').forEach(b=>b.addEventListener('click',()=>show(+b.dataset.i,b)));
+  const first=containerEl.querySelector('.mx-leaf');
+  if(first&&!narrow())show(0,first);
 }
 
 function buildSubNav(sections,panelId,renderFn){

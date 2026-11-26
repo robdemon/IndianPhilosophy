@@ -9,6 +9,6 @@ python3 Documents/upanishads/parse.py    # -> build/out/*.json (sections and ver
 python3 Documents/upanishads/export.py   # -> assets/js/upanishads/<slug>.js + index.js
 ```
 
-After a rebuild, bump `?v=` on the reader links in `Temp/darshana_3.html` and `VER` in
-`assets/js/upanishad-reader.js`. A new book needs a row in the `BOOKS` list in `export.py`.
+After a rebuild, bump `?v=` on the reader links in `Temp/darshana_3.html` and `UP_VER` in
+`assets/js/reader.js`. A new book needs a row in the `BOOKS` list in `export.py`.
 `build/` is scratch and is not committed.

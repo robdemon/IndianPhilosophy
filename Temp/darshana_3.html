@@ -7,9 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@500&family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/darshana-theme.css?v=20261122">
-<link rel="stylesheet" href="../assets/css/samkhya-sutra.css?v=20261122">
-<link rel="stylesheet" href="../assets/css/upanishad-reader.css?v=20261127">
+<link rel="stylesheet" href="../assets/css/darshana-theme.css?v=20261128">
 </head>
 <body>
 <div id="shell">
@@ -18,14 +16,14 @@
   <span class="subtitle">Ṣaḍdarśana, the Vedas and the Śiva Sūtras</span>
 </header>
 <div class="top-nav" id="topNav">
-  <button class="active" data-sys="yoga"        onclick="showSystem('yoga')">Patañjali<br>Yoga Sūtras</button>
-  <button             data-sys="samkhya"     onclick="showSystem('samkhya')">Sāṃkhya<br>Kārikā</button>
-  <button             data-sys="nyaya"       onclick="showSystem('nyaya')">Nyāya<br>Sūtras</button>
-  <button             data-sys="vaisheshika" onclick="showSystem('vaisheshika')">Vaiśeṣika<br>Sūtras</button>
-  <button             data-sys="mimamsa"     onclick="showSystem('mimamsa')">Pūrva<br>Mīmāṃsā</button>
-  <button             data-sys="vedanta"     onclick="showSystem('vedanta')">Vedānta<br>Upaniṣads</button>
+  <button class="active" data-sys="yoga"        onclick="showSystem('yoga')">Patañjali Yoga Sūtras</button>
+  <button             data-sys="samkhya"     onclick="showSystem('samkhya')">Sāṃkhya Kārikā</button>
+  <button             data-sys="nyaya"       onclick="showSystem('nyaya')">Nyāya Sūtras</button>
+  <button             data-sys="vaisheshika" onclick="showSystem('vaisheshika')">Vaiśeṣika Sūtras</button>
+  <button             data-sys="mimamsa"     onclick="showSystem('mimamsa')">Pūrva Mīmāṃsā</button>
+  <button             data-sys="vedanta"     onclick="showSystem('vedanta')">Vedānta Upaniṣads</button>
   <button             data-sys="vedas"       onclick="showSystem('vedas')">Vedas</button>
-  <button             data-sys="shiva"       onclick="showSystem('shiva')">Śiva<br>Sūtras</button>
+  <button             data-sys="shiva"       onclick="showSystem('shiva')">Śiva Sūtras</button>
 </div>
 <div id="yoga" class="system-panel active"></div>
 <div id="samkhya" class="system-panel"></div>
@@ -37,14 +35,14 @@
 <div id="shiva" class="system-panel"></div>
 </div>
 
-<script src="../assets/js/darshana-core.js?v=20261122"></script>
-<script src="../assets/js/samkhya-sutras.js?v=20261122"></script>
+<script src="../assets/js/darshana-core.js?v=20261128"></script>
+<script src="../assets/js/samkhya-sutras.js?v=20261128"></script>
 <script src="../assets/js/nyaya-sutras.js"></script>
 <script src="../assets/js/vaisesika-sutras.js"></script>
-<script src="../assets/js/yoga-sutras.js?v=20261122"></script>
+<script src="../assets/js/yoga-sutras.js?v=20261128"></script>
 <script src="../assets/js/shiva-sutras.js"></script>
-<script src="../assets/js/upanishads/index.js?v=20261127"></script>
-<script src="../assets/js/upanishad-reader.js?v=20261127"></script>
+<script src="../assets/js/upanishads/index.js?v=20261128"></script>
+<script src="../assets/js/reader.js?v=20261128"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════════
 // YOGA SŪTRAS — Patañjali (c. 400 CE)
@@ -52,11 +50,11 @@
 builders.yoga=function(){
 document.getElementById('yoga').innerHTML =
   `<div class="view-bar" role="tablist" aria-label="Yoga view">
-     <button id="yoga-view-map" class="active" onclick="switchYogaView('map')">Map</button>
-     <button id="yoga-view-sutra" onclick="switchYogaView('sutra')">Sutra</button>
+     <button id="yoga-view-sutra" class="active" onclick="switchYogaView('sutra')">Sūtras</button>
+     <button id="yoga-view-map" onclick="switchYogaView('map')">Map</button>
    </div>
-   <div id="yoga-map"></div>
-   <div id="yoga-sutra" hidden></div>`;
+   <div id="yoga-map" hidden></div>
+   <div id="yoga-sutra"></div>`;
 const yogaSections=[
 {tab:"Samādhi Pāda",title:"Samādhi Pāda",sub:"Chapter 1 · 51 sūtras · Nature of yoga and samādhi",
 intro:"Patañjali opens with the most direct teaching: yoga is the stilling of mental fluctuations. This chapter addresses the advanced practitioner whose mind already has some steadiness. It defines yoga, classifies the five vṛttis, prescribes abhyāsa and vairāgya as the twin means, and maps the entire ladder of samādhi from gross object-absorption up to seedless liberation.",
@@ -187,6 +185,7 @@ branches:[
 ]}
 ];
 buildSubNav(yogaSections,'yoga-map',renderSection);
+mountSutraReader('yoga', document.getElementById('yoga-sutra'));
 };
 
 // ── Yoga Sutra view ──────────────────────────────────────────────────
@@ -209,7 +208,7 @@ function switchYogaView(name){
   document.getElementById('yoga-view-sutra').classList.toggle('active', showSutra);
   document.getElementById('yoga-map').hidden = showSutra;
   document.getElementById('yoga-sutra').hidden = !showSutra;
-  if (showSutra) renderYogaSutras();
+  if (showSutra) mountSutraReader('yoga', document.getElementById('yoga-sutra'));
 }
 // ═══════════════════════════════════════════════════════════════════
 // SĀṂKHYA — Sāṃkhyakārikā of Īśvarakṛṣṇa (c. 350 CE)
@@ -219,11 +218,11 @@ function switchYogaView(name){
 builders.samkhya=function(){
 document.getElementById('samkhya').innerHTML =
   `<div class="view-bar" role="tablist" aria-label="Samkhya view">
-     <button id="samkhya-view-map" class="active" onclick="switchSamkhyaView('map')">Map</button>
-     <button id="samkhya-view-sutra" onclick="switchSamkhyaView('sutra')">Sutra</button>
+     <button id="samkhya-view-sutra" class="active" onclick="switchSamkhyaView('sutra')">Kārikās</button>
+     <button id="samkhya-view-map" onclick="switchSamkhyaView('map')">Map</button>
    </div>
-   <div id="samkhya-map"></div>
-   <div id="samkhya-sutra" hidden></div>`;
+   <div id="samkhya-map" hidden></div>
+   <div id="samkhya-sutra"></div>`;
 const secs=[
 {tab:"Introduction & Suffering",title:"Introduction — Three Kinds of Suffering",sub:"Kārikā 1–2 · Purpose and the three-fold suffering",
 intro:"Īśvarakṛṣṇa begins with an existential observation rather than an abstract proposition: all living beings are motivated by the desire to overcome the three-fold suffering. The Vedic ritual means are insufficient; the Sāṃkhya investigation of the principles (tattvas) of existence is the sovereign remedy. This pragmatic motivation distinguishes Sāṃkhya from mere speculative philosophy — it is a science of liberation.",
@@ -366,6 +365,7 @@ tk:"Vācaspati Miśra: 'going upward' through dharma refers not only to heavenly
 ]}
 ];
 buildSubNav(secs,'samkhya-map',renderSection);
+mountSutraReader('samkhya', document.getElementById('samkhya-sutra'));
 };
 
 // ── Samkhya Sutra view (verse-by-verse from Samkhya.pdf) ──────────────
@@ -481,7 +481,7 @@ function switchSamkhyaView(name){
   document.getElementById('samkhya-view-sutra').classList.toggle('active', showSutra);
   document.getElementById('samkhya-map').hidden = showSutra;
   document.getElementById('samkhya-sutra').hidden = !showSutra;
-  if (showSutra) renderSamkhyaSutras();
+  if (showSutra) mountSutraReader('samkhya', document.getElementById('samkhya-sutra'));
 }
 
 // ── Shared sutra-list renderer (used by Nyāya and Vaiśeṣika) ──────────
@@ -592,7 +592,7 @@ function switchNyayaView(name){
   document.getElementById('nyaya-view-sutra').classList.toggle('active', showSutra);
   document.getElementById('nyaya-map').hidden = showSutra;
   document.getElementById('nyaya-sutra').hidden = !showSutra;
-  if (showSutra) renderNyayaSutras();
+  if (showSutra) mountSutraReader('nyaya', document.getElementById('nyaya-sutra'));
 }
 
 // ── Vaiśeṣika Sutra view ─────────────────────────────────────────────
@@ -615,7 +615,7 @@ function switchVaisesikaView(name){
   document.getElementById('vaisheshika-view-sutra').classList.toggle('active', showSutra);
   document.getElementById('vaisheshika-map').hidden = showSutra;
   document.getElementById('vaisheshika-sutra').hidden = !showSutra;
-  if (showSutra) renderVaisesikaSutras();
+  if (showSutra) mountSutraReader('vaisheshika', document.getElementById('vaisheshika-sutra'));
 }
 
 // ── Śiva Sūtra view ──────────────────────────────────────────────────
@@ -638,7 +638,7 @@ function switchShivaView(name){
   document.getElementById('shiva-view-sutra').classList.toggle('active', showSutra);
   document.getElementById('shiva-map').hidden = showSutra;
   document.getElementById('shiva-sutra').hidden = !showSutra;
-  if (showSutra) renderShivaSutras();
+  if (showSutra) mountSutraReader('shiva', document.getElementById('shiva-sutra'));
 }
 // ═══════════════════════════════════════════════════════════════════
 // NYĀYA SŪTRAS — Gautama (c. 200 BCE–200 CE)
@@ -649,11 +649,11 @@ function switchShivaView(name){
 builders.nyaya=function(){
 document.getElementById('nyaya').innerHTML =
   `<div class="view-bar" role="tablist" aria-label="Nyaya view">
-     <button id="nyaya-view-map" class="active" onclick="switchNyayaView('map')">Map</button>
-     <button id="nyaya-view-sutra" onclick="switchNyayaView('sutra')">Sutra</button>
+     <button id="nyaya-view-sutra" class="active" onclick="switchNyayaView('sutra')">Sūtras</button>
+     <button id="nyaya-view-map" onclick="switchNyayaView('map')">Map</button>
    </div>
-   <div id="nyaya-map"></div>
-   <div id="nyaya-sutra" hidden></div>`;
+   <div id="nyaya-map" hidden></div>
+   <div id="nyaya-sutra"></div>`;
 const secs=[
 {tab:"Adhyāya 1 — Padārthas & Pramāṇas",title:"Adhyāya 1 — Sixteen Padārthas and the Pramāṇas",sub:"NS 1.1.1–1.2.20 · Categories of inquiry and valid means of knowledge",
 intro:"Gautama opens with a statement of sixteen padārthas (categories of inquiry) whose examination leads to liberation. He then analyses the four pramāṇas — pratyakṣa, anumāna, upamāna, and śabda — establishing Nyāya's epistemology on precise definitions. This chapter is the foundation of the entire analytical method.",
@@ -800,6 +800,7 @@ uda:"Udayana: the nigrahasthāna framework is the foundation of academic philoso
 ]}
 ];
 buildSubNav(secs,'nyaya-map',renderSection);
+mountSutraReader('nyaya', document.getElementById('nyaya-sutra'));
 };
 // ═══════════════════════════════════════════════════════════════════
 // VAIŚEṢIKA SŪTRAS — Kaṇāda (c. 200 BCE)
@@ -808,11 +809,11 @@ buildSubNav(secs,'nyaya-map',renderSection);
 builders.vaisheshika=function(){
 document.getElementById('vaisheshika').innerHTML =
   `<div class="view-bar" role="tablist" aria-label="Vaisheshika view">
-     <button id="vaisheshika-view-map" class="active" onclick="switchVaisesikaView('map')">Map</button>
-     <button id="vaisheshika-view-sutra" onclick="switchVaisesikaView('sutra')">Sutra</button>
+     <button id="vaisheshika-view-sutra" class="active" onclick="switchVaisesikaView('sutra')">Sūtras</button>
+     <button id="vaisheshika-view-map" onclick="switchVaisesikaView('map')">Map</button>
    </div>
-   <div id="vaisheshika-map"></div>
-   <div id="vaisheshika-sutra" hidden></div>`;
+   <div id="vaisheshika-map" hidden></div>
+   <div id="vaisheshika-sutra"></div>`;
 const secs=[
 {tab:"Six Padārthas",title:"Six Padārthas — Categories of Reality",sub:"VS 1.1–1.2 · The six ontological categories",
 intro:"Vaiśeṣika's fundamental claim is that everything that exists can be classified under six (later seven) padārthas: dravya (substance), guṇa (quality), karma (motion), sāmānya (universal), viśeṣa (particular), and samavāya (inherence). This ontological scheme is at once a classification of all existing things and a theory of the kinds of properties and relations that bind them.",
@@ -907,6 +908,7 @@ uda:"Udayana: the apparent emptiness of Vaiśeṣika liberation is actually a pr
 ]}
 ];
 buildSubNav(secs,'vaisheshika-map',renderSection);
+mountSutraReader('vaisheshika', document.getElementById('vaisheshika-sutra'));
 };
 
 // ═══════════════════════════════════════════════════════════════════
@@ -1622,11 +1624,11 @@ buildSubNav(secs,'vedas',renderSection);
 builders.shiva=function(){
 document.getElementById('shiva').innerHTML =
   `<div class="view-bar" role="tablist" aria-label="Śiva view">
-     <button id="shiva-view-map" class="active" onclick="switchShivaView('map')">Map</button>
-     <button id="shiva-view-sutra" onclick="switchShivaView('sutra')">Sutra</button>
+     <button id="shiva-view-sutra" class="active" onclick="switchShivaView('sutra')">Sūtras</button>
+     <button id="shiva-view-map" onclick="switchShivaView('map')">Map</button>
    </div>
-   <div id="shiva-map"></div>
-   <div id="shiva-sutra" hidden></div>`;
+   <div id="shiva-map" hidden></div>
+   <div id="shiva-sutra"></div>`;
 const secs=[
 {tab:"Śāmbhavopāya",title:"Section One — Śāmbhavopāya",sub:"ŚS 1.1–1.22 · The Path of Direct Recognition · 22 Sūtras",
 intro:"Section One opens with the highest of the three paths — the Śāmbhavopāya, the path of direct recognition. After declaring 'caitanyam ātmā' (consciousness is the Self), Vasugupta names the structure of bondage, introduces the mātṛkā-cakra, and offers the central method: udyamo bhairavaḥ — the sudden upsurge of awareness is itself Bhairava. The chapter culminates in the contemplation of the 'great lake' of consciousness as the source of mantric power.",
@@ -1756,6 +1758,7 @@ branches:[
 ]}
 ];
 buildSubNav(secs,'shiva-map',renderSection);
+mountSutraReader('shiva', document.getElementById('shiva-sutra'));
 };
 
 // ─── INIT ────────────────────────────────────────────────────────────────────
@@ -1764,6 +1767,8 @@ const _hash=location.hash.slice(1);
 window._deepLink=_hash; // e.g. vedanta/katha/12 — read by the Upaniṣad reader
 const _sys=_hash.split('/')[0];
 showSystem(_valid.includes(_sys)?_sys:'yoga');
+// #mimamsa etc. equal a panel id, so the browser would jump past the header on load
+addEventListener('load',()=>{if(!location.hash.includes('/'))scrollTo(0,0);});
 </script>
 </body>
 </html>

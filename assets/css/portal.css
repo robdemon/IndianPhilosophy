@@ -3,10 +3,10 @@
   color-scheme: light;
   --bg:        #FBF7EF;
   --surface:   #F5EEE0;
-  --text:      #2A2118;
-  --text-2:    #5C5144;
-  --muted:     #6F6456;   /* 5:1 on --bg */
-  --line:      rgba(42, 33, 24, .10);
+  --text:      #211A12;
+  --text-2:    #433729;
+  --muted:     #5B4F41;   /* 5:1 on --bg */
+  --line:      rgba(33, 26, 18, .12);
   --accent:    #8A5714;   /* brand gold darkened to 5:1 on --bg */
   --font-body:    'EB Garamond', Georgia, 'Times New Roman', serif;
   --font-display: 'Cormorant Garamond', Georgia, serif;

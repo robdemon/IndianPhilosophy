@@ -6,11 +6,11 @@
   --bg-card:       #F5EEE0;
   --bg-panel:      #EFE6D4;
   --bg-deep:       #FBF7EF;
-  --text-primary:  #2A2118;
-  --text-secondary:#5C5144;
-  --text-muted:    #6F6456;
-  --border:        rgba(42, 33, 24, .18);
-  --border-light:  rgba(42, 33, 24, .10);
+  --text-primary:  #211A12;
+  --text-secondary:#433729;
+  --text-muted:    #5B4F41;
+  --border:        rgba(33, 26, 18, .22);
+  --border-light:  rgba(33, 26, 18, .12);
   --gold:          #8A5714;
   --gold-light:    #8A5714;
   --rose:          #8A5714;
@@ -25,7 +25,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+html { font-size: 18px; -webkit-text-size-adjust: 100%; }
 
 body {
   font-family: var(--font-body);
